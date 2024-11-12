@@ -1,0 +1,165 @@
+<link rel="stylesheet" href="{{ 'custom-tab.css' | asset_url }}" type="text/css">
+
+
+<div class="main-tab-container">
+    <div class="tab-title">{{ section.settings.tab-title }}</div>
+    <div id="tabs" class="tab-container">
+        <div class="tab active" onclick="showTab(0)">{{ section.settings.tab1 }}</div>
+        <div class="tab" onclick="showTab(1)">{{ section.settings.tab2 }}</div>
+        <div class="tab" onclick="showTab(2)">{{ section.settings.tab3 }}</div> <!-- New tab -->
+    </div>
+    <div class="tab-content-container active">
+        <div class="image-container">
+            <img src="{{ section.settings.image1 | img_url: '1200x600' }}"></img>
+        </div>
+        <div class="text-container">
+            <div class="text-c">
+                <span>{{ section.settings.tab-txt-title1 }}</span>
+                <p>{{ section.settings.tab-txt-content1 }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content-container">
+        <div class="image-container">
+            <img src="{{ section.settings.image2 | img_url: '1200x600' }}"></img>
+        </div>
+        <div class="text-container">
+            <div class="text-c">
+                <span>{{ section.settings.tab-txt-title2 }}</span>
+                <p>{{ section.settings.tab-txt-content2 }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content-container"> <!-- New tab content container -->
+        <div class="image-container">
+            <img src="{{ section.settings.image3 | img_url: '1200x600' }}"></img>
+        </div>
+        <div class="text-container">
+            <div class="text-c">
+                <span>{{ section.settings.tab-txt-title3 }}</span>
+                <p>{{ section.settings.tab-txt-content3 }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+function showTab(index) {
+    var tabs = document.getElementById('tabs').getElementsByTagName('div');
+    var tabContent = document.getElementsByClassName('tab-content-container');
+    for (var i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove('active');
+        tabContent[i].classList.remove('active');
+    }
+    tabs[index].classList.add('active');
+    tabContent[index].classList.add('active');
+}
+</script>
+
+
+{% schema %}
+{
+  "name": "custom tab",
+  "class": "section-tab",
+  "settings": [
+    {
+      "id": "tab-title",
+      "type": "text",
+      "label": "Tab Title",
+      "default": "Title"
+    },
+    {
+      "id": "tab1",
+      "type": "text",
+      "label": "Tab 1",
+      "default": "Content"
+    },
+    {
+      "id": "tab2",
+      "type": "text",
+      "label": "Tab 2",
+      "default": "Content"
+    },
+    {
+      "id": "tab3",
+      "type": "text",
+      "label": "Tab 3",
+      "default": "Content"  // New setting for tab3
+    },
+    {
+      "id": "tab-txt-title1",
+      "type": "text",
+      "label": "Tab Text Title 1",
+      "default": "Content"
+    },
+    {
+      "id": "tab-txt-content1",
+      "type": "textarea",
+      "label": "Tab Text Content 1",
+      "default": "Content"
+    },
+    {
+      "id": "tab-txt-title2",
+      "type": "text",
+      "label": "Tab Text Title 2",
+      "default": "Content"
+    },
+    {
+      "id": "tab-txt-content2",
+      "type": "textarea",
+      "label": "Tab Text Content 2",
+      "default": "Content"
+    },
+    {
+      "id": "tab-txt-title3",
+      "type": "text",
+      "label": "Tab Text Title 3",  // New setting for tab3 text title
+      "default": "Content"
+    },
+    {
+      "id": "tab-txt-content3",
+      "type": "textarea",
+      "label": "Tab Text Content 3",  // New setting for tab3 text content
+      "default": "Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "Tab Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image1",
+      "label": "Tab Mobile Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Tab Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image2",
+      "label": "Tab Mobile Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image3",
+      "label": "Tab Image 3"  // New setting for tab3 image
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image3",
+      "label": "Tab Mobile Image 3"  // New setting for tab3 mobile image
+    }
+  ],
+  "presets": [
+    {
+      "name": "custom tab",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
+

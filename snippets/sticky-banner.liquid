@@ -1,0 +1,49 @@
+<div id="sticky-banner">
+    {{ section.settings.sticky_text }}
+    <a href="{{ section.settings.link_url }}" class="buy-btn" target="_blank">
+        buy now
+    </a>
+</div>
+  <style>
+    #sticky-banner {
+        display:flex;
+        justify-content: space-between; 
+        align-items: center;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height:40px;
+        background-color: rgba(255,255,255, 0.8);
+        color: #000;
+        z-index: 1000;
+        padding:0 30px;
+    }
+    .sticky {
+        position: fixed !important;
+        top: 0;
+        z-index: 1000;
+    }
+    .buy-btn{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:132px ;
+        height:28px;
+        background:#000;
+        color:#ffffff;
+        border-radius: 14px;
+    }
+  </style>
+
+<script>
+    window.addEventListener("scroll", function() {
+        const stickyBanner = document.getElementById("sticky-banner");
+        const stickyOffset = 100; 
+        if (window.scrollY > stickyOffset) {
+          stickyBanner.classList.add("sticky");
+        } else {
+          stickyBanner.classList.remove("sticky");
+        }
+      });
+  </script>
+  

@@ -1,0 +1,44 @@
+{% schema %}
+{
+  "name": "Sticky Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "This is a sticky section heading"
+    },
+    {
+      "type": "text",
+      "id": "content",
+      "label": "Section Content",
+      "default": "This is the content of the sticky section."
+    }
+  ]
+}
+{% endschema %}
+
+<section class="sticky-section">
+  <div class="content">
+    <h2>{{ section.settings.heading }}</h2>
+    <p>{{ section.settings.content }}</p>
+  </div>
+</section>
+
+<style>
+  .sticky-section {
+    position: relative; /* Position relative to enable sticky child */
+    height: 100vh; /* Full viewport height to initially cover other content */
+    background-color: #f5f5f5; /* Background color for visibility */
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .sticky-section .content {
+    position: sticky;
+    top: 0; /* When scrolling, stop at the top */
+    background-color: white; /* Background color to overlap previous sections */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+</style>

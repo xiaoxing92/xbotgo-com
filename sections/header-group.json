@@ -1,0 +1,124 @@
+{
+    "type": "header",
+    "name": "Header Group",
+    "sections": {
+        "announcement-bar": {
+            "type": "announcement-bar",
+            "blocks": {
+                "announcement_gVcaxE": {
+                    "type": "announcement",
+                    "settings": {
+                        "text": "World-Wide Shipping Free",
+                        "show_countdown": false,
+                        "hide_on_end": false,
+                        "end_date": "",
+                        "end_time": "",
+                        "number_font": "base",
+                        "countdown_separator": "box",
+                        "use_custom_colors": false,
+                        "bg_color": "#4a4a4a",
+                        "bg_gradient": "",
+                        "text_color": "#ffffff"
+                    }
+                },
+                "announcement_FgHzje": {
+                    "type": "announcement",
+                    "settings": {
+                        "text": "30-Day Hassle-Free Return",
+                        "show_countdown": false,
+                        "hide_on_end": false,
+                        "end_date": "",
+                        "end_time": "",
+                        "number_font": "base",
+                        "countdown_separator": "box",
+                        "use_custom_colors": false,
+                        "bg_color": "#4a4a4a",
+                        "bg_gradient": "",
+                        "text_color": "#ffffff"
+                    }
+                }
+            },
+            "block_order": ["announcement_gVcaxE", "announcement_FgHzje"],
+            "settings": {
+                "message_font_size": 14,
+                "announcement_bar_col": "#202223",
+                "announcement_bar_gradient": "",
+                "announcement_text_col": "#ffffff",
+                "show_social_icons": false,
+                "menu": "",
+                "enable_country_selector": true,
+                "enable_language_selector": true
+            }
+        },
+        "header": {
+            "type": "header",
+            "custom_css": [],
+            "settings": {
+                "logo": "shopify:\/\/shop_images\/211LOGO.png",
+                "logo_img_width_int": 125,
+                "mobile_logo_img_width_int": 85,
+                "logo_h1": true,
+                "enable_sticky": false,
+                "enable_transparent": true,
+                "transparent_color": "#ffffff",
+                "menu_linklist": "header-menu-12-06",
+                "menu_layout": "inline-menu-center",
+                "nav_featured_link": "Sale",
+                "menu_linklist_mobile": "",
+                "mobile_expand_with_entire_link": false,
+                "enable_mobile_promo_carousel": true,
+                "enable_nav_mob_products": true,
+                "nav_mob_products_title": "Best Sellers",
+                "nav_mob_products_collection": "frontpage",
+                "enable_search": true,
+                "search_recommendations_title": "",
+                "search_recommendations_menu": "",
+                "icon_strategy": "icons_cart_search",
+                "cart_icon": "basket"
+            }
+        },
+        "store-messages": {
+            "type": "store-messages",
+            "blocks": {
+                "1599495506123": {
+                    "type": "message",
+                    "disabled": true,
+                    "settings": {
+                        "heading": "FREE U.S. SHIPPING",
+                        "subheading": "",
+                        "link_url": "shopify:\/\/policies\/shipping-policy"
+                    }
+                },
+                "1599495565638": {
+                    "type": "message",
+                    "disabled": true,
+                    "settings": {
+                        "heading": "30-DAY MONEY BACK GUARANTEE",
+                        "subheading": "",
+                        "link_url": "shopify:\/\/policies\/refund-policy"
+                    }
+                },
+                "1599495573176": {
+                    "type": "message",
+                    "disabled": true,
+                    "settings": {
+                        "heading": "1 YEAR WARRANTY",
+                        "subheading": "",
+                        "link_url": "shopify:\/\/pages\/warranty"
+                    }
+                }
+            },
+            "block_order": ["1599495506123", "1599495565638", "1599495573176"],
+            "settings": {
+                "head_not_home_only": false,
+                "head_not_col_bg": "#f4f6f8",
+                "head_not_col_txt1": "#171717",
+                "head_not_col_txt2": "#4c4c4b",
+                "head_not_mob_show": false,
+                "head_not_mob_text": "",
+                "head_not_mob_url": ""
+            }
+        }
+    },
+    "order": ["announcement-bar", "header", "store-messages"]
+}

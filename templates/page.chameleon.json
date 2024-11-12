@@ -1,0 +1,1102 @@
+{
+  "sections": {
+    "background_video_rRNkK9": {
+      "type": "background-video",
+      "blocks": {
+        "heading_fz77Mp": {
+          "type": "heading",
+          "settings": {
+            "title": "XbotGo Chameleon AI Cameraman",
+            "heading_max_width": 17,
+            "title_size": 76,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "button_6Gea9Y": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "https://xbotgo.com/discount/SPOOKY20?redirect=%2Fproducts%2Fxbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": ["heading_fz77Mp", "button_6Gea9Y"],
+      "disabled": true,
+      "custom_css": [
+        ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 180px; /* Set width */ text-align: center; font-size: 20px; border-radius: 25px; position: absolute; top: 120%; /* Adjust this value to move the button up or down */ left: 45%; /* Adjust this value to move the button left or right */}",
+        "@media (max-width: 767px) {.btn {width: 160px; text-align: center; font-size: 14px; top: 110%; left: 48%; /* Keep it centered horizontally or adjust as needed */ transform: translate( -50%, -70% ); /* Adjust the translate value if necessary */ }}"
+      ],
+      "settings": {
+        "video_shopify": "shopify://files/videos/chameleon presale.mp4",
+        "video_external": "",
+        "video_description": "",
+        "placeholder_image": "shopify://shop_images/PC-_K.png",
+        "text_alignment": "center center",
+        "height_desktop": 960,
+        "height_mobile": 640,
+        "full_width": true,
+        "overlay_style": "shadow"
+      }
+    },
+    "slideshow_yDTLyV": {
+      "type": "slideshow",
+      "blocks": {
+        "image_EFQYci": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/XbotGo_chameleon.png",
+            "mobile_image": "shopify://shop_images/M-_banner.png",
+            "slide_link": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
+            "subheading": "Play Hard  Film Smart",
+            "title": "XbotGo Chameleon",
+            "heading_max_width": 5,
+            "title_size": 24,
+            "title_size_mobile": 20,
+            "use_h1": false,
+            "text": "<p>Your AI Sports Cameraman</p>",
+            "enlarge_text": true,
+            "button_label_1": "Shop this",
+            "button_url_1": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center left"
+          }
+        }
+      },
+      "block_order": ["image_EFQYci"],
+      "custom_css": [
+        ".text-overlay {position: relative; top: 15%; left: 5%; font-size: 20px;}",
+        ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px;}",
+        "@media (max-width: 767px) {.text-overlay {position: relative; top: 1%; left: 5%; font-size: 15px; } .btn {width: 130px; text-align: center; font-size: 12px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; top: 115%; left: 22%; }}"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 360,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "transition": "fade",
+        "navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "accessibility_info": ""
+      }
+    },
+    "countdown_timer_8wR437": {
+      "type": "countdown-timer",
+      "blocks": {
+        "subheading_yrnTVW": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "$20 OFF SALE"
+          }
+        },
+        "heading_34hBPz": {
+          "type": "heading",
+          "settings": {
+            "title": "Halloween Deals",
+            "use_h1": false
+          }
+        },
+        "text_GqVePi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use code <strong>SPOOKY20</strong> at checkout from <strong>Oct 23rd to Oct 31st</strong>.</p>",
+            "enlarge_text": true
+          }
+        },
+        "countdown_zdaN6Q": {
+          "type": "countdown",
+          "settings": {
+            "end_date": "2024-10-31",
+            "end_time": "23:59:00",
+            "end_text": "",
+            "hide_on_end": false,
+            "number_size": 60,
+            "number_font": "base",
+            "divider_type": "colon",
+            "show_timer_labels": true
+          }
+        },
+        "custom_liquid_WmFgw7": {
+          "type": "custom_liquid",
+          "settings": {
+            "full_width": true,
+            "show_space": true,
+            "code": "<div id='product-component-1729668894556'></div>\n<script type=\"text/javascript\">\n/*<![CDATA[*/\n(function () {\n  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';\n  if (window.ShopifyBuy) {\n    if (window.ShopifyBuy.UI) {\n      ShopifyBuyInit();\n    } else {\n      loadScript();\n    }\n  } else {\n    loadScript();\n  }\n  function loadScript() {\n    var script = document.createElement('script');\n    script.async = true;\n    script.src = scriptURL;\n    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);\n    script.onload = ShopifyBuyInit;\n  }\n  function ShopifyBuyInit() {\n    var client = ShopifyBuy.buildClient({\n      domain: 'blinktechus.myshopify.com',\n      storefrontAccessToken: '701e5d9828ddf0988f36d03c4492b822',\n    });\n    ShopifyBuy.UI.onReady(client).then(function (ui) {\n      ui.createComponent('product', {\n        id: '8621071663326',\n        node: document.getElementById('product-component-1729668894556'),\n        moneyFormat: '%24%7B%7Bamount%7D%7D',\n        options: {\n  \"product\": {\n    \"styles\": {\n      \"product\": {\n        \"@media (min-width: 601px)\": {\n          \"max-width\": \"calc(25% - 20px)\",\n          \"margin-left\": \"20px\",\n          \"margin-bottom\": \"50px\"\n        }\n      },\n      \"button\": {\n        \"font-family\": \"Source Sans Pro, sans-serif\",\n        \"font-weight\": \"bold\",\n        \":hover\": {\n          \"background-color\": \"#c65916\"\n        },\n        \"background-color\": \"#dc6318\",\n        \":focus\": {\n          \"background-color\": \"#c65916\"\n        },\n        \"border-radius\": \"18px\",\n        \"padding-left\": \"97px\",\n        \"padding-right\": \"97px\"\n      }\n    },\n    \"contents\": {\n      \"img\": false,\n      \"title\": false,\n      \"price\": false\n    },\n    \"text\": {\n      \"button\": \"Add to cart\"\n    },\n    \"googleFonts\": [\n      \"Source Sans Pro\"\n    ]\n  },\n  \"productSet\": {\n    \"styles\": {\n      \"products\": {\n        \"@media (min-width: 601px)\": {\n          \"margin-left\": \"-20px\"\n        }\n      }\n    }\n  },\n  \"modalProduct\": {\n    \"contents\": {\n      \"img\": false,\n      \"imgWithCarousel\": true,\n      \"button\": false,\n      \"buttonWithQuantity\": true\n    },\n    \"styles\": {\n      \"product\": {\n        \"@media (min-width: 601px)\": {\n          \"max-width\": \"100%\",\n          \"margin-left\": \"0px\",\n          \"margin-bottom\": \"0px\"\n        }\n      },\n      \"button\": {\n        \"font-family\": \"Source Sans Pro, sans-serif\",\n        \"font-weight\": \"bold\",\n        \":hover\": {\n          \"background-color\": \"#c65916\"\n        },\n        \"background-color\": \"#dc6318\",\n        \":focus\": {\n          \"background-color\": \"#c65916\"\n        },\n        \"border-radius\": \"18px\",\n        \"padding-left\": \"97px\",\n        \"padding-right\": \"97px\"\n      }\n    },\n    \"googleFonts\": [\n      \"Source Sans Pro\"\n    ],\n    \"text\": {\n      \"button\": \"Add to cart\"\n    }\n  },\n  \"option\": {\n    \"styles\": {\n      \"label\": {\n        \"color\": \"#989797\"\n      }\n    }\n  },\n  \"cart\": {\n    \"styles\": {\n      \"button\": {\n        \"font-family\": \"Source Sans Pro, sans-serif\",\n        \"font-weight\": \"bold\",\n        \":hover\": {\n          \"background-color\": \"#c65916\"\n        },\n        \"background-color\": \"#dc6318\",\n        \":focus\": {\n          \"background-color\": \"#c65916\"\n        },\n        \"border-radius\": \"18px\"\n      }\n    },\n    \"text\": {\n      \"total\": \"Subtotal\",\n      \"button\": \"Checkout\"\n    },\n    \"popup\": false,\n    \"googleFonts\": [\n      \"Source Sans Pro\"\n    ]\n  },\n  \"toggle\": {\n    \"styles\": {\n      \"toggle\": {\n        \"font-family\": \"Source Sans Pro, sans-serif\",\n        \"font-weight\": \"bold\",\n        \"background-color\": \"#dc6318\",\n        \":hover\": {\n          \"background-color\": \"#c65916\"\n        },\n        \":focus\": {\n          \"background-color\": \"#c65916\"\n        }\n      }\n    },\n    \"googleFonts\": [\n      \"Source Sans Pro\"\n    ]\n  }\n},\n      });\n    });\n  }\n})();\n/*]]>*/\n</script>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_yrnTVW",
+        "heading_34hBPz",
+        "text_GqVePi",
+        "countdown_zdaN6Q",
+        "custom_liquid_WmFgw7"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_image": true,
+        "image": "shopify://shop_images/PC-_-with_text.png",
+        "image_link": "",
+        "show_image_space": true,
+        "image_position": "left",
+        "text_alignment": "center",
+        "color_scheme": "default"
+      }
+    },
+    "custom_content_NLBDX3": {
+      "type": "custom-content",
+      "blocks": {
+        "image_zpHD8e": {
+          "type": "image",
+          "settings": {
+            "width": "full",
+            "image": "shopify://shop_images/2_ecf53250-fd2a-431a-98dd-1a24f9c44f5b.png",
+            "mobile_image": "shopify://shop_images/2-_-_1.png",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 820,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        }
+      },
+      "block_order": ["image_zpHD8e"],
+      "custom_css": [
+        "@media (max-width: 767px) {.h1 {font-size: 12px; margin: 0px; }}"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "custom_content_P8JdED": {
+      "type": "custom-content",
+      "blocks": {
+        "text_x4mk4U": {
+          "type": "text",
+          "settings": {
+            "width": "three-quarters",
+            "subheading": "",
+            "title": "",
+            "text": "<p>XbotGo Chameleon is a smart phone accessory designed to enhance sports recording. Using its built-in camera and AI, it tracks players, the ball, or key events in real time, keeping the action in focus without manual adjustments. </p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        },
+        "video_caRieh": {
+          "type": "video",
+          "settings": {
+            "width": "full",
+            "video_shopify": "shopify://files/videos/Chameleon video.mp4",
+            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_description": "",
+            "autoplay": true
+          }
+        }
+      },
+      "block_order": ["text_x4mk4U", "video_caRieh"],
+      "custom_css": [
+        "@media (max-width: 767px) {.height--adapt {height: 300px; } .block-id-text_x4mk4U {font-size: 12px; }}"
+      ],
+      "settings": {
+        "alignment": "bottom"
+      }
+    },
+    "key_features_AUqM3N": {
+      "type": "key-features",
+      "blocks": {
+        "feature_FwxLdB": {
+          "type": "feature",
+          "settings": {
+            "video_shopify": "shopify://files/videos/2月4日 轮播1.mp4",
+            "bg_color": "#000000",
+            "bg_gradient": "",
+            "text_color": "#f8f8f8",
+            "heading": "Revolutionary Team Sports Tracking",
+            "text": "<p>Tailored for team sports tracking, it effortlessly covers soccer, basketball, hockey, football, rugby, lacrosse and more.</p>",
+            "show_segments": false,
+            "segments": 6,
+            "active_segment": "1",
+            "fill_segments": false,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        }
+      },
+      "block_order": ["feature_FwxLdB"],
+      "custom_css": [
+        ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}",
+        "@media (max-width: 767px) {.height--adapt {height: 300px; } .feature-text-paired {font-size: 12px; }}"
+      ],
+      "settings": {
+        "heading": "Key features",
+        "image_max_width": 700,
+        "media_aspect_ratio": "1.5",
+        "image_position": "left",
+        "segment_position": "over-text"
+      }
+    },
+    "rich_text_3jzhpF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NdJBFg": {
+          "type": "heading",
+          "settings": {
+            "title": "Different Sports Modes",
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": ["heading_NdJBFg"],
+      "custom_css": [
+        ".h1 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}",
+        "@media (max-width: 767px) {.h1 {align-content: left; font-size: 20px; }}"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "gallery_npYRbQ": {
+      "type": "gallery",
+      "blocks": {
+        "media_Gd37fw": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/6704a32e1ad1e72bc0c793a312646b9f_d5fd55f7-7766-485e-8477-438841cf644d.jpg",
+            "enlarge_media": true,
+            "subheading": "",
+            "title": "Soccer",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_LitkaM": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Icehockey_1.25x_1.5x.png",
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "Ice Hockey",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_xJUc97": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Tennis_1.5x.png",
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "Tennis",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_WUEcn9": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/rugby_1.25x.png",
+            "enlarge_media": true,
+            "subheading": "",
+            "title": "Rugby",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "media_Gd37fw",
+        "media_LitkaM",
+        "media_xJUc97",
+        "media_WUEcn9"
+      ],
+      "custom_css": [
+        ".gallery__item {transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 25px;}",
+        "@media (hover: hover) and (pointer: fine) {.gallery__item:hover {transform: scale(1.1); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); position: relative; background-size: auto 100%; cursor: pointer; }}",
+        "@media (hover: hover) and (pointer: fine) {.gallery__item:hover .text-overlay {opacity: 1; transform: translateY(0); }}"
+      ],
+      "settings": {
+        "grid_desktop": 4,
+        "grid_mobile": "1",
+        "height": "fixed",
+        "desktop_image_height": 460,
+        "mobile_image_height": 400,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": true,
+        "full_width": false,
+        "color_scheme": "default",
+        "enable_carousel": true,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "key_features_RzmHFg": {
+      "type": "key-features",
+      "blocks": {
+        "feature_ndn46G": {
+          "type": "feature",
+          "settings": {
+            "video_shopify": "shopify://files/videos/球衣号码追踪.mov",
+            "bg_color": "rgba(0,0,0,0)",
+            "bg_gradient": "",
+            "text_color": "#e2e2e2",
+            "heading": "Accurate Player Tracking ",
+            "text": "<p>Leveraging re-identification technology, FollowMe 2.0 intelligently identifies and locks onto an athlete based on their appearance, body shape, jersey number, and more, ensuring seamless tracking even amidst distractions.</p>",
+            "show_segments": false,
+            "segments": 6,
+            "active_segment": "2",
+            "fill_segments": false,
+            "show_labels": false,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        }
+      },
+      "block_order": ["feature_ndn46G"],
+      "custom_css": [
+        ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}"
+      ],
+      "settings": {
+        "heading": "Key features",
+        "image_max_width": 700,
+        "media_aspect_ratio": "1.5",
+        "image_position": "right",
+        "segment_position": "over-text"
+      }
+    },
+    "key_features_PVRQ73": {
+      "type": "key-features",
+      "blocks": {
+        "feature_wjNgx6": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/followme_1.5x.png",
+            "video_shopify": "shopify://files/videos/版位7FollowMe 3.0.mp4",
+            "bg_color": "rgba(0,0,0,0)",
+            "bg_gradient": "",
+            "text_color": "#e2e2e2",
+            "heading": "FollowMe Mode",
+            "text": "<p>Leveraging re-identification technology, FollowMe 2.0 intelligently identifies and locks onto an athlete based on their appearance, body shape, jersey number, and more, ensuring seamless tracking even amidst distractions.</p>",
+            "show_segments": false,
+            "segments": 6,
+            "active_segment": "2",
+            "fill_segments": false,
+            "show_labels": false,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        }
+      },
+      "block_order": ["feature_wjNgx6"],
+      "custom_css": [
+        ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}"
+      ],
+      "settings": {
+        "heading": "",
+        "image_max_width": 700,
+        "media_aspect_ratio": "1.5",
+        "image_position": "left",
+        "segment_position": "over-text"
+      }
+    },
+    "video_NpBf8W": {
+      "type": "video",
+      "blocks": {
+        "heading_HMykLw": {
+          "type": "heading",
+          "settings": {
+            "title": "Capture, Edit, Share",
+            "heading_max_width": 15,
+            "title_size": 40,
+            "title_size_mobile": 20,
+            "use_h1": false
+          }
+        },
+        "text_iKtkz9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Chameleon comes with complimentary cloud storage (20G), empowering you to securely store and access your precious memories from anywhere, anytime.</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": ["heading_HMykLw", "text_iKtkz9"],
+      "custom_css": [
+        ".h1 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}",
+        ".video-section__play-btn {display: none;}",
+        "@media (max-width: 767px) {.height--adapt {height: 300px; } .text-overlay {font-size: 11px; }}"
+      ],
+      "settings": {
+        "video_shopify": "shopify://files/videos/版位14直播&amp;云存储功能素材2.mp4",
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_description": "",
+        "placeholder_image": "shopify://shop_images/f9125fe25da9fa2b155c3009b55ee438.png",
+        "text_alignment": "center left",
+        "full_width": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "multi_column_BhjxRk": {
+      "type": "multi-column",
+      "blocks": {
+        "text_block_jyk43f": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/07d788ca876542e7833d7edc491256cb.png",
+            "title": "",
+            "text": "<p><strong>Movement Trends Analysis</strong></p><p>Our AI patented advanced technology seamlessly captures the game by taking into account the ball's location, as well as the speed, direction, and pose of multiple players.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_kHD6Pi": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/score_1.5x.png",
+            "title": "",
+            "text": "<p><strong>ScoreSync:  Real-Time, Customizable,  Seamless.</strong></p><p>Elevate your sports experience with our feature that seamlessly integrates live scoreboards into your recordings. Watch your games and events come alive with real-time updates. </p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_8Lgeqr": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/effort_1.5x.png",
+            "title": "",
+            "text": "<p><strong>Effortless Set-Up</strong></p><p>You can now effortlessly master the Chameleon's functionality in just 3 minutes and complete the entire setup in less than 1 minute.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_jyk43f",
+        "text_block_kHD6Pi",
+        "text_block_8Lgeqr"
+      ],
+      "custom_css": [
+        ".hometitle {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}",
+        ".theme-img {border-radius: 25px;}",
+        "@media (max-width: 767px) {.text-column {font-size: 11px; }}"
+      ],
+      "settings": {
+        "title": "Our Advantages",
+        "media_aspect_ratio": "s",
+        "media_width": 700,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    },
+    "custom_content_p3XKqw": {
+      "type": "custom-content",
+      "blocks": {
+        "image_fwPX43": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify://shop_images/120.png",
+            "height": "fixed",
+            "height_desktop": 240,
+            "height_mobile": 180,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "text_hhdYXE": {
+          "type": "text",
+          "settings": {
+            "width": "third",
+            "subheading": "",
+            "title": "",
+            "text": "<p><strong>Ultra-wide 120°(FOV)</strong></p><p>Best-in-class sports recorder with 120° ultra-wide FOV .  Capture every angle with precision for perfect game coverage.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        },
+        "text_d3W9cz": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "",
+            "text": "<p><strong>360° Panoramic Tracking</strong></p><p>With its cutting-edge industrial and mechanical design, our latest innovation brings you the remarkable ability to achieve seamless 360° Panoramic Tracking.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        },
+        "image_fF8PYe": {
+          "type": "image",
+          "settings": {
+            "width": "third",
+            "image": "shopify://shop_images/360.png",
+            "height": "fixed",
+            "height_desktop": 320,
+            "height_mobile": 180,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        }
+      },
+      "block_order": [
+        "image_fwPX43",
+        "text_hhdYXE",
+        "text_d3W9cz",
+        "image_fF8PYe"
+      ],
+      "custom_css": [
+        ".hometitle {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}",
+        ".theme-img {border-radius: 25px;}",
+        "@media (max-width: 767px) {.block-id-text_d3W9cz {font-size: 11px; } .block-id-text_hhdYXE {font-size: 11px; }}"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "custom_liquid_XaQ9PL": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "show_space": true,
+        "code": ""
+      }
+    },
+    "custom_content_mNzKhF": {
+      "type": "custom-content",
+      "blocks": {
+        "image_xGw3qH": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify://shop_images/8h.png",
+            "height": "fixed",
+            "height_desktop": 240,
+            "height_mobile": 160,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "text_JHBdjJ": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "",
+            "text": "<p><strong>AI Processor and 8 hours Stand by</strong></p><p>The Chameleon’s massive 6000 mAh battery delivers up to <br/>8 hours of recording time—keeping you in the game longer than ever!</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        },
+        "text_QePCHm": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "",
+            "text": "<p><strong>50m Tracking Distance</strong></p><p>Stunning High-Angle Shots, You can capturing every thrilling moment from a bird's-eye view. With a distance of 50 meters, you can easily capture every corner of the football field, with the ball chasing and running without the ball.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        },
+        "image_WhbTr6": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify://shop_images/118.png",
+            "height": "adapt",
+            "height_desktop": 240,
+            "height_mobile": 260,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        }
+      },
+      "block_order": [
+        "image_xGw3qH",
+        "text_JHBdjJ",
+        "text_QePCHm",
+        "image_WhbTr6"
+      ],
+      "custom_css": [
+        ".theme-img {border-radius: 25px;}",
+        "@media (max-width: 767px) {.block-id-text_JHBdjJ {font-size: 11px; } .block-id-text_QePCHm {font-size: 11px; }}"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "key_features_WpPHKt": {
+      "type": "key-features",
+      "blocks": {
+        "feature_FLxnaq": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/120.png",
+            "bg_color": "#000000",
+            "bg_gradient": "",
+            "text_color": "#e2e2e2",
+            "heading": "Ultra Wide-Angle AI Lens",
+            "text": "<p>Describe a key feature in detail.</p>",
+            "show_segments": true,
+            "segments": 6,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_mYAi67": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/360.png",
+            "bg_color": "#232323",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "Fit",
+            "text": "<p>Describe a key feature in detail.</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_iDTG9B": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/8h.png",
+            "bg_color": "#000000",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "Fit",
+            "text": "<p>Describe a key feature in detail.</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        }
+      },
+      "block_order": ["feature_FLxnaq", "feature_mYAi67", "feature_iDTG9B"],
+      "disabled": true,
+      "settings": {
+        "heading": "AI Processor and 8 hours Stand by",
+        "image_max_width": 480,
+        "media_aspect_ratio": "1.5",
+        "image_position": "left",
+        "segment_position": "over-text"
+      }
+    },
+    "featured_product_RncCUG": {
+      "type": "featured-product",
+      "blocks": {
+        "title_3JzabH": {
+          "type": "title",
+          "settings": {}
+        },
+        "divider_KrN9bz": {
+          "type": "divider",
+          "settings": {}
+        },
+        "variant_picker_MUFtQr": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": false,
+            "selector_style": "listed",
+            "enable_dynamic_availability": true,
+            "enable_size_chart": false,
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "buy_buttons_iHkrdh": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_backorder_text": false,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "title_3JzabH",
+        "divider_KrN9bz",
+        "variant_picker_MUFtQr",
+        "buy_buttons_iHkrdh"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
+        "select_first_variant": true,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": true,
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": false,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "custom_tab_4_GFKfHJ": {
+      "type": "custom-tab-4",
+      "disabled": true,
+      "settings": {
+        "tab-title": "Recommended by",
+        "tab1": "JMTech",
+        "tab2": "MrBlack",
+        "tab3": "Lo Knows",
+        "tab4": "Tim Rundle",
+        "image1": "shopify://shop_images/head3.jpg",
+        "tab-txt-title1": "Capturing smooth and professional-grade",
+        "tab-txt-content1": "videos has never been easier, thanks to the cutting-edge technology packed into the XbotGo. Say goodbye to shaky shots and hello to cinematic excellence! 🎥✨",
+        "image2": "shopify://shop_images/head4.jpg",
+        "tab-txt-title2": "It's a really good budget friendly",
+        "tab-txt-content2": "It's a really good budget friendly way to capture the game without needing to be attending the phone. The real highlight is the accompanying Xbot Go app, which offers various sports modes and AI tracking capabilities.",
+        "image3": "shopify://shop_images/head1.jpg",
+        "tab-txt-title3": "The Xbot Ai Cameran Sports",
+        "tab-txt-content3": "Tracking Gimbal could be a solid option to track sports footage on your phone. Is smart Ai tracking ability will make sure it captures all the action and the smart app will even let you stream live to various platforms.",
+        "image4": "shopify://shop_images/head2.jpg",
+        "tab-txt-title4": "Join us as we dive into the",
+        "tab-txt-content4": "world of videography, exploring the capabilities and features of the XbotGo. This compact and lightweight gimbal offers a game-changing stabilisation system, while sat on a tripod leaving you free to enjoy the game.",
+        "video_url1": "fuX6zbSr2w4",
+        "video_url2": "kY1we8vseRg",
+        "video_url3": "GxVVmiTGayo",
+        "video_url4": "F-dc_51ULLc"
+      }
+    },
+    "image_with_text_overlay_YfDQgF": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_TebiVq": {
+          "type": "heading",
+          "settings": {
+            "title": "Apple Watch & Remote Control",
+            "heading_max_width": 18,
+            "title_size": 40,
+            "title_size_mobile": 20,
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": ["heading_TebiVq"],
+      "settings": {
+        "image": "shopify://shop_images/1.5x_e4ef58d5-3beb-4015-99f2-0ddf3707499f.png",
+        "mobile_image": "shopify://shop_images/11_71852123-86f7-401a-a4be-aaa7792418bc.png",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 260,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "bottom left",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "custom_liquid_KymN7U": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "show_space": true,
+        "code": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Chameleon vs. Gimbal Comparison</title>\n  <style>\n    body {\n      font-family: Arial, sans-serif;\n      background: black;\n      color: white;\n      margin: 0;\n      padding: 0;\n    }\n    .table-container {\n      width: 100%;\n      max-width: 100%;\n      overflow-x: auto;\n      padding: 10px;\n    }\n    table {\n      width: 100%;\n      max-width: 800px;\n      margin: 20px auto;\n      border-collapse: collapse;\n      overflow: hidden;\n      min-width: 600px;\n    }\n    th, td {\n      padding: 12px;\n      text-align: center;\n      word-wrap: break-word;\n    }\n    th {\n      background-color: #333;\n      color: #fff;\n    }\n    td {\n      background-color: #222;\n    }\n    a.button {\n      display: inline-block;\n      margin-top: 8px;\n      padding: 10px 20px;\n      background: linear-gradient(to right, #f27b00, #ca251d);\n      color: white;\n      text-decoration: none;\n      border-radius: 25px;\n    }\n    .product-image {\n      width: 100px;\n      height: auto;\n    }\n    /* Mobile adjustments */\n    @media (max-width: 600px) {\n      .product-image {\n        width: 80px;\n      }\n      table {\n        min-width: 600px; /* Keeps table horizontally scrollable on small screens */\n      }\n    }\n  </style>\n</head>\n<body>\n\n<div class=\"table-container\">\n  <table>\n    <thead>\n      <tr>\n        <th style=\"width: 168px;\"></th>\n        <th style=\"width: 234px;\">Chameleon</th>\n        <th style=\"width: 185px;\">Gimbal</th>\n      </tr>\n      <tr>\n        <td></td>\n        <!-- Chameleon Column -->\n        <td>\n          <img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/XbotGo_Chameleon_1.25x.png?v=1730789629\" alt=\"Chameleon Image\" class=\"product-image\">\n          <br>\n          <a href=\"https://xbotgo.com/pages/xbotgo-chameleon\" class=\"button\">Learn More</a>\n        </td>\n        <!-- Gimbal Column -->\n        <td>\n          <img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/XbotGo_Gimbal_1.25x.png?v=1730789674\" alt=\"Gimbal Image\" class=\"product-image\">\n          <br>\n          <a href=\"GIMBAL_PAGE_URL\" class=\"button\">Learn More</a>\n        </td>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td>Tracking Accuracy</td>\n        <td>95%</td>\n        <td>85%</td>\n      </tr>\n      <tr>\n        <td>Resolution Setting</td>\n        <td>720p/1080p/4K</td>\n        <td>720p/1080p</td>\n      </tr>\n      <tr>\n        <td>FPS Setting</td>\n        <td>Up to 60 FPS</td>\n        <td>Fixed 30 FPS</td>\n      </tr>\n      <tr>\n        <td>Operating Time</td>\n        <td>8 hrs</td>\n        <td>4 hrs</td>\n      </tr>\n      <tr>\n        <td>Cell Phone Recording Duration</td>\n        <td>5-6 hrs</td>\n        <td>3 hrs</td>\n      </tr>\n      <tr>\n        <td>AI Co-processor</td>\n        <td>Yes</td>\n        <td>No</td>\n      </tr>\n      <tr>\n        <td>Charging Time</td>\n        <td>4 hours</td>\n        <td>80 minutes</td>\n      </tr>\n      <tr>\n        <td>Weight</td>\n        <td>540g</td>\n        <td>362g</td>\n      </tr>\n      <tr>\n        <td>Adjustment Angle</td>\n        <td>Left/Right: 360° <br> Pitch: +/- 20°</td>\n        <td>Adjustable Tilt Angle +30°/-30°<br> Roll Angle +90°/-90°<br> Pan Angle +240°/-100°</td>\n      </tr>\n      <tr>\n        <td>Dimensions</td>\n        <td>125mm×100mm×60mm</td>\n        <td>Expanded: 260mm x 130mm x 88mm <br>Folded: 152mm x 110mm x 46.6mm</td>\n      </tr>\n      <tr>\n        <td>Adaptation of Cell Phone Size</td>\n        <td>Diagonal: ≤180mm<br>Width: 55-90mm<br>Thickness: ≤9.5mm</td>\n        <td>Diagonal: ≤180mm<br>Width: 55-90mm<br>Thickness: ≤9.5mm</td>\n      </tr>\n      <tr>\n        <td>Jersey Number Tracking</td>\n        <td>Yes</td>\n        <td>No</td>\n      </tr>\n      <tr>\n        <td>Portrait Video</td>\n        <td>No</td>\n        <td>No</td>\n      </tr>\n      <tr>\n        <td>Charger Power</td>\n        <td>5V/2A</td>\n        <td>5V/2A</td>\n      </tr>\n      <tr>\n        <td>Ports and Scalability</td>\n        <td>One USB port</td>\n        <td>One USB port</td>\n      </tr>\n      <tr>\n        <td>Connectivity</td>\n        <td>Bluetooth</td>\n        <td>Bluetooth</td>\n      </tr>\n      <tr>\n        <td>Operating Temperature</td>\n        <td>0°C - 40°C</td>\n        <td>0°C - 40°C</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\n\n</body>\n</html>"
+      }
+    },
+    "164816450788232cf9": {
+      "type": "logo-list",
+      "blocks": {
+        "e1e46599-c670-480d-825b-f854d0c0db30": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/ESPN_87359612-3b56-42e7-9701-5b1542076db9.png",
+            "image_width": 80,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_LA7DQX": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/download.jpg",
+            "image_width": 40,
+            "link": "",
+            "title": ""
+          }
+        },
+        "25f715aa-5be0-4e19-9547-eb4d068459f8": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/cr_w-317_h-200.png",
+            "image_width": 80,
+            "link": "",
+            "title": ""
+          }
+        },
+        "9b01c355-8a5b-49eb-937c-e0e68fdbbca5": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/rs_w-200_h-200_cg-true.png",
+            "image_width": 80,
+            "link": "",
+            "title": ""
+          }
+        },
+        "b023a957-e3b3-4e33-b6ae-7992278ac9e3": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/newswatch-XbotGo_6364d3b8-c95a-4527-90b0-b91f587c7261.png",
+            "image_width": 80,
+            "link": "",
+            "title": ""
+          }
+        },
+        "645c91dd-d8ab-4c76-9371-eb7f9e793e3d": {
+          "type": "logo",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/cr_w-200_h-200.jpg",
+            "image_width": 100,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_VdUkMb": {
+          "type": "logo",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/XbotGo_FeatureIn_USNEWS.png",
+            "image_width": 120,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_97GFzi": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/FileTime_Magazine_logo_1_bbc92690-d774-4a1b-a41b-a6f61a4f7359.png",
+            "image_width": 80,
+            "link": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "e1e46599-c670-480d-825b-f854d0c0db30",
+        "logo_LA7DQX",
+        "25f715aa-5be0-4e19-9547-eb4d068459f8",
+        "9b01c355-8a5b-49eb-937c-e0e68fdbbca5",
+        "b023a957-e3b3-4e33-b6ae-7992278ac9e3",
+        "645c91dd-d8ab-4c76-9371-eb7f9e793e3d",
+        "logo_VdUkMb",
+        "logo_97GFzi"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "title": "Featured In",
+        "image_opacity": 100,
+        "color_scheme": "default"
+      }
+    },
+    "testimonials_N6HpgR": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_3xjmWj": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "\"I am very satisfied with the product, it does what I wanted as a technical director of the academy, it gave us many solutions in the field of video analysis, of course i 'm still not fully familiar with all its possibilities because I am a new user of the product. Very helpful with immediate responses from the company side to the problems that arose. Excellent job.\"",
+            "author": "PANAGIOTIS T",
+            "image": "shopify://shop_images/review1.jpg",
+            "image_caption": "",
+            "link": ""
+          }
+        },
+        "testimonial_Acqf8c": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "\"I am a head coach for both a high school highly competitive winter basketball team and I coach AAU during the rest of the year for basketball. This solution is the most cost effective and it gets the job done. I expect to start seeing these everywhere like AAU tournaments and such from here on out. \"",
+            "author": "David B",
+            "image": "shopify://shop_images/review2.jpg",
+            "image_caption": "",
+            "link": ""
+          }
+        },
+        "testimonial_K4xmJa": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "\"The kids are running around and the phone just follows around. It's pretty accurate and it's good for the kids to review how they did and how could they have done better. Livestreaming is a cool feature as well.I will buy it again to gift someone else.\"",
+            "author": "Jill D",
+            "image": "shopify://shop_images/review3.jpg",
+            "image_caption": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_3xjmWj",
+        "testimonial_Acqf8c",
+        "testimonial_K4xmJa"
+      ],
+      "settings": {
+        "title": "Customer reviews",
+        "layout": "image-right",
+        "text_caps": false,
+        "quote_text_size": 22,
+        "quote_text_size_mobile": 16,
+        "image_shape": "landscape",
+        "color_scheme": "1",
+        "autoplay": true,
+        "autoplay_speed": 6
+      }
+    },
+    "featured_blog_hEUTet": {
+      "type": "featured-blog",
+      "custom_css": [
+        "/* Add this CSS to enable horizontal sliding for each blog slice on mobile */@media (max-width: 767px) {.article-list {overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; } .article-list .article {display: inline-block; vertical-align: top; width: 90%; /* Adjust width as needed */ max-width: 300px; /* Adjust max-width as needed */ margin-right: 10px; /* Adjust margin as needed */ padding: 0 10px; /* Adjust padding as needed */ } .article-list .article:not(:first-child) {display: none; }}"
+      ],
+      "settings": {
+        "title": "Blog posts",
+        "blog": "technology-development",
+        "post_limit": 3,
+        "show_author": true,
+        "show_date": true,
+        "show_excerpts": false,
+        "crop_ratio": "1.78",
+        "color_scheme": "1"
+      }
+    },
+    "newsletter_KKbwEG": {
+      "type": "newsletter",
+      "settings": {
+        "title": "Subscribe to our newsletter",
+        "subheading": "<p>Join our mailing list to get $20 off your first Xbot order.</p>",
+        "color_scheme": "default"
+      }
+    }
+  },
+  "order": [
+    "background_video_rRNkK9",
+    "slideshow_yDTLyV",
+    "countdown_timer_8wR437",
+    "custom_content_NLBDX3",
+    "custom_content_P8JdED",
+    "key_features_AUqM3N",
+    "rich_text_3jzhpF",
+    "gallery_npYRbQ",
+    "key_features_RzmHFg",
+    "key_features_PVRQ73",
+    "video_NpBf8W",
+    "multi_column_BhjxRk",
+    "custom_content_p3XKqw",
+    "custom_liquid_XaQ9PL",
+    "custom_content_mNzKhF",
+    "key_features_WpPHKt",
+    "featured_product_RncCUG",
+    "custom_tab_4_GFKfHJ",
+    "image_with_text_overlay_YfDQgF",
+    "custom_liquid_KymN7U",
+    "164816450788232cf9",
+    "testimonials_N6HpgR",
+    "featured_blog_hEUTet",
+    "newsletter_KKbwEG"
+  ]
+}

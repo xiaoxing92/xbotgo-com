@@ -1,0 +1,237 @@
+<link rel="stylesheet" href="{{ 'custom-tab-4.css' | asset_url }}" type="text/css">
+
+<div class="main-tab-container4">
+    <div class="tab-title4">{{ section.settings.tab-title }}</div>
+    <div id="tabs4" class="tab-container4">
+        <div class="tab4 active" onclick="showTab4(0)">{{ section.settings.tab1 }}</div>
+        <div class="tab4" onclick="showTab4(1)">{{ section.settings.tab2 }}</div>
+        <div class="tab4 " onclick="showTab4(2)">{{ section.settings.tab3 }}</div>
+        <div class="tab4" onclick="showTab4(3)">{{ section.settings.tab4 }}</div>
+    </div>
+    <div class="tab-content-container4 active">
+        <div class="video-container4">
+            <iframe src="https://www.youtube.com/embed?video_id={{ section.settings.video_url1 }}" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="text-container4">
+            <div class="text-image4">
+                <img src="{{ section.settings.image1 | img_url: '600x300'}}"></img>
+            </div>
+            <div class="text-c4">
+                <b>{{ section.settings.tab-txt-title1 }}</b><br/>
+                <span>
+                    {{ section.settings.tab-txt-content1 }}
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content-container4">
+        <div class="video-container4">
+            <iframe src="https://www.youtube.com/embed?video_id={{ section.settings.video_url2 }}" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="text-container4">
+            <div class="text-image4">
+                <img src="{{ section.settings.image2 | img_url: '600x300'}}"></img>
+            </div>
+            <div class="text-c4">
+                <b>{{ section.settings.tab-txt-title2 }}</b><br/>
+                <span>{{ section.settings.tab-txt-content2 }}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-content-container4">
+        <div class="video-container4">
+            <iframe src="https://www.youtube.com/embed?video_id={{ section.settings.video_url3 }}" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="text-container4">
+            <div class="text-image4">
+                <img src="{{ section.settings.image3 | img_url: '600x300'}}"></img>
+            </div>
+            <div class="text-c4">
+                <b>{{ section.settings.tab-txt-title3 }}</b><br/>
+                <span>{{ section.settings.tab-txt-content3 }}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-content-container4">
+        <div class="video-container4">
+            <iframe src="https://www.youtube.com/embed?video_id={{ section.settings.video_url4 }}" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="text-container4">
+            <div class="text-image4">
+                <img src="{{ section.settings.image4 | img_url: '600x300'}}"></img>
+            </div>
+            <div class="text-c4">
+                <b>{{ section.settings.tab-txt-title4 }}</b><br/>
+                <span>{{ section.settings.tab-txt-content4 }}</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showTab4(index) {
+        var tabs = document.getElementById('tabs4').getElementsByTagName('div');
+        var tabContent = document.getElementsByClassName('tab-content-container4');
+        for (var i = 0; i < tabs.length; i++) {
+            tabs[i].classList.remove('active');
+            tabContent[i].classList.remove('active');
+        }
+        tabs[index].classList.add('active');
+        tabContent[index].classList.add('active');
+    }  
+</script>
+{% schema %}
+{
+  "name": "custom tab 4",
+  "class": "section-tab-4",
+  "settings": [
+  {
+    "id": "tab-title",
+    "type": "text",
+    "label": "tab-title",
+    "default": "Recommended by"
+  },
+  {
+    "id": "tab1",
+    "type": "text",
+    "label": "tab1",
+    "default": "JMTech"
+  },
+  {
+    "id": "tab2",
+    "type": "text",
+    "label": "tab2",
+    "default": "Bighenet"
+  },
+  {
+    "id": "tab3",
+    "type": "text",
+    "label": "tab3",
+    "default": "JMTech"
+  },
+  {
+    "id": "tab4",
+    "type": "text",
+    "label": "tab4",
+    "default": "Bighenet"
+  },
+  {
+    "type":"image_picker",
+    "id":"image1",
+    "label":"tab-image1"
+  },
+  {
+    "type":"image_picker",
+    "id":"mobile_image1",
+    "label":"tab-image1"
+  },
+  {
+    "id": "tab-txt-title1",
+    "type": "text",
+    "label": "tab-txt-title1",
+    "default": "content"
+  },
+  {
+    "id": "tab-txt-content1",
+    "type": "textarea",
+    "label": "tab-txt-content1",
+    "default": "content"
+  },
+  {
+    "type":"image_picker",
+    "id":"image2",
+    "label":"tab-image2"
+  },
+  {
+    "type":"image_picker",
+    "id":"mobile_image2",
+    "label":"tab-image2"
+  },
+  {
+    "id": "tab-txt-title2",
+    "type": "text",
+    "label": "tab-txt-title2",
+    "default": "content"
+  },
+  {
+    "id": "tab-txt-content2",
+    "type": "textarea",
+    "label": "tab-txt-content2",
+    "default": "content"
+  },
+  {
+    "type":"image_picker",
+    "id":"image3",
+    "label":"tab-image3"
+  },
+  {
+    "type":"image_picker",
+    "id":"mobile_image3",
+    "label":"tab-image3"
+  },
+  {
+    "id": "tab-txt-title3",
+    "type": "text",
+    "label": "tab-txt-title3",
+    "default": "content"
+  },
+  {
+    "id": "tab-txt-content3",
+    "type": "textarea",
+    "label": "tab-txt-content3",
+    "default": "content"
+  },
+  {
+    "type":"image_picker",
+    "id":"image4",
+    "label":"tab-image4"
+  },
+  {
+    "type":"image_picker",
+    "id":"mobile_image4",
+    "label":"tab-image4"
+  },
+  {
+    "id": "tab-txt-title4",
+    "type": "text",
+    "label": "tab-txt-title4",
+    "default": "content"
+  },
+  {
+    "id": "tab-txt-content4",
+    "type": "textarea",
+    "label": "tab-txt-content4",
+    "default": "content"
+  },
+  {
+    "type": "text",
+    "id": "video_url1",
+    "label":"video_url_label1",
+    "default": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4"
+  },
+  {
+    "type": "text",
+    "id": "video_url2",
+    "label":"video_url_label2",
+    "default": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4"
+  },
+  {
+    "type": "text",
+    "id": "video_url3",
+    "label":"video_url_label3",
+    "default": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4"
+  },
+  {
+    "type": "text",
+    "id": "video_url4",
+    "label":"video_url_label4",
+    "default": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4"
+  }],
+  "presets": [
+  {
+    "name": "custom tab 4"
+  }]
+}
+{% endschema %}

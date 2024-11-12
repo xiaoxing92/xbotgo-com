@@ -1,0 +1,1049 @@
+{
+    "sections": {
+        "16359276425da8ce46": {
+            "type": "slideshow",
+            "blocks": {
+                "image_fz6nVt": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/XbotGo_chameleon.png",
+                        "mobile_image": "shopify:\/\/shop_images\/M-_banner.png",
+                        "slide_link": "",
+                        "subheading": "Play Hard  Film Smart",
+                        "title": "XbotGo Chameleon",
+                        "heading_max_width": 16,
+                        "title_size": 42,
+                        "title_size_mobile": 24,
+                        "use_h1": false,
+                        "text": "<p>Your AI Sports Cameraman<\/p>",
+                        "enlarge_text": false,
+                        "button_label_1": "BUY NOW",
+                        "button_url_1": "shopify:\/\/products\/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
+                        "button_label_2": "",
+                        "button_url_2": "https:\/\/xbotgo.com\/discount\/Treat20?redirect=%2Fproducts%2Fcell-phone-sports-gimbal-stabilizer",
+                        "text_alignment": "center left"
+                    }
+                },
+                "image_YhwmWV": {
+                    "type": "image",
+                    "disabled": true,
+                    "settings": {
+                        "slide_link": "",
+                        "subheading": "Tell your story",
+                        "title": "Slide heading",
+                        "heading_max_width": 15,
+                        "title_size": 84,
+                        "title_size_mobile": 46,
+                        "use_h1": false,
+                        "text": "<p>And optional subtext<\/p>",
+                        "enlarge_text": true,
+                        "button_label_1": "Shop this",
+                        "button_url_1": "",
+                        "button_label_2": "Shop all",
+                        "button_url_2": "",
+                        "text_alignment": "center center"
+                    }
+                },
+                "image_EHrpCV": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/xbotgo-ble-banner.jpg",
+                        "mobile_image": "shopify:\/\/shop_images\/MB-bg3_776a232c-0d06-4fcd-b046-297238a2f970.jpg",
+                        "slide_link": "shopify:\/\/pages\/xbotgo-ai-sports-gimbal",
+                        "subheading": "Play Hard  Film Smart",
+                        "title": "AI-Powered Sports Gimbal",
+                        "heading_max_width": 21,
+                        "title_size": 54,
+                        "title_size_mobile": 28,
+                        "use_h1": false,
+                        "text": "",
+                        "enlarge_text": true,
+                        "button_label_1": "BUY NOW",
+                        "button_url_1": "https:\/\/xbotgo.com\/discount\/Treat20?redirect=%2Fproducts%2Fcell-phone-sports-gimbal-stabilizer",
+                        "button_label_2": "",
+                        "button_url_2": "",
+                        "text_alignment": "center left"
+                    }
+                }
+            },
+            "block_order": ["image_fz6nVt", "image_YhwmWV", "image_EHrpCV"],
+            "custom_css": [".text-overlay {position: relative; top: 5%; left: 5%; font-size: 20px;}", ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px;}", "@media (max-width: 767px) {.text-overlay {position: relative; top: -5%; left: 5%; font-size: 15px; } .btn {width: 130px; text-align: center; font-size: 12px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; top: 115%; left: 22%; }}"],
+            "settings": {
+                "height": "adapt",
+                "height_desktop": 680,
+                "height_mobile": 360,
+                "full_width": true,
+                "mobile_overlay_under": false,
+                "overlay_style": "full",
+                "transition": "slide-fade",
+                "navigation": "dots",
+                "autoplay": false,
+                "autoplay_speed": 5,
+                "accessibility_info": ""
+            }
+        },
+        "custom_content_Cjmqy6": {
+            "type": "custom-content",
+            "blocks": {
+                "text_ahpymj": {
+                    "type": "text",
+                    "settings": {
+                        "width": "full",
+                        "subheading": "",
+                        "title": "20+ Sports Mode Supported",
+                        "text": "<p>Step into the world of effortless team sports game recording with XbotGo, <br\/>the first consumer-grade AI Sports Smartphone Cameraman. This innovative device offers a new perspective in capturing team sports, delivering professional-grade, autonomous tracking of on-field action. XbotGo simplifies recording complexities with its advanced algorithms, ensuring seamless and comprehensive coverage of every play.<\/p>",
+                        "button_label": "",
+                        "button_link": "",
+                        "button_style": "primary",
+                        "text_alignment": "center"
+                    }
+                },
+                "image_jCEkac": {
+                    "type": "image",
+                    "settings": {
+                        "width": "half",
+                        "image": "shopify:\/\/shop_images\/825.png",
+                        "height": "adapt",
+                        "height_desktop": 600,
+                        "height_mobile": 500,
+                        "subheading": "",
+                        "title": "",
+                        "text": "",
+                        "enlarge_text": false,
+                        "button_label": "",
+                        "button_style": "primary",
+                        "image_link": "",
+                        "text_alignment": "center center",
+                        "mobile_overlay_under": false,
+                        "overlay_style": "shadow"
+                    }
+                },
+                "video_Cig4DQ": {
+                    "type": "video",
+                    "settings": {
+                        "width": "full",
+                        "video_shopify": "shopify:\/\/files\/videos\/video.mp4",
+                        "video_external": "",
+                        "video_description": "",
+                        "autoplay": true
+                    }
+                }
+            },
+            "block_order": ["text_ahpymj", "image_jCEkac", "video_Cig4DQ"],
+            "custom_css": [".theme-img {border-radius: 25px; overflow: hidden; display: inline-block;}", ".video-section {width: 100%; display: block;}", "@media (max-width: 767px) {.block-id-text_ahpymj {font-size: 11px; vertical-align: left; } .h1 {font-size: 16px; }}"],
+            "settings": {
+                "alignment": "top"
+            }
+        },
+        "rich_text_W39bMz": {
+            "type": "rich-text",
+            "blocks": {
+                "heading_XxeXz8": {
+                    "type": "heading",
+                    "settings": {
+                        "title": "Different Sports Modes",
+                        "use_h1": false
+                    }
+                }
+            },
+            "block_order": ["heading_XxeXz8"],
+            "custom_css": ["@media (max-width: 767px) {.h1 {font-size: 16px; }}"],
+            "settings": {
+                "height": "small",
+                "text_alignment": "center",
+                "full_width": false,
+                "color_scheme": "default"
+            }
+        },
+        "gallery_D3MpWT": {
+            "type": "gallery",
+            "blocks": {
+                "media_DJnbfB": {
+                    "type": "media",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/soccer.jpg",
+                        "enlarge_media": true,
+                        "subheading": "",
+                        "title": "Soccer",
+                        "button_label": "",
+                        "link": "",
+                        "text_alignment": "bottom left"
+                    }
+                },
+                "media_bzfGPb": {
+                    "type": "media",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/Icehockey_1.25x_1.5x.png",
+                        "enlarge_media": false,
+                        "subheading": "",
+                        "title": "Ice Hockey",
+                        "button_label": "",
+                        "link": "",
+                        "text_alignment": "bottom left"
+                    }
+                },
+                "media_wGVGzg": {
+                    "type": "media",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/Tennis_1.5x.png",
+                        "enlarge_media": false,
+                        "subheading": "",
+                        "title": "Tennis",
+                        "button_label": "",
+                        "link": "",
+                        "text_alignment": "bottom left"
+                    }
+                },
+                "media_EAyPyy": {
+                    "type": "media",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/rugby_1.25x.png",
+                        "enlarge_media": true,
+                        "subheading": "",
+                        "title": "Rugby",
+                        "button_label": "",
+                        "link": "",
+                        "text_alignment": "bottom left"
+                    }
+                }
+            },
+            "block_order": ["media_DJnbfB", "media_bzfGPb", "media_wGVGzg", "media_EAyPyy"],
+            "custom_css": [".gallery__item {transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 25px;}", "@media (hover: hover) and (pointer: fine) {.gallery__item:hover {transform: scale(1.1); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); position: relative; background-size: auto 100%; cursor: pointer; }}", "@media (hover: hover) and (pointer: fine) {.gallery__item:hover .text-overlay {opacity: 1; transform: translateY(0); }}"],
+            "settings": {
+                "grid_desktop": 4,
+                "grid_mobile": "1",
+                "height": "fixed",
+                "desktop_image_height": 460,
+                "mobile_image_height": 400,
+                "title_size": 30,
+                "title_size_mobile": 22,
+                "enable_margin": true,
+                "enable_row_spacing": true,
+                "full_width": false,
+                "color_scheme": "default",
+                "enable_carousel": true,
+                "overlay_style": "full",
+                "button_style": "primary"
+            }
+        },
+        "countdown_timer_hJGpFK": {
+            "type": "countdown-timer",
+            "blocks": {
+                "subheading_r9hH3d": {
+                    "type": "subheading",
+                    "settings": {
+                        "subheading": "Countdown to the Prime Day Sale"
+                    }
+                },
+                "heading_Bpaabc": {
+                    "type": "heading",
+                    "settings": {
+                        "title": "XbotGo AI-Powered Sports Gimbal",
+                        "use_h1": false
+                    }
+                },
+                "text_aHwApj": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p>Reserve your AI-powered sports recorder now! Don’t miss out—get it today at the best price!<\/p>",
+                        "enlarge_text": false
+                    }
+                },
+                "countdown_H8zzRt": {
+                    "type": "countdown",
+                    "settings": {
+                        "end_date": "2024-10-12",
+                        "end_time": "23:59",
+                        "end_text": "<p>Prime Day Sale Ends Soon<\/p>",
+                        "hide_on_end": false,
+                        "number_size": 60,
+                        "number_font": "base",
+                        "divider_type": "line",
+                        "show_timer_labels": true
+                    }
+                },
+                "button_yM7JnN": {
+                    "type": "button",
+                    "disabled": true,
+                    "settings": {
+                        "button_label": "About Chameleon",
+                        "button_link": "",
+                        "button_style": "primary"
+                    }
+                },
+                "button_VJeFi6": {
+                    "type": "button",
+                    "settings": {
+                        "button_label": "Add to Cart",
+                        "button_link": "shopify:\/\/products\/cell-phone-sports-gimbal-stabilizer",
+                        "button_style": "primary"
+                    }
+                },
+                "custom_liquid_JrRPbM": {
+                    "type": "custom_liquid",
+                    "settings": {
+                        "full_width": false,
+                        "show_space": false,
+                        "code": "<div id='product-component-1725000442276'><\/div>\n<script type=\"text\/javascript\">\n\/*<![CDATA[*\/\n(function () {\n  var scriptURL = 'https:\/\/sdks.shopifycdn.com\/buy-button\/latest\/buy-button-storefront.min.js';\n  if (window.ShopifyBuy) {\n    if (window.ShopifyBuy.UI) {\n      ShopifyBuyInit();\n    } else {\n      loadScript();\n    }\n  } else {\n    loadScript();\n  }\n  function loadScript() {\n    var script = document.createElement('script');\n    script.async = true;\n    script.src = scriptURL;\n    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);\n    script.onload = ShopifyBuyInit;\n  }\n  function ShopifyBuyInit() {\n    var client = ShopifyBuy.buildClient({\n      domain: 'blinktechus.myshopify.com',\n      storefrontAccessToken: '701e5d9828ddf0988f36d03c4492b822',\n    });\n    ShopifyBuy.UI.onReady(client).then(function (ui) {\n      ui.createComponent('product', {\n        id: '8621071663326',\n        node: document.getElementById('product-component-1725000442276'),\n        moneyFormat: '%24%7B%7Bamount%7D%7D',\n        options: {\n  \"product\": {\n    \"styles\": {\n      \"product\": {\n        \"@media (min-width: 601px)\": {\n          \"max-width\": \"calc(25% - 20px)\",\n          \"margin-left\": \"20px\",\n          \"margin-bottom\": \"50px\"\n        }\n      },\n      \"button\": {\n        \"font-family\": \"Source Sans Pro, sans-serif\",\n        \"font-weight\": \"bold\",\n        \":hover\": {\n          \"background-color\": \"#c65916\"\n        },\n        \"background-color\": \"#dc6318\",\n        \":focus\": {\n          \"background-color\": \"#c65916\"\n        },\n        \"border-radius\": \"18px\",\n        \"padding-left\": \"97px\",\n        \"padding-right\": \"97px\"\n      }\n    },\n    \"contents\": {\n      \"img\": false,\n      \"title\": false,\n      \"price\": false\n    },\n    \"text\": {\n      \"button\": \"Add to cart\"\n    },\n    \"googleFonts\": [\n      \"Source Sans Pro\"\n    ]\n  },\n  \"productSet\": {\n    \"styles\": {\n      \"products\": {\n        \"@media (min-width: 601px)\": {\n          \"margin-left\": \"-20px\"\n        }\n      }\n    }\n  },\n  \"modalProduct\": {\n    \"contents\": {\n      \"img\": false,\n      \"imgWithCarousel\": true,\n      \"button\": false,\n      \"buttonWithQuantity\": true\n    },\n    \"styles\": {\n      \"product\": {\n        \"@media (min-width: 601px)\": {\n          \"max-width\": \"100%\",\n          \"margin-left\": \"0px\",\n          \"margin-bottom\": \"0px\"\n        }\n      },\n      \"button\": {\n        \"font-family\": \"Source Sans Pro, sans-serif\",\n        \"font-weight\": \"bold\",\n        \":hover\": {\n          \"background-color\": \"#c65916\"\n        },\n        \"background-color\": \"#dc6318\",\n        \":focus\": {\n          \"background-color\": \"#c65916\"\n        },\n        \"border-radius\": \"18px\",\n        \"padding-left\": \"97px\",\n        \"padding-right\": \"97px\"\n      }\n    },\n    \"googleFonts\": [\n      \"Source Sans Pro\"\n    ],\n    \"text\": {\n      \"button\": \"Add to cart\"\n    }\n  },\n  \"option\": {\n    \"styles\": {\n      \"label\": {\n        \"color\": \"#989797\"\n      }\n    }\n  },\n  \"cart\": {\n    \"styles\": {\n      \"button\": {\n        \"font-family\": \"Source Sans Pro, sans-serif\",\n        \"font-weight\": \"bold\",\n        \":hover\": {\n          \"background-color\": \"#c65916\"\n        },\n        \"background-color\": \"#dc6318\",\n        \":focus\": {\n          \"background-color\": \"#c65916\"\n        },\n        \"border-radius\": \"18px\"\n      }\n    },\n    \"text\": {\n      \"total\": \"Subtotal\",\n      \"button\": \"Checkout\"\n    },\n    \"popup\": false,\n    \"googleFonts\": [\n      \"Source Sans Pro\"\n    ]\n  },\n  \"toggle\": {\n    \"styles\": {\n      \"toggle\": {\n        \"font-family\": \"Source Sans Pro, sans-serif\",\n        \"font-weight\": \"bold\",\n        \"background-color\": \"#dc6318\",\n        \":hover\": {\n          \"background-color\": \"#c65916\"\n        },\n        \":focus\": {\n          \"background-color\": \"#c65916\"\n        }\n      }\n    },\n    \"googleFonts\": [\n      \"Source Sans Pro\"\n    ]\n  }\n},\n      });\n    });\n  }\n})();\n\/*]]>*\/\n<\/script>"
+                    }
+                }
+            },
+            "block_order": ["subheading_r9hH3d", "heading_Bpaabc", "text_aHwApj", "countdown_H8zzRt", "button_yM7JnN", "button_VJeFi6", "custom_liquid_JrRPbM"],
+            "disabled": true,
+            "settings": {
+                "show_image": true,
+                "image": "shopify:\/\/shop_images\/pd.png",
+                "image_link": "shopify:\/\/products\/cell-phone-sports-gimbal-stabilizer",
+                "show_image_space": true,
+                "image_position": "left",
+                "text_alignment": "center",
+                "color_scheme": "default"
+            }
+        },
+        "rich_text_DXcmQF": {
+            "type": "rich-text",
+            "blocks": {
+                "heading_m9j3kL": {
+                    "type": "heading",
+                    "settings": {
+                        "title": "Key Player Tracking",
+                        "use_h1": false
+                    }
+                }
+            },
+            "block_order": ["heading_m9j3kL"],
+            "custom_css": ["@media (max-width: 767px) {.h1 {font-size: 16px; }}"],
+            "settings": {
+                "height": "medium",
+                "text_alignment": "center",
+                "full_width": false,
+                "color_scheme": "default"
+            }
+        },
+        "custom_content_WweG4m": {
+            "type": "custom-content",
+            "blocks": {
+                "video_PAfHqU": {
+                    "type": "video",
+                    "settings": {
+                        "width": "half",
+                        "video_shopify": "shopify:\/\/files\/videos\/球衣号码追踪.mov",
+                        "video_external": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+                        "video_description": "",
+                        "autoplay": false
+                    }
+                },
+                "text_Xe6fa4": {
+                    "type": "text",
+                    "settings": {
+                        "width": "third",
+                        "subheading": "",
+                        "title": "Jersey Number Recognition",
+                        "text": "<p>Enhance your sports recordings with automatic jersey number tracking. This feature follows players based on their numbers, allowing athletes and coaches to easily capture individual performances and create personalized highlight reels.<\/p>",
+                        "button_label": "",
+                        "button_link": "",
+                        "button_style": "primary",
+                        "text_alignment": "center"
+                    }
+                },
+                "image_7w8JLK": {
+                    "type": "image",
+                    "settings": {
+                        "width": "quarter",
+                        "image": "shopify:\/\/shop_images\/gesture_1.5x.png",
+                        "height": "adapt",
+                        "height_desktop": 600,
+                        "height_mobile": 500,
+                        "subheading": "",
+                        "title": "Gesture Control",
+                        "text": "",
+                        "enlarge_text": false,
+                        "button_label": "",
+                        "button_style": "primary",
+                        "image_link": "",
+                        "text_alignment": "center center",
+                        "mobile_overlay_under": false,
+                        "overlay_style": "shadow"
+                    }
+                },
+                "video_3L9ndm": {
+                    "type": "video",
+                    "settings": {
+                        "width": "half",
+                        "video_shopify": "shopify:\/\/files\/videos\/keyplayertracking (1).mp4",
+                        "video_external": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+                        "video_description": "",
+                        "autoplay": false
+                    }
+                },
+                "text_xwrphk": {
+                    "type": "text",
+                    "settings": {
+                        "width": "quarter",
+                        "subheading": "",
+                        "title": "FollowMe Mode",
+                        "text": "<p>Stay in focus with precision tracking that adapts to direction changes and obstacles for seamless recording. Our technology keeps your chosen subject centered and clear, even in dynamic situations, with long-range, zoom, and quick re-tracking for sharp videos in any activity.<\/p>",
+                        "button_label": "",
+                        "button_link": "",
+                        "button_style": "primary",
+                        "text_alignment": "center"
+                    }
+                }
+            },
+            "block_order": ["video_PAfHqU", "text_Xe6fa4", "image_7w8JLK", "video_3L9ndm", "text_xwrphk"],
+            "custom_css": [".theme-img {border-radius: 25px;}", ".block-id-text_Xe6fa4 {background-color: #e8e8e8; border-radius: 25px; margin: 10px; padding: 15px; font-size: 15px;}", ".block-id-text_xwrphk {background-color: #e8e8e8; border-radius: 25px; width: 250px; margin: 10px; padding: 15px; font-size: 15px;}", "@media (max-width: 767px) {.block-id-text_Xe6fa4 {font-size: 10px; } .block-id-text_xwrphk {font-size: 10px; } .h1 {font-size: 16px; }}"],
+            "settings": {
+                "alignment": "middle"
+            }
+        },
+        "hotspots_dLUw37": {
+            "type": "hotspots",
+            "custom_css": [".text-overlay-parent--mobile-stack {color: #262629; font-size: 13px;}", "@media (max-width: 767px) {.text-overlay-parent--mobile-stack {font-size: 11px; vertical-align: left; } .h1 {font-size: 16px; }}"],
+            "settings": {
+                "image": "shopify:\/\/shop_images\/No_Monthly_App_1.25x.png",
+                "mobile_image": "shopify:\/\/shop_images\/4-_M.png",
+                "hotspot_color": "#63a560",
+                "button_content": "number",
+                "outer_circle": "pulse",
+                "full_width": false,
+                "text_alignment": "top left",
+                "overlay_style": "no_background",
+                "subheading": "",
+                "title": "No Monthly Fee",
+                "use_h1": false,
+                "heading_max_width": 11,
+                "text": "<p>With the XbotGo App, each user gets 20GB of free storage and a subscription-free experience.Easily upload videos to XbotGo Cloud, powered by AWs, andone click share memories effortlessly.<\/p>",
+                "button_1_label": "",
+                "button_1_link": "",
+                "button_1_style": "secondary",
+                "button_2_label": "",
+                "button_2_link": "",
+                "button_2_style": "primary"
+            }
+        },
+        "gallery_TmfVDa": {
+            "type": "gallery",
+            "blocks": {
+                "media_cdyMbK": {
+                    "type": "media",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/XbotGo_Chameleon_1.25x.png",
+                        "enlarge_media": false,
+                        "subheading": "",
+                        "title": "XbotGo Chameleon",
+                        "button_label": "BUY NOW",
+                        "link": "shopify:\/\/products\/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
+                        "text_alignment": "top center"
+                    }
+                },
+                "media_QkMV3t": {
+                    "type": "media",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/XbotGo_Gimbal_1.25x.png",
+                        "enlarge_media": false,
+                        "subheading": "",
+                        "title": "XbotGo Sports Gimbal",
+                        "button_label": "BUY NOW",
+                        "link": "shopify:\/\/products\/cell-phone-sports-gimbal-stabilizer",
+                        "text_alignment": "top center"
+                    }
+                },
+                "media_c7QCRa": {
+                    "type": "media",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/1.25x.png",
+                        "enlarge_media": false,
+                        "subheading": "",
+                        "title": "Accesosories",
+                        "button_label": "BUY NOW",
+                        "link": "shopify:\/\/collections\/accessories",
+                        "text_alignment": "bottom left"
+                    }
+                }
+            },
+            "block_order": ["media_cdyMbK", "media_QkMV3t", "media_c7QCRa"],
+            "custom_css": [".btn {border-radius: 25px;}", ".gallery__item {border-radius: 25px;}", ".text-overlay__title {color: #262629;}", "@media (max-width: 767px) {.text-overlay__title {font-size: 15px; } .gallery__item {height: 100%; object-fit: cover; } .btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 100px; text-align: center; font-size: 9px; transform: translate(-50%, -70%); position: relative; top: 10px; left: 20px; align-items: center; }}"],
+            "settings": {
+                "grid_desktop": 2,
+                "grid_mobile": "1",
+                "height": "adapt",
+                "desktop_image_height": 280,
+                "mobile_image_height": 190,
+                "title_size": 28,
+                "title_size_mobile": 18,
+                "enable_margin": true,
+                "enable_row_spacing": true,
+                "full_width": false,
+                "color_scheme": "default",
+                "enable_carousel": false,
+                "overlay_style": "full",
+                "button_style": "primary"
+            }
+        },
+        "custom_content_d6UV4p": {
+            "type": "custom-content",
+            "blocks": {
+                "text_dRrH4b": {
+                    "type": "text",
+                    "settings": {
+                        "width": "two-thirds",
+                        "subheading": "",
+                        "title": "XbotGo App Features",
+                        "text": "<h6><strong>Live Scoreboard<\/strong><\/h6><p>ScoreSync: Real-Time, Customizable, Seamless. Elevate your sports experience with our feature that seamlessly integrates live scoreboards into your recordings. <\/p>",
+                        "button_label": "",
+                        "button_link": "",
+                        "button_style": "primary",
+                        "text_alignment": "center"
+                    }
+                },
+                "video_CaCcfW": {
+                    "type": "video",
+                    "settings": {
+                        "width": "full",
+                        "video_shopify": "shopify:\/\/files\/videos\/livescoreboard.mp4",
+                        "video_external": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+                        "video_description": "",
+                        "autoplay": false,
+                        "placeholder_image": "shopify:\/\/shop_images\/1114f02ee8d0834e37deaadd704dcab1.png"
+                    }
+                },
+                "text_KUtt6y": {
+                    "type": "text",
+                    "settings": {
+                        "width": "two-thirds",
+                        "subheading": "",
+                        "title": "Live Streaming",
+                        "text": "<p>Broadcast your game live with ease on our app, Facebook, YouTube, or any platform that supports RTMP protocols, bringing the excitement directly to your audience in real-time.<\/p>",
+                        "button_label": "",
+                        "button_link": "",
+                        "button_style": "primary",
+                        "text_alignment": "center"
+                    }
+                },
+                "video_LyiewH": {
+                    "type": "video",
+                    "settings": {
+                        "width": "full",
+                        "video_shopify": "shopify:\/\/files\/videos\/LiveStreaming.mp4",
+                        "video_external": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+                        "video_description": "",
+                        "autoplay": false
+                    }
+                }
+            },
+            "block_order": ["text_dRrH4b", "video_CaCcfW", "text_KUtt6y", "video_LyiewH"],
+            "custom_css": [".theme-img {border-radius: 25px;}", "@media (max-width: 767px) {.block-id-text_dRrH4b {font-size: 11px; vertical-align: left; } .block-id-text_KUtt6y {font-size: 11px; vertical-align: left; } .h1 {font-size: 16px; }}"],
+            "settings": {
+                "alignment": "middle"
+            }
+        },
+        "multi_column_VTzqiP": {
+            "type": "multi-column",
+            "blocks": {
+                "text_block_AUFHVi": {
+                    "type": "text_block",
+                    "settings": {
+                        "enable_media": true,
+                        "image": "shopify:\/\/shop_images\/f9125fe25da9fa2b155c3009b55ee438_cffff8e7-eaff-4dc3-b626-60127bc6ae10.png",
+                        "title": "Highlight Edit",
+                        "text": "<p>Easily transform key moments into shareable snippets and highlights, perfect for sharing with family, teammates, or friends with just a few clicks.<\/p>",
+                        "button_label": "",
+                        "link": ""
+                    }
+                },
+                "text_block_Yn3Gaj": {
+                    "type": "text_block",
+                    "settings": {
+                        "enable_media": true,
+                        "image": "shopify:\/\/shop_images\/1fbad085b89f14afb4c77345e99b2c5e_3ae9ac33-0842-44e6-97c8-0bcc76110349.png",
+                        "title": "Free 20GB Cloud Storage",
+                        "text": "<p>Enjoy the convenience of 20GB of free storage for each user, saving valuable space on your smartphone. Effortlessly upload your videos to XbotGo Cloud, powered by AWS, and easily share them with friends and family, ensuring your memories are always accessible.<\/p>",
+                        "button_label": "",
+                        "link": ""
+                    }
+                },
+                "text_block_BWdHiE": {
+                    "type": "text_block",
+                    "settings": {
+                        "enable_media": true,
+                        "image": "shopify:\/\/shop_images\/bd5901f59fad2756e4a270c412b61fbc_966970e4-3d2d-450d-b092-0b9a79ec231d.png",
+                        "title": "Quick Share",
+                        "text": "<p>Instantly share recorded highlights to social media with one tap. It optimizes videos for each platform and creates highlight reels, making it easy to showcase moments in high quality, fast.<\/p>",
+                        "button_label": "",
+                        "link": ""
+                    }
+                }
+            },
+            "block_order": ["text_block_AUFHVi", "text_block_Yn3Gaj", "text_block_BWdHiE"],
+            "custom_css": ["@media (max-width: 767px) {.text-column__text {font-size: 11px; vertical-align: left; } .text-column__title {font-size: 16px; }}"],
+            "settings": {
+                "title": "",
+                "media_aspect_ratio": "s",
+                "media_width": 700,
+                "text_alignment": "center",
+                "button_style": "primary",
+                "color_scheme": "default"
+            }
+        },
+        "count_up_section_8fiXYN": {
+            "type": "count-up-section",
+            "custom_css": [],
+            "settings": {
+                "country_text": "Countries Reached",
+                "member_text": "Preferred Choice of Enthusiastic Members",
+                "game_text": "Hours Sports Game Recording",
+                "desktop_background": "shopify:\/\/shop_images\/numberic_1.5x.png",
+                "count_item_background": "rgba(0,0,0,0)"
+            }
+        },
+        "164816450788232cf9": {
+            "type": "logo-list",
+            "blocks": {
+                "logo_kf3wpn": {
+                    "type": "logo",
+                    "disabled": true,
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/pngegg.png",
+                        "image_width": 50,
+                        "link": "",
+                        "title": ""
+                    }
+                },
+                "e1e46599-c670-480d-825b-f854d0c0db30": {
+                    "type": "logo",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/ESPN_87359612-3b56-42e7-9701-5b1542076db9.png",
+                        "image_width": 80,
+                        "link": "",
+                        "title": ""
+                    }
+                },
+                "logo_RXexfW": {
+                    "type": "logo",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/FileTime_Magazine_logo_1_bbc92690-d774-4a1b-a41b-a6f61a4f7359.png",
+                        "image_width": 80,
+                        "link": "",
+                        "title": ""
+                    }
+                },
+                "25f715aa-5be0-4e19-9547-eb4d068459f8": {
+                    "type": "logo",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/cr_w-317_h-200.png",
+                        "image_width": 80,
+                        "link": "",
+                        "title": ""
+                    }
+                },
+                "9b01c355-8a5b-49eb-937c-e0e68fdbbca5": {
+                    "type": "logo",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/rs_w-200_h-200_cg-true.png",
+                        "image_width": 80,
+                        "link": "",
+                        "title": ""
+                    }
+                },
+                "b023a957-e3b3-4e33-b6ae-7992278ac9e3": {
+                    "type": "logo",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/newswatch-XbotGo_6364d3b8-c95a-4527-90b0-b91f587c7261.png",
+                        "image_width": 80,
+                        "link": "",
+                        "title": ""
+                    }
+                }
+            },
+            "block_order": ["logo_kf3wpn", "e1e46599-c670-480d-825b-f854d0c0db30", "logo_RXexfW", "25f715aa-5be0-4e19-9547-eb4d068459f8", "9b01c355-8a5b-49eb-937c-e0e68fdbbca5", "b023a957-e3b3-4e33-b6ae-7992278ac9e3"],
+            "custom_css": [],
+            "settings": {
+                "title": "Featured In",
+                "image_opacity": 100,
+                "color_scheme": "default"
+            }
+        },
+        "image_with_text_overlay_8hKCtm": {
+            "type": "image-with-text-overlay",
+            "settings": {
+                "image": "shopify:\/\/shop_images\/PC_491fa754-fda3-441a-93b5-449f2bcec9b2.png",
+                "mobile_image": "shopify:\/\/shop_images\/M_233653df-f492-415b-b750-a25eb22c9c45.png",
+                "height": "adapt",
+                "height_desktop": 600,
+                "height_mobile": 460,
+                "image_link": "",
+                "full_width": false,
+                "text_alignment": "center center",
+                "mobile_overlay_under": false,
+                "overlay_style": "shadow"
+            }
+        },
+        "mosaic_myE9Vr": {
+            "type": "mosaic",
+            "blocks": {
+                "image_jedrgC": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/gesture_1.5x.png",
+                        "cta_label": "",
+                        "cta_sublabel": "",
+                        "link": "",
+                        "cta_col": 6,
+                        "cta_image_height": "medium",
+                        "caption_align": "center",
+                        "caption_size": "small",
+                        "caption_color": "#ffffff"
+                    }
+                },
+                "image_eTDJzG": {
+                    "type": "image",
+                    "settings": {
+                        "cta_label": "Title",
+                        "cta_sublabel": "Description",
+                        "link": "",
+                        "cta_col": 5,
+                        "cta_image_height": "medium",
+                        "caption_align": "right",
+                        "caption_size": "small",
+                        "caption_color": "#ffffff"
+                    }
+                },
+                "image_LrtpFM": {
+                    "type": "image",
+                    "settings": {
+                        "cta_label": "Title",
+                        "cta_sublabel": "Description",
+                        "link": "",
+                        "cta_col": 4,
+                        "cta_image_height": "medium",
+                        "caption_align": "center",
+                        "caption_size": "small",
+                        "caption_color": "#ffffff"
+                    }
+                },
+                "image_HWQUPc": {
+                    "type": "image",
+                    "settings": {
+                        "cta_label": "Title",
+                        "cta_sublabel": "Description",
+                        "link": "",
+                        "cta_col": 4,
+                        "cta_image_height": "medium",
+                        "caption_align": "center",
+                        "caption_size": "small",
+                        "caption_color": "#ffffff"
+                    }
+                },
+                "image_mnhGhd": {
+                    "type": "image",
+                    "settings": {
+                        "cta_label": "Title",
+                        "cta_sublabel": "Description",
+                        "link": "",
+                        "cta_col": 4,
+                        "cta_image_height": "medium",
+                        "caption_align": "center",
+                        "caption_size": "small",
+                        "caption_color": "#ffffff"
+                    }
+                }
+            },
+            "block_order": ["image_jedrgC", "image_eTDJzG", "image_LrtpFM", "image_HWQUPc", "image_mnhGhd"],
+            "disabled": true,
+            "settings": {
+                "title": "",
+                "subtitle": "",
+                "use_stacked_layout": false,
+                "use_lightbox": true,
+                "overlay_opacity": 20,
+                "overlay_color": "#000000",
+                "gutter_width": "22",
+                "title_transform": "none",
+                "hover_animation": "zoom-in",
+                "use_mobile_redability": true,
+                "removeBottomMargin": true
+            }
+        },
+        "custom_tab_iUNPnC": {
+            "type": "custom-tab",
+            "disabled": true,
+            "settings": {
+                "tab-title": "Our Advantages",
+                "tab1": "Live Scoreboard",
+                "tab2": "Sports Trends Analysis",
+                "tab3": "Extended Tracking",
+                "tab-txt-title1": "ScoreSync:  Real-Time, Customizable,  Seamless.",
+                "tab-txt-content1": "Elevate your sports experience with our feature that seamlessly integrates live scoreboards into your recordings. Watch your games and events come alive with real-time updates. Plus, when you replay your recorded videos, you'll still see the score change dynamically, keeping you fully engaged.",
+                "tab-txt-title2": "Movement Trends Analysis",
+                "tab-txt-content2": "Our AI patented advanced technology seamlessly captures the game by taking into account the ball's location, as well as the speed, direction, and pose of multiple players.",
+                "tab-txt-title3": "50m Tracking Distance",
+                "tab-txt-content3": "Stunning High-Angle Shots, You can capturing every thrilling moment from a bird's-eye view. With a distance of 50 meters, you can easily capture every corner of the football field, with the ball chasing and running without the ball.",
+                "image1": "shopify:\/\/shop_images\/LiveScoreBoard.webp",
+                "image2": "shopify:\/\/shop_images\/movement_trend.png",
+                "image3": "shopify:\/\/shop_images\/50m_tracking.png"
+            }
+        },
+        "custom_tab_4_GFKfHJ": {
+            "type": "custom-tab-4",
+            "custom_css": [".tab-image4 {}"],
+            "settings": {
+                "tab-title": "Recommended by",
+                "tab1": "FootballF",
+                "tab2": "DaddyBrotherTV",
+                "tab3": "ROAM",
+                "tab4": "Ralph",
+                "image1": "shopify:\/\/shop_images\/channels4_profile_3c66ba0e-aaa8-4993-b9d8-2522f694f3c9.jpg",
+                "tab-txt-title1": "Is XbotGo Chameleon REALLY the Best for Football?",
+                "tab-txt-content1": "",
+                "image2": "shopify:\/\/shop_images\/channel2.jpg",
+                "tab-txt-title2": "XbotGo Chameleon Ai Sports Cameraman | Made For Sports",
+                "tab-txt-content2": "",
+                "image3": "shopify:\/\/shop_images\/channels4_profile_1_6c4c0d4d-8cbd-4bba-b9e6-35cc2392971a.jpg",
+                "tab-txt-title3": "AI Sports Tracking Camera System \/\/ XbotGo Chameleon",
+                "tab-txt-content3": "",
+                "image4": "shopify:\/\/shop_images\/channels4_profile.jpg",
+                "tab-txt-title4": "Revolutionize Video Recording With AI Powered Sports Gimbal",
+                "tab-txt-content4": "",
+                "video_url1": "yg8jfy3q5Xs",
+                "video_url2": "IUEc8wxG3IE",
+                "video_url3": "YWsDBTZFFYQ",
+                "video_url4": "afE6MRB2vdc"
+            }
+        },
+        "testimonials_N6HpgR": {
+            "type": "testimonials",
+            "blocks": {
+                "testimonial_3xjmWj": {
+                    "type": "testimonial",
+                    "settings": {
+                        "star_rating": 5,
+                        "testimonial": "\"I am very satisfied with the product, it does what I wanted as a technical director of the academy, it gave us many solutions in the field of video analysis, of course i 'm still not fully familiar with all its possibilities because I am a new user of the product. Very helpful with immediate responses from the company side to the problems that arose. Excellent job.\"",
+                        "author": "PANAGIOTIS T",
+                        "image": "shopify:\/\/shop_images\/review1.jpg",
+                        "image_caption": "",
+                        "link": ""
+                    }
+                },
+                "testimonial_Acqf8c": {
+                    "type": "testimonial",
+                    "settings": {
+                        "star_rating": 5,
+                        "testimonial": "\"I am a head coach for both a high school highly competitive winter basketball team and I coach AAU during the rest of the year for basketball. This solution is the most cost effective and it gets the job done. I expect to start seeing these everywhere like AAU tournaments and such from here on out. \"",
+                        "author": "David B",
+                        "image": "shopify:\/\/shop_images\/review2.jpg",
+                        "image_caption": "",
+                        "link": ""
+                    }
+                },
+                "testimonial_K4xmJa": {
+                    "type": "testimonial",
+                    "settings": {
+                        "star_rating": 5,
+                        "testimonial": "\"The kids are running around and the phone just follows around. It's pretty accurate and it's good for the kids to review how they did and how could they have done better. Livestreaming is a cool feature as well.I will buy it again to gift someone else.\"",
+                        "author": "Jill D",
+                        "image": "shopify:\/\/shop_images\/review3.jpg",
+                        "image_caption": "",
+                        "link": ""
+                    }
+                }
+            },
+            "block_order": ["testimonial_3xjmWj", "testimonial_Acqf8c", "testimonial_K4xmJa"],
+            "custom_css": [".theme-img {border-radius: 25px;}", "@media (max-width: 767px) {.testimonial__blockquote {font-size: 11px; vertical-align: left; }}"],
+            "settings": {
+                "title": "Customer reviews",
+                "layout": "image-right",
+                "text_caps": false,
+                "quote_text_size": 19,
+                "quote_text_size_mobile": 16,
+                "image_shape": "landscape",
+                "color_scheme": "default",
+                "autoplay": true,
+                "autoplay_speed": 6
+            }
+        },
+        "featured_blog_GJEBtP": {
+            "type": "featured-blog",
+            "custom_css": [".article__inner {font-size: 10px;}", ".theme-img {border-radius: 25px;}", "@media (max-width: 767px) {.article-list {display: block; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; } .article {display: inline-block; vertical-align: middle; width: 80%; margin-right: 10px; white-space: normal; } .article-list::-webkit-scrollbar {display: none; } .article-list {-ms-overflow-style: none; scrollbar-width: none; }}"],
+            "settings": {
+                "title": "Blog posts",
+                "blog": "technology-development",
+                "post_limit": 3,
+                "show_author": true,
+                "show_date": true,
+                "show_excerpts": false,
+                "crop_ratio": "1.78",
+                "color_scheme": "default"
+            }
+        },
+        "multi_column_3q64Ua": {
+            "type": "multi-column",
+            "blocks": {
+                "text_block_9B74zr": {
+                    "type": "text_block",
+                    "settings": {
+                        "enable_media": true,
+                        "title": "Add a title or tagline",
+                        "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+                        "button_label": "",
+                        "link": ""
+                    }
+                },
+                "text_block_8NpnGX": {
+                    "type": "text_block",
+                    "settings": {
+                        "enable_media": true,
+                        "title": "Add a title or tagline",
+                        "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+                        "button_label": "",
+                        "link": ""
+                    }
+                },
+                "text_block_qqeNbx": {
+                    "type": "text_block",
+                    "settings": {
+                        "enable_media": true,
+                        "title": "Add a title or tagline",
+                        "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+                        "button_label": "",
+                        "link": ""
+                    }
+                }
+            },
+            "block_order": ["text_block_9B74zr", "text_block_8NpnGX", "text_block_qqeNbx"],
+            "disabled": true,
+            "settings": {
+                "title": "Multi-column",
+                "media_aspect_ratio": "s",
+                "media_width": 700,
+                "text_alignment": "center",
+                "button_style": "primary",
+                "color_scheme": "default"
+            }
+        },
+        "cross-page-promos": {
+            "type": "cross-page-promos",
+            "blocks": {
+                "1478526632862": {
+                    "type": "icon",
+                    "settings": {
+                        "icon": "box",
+                        "text": "30-Day Hassle-Free Return",
+                        "link_url": ""
+                    }
+                },
+                "1478526647261": {
+                    "type": "icon",
+                    "settings": {
+                        "icon": "chat_bubble",
+                        "text": "Global Customer Support",
+                        "link_url": ""
+                    }
+                },
+                "1478526645605": {
+                    "type": "icon",
+                    "settings": {
+                        "icon": "credit_card",
+                        "text": "Secure Payments",
+                        "link_url": ""
+                    }
+                }
+            },
+            "block_order": ["1478526632862", "1478526647261", "1478526645605"],
+            "custom_css": [],
+            "settings": {
+                "cross_page_promo_bg": "#f1f1f1",
+                "cross_page_promo_color": "#202223",
+                "show_on_home_page": true
+            }
+        },
+        "image_with_text_E6jeA7": {
+            "type": "image-with-text",
+            "blocks": {
+                "heading_qqHGPJ": {
+                    "type": "heading",
+                    "settings": {
+                        "title": "Our Mission",
+                        "use_h1": false
+                    }
+                },
+                "text_xjwhM8": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p>Founded by Dr. David Tan, a dedicated father and a visionary with deep expertise in computer vision and smart gadgets, Blink Tech is dedicated to enhancing sports experiences for everyone from professional coaches to enthusiastic parents, empowering every game with advanced AI and capturing the passion of sports for all.<\/p>",
+                        "enlarge_text": false
+                    }
+                },
+                "button_N3HdNz": {
+                    "type": "button",
+                    "settings": {
+                        "button_label": "About Us",
+                        "button_link": "",
+                        "button_style": "primary"
+                    }
+                }
+            },
+            "block_order": ["heading_qqHGPJ", "text_xjwhM8", "button_N3HdNz"],
+            "custom_css": [".theme-img {border-radius: 25px;}", "@media (max-width: 767px) {.feature-text-paired {font-size: 11px; vertical-align: left; } .btn {font-size: 11px; vertical-align: left; border-radius: 25px; } .h1 {font-size: 16px; }}"],
+            "settings": {
+                "image": "shopify:\/\/shop_images\/Slider---3.jpg",
+                "image_width": 700,
+                "image_link": "",
+                "image_position": "right",
+                "text_alignment": "left",
+                "color_scheme": "default"
+            }
+        },
+        "custom_content_6EdQih": {
+            "type": "custom-content",
+            "blocks": {
+                "image_iDhXkB": {
+                    "type": "image",
+                    "settings": {
+                        "width": "half",
+                        "image": "shopify:\/\/shop_images\/1c7418af5094271b62aca9bbf8e8d07d.png",
+                        "height": "adapt",
+                        "height_desktop": 600,
+                        "height_mobile": 500,
+                        "subheading": "",
+                        "title": "",
+                        "text": "",
+                        "enlarge_text": false,
+                        "button_label": "",
+                        "button_style": "primary",
+                        "image_link": "",
+                        "text_alignment": "center center",
+                        "mobile_overlay_under": false,
+                        "overlay_style": "shadow"
+                    }
+                },
+                "text_p8m4AK": {
+                    "type": "text",
+                    "settings": {
+                        "width": "half",
+                        "subheading": "",
+                        "title": "Why XbotGo is different",
+                        "text": "<p>XbotGo transforms any smartphone into an expert sports cameraman, autonomously tracking players, the ball, and every field movement. Using advanced computer vision, it intelligently zooms and pans, delivering professional-quality sports footage for parents, coaches, and athletes—effortlessly capturing every highlight.<\/p>",
+                        "button_label": "",
+                        "button_link": "",
+                        "button_style": "primary",
+                        "text_alignment": "center"
+                    }
+                }
+            },
+            "block_order": ["image_iDhXkB", "text_p8m4AK"],
+            "custom_css": ["@media (max-width: 767px) {.block-id-text_p8m4AK {font-size: 11px; vertical-align: left; } .h1 {font-size: 16px; }}"],
+            "settings": {
+                "alignment": "middle"
+            }
+        },
+        "newsletter_CgBFDg": {
+            "type": "newsletter",
+            "settings": {
+                "title": "Subscribe to our newsletter",
+                "subheading": "<p>Promotions, new products and sales. Directly to your inbox. <\/p><p>Join our mailing list to get $20 off your first Xbot order.<\/p>",
+                "color_scheme": "1"
+            }
+        }
+    },
+    "order": ["16359276425da8ce46", "custom_content_Cjmqy6", "rich_text_W39bMz", "gallery_D3MpWT", "countdown_timer_hJGpFK", "rich_text_DXcmQF", "custom_content_WweG4m", "hotspots_dLUw37", "gallery_TmfVDa", "custom_content_d6UV4p", "multi_column_VTzqiP", "count_up_section_8fiXYN", "164816450788232cf9", "image_with_text_overlay_8hKCtm", "mosaic_myE9Vr", "custom_tab_iUNPnC", "custom_tab_4_GFKfHJ", "testimonials_N6HpgR", "featured_blog_GJEBtP", "multi_column_3q64Ua", "cross-page-promos", "image_with_text_E6jeA7", "custom_content_6EdQih", "newsletter_CgBFDg"]
+}

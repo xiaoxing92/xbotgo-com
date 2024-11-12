@@ -1,0 +1,197 @@
+{% schema %}
+{
+  "name": "Count Up Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "country_text",
+      "label": "Country Text",
+      "default": "Countries Reached"
+    },
+    {
+      "type": "text",
+      "id": "member_text",
+      "label": "Member Text",
+      "default": "Preferred Choice of Enthusiastic Members"
+    },
+    {
+      "type": "text",
+      "id": "game_text",
+      "label": "Game Text",
+      "default": "Over 1,000,000 Minutes Sports Game Recording"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_background",
+      "label": "Desktop Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_background",
+      "label": "Mobile Background Image"
+    },
+    {
+      "type": "color",
+      "id": "count_item_background",
+      "label": "Count Item Background Color",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "count_item",
+      "name": "Count Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "count",
+          "label": "Count Number",
+          "default": "100"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Example Text"
+        },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background Color",
+          "default": "#f2f2f2"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Count Up Section",
+      "category": "Content"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="count-up-section" style="{% if section.settings.desktop_background %}background-image: url('{{ section.settings.desktop_background | img_url: 'master' }}');{% endif %}">
+  <div class="count-item">
+    <span class="count-number" data-count="100+">0</span>
+    <p>{{ section.settings.country_text }}</p>
+  </div>
+
+  <div class="count-item">
+    <span class="count-number" data-count="112395">8000</span>
+    <p>{{ section.settings.member_text }}</p>
+  </div>
+
+  <div class="count-item">
+    <span class="count-number" data-count="212591">8000</span>
+    <p>{{ section.settings.game_text }}</p>
+  </div>
+</div>
+
+<style>
+  .count-up-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f2f2f2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 280px;
+    width: 100%;
+    align-items: center;
+  }
+  .p {
+    text-color: #ffffff;
+     }
+  .count-item {
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: {{ section.settings.count_item_background }};
+  }
+
+  .count-icon {
+    max-width: 50px;
+    margin-bottom: 10px;
+  }
+
+  .count-number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #FFFFF; /* Updated text color */
+    background: linear-gradient(to right, #b11e23, #ea9e1f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .count-up-section {
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .count-item {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  }
+</style>
+
+<script>
+function countUp(element) {
+  const target = parseInt(element.getAttribute("data-count"));
+  let count = 0;
+  const speed = 5000; // Adjust this to control the speed of the counting
+
+  const updateCount = () => {
+    const increment = Math.ceil(target / 50); // Change 10 to control the jump size
+
+    count += increment;
+
+    if (count < target) {
+      element.textContent = Math.min(count, target).toLocaleString();
+      requestAnimationFrame(updateCount);
+    } else {
+      element.textContent = target.toLocaleString();
+    }
+  };
+
+  updateCount();
+}
+
+  function resetCount(element) {
+    element.textContent = "0";
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const countElements = document.querySelectorAll(".count-number");
+
+    const options = {
+      threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          countUp(entry.target);
+        } else {
+          resetCount(entry.target);
+        }
+      });
+    }, options);
+
+    countElements.forEach((element) => {
+      observer.observe(element);
+    });
+  });
+</script>
