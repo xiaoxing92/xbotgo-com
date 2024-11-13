@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "background_video_rRNkK9": {
@@ -22,7 +31,10 @@
           }
         }
       },
-      "block_order": ["heading_fz77Mp", "button_6Gea9Y"],
+      "block_order": [
+        "heading_fz77Mp",
+        "button_6Gea9Y"
+      ],
       "disabled": true,
       "custom_css": [
         ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 180px; /* Set width */ text-align: center; font-size: 20px; border-radius: 25px; position: absolute; top: 120%; /* Adjust this value to move the button up or down */ left: 45%; /* Adjust this value to move the button left or right */}",
@@ -65,16 +77,21 @@
           }
         }
       },
-      "block_order": ["image_EFQYci"],
+      "block_order": [
+        "image_EFQYci"
+      ],
       "custom_css": [
-        ".text-overlay {position: relative; top: 15%; left: 5%; font-size: 20px;}",
+        ".text-overlay {position: relative; top: 10%; left: 5%; font-size: 20px;}",
         ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px;}",
-        "@media (max-width: 767px) {.text-overlay {position: relative; top: 1%; left: 5%; font-size: 15px; } .btn {width: 130px; text-align: center; font-size: 12px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; top: 115%; left: 22%; }}"
+        "@media (max-width: 767px) {.text-overlay {position: relative; top: -5%; left: 5%; font-size: 15px; } .btn {width: 130px; text-align: center; font-size: 12px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; top: 100%; left: 22%; }}"
       ],
       "settings": {
-        "height": "adapt",
+        "show_sticky": true,
+        "sticky_text": "Chameleon",
+        "link_url": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
+        "height": "fixed",
         "height_desktop": 600,
-        "height_mobile": 360,
+        "height_mobile": 580,
         "full_width": true,
         "mobile_overlay_under": false,
         "overlay_style": "shadow",
@@ -173,7 +190,9 @@
           }
         }
       },
-      "block_order": ["image_zpHD8e"],
+      "block_order": [
+        "image_zpHD8e"
+      ],
       "custom_css": [
         "@media (max-width: 767px) {.h1 {font-size: 12px; margin: 0px; }}"
       ],
@@ -208,7 +227,10 @@
           }
         }
       },
-      "block_order": ["text_x4mk4U", "video_caRieh"],
+      "block_order": [
+        "text_x4mk4U",
+        "video_caRieh"
+      ],
       "custom_css": [
         "@media (max-width: 767px) {.height--adapt {height: 300px; } .block-id-text_x4mk4U {font-size: 12px; }}"
       ],
@@ -241,7 +263,9 @@
           }
         }
       },
-      "block_order": ["feature_FwxLdB"],
+      "block_order": [
+        "feature_FwxLdB"
+      ],
       "custom_css": [
         ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}",
         "@media (max-width: 767px) {.height--adapt {height: 300px; } .feature-text-paired {font-size: 12px; }}"
@@ -265,7 +289,9 @@
           }
         }
       },
-      "block_order": ["heading_NdJBFg"],
+      "block_order": [
+        "heading_NdJBFg"
+      ],
       "custom_css": [
         ".h1 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}",
         "@media (max-width: 767px) {.h1 {align-content: left; font-size: 20px; }}"
@@ -382,7 +408,9 @@
           }
         }
       },
-      "block_order": ["feature_ndn46G"],
+      "block_order": [
+        "feature_ndn46G"
+      ],
       "custom_css": [
         ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}"
       ],
@@ -420,7 +448,9 @@
           }
         }
       },
-      "block_order": ["feature_wjNgx6"],
+      "block_order": [
+        "feature_wjNgx6"
+      ],
       "custom_css": [
         ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}"
       ],
@@ -453,7 +483,10 @@
           }
         }
       },
-      "block_order": ["heading_HMykLw", "text_iKtkz9"],
+      "block_order": [
+        "heading_HMykLw",
+        "text_iKtkz9"
+      ],
       "custom_css": [
         ".h1 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}",
         ".video-section__play-btn {display: none;}",
@@ -770,7 +803,11 @@
           }
         }
       },
-      "block_order": ["feature_FLxnaq", "feature_mYAi67", "feature_iDTG9B"],
+      "block_order": [
+        "feature_FLxnaq",
+        "feature_mYAi67",
+        "feature_iDTG9B"
+      ],
       "disabled": true,
       "settings": {
         "heading": "AI Processor and 8 hours Stand by",
@@ -876,7 +913,9 @@
           }
         }
       },
-      "block_order": ["heading_TebiVq"],
+      "block_order": [
+        "heading_TebiVq"
+      ],
       "settings": {
         "image": "shopify://shop_images/1.5x_e4ef58d5-3beb-4015-99f2-0ddf3707499f.png",
         "mobile_image": "shopify://shop_images/11_71852123-86f7-401a-a4be-aaa7792418bc.png",
