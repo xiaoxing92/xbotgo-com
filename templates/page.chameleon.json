@@ -58,22 +58,22 @@
         "image_EFQYci": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/XbotGo_chameleon.png",
-            "mobile_image": "shopify://shop_images/M-_banner.png",
+            "image": "shopify://shop_images/2_KV-PC.png",
+            "mobile_image": "shopify://shop_images/2_KV-M.png",
             "slide_link": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
-            "subheading": "Play Hard  Film Smart",
+            "subheading": "",
             "title": "XbotGo Chameleon",
-            "heading_max_width": 5,
-            "title_size": 24,
+            "heading_max_width": 11,
+            "title_size": 26,
             "title_size_mobile": 20,
             "use_h1": false,
-            "text": "<p>Your AI Sports Cameraman</p>",
+            "text": "",
             "enlarge_text": true,
-            "button_label_1": "Shop this",
+            "button_label_1": "Buy Now",
             "button_url_1": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
             "button_label_2": "",
             "button_url_2": "",
-            "text_alignment": "center left"
+            "text_alignment": "top left"
           }
         }
       },
@@ -81,15 +81,15 @@
         "image_EFQYci"
       ],
       "custom_css": [
-        ".text-overlay {position: relative; top: 10%; left: 5%; font-size: 20px;}",
-        ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px;}",
-        "@media (max-width: 767px) {.text-overlay {position: relative; top: -5%; left: 5%; font-size: 15px; } .btn {width: 130px; text-align: center; font-size: 12px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; top: 100%; left: 22%; }}"
+        ".text-overlay {position: relative; top: 20%; left: 8%; font-size: 20px;}",
+        ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 19px; border: 1px solid; border-radius: 20px; top: 50%; position: fixed;}",
+        "@media (max-width: 767px) {.text-overlay {position: relative; top: 33%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 120px; text-align: center; font-size: 13px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; top: 100%; left: 35%; }}"
       ],
       "settings": {
-        "show_sticky": true,
+        "show_sticky_banner": true,
         "sticky_text": "Chameleon",
         "link_url": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
-        "height": "fixed",
+        "height": "adapt",
         "height_desktop": 600,
         "height_mobile": 580,
         "full_width": true,

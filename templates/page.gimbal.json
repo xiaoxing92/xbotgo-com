@@ -14,11 +14,10 @@
       "blocks": {
         "186890cf-49c3-44d6-b15c-2b34441c430b": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/pd.png",
-            "mobile_image": "shopify://shop_images/pd1.png",
-            "slide_link": "",
+            "image": "shopify://shop_images/1_KV-PC.png",
+            "mobile_image": "shopify://shop_images/1_KV-M.png",
+            "slide_link": "shopify://products/cell-phone-sports-gimbal-stabilizer",
             "subheading": "",
             "title": "",
             "heading_max_width": 15,
@@ -31,20 +30,20 @@
             "button_url_1": "shopify://products/cell-phone-sports-gimbal-stabilizer",
             "button_label_2": "",
             "button_url_2": "",
-            "text_alignment": "center left"
+            "text_alignment": "top left"
           }
         }
       },
       "block_order": [
         "186890cf-49c3-44d6-b15c-2b34441c430b"
       ],
-      "disabled": true,
       "custom_css": [
-        ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 180px; /* Set width */ text-align: center; font-size: 13px; border-radius: 25px; position: absolute; top: 100%; /* Adjust this value to move the button up or down */ left: 8%; /* Adjust this value to move the button left or right */}",
-        "@media (max-width: 767px) {.btn {width: 110px; text-align: center; font-size: 11px; top: 180%; left: 50%; /* Keep it centered horizontally or adjust as needed */ transform: translate( -50%, -70% ); /* Adjust the translate value if necessary */ }}"
+        ".text-overlay {position: relative; top: 20%; left: 5%; font-size: 20px;}",
+        ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 19px; border: 1px solid; border-radius: 20px; top: 50%; position: fixed;}",
+        "@media (max-width: 767px) {.text-overlay {position: relative; top: 40%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 120px; text-align: center; font-size: 13px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; top: 100%; left: 40%; }}"
       ],
       "settings": {
-        "show_sticky": true,
+        "show_sticky_banner": false,
         "sticky_text": "stickyText",
         "link_url": "shopify://collections/all",
         "height": "adapt",
@@ -98,6 +97,7 @@
         "heading_xtHVcY",
         "button_yPgBJJ"
       ],
+      "disabled": true,
       "custom_css": [
         ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 180px; text-align: center; font-size: 13px; border-radius: 25px; top: 60%; /* Adjust this value to move the button up or down */ left: 15%; /* Adjust this value to move the button left or right */}"
       ],
@@ -211,7 +211,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "video_shopify": "shopify://files/videos/gimbal showing.mp4",
+        "video_shopify": "shopify://files/videos/LiveStreaming.mp4",
         "video_external": "",
         "video_description": "",
         "autoplay": true,
