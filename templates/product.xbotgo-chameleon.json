@@ -107,17 +107,6 @@
             "show_pinterest": true
           }
         },
-        "text_HeHqLn": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "icon": "",
-            "icon_size": "small",
-            "enable_box": false,
-            "box_color": "#e0f4d5",
-            "show_in_quickbuy": false
-          }
-        },
         "variant_picker_EaUEeC": {
           "type": "variant-picker",
           "settings": {
@@ -137,6 +126,17 @@
             "show_backorder_text": false,
             "show_pickup_availability": true,
             "show_gift_card_recipient": false
+          }
+        },
+        "text_HeHqLn": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "icon": "",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#e0f4d5",
+            "show_in_quickbuy": false
           }
         },
         "complementary_xdJKmW": {
@@ -159,9 +159,9 @@
         "7467f53c-d35e-4c16-8c8a-5567dc57427b",
         "custom_liquid_YwxGWQ",
         "36b4455f-d340-4f5a-89bc-26827832679f",
-        "text_HeHqLn",
         "variant_picker_EaUEeC",
         "buy_buttons_YLhzVe",
+        "text_HeHqLn",
         "complementary_xdJKmW"
       ],
       "settings": {
@@ -461,7 +461,7 @@
         ".container {background-color: #000000;}"
       ],
       "settings": {
-        "show_sticky": false,
+        "show_sticky_banner": false,
         "sticky_text": "stickyText",
         "link_url": "shopify://collections/all",
         "height": "adapt",
