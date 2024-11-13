@@ -81,15 +81,15 @@
         "image_EHrpCV"
       ],
       "custom_css": [
-        ".text-overlay {position: relative; top: 0%; left: 10%; font-size: 20px;}",
+        ".text-overlay {position: relative; top: 10%; left: 10%; font-size: 20px;}",
         ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px; top: 70%; position: fixed;}",
-        "@media (max-width: 767px) {.text-overlay {position: relative; top: 33%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 130px; text-align: center; font-size: 15px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; top: 100%; left: 35%; }}"
+        "@media (max-width: 767px) {.text-overlay {position: relative; top: 35%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 130px; text-align: center; font-size: 15px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; left: 35%; }}"
       ],
       "settings": {
         "show_sticky_banner": false,
         "sticky_text": "stickyText",
         "link_url": "shopify://collections/all",
-        "height": "fixed",
+        "height": "adapt",
         "height_desktop": 680,
         "height_mobile": 520,
         "full_width": true,
