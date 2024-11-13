@@ -98,6 +98,29 @@
             "show_in_quickbuy": false
           }
         },
+        "richtext_qQCbmg": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p><strong>Please note: The free umbrella will be shipped in a separate package at the beginning of December.</strong></p>",
+            "icon": "",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#e0f4d5",
+            "show_in_quickbuy": false
+          }
+        },
+        "text_HeHqLn": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Please note: The free umbrella will be shipped in a separate package at the beginning of December.",
+            "icon": "",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#e0f4d5",
+            "show_in_quickbuy": false
+          }
+        },
         "36b4455f-d340-4f5a-89bc-26827832679f": {
           "type": "sharing",
           "disabled": true,
@@ -128,17 +151,6 @@
             "show_gift_card_recipient": false
           }
         },
-        "text_HeHqLn": {
-          "type": "text",
-          "settings": {
-            "text": "Please note: The free umbrella will be shipped in a separate package at the beginning of December.",
-            "icon": "",
-            "icon_size": "small",
-            "enable_box": false,
-            "box_color": "#e0f4d5",
-            "show_in_quickbuy": false
-          }
-        },
         "complementary_xdJKmW": {
           "type": "complementary",
           "settings": {
@@ -158,10 +170,11 @@
         "accordion_GggAcn",
         "7467f53c-d35e-4c16-8c8a-5567dc57427b",
         "custom_liquid_YwxGWQ",
+        "richtext_qQCbmg",
+        "text_HeHqLn",
         "36b4455f-d340-4f5a-89bc-26827832679f",
         "variant_picker_EaUEeC",
         "buy_buttons_YLhzVe",
-        "text_HeHqLn",
         "complementary_xdJKmW"
       ],
       "settings": {
