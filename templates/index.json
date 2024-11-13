@@ -15,22 +15,22 @@
         "image_fz6nVt": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/XbotGo_chameleon.png",
-            "mobile_image": "shopify://shop_images/M-_banner.png",
+            "image": "shopify://shop_images/2_KV-PC.png",
+            "mobile_image": "shopify://shop_images/2_KV-M.png",
             "slide_link": "",
-            "subheading": "Play Hard  Film Smart",
+            "subheading": "",
             "title": "XbotGo Chameleon",
-            "heading_max_width": 16,
-            "title_size": 42,
-            "title_size_mobile": 24,
+            "heading_max_width": 11,
+            "title_size": 24,
+            "title_size_mobile": 20,
             "use_h1": false,
-            "text": "<p>Your AI Sports Cameraman</p>",
+            "text": "",
             "enlarge_text": false,
             "button_label_1": "BUY NOW",
-            "button_url_1": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
+            "button_url_1": "https://xbotgo.com/discount/XbotCha?redirect=%2Fproducts%2Fxbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
             "button_label_2": "",
-            "button_url_2": "https://xbotgo.com/discount/Treat20?redirect=%2Fproducts%2Fcell-phone-sports-gimbal-stabilizer",
-            "text_alignment": "center left"
+            "button_url_2": "",
+            "text_alignment": "top left"
           }
         },
         "image_YhwmWV": {
@@ -56,14 +56,14 @@
         "image_EHrpCV": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/xbotgo-ble-banner.jpg",
-            "mobile_image": "shopify://shop_images/MB-bg3_776a232c-0d06-4fcd-b046-297238a2f970.jpg",
+            "image": "shopify://shop_images/1_KV-PC.png",
+            "mobile_image": "shopify://shop_images/1_KV-M.png",
             "slide_link": "shopify://pages/xbotgo-ai-sports-gimbal",
-            "subheading": "Play Hard  Film Smart",
+            "subheading": "",
             "title": "AI-Powered Sports Gimbal",
-            "heading_max_width": 21,
-            "title_size": 54,
-            "title_size_mobile": 28,
+            "heading_max_width": 36,
+            "title_size": 26,
+            "title_size_mobile": 20,
             "use_h1": false,
             "text": "",
             "enlarge_text": true,
@@ -71,7 +71,7 @@
             "button_url_1": "https://xbotgo.com/discount/Treat20?redirect=%2Fproducts%2Fcell-phone-sports-gimbal-stabilizer",
             "button_label_2": "",
             "button_url_2": "",
-            "text_alignment": "center left"
+            "text_alignment": "top left"
           }
         }
       },
@@ -81,12 +81,12 @@
         "image_EHrpCV"
       ],
       "custom_css": [
-        ".text-overlay {position: relative; top: 5%; left: 5%; font-size: 20px;}",
-        ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px;}",
-        "@media (max-width: 767px) {.text-overlay {position: relative; top: -5%; left: 5%; font-size: 15px; } .btn {width: 130px; text-align: center; font-size: 12px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; top: 115%; left: 22%; }}"
+        ".text-overlay {position: relative; top: -3%; left: 10%; font-size: 20px;}",
+        ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px; top: 80%; position: fixed;}",
+        "@media (max-width: 767px) {.text-overlay {position: relative; top: 23%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 120px; text-align: center; font-size: 12px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; top: 120%; left: 35%; }}"
       ],
       "settings": {
-        "show_sticky": false,
+        "show_sticky_banner": false,
         "sticky_text": "stickyText",
         "link_url": "shopify://collections/all",
         "height": "adapt",
