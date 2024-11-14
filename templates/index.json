@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "16359276425da8ce46": {
@@ -15,22 +6,22 @@
         "image_fz6nVt": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/XbotGo_chameleon.png",
-            "mobile_image": "shopify://shop_images/M-_banner.png",
+            "image": "shopify://shop_images/2_KV-PC.png",
+            "mobile_image": "shopify://shop_images/2_KV-M.png",
             "slide_link": "",
-            "subheading": "Play Hard  Film Smart",
+            "subheading": "",
             "title": "XbotGo Chameleon",
-            "heading_max_width": 16,
-            "title_size": 42,
-            "title_size_mobile": 24,
+            "heading_max_width": 11,
+            "title_size": 24,
+            "title_size_mobile": 20,
             "use_h1": false,
-            "text": "<p>Your AI Sports Cameraman</p>",
+            "text": "",
             "enlarge_text": false,
             "button_label_1": "BUY NOW",
-            "button_url_1": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
+            "button_url_1": "https://xbotgo.com/discount/XbotCha?redirect=%2Fproducts%2Fxbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
             "button_label_2": "",
-            "button_url_2": "https://xbotgo.com/discount/Treat20?redirect=%2Fproducts%2Fcell-phone-sports-gimbal-stabilizer",
-            "text_alignment": "center left"
+            "button_url_2": "",
+            "text_alignment": "top left"
           }
         },
         "image_YhwmWV": {
@@ -56,14 +47,14 @@
         "image_EHrpCV": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/xbotgo-ble-banner.jpg",
-            "mobile_image": "shopify://shop_images/MB-bg3_776a232c-0d06-4fcd-b046-297238a2f970.jpg",
+            "image": "shopify://shop_images/1_KV-PC.png",
+            "mobile_image": "shopify://shop_images/1_KV-M.png",
             "slide_link": "shopify://pages/xbotgo-ai-sports-gimbal",
-            "subheading": "Play Hard  Film Smart",
-            "title": "AI-Powered Sports Gimbal",
-            "heading_max_width": 21,
-            "title_size": 54,
-            "title_size_mobile": 28,
+            "subheading": "",
+            "title": "AI Sports Gimbal",
+            "heading_max_width": 15,
+            "title_size": 24,
+            "title_size_mobile": 20,
             "use_h1": false,
             "text": "",
             "enlarge_text": true,
@@ -71,27 +62,23 @@
             "button_url_1": "https://xbotgo.com/discount/Treat20?redirect=%2Fproducts%2Fcell-phone-sports-gimbal-stabilizer",
             "button_label_2": "",
             "button_url_2": "",
-            "text_alignment": "center left"
+            "text_alignment": "top left"
           }
         }
       },
-      "block_order": [
-        "image_fz6nVt",
-        "image_YhwmWV",
-        "image_EHrpCV"
-      ],
+      "block_order": ["image_fz6nVt", "image_YhwmWV", "image_EHrpCV"],
       "custom_css": [
-        ".text-overlay {position: relative; top: 5%; left: 5%; font-size: 20px;}",
-        ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px;}",
-        "@media (max-width: 767px) {.text-overlay {position: relative; top: -5%; left: 5%; font-size: 15px; } .btn {width: 130px; text-align: center; font-size: 12px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; top: 115%; left: 22%; }}"
+        ".text-overlay {position: relative; top: 10%; left: 10%; font-size: 20px;}",
+        ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px; top: 70%; position: fixed;}",
+        "@media (max-width: 767px) {.text-overlay {position: relative; top: 35%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 130px; text-align: center; font-size: 15px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; left: 35%; }}"
       ],
       "settings": {
-        "show_sticky": false,
+        "show_sticky_banner": false,
         "sticky_text": "stickyText",
         "link_url": "shopify://collections/all",
         "height": "adapt",
         "height_desktop": 680,
-        "height_mobile": 360,
+        "height_mobile": 520,
         "full_width": true,
         "mobile_overlay_under": false,
         "overlay_style": "full",
@@ -149,37 +136,24 @@
           }
         }
       },
-      "block_order": [
-        "text_ahpymj",
-        "image_jCEkac",
-        "video_Cig4DQ"
-      ],
+      "block_order": ["text_ahpymj", "image_jCEkac", "video_Cig4DQ"],
       "custom_css": [
         ".theme-img {border-radius: 25px; overflow: hidden; display: inline-block;}",
         ".video-section {width: 100%; display: block;}",
         "@media (max-width: 767px) {.block-id-text_ahpymj {font-size: 11px; vertical-align: left; } .h1 {font-size: 16px; }}"
       ],
-      "settings": {
-        "alignment": "top"
-      }
+      "settings": { "alignment": "top" }
     },
     "rich_text_W39bMz": {
       "type": "rich-text",
       "blocks": {
         "heading_XxeXz8": {
           "type": "heading",
-          "settings": {
-            "title": "Different Sports Modes",
-            "use_h1": false
-          }
+          "settings": { "title": "Different Sports Modes", "use_h1": false }
         }
       },
-      "block_order": [
-        "heading_XxeXz8"
-      ],
-      "custom_css": [
-        "@media (max-width: 767px) {.h1 {font-size: 16px; }}"
-      ],
+      "block_order": ["heading_XxeXz8"],
+      "custom_css": ["@media (max-width: 767px) {.h1 {font-size: 16px; }}"],
       "settings": {
         "height": "small",
         "text_alignment": "center",
@@ -272,9 +246,7 @@
       "blocks": {
         "subheading_r9hH3d": {
           "type": "subheading",
-          "settings": {
-            "subheading": "Countdown to the Prime Day Sale"
-          }
+          "settings": { "subheading": "Countdown to the Prime Day Sale" }
         },
         "heading_Bpaabc": {
           "type": "heading",
@@ -354,18 +326,11 @@
       "blocks": {
         "heading_m9j3kL": {
           "type": "heading",
-          "settings": {
-            "title": "Key Player Tracking",
-            "use_h1": false
-          }
+          "settings": { "title": "Key Player Tracking", "use_h1": false }
         }
       },
-      "block_order": [
-        "heading_m9j3kL"
-      ],
-      "custom_css": [
-        "@media (max-width: 767px) {.h1 {font-size: 16px; }}"
-      ],
+      "block_order": ["heading_m9j3kL"],
+      "custom_css": ["@media (max-width: 767px) {.h1 {font-size: 16px; }}"],
       "settings": {
         "height": "medium",
         "text_alignment": "center",
@@ -456,9 +421,7 @@
         ".block-id-text_xwrphk {background-color: #e8e8e8; border-radius: 25px; width: 250px; margin: 10px; padding: 15px; font-size: 15px;}",
         "@media (max-width: 767px) {.block-id-text_Xe6fa4 {font-size: 10px; } .block-id-text_xwrphk {font-size: 10px; } .h1 {font-size: 16px; }}"
       ],
-      "settings": {
-        "alignment": "middle"
-      }
+      "settings": { "alignment": "middle" }
     },
     "hotspots_dLUw37": {
       "type": "hotspots",
@@ -528,11 +491,7 @@
           }
         }
       },
-      "block_order": [
-        "media_cdyMbK",
-        "media_QkMV3t",
-        "media_c7QCRa"
-      ],
+      "block_order": ["media_cdyMbK", "media_QkMV3t", "media_c7QCRa"],
       "custom_css": [
         ".btn {border-radius: 25px;}",
         ".gallery__item {border-radius: 25px;}",
@@ -617,9 +576,7 @@
         ".theme-img {border-radius: 25px;}",
         "@media (max-width: 767px) {.block-id-text_dRrH4b {font-size: 11px; vertical-align: left; } .block-id-text_KUtt6y {font-size: 11px; vertical-align: left; } .h1 {font-size: 16px; }}"
       ],
-      "settings": {
-        "alignment": "middle"
-      }
+      "settings": { "alignment": "middle" }
     },
     "multi_column_VTzqiP": {
       "type": "multi-column",
@@ -888,9 +845,7 @@
     },
     "custom_tab_4_GFKfHJ": {
       "type": "custom-tab-4",
-      "custom_css": [
-        ".tab-image4 {}"
-      ],
+      "custom_css": [".tab-image4 {}"],
       "settings": {
         "tab-title": "Recommended by",
         "tab1": "FootballF",
@@ -1068,11 +1023,7 @@
           }
         }
       },
-      "block_order": [
-        "1478526632862",
-        "1478526647261",
-        "1478526645605"
-      ],
+      "block_order": ["1478526632862", "1478526647261", "1478526645605"],
       "custom_css": [],
       "settings": {
         "cross_page_promo_bg": "#f1f1f1",
@@ -1085,10 +1036,7 @@
       "blocks": {
         "heading_qqHGPJ": {
           "type": "heading",
-          "settings": {
-            "title": "Our Mission",
-            "use_h1": false
-          }
+          "settings": { "title": "Our Mission", "use_h1": false }
         },
         "text_xjwhM8": {
           "type": "text",
@@ -1106,11 +1054,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_qqHGPJ",
-        "text_xjwhM8",
-        "button_N3HdNz"
-      ],
+      "block_order": ["heading_qqHGPJ", "text_xjwhM8", "button_N3HdNz"],
       "custom_css": [
         ".theme-img {border-radius: 25px;}",
         "@media (max-width: 767px) {.feature-text-paired {font-size: 11px; vertical-align: left; } .btn {font-size: 11px; vertical-align: left; border-radius: 25px; } .h1 {font-size: 16px; }}"
@@ -1161,16 +1105,11 @@
           }
         }
       },
-      "block_order": [
-        "image_iDhXkB",
-        "text_p8m4AK"
-      ],
+      "block_order": ["image_iDhXkB", "text_p8m4AK"],
       "custom_css": [
         "@media (max-width: 767px) {.block-id-text_p8m4AK {font-size: 11px; vertical-align: left; } .h1 {font-size: 16px; }}"
       ],
-      "settings": {
-        "alignment": "middle"
-      }
+      "settings": { "alignment": "middle" }
     },
     "newsletter_CgBFDg": {
       "type": "newsletter",
