@@ -2,7 +2,18 @@
 
 <link rel="stylesheet" href="{{ 'video.css' | asset_url }}" {%- render 'lazy-stylesheet-attrs' %}>
 <script src="{{ 'video.js' | asset_url }}" defer></script>}
+{%- liquid
+  assign using_video_tag = false
+  if section.settings.video_shopify != blank
+    assign using_video_tag = true
+  endif
 
+  if section.settings.placeholder_image
+    assign placeholder_image = section.settings.placeholder_image
+  elsif section.settings.video_shopify
+    assign placeholder_image = section.settings.video_shopify.preview_image
+  endif
+-%}
 
 <div class="key-player-tracking">
   <div class="row">
@@ -107,6 +118,24 @@
   </div>
 </div>
 
+<script>
+  if (!customElements.get('video-section-play-button')) {
+    class VideoSectionPlayButton extends HTMLElement {
+      connectedCallback() {
+        this.addEventListener('click', this.handleClick);
+      }
+  
+      handleClick(evt) {
+        const section = evt.target.closest('.video-section');
+        section.querySelector('.js-load-media').click();
+        setTimeout(() => section.classList.add('video-section--played'), Shopify.designMode ? 500 : 1500);
+      }
+    }
+  
+    customElements.define('video-section-play-button', VideoSectionPlayButton);
+  }
+  </script>
+  
 <style>
   .video-box{
       width:40%;
