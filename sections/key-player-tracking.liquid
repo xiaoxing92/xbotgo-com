@@ -1,8 +1,136 @@
+
 <div class="key-player-tracking">
   <div class="row">
     <div class="col-top">
       <div class="image-box">
-        {{ section.settings.video_shopify | video_tag: playsinline: true, controls: true, autoplay: false, muted: false, loop: false, poster: '' | replace: '<img ', '<img loading="lazy" hidden ' }}
+        {%- if section.settings.video_shopify != blank or section.settings.video_external != blank -%}
+          {%- liquid
+            assign using_video_tag = false
+            if section.settings.video_shopify != blank
+              assign using_video_tag = true
+            endif
+          
+            if section.settings.placeholder_image
+              assign placeholder_image = section.settings.placeholder_image
+            elsif section.settings.video_shopify
+              assign placeholder_image = section.settings.video_shopify.preview_image
+            endif
+          -%}
+          
+          <link rel="stylesheet" href="{{ 'video.css' | asset_url }}" {%- render 'lazy-stylesheet-attrs' %}>
+          <script src="{{ 'video.js' | asset_url }}" defer></script>
+          
+          <div id="section-id-{{ section.id }}" class="{% unless section.settings.full_width %}container fully-spaced-row{% endunless %} video-section" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+            {% style %}
+              {%- if placeholder_image -%}
+              #section-id-{{ section.id }} .height--adapt {
+                --aspect-ratio: {{ placeholder_image.aspect_ratio }};
+              }
+              {%- endif -%}
+          
+              {%- for block in section.blocks -%}
+                {% if block.type == 'heading' %}
+                  #section-id-{{ section.id }} .block-{{ block.id }} {
+                    --heading-max-width: {{ block.settings.heading_max_width }}em;
+                    font-size: {{ block.settings.title_size_mobile }}px;
+                    {%- if block.settings.title_size_mobile >= 90 -%}
+                    line-height: 1em;
+                    {%- endif %}
+                  }
+          
+                  @media (min-width: 768px) {
+                    #section-id-{{ section.id }} .block-{{ block.id }} {
+                      {%- assign title_size_medium = block.settings.title_size | times: 0.7 | at_least: block.settings.title_size_mobile -%}
+                      font-size: {{ title_size_medium }}px;
+                      {%- if title_size_medium >= 90 -%}
+                      line-height: 1em;
+                      {%- endif %}
+                    }
+                  }
+          
+                  @media (min-width: 1100px) {
+                    #section-id-{{ section.id }} .block-{{ block.id }} {
+                      font-size: {{ block.settings.title_size }}px;
+                      {%- if block.settings.title_size >= 90 -%}
+                      line-height: 1em;
+                      {%- endif %}
+                    }
+                  }
+                {% endif %}
+              {%- endfor -%}
+            {% endstyle %}
+          
+            <div class="height--adapt height--adapt-to-overlay-mobile image-overlay image-overlay--bg-{{ section.settings.overlay_style }}" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+              <div class="image-overlay__image height__image">
+                <deferred-media>
+                  <button type="button" class="js-load-media hidden" aria-hidden="true"></button>
+                  <template>
+                    <video-component class="{% if using_video_tag %}has-video{% else %}has-iframe{% endif %}"
+                      {%- unless using_video_tag %} data-video-url="{{ section.settings.video_external | escape }}"{% endunless %}
+                                    data-video-id="{{ section.id }}"
+                                    data-autoplay="false"
+                                    data-background="false"
+                                    data-description="{{ section.settings.video_description | escape }}">
+                      {%- if using_video_tag -%}
+                        {{ section.settings.video_shopify | video_tag: playsinline: true, controls: true, autoplay: false, muted: false, loop: false, poster: '' | replace: '<img ', '<img loading="lazy" hidden ' }}
+                      {%- else -%}
+                        <div></div>
+                      {%- endif -%}
+                    </video-component>
+                  </template>
+                </deferred-media>
+          
+                {% if placeholder_image %}
+                  {%- render 'image' with placeholder_image, class: 'video-played-hidden' -%}
+                {% else %}
+                  <div class="placeholder-image video-played-hidden">{{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}</div>
+                {% endif %}
+              </div>
+          
+              <div class="text-overlay text-overlay--for-banner text-overlay--v-{{ section.settings.text_alignment | split: ' ' | first }} text-overlay--h-{{ section.settings.text_alignment | split: ' ' | last }} image-overlay__over video-played-hidden">
+                <div class="text-overlay__inner">
+                  <div class="text-overlay__text fade-in-up" {%- render 'animation-attrs', attrs: 'data-cc-animate data-cc-animate-delay="0.5s"' -%}>
+                    {%- assign play_button_found = false -%}
+                    {% for block in section.blocks %}
+                      {% case block.type %}
+                        {% when 'heading' %}
+                          {% if block.settings.use_h1 %}
+                            <h1 class="text-overlay__title block-{{ block.id }}" {{ block.shopify_attributes }}>{% render 'multiline-text' with block.settings.title %}</h1>
+                          {% else %}
+                            <h2 class="text-overlay__title h1 block-{{ block.id }}" {{ block.shopify_attributes }}>{% render 'multiline-text' with block.settings.title %}</h2>
+                          {% endif %}
+          
+                        {% when 'subheading' %}
+                          <div class="text-overlay__subheading subheading subheading--over lightish-spaced-row-above" {{ block.shopify_attributes }}>{{ block.settings.subheading | escape }}</div>
+          
+                        {% when 'text' %}
+                          <div class="text-overlay__rte rte lightly-spaced-row {% if block.settings.enlarge_text %}large-text{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+          
+                        {% when 'play-button' %}
+                          {%- assign play_button_found = true -%}
+                          <div class="text-overlay__button-row" {{ block.shopify_attributes }}>
+                            <video-section-play-button role="button" tabindex="0" type="button" class="button-row__btn video-section__play-btn inline-block">
+                              <span class="visually-hidden">{{ 'general.icon_labels.play' | t }}</span>
+                              {%- render 'icon-play' -%}
+                            </video-section-play-button>
+                          </div>
+                      {% endcase %}
+                    {% endfor %}
+          
+                    {%- unless play_button_found -%}
+                      <div class="text-overlay__button-row" {{ block.shopify_attributes }}>
+                        <video-section-play-button role="button" tabindex="0" type="button" class="button-row__btn video-section__play-btn inline-block">
+                          <span class="visually-hidden">{{ 'general.icon_labels.play' | t }}</span>
+                          {%- render 'icon-play' -%}
+                        </video-section-play-button>
+                      </div>
+                    {%- endunless -%}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endif %}
       </div>
       <div class="content-box">
         <h3>{{ section.settings.title_1 }}</h3>
