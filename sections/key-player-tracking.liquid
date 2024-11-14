@@ -1,65 +1,14 @@
 
+
+<link rel="stylesheet" href="{{ 'video.css' | asset_url }}" {%- render 'lazy-stylesheet-attrs' %}>
+<script src="{{ 'video.js' | asset_url }}" defer></script>}
+
+
 <div class="key-player-tracking">
   <div class="row">
     <div class="col-top">
-      <div class="image-box">
-        {%- if section.settings.video_shopify != blank or section.settings.video_external != blank -%}
-          {%- liquid
-            assign using_video_tag = false
-            if section.settings.video_shopify != blank
-              assign using_video_tag = true
-            endif
-          
-            if section.settings.placeholder_image
-              assign placeholder_image = section.settings.placeholder_image
-            elsif section.settings.video_shopify
-              assign placeholder_image = section.settings.video_shopify.preview_image
-            endif
-          -%}
-          
-          <link rel="stylesheet" href="{{ 'video.css' | asset_url }}" {%- render 'lazy-stylesheet-attrs' %}>
-          <script src="{{ 'video.js' | asset_url }}" defer></script>
-          
-          <div id="section-id-{{ section.id }}" class="{% unless section.settings.full_width %}container fully-spaced-row{% endunless %} video-section" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
-            {% style %}
-              {%- if placeholder_image -%}
-              #section-id-{{ section.id }} .height--adapt {
-                --aspect-ratio: {{ placeholder_image.aspect_ratio }};
-              }
-              {%- endif -%}
-          
-              {%- for block in section.blocks -%}
-                {% if block.type == 'heading' %}
-                  #section-id-{{ section.id }} .block-{{ block.id }} {
-                    --heading-max-width: {{ block.settings.heading_max_width }}em;
-                    font-size: {{ block.settings.title_size_mobile }}px;
-                    {%- if block.settings.title_size_mobile >= 90 -%}
-                    line-height: 1em;
-                    {%- endif %}
-                  }
-          
-                  @media (min-width: 768px) {
-                    #section-id-{{ section.id }} .block-{{ block.id }} {
-                      {%- assign title_size_medium = block.settings.title_size | times: 0.7 | at_least: block.settings.title_size_mobile -%}
-                      font-size: {{ title_size_medium }}px;
-                      {%- if title_size_medium >= 90 -%}
-                      line-height: 1em;
-                      {%- endif %}
-                    }
-                  }
-          
-                  @media (min-width: 1100px) {
-                    #section-id-{{ section.id }} .block-{{ block.id }} {
-                      font-size: {{ block.settings.title_size }}px;
-                      {%- if block.settings.title_size >= 90 -%}
-                      line-height: 1em;
-                      {%- endif %}
-                    }
-                  }
-                {% endif %}
-              {%- endfor -%}
-            {% endstyle %}
-          
+      <div class="video-box">
+          <div id="section-id-{{ section.id }}" class="{% unless section.settings.full_width %}container fully-spaced-row{% endunless %} video-section" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>          
             <div class="height--adapt height--adapt-to-overlay-mobile image-overlay image-overlay--bg-{{ section.settings.overlay_style }}" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
               <div class="image-overlay__image height__image">
                 <deferred-media>
@@ -130,7 +79,7 @@
               </div>
             </div>
           </div>
-          {% endif %}
+
       </div>
       <div class="content-box">
         <h3>{{ section.settings.title_1 }}</h3>
@@ -157,6 +106,12 @@
     </div>
   </div>
 </div>
+
+<style>
+  .video-box{
+      width:40%;
+  }
+</style>
 
 {% schema %}
 {
