@@ -1,109 +1,9 @@
 <div class="key-player-tracking">
   <div class="row">
     <div class="col-top">
-      <div class="top-video-box">
-        {% assign first_block = section.blocks[0] %}
-        {%- unless video_assets_output -%}
-        <link rel="stylesheet" href="{{ 'video.css' | asset_url }}" {%- render 'lazy-stylesheet-attrs' %}>
-        <script src="{{ 'video.js' | asset_url }}" defer></script>
-      {%- endunless -%}
-
-      {%- liquid
-        assign video_assets_output = true
-
-        assign using_video_tag = false
-        if first_block.settings.video_shopify != blank
-          assign using_video_tag = true
-        endif
-
-        if first_block.settings.placeholder_image
-          assign placeholder_image = first_block.settings.placeholder_image
-        elsif first_block.settings.video_shopify
-          assign placeholder_image = first_block.settings.video_shopify.preview_image
-        else
-          assign placeholder_image = nil
-        endif
-
-        assign autoplay = first_block.settings.autoplay
-
-        case first_block.settings.width
-          when 'quarter'
-            assign size_cols_desktop = 4
-          when 'third'
-            assign size_cols_desktop = 3
-          when 'half'
-            assign size_cols_desktop = 2
-          when 'two-thirds'
-            assign size_cols_desktop = 0.67
-          when 'three-quarters'
-            assign size_cols_desktop = 0.25
-          else
-            assign size_cols_desktop = nil
-        endcase
-      -%}
-
-      <div class="video-section">
-        <div class="height--adapt image-overlay image-overlay--bg-no_background" {% if placeholder_image %}style="--aspect-ratio: {{ placeholder_image.aspect_ratio }}"{% endif %} {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
-          <div class="image-overlay__image height__image">
-            <deferred-media>
-              {%- if autoplay == false -%}<button type="button" class="js-load-media hidden" aria-hidden="true"></button>{%- endif -%}
-              <template>
-                <video-component class="{% if using_video_tag %}has-video{% else %}has-iframe{% endif %}"
-                  {%- unless using_video_tag %} data-video-url="{{ first_block.settings.video_external | escape }}"{% endunless %}
-                                data-video-id="{{ first_block.id }}"
-                                data-autoplay="{{ autoplay }}"
-                                data-background="false"
-                                data-description="{{ first_block.settings.video_description | escape }}">
-                  {%- if using_video_tag -%}
-                    {{ first_block.settings.video_shopify | video_tag: playsinline: true, controls: true, autoplay: autoplay, muted: autoplay, loop: autoplay, poster: '' | replace: '<img ', '<img loading="lazy" hidden ' }}
-                  {%- else -%}
-                    <div></div>
-                  {%- endif -%}
-                </video-component>
-              </template>
-            </deferred-media>
-
-            {% if placeholder_image %}
-              {%- render 'image' with placeholder_image, class: 'video-played-hidden', size_cols_desktop: size_cols_desktop -%}
-            {% elsif autoplay == false %}
-              <div class="placeholder-image video-played-hidden">{{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}</div>
-            {% endif %}
-          </div>
-
-          {%- if autoplay == false -%}
-            <div class="text-overlay text-overlay--for-banner text-overlay--v-center text-overlay--h-center image-overlay__over video-played-hidden">
-              <div class="text-overlay__inner">
-                <div class="text-overlay__text">
-                  <video-section-play-button role="button" tabindex="0" type="button" class="button-row__btn video-section__play-btn inline-block">
-                    <span class="visually-hidden">{{ 'general.icon_labels.play' | t }}</span>
-                    {%- render 'icon-play' -%}
-                  </video-section-play-button>
-                </div>
-              </div>
-            </div>
-          {%- endif -%}
-        </div>
+      <div class="image-box">
+        {% section 'video' %}
       </div>
-
-      {%- if autoplay == false -%}
-      <script>
-        if (!customElements.get('video-section-play-button')) {
-          class VideoSectionPlayButton extends HTMLElement {
-            connectedCallback() {
-              this.addEventListener('click', this.handleClick);
-            }
-
-            handleClick(evt) {
-              const section = evt.target.closest('.video-section');
-              section.querySelector('.js-load-media').click();
-              setTimeout(() => section.classList.add('video-section--played'), Shopify.designMode ? 500 : 1500);
-            }
-          }
-
-          customElements.define('video-section-play-button', VideoSectionPlayButton);
-        }
-      </script>
-    </div>
       <div class="content-box">
         <h3>{{ section.settings.title_1 }}</h3>
         <p>{{ section.settings.description_1 }}</p>
@@ -134,6 +34,18 @@
 {
   "name": "Key Player Tracking",
   "settings": [
+    {
+      "type": "text",
+      "label": "Video",
+      "id": "sub_section_choice",
+      "default": "sub-section-1"
+    },
+    {
+      "type": "text",
+      "id": "title_1",
+      "label": "Title 1",
+      "default": "Jersey number recognition"
+    },
     {
       "type": "text",
       "id": "title_1",
@@ -178,78 +90,7 @@
       "label": "Description 3"
     }
   ],
-  "blocks": [
-    {
-      "type": "video",
-      "name": "Video",
-      "settings": [
-        {
-          "type": "select",
-          "id": "width",
-          "label": "Width",
-          "default": "half",
-          "options": [
-            {
-              "value": "quarter",
-              "label": "25%"
-            },
-            {
-              "value": "third",
-              "label": "33%"
-            },
-            {
-              "value": "half",
-              "label": "50%"
-            },
-            {
-              "value": "two-thirds",
-              "label": "66%"
-            },
-            {
-              "value": "three-quarters",
-              "label": "75%"
-            },
-            {
-              "value": "full",
-              "label": "100%"
-            }
-          ]
-        },
-        {
-          "id": "video_shopify",
-          "type": "video",
-          "label": "Video upload",
-          "info": "Hosted by Shopify. Replaces External video if both are set."
-        },
-        {
-          "id": "video_external",
-          "type": "text",
-          "label": "External video",
-          "info": "Supports YouTube and Vimeo",
-          "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
-        },
-        {
-          "type": "text",
-          "id": "video_description",
-          "label": "Video description",
-          "info": "Describe the video for customers using screen readers. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)"
-        },
-        {
-          "id": "autoplay",
-          "type": "checkbox",
-          "label": "Autoplay",
-          "info": "Video will be muted",
-          "default": false
-        },
-        {
-          "id": "placeholder_image",
-          "type": "image_picker",
-          "label": "Custom placeholder image",
-          "info": "Required for External videos. Choose an image the same shape as your video."
-        }
-      ]
-    },
-  ],
+  "blocks": [],
   "presets": [
     {
         "name": "Key Player Tracking",
