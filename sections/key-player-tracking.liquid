@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-top">
       <div class="image-box">
-        {% section 'video' %}
+        {{ section.settings.video_shopify | video_tag: playsinline: true, controls: true, autoplay: false, muted: false, loop: false, poster: '' | replace: '<img ', '<img loading="lazy" hidden ' }}
       </div>
       <div class="content-box">
         <h3>{{ section.settings.title_1 }}</h3>
@@ -35,10 +35,23 @@
   "name": "Key Player Tracking",
   "settings": [
     {
+      "id": "video_shopify",
+      "type": "video",
+      "label": "Video upload",
+      "info": "Hosted by Shopify. Replaces External video if both are set."
+    },
+    {
+      "id": "video_external",
       "type": "text",
-      "label": "Video",
-      "id": "sub_section_choice",
-      "default": "sub-section-1"
+      "label": "External video",
+      "info": "Supports YouTube and Vimeo.",
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+    },
+    {
+      "type": "text",
+      "id": "video_description",
+      "label": "Video description",
+      "info": "Describe the video for customers using screen readers. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)"
     },
     {
       "type": "text",
