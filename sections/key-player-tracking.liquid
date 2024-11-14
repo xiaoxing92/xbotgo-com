@@ -1,3 +1,35 @@
+<div class="key-player-tracking">
+  <div class="row">
+    <div class="col-left">
+      <div class="image-box">
+        <img src="{{ section.settings.image_1 | img_url: 'large' }}" alt="Main Image">
+      </div>
+      <div class="content-box">
+        <h3>{{ section.settings.title_1 }}</h3>
+        <p>{{ section.settings.description_1 }}</p>
+      </div>
+    </div>
+    <div class="col-right">
+      <div class="image-grid">
+        <div class="grid-item">
+          <img src="{{ section.settings.image_2 | img_url: 'large' }}" alt="Image 2">
+          <p>{{ section.settings.title_2 }}</p>
+        </div>
+        <div class="grid-item">
+          <img src="{{ section.settings.image_3 | img_url: 'large' }}" alt="Image 3">
+        </div>
+        <div class="grid-item">
+          <img src="{{ section.settings.image_4 | img_url: 'large' }}" alt="Image 4">
+        </div>
+      </div>
+      <div class="content-box">
+        <h3>{{ section.settings.title_3 }}</h3>
+        <p>{{ section.settings.description_3 }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% schema %}
 {
   "name": "Key Player Tracking",
@@ -54,44 +86,13 @@
   "blocks": [],
   "presets": [
     {
-      "name": "Default",
-      "category": "Custom"
-    }
+        "name": "Key Player Tracking",
+        "category": "Custom"
+      }
   ]
 }
 {% endschema %}
 
-<div class="key-player-tracking">
-  <div class="row">
-    <div class="col-left">
-      <div class="image-box">
-        <img src="{{ section.settings.image_1 | img_url: 'large' }}" alt="Main Image">
-      </div>
-      <div class="content-box">
-        <h3>{{ section.settings.title_1 }}</h3>
-        <p>{{ section.settings.description_1 }}</p>
-      </div>
-    </div>
-    <div class="col-right">
-      <div class="image-grid">
-        <div class="grid-item">
-          <img src="{{ section.settings.image_2 | img_url: 'large' }}" alt="Image 2">
-          <p>{{ section.settings.title_2 }}</p>
-        </div>
-        <div class="grid-item">
-          <img src="{{ section.settings.image_3 | img_url: 'large' }}" alt="Image 3">
-        </div>
-        <div class="grid-item">
-          <img src="{{ section.settings.image_4 | img_url: 'large' }}" alt="Image 4">
-        </div>
-      </div>
-      <div class="content-box">
-        <h3>{{ section.settings.title_3 }}</h3>
-        <p>{{ section.settings.description_3 }}</p>
-      </div>
-    </div>
-  </div>
-</div>
 
 <style>
 .key-player-tracking {
