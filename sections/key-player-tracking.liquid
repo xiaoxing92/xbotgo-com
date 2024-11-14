@@ -18,7 +18,7 @@
 <div class="key-player-tracking">
   <div class="row">
     <div class="col-top">
-      <div class="video-box">
+      <div class="top-video-box">
           <div id="section-id-{{ section.id }}" class="{% unless section.settings.full_width %}container fully-spaced-row{% endunless %} video-section" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>          
             <div class="height--adapt height--adapt-to-overlay-mobile image-overlay image-overlay--bg-{{ section.settings.overlay_style }}" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
               <div class="image-overlay__image height__image">
@@ -92,27 +92,23 @@
           </div>
 
       </div>
-      <div class="content-box">
+      <div class="top-content-box">
         <h3>{{ section.settings.title_1 }}</h3>
         <p>{{ section.settings.description_1 }}</p>
       </div>
     </div>
     <div class="col-bot">
       <div class="image-grid">
-        <div class="grid-item">
+        <div class="grid-left">
           <img src="{{ section.settings.image_2 | img_url: 'large' }}" alt="Image 2">
           <p>{{ section.settings.title_2 }}</p>
         </div>
-        <div class="grid-item">
+        <div class="grid-mid">
           <img src="{{ section.settings.image_3 | img_url: 'large' }}" alt="Image 3">
         </div>
-        <div class="grid-item">
+        <div class="grid-right">
           <img src="{{ section.settings.image_4 | img_url: 'large' }}" alt="Image 4">
         </div>
-      </div>
-      <div class="content-box">
-        <h3>{{ section.settings.title_3 }}</h3>
-        <p>{{ section.settings.description_3 }}</p>
       </div>
     </div>
   </div>
@@ -135,12 +131,68 @@
     customElements.define('video-section-play-button', VideoSectionPlayButton);
   }
   </script>
-  
+
 <style>
-  .video-box{
-      width:40%;
+  .key-player-tracking {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
   }
-</style>
+  .row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .col-top{
+    flex: 1;
+  }
+  .col-bot {
+  }
+  .top-video-box{
+    width:623px;
+    height:530px;
+    border-radius:20px;
+  
+  }
+  .top-content-box{
+    width: 799px;
+    height: 530px;
+    background: #EDEDED;
+    border-radius: 20px 20px 20px 20px;
+  }
+
+.image-grid{
+  display:flex;
+}
+  .grid-left{
+    width: 377px;
+    background: #446F64;
+    border-radius: 20px 20px 20px 20px;
+  }
+  .grid-mid{
+    width: 623px;
+    height: 530px;
+    background: #446F64;
+    border-radius: 20px 20px 20px 20px;
+  }
+  .grid-right{
+    width: 406px;
+    height: 530px;
+    background: #EDEDED;
+    border-radius: 20px 20px 20px 20px;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 14px;
+  }
+  </style>
+
+  
 
 {% schema %}
 {
@@ -218,52 +270,3 @@
   ]
 }
 {% endschema %}
-
-
-<style>
-.key-player-tracking {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 20px 0;
-}
-.row {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1200px;
-}
-.col-top{
-  flex: 1;
-}
-.col-bot {
-}
-.image-box {
-  margin-bottom: 10px;
-}
-.image-box img {
-  width: 100%;
-  height: auto;
-}
-.image-grid {
-  display: flex;
-  gap: 10px;
-}
-.grid-item {
-  flex: 1;
-}
-.grid-item img {
-  width: 100%;
-  height: auto;
-}
-.content-box {
-  padding: 10px;
-}
-h3 {
-  font-size: 18px;
-  font-weight: bold;
-}
-p {
-  font-size: 14px;
-}
-</style>
