@@ -1179,19 +1179,6 @@
         "subheading": "<p>Promotions, new products and sales. Directly to your inbox. </p><p>Join our mailing list to get $20 off your first Xbot order.</p>",
         "color_scheme": "1"
       }
-    },
-    "key_player_tracking_kpW4PD": {
-      "type": "key-player-tracking",
-      "settings": {
-        "video_shopify": "shopify://files/videos/球衣号码追踪.mov",
-        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "video_description": "",
-        "title_1": "Jersey number recognition",
-        "description_1": "",
-        "title_2": "Gesture Recognize",
-        "title_3": "Followme Mode",
-        "description_3": ""
-      }
     }
   },
   "order": [
@@ -1218,7 +1205,6 @@
     "cross-page-promos",
     "image_with_text_E6jeA7",
     "custom_content_6EdQih",
-    "newsletter_CgBFDg",
-    "key_player_tracking_kpW4PD"
+    "newsletter_CgBFDg"
   ]
 }
