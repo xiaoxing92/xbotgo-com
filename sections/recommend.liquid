@@ -1,5 +1,9 @@
 <div class="recommend-wrap">
-
+    {% for block in section.blocks %}
+        {% render 'card-recommend-item', card: {
+            text:'11123'
+        } %}
+    {% endfor %}
 </div>
 
 <style>
@@ -11,13 +15,7 @@
 
 {% schema %}
 {
-  "name": "Recommend Liquid",
-  "class": "section-recommend",
-  "disabled_on": {
-    "groups": [
-      "aside"
-    ]
-  },
+  "name": "Recommend",
   "settings": [
     {
         "type": "text",
@@ -40,5 +38,10 @@
         ]
       },
   ],
+  "presets": [
+    {
+        "name": "Recommend",
+    }
+  ]
 }
 {% endschema %}
