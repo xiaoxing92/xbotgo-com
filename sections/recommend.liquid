@@ -1,7 +1,11 @@
 <div class="recommend-wrap">
     {% for block in section.blocks %}
         {% render 'card-recommend-item', card: {
-            text:'11123'
+            avatar:block.avatar,
+            name:block.name,
+            cover:block.cover,
+            textarea:block.textarea,
+            url:block.url
         } %}
     {% endfor %}
 </div>
@@ -26,15 +30,35 @@
   ],
   "blocks":[
     {
-        "type": "rcustom",
-        "name": "Recommend Crad Block",
+        "type": "custom",
+        "name": "Recommend Crad",
         "settings": [
-          {
-            "type": "textarea",
-            "label": "Custom HTML",
-            "id": "custom_html",
-            "default": "<p>Enter custom HTML content here.</p>"
-          }
+            {
+                "type": "image_picker",
+                "label": "Avatar",
+                "id": "avatar",
+            },
+            {
+                "type": "text",
+                "label": "Name",
+                "id": "name",
+                "default": "David"
+            },
+            {
+                "type": "image_picker",
+                "label": "Cover",
+                "id": "cover",
+            },
+            {
+                "type": "textarea",
+                "label": "Textarea",
+                "id": "textarea",
+            },
+            {
+                "type": "url",
+                "label": "Url",
+                "id": "url",
+            }
         ]
       }
   ],
