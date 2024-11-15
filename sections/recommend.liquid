@@ -10,19 +10,19 @@
 {% schema %}
 {
   "name": "Recommend Liquid",
-  "class": "section-recommend-liquid",
   "blocks":[
     {
-        "type":"card-recommend",
-        "name":"CardRecommend",
+        "type": "text_block",
+        "name": "Text Block",
         "settings": [
-            {
-                "type": "text",
-                "id": "subheading",
-                "label": "Subheading"
-            },
+          {
+            "type": "text",
+            "label": "Text",
+            "id": "text_content",
+            "default": "Sample Text"
+          }
         ]
-    }
+      },
   ],
   "settings": [
 
