@@ -202,6 +202,18 @@
             "text_alignment": "bottom left"
           }
         },
+        "media_EAyPyy": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/basketball_1.25x_1.5x.png",
+            "enlarge_media": true,
+            "subheading": "",
+            "title": "Basketball",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
         "media_bzfGPb": {
           "type": "media",
           "settings": {
@@ -225,25 +237,13 @@
             "link": "",
             "text_alignment": "bottom left"
           }
-        },
-        "media_EAyPyy": {
-          "type": "media",
-          "settings": {
-            "image": "shopify://shop_images/rugby_1.25x.png",
-            "enlarge_media": true,
-            "subheading": "",
-            "title": "Rugby",
-            "button_label": "",
-            "link": "",
-            "text_alignment": "bottom left"
-          }
         }
       },
       "block_order": [
         "media_DJnbfB",
+        "media_EAyPyy",
         "media_bzfGPb",
-        "media_wGVGzg",
-        "media_EAyPyy"
+        "media_wGVGzg"
       ],
       "custom_css": [
         ".gallery__item {transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 25px;}",
