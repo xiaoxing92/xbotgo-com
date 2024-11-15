@@ -8,7 +8,7 @@
                 <span>*******</span>
             </div>
     </div>
-    <img class="item-cover" src="{{ block.cover }}" loading="lazy"></img>
+    <img class="item-cover" src="{{ block.cover | img_url: '468x312' }}" loading="lazy"></img>
     <div class="item-text">
       {{ block.textarea }}
     </div>
