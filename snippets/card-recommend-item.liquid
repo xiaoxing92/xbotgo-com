@@ -1,0 +1,53 @@
+<div class="card-item">
+    <div class="item-head">
+            <div class="avatar"></div>
+            <div class="info">
+                <span>David B</span>
+                <span>David B</span>
+            </div>
+    </div>
+    <div class="item-cover">
+            
+    </div>
+    <div class="item-text">
+      {{ cart.text }}
+    </div>
+</div>
+
+
+<style>
+    .card-item{
+        width: 468px;
+        height: 651px;
+        background: #F5F5F7;
+        border-radius: 20px 20px 20px 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        box-sizing: border-box;
+    }
+    .item-head{
+        position: absolute;
+        top: -20px;
+        display: flex;
+    }
+    .avatar{
+        width: 77px;
+        height: 77px;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+    .item-cover{
+        width: 100%;
+        height: 312px;
+        background: #F5F5F7;
+        border-radius: 20px 20px 0 0;
+    }
+    .item-text{
+        padding: 28px;
+        box-sizing:border-box;
+    }
+</style>

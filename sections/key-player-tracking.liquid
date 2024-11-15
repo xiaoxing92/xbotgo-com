@@ -1,7 +1,5 @@
 
 
-<link rel="stylesheet" href="{{ 'video.css' | asset_url }}" {%- render 'lazy-stylesheet-attrs' %}>
-<script src="{{ 'video.js' | asset_url }}" defer></script>}
 {%- liquid
   assign using_video_tag = false
   if section.settings.video_shopify != blank
@@ -98,7 +96,6 @@
       </div>
     </div>
     <div class="col-bot">
-      <div class="image-grid">
         <div class="grid-left">
           <img src="{{ section.settings.image_2 | img_url: 'large' }}" alt="Image 2">
           <p>{{ section.settings.title_2 }}</p>
@@ -109,7 +106,6 @@
         <div class="grid-right">
           <img src="{{ section.settings.image_4 | img_url: 'large' }}" alt="Image 4">
         </div>
-      </div>
     </div>
   </div>
 </div>
@@ -137,7 +133,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px 0;
   }
   .row {
     display: flex;
@@ -147,40 +142,37 @@
   }
   .col-top{
     flex: 1;
+    display:flex;
   }
   .col-bot {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 5px;
   }
   .top-video-box{
-    width:623px;
+    width:40%;
     height:530px;
     border-radius:20px;
   
   }
   .top-content-box{
-    width: 799px;
+    width: 60%;
     height: 530px;
     background: #EDEDED;
     border-radius: 20px 20px 20px 20px;
   }
-
-.image-grid{
-  display:flex;
-}
   .grid-left{
-    width: 377px;
-    background: #446F64;
+    width: 20%;
     border-radius: 20px 20px 20px 20px;
   }
   .grid-mid{
-    width: 623px;
+    width: 60%;
     height: 530px;
-    background: #446F64;
     border-radius: 20px 20px 20px 20px;
   }
   .grid-right{
-    width: 406px;
+    width: 20%;
     height: 530px;
-    background: #EDEDED;
     border-radius: 20px 20px 20px 20px;
   }
   h3 {

@@ -1,0 +1,40 @@
+<div class="recommend-wrap">
+    {% for block in section.blocks %}
+        {% render 'card-recommend-item', card: {
+            text:'11123'
+        } %}
+    {% endfor %}
+</div>
+
+
+{% schema %}
+{
+  "name": "Recommend Liquid",
+  "class": "section-recommend-liquid",
+  "blocks":[
+    {
+        "type":"card-recommend",
+        "name":"CardRecommend",
+        "settings": [
+            {
+                "type": "text",
+                "id": "subheading",
+                "label": "Subheading"
+            },
+        ]
+    }
+  ],
+  "settings": [
+
+  ],
+}
+{% endschema %}
+
+
+
+<style>
+    .recommend-wrap{
+        max-width: 1440px;
+        display: flex;
+    }
+</style>
