@@ -8,9 +8,7 @@
                 <span>*******</span>
             </div>
     </div>
-    <div class="item-cover">
-    {{ block.cover }}
-    </div>
+    <img class="item-cover" src="{{ block.cover }}"></img>
     <div class="item-text">
       {{ block.textarea }}
     </div>
@@ -25,9 +23,8 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
         box-sizing: border-box;
-        margin:0 8px;
+        margin:20px  8px 0 8px;
     }
     .item-head{
         position: absolute;
