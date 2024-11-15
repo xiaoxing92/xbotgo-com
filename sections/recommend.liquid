@@ -1,12 +1,6 @@
 <div class="recommend-wrap">
     {% for block in section.blocks %}
-        {% render 'card-recommend-item', card: {
-            avatar:block.settings.avatar,
-            name:block.settings.name,
-            cover:block.settings.cover,
-            textarea:block.settings.textarea,
-            url:block.settings.url
-        } %}
+        {% render 'card-recommend-item', block: block.settings  %}
     {% endfor %}
 </div>
 
