@@ -1,6 +1,8 @@
-<div class="card-item">
+<a class="card-item" href="{{block.url }}" >
     <div class="item-head">
-            <div class="avatar"></div>
+            <div class="avatar">
+                <img src="{{ block.avatar | img_url: '77x77'}}"></img>
+            </div>
             <div class="info">
                 <span>{{ block.name }}</span>
                 <span>*******</span>
@@ -12,20 +14,20 @@
     <div class="item-text">
       {{ block.textarea }}
     </div>
-</div>
+</a>
 
 
 <style>
     .card-item{
         width: 468px;
         height: 651px;
-        background: #F5F5F7;
         border-radius: 20px 20px 20px 20px;
         position: relative;
         display: flex;
         flex-direction: column;
         margin-top: 20px;
         box-sizing: border-box;
+        margin:0 8px;
     }
     .item-head{
         position: absolute;
@@ -35,6 +37,8 @@
     .avatar{
         width: 77px;
         height: 77px;
+        overflow: hidden;
+        border-radius:50%;
     }
     .info{
         display: flex;
@@ -45,9 +49,11 @@
         height: 312px;
         background: #F5F5F7;
         border-radius: 20px 20px 0 0;
+        overflow: hidden;
     }
     .item-text{
         padding: 28px;
+        background: #F5F5F7;
         box-sizing:border-box;
     }
 </style>
