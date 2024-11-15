@@ -10,6 +10,12 @@
 {% schema %}
 {
   "name": "Recommend Liquid",
+  "class": "section-recommend",
+  "disabled_on": {
+    "groups": [
+      "aside"
+    ]
+  },
   "blocks":[
     {
         "type": "text_block",
@@ -29,8 +35,6 @@
   ],
 }
 {% endschema %}
-
-
 
 <style>
     .recommend-wrap{
