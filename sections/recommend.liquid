@@ -223,7 +223,7 @@
 </style>
 
 {% javascript %}
-  document.addEventListener('DOMContentLoaded', () => {
+  var loadSection = function () {
     console.log('==============进来了吗');
     const container = document.querySelector('.recommend-container');
     const items = document.querySelectorAll('.card-item');
@@ -233,11 +233,10 @@
     let currentIndex = 0;
     const itemsPerSlide = window.innerWidth > 768 ? 3 : 1;
 
-    function updateSlider() {
+    var updateSlider = function () {
       const itemWidth = items[0].clientWidth;
       container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-      console.log('==============进来了吗12321');
-    }
+    };
 
     prevButton.addEventListener('click', () => {
       currentIndex = Math.max(currentIndex - 1, 0);
@@ -252,7 +251,14 @@
     window.addEventListener('resize', () => {
       updateSlider();
     });
+  };
+
+  document.addEventListener('shopify:section:load', function (event) {
+    console.log('==============进来了吗12321');
+    loadSection();
   });
+
+  loadSection();
 {% endjavascript %}
 
 {% schema %}
