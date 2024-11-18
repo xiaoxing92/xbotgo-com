@@ -14,7 +14,7 @@
     .recommend-container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 10px;
+        grid-gap: 16px;
         max-width: 1440px;
         margin: 0 auto;
     }
@@ -23,6 +23,12 @@
 {% schema %}
 {
   "name": "Recommend",
+  "class": "section-recommend",
+  "disabled_on": {
+    "groups": [
+      "aside"
+    ]
+  },
   "settings": [],
   "blocks":[
     {
@@ -30,37 +36,52 @@
         "name": "Recommend Crad",
         "settings": [
             {
+                "id": "avatar",
                 "type": "image_picker",
                 "label": "Avatar Image",
-                "id": "avatar",
             },
             {
+                "id": "name",
                 "type": "text",
                 "label": "Name",
-                "id": "name",
-                "default": "David"
+                "default": "Default Content"
             },
             {
+                "id": "cover",
                 "type": "image_picker",
                 "label": "Cover Image",
-                "id": "cover",
             },
             {
+                "id": "textarea",
                 "type": "textarea",
                 "label": "Textarea",
-                "id": "textarea",
-                "default": "xxxxxxx"
+                "default": "Default Content"
             },
             {
+                "id": "url",
                 "type": "url",
                 "label": "Url",
-                "id": "url",
             }
         ]
       }
   ],
   "presets": [
-
+    {
+      "name": "Recommend",
+      "settings": {
+      },
+      "blocks": [
+        {
+          "type": "card-recommend-item",
+        },
+        {
+          "type": "card-recommend-item"
+        },
+        {
+          "type": "card-recommend-item"
+        }
+      ]
+    }
   ]
 }
 {% endschema %}
