@@ -124,12 +124,45 @@
       </div>
     {% endfor %}
   </div>
+
+  <button class="carousel-btn prev-btn">&lt;</button>
+  <button class="carousel-btn next-btn">&gt;</button>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const track = document.querySelector('.recommend-containe');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const items = document.querySelectorAll('.card-item');
+    let currentIndex = 0;
+
+    const updateCarousel = function () {
+      const itemWidth = items[0].offsetWidth; // 获取单个 item 的宽度
+      track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    };
+
+    prevBtn.addEventListener('click', function () {
+      currentIndex = Math.max(0, currentIndex - 1); // 防止越界
+      updateCarousel();
+    });
+
+    nextBtn.addEventListener('click', function () {
+      currentIndex = Math.min(items.length - 1, currentIndex + 1); // 防止越界
+      updateCarousel();
+    });
+
+    // 在窗口调整大小时重新计算布局
+    window.addEventListener('resize', updateCarousel);
+  });
+</script>
 
 <style>
   .recommend-wrap {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
   }
   .recommend-container {
     display: grid;
@@ -203,6 +236,24 @@
     box-sizing: border-box;
     word-wrap: break-word;
     border-radius: 0 0 20px 20px;
+  }
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+
+  .prev-btn {
+    left: 10px;
+  }
+
+  .next-btn {
+    right: 10px;
   }
 </style>
 
