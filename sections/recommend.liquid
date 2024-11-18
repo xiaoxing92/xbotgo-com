@@ -1,11 +1,17 @@
 <div class="recommend-wrap">
+    <div class="container">
     {% for block in section.blocks %}
         {% render 'card-recommend-item', block: block.settings  %}
     {% endfor %}
+    </div>
 </div>
 
 <style>
     .recommend-wrap{
+        display: flex;
+        justify-content: center;
+    }
+    .container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 10px;
@@ -58,16 +64,16 @@
         "name": "Recommend",
         "blocks": [
             {
-                "type": "card-recommend-item",
+                "type": "custom",
             },
             {
-                "type": "card-recommend-item",
+                "type": "custom",
             },
             {
-                "type": "card-recommend-item",
+                "type": "custom",
             },
             {
-                "type": "card-recommend-item",
+                "type": "custom",
             },
           ]
     },
