@@ -14,7 +14,7 @@
   if section.settings.top_placeholder_image
     assign top_placeholder_image = section.settings.top_placeholder_image
   elsif section.settings.top_video_shopify
-    assign top_placeholder_image = section.settings.top_placeholder_image
+    assign top_placeholder_image = section.settings.top_video_shopify.preview_image
   else
     assign top_placeholder_image = nil
   endif
@@ -28,7 +28,7 @@
   if section.settings.bot_placeholder_image
     assign bot_placeholder_image = section.settings.bot_placeholder_image
   elsif section.settings.bop_video_shopify
-    assign bot_placeholder_image = section.settings.video_shopify.bot_placeholder_image
+    assign bot_placeholder_image = section.settings.bop_video_shopify.preview_image
   else
     assign bot_placeholder_image = nil
   endif
@@ -65,7 +65,7 @@
               </deferred-media>
 
               {% if top_placeholder_image %}
-                {%- render 'image' with , class: 'video-played-hidden' -%}
+                {%- render 'image' with top_placeholder_image , class: 'video-played-hidden' -%}
               {% elsif autoplay == false %}
                 <div class="placeholder-image video-played-hidden">{{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}</div>
               {% endif %}
@@ -229,20 +229,20 @@
     {
       "id": "top_video_shopify",
       "type": "video",
-      "label": "Video upload",
+      "label": "Top Video upload",
       "info": ".."
     },
     {
       "id": "top_video_external",
       "type": "text",
-      "label": "External video",
+      "label": "Top External video",
       "info": "Supports YouTube and Vimeo",
       "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
     },
     {
       "id": "top_video_description",
       "type": "text",
-      "label": "Video description",
+      "label": "Top Video description",
       "info": "Describe the video for customers using screen readers. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)"
     },
     {
@@ -255,19 +255,20 @@
     {
       "id": "top_placeholder_image",
       "type": "image_picker",
-      "label": "Custom placeholder image",
+      "label": "Top Custom placeholder image",
       "info": "Required for External videos. Choose an image the same shape as your video."
     },
     {
       "id": "top_left_title",
       "type": "text",
-      "label": "TotLeftTitle",
+      "label": "Tot LeftTitle",
       "default": "Gesture Recognize"
     },
     {
       "id": "top_description",
       "type": "textarea",
-      "label": "TopDescription"
+      "label": "Top Description",
+      "default": "xxx"
     },
     {
       "id": "bot_left_image",
@@ -302,14 +303,14 @@
     {
       "id": "bot_autoplay",
       "type": "checkbox",
-      "label": "Autoplay",
+      "label": "Bot Autoplay",
       "info": "Video will be muted",
       "default": false
     },
     {
       "id": "bot_placeholder_image",
       "type": "image_picker",
-      "label": "Custom placeholder image",
+      "label": "Bot Custom placeholder image",
       "info": "Required for External videos. Choose an image the same shape as your video."
     },
     {
