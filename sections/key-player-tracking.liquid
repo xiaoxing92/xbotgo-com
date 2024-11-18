@@ -6,54 +6,57 @@
 {%- liquid
   assign video_assets_output = true
 
-  assign using_video_tag = false
-  if section.settings.video_shopify != blank
-    assign using_video_tag = true
+  assign top_using_video_tag = false
+  if section.settings.top_video_shopify != blank
+    assign top_using_video_tag = true
   endif
 
-  if section.settings.placeholder_image
-    assign placeholder_image = section.settings.placeholder_image
-  elsif section.settings.video_shopify
-    assign placeholder_image = section.settings.video_shopify.preview_image
+  if section.settings.top_placeholder_image
+    assign top_placeholder_image = section.settings.top_placeholder_image
+  elsif section.settings.top_video_shopify
+    assign top_placeholder_image = section.settings.top_placeholder_image
   else
-    assign placeholder_image = nil
+    assign top_placeholder_image = nil
   endif
 
-  assign autoplay = section.settings.autoplay
 
-  case settings.width
-    when 'quarter'
-      assign size_cols_desktop = 4
-    when 'third'
-      assign size_cols_desktop = 3
-    when 'half'
-      assign size_cols_desktop = 2
-    when 'two-thirds'
-      assign size_cols_desktop = 0.67
-    when 'three-quarters'
-      assign size_cols_desktop = 0.25
-    else
-      assign size_cols_desktop = nil
-  endcase
+  assign bot_using_video_tag = false
+  if section.settings.bot_video_shopify != blank
+    assign bot_using_video_tag = true
+  endif
+
+  if section.settings.bot_placeholder_image
+    assign bot_placeholder_image = section.settings.bot_placeholder_image
+  elsif section.settings.bop_video_shopify
+    assign bot_placeholder_image = section.settings.video_shopify.bot_placeholder_image
+  else
+    assign bot_placeholder_image = nil
+  endif
+
+
+  assign autoplay = section.settings.top_autoplay
+  assign autoplay2 = section.settings.bot_autoplay
+
+
 -%}
 
 <div class="key-player-tracking">
   <div class="row">
     <div class="col-top">
       <div class="top-video-box">
-          <div class="height--adapt image-overlay image-overlay--bg-no_background" {% if placeholder_image %}style="--aspect-ratio: {{ placeholder_image.aspect_ratio }}"{% endif %} {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+          <div class="height--adapt image-overlay image-overlay--bg-no_background" {% if top_placeholder_image %}style="--aspect-ratio: {{ top_placeholder_image.aspect_ratio }}"{% endif %} {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
             <div class="image-overlay__image height__image">
               <deferred-media>
                 {%- if autoplay == false -%}<button type="button" class="js-load-media hidden" aria-hidden="true"></button>{%- endif -%}
                 <template>
-                  <video-component class="{% if using_video_tag %}has-video{% else %}has-iframe{% endif %}"
-                    {%- unless using_video_tag %} data-video-url="{{ section.settings.video_external | escape }}"{% endunless %}
+                  <video-component class="{% if top_using_video_tag %}has-video{% else %}has-iframe{% endif %}"
+                    {%- unless top_using_video_tag %} data-video-url="{{ section.settings.top_video_external | escape }}"{% endunless %}
                                   data-video-id="{{ section.id }}"
                                   data-autoplay="{{ autoplay }}"
                                   data-background="false"
-                                  data-description="{{ section.settings.video_description | escape }}">
-                    {%- if using_video_tag -%}
-                      {{ section.settings.video_shopify | video_tag: playsinline: true, controls: true, autoplay: autoplay, muted: autoplay, loop: autoplay, poster: '' | replace: '<img ', '<img loading="lazy" hidden ' }}
+                                  data-description="{{ section.settings.top_video_description | escape }}">
+                    {%- if top_using_video_tag -%}
+                      {{ section.settings.top_video_shopify | video_tag: playsinline: true, controls: true, autoplay: autoplay, muted: autoplay, loop: autoplay, poster: '' | replace: '<img ', '<img loading="lazy" hidden ' }}
                     {%- else -%}
                       <div></div>
                     {%- endif -%}
@@ -61,8 +64,8 @@
                 </template>
               </deferred-media>
 
-              {% if placeholder_image %}
-                {%- render 'image' with placeholder_image, class: 'video-played-hidden', size_cols_desktop: size_cols_desktop -%}
+              {% if top_placeholder_image %}
+                {%- render 'image' with , class: 'video-played-hidden' -%}
               {% elsif autoplay == false %}
                 <div class="placeholder-image video-played-hidden">{{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}</div>
               {% endif %}
@@ -83,46 +86,69 @@
           </div>
 
 
-        {%- if autoplay == false -%}
-          <script>
-            if (!customElements.get('video-section-play-button')) {
-              class VideoSectionPlayButton extends HTMLElement {
-                connectedCallback() {
-                  this.addEventListener('click', this.handleClick);
-                }
-
-                handleClick(evt) {
-                  const section = evt.target.closest('.video-section');
-                  section.querySelector('.js-load-media').click();
-                  setTimeout(() => section.classList.add('video-section--played'), Shopify.designMode ? 500 : 1500);
-                }
-              }
-
-              customElements.define('video-section-play-button', VideoSectionPlayButton);
-            }
-          </script>
-          {%- endif -%}
-
           
       </div>
 
       <div class="top-content-box">
-        <h3 class="top-content-title">{{ section.settings.title_1 }}</h3>
-        <p>{{ section.settings.description_1 }}</p>
+        <h3 class="top-content-title">{{ section.settings.top_left_title }}</h3>
+        <p>{{ section.settings.top_description }}</p>
       </div>
 
     </div>
     <div class="col-bot">
+
         <div class="grid-left">
-          <img src="{{ section.settings.image_2 | img_url: 'large' }}" alt="Image 2">
-          <p>{{ section.settings.title_2 }}</p>
+          <img src="{{ section.settings.bot_left_image | img_url: 'large' }}" alt="Image 2">
+          <p>{{ section.settings.bot_description }}</p>
         </div>
+
         <div class="grid-mid">
-          <img src="{{ section.settings.image_3 | img_url: 'large' }}" alt="Image 3">
+          <div class="height--adapt image-overlay image-overlay--bg-no_background" {% if bot_placeholder_image %}style="--aspect-ratio: {{ bot_placeholder_image.aspect_ratio }}"{% endif %} {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+            <div class="image-overlay__image height__image">
+              <deferred-media>
+                {%- if autoplay == false -%}<button type="button" class="js-load-media hidden" aria-hidden="true"></button>{%- endif -%}
+                <template>
+                  <video-component class="{% if bot_using_video_tag %}has-video{% else %}has-iframe{% endif %}"
+                    {%- unless bot_using_video_tag %} data-video-url="{{ section.settings.bot_video_external | escape }}"{% endunless %}
+                                  data-video-id="{{ section.id }}"
+                                  data-autoplay="{{ autoplay }}"
+                                  data-background="false"
+                                  data-description="{{ section.settings.bot_video_description | escape }}">
+                    {%- if bot_using_video_tag -%}
+                      {{ section.settings.bot_video_shopify | video_tag: playsinline: true, controls: true, autoplay: autoplay, muted: autoplay, loop: autoplay, poster: '' | replace: '<img ', '<img loading="lazy" hidden ' }}
+                    {%- else -%}
+                      <div></div>
+                    {%- endif -%}
+                  </video-component>
+                </template>
+              </deferred-media>
+
+              {% if bot_placeholder_image %}
+                {%- render 'image' with bot_placeholder_image, class: 'video-played-hidden' -%}
+              {% elsif autoplay == false %}
+                <div class="placeholder-image video-played-hidden">{{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}</div>
+              {% endif %}
+            </div>
+
+            {%- if autoplay2 == false -%}
+              <div class="text-overlay text-overlay--for-banner text-overlay--v-center text-overlay--h-center image-overlay__over video-played-hidden">
+                <div class="text-overlay__inner">
+                  <div class="text-overlay__text">
+                    <video-section-play-button role="button" tabindex="0" type="button" class="button-row__btn video-section__play-btn inline-block">
+                      <span class="visually-hidden">{{ 'general.icon_labels.play' | t }}</span>
+                      {%- render 'icon-play' -%}
+                    </video-section-play-button>
+                  </div>
+                </div>
+              </div>
+            {%- endif -%}
+          </div>
+
         </div>
         <div class="grid-right">
-          <img src="{{ section.settings.image_4 | img_url: 'large' }}" alt="Image 4">
-        </div>
+          <h3 class="top-content-title">{{ section.settings.bot_right_title }}</h3>
+         <p>{{ section.settings.bot_right_description }}</p>
+        </div>  
     </div>
   </div>
 </div>
@@ -133,6 +159,10 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .height--adapt{
+    width:100%;
+    height:100%;
+  }
   .row {
     display: flex;
     flex-direction: column;
@@ -142,6 +172,7 @@
   .col-top{
     flex: 1;
     display:flex;
+    justify-content:space-between;
   }
   .col-bot {
     display:flex;
@@ -152,6 +183,7 @@
     width:40%;
     height:530px;
     border-radius:20px;
+    overflow: hidden;
   
   }
   .top-content-box{
@@ -172,6 +204,7 @@
     width: 60%;
     height: 530px;
     border-radius: 20px 20px 20px 20px;
+    overflow: hidden;
   }
   .grid-right{
     width: 20%;
@@ -194,79 +227,103 @@
   "name": "Key Player Tracking",
   "settings": [
     {
-      "id": "video_shopify",
+      "id": "top_video_shopify",
       "type": "video",
       "label": "Video upload",
-      "info": "Hosted by Shopify. Replaces External video if both are set."
+      "info": ".."
     },
     {
-      "id": "video_external",
+      "id": "top_video_external",
       "type": "text",
       "label": "External video",
       "info": "Supports YouTube and Vimeo",
       "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
     },
     {
+      "id": "top_video_description",
       "type": "text",
-      "id": "video_description",
       "label": "Video description",
       "info": "Describe the video for customers using screen readers. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)"
     },
     {
-      "id": "autoplay",
+      "id": "top_autoplay",
+      "type": "checkbox",
+      "label": "TopAutoplay",
+      "info": "Video will be muted",
+      "default": false
+    },
+    {
+      "id": "top_placeholder_image",
+      "type": "image_picker",
+      "label": "Custom placeholder image",
+      "info": "Required for External videos. Choose an image the same shape as your video."
+    },
+    {
+      "id": "top_left_title",
+      "type": "text",
+      "label": "TotLeftTitle",
+      "default": "Gesture Recognize"
+    },
+    {
+      "id": "top_description",
+      "type": "textarea",
+      "label": "TopDescription"
+    },
+    {
+      "id": "bot_left_image",
+      "type": "image_picker",
+      "label": "Bot Left Image"
+    },
+    {
+      "id": "bot_description",
+      "type": "text",
+      "label": "Bot Description",
+      "default": "Bot Description"
+    },
+    {
+      "id": "bot_video_shopify",
+      "type": "video",
+      "label": "Bot Video upload",
+      "info": "Hosted by Shopify. Replaces External video if both are set."
+    },
+    {
+      "id": "bot_video_external",
+      "type": "text",
+      "label": "Bot External video",
+      "info": "Supports YouTube and Vimeo",
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+    },
+    {
+      "id": "bot_video_description",
+      "type": "text",
+      "label": "Bot Video description",
+      "info": "Describe the video for customers using screen readers. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)"
+    },
+    {
+      "id": "bot_autoplay",
       "type": "checkbox",
       "label": "Autoplay",
       "info": "Video will be muted",
       "default": false
     },
     {
-      "id": "placeholder_image",
+      "id": "bot_placeholder_image",
       "type": "image_picker",
       "label": "Custom placeholder image",
       "info": "Required for External videos. Choose an image the same shape as your video."
     },
     {
+      "id": "bot_right_title",
       "type": "text",
-      "id": "title_1",
-      "label": "Title 1",
+      "label": "Bot Right Title",
       "default": "Jersey number recognition"
     },
     {
+      "id": "bot_right_description",
       "type": "textarea",
-      "id": "description_1",
-      "label": "Description 1"
-    },
-    {
-      "type": "image_picker",
-      "id": "image_2",
-      "label": "Image 2"
-    },
-    {
-      "type": "text",
-      "id": "title_2",
-      "label": "Title 2",
-      "default": "Gesture Recognize"
-    },
-    {
-      "type": "image_picker",
-      "id": "image_3",
-      "label": "Image 3"
-    },
-    {
-      "type": "image_picker",
-      "id": "image_4",
-      "label": "Image 4"
-    },
-    {
-      "type": "text",
-      "id": "title_3",
-      "label": "Title 3",
-      "default": "Followme Mode"
-    },
-    {
-      "type": "textarea",
-      "id": "description_3",
-      "label": "Description 3"
+      "label": "Bot Right Description",
+      "default": "Jersey number recognition"
+      
     }
   ],
   "blocks": [
