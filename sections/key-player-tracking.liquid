@@ -7,19 +7,19 @@
   assign video_assets_output = true
 
   assign using_video_tag = false
-  if settings.video_shopify != blank
+  if section.settings.video_shopify != blank
     assign using_video_tag = true
   endif
 
-  if settings.placeholder_image
-    assign placeholder_image = settings.placeholder_image
-  elsif settings.video_shopify
-    assign placeholder_image = settings.video_shopify.preview_image
+  if section.settings.placeholder_image
+    assign placeholder_image = section.settings.placeholder_image
+  elsif section.settings.video_shopify
+    assign placeholder_image = section.settings.video_shopify.preview_image
   else
     assign placeholder_image = nil
   endif
 
-  assign autoplay = settings.autoplay
+  assign autoplay = section.settings.autoplay
 
   case settings.width
     when 'quarter'
