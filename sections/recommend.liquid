@@ -159,42 +159,52 @@
 
 <style>
   .recommend-wrap {
-    display: flex;
+    {% comment %} display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; {% endcomment %}
     margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+
   }
   .recommend-container {
-    display: grid;
+    {% comment %} display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     max-width: 1440px;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 0 auto; {% endcomment %}
+
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-width: 1440px;
   }
 
   #card-item {
-    position: relative;
+    {% comment %} position: relative;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     margin: 100px 8px 36px 8px;
-    border-radius: 20px;
+    border-radius: 20px; {% endcomment %}
+    flex: 1 0 33.33%; /* 大屏每个 item 占三分之一宽度 */
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
     min-width: 0;
     height: 651;
   }
-
-  @media (min-width: 768px) {
-    .recommend-container {
-      grid-template-columns: repeat(3, 1fr);
+  @media (max-width: 768px) {
+    #card-item  {
+      flex: 1 0 100%; /* 小屏每个 item 占满宽度 */
     }
   }
 
-  @media (max-width: 767px) {
-    .recommend-container {
-      grid-template-columns: 1fr;
-    }
-  }
   .height--adapt {
     width: 100%;
     height: 100%;
