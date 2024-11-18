@@ -1,159 +1,175 @@
 {%- unless video_assets_output -%}
-    <link rel="stylesheet" href="{{ 'video.css' | asset_url }}" {%- render 'lazy-stylesheet-attrs' %}>
-    <script src="{{ 'video.js' | asset_url }}" defer></script>
-  {%- endunless -%}
-  
-  {%- liquid
-    assign video_assets_output = true
-  
-    assign using_video_tag = false
-    if block.video_shopify != blank
-      assign using_video_tag = true
-    endif
-  
-    if block.placeholder_image
-      assign placeholder_image = block.placeholder_image
-    elsif block.video_shopify
-      assign placeholder_image = block.video_shopify.preview_image
-    else
-      assign placeholder_image = nil
-    endif
-  
-    assign autoplay = block.autoplay
-  
-  -%}
+  <link rel="stylesheet" href="{{ 'video.css' | asset_url }}" {%- render 'lazy-stylesheet-attrs' %}>
+  <script src="{{ 'video.js' | asset_url }}" defer></script>
+{%- endunless -%}
+
+{%- liquid
+  assign video_assets_output = true
+
+  assign using_video_tag = false
+  if block.video_shopify != blank
+    assign using_video_tag = true
+  endif
+
+  if block.placeholder_image
+    assign placeholder_image = block.placeholder_image
+  elsif block.video_shopify
+    assign placeholder_image = block.video_shopify.preview_image
+  else
+    assign placeholder_image = null
+  endif
+
+  assign autoplay = block.autoplay
+-%}
 
 <div id="card-item">
-    <div class="item-head">
-        <div class="avatar">
-            <img src="{{ block.avatar | image_url: width: 77, height: 77 }}"  loading="lazy" />
-        </div>
-        <div class="info">
-            <span>{{ block.name }}</span>
-            <span>*******</span>
-        </div>
+  <div class="item-head">
+    <div class="avatar">
+      <img src="{{ block.avatar | image_url: width: 77, height: 77 }}" loading="lazy">
     </div>
-    <div class="item-video">
-        <div class="height--adapt image-overlay image-overlay--bg-no_background" {% if placeholder_image %}style="--aspect-ratio: {{ placeholder_image.aspect_ratio }}"{% endif %} {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
-            <div class="image-overlay__image height__image">
-              <deferred-media>
-                {%- if autoplay == false -%}<button type="button" class="js-load-media hidden" aria-hidden="true"></button>{%- endif -%}
-                <template>
-                  <video-component class="{% if using_video_tag %}has-video{% else %}has-iframe{% endif %}"
-                    {%- unless using_video_tag %} data-video-url="{{ section.settings.video_external | escape }}"{% endunless %}
-                                  data-video-id="{{ section.id }}"
-                                  data-autoplay="{{ autoplay }}"
-                                  data-background="false"
-                                  data-description="{{ section.settings.video_description | escape }}">
-                    {%- if using_video_tag -%}
-                      {{ section.settings.video_shopify | video_tag: playsinline: true, controls: true, autoplay: autoplay, muted: autoplay, loop: autoplay, poster: '' | replace: '<img ', '<img loading="lazy" hidden ' }}
-                    {%- else -%}
-                      <div></div>
-                    {%- endif -%}
-                  </video-component>
-                </template>
-              </deferred-media>
+    <div class="info">
+      <span>{{ block.name }}</span>
+      <span>*******</span>
+    </div>
+  </div>
+  <div class="item-video">
+    <div
+      class="height--adapt image-overlay image-overlay--bg-no_background"
+      {% if placeholder_image %}
+        style="--aspect-ratio: {{ placeholder_image.aspect_ratio }}"
+      {% endif %}
+      {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}
+    >
+      <div class="image-overlay__image height__image">
+        <deferred-media>
+          {%- if autoplay == false -%}
+            <button type="button" class="js-load-media hidden" aria-hidden="true"></button>
+          {%- endif -%}
+          <template>
+            <video-component
+              class="{% if using_video_tag %}has-video{% else %}has-iframe{% endif %}"
+              {%- unless using_video_tag %}
+                data-video-url="{{ section.settings.video_external | escape }}"
+              {% endunless %}
+              data-video-id="{{ section.id }}"
+              data-autoplay="{{ autoplay }}"
+              data-background="false"
+              data-description="{{ section.settings.video_description | escape }}"
+            >
+              {%- if using_video_tag -%}
+                {{
+                  section.settings.video_shopify
+                  | video_tag:
+                    playsinline: true,
+                    controls: true,
+                    autoplay: autoplay,
+                    muted: autoplay,
+                    loop: autoplay,
+                    poster: ''
+                  | replace: '<img ', '<img loading="lazy" hidden '
+                }}
+              {%- else -%}
+                <div></div>
+              {%- endif -%}
+            </video-component>
+          </template>
+        </deferred-media>
 
-              {% if placeholder_image %}
-                {%- render 'image' with placeholder_image , class: 'video-played-hidden' -%}
-              {% elsif autoplay == false %}
-                <div class="placeholder-image video-played-hidden">{{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}</div>
-              {% endif %}
-            </div>
-
-            {%- if autoplay == false -%}
-              <div class="text-overlay text-overlay--for-banner text-overlay--v-center text-overlay--h-center image-overlay__over video-played-hidden">
-                <div class="text-overlay__inner">
-                  <div class="text-overlay__text">
-                    <video-section-play-button role="button" tabindex="0" type="button" class="button-row__btn video-section__play-btn inline-block">
-                      <span class="visually-hidden">{{ 'general.icon_labels.play' | t }}</span>
-                      {%- render 'icon-play' -%}
-                    </video-section-play-button>
-                  </div>
-                </div>
-              </div>
-            {%- endif -%}
+        {% if placeholder_image %}
+          {%- render 'image' with placeholder_image, class: 'video-played-hidden' -%}
+        {% elsif autoplay == false %}
+          <div class="placeholder-image video-played-hidden">
+            {{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}
           </div>
+        {% endif %}
+      </div>
+
+      {%- if autoplay == false -%}
+        <div class="text-overlay text-overlay--for-banner text-overlay--v-center text-overlay--h-center image-overlay__over video-played-hidden">
+          <div class="text-overlay__inner">
+            <div class="text-overlay__text">
+              <video-section-play-button
+                role="button"
+                tabindex="0"
+                type="button"
+                class="button-row__btn video-section__play-btn inline-block"
+              >
+                <span class="visually-hidden">{{ 'general.icon_labels.play' | t }}</span>
+                {%- render 'icon-play' -%}
+              </video-section-play-button>
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
     </div>
-    <div class="item-text">
-      {{ block.textarea }}
-    </div>
+  </div>
+  <div class="item-text">
+    {{ block.textarea }}
+  </div>
 </div>
 
-
 <style>
-    #card-item{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        margin:100px 8px 36px 8px;
-        border-radius: 20px;
-    }
-    @media (min-width: 375px) {
-        #card-item{
-            width: 100%;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            box-sizing: border-box;
-            margin:100px 8px 36px 8px;
-            border-radius: 20px;
-        }
-      } 
+  #card-item{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      margin:100px 8px 36px 8px;
+      border-radius: 20px;
+  }
 
-      {% comment %} @media (min-width: 1100px) {
-        #card-item{
-            width: 100%;
-            height: 651px;
-            border-radius: 20px 20px 20px 20px;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            box-sizing: border-box;
-            margin:36px  8px 36px 8px;
-        }
-      } {% endcomment %}
-    .height--adapt{
-        width:100%;
-        height:100%;
-    }
-    .item-head{
-        width: 100%;
-        display: flex;
-        position: absolute;
-        top: -50px;
-        z-index:1000;
-    }
-    .avatar{
-        width: 77px;
-        height: 77px;
-        overflow: hidden;
-        border-radius:50%;
-        margin-left:31px;
-    }
-    .avatar img{
-        width:100%;
-        height:100%;
-        object-fit: cover; 
-    }
-    .info{
-        display: flex;
-        flex-direction: column;
-        margin-left:16px;
-    }
-    .item-video{
-        width: 100%;
-        height: 312px;
-        border-radius: 20px 20px 0 0;
-        overflow: hidden;
-    }
-    .item-text{
-        flex:1;
-        padding: 28px;
-        background: #F5F5F7;
-        box-sizing:border-box;
-        word-wrap: break-word; 
-        border-radius: 0 0 20px 20px
-    }
+    {% comment %} @media (min-width: 1100px) {
+      #card-item{
+          width: 100%;
+          height: 651px;
+          border-radius: 20px 20px 20px 20px;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          box-sizing: border-box;
+          margin:36px  8px 36px 8px;
+      }
+    } {% endcomment %}
+  .height--adapt{
+      width:100%;
+      height:100%;
+  }
+  .item-head{
+      width: 100%;
+      display: flex;
+      position: absolute;
+      top: -50px;
+      z-index:1000;
+  }
+  .avatar{
+      width: 77px;
+      height: 77px;
+      overflow: hidden;
+      border-radius:50%;
+      margin-left:31px;
+  }
+  .avatar img{
+      width:100%;
+      height:100%;
+      object-fit: cover;
+  }
+  .info{
+      display: flex;
+      flex-direction: column;
+      margin-left:16px;
+  }
+  .item-video{
+      width: 100%;
+      height: 312px;
+      border-radius: 20px 20px 0 0;
+      overflow: hidden;
+  }
+  .item-text{
+      flex:1;
+      padding: 28px;
+      background: #F5F5F7;
+      box-sizing:border-box;
+      word-wrap: break-word;
+      border-radius: 0 0 20px 20px
+  }
 </style>
