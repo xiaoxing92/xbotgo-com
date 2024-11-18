@@ -1,18 +1,41 @@
-
+{%- unless video_assets_output -%}
+  <link rel="stylesheet" href="{{ 'video.css' | asset_url }}" {%- render 'lazy-stylesheet-attrs' %}>
+  <script src="{{ 'video.js' | asset_url }}" defer></script>
+{%- endunless -%}
 
 {%- liquid
+  assign video_assets_output = true
+
   assign using_video_tag = false
-  if section.settings.video_shopify != blank
+  if block.settings.video_shopify != blank
     assign using_video_tag = true
   endif
 
-  if section.settings.placeholder_image
-    assign placeholder_image = section.settings.placeholder_image
-  elsif section.settings.video_shopify
-    assign placeholder_image = section.settings.video_shopify.preview_image
+  if block.settings.placeholder_image
+    assign placeholder_image = block.settings.placeholder_image
+  elsif block.settings.video_shopify
+    assign placeholder_image = block.settings.video_shopify.preview_image
+  else
+    assign placeholder_image = nil
   endif
--%}
 
+  assign autoplay = block.settings.autoplay
+
+  case block.settings.width
+    when 'quarter'
+      assign size_cols_desktop = 4
+    when 'third'
+      assign size_cols_desktop = 3
+    when 'half'
+      assign size_cols_desktop = 2
+    when 'two-thirds'
+      assign size_cols_desktop = 0.67
+    when 'three-quarters'
+      assign size_cols_desktop = 0.25
+    else
+      assign size_cols_desktop = nil
+  endcase
+-%}
 <div class="key-player-tracking">
   <div class="row">
     <div class="col-top">
@@ -37,6 +60,54 @@
                     </video-component>
                   </template>
                 </deferred-media>
+          
+                {% if placeholder_image %}
+                  {%- render 'image' with placeholder_image, class: 'video-played-hidden' -%}
+                {% else %}
+                  <div class="placeholder-image video-played-hidden">{{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}</div>
+                {% endif %}
+              </div>
+          
+              <div class="text-overlay text-overlay--for-banner text-overlay--v-{{ section.settings.text_alignment | split: ' ' | first }} text-overlay--h-{{ section.settings.text_alignment | split: ' ' | last }} image-overlay__over video-played-hidden">
+                <div class="text-overlay__inner">
+                  <div class="text-overlay__text fade-in-up" {%- render 'animation-attrs', attrs: 'data-cc-animate data-cc-animate-delay="0.5s"' -%}>
+                    {%- assign play_button_found = false -%}
+                    {% for block in section.blocks %}
+                      {% case block.type %}
+                        {% when 'heading' %}
+                          {% if block.settings.use_h1 %}
+                            <h1 class="text-overlay__title block-{{ block.id }}" {{ block.shopify_attributes }}>{% render 'multiline-text' with block.settings.title %}</h1>
+                          {% else %}
+                            <h2 class="text-overlay__title h1 block-{{ block.id }}" {{ block.shopify_attributes }}>{% render 'multiline-text' with block.settings.title %}</h2>
+                          {% endif %}
+          
+                        {% when 'subheading' %}
+                          <div class="text-overlay__subheading subheading subheading--over lightish-spaced-row-above" {{ block.shopify_attributes }}>{{ block.settings.subheading | escape }}</div>
+          
+                        {% when 'text' %}
+                          <div class="text-overlay__rte rte lightly-spaced-row {% if block.settings.enlarge_text %}large-text{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+          
+                        {% when 'play-button' %}
+                          {%- assign play_button_found = true -%}
+                          <div class="text-overlay__button-row" {{ block.shopify_attributes }}>
+                            <video-section-play-button role="button" tabindex="0" type="button" class="button-row__btn video-section__play-btn inline-block">
+                              <span class="visually-hidden">{{ 'general.icon_labels.play' | t }}</span>
+                              {%- render 'icon-play' -%}
+                            </video-section-play-button>
+                          </div>
+                      {% endcase %}
+                    {% endfor %}
+          
+                    {%- unless play_button_found -%}
+                      <div class="text-overlay__button-row" {{ block.shopify_attributes }}>
+                        <video-section-play-button role="button" tabindex="0" type="button" class="button-row__btn video-section__play-btn inline-block">
+                          <span class="visually-hidden">{{ 'general.icon_labels.play' | t }}</span>
+                          {%- render 'icon-play' -%}
+                        </video-section-play-button>
+                      </div>
+                    {%- endunless -%}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -205,7 +276,78 @@
       "label": "Description 3"
     }
   ],
-  "blocks": [],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "select",
+          "id": "width",
+          "label": "Width",
+          "default": "half",
+          "options": [
+            {
+              "value": "quarter",
+              "label": "25%"
+            },
+            {
+              "value": "third",
+              "label": "33%"
+            },
+            {
+              "value": "half",
+              "label": "50%"
+            },
+            {
+              "value": "two-thirds",
+              "label": "66%"
+            },
+            {
+              "value": "three-quarters",
+              "label": "75%"
+            },
+            {
+              "value": "full",
+              "label": "100%"
+            }
+          ]
+        },
+        {
+          "id": "video_shopify",
+          "type": "video",
+          "label": "Video upload",
+          "info": "Hosted by Shopify. Replaces External video if both are set."
+        },
+        {
+          "id": "video_external",
+          "type": "text",
+          "label": "External video",
+          "info": "Supports YouTube and Vimeo",
+          "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+        },
+        {
+          "type": "text",
+          "id": "video_description",
+          "label": "Video description",
+          "info": "Describe the video for customers using screen readers. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)"
+        },
+        {
+          "id": "autoplay",
+          "type": "checkbox",
+          "label": "Autoplay",
+          "info": "Video will be muted",
+          "default": false
+        },
+        {
+          "id": "placeholder_image",
+          "type": "image_picker",
+          "label": "Custom placeholder image",
+          "info": "Required for External videos. Choose an image the same shape as your video."
+        }
+      ]
+    },
+  ],
   "presets": [
     {
         "name": "Key Player Tracking",
