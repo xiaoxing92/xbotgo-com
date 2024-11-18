@@ -238,20 +238,25 @@
     container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
   };
 
-  var prevSlide = function () {
+  prevButton.addEventListener('click', function () {
     currentIndex = Math.max(currentIndex - 1, 0);
     updateSlider();
-  };
+  });
 
-  var nextSlide = function () {
+  nextButton.addEventListener('click', function () {
     currentIndex = Math.min(currentIndex + 1, items.length - itemsPerSlide);
     updateSlider();
-  };
-  prevButton.addEventListener('click', prevSlide);
-  nextButton.addEventListener('click', nextSlide);
+  });
 
-  prevButton.addEventListener('touchstart', prevSlide);
-  nextButton.addEventListener('touchstart', nextSlide);
+  prevButton.addEventListener('touchstart', function () {
+    currentIndex = Math.max(currentIndex - 1, 0);
+    updateSlider();
+  });
+
+  nextButton.addEventListener('touchstart', function () {
+    currentIndex = Math.min(currentIndex + 1, items.length - itemsPerSlide);
+    updateSlider();
+  });
 
   window.addEventListener('resize', function () {
     updateSlider();
