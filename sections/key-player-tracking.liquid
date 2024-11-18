@@ -35,7 +35,7 @@
 
 
   assign autoplay = section.settings.top_autoplay
-  assign autoplay2 = section.settings.bot_autoplay
+  assign botAutoplay = section.settings.bot_autoplay
 
 
 -%}
@@ -103,16 +103,16 @@
           <div class="height--adapt image-overlay image-overlay--bg-no_background" {% if bot_placeholder_image %}style="--aspect-ratio: {{ bot_placeholder_image.aspect_ratio }}"{% endif %} {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
             <div class="image-overlay__image height__image">
               <deferred-media>
-                {%- if autoplay == false -%}<button type="button" class="js-load-media hidden" aria-hidden="true"></button>{%- endif -%}
+                {%- if botAutoplay == false -%}<button type="button" class="js-load-media hidden" aria-hidden="true"></button>{%- endif -%}
                 <template>
                   <video-component class="{% if bot_using_video_tag %}has-video{% else %}has-iframe{% endif %}"
                     {%- unless bot_using_video_tag %} data-video-url="{{ section.settings.bot_video_external | escape }}"{% endunless %}
                                   data-video-id="{{ section.id }}"
-                                  data-autoplay="{{ autoplay }}"
+                                  data-autoplay="{{ botAutoplay }}"
                                   data-background="false"
                                   data-description="{{ section.settings.bot_video_description | escape }}">
                     {%- if bot_using_video_tag -%}
-                      {{ section.settings.bot_video_shopify | video_tag: playsinline: true, controls: true, autoplay: autoplay, muted: autoplay, loop: autoplay, poster: '' | replace: '<img ', '<img loading="lazy" hidden ' }}
+                      {{ section.settings.bot_video_shopify | video_tag: playsinline: true, controls: true, botAutoplay: botAutoplay, muted: botAutoplay, loop: botAutoplay, poster: '' | replace: '<img ', '<img loading="lazy" hidden ' }}
                     {%- else -%}
                       <div></div>
                     {%- endif -%}
@@ -122,12 +122,12 @@
 
               {% if bot_placeholder_image %}
                 {%- render 'image' with bot_placeholder_image, class: 'video-played-hidden' -%}
-              {% elsif autoplay == false %}
+              {% elsif botAutoplay == false %}
                 <div class="placeholder-image video-played-hidden">{{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}</div>
               {% endif %}
             </div>
 
-            {%- if autoplay2 == false -%}
+            {%- if botAutoplay == false -%}
               <div class="text-overlay text-overlay--for-banner text-overlay--v-center text-overlay--h-center image-overlay__over video-played-hidden">
                 <div class="text-overlay__inner">
                   <div class="text-overlay__text">
@@ -194,7 +194,7 @@
     margin-top:55px;
   }
   .grid-left{
-    width: 15%;
+    width: 15;
     height: 216px;
     margin-right:14px;
     border-radius: 20px 20px 20px 20px;
