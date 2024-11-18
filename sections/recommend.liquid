@@ -31,7 +31,7 @@
         assign autoplay = block.settings.autoplay
       -%}
 
-      <div id="card-item">
+      <div class="card-item">
         <div class="item-head">
           <div class="avatar">
             <img src="{{ block.settings.avatar | image_url: width: 77, height: 77 }}" loading="lazy">
@@ -131,15 +131,14 @@
 
 <style>
   .recommend-wrap {
-    margin-top: 30px;
     position: relative;
     overflow: hidden;
     width: 100%;
     max-width: 1200px;
     margin: auto;
+    margin-top: 30px;
   }
 
-  }
   .recommend-container {
     display: flex;
     transition: transform 0.3s ease-in-out;
@@ -147,7 +146,7 @@
     max-width: 1440px;
   }
 
-  #card-item {
+  .card-item {
     flex: 1 0 33.33%;
     box-sizing: border-box;
     padding: 10px;
@@ -157,7 +156,7 @@
   }
 
   @media (max-width: 768px) {
-    #card-item  {
+    .card-item {
       flex: 1 0 100%;
     }
   }
@@ -224,7 +223,7 @@
 </style>
 
 <script>
-  {% comment %} document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded', function () {
     const track = document.querySelector('.recommend-containe');
     const prevBtn = document.querySelector('.prev-btn');
     const nextBtn = document.querySelector('.next-btn');
@@ -249,7 +248,7 @@
 
     // 在窗口调整大小时重新计算布局
     window.addEventListener('resize', updateCarousel);
-  }); {% endcomment %}
+  });
 </script>
 
 {% schema %}
