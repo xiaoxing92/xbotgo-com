@@ -224,33 +224,32 @@
 
 <script>
   console.log('========================');
-  document.addEventListener('DOMContentLoaded', function () {
-    const container = document.querySelector('.recommend-container');
-    const items = document.querySelectorAll('.card-item');
-    const prevButton = document.querySelector('.prev-btn');
-    const nextButton = document.querySelector('.next-btn');
 
-    let currentIndex = 0;
-    const itemsPerSlide = window.innerWidth > 768 ? 3 : 1;
+  const container = document.querySelector('.recommend-container');
+  const items = document.querySelectorAll('.card-item');
+  const prevButton = document.querySelector('.prev-btn');
+  const nextButton = document.querySelector('.next-btn');
 
-    var updateSlider = function () {
-      const itemWidth = items[0].clientWidth;
-      container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-    };
+  let currentIndex = 0;
+  const itemsPerSlide = window.innerWidth > 768 ? 3 : 1;
 
-    prevButton.addEventListener('click', function () {
-      currentIndex = Math.max(currentIndex - 1, 0);
-      updateSlider();
-    });
+  var updateSlider = function () {
+    const itemWidth = items[0].clientWidth;
+    container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+  };
 
-    nextButton.addEventListener('click', function () {
-      currentIndex = Math.min(currentIndex + 1, items.length - itemsPerSlide);
-      updateSlider();
-    });
+  prevButton.addEventListener('click', function () {
+    currentIndex = Math.max(currentIndex - 1, 0);
+    updateSlider();
+  });
 
-    window.addEventListener('resize', function () {
-      updateSlider();
-    });
+  nextButton.addEventListener('click', function () {
+    currentIndex = Math.min(currentIndex + 1, items.length - itemsPerSlide);
+    updateSlider();
+  });
+
+  window.addEventListener('resize', function () {
+    updateSlider();
   });
 </script>
 
