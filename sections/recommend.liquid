@@ -1,11 +1,9 @@
 <div class="recommend-wrap">
-  
-  <div class="container">
-    {% if section.settings.title != blank %}
-      <h2 class="hometitle h4 align-center" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
-        {{- section.settings.title | escape -}}
-      </h2>
-    {% endif %}
+  {% if section.settings.title != blank %}
+    <h2 class="hometitle h4 align-center" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+      {{- section.settings.title | escape -}}
+    </h2>
+  {% endif %}
 
   <div class="recommend-container">
     {% for block in section.blocks %}
@@ -133,9 +131,9 @@
     display: flex;
     justify-content: center;
   }
-  
   .recommend-container {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     max-width: 1440px;
     overflow: hidden;
@@ -155,13 +153,13 @@
 
   @media (min-width: 768px) {
     .recommend-container {
-      grid-template-columns: repeat(3, 1fr); 
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
   @media (max-width: 767px) {
     .recommend-container {
-      grid-template-columns: 1fr; 
+      grid-template-columns: 1fr;
     }
   }
   .height--adapt {
