@@ -6,8 +6,11 @@
 
 <style>
     .recommend-wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
         max-width: 1440px;
-        display: flex;
+        margin: 0 auto;
     }
 </style>
 
@@ -53,7 +56,22 @@
   "presets": [
     {
         "name": "Recommend",
-    }
+        "blocks": [
+            {
+                "type": "card-recommend-item",
+            },
+            {
+                "type": "card-recommend-item",
+            },
+            {
+                "type": "card-recommend-item",
+            },
+            {
+                "type": "card-recommend-item",
+            },
+          ]
+    },
+    
   ]
 }
 {% endschema %}
