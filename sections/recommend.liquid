@@ -223,43 +223,43 @@
 </style>
 
 <script>
-  console.log('========================');
+  document.addEventListener('DOMContentLoaded', function () {
+    const container = document.querySelector('.recommend-container');
+    const items = document.querySelectorAll('.card-item');
+    const prevButton = document.querySelector('.prev-btn');
+    const nextButton = document.querySelector('.next-btn');
 
-  const container = document.querySelector('.recommend-container');
-  const items = document.querySelectorAll('.card-item');
-  const prevButton = document.querySelector('.prev-btn');
-  const nextButton = document.querySelector('.next-btn');
+    let currentIndex = 0;
+    const itemsPerSlide = window.innerWidth > 768 ? 3 : 1;
 
-  let currentIndex = 0;
-  const itemsPerSlide = window.innerWidth > 768 ? 3 : 1;
+    var updateSlider = function () {
+      const itemWidth = items[0].clientWidth;
+      container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    };
 
-  var updateSlider = function () {
-    const itemWidth = items[0].clientWidth;
-    container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-  };
+    prevButton.addEventListener('click', function () {
+      currentIndex = Math.max(currentIndex - 1, 0);
+      updateSlider();
+    });
 
-  prevButton.addEventListener('click', function () {
-    currentIndex = Math.max(currentIndex - 1, 0);
-    updateSlider();
-  });
+    nextButton.addEventListener('click', function () {
+      currentIndex = Math.min(currentIndex + 1, items.length - itemsPerSlide);
+      updateSlider();
+    });
 
-  nextButton.addEventListener('click', function () {
-    currentIndex = Math.min(currentIndex + 1, items.length - itemsPerSlide);
-    updateSlider();
-  });
+    prevButton.addEventListener('touchstart', function () {
+      currentIndex = Math.max(currentIndex - 1, 0);
+      updateSlider();
+    });
 
-  prevButton.addEventListener('touchstart', function () {
-    currentIndex = Math.max(currentIndex - 1, 0);
-    updateSlider();
-  });
+    nextButton.addEventListener('touchstart', function () {
+      currentIndex = Math.min(currentIndex + 1, items.length - itemsPerSlide);
+      updateSlider();
+    });
 
-  nextButton.addEventListener('touchstart', function () {
-    currentIndex = Math.min(currentIndex + 1, items.length - itemsPerSlide);
-    updateSlider();
-  });
-
-  window.addEventListener('resize', function () {
-    updateSlider();
+    window.addEventListener('resize', function () {
+      updateSlider();
+    });
   });
 </script>
 
