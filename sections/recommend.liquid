@@ -129,35 +129,6 @@
   <button class="carousel-btn next-btn">&gt;</button>
 </div>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const track = document.querySelector('.recommend-containe');
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
-    const items = document.querySelectorAll('.card-item');
-    let currentIndex = 0;
-
-    const updateCarousel = function () {
-      const itemWidth = items[0].offsetWidth; // 获取单个 item 的宽度
-      track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-      console.log('进来了吗');
-    };
-
-    prevBtn.addEventListener('click', function () {
-      currentIndex = Math.max(0, currentIndex - 1); // 防止越界
-      updateCarousel();
-    });
-
-    nextBtn.addEventListener('click', function () {
-      currentIndex = Math.min(items.length - 1, currentIndex + 1); // 防止越界
-      updateCarousel();
-    });
-
-    // 在窗口调整大小时重新计算布局
-    window.addEventListener('resize', updateCarousel);
-  });
-</script>
-
 <style>
   .recommend-wrap {
     margin-top: 30px;
@@ -177,20 +148,19 @@
   }
 
   #card-item {
-
-    flex: 1 0 33.33%; /* 大屏每个 item 占三分之一宽度 */
+    flex: 1 0 33.33%;
     box-sizing: border-box;
     padding: 10px;
     text-align: center;
     min-width: 0;
     height: 651;
   }
+
   @media (max-width: 768px) {
     #card-item  {
-      flex: 1 0 100%; /* 小屏每个 item 占满宽度 */
+      flex: 1 0 100%;
     }
   }
-
   .height--adapt {
     width: 100%;
     height: 100%;
@@ -252,6 +222,35 @@
     right: 10px;
   }
 </style>
+
+<script>
+  {% comment %} document.addEventListener('DOMContentLoaded', function () {
+    const track = document.querySelector('.recommend-containe');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const items = document.querySelectorAll('.card-item');
+    let currentIndex = 0;
+
+    const updateCarousel = function () {
+      const itemWidth = items[0].offsetWidth; // 获取单个 item 的宽度
+      track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+      console.log('进来了吗');
+    };
+
+    prevBtn.addEventListener('click', function () {
+      currentIndex = Math.max(0, currentIndex - 1); // 防止越界
+      updateCarousel();
+    });
+
+    nextBtn.addEventListener('click', function () {
+      currentIndex = Math.min(items.length - 1, currentIndex + 1); // 防止越界
+      updateCarousel();
+    });
+
+    // 在窗口调整大小时重新计算布局
+    window.addEventListener('resize', updateCarousel);
+  }); {% endcomment %}
+</script>
 
 {% schema %}
 {
