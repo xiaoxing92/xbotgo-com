@@ -10,28 +10,34 @@
         assign video_assets_output = true
 
         assign using_video_tag = false
-        if block.video_shopify != blank
+        if block.settings.video_shopify != blank
           assign using_video_tag = true
         endif
 
-        if block.placeholder_image
-          assign placeholder_image = block.placeholder_image
-        elsif block.video_shopify
-          assign placeholder_image = block.video_shopify.preview_image
+        if block.settings.placeholder_image
+          assign placeholder_image = block.settings.placeholder_image
+        elsif block.settings.video_shopify
+          assign placeholder_image = block.settings.video_shopify.preview_image
         else
           assign placeholder_image = null
         endif
 
-        assign autoplay = block.autoplay
+        assign autoplay = block.settings.autoplay
       -%}
 
       <div id="card-item">
         <div class="item-head">
           <div class="avatar">
-            <img src="{{ block.avatar | image_url: width: 77, height: 77 }}" loading="lazy">
+            <img src="{{ block.settings.avatar | image_url: width: 77, height: 77 }}" loading="lazy">
+            {%- render 'image' with block.settings.avatar,
+              sizes: sizes,
+              widths: widths,
+              size_cols_desktop: size_cols_desktop,
+              custom_aspect_ratio: custom_media_aspect_ratio
+            -%}
           </div>
           <div class="info">
-            <span>{{ block.name }}</span>
+            <span>{{ block.settings.name }}</span>
             <span>*******</span>
           </div>
         </div>
@@ -107,7 +113,7 @@
           </div>
         </div>
         <div class="item-text">
-          {{ block.textarea }}
+          {{ block.settings.textarea }}
         </div>
       </div>
     {% endfor %}
