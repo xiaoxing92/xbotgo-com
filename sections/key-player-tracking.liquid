@@ -22,13 +22,13 @@
 
   assign bot_using_video_tag = false
   if section.settings.bot_video_shopify != blank
-    assign bot_using_video_tag = true
+    assign bot_using_video_tag = true　
   endif
 
   if section.settings.bot_placeholder_image
     assign bot_placeholder_image = section.settings.bot_placeholder_image
-  elsif section.settings.bop_video_shopify
-    assign bot_placeholder_image = section.settings.bop_video_shopify.preview_image
+  elsif section.settings.bot_video_shopify
+    assign bot_placeholder_image = section.settings.bot_video_shopify.preview_image
   else
     assign bot_placeholder_image = nil
   endif
