@@ -1,4 +1,9 @@
 
+{%- unless video_assets_output -%}
+  <link rel="stylesheet" href="{{ 'video.css' | asset_url }}" {%- render 'lazy-stylesheet-attrs' %}>
+  <script src="{{ 'video.js' | asset_url }}" defer></script>
+{%- endunless -%}
+
 {%- liquid
   assign video_assets_output = true
 
@@ -26,26 +31,26 @@
             <div class="height--adapt height--adapt-to-overlay-mobile image-overlay image-overlay--bg-{{ section.settings.overlay_style }}" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
               <div class="image-overlay__image height__image">
                 <deferred-media>
-                  <button type="button" class="js-load-media hidden" aria-hidden="true"></button>
+                  {%- if autoplay == false -%}<button type="button" class="js-load-media hidden" aria-hidden="true"></button>{%- endif -%}
                   <template>
                     <video-component class="{% if using_video_tag %}has-video{% else %}has-iframe{% endif %}"
-                      {%- unless using_video_tag %} data-video-url="{{ section.settings.video_external | escape }}"{% endunless %}
-                                    data-video-id="{{ section.id }}"
-                                    data-autoplay="false"
+                      {%- unless using_video_tag %} data-video-url="{{ block.settings.video_external | escape }}"{% endunless %}
+                                    data-video-id="{{ block.id }}"
+                                    data-autoplay="{{ autoplay }}"
                                     data-background="false"
-                                    data-description="{{ section.settings.video_description | escape }}">
+                                    data-description="{{ block.settings.video_description | escape }}">
                       {%- if using_video_tag -%}
-                        {{ section.settings.video_shopify | video_tag: playsinline: true, controls: true, autoplay: false, muted: false, loop: false, poster: '' | replace: '<img ', '<img loading="lazy" hidden ' }}
+                        {{ block.settings.video_shopify | video_tag: playsinline: true, controls: true, autoplay: autoplay, muted: autoplay, loop: autoplay, poster: '' | replace: '<img ', '<img loading="lazy" hidden ' }}
                       {%- else -%}
                         <div></div>
                       {%- endif -%}
                     </video-component>
                   </template>
                 </deferred-media>
-          
+
                 {% if placeholder_image %}
-                  {%- render 'image' with placeholder_image, class: 'video-played-hidden' -%}
-                {% else %}
+                  {%- render 'image' with placeholder_image, class: 'video-played-hidden', size_cols_desktop: size_cols_desktop -%}
+                {% elsif autoplay == false %}
                   <div class="placeholder-image video-played-hidden">{{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}</div>
                 {% endif %}
               </div>
@@ -68,7 +73,6 @@
                       connectedCallback() {
                         this.addEventListener('click', this.handleClick);
                       }
-      
                       handleClick(evt) {
                         const section = evt.target.closest('.video-section');
                         section.querySelector('.js-load-media').click();
@@ -103,24 +107,6 @@
     </div>
   </div>
 </div>
-
-<script>
-  if (!customElements.get('video-section-play-button')) {
-    class VideoSectionPlayButton extends HTMLElement {
-      connectedCallback() {
-        this.addEventListener('click', this.handleClick);
-      }
-  
-      handleClick(evt) {
-        const section = evt.target.closest('.video-section');
-        section.querySelector('.js-load-media').click();
-        setTimeout(() => section.classList.add('video-section--played'), Shopify.designMode ? 500 : 1500);
-      }
-    }
-  
-    customElements.define('video-section-play-button', VideoSectionPlayButton);
-  }
-  </script>
 
 <style>
   .key-player-tracking {
