@@ -41,8 +41,6 @@
   <div class="row">
     <div class="col-top">
       <div class="top-video-box">
-  
-        <div class="video-section">
           <div class="height--adapt image-overlay image-overlay--bg-no_background" {% if placeholder_image %}style="--aspect-ratio: {{ placeholder_image.aspect_ratio }}"{% endif %} {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
             <div class="image-overlay__image height__image">
               <deferred-media>
@@ -83,7 +81,7 @@
               </div>
             {%- endif -%}
           </div>
-        </div>
+
 
         {%- if autoplay == false -%}
           <script>
@@ -109,7 +107,7 @@
       </div>
 
       <div class="top-content-box">
-        <h3>{{ section.settings.title_1 }}</h3>
+        <h3 class="top-content-title">{{ section.settings.title_1 }}</h3>
         <p>{{ section.settings.description_1 }}</p>
       </div>
 
@@ -159,8 +157,12 @@
   .top-content-box{
     width: 60%;
     height: 530px;
+    padding:32px;
     background: #EDEDED;
     border-radius: 20px 20px 20px 20px;
+  }
+  .top-content-title{
+    margin-top:55px;
   }
   .grid-left{
     width: 20%;
