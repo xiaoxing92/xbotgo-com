@@ -159,9 +159,6 @@
 
 <style>
   .recommend-wrap {
-    {% comment %} display: flex;
-    justify-content: center;
-    flex-direction: column; {% endcomment %}
     margin-top: 30px;
     position: relative;
     overflow: hidden;
@@ -172,13 +169,6 @@
 
   }
   .recommend-container {
-    {% comment %} display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    max-width: 1440px;
-    overflow: hidden;
-    margin: 0 auto; {% endcomment %}
-
     display: flex;
     transition: transform 0.3s ease-in-out;
     width: 100%;
@@ -186,12 +176,7 @@
   }
 
   #card-item {
-    {% comment %} position: relative;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    margin: 100px 8px 36px 8px;
-    border-radius: 20px; {% endcomment %}
+
     flex: 1 0 33.33%; /* 大屏每个 item 占三分之一宽度 */
     box-sizing: border-box;
     padding: 10px;
