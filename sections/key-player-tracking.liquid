@@ -1,4 +1,3 @@
-
 {%- unless video_assets_output -%}
   <link rel="stylesheet" href="{{ 'video.css' | asset_url }}" {%- render 'lazy-stylesheet-attrs' %}>
   <script src="{{ 'video.js' | asset_url }}" defer></script>
@@ -8,85 +7,105 @@
   assign video_assets_output = true
 
   assign using_video_tag = false
-  if block.settings.video_shopify != blank
+  if settings.video_shopify != blank
     assign using_video_tag = true
   endif
 
-  if block.settings.placeholder_image
-    assign placeholder_image = section.settings.placeholder_image
-  elsif block.settings.video_shopify
-    assign placeholder_image = section.settings.video_shopify.preview_image
+  if settings.placeholder_image
+    assign placeholder_image = settings.placeholder_image
+  elsif settings.video_shopify
+    assign placeholder_image = settings.video_shopify.preview_image
   else
     assign placeholder_image = nil
   endif
 
-  assign autoplay = section.settings.autoplay
+  assign autoplay = settings.autoplay
+
+  case settings.width
+    when 'quarter'
+      assign size_cols_desktop = 4
+    when 'third'
+      assign size_cols_desktop = 3
+    when 'half'
+      assign size_cols_desktop = 2
+    when 'two-thirds'
+      assign size_cols_desktop = 0.67
+    when 'three-quarters'
+      assign size_cols_desktop = 0.25
+    else
+      assign size_cols_desktop = nil
+  endcase
 -%}
 
 <div class="key-player-tracking">
   <div class="row">
     <div class="col-top">
       <div class="top-video-box">
-          <div id="section-id-{{ section.id }}" class="video-section" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>          
-              <div class="image-overlay__image height__image">
-                <deferred-media>
-                  {%- if autoplay == false -%}
-                    <button type="button" class="js-load-media hidden" aria-hidden="true"></button>
-                  {%- endif -%}
-                  <template>
-                    <video-component class="{% if using_video_tag %}has-video{% else %}has-iframe{% endif %}"
-                      {%- unless using_video_tag %} data-video-url="{{ settings.video_external | escape }}"{% endunless %}
-                                    data-video-id="{{ section.id }}"
-                                    data-autoplay="{{ autoplay }}"
-                                    data-background="false"
-                                    data-description="{{ settings.video_description | escape }}">
-                      {%- if using_video_tag -%}
-                        {{ settings.video_shopify | video_tag: playsinline: true, controls: true, autoplay: autoplay, muted: autoplay, loop: autoplay, poster: '' | replace: '<img ', '<img loading="lazy" hidden ' }}
-                      {%- else -%}
-                        <div></div>
-                      {%- endif -%}
-                    </video-component>
-                  </template>
-                </deferred-media>
+  
+        <div class="video-section">
+          <div class="height--adapt image-overlay image-overlay--bg-no_background" {% if placeholder_image %}style="--aspect-ratio: {{ placeholder_image.aspect_ratio }}"{% endif %} {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+            <div class="image-overlay__image height__image">
+              <deferred-media>
+                {%- if autoplay == false -%}<button type="button" class="js-load-media hidden" aria-hidden="true"></button>{%- endif -%}
+                <template>
+                  <video-component class="{% if using_video_tag %}has-video{% else %}has-iframe{% endif %}"
+                    {%- unless using_video_tag %} data-video-url="{{ block.settings.video_external | escape }}"{% endunless %}
+                                  data-video-id="{{ block.id }}"
+                                  data-autoplay="{{ autoplay }}"
+                                  data-background="false"
+                                  data-description="{{ block.settings.video_description | escape }}">
+                    {%- if using_video_tag -%}
+                      {{ block.settings.video_shopify | video_tag: playsinline: true, controls: true, autoplay: autoplay, muted: autoplay, loop: autoplay, poster: '' | replace: '<img ', '<img loading="lazy" hidden ' }}
+                    {%- else -%}
+                      <div></div>
+                    {%- endif -%}
+                  </video-component>
+                </template>
+              </deferred-media>
 
-                {% if placeholder_image %}
-                  {%- render 'image' with placeholder_image, class: 'video-played-hidden' -%}
-                {% elsif autoplay == false %}
-                  <div class="placeholder-image video-played-hidden">{{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}</div>
-                {% endif %}
-              </div>
-              
-              {%- if autoplay == false -%}
-                <div class="text-overlay text-overlay--for-banner text-overlay--v-center text-overlay--h-center image-overlay__over video-played-hidden">
-                  <div class="text-overlay__inner">
-                    <div class="text-overlay__text">
-                      <video-section-play-button role="button" tabindex="0" type="button" class="button-row__btn video-section__play-btn inline-block">
-                        <span class="visually-hidden">{{ 'general.icon_labels.play' | t }}</span>
-                        {%- render 'icon-play' -%}
-                      </video-section-play-button>
-                    </div>
+              {% if placeholder_image %}
+                {%- render 'image' with placeholder_image, class: 'video-played-hidden', size_cols_desktop: size_cols_desktop -%}
+              {% elsif autoplay == false %}
+                <div class="placeholder-image video-played-hidden">{{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}</div>
+              {% endif %}
+            </div>
+
+            {%- if autoplay == false -%}
+              <div class="text-overlay text-overlay--for-banner text-overlay--v-center text-overlay--h-center image-overlay__over video-played-hidden">
+                <div class="text-overlay__inner">
+                  <div class="text-overlay__text">
+                    <video-section-play-button role="button" tabindex="0" type="button" class="button-row__btn video-section__play-btn inline-block">
+                      <span class="visually-hidden">{{ 'general.icon_labels.play' | t }}</span>
+                      {%- render 'icon-play' -%}
+                    </video-section-play-button>
                   </div>
                 </div>
-              {%- endif -%} 
-              {%- if autoplay == false -%}
-                <script>
-                  if (!customElements.get('video-section-play-button')) {
-                    class VideoSectionPlayButton extends HTMLElement {
-                      connectedCallback() {
-                        this.addEventListener('click', this.handleClick);
-                      }
-                      handleClick(evt) {
-                        const section = evt.target.closest('.video-section');
-                        section.querySelector('.js-load-media').click();
-                        setTimeout(() => section.classList.add('video-section--played'), Shopify.designMode ? 500 : 1500);
-                      }
-                    }
-                    customElements.define('video-section-play-button', VideoSectionPlayButton);
-                  }
-                </script>
-              {%- endif -%}
-       
+              </div>
+            {%- endif -%}
           </div>
+        </div>
+
+        {%- if autoplay == false -%}
+          <script>
+            if (!customElements.get('video-section-play-button')) {
+              class VideoSectionPlayButton extends HTMLElement {
+                connectedCallback() {
+                  this.addEventListener('click', this.handleClick);
+                }
+
+                handleClick(evt) {
+                  const section = evt.target.closest('.video-section');
+                  section.querySelector('.js-load-media').click();
+                  setTimeout(() => section.classList.add('video-section--played'), Shopify.designMode ? 500 : 1500);
+                }
+              }
+
+              customElements.define('video-section-play-button', VideoSectionPlayButton);
+            }
+          </script>
+          {%- endif -%}
+
+          
       </div>
 
       <div class="top-content-box">
