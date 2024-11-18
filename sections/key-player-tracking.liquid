@@ -35,13 +35,11 @@
                   {%- endif -%}
                   <template>
                     <video-component class="{% if using_video_tag %}has-video{% else %}has-iframe{% endif %}"
-                          {%- unless using_video_tag %} 
-                            data-video-url="{{ settings.video_external | escape }}"
-                          {% endunless %}
-                          data-video-id="{{ block.id }}"
-                          data-autoplay="{{ autoplay }}"
-                          data-background="false"
-                          data-description="{{ settings.video_description | escape }}">
+                      {%- unless using_video_tag %} data-video-url="{{ settings.video_external | escape }}"{% endunless %}
+                                    data-video-id="{{ section.id }}"
+                                    data-autoplay="{{ autoplay }}"
+                                    data-background="false"
+                                    data-description="{{ settings.video_description | escape }}">
                       {%- if using_video_tag -%}
                         {{ settings.video_shopify | video_tag: playsinline: true, controls: true, autoplay: autoplay, muted: autoplay, loop: autoplay, poster: '' | replace: '<img ', '<img loading="lazy" hidden ' }}
                       {%- else -%}
@@ -52,7 +50,7 @@
                 </deferred-media>
 
                 {% if placeholder_image %}
-                  {%- render 'image' with placeholder_image, class: 'video-played-hidden', size_cols_desktop: size_cols_desktop -%}
+                  {%- render 'image' with placeholder_image, class: 'video-played-hidden' -%}
                 {% elsif autoplay == false %}
                   <div class="placeholder-image video-played-hidden">{{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}</div>
                 {% endif %}
