@@ -222,7 +222,7 @@
   }
 </style>
 
-<script>
+{% javascript %}
   document.addEventListener('DOMContentLoaded', () => {
     console.log('==============进来了吗');
     const container = document.querySelector('.recommend-container');
@@ -253,7 +253,7 @@
       updateSlider();
     });
   });
-</script>
+{% endjavascript %}
 
 {% schema %}
 {
