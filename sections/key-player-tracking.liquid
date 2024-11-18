@@ -49,13 +49,13 @@
                 {%- if autoplay == false -%}<button type="button" class="js-load-media hidden" aria-hidden="true"></button>{%- endif -%}
                 <template>
                   <video-component class="{% if using_video_tag %}has-video{% else %}has-iframe{% endif %}"
-                    {%- unless using_video_tag %} data-video-url="{{ block.settings.video_external | escape }}"{% endunless %}
-                                  data-video-id="{{ block.id }}"
+                    {%- unless using_video_tag %} data-video-url="{{ section.settings.video_external | escape }}"{% endunless %}
+                                  data-video-id="{{ section.id }}"
                                   data-autoplay="{{ autoplay }}"
                                   data-background="false"
-                                  data-description="{{ block.settings.video_description | escape }}">
+                                  data-description="{{ section.settings.video_description | escape }}">
                     {%- if using_video_tag -%}
-                      {{ block.settings.video_shopify | video_tag: playsinline: true, controls: true, autoplay: autoplay, muted: autoplay, loop: autoplay, poster: '' | replace: '<img ', '<img loading="lazy" hidden ' }}
+                      {{ section.settings.video_shopify | video_tag: playsinline: true, controls: true, autoplay: autoplay, muted: autoplay, loop: autoplay, poster: '' | replace: '<img ', '<img loading="lazy" hidden ' }}
                     {%- else -%}
                       <div></div>
                     {%- endif -%}
