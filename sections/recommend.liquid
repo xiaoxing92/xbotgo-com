@@ -228,13 +228,14 @@
     const prevBtn = document.querySelector('.prev-btn');
     const nextBtn = document.querySelector('.next-btn');
     const items = document.querySelectorAll('.card-item');
-    let currentIndex = 0;
+    var currentIndex = 0;
 
-    const updateCarousel = function () {
+    console.log(track, prevBtn, nextBtn, items, '进来了吗');
+    function updateCarousel() {
       const itemWidth = items[0].offsetWidth; // 获取单个 item 的宽度
       track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
       console.log('进来了吗');
-    };
+    }
 
     prevBtn.addEventListener('click', function () {
       currentIndex = Math.max(0, currentIndex - 1); // 防止越界
