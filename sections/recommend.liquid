@@ -90,10 +90,10 @@
               custom_aspect_ratio: custom_media_aspect_ratio
             -%}
           </div>
-          <div class="info">
+          <div class="user-info">
             <span>{{ block.settings.name }}</span>
             {%- if block.settings.star_rating > 0 -%}
-                <div class="testimonial__star-rating heading-font">
+                <div class="testimonial__star-rating heading-font" style="margin-left: -20px"> 
                   {%- for i in (1..block.settings.star_rating) -%}
                   <span style="color:#FFCC00" class="testimonial__star">{% render 'icon-star' %}</span>
                   {%- endfor -%}
@@ -223,6 +223,12 @@
     margin-top: -45px;
     z-index: 1000;
   }
+  .user-info{
+    margin-left: 10px;
+    font-weight: bold;
+    color:#000000;    
+}
+
   .avatar {
     width: 77px;
     height: 77px;
@@ -253,6 +259,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
     border-radius: 0 0 20px 20px;
+    color:#000000;
   }
   .carousel-btn {
     position: absolute;
