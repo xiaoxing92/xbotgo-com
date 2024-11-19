@@ -1,5 +1,5 @@
 
-<div class="recommend-wrap">
+<div id="section-id-{{ section.id }}" class="recommend-wrap">
   {% if section.settings.title != blank %}
     <h2 class="hometitle h4 align-center" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
       {{- section.settings.title | escape -}}
@@ -113,7 +113,7 @@
                 }
               </script>
               {%- endif -%}
-              
+
           </div>
         </div>
         <div class="item-text">
