@@ -6,6 +6,8 @@
 -%}
 
 {%- if use_recommend -%}
+    <link rel="stylesheet" href="{{ 'video.css' | asset_url }}" {%- render 'lazy-stylesheet-attrs' %}>
+    <script src="{{ 'video.js' | asset_url }}" defer></script>
     <script defer>
         const container = document.querySelector('.recommend-container');
         const items = document.querySelectorAll('.card-item');
@@ -54,12 +56,8 @@
   {% endif %}
 
   <div class="recommend-container">
+    
     {% for block in section.blocks %}
-      {%- unless video_assets_output -%}
-        <link rel="stylesheet" href="{{ 'video.css' | asset_url }}" {%- render 'lazy-stylesheet-attrs' %}>
-        <script src="{{ 'video.js' | asset_url }}" defer></script>
-      {%- endunless -%}
-
       {%- liquid
         assign video_assets_output = true
 
