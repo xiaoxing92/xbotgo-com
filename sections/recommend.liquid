@@ -11,11 +11,16 @@
     {% for block in section.blocks %}
 
       {% if block.type == 'video' %}
+        {%- unless video_assets_output -%}
           <link rel="stylesheet" href="{{ 'video.css' | asset_url }}" {%- render 'lazy-stylesheet-attrs' %}>
           <script src="{{ 'video.js' | asset_url }}" defer></script>
+        {%- endunless -%}
       {% endif %}
 
       {%- liquid
+
+        assign video_assets_output = true
+
         assign using_video_tag = false
         if block.settings.video_shopify != blank
           assign using_video_tag = true
@@ -49,7 +54,7 @@
           </div>
         </div>
         <div class="item-video">
-          <div class="height--adapt image-overlay image-overlay--bg-no_background" {% if placeholder_image %}style="--aspect-ratio: {{ top_placeholder_image.aspect_ratio }}"{% endif %} {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+          <div class="height--adapt image-overlay image-overlay--bg-no_background" {% if placeholder_image %} style="--aspect-ratio: {{ placeholder_image.aspect_ratio }}"{% endif %} {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
             <div class="image-overlay__image height__image">
               <deferred-media>
                 {%- if autoplay == false -%}<button type="button" class="js-load-media hidden" aria-hidden="true"></button>{%- endif -%}
@@ -89,6 +94,26 @@
               </div>
             {%- endif -%}
 
+            {%- if autoplay == false -%}
+              <script>
+                if (!customElements.get('video-section-play-button')) {
+                  class VideoSectionPlayButton extends HTMLElement {
+                    connectedCallback() {
+                      this.addEventListener('click', this.handleClick);
+                    }
+    
+                    handleClick(evt) {
+                      const section = evt.target.closest('.video-section');
+                      section.querySelector('.js-load-media').click();
+                      setTimeout(() => section.classList.add('video-section--played'), Shopify.designMode ? 500 : 1500);
+                    }
+                  }
+    
+                  customElements.define('video-section-play-button', VideoSectionPlayButton);
+                }
+              </script>
+              {%- endif -%}
+              
           </div>
         </div>
         <div class="item-text">
@@ -285,7 +310,7 @@
   "blocks": [
     {
       "type": "text_block",
-      "name": "Crad",
+      "name": "Card",
       "settings": [
         {
           "id": "avatar",
