@@ -1,3 +1,51 @@
+{%- liquid
+    assign use_recommend = false
+    if section.blocks.size > 1
+    assign use_recommend = true
+    endif
+-%}
+
+{%- if use_recommend -%}
+    <script>
+        const container = document.querySelector('.recommend-container');
+        const items = document.querySelectorAll('.card-item');
+        const prevButton = document.querySelector('.prev-btn');
+        const nextButton = document.querySelector('.next-btn');
+
+        let currentIndex = 0;
+        const itemsPerSlide = window.innerWidth > 768 ? 3 : 1;
+
+        var updateSlider = function () {
+            const itemWidth = items[0].clientWidth;
+            container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+        };
+
+        prevButton.addEventListener('click', function () {
+                currentIndex = Math.max(currentIndex - 1, 0);
+                updateSlider();
+        });
+
+        nextButton.addEventListener('click', function () {
+            currentIndex = Math.min(currentIndex + 1, items.length - itemsPerSlide);
+            updateSlider();
+        });
+
+        prevButton.addEventListener('touchstart', function () {
+            currentIndex = Math.max(currentIndex - 1, 0);
+            updateSlider();
+        });
+
+        nextButton.addEventListener('touchstart', function () {
+            currentIndex = Math.min(currentIndex + 1, items.length - itemsPerSlide);
+            updateSlider();
+        });
+
+        window.addEventListener('resize', function () {
+        updateSlider();
+        });
+</script>
+{%- endif -%}
+
 <div class="recommend-wrap">
   {% if section.settings.title != blank %}
     <h2 class="hometitle h4 align-center" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
@@ -221,58 +269,6 @@
     right: 10px;
   }
 </style>
-
-<script defer>
-
-
-
-    const container = document.querySelector('.recommend-container');
-    const items = document.querySelectorAll('.card-item');
-    const prevButton = document.querySelector('.prev-btn');
-    const nextButton = document.querySelector('.next-btn');
-
-    let currentIndex = 0;
-    const itemsPerSlide = window.innerWidth > 768 ? 3 : 1;
-
-    var updateSlider = function () {
-      const itemWidth = items[0].clientWidth;
-      container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-    };
-
-    prevButton.addEventListener('click', function () {
-      currentIndex = Math.max(currentIndex - 1, 0);
-      updateSlider();
-    });
-
-    nextButton.addEventListener('click', function () {
-      currentIndex = Math.min(currentIndex + 1, items.length - itemsPerSlide);
-      updateSlider();
-    });
-
-    let startX = 0;
-    let endX = 0;
-  
-    container.addEventListener('touchstart', (e) => {
-      startX = e.touches[0].clientX;
-    });
-  
-    container.addEventListener('touchend', (e) => {
-      endX = e.changedTouches[0].clientX;
-      if (startX > endX + 50) {
-        currentIndex = Math.max(currentIndex - 1, 0);
-        updateSlider();
-      
-      } else if (startX < endX - 50) {
-        currentIndex = Math.min(currentIndex + 1, items.length - itemsPerSlide);
-        updateSlider();
-      }
-    });
-
-    window.addEventListener('resize', function () {
-      updateSlider();
-    });
-
-</script>
 
 {% schema %}
 {
