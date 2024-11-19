@@ -93,7 +93,7 @@
           <div class="user-info">
             <span>{{ block.settings.name }}</span>
             {%- if block.settings.star_rating > 0 -%}
-                <div class="testimonial__star-rating heading-font" style="margin-left: -20px"> 
+                <div class="testimonial__star-rating heading-font" style="display:flex"> 
                   {%- for i in (1..block.settings.star_rating) -%}
                   <span style="color:#FFCC00" class="testimonial__star">{% render 'icon-star' %}</span>
                   {%- endfor -%}
@@ -273,15 +273,16 @@
     width: 30px;
     height: 30px;
     background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1001;
   }
 
   .prev-btn {
-    left: 10px;
+    left: 20px;
     display:none;
   }
 
   .next-btn {
-    right: 10px;
+    right: -20px;
     display:none;
   }
 
@@ -291,12 +292,12 @@
     }
 
     .prev-btn {
-        left: 10px;
+        left: 20px;
         display:block;
       }
 
     .next-btn {
-        right: 10px;
+        right: -20px;
         display:block;
     }
   }
