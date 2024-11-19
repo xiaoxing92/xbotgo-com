@@ -98,8 +98,8 @@
     {% endfor %}
   </div>
 
-  <button class="carousel-btn prev-btn" onclick="prevBtn()">&lt;</button>
-  <button class="carousel-btn next-btn" onclick="nextBtn()">&gt;</button>
+  <button class="carousel-btn prev-btn">&lt;</button>
+  <button class="carousel-btn next-btn">&gt;</button>
 </div>
 
 
@@ -109,14 +109,13 @@
   const observer = new MutationObserver(() => {
     const element = document.querySelector(".recommend-container");
     const items = document.querySelectorAll('.card-item');
-    const prevBtn = document.querySelectorAll('.prev-btn');
-    const nextBtn = document.querySelectorAll('.next-btn');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
 
     console.log(element,"=======")
     if (element) {
         let currentIndex = 0;
         const itemsPerSlide = window.innerWidth > 768 ? 3 : 1;
-
         var updateSlider = function () {
             const itemWidth = items[0].clientWidth;
             container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
