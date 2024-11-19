@@ -1186,6 +1186,7 @@
         "text_block_4NWxqY": {
           "type": "text_block",
           "settings": {
+            "avatar": "shopify://shop_images/1_41-1200-628.png",
             "name": "Author Name",
             "star_rating": 5,
             "video_shopify": "shopify://files/videos/球衣号码追踪.mov",
@@ -1203,6 +1204,7 @@
             "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "video_description": "",
             "autoplay": false,
+            "placeholder_image": "shopify://shop_images/2_2-1200-628.png",
             "textarea": "Default Content"
           }
         },
