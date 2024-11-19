@@ -1,4 +1,4 @@
-{%- liquid
+{%- liquid 
   assign rtl_langs = 'ar,arc,dv,fa,ha,he,khw,ks,ku,ps,ur,yi' | split: ','
   assign current_lang = localization.language.iso_code | split: '-' | first
   if rtl_langs contains current_lang
