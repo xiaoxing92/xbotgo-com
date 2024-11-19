@@ -9,8 +9,6 @@
     <script >
         const container = document.querySelector('.recommend-container');
         const items = document.querySelectorAll('.card-item');
-        const prevButton = document.querySelector('.prev-btn');
-        const nextButton = document.querySelector('.next-btn');
 
         let currentIndex = 0;
         const itemsPerSlide = window.innerWidth > 768 ? 3 : 1;
@@ -20,25 +18,15 @@
             container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
         };
 
-        prevButton.addEventListener('click', function () {
-                currentIndex = Math.max(currentIndex - 1, 0);
-                updateSlider();
-        });
+        var prevBtn =  function () {
+          currentIndex = Math.max(currentIndex - 1, 0);
+          updateSlider();
+        }
 
-        nextButton.addEventListener('click', function () {
-            currentIndex = Math.min(currentIndex + 1, items.length - itemsPerSlide);
-            updateSlider();
-        });
-
-        prevButton.addEventListener('touchstart', function () {
-            currentIndex = Math.max(currentIndex - 1, 0);
-            updateSlider();
-        });
-
-        nextButton.addEventListener('touchstart', function () {
-            currentIndex = Math.min(currentIndex + 1, items.length - itemsPerSlide);
-            updateSlider();
-        });
+        var nextBtn = function () {
+          currentIndex = Math.max(currentIndex - 1, 0);
+          updateSlider();
+        }
 
         window.addEventListener('resize', function () {
             updateSlider();
@@ -146,8 +134,8 @@
     {% endfor %}
   </div>
 
-  <button class="carousel-btn prev-btn">&lt;</button>
-  <button class="carousel-btn next-btn">&gt;</button>
+  <button class="carousel-btn prev-btn" onclick="prevBtn()">&lt;</button>
+  <button class="carousel-btn next-btn" onclick="nextBtn()">&gt;</button>
 </div>
 
 <style>
@@ -360,15 +348,7 @@
       "name": "Recommend",
       "settings": {},
       "blocks": [
-        {
-          "type": "text_block"
-        },
-        {
-          "type": "text_block"
-        },
-        {
-          "type": "text_block"
-        }
+
       ]
     }
   ]
