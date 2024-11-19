@@ -75,7 +75,11 @@
           }
         }
       },
-      "block_order": ["image_fz6nVt", "image_YhwmWV", "image_EHrpCV"],
+      "block_order": [
+        "image_fz6nVt",
+        "image_YhwmWV",
+        "image_EHrpCV"
+      ],
       "custom_css": [
         ".text-overlay {position: relative; top: 10%; left: 10%; font-size: 20px;}",
         ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px; top: 70%; position: fixed;}",
@@ -145,7 +149,11 @@
           }
         }
       },
-      "block_order": ["text_ahpymj", "image_jCEkac", "video_Cig4DQ"],
+      "block_order": [
+        "text_ahpymj",
+        "image_jCEkac",
+        "video_Cig4DQ"
+      ],
       "custom_css": [
         ".theme-img {border-radius: 25px; overflow: hidden; display: inline-block;}",
         ".video-section {width: 100%; display: block;}",
@@ -166,8 +174,12 @@
           }
         }
       },
-      "block_order": ["heading_XxeXz8"],
-      "custom_css": ["@media (max-width: 767px) {.h1 {font-size: 16px; }}"],
+      "block_order": [
+        "heading_XxeXz8"
+      ],
+      "custom_css": [
+        "@media (max-width: 767px) {.h1 {font-size: 16px; }}"
+      ],
       "settings": {
         "height": "small",
         "text_alignment": "center",
@@ -348,8 +360,12 @@
           }
         }
       },
-      "block_order": ["heading_m9j3kL"],
-      "custom_css": ["@media (max-width: 767px) {.h1 {font-size: 16px; }}"],
+      "block_order": [
+        "heading_m9j3kL"
+      ],
+      "custom_css": [
+        "@media (max-width: 767px) {.h1 {font-size: 16px; }}"
+      ],
       "settings": {
         "height": "medium",
         "text_alignment": "center",
@@ -512,7 +528,11 @@
           }
         }
       },
-      "block_order": ["media_cdyMbK", "media_QkMV3t", "media_c7QCRa"],
+      "block_order": [
+        "media_cdyMbK",
+        "media_QkMV3t",
+        "media_c7QCRa"
+      ],
       "custom_css": [
         ".btn {border-radius: 25px;}",
         ".gallery__item {border-radius: 25px;}",
@@ -868,7 +888,9 @@
     },
     "custom_tab_4_GFKfHJ": {
       "type": "custom-tab-4",
-      "custom_css": [".tab-image4 {}"],
+      "custom_css": [
+        ".tab-image4 {}"
+      ],
       "settings": {
         "tab-title": "Recommended by",
         "tab1": "FootballF",
@@ -1046,7 +1068,11 @@
           }
         }
       },
-      "block_order": ["1478526632862", "1478526647261", "1478526645605"],
+      "block_order": [
+        "1478526632862",
+        "1478526647261",
+        "1478526645605"
+      ],
       "custom_css": [],
       "settings": {
         "cross_page_promo_bg": "#f1f1f1",
@@ -1080,7 +1106,11 @@
           }
         }
       },
-      "block_order": ["heading_qqHGPJ", "text_xjwhM8", "button_N3HdNz"],
+      "block_order": [
+        "heading_qqHGPJ",
+        "text_xjwhM8",
+        "button_N3HdNz"
+      ],
       "custom_css": [
         ".theme-img {border-radius: 25px;}",
         "@media (max-width: 767px) {.feature-text-paired {font-size: 11px; vertical-align: left; } .btn {font-size: 11px; vertical-align: left; border-radius: 25px; } .h1 {font-size: 16px; }}"
@@ -1131,7 +1161,10 @@
           }
         }
       },
-      "block_order": ["image_iDhXkB", "text_p8m4AK"],
+      "block_order": [
+        "image_iDhXkB",
+        "text_p8m4AK"
+      ],
       "custom_css": [
         "@media (max-width: 767px) {.block-id-text_p8m4AK {font-size: 11px; vertical-align: left; } .h1 {font-size: 16px; }}"
       ],
@@ -1145,6 +1178,53 @@
         "title": "Subscribe to our newsletter",
         "subheading": "<p>Promotions, new products and sales. Directly to your inbox. </p><p>Join our mailing list to get $20 off your first Xbot order.</p>",
         "color_scheme": "1"
+      }
+    },
+    "recommend_it3XRM": {
+      "type": "recommend",
+      "blocks": {
+        "text_block_4NWxqY": {
+          "type": "text_block",
+          "settings": {
+            "name": "Author Name",
+            "star_rating": 5,
+            "video_shopify": "shopify://files/videos/球衣号码追踪.mov",
+            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_description": "",
+            "autoplay": false,
+            "textarea": "Default Content"
+          }
+        },
+        "text_block_LiQeti": {
+          "type": "text_block",
+          "settings": {
+            "name": "Author Name",
+            "star_rating": 5,
+            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_description": "",
+            "autoplay": false,
+            "textarea": "Default Content"
+          }
+        },
+        "text_block_UhbwM8": {
+          "type": "text_block",
+          "settings": {
+            "name": "Author Name",
+            "star_rating": 5,
+            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_description": "",
+            "autoplay": false,
+            "textarea": "Default Content"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_4NWxqY",
+        "text_block_LiQeti",
+        "text_block_UhbwM8"
+      ],
+      "settings": {
+        "title": "Recommend"
       }
     }
   },
@@ -1172,6 +1252,7 @@
     "cross-page-promos",
     "image_with_text_E6jeA7",
     "custom_content_6EdQih",
-    "newsletter_CgBFDg"
+    "newsletter_CgBFDg",
+    "recommend_it3XRM"
   ]
 }

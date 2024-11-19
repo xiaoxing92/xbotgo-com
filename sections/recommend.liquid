@@ -53,7 +53,7 @@
               {%- endif -%}
           </div>
         </div>
-        <div class="item-video">
+        <div class="video-section">
           <div class="height--adapt image-overlay image-overlay--bg-no_background" {% if placeholder_image %} style="--aspect-ratio: {{ placeholder_image.aspect_ratio }}"{% endif %} {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
             <div class="image-overlay__image height__image">
               <deferred-media>
@@ -142,21 +142,17 @@
           const itemWidth = items[0].offsetWidth;
           container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
         };
-
         prevBtn.addEventListener("click", function () {
           currentIndex = (currentIndex - 1 + items.length) % items.length;
           updateSlider();
         });
-      
         nextBtn.addEventListener("click", function () {
           currentIndex = (currentIndex + 1) % items.length;
           updateSlider();
         });
-
         window.addEventListener('resize', function () {
             updateSlider();
         });
-
         observer.disconnect(); 
     }
   });
@@ -234,7 +230,7 @@
     flex-direction: column;
     margin-left: 16px;
   }
-  .item-video {
+  .video-section {
     width: 100%;
     height: 312px;
     border-radius: 20px 20px 0 0;
