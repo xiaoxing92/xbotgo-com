@@ -109,7 +109,10 @@
   const observer = new MutationObserver(() => {
     const element = document.querySelector(".recommend-container");
     const items = document.querySelectorAll('.card-item');
-    console.log("=======")
+    const prevBtn = document.querySelectorAll('.prev-btn');
+    const nextBtn = document.querySelectorAll('.next-btn');
+
+    console.log(element,"=======")
     if (element) {
         let currentIndex = 0;
         const itemsPerSlide = window.innerWidth > 768 ? 3 : 1;
@@ -119,22 +122,21 @@
             container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
         };
 
-        var prevBtn =  function () {
+        prevBtn.addEventListener('click',function () {
           console.log("===prev===")
           currentIndex = Math.max(currentIndex - 1, 0);
           updateSlider();
-        }
+        })
 
-        var nextBtn = function () {
-          console.log("===next===")
+        nextBtn.addEventListener('click',function () {
           currentIndex = Math.max(currentIndex - 1, 0);
           updateSlider();
-        }
+        })
 
         window.addEventListener('resize', function () {
             updateSlider();
         });
-        observer.disconnect(); // 停止观察
+        observer.disconnect(); 
     }
   });
 
