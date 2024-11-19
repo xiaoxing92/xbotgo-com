@@ -178,6 +178,9 @@
 </div>
 
 <style>
+    .hometitle{
+        margin-top:100px
+    }
   .recommend-wrap {
     position: relative;
     overflow: hidden;
@@ -203,21 +206,6 @@
     height: 651;
   }
 
-  @media (max-width: 768px) {
-    .card-item {
-      flex: 1 0 100%;
-    }
-
-    .prev-btn {
-        left: 10px;
-        display:block;
-      }
-    
-      .next-btn {
-        right: 10px;
-        display:block;
-      }
-  }
   .height--adapt {
     width: 100%;
     height: 100%;
@@ -279,6 +267,22 @@
   .next-btn {
     right: 10px;
     display:none;
+  }
+
+  @media (max-width: 768px) {
+    .card-item {
+      flex: 1 0 100%;
+    }
+
+    .prev-btn {
+        left: 10px;
+        display:block;
+      }
+
+    .next-btn {
+        right: 10px;
+        display:block;
+    }
   }
 </style>
 
