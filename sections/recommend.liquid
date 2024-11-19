@@ -1,39 +1,3 @@
-{%- liquid
-    assign use_recommend = false
-    if section.blocks.size > 1
-    assign use_recommend = true
-    endif
--%}
-
-{%- if use_recommend -%}
-    <script >
-        const container = document.querySelector('.recommend-container');
-        const items = document.querySelectorAll('.card-item');
-
-        let currentIndex = 0;
-        const itemsPerSlide = window.innerWidth > 768 ? 3 : 1;
-
-        var updateSlider = function () {
-            const itemWidth = items[0].clientWidth;
-            container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-        };
-
-        var prevBtn =  function () {
-          currentIndex = Math.max(currentIndex - 1, 0);
-          updateSlider();
-        }
-
-        var nextBtn = function () {
-          currentIndex = Math.max(currentIndex - 1, 0);
-          updateSlider();
-        }
-
-        window.addEventListener('resize', function () {
-            updateSlider();
-        });
-
-</script>
-{%- endif -%}
 
 <div class="recommend-wrap">
   {% if section.settings.title != blank %}
@@ -137,6 +101,45 @@
   <button class="carousel-btn prev-btn" onclick="prevBtn()">&lt;</button>
   <button class="carousel-btn next-btn" onclick="nextBtn()">&gt;</button>
 </div>
+
+
+{%- liquid
+  assign use_recommend = false
+  if section.blocks.size > 1
+  assign use_recommend = true
+  endif
+-%}
+
+{%- if use_recommend -%}
+  <script >
+      const container = document.querySelector('.recommend-container');
+      const items = document.querySelectorAll('.card-item');
+
+      let currentIndex = 0;
+      const itemsPerSlide = window.innerWidth > 768 ? 3 : 1;
+
+      var updateSlider = function () {
+          const itemWidth = items[0].clientWidth;
+          container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+      };
+
+      var prevBtn =  function () {
+        currentIndex = Math.max(currentIndex - 1, 0);
+        updateSlider();
+      }
+
+      var nextBtn = function () {
+        currentIndex = Math.max(currentIndex - 1, 0);
+        updateSlider();
+      }
+
+      window.addEventListener('resize', function () {
+          updateSlider();
+      });
+
+</script>
+{%- endif -%}
+
 
 <style>
     .hometitle{
