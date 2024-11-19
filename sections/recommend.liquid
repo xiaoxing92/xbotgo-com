@@ -104,7 +104,7 @@
 
 
 
-<script >
+<script defer="defer">
 
   const observer = new MutationObserver(() => {
     const container = document.querySelector(".recommend-container");
@@ -113,22 +113,20 @@
     const nextBtn = document.querySelector('.next-btn');
     if (items) {
         let currentIndex = 0;
-        const itemsPerSlide = window.innerWidth > 768 ? 3 : 1;
         var updateSlider = function () {
-            const itemWidth = items[0].clientWidth;
-            container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+          const itemWidth = items[0].offsetWidth;
+          container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
         };
 
-        prevBtn.addEventListener('click',function () {
-          console.log("===prev===")
-          currentIndex = Math.max(currentIndex - 1, 0);
+        prevBtn.addEventListener("click", function () {
+          currentIndex = (currentIndex - 1 + items.length) % items.length;
           updateSlider();
-        })
-
-        nextBtn.addEventListener('click',function () {
-          currentIndex = Math.max(currentIndex + 1, 0);
+        });
+      
+        nextBtn.addEventListener("click", function () {
+          currentIndex = (currentIndex + 1) % items.length;
           updateSlider();
-        })
+        });
 
         window.addEventListener('resize', function () {
             updateSlider();
