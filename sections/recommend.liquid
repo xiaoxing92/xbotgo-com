@@ -222,8 +222,10 @@
   }
 </style>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
+<script defer>
+
+
+
     const container = document.querySelector('.recommend-container');
     const items = document.querySelectorAll('.card-item');
     const prevButton = document.querySelector('.prev-btn');
@@ -247,20 +249,29 @@
       updateSlider();
     });
 
-    prevButton.addEventListener('touchstart', function () {
-      currentIndex = Math.max(currentIndex - 1, 0);
-      updateSlider();
+    let startX = 0;
+    let endX = 0;
+  
+    container.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
     });
-
-    nextButton.addEventListener('touchstart', function () {
-      currentIndex = Math.min(currentIndex + 1, items.length - itemsPerSlide);
-      updateSlider();
+  
+    container.addEventListener('touchend', (e) => {
+      endX = e.changedTouches[0].clientX;
+      if (startX > endX + 50) {
+        currentIndex = Math.max(currentIndex - 1, 0);
+        updateSlider();
+      
+      } else if (startX < endX - 50) {
+        currentIndex = Math.min(currentIndex + 1, items.length - itemsPerSlide);
+        updateSlider();
+      }
     });
 
     window.addEventListener('resize', function () {
       updateSlider();
     });
-  });
+
 </script>
 
 {% schema %}
