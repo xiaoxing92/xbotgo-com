@@ -112,7 +112,7 @@
     const prevBtn = document.querySelector('.prev-btn');
     const nextBtn = document.querySelector('.next-btn');
 
-    console.log(element,"=======")
+    console.log(items,"=======")
     if (element) {
         let currentIndex = 0;
         const itemsPerSlide = window.innerWidth > 768 ? 3 : 1;
@@ -135,7 +135,7 @@
         window.addEventListener('resize', function () {
             updateSlider();
         });
-        observer.disconnect(); 
+
     }
   });
 
@@ -355,7 +355,9 @@
       "name": "Recommend",
       "settings": {},
       "blocks": [
-
+        { "type": "text_block"},
+        { "type": "text_block"},
+        { "type": "text_block"}
       ]
     }
   ]
