@@ -111,9 +111,7 @@
     const items = document.querySelectorAll('.card-item');
     const prevBtn = document.querySelector('.prev-btn');
     const nextBtn = document.querySelector('.next-btn');
-
-    console.log(items,"=======")
-    if (container) {
+    if (items) {
         let currentIndex = 0;
         const itemsPerSlide = window.innerWidth > 768 ? 3 : 1;
         var updateSlider = function () {
@@ -128,7 +126,7 @@
         })
 
         nextBtn.addEventListener('click',function () {
-          currentIndex = Math.max(currentIndex - 1, 0);
+          currentIndex = Math.max(currentIndex + 1, 0);
           updateSlider();
         })
 
@@ -136,6 +134,7 @@
             updateSlider();
         });
 
+        observer.disconnect(); 
     }
   });
 
