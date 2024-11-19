@@ -8,7 +8,7 @@
 {%- if use_recommend -%}
     <link rel="stylesheet" href="{{ 'video.css' | asset_url }}" {%- render 'lazy-stylesheet-attrs' %}>
     <script src="{{ 'video.js' | asset_url }}" defer></script>
-    <script defer>
+    <script >
         const container = document.querySelector('.recommend-container');
         const items = document.querySelectorAll('.card-item');
         const prevButton = document.querySelector('.prev-btn');
@@ -45,6 +45,22 @@
         window.addEventListener('resize', function () {
             updateSlider();
         });
+
+        if (!customElements.get('video-section-play-button')) {
+          class VideoSectionPlayButton extends HTMLElement {
+            connectedCallback() {
+              this.addEventListener('click', this.handleClick);
+            }
+        
+            handleClick(evt) {
+              const section = evt.target.closest('.video-section');
+              section.querySelector('.js-load-media').click();
+              setTimeout(() => section.classList.add('video-section--played'), Shopify.designMode ? 500 : 1500);
+            }
+          }
+        
+          customElements.define('video-section-play-button', VideoSectionPlayButton);
+        }
 </script>
 {%- endif -%}
 
