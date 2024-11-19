@@ -3,7 +3,7 @@
     {%- if section.settings.enable_carousel -%}
       <carousel-slider class="carousel block collection-slider">
     {%- endif -%}
-
+ 
     <h2 class="hometitle h4 align-center has-paging{% if section.settings.enable_carousel %} slider-nav{% endif %}" {%- render 'animation-attrs', attrs: 'data-cc-animate data-cc-animate-delay="0.3s"' -%}>
       {% if section.settings.enable_carousel %}
         <button name="prev" class="slider-nav__btn has-ltr-icon">
