@@ -4,7 +4,7 @@
       {%- assign animation_delay = forloop.index | times: 0.15 | append: 's' -%}
       {%- assign animation_attrs = 'data-cc-animate data-cc-animate-delay="' | append: animation_delay | append: '"' -%}
       <div id="block-id-{{ block.id }}" class="column column--{{ block.settings.width }} block-id-{{ block.id }} fade-in-up" {{ block.shopify_attributes }} {%- render 'animation-attrs', attrs: animation_attrs -%}>
-
+ 
         {% if block.type == 'image' %}
           <style>
             {%- if block.settings.height == 'fixed' -%}
