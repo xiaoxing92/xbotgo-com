@@ -92,7 +92,13 @@
           </div>
           <div class="info">
             <span>{{ block.settings.name }}</span>
-            {% render 'rating-star-icon' %}
+            {%- if block.settings.star_rating > 0 -%}
+                <div class="testimonial__star-rating heading-font">
+                  {%- for i in (1..block.settings.star_rating) -%}
+                  <span style="color:#FFCC00" class="testimonial__star">{% render 'icon-star' %}</span>
+                  {%- endfor -%}
+                </div>
+              {%- endif -%}
           </div>
         </div>
         <div class="item-video">
@@ -321,7 +327,15 @@
           "label": "Author Name",
           "default": "Author Name"
         },
-
+        {
+            "type": "range",
+            "id": "star_rating",
+            "min": 0,
+            "max": 5,
+            "step": 1,
+            "label": "Star rating",
+            "default": 5
+        },
         {
           "id": "video_shopify",
           "type": "video",
