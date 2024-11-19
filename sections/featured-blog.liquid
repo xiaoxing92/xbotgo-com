@@ -4,7 +4,7 @@
     {% unless blog.empty? %}
 
       <h2 class="hometitle h4 align-center"><a href="{{ blog.url }}" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>{{ section.settings.title | escape }}</a></h2>
-
+ 
       {% if blog.articles.size == 0 %}
 
         <p class="align-center" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>{{ 'onboarding.blog.empty' | t }}</p>
