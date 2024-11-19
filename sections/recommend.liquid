@@ -6,7 +6,7 @@
 -%}
 
 {%- if use_recommend -%}
-    <script>
+    <script defer>
         const container = document.querySelector('.recommend-container');
         const items = document.querySelectorAll('.card-item');
         const prevButton = document.querySelector('.prev-btn');
@@ -41,7 +41,7 @@
         });
 
         window.addEventListener('resize', function () {
-        updateSlider();
+            updateSlider();
         });
 </script>
 {%- endif -%}
@@ -207,6 +207,16 @@
     .card-item {
       flex: 1 0 100%;
     }
+
+    .prev-btn {
+        left: 10px;
+        display:block;
+      }
+    
+      .next-btn {
+        right: 10px;
+        display:block;
+      }
   }
   .height--adapt {
     width: 100%;
@@ -263,10 +273,12 @@
 
   .prev-btn {
     left: 10px;
+    display:none;
   }
 
   .next-btn {
     right: 10px;
+    display:none;
   }
 </style>
 
