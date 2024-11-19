@@ -105,6 +105,21 @@
 
 
 <script >
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const element = document.querySelector(".recommend-container'");
+    const items = document.querySelectorAll('.card-item');
+    conosole.log(element,"=========")
+    let currentIndex = 0;
+    const itemsPerSlide = window.innerWidth > 768 ? 3 : 1;
+    if (element) {
+        element.addEventListener("click", function () {
+            console.log("Clicked!");
+        });
+    }
+  });
+
+
     const container = document.querySelector('.recommend-container');
     const items = document.querySelectorAll('.card-item');
 
