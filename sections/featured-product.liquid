@@ -2,7 +2,7 @@
   assign product = all_products[section.settings.product]
   assign zoom_size = 5000
   assign min_aspect_ratio = 0.6
-
+ 
   assign current_variant = product.selected_or_first_available_variant
   assign featured_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media
 
