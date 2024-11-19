@@ -102,41 +102,19 @@
           </div>
         </div>
         <div class="item-video">
-          <div
-            class="height--adapt image-overlay image-overlay--bg-no_background"
-            {% if placeholder_image %}
-              style="--aspect-ratio: {{ placeholder_image.aspect_ratio }}"
-            {% endif %}
-            {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}
-          >
+          <div class="height--adapt image-overlay image-overlay--bg-no_background" {% if placeholder_image %}style="--aspect-ratio: {{ top_placeholder_image.aspect_ratio }}"{% endif %} {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
             <div class="image-overlay__image height__image">
               <deferred-media>
-                {%- if autoplay == false -%}
-                  <button type="button" class="js-load-media hidden" aria-hidden="true"></button>
-                {%- endif -%}
+                {%- if autoplay == false -%}<button type="button" class="js-load-media hidden" aria-hidden="true"></button>{%- endif -%}
                 <template>
-                  <video-component
-                    class="{% if using_video_tag %}has-video{% else %}has-iframe{% endif %}"
-                    {%- unless using_video_tag %}
-                      data-video-url="{{ block.settings.video_external | escape }}"
-                    {% endunless %}
-                    data-video-id="{{ block.settings.id }}"
-                    data-autoplay="{{ autoplay }}"
-                    data-background="false"
-                    data-description="{{ block.settings.video_description | escape }}"
-                  >
+                  <video-component class="{% if using_video_tag %}has-video{% else %}has-iframe{% endif %}"
+                    {%- unless using_video_tag %} data-video-url="{{ block.settings.video_external | escape }}"{% endunless %}
+                                  data-video-id="{{ section.id }}"
+                                  data-autoplay="{{ autoplay }}"
+                                  data-background="false"
+                                  data-description="{{ block.settings.video_description | escape }}">
                     {%- if using_video_tag -%}
-                      {{
-                        block.settings.video_shopify
-                        | video_tag:
-                          playsinline: true,
-                          controls: true,
-                          autoplay: autoplay,
-                          muted: autoplay,
-                          loop: autoplay,
-                          poster: ''
-                        | replace: '<img ', '<img loading="lazy" hidden '
-                      }}
+                      {{ block.settings.video_shopify | video_tag: playsinline: true, controls: true, autoplay: autoplay, muted: autoplay, loop: autoplay, poster: '' | replace: '<img ', '<img loading="lazy" hidden ' }}
                     {%- else -%}
                       <div></div>
                     {%- endif -%}
@@ -145,11 +123,9 @@
               </deferred-media>
 
               {% if placeholder_image %}
-                {%- render 'image' with placeholder_image, class: 'video-played-hidden' -%}
+                {%- render 'image' with placeholder_image , class: 'video-played-hidden' -%}
               {% elsif autoplay == false %}
-                <div class="placeholder-image video-played-hidden">
-                  {{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}
-                </div>
+                <div class="placeholder-image video-played-hidden">{{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}</div>
               {% endif %}
             </div>
 
@@ -157,12 +133,7 @@
               <div class="text-overlay text-overlay--for-banner text-overlay--v-center text-overlay--h-center image-overlay__over video-played-hidden">
                 <div class="text-overlay__inner">
                   <div class="text-overlay__text">
-                    <video-section-play-button
-                      role="button"
-                      tabindex="0"
-                      type="button"
-                      class="button-row__btn video-section__play-btn inline-block"
-                    >
+                    <video-section-play-button role="button" tabindex="0" type="button" class="button-row__btn video-section__play-btn inline-block">
                       <span class="visually-hidden">{{ 'general.icon_labels.play' | t }}</span>
                       {%- render 'icon-play' -%}
                     </video-section-play-button>
