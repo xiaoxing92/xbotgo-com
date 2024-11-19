@@ -107,13 +107,13 @@
 <script >
 
   const observer = new MutationObserver(() => {
-    const element = document.querySelector(".recommend-container");
+    const container = document.querySelector(".recommend-container");
     const items = document.querySelectorAll('.card-item');
     const prevBtn = document.querySelector('.prev-btn');
     const nextBtn = document.querySelector('.next-btn');
 
     console.log(items,"=======")
-    if (element) {
+    if (container) {
         let currentIndex = 0;
         const itemsPerSlide = window.innerWidth > 768 ? 3 : 1;
         var updateSlider = function () {
