@@ -13,8 +13,8 @@
     {% if first_block %}
       <div class="product-item">
         <div class="product-introduce">
-          <h2>XbotGo Chameleon</h2>
-          <button class="pay-button">Buy Now</button>
+          <h2>{{ first_block.settings.title }}</h2>
+          <button class="pay-button">{{ first_block.settings.button_label }}</button>
         </div>
         <img class="product-img" src="{{ first_block.settings.image }}"/>
     </div>
@@ -24,8 +24,8 @@
     {% if second_block %}
       <div class="top-info product-item">
         <div class="product-introduce">
-          <h2>XbotGo Chameleon</h2>
-          <button class="pay-button">Buy Now</button>
+          <h2>{{ second_block.settings.title  }}</h2>
+          <button class="pay-button">{{ second_block.settings.button_label }}</button>
         </div>
         <img class="product-img" src="{{ second_block.settings.image }}"/>
     </div>
@@ -34,7 +34,7 @@
     {% assign third_block = section.blocks[2] %}
     {% if third_block %}
       <div class="product-introduce">
-        <h2>XbotGo Chameleon</h2>
+        <h2>{{ third_block.settings.title  }}</h2>
         <button class="pay-button">{{ third_block.settings.button_label }}</button>
       </div>
       <div class="product-item single-column">
@@ -117,12 +117,6 @@
         },
         {
           "type": "text",
-          "id": "subheading",
-          "label": "Subheading",
-          "default": "Gallery"
-        },
-        {
-          "type": "text",
           "id": "title",
           "label": "Heading",
           "info": "Enter <br> for a line-break",
@@ -130,8 +124,15 @@
         },
         {
           "type": "text",
+          "id": "subheading",
+          "label": "Subheading",
+          "default": "Gallery"
+        },
+        {
+          "type": "text",
           "id": "button_label",
-          "label": "Button"
+          "label": "Button",
+          "default":"Buy Now"
         },
         {
           "type": "url",
