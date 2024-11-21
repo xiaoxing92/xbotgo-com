@@ -9,10 +9,9 @@
 
 <div class="section-id-{{ section.id }}">
   <div class="container layout-flex">
-    {% assign div_width =  block.settings.width_text+'%'  %}
-    {% assign div_height =  block.settings.height_text+'px' %}
     {%- for block in section.blocks -%}
-      
+      {% assign div_width = block.settings.custom_div_width %}
+      {% assign div_height = block.settings.custom_div_height %}
       <div style="width: {{ div_width }}; height: {{ div_height }};">
         
       </div>
@@ -42,12 +41,12 @@
       "settings": [
         {
           "type": "text",
-          "id": "width_text",
+          "id": "custom_div_width",
           "label": "Width % unit"
         },
         {
           "type": "text",
-          "id": "height_text",
+          "id": "custom_div_height",
           "label": "Height px unit"
         },
         {
