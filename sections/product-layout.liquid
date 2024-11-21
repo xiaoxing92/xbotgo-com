@@ -16,7 +16,7 @@
           <h2>{{ first_block.settings.title }}</h2>
           <button class="pay-button">{{ first_block.settings.button_label }}</button>
         </div>
-        <img class="product-img" src="{{ first_block.settings.image | img_url: '1024x1024' }}"/>
+        <img class="product-img" src="{{ first_block.settings.image | img_url: '230x100' }}"/>
     </div>
     {% endif %}
 
@@ -27,18 +27,18 @@
           <h2>{{ second_block.settings.title  }}</h2>
           <button class="pay-button">{{ second_block.settings.button_label }}</button>
         </div>
-        <img class="product-img" src="{{ second_block.settings.image | img_url: '1024x1024' }}"/>
+        <img class="product-img" src="{{ second_block.settings.image | img_url: '230x100' }}"/>
     </div>
     {% endif %}
 
     {% assign third_block = section.blocks[2] %}
     {% if third_block %}
-      <div class="product-introduce">
-        <h2>{{ third_block.settings.title  }}</h2>
-        <button class="pay-button">{{ third_block.settings.button_label }}</button>
-      </div>
-      <div class="product-item single-column">
-        <img class="product-img" src="{{ third_block.settings.image | img_url: '1024x1024' }}"/>
+      <div class="single-column">
+        <div class="product-introduce">
+          <h2>{{ third_block.settings.title  }}</h2>
+          <button class="pay-button">{{ third_block.settings.button_label }}</button>
+        </div>
+        <img class="product-img" src="{{ third_block.settings.image | img_url: '230x100' }}"/>
     </div>
     {% endif %}
   </div>
@@ -48,20 +48,20 @@
   .layout-flex{
     display:flex;
     flex-wrap:wrap;
+    gap: 5px;
   }
   .product-item{
-    width:50%;
-    height:300px;
+    width:49%;
     display:flex;
     flex-direction: column;
+    align-items: center;
     background:#F8F9FD;
     border-radius: 20px;
     overflow: hidden;
   }
+
   .product-introduce{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-align: center;
   }
   .pay-button{
     padding:10px 25px;
@@ -69,12 +69,14 @@
     border-radius: 24px;
   }
   .single-column{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
     width:100%;
-    height:300px;
+    background:#F8F9FD;
   }
   .product-img{
     width:421px;
-    height:289px
   }
 </style>
 
@@ -82,6 +84,7 @@
 {
   "name": "Product Layout",
   "class": "section-product-layout",
+  "max_blocks": 3,
   "blocks": [
     {
       "type": "text_block",
