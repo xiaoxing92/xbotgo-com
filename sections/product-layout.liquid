@@ -16,7 +16,7 @@
           <h2>{{ first_block.settings.title }}</h2>
           <button class="pay-button">{{ first_block.settings.button_label }}</button>
         </div>
-        <img class="product-img" src="{{ first_block.settings.image }}"/>
+        <img class="product-img" src="{{ first_block.settings.image ｜img_url: '300x286'}}"/>
     </div>
     {% endif %}
 
@@ -27,7 +27,7 @@
           <h2>{{ second_block.settings.title  }}</h2>
           <button class="pay-button">{{ second_block.settings.button_label }}</button>
         </div>
-        <img class="product-img" src="{{ second_block.settings.image }}"/>
+        <img class="product-img" src="{{ second_block.settings.image ｜img_url: '300x286'}}"/>
     </div>
     {% endif %}
 
@@ -38,7 +38,7 @@
         <button class="pay-button">{{ third_block.settings.button_label }}</button>
       </div>
       <div class="product-item single-column">
-        <img class="product-img" src="{{ third_block.settings.image }}"/>
+        <img class="product-img" src="{{ third_block.settings.image｜img_url: '300x286' }}"/>
     </div>
     {% endif %}
   </div>
@@ -63,8 +63,7 @@
     flex-direction: column;
   }
   .pay-button{
-    width: 220px;
-    height: 48px;
+    padding:10px 25px;
     background: #000000;
     border-radius: 24px;
   }
