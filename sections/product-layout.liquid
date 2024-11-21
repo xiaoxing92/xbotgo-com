@@ -6,7 +6,6 @@
   {%- endif -%}
 {%- endfor -%}
 
-
 <div class="section-id-{{ section.id }}">
   <div class="container layout-flex">
     {% assign first_block = section.blocks[0] %}
@@ -14,69 +13,74 @@
       <div class="product-item">
         <div class="product-introduce">
           <h2>{{ first_block.settings.title }}</h2>
-          <button class="pay-button">{{ first_block.settings.button_label }}</button>
+          <button class="pay-button btn">{{ first_block.settings.button_label }}</button>
         </div>
-        <img class="product-img" src="{{ first_block.settings.image | img_url: '230x100' }}"/>
-    </div>
+        <img class="product-img" src="{{ first_block.settings.image | img_url: '230x100' }}">
+      </div>
     {% endif %}
 
     {% assign second_block = section.blocks[1] %}
     {% if second_block %}
       <div class="top-info product-item">
         <div class="product-introduce">
-          <h2>{{ second_block.settings.title  }}</h2>
-          <button class="pay-button">{{ second_block.settings.button_label }}</button>
+          <h2>{{ second_block.settings.title }}</h2>
+          <button class="pay-button btn">{{ second_block.settings.button_label }}</button>
         </div>
-        <img class="product-img" src="{{ second_block.settings.image | img_url: '230x100' }}"/>
-    </div>
+        <img class="product-img" src="{{ second_block.settings.image | img_url: '230x100' }}">
+      </div>
     {% endif %}
 
     {% assign third_block = section.blocks[2] %}
     {% if third_block %}
       <div class="single-column">
         <div class="product-introduce">
-          <h2>{{ third_block.settings.title  }}</h2>
-          <button class="pay-button">{{ third_block.settings.button_label }}</button>
+          <h2>{{ third_block.settings.title }}</h2>
+          <button class="pay-button btn">{{ third_block.settings.button_label }}</button>
         </div>
-        <img class="product-img" src="{{ third_block.settings.image | img_url: '230x100' }}"/>
-    </div>
+        <img class="product-img" src="{{ third_block.settings.image | img_url: '230x100' }}">
+      </div>
     {% endif %}
   </div>
 </div>
 
 <style>
-  .layout-flex{
-    display:flex;
-    flex-wrap:wrap;
-    gap: 5px;
+  .layout-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
-  .product-item{
-    width:49%;
-    display:flex;
+  .product-item {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    background:#F8F9FD;
+    flex: 1;
+    background: #f8f9fd;
     border-radius: 20px;
+    height: 362px;
     overflow: hidden;
   }
 
-  .product-introduce{
+  .product-introduce {
+    width: 100%;
     text-align: center;
+    padding: 20px;
   }
-  .pay-button{
-    padding:10px 25px;
+  .pay-button {
+    padding: 10px 25px;
     background: #000000;
     border-radius: 24px;
   }
-  .single-column{
-    display:flex;
+  .single-column {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    width:100%;
-    background:#F8F9FD;
+    width: 100%;
+    height: 204px;
+    background: #f8f9fd;
   }
-  .product-img{
-    width:421px;
+  .product-img {
+    width: auto;
+    height: auto;
   }
 </style>
 
@@ -94,7 +98,7 @@
           "type": "text",
           "id": "custom_div_width",
           "label": "Width % unit",
-          "default":"50",
+          "default": "50"
         },
         {
           "type": "text",
@@ -135,13 +139,13 @@
           "type": "text",
           "id": "button_label",
           "label": "Button",
-          "default":"Buy Now"
+          "default": "Buy Now"
         },
         {
           "type": "url",
           "id": "link",
           "label": "Link"
-        },
+        }
       ]
     }
   ],
@@ -156,7 +160,7 @@
           "type": "text_block"
         },
         {
-          "type": "text_block",
+          "type": "text_block"
         }
       ]
     }
