@@ -6,10 +6,14 @@
   {%- endif -%}
 {%- endfor -%}
 
+
 <div class="section-id-{{ section.id }}">
   <div class="container layout-flex">
+    {% assign div_width =  block.settings.width_text+'%'  %}
+    {% assign div_height =  block.settings.height_text+'px' %}
     {%- for block in section.blocks -%}
-      <div style="width: {{ block.settings.width:block.settings.width_text+'%' }}; height: {{ block.settings.height_text+'px' }};">
+      
+      <div style="width: {{ div_width }}; height: {{ div_height }};">
         
       </div>
     {%- endfor -%}
