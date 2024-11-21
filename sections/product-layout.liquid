@@ -6,7 +6,7 @@
   {%- endif -%}
 {%- endfor -%}
 
-<div id="section-id-{{ section.id }}">
+<div id="section-id-{{ section.id }}" class="section-pc">
   <div class="container layout-flex">
     {% assign first_block = section.blocks[0] %}
     {% if first_block %}
@@ -43,7 +43,7 @@
   </div>
 </div>
 
-<div id="section-id-{{ section.id }}-min">
+<div id="section-id-{{ section.id }}" class="section-mobile">
   <div class="container layout-flex">
     {% assign first_block = section.blocks[0] %}
     {% if first_block %}
@@ -81,8 +81,8 @@
 </div>
 
 <style>
-  #block-id-{{ section.id }}-min {
-    display:none
+  .section-mobile {
+    display: none;
   }
   .layout-flex {
     display: flex;
@@ -124,17 +124,14 @@
     height: auto;
   }
 
-
   @media (max-width: 768px) {
-    #block-id-{{ section.id }} {
-        display:none
+    #block-id-pc {
+      display: none;
     }
 
-    #block-id-{{ section.id }}-min {
-      display:block
+    #block-id-mobile {
+      display: block;
     }
-
-
   }
 </style>
 
