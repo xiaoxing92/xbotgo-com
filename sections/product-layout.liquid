@@ -6,7 +6,7 @@
   {%- endif -%}
 {%- endfor -%}
 
-<div class="section-id-{{ section.id }}">
+<div id="section-id-{{ section.id }}">
   <div class="container layout-flex">
     {% assign first_block = section.blocks[0] %}
     {% if first_block %}
@@ -43,7 +43,47 @@
   </div>
 </div>
 
+<div id="section-id-{{ section.id }}-min">
+  <div class="container layout-flex">
+    {% assign first_block = section.blocks[0] %}
+    {% if first_block %}
+      <div class="product-item">
+        <img class="product-img" src="{{ first_block.settings.image | img_url: '230x100' }}">
+        <div class="product-introduce">
+          <h2>{{ first_block.settings.title }}</h2>
+          <button class="pay-button btn">{{ first_block.settings.button_label }}</button>
+        </div>
+      </div>
+    {% endif %}
+
+    {% assign second_block = section.blocks[1] %}
+    {% if second_block %}
+      <div class="top-info product-item">
+        <img class="product-img" src="{{ second_block.settings.image | img_url: '230x100' }}">
+        <div class="product-introduce">
+          <h2>{{ second_block.settings.title }}</h2>
+          <button class="pay-button btn">{{ second_block.settings.button_label }}</button>
+        </div>
+      </div>
+    {% endif %}
+
+    {% assign third_block = section.blocks[2] %}
+    {% if third_block %}
+      <div class="single-column">
+        <img class="product-img" src="{{ third_block.settings.image | img_url: '230x100' }}">
+        <div class="product-introduce">
+          <h2>{{ third_block.settings.title }}</h2>
+          <button class="pay-button btn">{{ third_block.settings.button_label }}</button>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
 <style>
+  #block-id-{{ section.id }}-min {
+    display:none
+  }
   .layout-flex {
     display: flex;
     flex-wrap: wrap;
@@ -53,6 +93,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     flex: 1;
     background: #f8f9fd;
     border-radius: 20px;
@@ -81,6 +122,19 @@
   .product-img {
     width: auto;
     height: auto;
+  }
+
+
+  @media (max-width: 768px) {
+    #block-id-{{ section.id }} {
+        display:none
+    }
+
+    #block-id-{{ section.id }}-min {
+      display:block
+    }
+
+
   }
 </style>
 
