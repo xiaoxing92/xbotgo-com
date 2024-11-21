@@ -48,7 +48,9 @@
     {% assign first_block = section.blocks[0] %}
     {% if first_block %}
       <div class="product-item">
-        <img class="product-img" src="{{ first_block.settings.image | img_url: '230x100' }}">
+        <div class="product-box">
+          <img class="product-img" src="{{ first_block.settings.image | img_url: '230x100' }}">
+        </div>
         <div class="product-introduce">
           <h2>{{ first_block.settings.title }}</h2>
           <button class="pay-button btn">{{ first_block.settings.button_label }}</button>
@@ -59,7 +61,9 @@
     {% assign second_block = section.blocks[1] %}
     {% if second_block %}
       <div class="top-info product-item">
-        <img class="product-img" src="{{ second_block.settings.image | img_url: '230x100' }}">
+        <div class="product-box">
+          <img class="product-img" src="{{ second_block.settings.image | img_url: '230x100' }}">
+        </div>
         <div class="product-introduce">
           <h2>{{ second_block.settings.title }}</h2>
           <button class="pay-button btn">{{ second_block.settings.button_label }}</button>
@@ -70,7 +74,9 @@
     {% assign third_block = section.blocks[2] %}
     {% if third_block %}
       <div class="single-column">
-        <img class="product-img" src="{{ third_block.settings.image | img_url: '230x100' }}">
+        <div class="product-box">
+          <img class="product-img" src="{{ third_block.settings.image | img_url: '230x100' }}">
+        </div>
         <div class="product-introduce">
           <h2>{{ third_block.settings.title }}</h2>
           <button class="pay-button btn">{{ third_block.settings.button_label }}</button>
@@ -118,19 +124,29 @@
     width: 100%;
     height: 204px;
     background: #f8f9fd;
-  }
-  .product-img {
-    width: auto;
-    height: auto;
-  }
-
-  @media (max-width: 768px) {
-    .section-pc {
-      display: none;
+    .product-img {
+      width: auto;
+      height: auto;
     }
 
-    .section-mobile {
-      display: block;
+    @media (max-width: 768px) {
+      .section-pc {
+        display: none;
+      }
+
+      .section-mobile {
+        display: block;
+      }
+    }
+    .product-box {
+      background: #fff;
+    }
+    .pay-button {
+      padding: 10px 25px;
+      background: linear-gradient(to right, #f27b00, #ca251d);
+      width: 100px;
+      text-align: center;
+      border-radius: 24px;
     }
   }
 </style>
