@@ -9,13 +9,38 @@
 
 <div class="section-id-{{ section.id }}">
   <div class="container layout-flex">
-    {%- for block in section.blocks -%}
-      {% assign div_width = block.settings.custom_div_width %}
-      {% assign div_height = block.settings.custom_div_height %}
-      <div style="width: {{ div_width }}; height: {{ div_height }};">
-        
+    {% assign first_block = section.blocks[0] %}
+    {% if first_block %}
+      <div class="product-item">
+        <div class="product-introduce">
+          <h2>XbotGo Chameleon</h2>
+          <button class="pay-button">Buy Now</button>
+        </div>
+        <img class="product-img" src="{{ first_block.settings.image }}"/>
+    </div>
+    {% endif %}
+
+    {% assign second_block = section.blocks[1] %}
+    {% if second_block %}
+      <div class="top-info product-item">
+        <div class="product-introduce">
+          <h2>XbotGo Chameleon</h2>
+          <button class="pay-button">Buy Now</button>
+        </div>
+        <img class="product-img" src="{{ second_block.settings.image }}"/>
+    </div>
+    {% endif %}
+
+    {% assign third_block = section.blocks[2] %}
+    {% if third_block %}
+      <div class="product-introduce">
+        <h2>XbotGo Chameleon</h2>
+        <button class="pay-button">{{ third_block.settings.button_label }}</button>
       </div>
-    {%- endfor -%}
+      <div class="product-item single-column">
+        <img class="product-img" src="{{ third_block.settings.image }}"/>
+    </div>
+    {% endif %}
   </div>
 </div>
 
@@ -23,6 +48,33 @@
   .layout-flex{
     display:flex;
     flex-wrap:wrap;
+  }
+  .product-item{
+    width:50%;
+    height:300px;
+    display:flex;
+    flex-direction: column;
+    background:#F8F9FD;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .product-introduce{
+    display: flex;
+    flex-direction: column;
+  }
+  .pay-button{
+    width: 220px;
+    height: 48px;
+    background: #000000;
+    border-radius: 24px;
+  }
+  .single-column{
+    width:100%;
+    height:300px;
+  }
+  .product-img{
+    width:100%;
+    height:289px
   }
 </style>
 
@@ -38,7 +90,8 @@
         {
           "type": "text",
           "id": "custom_div_width",
-          "label": "Width % unit"
+          "label": "Width % unit",
+          "default":"50",
         },
         {
           "type": "text",
