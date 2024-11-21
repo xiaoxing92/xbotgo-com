@@ -124,30 +124,30 @@
     width: 100%;
     height: 204px;
     background: #f8f9fd;
-    .product-img {
-      width: auto;
-      height: auto;
+  }
+  .product-img {
+    width: auto;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    .section-pc {
+      display: none;
     }
 
-    @media (max-width: 768px) {
-      .section-pc {
-        display: none;
-      }
+    .section-mobile {
+      display: block;
+    }
 
-      .section-mobile {
-        display: block;
-      }
-
-      .product-box {
-        background: #fff;
-      }
-      .pay-button {
-        padding: 10px 25px;
-        background: linear-gradient(to right, #f27b00, #ca251d);
-        width: 100px;
-        text-align: center;
-        border-radius: 24px;
-      }
+    .product-box {
+      background: #fff;
+    }
+    .pay-button {
+      padding: 10px 25px;
+      background: linear-gradient(to right, #f27b00, #ca251d);
+      width: 100px;
+      text-align: center;
+      border-radius: 24px;
     }
   }
 </style>
