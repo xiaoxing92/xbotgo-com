@@ -1180,55 +1180,65 @@
         "color_scheme": "1"
       }
     },
-    "recommend_it3XRM": {
-      "type": "recommend",
+    "product_layout_ExMLXn": {
+      "type": "product-layout",
       "blocks": {
-        "text_block_4NWxqY": {
+        "text_block_tEwC8E": {
           "type": "text_block",
           "settings": {
-            "avatar": "shopify://shop_images/1_41-1200-628.png",
-            "name": "Author Name",
-            "star_rating": 5,
-            "video_shopify": "shopify://files/videos/球衣号码追踪.mov",
-            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "video_description": "",
-            "autoplay": false,
-            "textarea": "Default Content"
+            "custom_div_width": "50",
+            "custom_div_height": "300",
+            "enlarge_media": false,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "button_label": "",
+            "link": ""
           }
         },
-        "text_block_LiQeti": {
+        "text_block_fzUPmf": {
           "type": "text_block",
           "settings": {
-            "name": "Author Name",
-            "star_rating": 5,
-            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "video_description": "",
-            "autoplay": false,
-            "placeholder_image": "shopify://shop_images/2_2-1200-628.png",
-            "textarea": "Default Content"
+            "custom_div_width": "",
+            "custom_div_height": "",
+            "enlarge_media": false,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "button_label": "",
+            "link": ""
           }
         },
-        "text_block_UhbwM8": {
+        "text_block_Rzyeik": {
           "type": "text_block",
           "settings": {
-            "name": "Author Name",
-            "star_rating": 5,
-            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "video_description": "",
-            "autoplay": false,
-            "textarea": "Default Content"
+            "custom_div_width": "",
+            "custom_div_height": "",
+            "enlarge_media": false,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_wVpK34": {
+          "type": "text_block",
+          "settings": {
+            "custom_div_width": "",
+            "custom_div_height": "",
+            "enlarge_media": false,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "button_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "text_block_4NWxqY",
-        "text_block_LiQeti",
-        "text_block_UhbwM8"
+        "text_block_tEwC8E",
+        "text_block_fzUPmf",
+        "text_block_Rzyeik",
+        "text_block_wVpK34"
       ],
-      "disabled": true,
-      "settings": {
-        "title": "Recommend"
-      }
+      "settings": {}
     }
   },
   "order": [
@@ -1256,6 +1266,6 @@
     "image_with_text_E6jeA7",
     "custom_content_6EdQih",
     "newsletter_CgBFDg",
-    "recommend_it3XRM"
+    "product_layout_ExMLXn"
   ]
 }
