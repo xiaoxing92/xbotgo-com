@@ -7,12 +7,21 @@
 {%- endfor -%}
 
 <div id="section-id-{{ section.id }}" class="section-pc">
+  {% if section.settings.title != blank %}
+    <h2 class="hometitle h4 align-center" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+      {{- section.settings.title | escape -}}
+    </h2>
+  {% endif %}
+
   <div class="container layout-flex">
     {% assign first_block = section.blocks[0] %}
     {% if first_block %}
       <div class="product-item">
         <div class="product-introduce">
           <h2>{{ first_block.settings.title }}</h2>
+          {% if first_block.settings.subheading != blank %}
+            <p>{{ first_block.settings.subheading }}</p>
+          {% endif %}
           <button class="pay-button btn">{{ first_block.settings.button_label }}</button>
         </div>
         <img class="product-img" src="{{ first_block.settings.image | img_url: '230x100' }}">
@@ -24,6 +33,9 @@
       <div class="top-info product-item">
         <div class="product-introduce">
           <h2>{{ second_block.settings.title }}</h2>
+          {% if second_block.settings.subheading != blank %}
+            <p>{{ second_block.settings.subheading }}</p>
+          {% endif %}
           <button class="pay-button btn">{{ second_block.settings.button_label }}</button>
         </div>
         <img class="product-img" src="{{ second_block.settings.image | img_url: '230x100' }}">
@@ -33,8 +45,11 @@
     {% assign third_block = section.blocks[2] %}
     {% if third_block %}
       <div class="single-column">
-        <div class="product-introduce">
+        <div class="third-product-introduce">
           <h2>{{ third_block.settings.title }}</h2>
+          {% if third_block.settings.subheading != blank %}
+            <p>{{ third_block.settings.subheading }}</p>
+          {% endif %}
           <button class="pay-button btn">{{ third_block.settings.button_label }}</button>
         </div>
         <img class="product-img" src="{{ third_block.settings.image | img_url: '230x100' }}">
@@ -53,6 +68,9 @@
         </div>
         <div class="product-introduce">
           <h2>{{ first_block.settings.title }}</h2>
+          {% if first_block.settings.subheading != blank %}
+            <p>{{ first_block.settings.subheading }}</p>
+          {% endif %}
           <button class="pay-button btn">{{ first_block.settings.button_label }}</button>
         </div>
       </div>
@@ -66,6 +84,9 @@
         </div>
         <div class="product-introduce">
           <h2>{{ second_block.settings.title }}</h2>
+          {% if second_block.settings.subheading != blank %}
+            <p>{{ second_block.settings.subheading }}</p>
+          {% endif %}
           <button class="pay-button btn">{{ second_block.settings.button_label }}</button>
         </div>
       </div>
@@ -77,8 +98,11 @@
         <div class="product-box">
           <img class="product-img" src="{{ third_block.settings.image | img_url: '230x100' }}">
         </div>
-        <div class="product-introduce">
+        <div class="third-product-introduce">
           <h2>{{ third_block.settings.title }}</h2>
+          {% if third_block.settings.subheading != blank %}
+            <p>{{ third_block.settings.subheading }}</p>
+          {% endif %}
           <button class="pay-button btn">{{ third_block.settings.button_label }}</button>
         </div>
       </div>
@@ -112,6 +136,10 @@
     text-align: center;
     padding: 20px;
   }
+  .third-product-introduce{
+    width: 71%;
+    padding:20px 20px 20px  15%;
+  }
   .pay-button {
     padding: 10px 25px;
     background: #000000;
@@ -119,11 +147,11 @@
   }
   .single-column {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 204px;
     background: #f8f9fd;
+    overflow: hidden;
   }
   .product-img {
     width: auto;
@@ -150,6 +178,12 @@
       border-radius: 24px;
       border: none;
     }
+    .third-product-introduce{
+      padding: 20px 20px 20px 5%;
+    }
+    .product-item{
+      height:auto;
+    }
   }
 </style>
 
@@ -158,6 +192,14 @@
   "name": "Product Layout",
   "class": "section-product-layout",
   "max_blocks": 3,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Product Layout"
+    }
+  ],
   "blocks": [
     {
       "type": "text_block",
