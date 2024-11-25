@@ -18,11 +18,11 @@
     {% if first_block %}
       <div class="product-item">
         <div class="product-introduce">
-          <h2>{{ first_block.settings.title }}</h2>
+          <h2 class="text-overlay__title h4">{{ first_block.settings.title }}</h2>
           {% if first_block.settings.subheading != blank %}
             <p>{{ first_block.settings.subheading }}</p>
           {% endif %}
-          <button class="pay-button btn">{{ first_block.settings.button_label }}</button>
+          <button class="pay-button">{{ first_block.settings.button_label }}</button>
         </div>
         <img class="product-img" src="{{ first_block.settings.image | img_url: '230x100' }}">
       </div>
@@ -32,11 +32,11 @@
     {% if second_block %}
       <div class="top-info product-item">
         <div class="product-introduce">
-          <h2>{{ second_block.settings.title }}</h2>
+          <h2 class="text-overlay__title h4">{{ second_block.settings.title }}</h2>
           {% if second_block.settings.subheading != blank %}
             <p>{{ second_block.settings.subheading }}</p>
           {% endif %}
-          <button class="pay-button btn">{{ second_block.settings.button_label }}</button>
+          <button class="pay-button">{{ second_block.settings.button_label }}</button>
         </div>
         <img class="product-img" src="{{ second_block.settings.image | img_url: '230x100' }}">
       </div>
@@ -46,11 +46,11 @@
     {% if third_block %}
       <div class="single-column">
         <div class="third-product-introduce">
-          <h2>{{ third_block.settings.title }}</h2>
+          <h2 class="text-overlay__title h4">{{ third_block.settings.title }}</h2>
           {% if third_block.settings.subheading != blank %}
             <p>{{ third_block.settings.subheading }}</p>
           {% endif %}
-          <button class="pay-button btn">{{ third_block.settings.button_label }}</button>
+          <button class="pay-button">{{ third_block.settings.button_label }}</button>
         </div>
         <img class="product-img" src="{{ third_block.settings.image | img_url: '230x100' }}">
       </div>
@@ -67,11 +67,11 @@
           <img class="product-img" src="{{ first_block.settings.image | img_url: '230x100' }}">
         </div>
         <div class="product-introduce">
-          <h2>{{ first_block.settings.title }}</h2>
+          <h2 class="text-overlay__title h4">{{ first_block.settings.title }}</h2>
           {% if first_block.settings.subheading != blank %}
             <p>{{ first_block.settings.subheading }}</p>
           {% endif %}
-          <button class="pay-button btn">{{ first_block.settings.button_label }}</button>
+          <button class="pay-button">{{ first_block.settings.button_label }}</button>
         </div>
       </div>
     {% endif %}
@@ -83,11 +83,11 @@
           <img class="product-img" src="{{ second_block.settings.image | img_url: '230x100' }}">
         </div>
         <div class="product-introduce">
-          <h2>{{ second_block.settings.title }}</h2>
+          <h2 class="text-overlay__title h4">{{ second_block.settings.title }}</h2>
           {% if second_block.settings.subheading != blank %}
             <p>{{ second_block.settings.subheading }}</p>
           {% endif %}
-          <button class="pay-button btn">{{ second_block.settings.button_label }}</button>
+          <button class="pay-button">{{ second_block.settings.button_label }}</button>
         </div>
       </div>
     {% endif %}
@@ -99,11 +99,11 @@
           <img class="product-img" src="{{ third_block.settings.image | img_url: '230x100' }}">
         </div>
         <div class="third-product-introduce">
-          <h2>{{ third_block.settings.title }}</h2>
+          <h2 class="text-overlay__title h4">{{ third_block.settings.title }}</h2>
           {% if third_block.settings.subheading != blank %}
             <p>{{ third_block.settings.subheading }}</p>
           {% endif %}
-          <button class="pay-button btn">{{ third_block.settings.button_label }}</button>
+          <button class="pay-button">{{ third_block.settings.button_label }}</button>
         </div>
       </div>
     {% endif %}
@@ -155,11 +155,13 @@
     overflow: hidden;
   }
   .product-img {
-    width: auto;
-    height: auto;
+    height:142px;
   }
 
   @media (max-width: 768px) {
+    .text-overlay__title{
+      font-size:15px;
+    }
     .section-pc {
       display: none;
     }
@@ -180,13 +182,10 @@
       
     }
     .pay-button {
-      padding: 10px 25px;
       background: linear-gradient(to right, #f27b00, #ca251d);
       width: 100px;
       text-align: center;
-      border-radius: 24px;
-      border: none;
-      white-space: nowrap;
+      font-size: 9px;
     }
     .third-product-introduce {
       flex:1;
@@ -205,6 +204,10 @@
     }
     .product-introduce{
       text-align: left;
+    }
+    .product-img{
+      width:auto;
+      height:100px;
     }
   }
 </style>
