@@ -373,6 +373,26 @@
         "color_scheme": "default"
       }
     },
+    "key_player_tracking_kg8pG3": {
+      "type": "key-player-tracking",
+      "disabled": true,
+      "settings": {
+        "top_video_shopify": "shopify://files/videos/球衣号码追踪.mov",
+        "top_video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "top_video_description": "",
+        "top_autoplay": false,
+        "top_left_title": "Jersey Number Recognition",
+        "top_description": "Enhance your sports recordings with automatic jersey number tracking. This feature follows players based on their numbers, allowing athletes and coaches to easily capture individual performances and create personalized highlight reels.",
+        "bot_left_image": "shopify://shop_images/gesture_1.5x.png",
+        "bot_description": "Gesture Control",
+        "bot_video_shopify": "shopify://files/videos/keyplayertracking (1).mp4",
+        "bot_video_external": "",
+        "bot_video_description": "",
+        "bot_autoplay": false,
+        "bot_right_title": "Followme Mode",
+        "bot_right_description": "Stay in focus with precision tracking that adapts to direction changes and obstacles for seamless recording. Our technology keeps your chosen subject centered and clear, even in dynamic situations, with long-range, zoom, and quick re-tracking for sharp videos in any activity."
+      }
+    },
     "custom_content_WweG4m": {
       "type": "custom-content",
       "blocks": {
@@ -486,6 +506,57 @@
         "button_2_label": "",
         "button_2_link": "",
         "button_2_style": "primary"
+      }
+    },
+    "product_layout_ExMLXn": {
+      "type": "product-layout",
+      "blocks": {
+        "text_block_tEwC8E": {
+          "type": "text_block",
+          "settings": {
+            "custom_div_width": "100",
+            "custom_div_height": "400",
+            "image": "shopify://shop_images/product_display.png",
+            "enlarge_media": false,
+            "title": "XbotGo Chameleon",
+            "subheading": "",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_fzUPmf": {
+          "type": "text_block",
+          "settings": {
+            "custom_div_width": "",
+            "custom_div_height": "",
+            "enlarge_media": false,
+            "title": "Tell your story",
+            "subheading": "Gallery",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_Rzyeik": {
+          "type": "text_block",
+          "settings": {
+            "custom_div_width": "",
+            "custom_div_height": "",
+            "enlarge_media": false,
+            "title": "Tell your story",
+            "subheading": "Gallery",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_tEwC8E",
+        "text_block_fzUPmf",
+        "text_block_Rzyeik"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": ""
       }
     },
     "gallery_TmfVDa": {
@@ -991,55 +1062,6 @@
         "color_scheme": "default"
       }
     },
-    "multi_column_3q64Ua": {
-      "type": "multi-column",
-      "blocks": {
-        "text_block_9B74zr": {
-          "type": "text_block",
-          "settings": {
-            "enable_media": true,
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
-            "button_label": "",
-            "link": ""
-          }
-        },
-        "text_block_8NpnGX": {
-          "type": "text_block",
-          "settings": {
-            "enable_media": true,
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
-            "button_label": "",
-            "link": ""
-          }
-        },
-        "text_block_qqeNbx": {
-          "type": "text_block",
-          "settings": {
-            "enable_media": true,
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
-            "button_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_block_9B74zr",
-        "text_block_8NpnGX",
-        "text_block_qqeNbx"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Multi-column",
-        "media_aspect_ratio": "s",
-        "media_width": 700,
-        "text_alignment": "center",
-        "button_style": "primary",
-        "color_scheme": "default"
-      }
-    },
     "cross-page-promos": {
       "type": "cross-page-promos",
       "blocks": {
@@ -1179,66 +1201,6 @@
         "subheading": "<p>Promotions, new products and sales. Directly to your inbox. </p><p>Join our mailing list to get $20 off your first Xbot order.</p>",
         "color_scheme": "1"
       }
-    },
-    "product_layout_ExMLXn": {
-      "type": "product-layout",
-      "blocks": {
-        "text_block_tEwC8E": {
-          "type": "text_block",
-          "settings": {
-            "custom_div_width": "50",
-            "custom_div_height": "300",
-            "enlarge_media": false,
-            "subheading": "Gallery",
-            "title": "Tell your story",
-            "button_label": "",
-            "link": ""
-          }
-        },
-        "text_block_fzUPmf": {
-          "type": "text_block",
-          "settings": {
-            "custom_div_width": "",
-            "custom_div_height": "",
-            "enlarge_media": false,
-            "subheading": "Gallery",
-            "title": "Tell your story",
-            "button_label": "",
-            "link": ""
-          }
-        },
-        "text_block_Rzyeik": {
-          "type": "text_block",
-          "settings": {
-            "custom_div_width": "",
-            "custom_div_height": "",
-            "enlarge_media": false,
-            "subheading": "Gallery",
-            "title": "Tell your story",
-            "button_label": "",
-            "link": ""
-          }
-        },
-        "text_block_wVpK34": {
-          "type": "text_block",
-          "settings": {
-            "custom_div_width": "",
-            "custom_div_height": "",
-            "enlarge_media": false,
-            "subheading": "Gallery",
-            "title": "Tell your story",
-            "button_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_block_tEwC8E",
-        "text_block_fzUPmf",
-        "text_block_Rzyeik",
-        "text_block_wVpK34"
-      ],
-      "settings": {}
     }
   },
   "order": [
@@ -1248,8 +1210,10 @@
     "gallery_D3MpWT",
     "countdown_timer_hJGpFK",
     "rich_text_DXcmQF",
+    "key_player_tracking_kg8pG3",
     "custom_content_WweG4m",
     "hotspots_dLUw37",
+    "product_layout_ExMLXn",
     "gallery_TmfVDa",
     "custom_content_d6UV4p",
     "multi_column_VTzqiP",
@@ -1261,11 +1225,9 @@
     "custom_tab_4_GFKfHJ",
     "testimonials_N6HpgR",
     "featured_blog_GJEBtP",
-    "multi_column_3q64Ua",
     "cross-page-promos",
     "image_with_text_E6jeA7",
     "custom_content_6EdQih",
-    "newsletter_CgBFDg",
-    "product_layout_ExMLXn"
+    "newsletter_CgBFDg"
   ]
 }
