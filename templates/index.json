@@ -375,7 +375,6 @@
     },
     "key_player_tracking_kg8pG3": {
       "type": "key-player-tracking",
-      "disabled": true,
       "settings": {
         "top_video_shopify": "shopify://files/videos/球衣号码追踪.mov",
         "top_video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -470,6 +469,7 @@
         "video_3L9ndm",
         "text_xwrphk"
       ],
+      "disabled": true,
       "custom_css": [
         ".theme-img {border-radius: 25px;}",
         ".block-id-text_Xe6fa4 {background-color: #e8e8e8; border-radius: 25px; margin: 10px; padding: 15px; font-size: 15px;}",
@@ -514,25 +514,26 @@
         "text_block_tEwC8E": {
           "type": "text_block",
           "settings": {
-            "custom_div_width": "100",
+            "custom_div_width": "80",
             "custom_div_height": "400",
             "image": "shopify://shop_images/product_display.png",
             "enlarge_media": false,
             "title": "XbotGo Chameleon",
             "subheading": "",
-            "button_label": "",
+            "button_label": "Buy Now",
             "link": ""
           }
         },
         "text_block_fzUPmf": {
           "type": "text_block",
           "settings": {
-            "custom_div_width": "",
-            "custom_div_height": "",
+            "custom_div_width": "100",
+            "custom_div_height": "400",
+            "image": "shopify://shop_images/XbotGo_Gimbal_1.25x.png",
             "enlarge_media": false,
-            "title": "Tell your story",
-            "subheading": "Gallery",
-            "button_label": "",
+            "title": "Sports Gimbal",
+            "subheading": "",
+            "button_label": "Buy Now",
             "link": ""
           }
         },
@@ -541,10 +542,11 @@
           "settings": {
             "custom_div_width": "",
             "custom_div_height": "",
+            "image": "shopify://shop_images/694_5.png",
             "enlarge_media": false,
-            "title": "Tell your story",
-            "subheading": "Gallery",
-            "button_label": "",
+            "title": "Accessories",
+            "subheading": "",
+            "button_label": "Buy Now",
             "link": ""
           }
         }
@@ -555,6 +557,9 @@
         "text_block_Rzyeik"
       ],
       "disabled": true,
+      "custom_css": [
+        "@media (max-width: 767px) {.text-overlay {position: relative; top: 35%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 130px; text-align: center; font-size: 15px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; left: 35%; }}"
+      ],
       "settings": {
         "title": ""
       }
@@ -846,101 +851,8 @@
         "overlay_style": "shadow"
       }
     },
-    "mosaic_myE9Vr": {
-      "type": "mosaic",
-      "blocks": {
-        "image_jedrgC": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/gesture_1.5x.png",
-            "cta_label": "",
-            "cta_sublabel": "",
-            "link": "",
-            "cta_col": 6,
-            "cta_image_height": "medium",
-            "caption_align": "center",
-            "caption_size": "small",
-            "caption_color": "#ffffff"
-          }
-        },
-        "image_eTDJzG": {
-          "type": "image",
-          "settings": {
-            "cta_label": "Title",
-            "cta_sublabel": "Description",
-            "link": "",
-            "cta_col": 5,
-            "cta_image_height": "medium",
-            "caption_align": "right",
-            "caption_size": "small",
-            "caption_color": "#ffffff"
-          }
-        },
-        "image_LrtpFM": {
-          "type": "image",
-          "settings": {
-            "cta_label": "Title",
-            "cta_sublabel": "Description",
-            "link": "",
-            "cta_col": 4,
-            "cta_image_height": "medium",
-            "caption_align": "center",
-            "caption_size": "small",
-            "caption_color": "#ffffff"
-          }
-        },
-        "image_HWQUPc": {
-          "type": "image",
-          "settings": {
-            "cta_label": "Title",
-            "cta_sublabel": "Description",
-            "link": "",
-            "cta_col": 4,
-            "cta_image_height": "medium",
-            "caption_align": "center",
-            "caption_size": "small",
-            "caption_color": "#ffffff"
-          }
-        },
-        "image_mnhGhd": {
-          "type": "image",
-          "settings": {
-            "cta_label": "Title",
-            "cta_sublabel": "Description",
-            "link": "",
-            "cta_col": 4,
-            "cta_image_height": "medium",
-            "caption_align": "center",
-            "caption_size": "small",
-            "caption_color": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "image_jedrgC",
-        "image_eTDJzG",
-        "image_LrtpFM",
-        "image_HWQUPc",
-        "image_mnhGhd"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "subtitle": "",
-        "use_stacked_layout": false,
-        "use_lightbox": true,
-        "overlay_opacity": 20,
-        "overlay_color": "#000000",
-        "gutter_width": "22",
-        "title_transform": "none",
-        "hover_animation": "zoom-in",
-        "use_mobile_redability": true,
-        "removeBottomMargin": true
-      }
-    },
     "custom_tab_iUNPnC": {
       "type": "custom-tab",
-      "disabled": true,
       "settings": {
         "tab-title": "Our Advantages",
         "tab1": "Live Scoreboard",
@@ -955,6 +867,53 @@
         "image1": "shopify://shop_images/LiveScoreBoard.webp",
         "image2": "shopify://shop_images/movement_trend.png",
         "image3": "shopify://shop_images/50m_tracking.png"
+      }
+    },
+    "recommend_7MXV4L": {
+      "type": "recommend",
+      "blocks": {
+        "text_block_z7LCLQ": {
+          "type": "text_block",
+          "settings": {
+            "name": "Author Name",
+            "star_rating": 5,
+            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_description": "",
+            "autoplay": false,
+            "textarea": "Default Content"
+          }
+        },
+        "text_block_tPJwBc": {
+          "type": "text_block",
+          "settings": {
+            "name": "Author Name",
+            "star_rating": 5,
+            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_description": "",
+            "autoplay": false,
+            "textarea": "Default Content"
+          }
+        },
+        "text_block_z8nt3N": {
+          "type": "text_block",
+          "settings": {
+            "name": "Author Name",
+            "star_rating": 5,
+            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_description": "",
+            "autoplay": false,
+            "textarea": "Default Content"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_z7LCLQ",
+        "text_block_tPJwBc",
+        "text_block_z8nt3N"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Recommend"
       }
     },
     "custom_tab_4_GFKfHJ": {
@@ -1220,8 +1179,8 @@
     "count_up_section_8fiXYN",
     "164816450788232cf9",
     "image_with_text_overlay_8hKCtm",
-    "mosaic_myE9Vr",
     "custom_tab_iUNPnC",
+    "recommend_7MXV4L",
     "custom_tab_4_GFKfHJ",
     "testimonials_N6HpgR",
     "featured_blog_GJEBtP",
