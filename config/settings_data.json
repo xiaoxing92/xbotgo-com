@@ -639,20 +639,6 @@
     },
     "content_for_index": [],
     "blocks": {
-      "15683396631634586217": {
-        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
-        "disabled": true,
-        "settings": {
-          "button_color": "#000000",
-          "secondary_color": "#FFFFFF",
-          "ternary_color": "#6A6A6A",
-          "button_icon": "chat_bubble",
-          "button_text": "chat_with_us",
-          "button_horizontal_position": "bottom_right",
-          "button_vertical_position": "lowest",
-          "greeting_message": ""
-        }
-      },
       "17368511000352060744": {
         "type": "shopify://apps/goaffpro-affiliate-marketing/blocks/goaffpro-embedded-pixel/2f4d802b-86c2-47e4-8096-ae1aa3efbab2",
         "disabled": false,
@@ -675,6 +661,11 @@
       },
       "judgeme_core_b92ba43a": {
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
+      "4804304946286255945": {
+        "type": "shopify://apps/avada-cookie-consent/blocks/app-embed/deacc407-65bc-4a4e-84d9-f90e9e492cf3",
         "disabled": false,
         "settings": {}
       }
