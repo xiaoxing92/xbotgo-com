@@ -82,6 +82,7 @@ if (!customElements.get('pop-up')) {
        */
       close() {
         super.close();
+        console.log("测试")
         setCookie(this.cookie, true, this.dataset.dismissDays);
       }
     }
