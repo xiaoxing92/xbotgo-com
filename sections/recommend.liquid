@@ -43,7 +43,7 @@
             <img src="{{  block.settings.avatar | img_url: '77x77' }}"/>
           </div>
           <div class="user-info">
-            <p class="user-name">{{ block.settings.name }}</span>
+            <p class="user-name">{{ block.settings.name }}</p>
             {%- if block.settings.star_rating > 0 -%}
                 <div class="testimonial__star-rating heading-font" style="display:flex"> 
                   {%- for i in (1..block.settings.star_rating) -%}
