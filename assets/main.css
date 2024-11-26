@@ -343,6 +343,7 @@ video {
   border: 0;
   font: inherit;
   vertical-align: baseline;
+  overflow-x: hidden;
 }
 
 ol,
