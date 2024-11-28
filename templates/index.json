@@ -1142,6 +1142,7 @@
       "block_order": [
         "image_FLmq79"
       ],
+      "disabled": true,
       "custom_css": [
         ".text-overlay {position: relative; top: 10%; left: 0; font-size: 20px;}",
         ".btn {background: #D93800 width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px; top: 55%; left: 0; position: fixed;}",
