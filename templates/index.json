@@ -869,53 +869,6 @@
         "image3": "shopify://shop_images/50m_tracking.png"
       }
     },
-    "recommend_7MXV4L": {
-      "type": "recommend",
-      "blocks": {
-        "text_block_z7LCLQ": {
-          "type": "text_block",
-          "settings": {
-            "name": "Author Name",
-            "star_rating": 5,
-            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "video_description": "",
-            "autoplay": false,
-            "textarea": "Default Content"
-          }
-        },
-        "text_block_tPJwBc": {
-          "type": "text_block",
-          "settings": {
-            "name": "Author Name",
-            "star_rating": 5,
-            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "video_description": "",
-            "autoplay": false,
-            "textarea": "Default Content"
-          }
-        },
-        "text_block_z8nt3N": {
-          "type": "text_block",
-          "settings": {
-            "name": "Author Name",
-            "star_rating": 5,
-            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "video_description": "",
-            "autoplay": false,
-            "textarea": "Default Content"
-          }
-        }
-      },
-      "block_order": [
-        "text_block_z7LCLQ",
-        "text_block_tPJwBc",
-        "text_block_z8nt3N"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Recommend"
-      }
-    },
     "custom_tab_4_GFKfHJ": {
       "type": "custom-tab-4",
       "custom_css": [
@@ -1160,6 +1113,56 @@
         "subheading": "<p>Promotions, new products and sales. Directly to your inbox. </p><p>Join our mailing list to get $20 off your first Xbot order.</p>",
         "color_scheme": "1"
       }
+    },
+    "slideshow_tdjCPE": {
+      "type": "slideshow",
+      "blocks": {
+        "image_FLmq79": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PC-KV2.png",
+            "mobile_image": "shopify://shop_images/M-KV2.png",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "Shop this",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_FLmq79"
+      ],
+      "custom_css": [
+        ".text-overlay {position: relative; top: 10%; left: 0; font-size: 20px;}",
+        ".btn {background: #D93800 width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px; top: 55%; left: 0; position: fixed;}",
+        "@media (max-width: 767px) {.text-overlay {position: relative; top: -10%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 130px; text-align: center; font-size: 15px; position: relative; padding-top: 10px; left: 0; }}"
+      ],
+      "settings": {
+        "show_sticky_banner": false,
+        "sticky_text": "",
+        "link_url": "shopify://collections/all",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "transition": "fade",
+        "navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "accessibility_info": ""
+      }
     }
   },
   "order": [
@@ -1180,13 +1183,13 @@
     "164816450788232cf9",
     "image_with_text_overlay_8hKCtm",
     "custom_tab_iUNPnC",
-    "recommend_7MXV4L",
     "custom_tab_4_GFKfHJ",
     "testimonials_N6HpgR",
     "featured_blog_GJEBtP",
     "cross-page-promos",
     "image_with_text_E6jeA7",
     "custom_content_6EdQih",
-    "newsletter_CgBFDg"
+    "newsletter_CgBFDg",
+    "slideshow_tdjCPE"
   ]
 }
