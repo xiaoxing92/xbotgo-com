@@ -377,9 +377,9 @@
       "type": "key-player-tracking",
       "settings": {
         "top_video_shopify": "shopify://files/videos/球衣号码追踪.mov",
-        "top_video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "top_video_external": "",
         "top_video_description": "",
-        "top_autoplay": false,
+        "top_autoplay": true,
         "top_left_title": "Jersey Number Recognition",
         "top_description": "Enhance your sports recordings with automatic jersey number tracking. This feature follows players based on their numbers, allowing athletes and coaches to easily capture individual performances and create personalized highlight reels.",
         "bot_left_image": "shopify://shop_images/gesture_1.5x.png",
