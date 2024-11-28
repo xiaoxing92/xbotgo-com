@@ -375,9 +375,7 @@ table {
   --theme-sticky-header-height: 0px;
   --space-unit: 4px;
 }
-html{
-  overflow-x: hidden;
-}
+
 @media (min-width: 768px) {
   :root {
     --gutter: var(--gutter-desktop);
