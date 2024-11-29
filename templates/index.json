@@ -426,6 +426,7 @@
     },
     "key_player_tracking_kg8pG3": {
       "type": "key-player-tracking",
+      "disabled": true,
       "settings": {
         "top_video_shopify": "shopify://files/videos/球衣号码追踪.mov",
         "top_video_external": "",
@@ -520,7 +521,6 @@
         "video_3L9ndm",
         "text_xwrphk"
       ],
-      "disabled": true,
       "custom_css": [
         ".theme-img {border-radius: 25px;}",
         ".block-id-text_Xe6fa4 {background-color: #e8e8e8; border-radius: 25px; margin: 10px; padding: 15px; font-size: 15px;}",
