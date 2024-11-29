@@ -9,6 +9,57 @@
  */
 {
   "sections": {
+    "slideshow_tdjCPE": {
+      "type": "slideshow",
+      "blocks": {
+        "image_FLmq79": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PC-KV2.png",
+            "mobile_image": "shopify://shop_images/M-KV2.png",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "Buy Now",
+            "button_url_1": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_FLmq79"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".text-overlay {position: relative; top: 10%; left: 0; font-size: 20px;}",
+        ".btn {background: #d93800; width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px; top: 55%; left: 14%; position: fixed;}",
+        "@media (max-width: 767px) {.text-overlay {position: relative; top: -10%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 130px; text-align: center; font-size: 15px; position: relative; padding-top: 10px; left: 0; }}"
+      ],
+      "settings": {
+        "show_sticky_banner": false,
+        "sticky_text": "",
+        "link_url": "shopify://collections/all",
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "transition": "fade",
+        "navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "accessibility_info": ""
+      }
+    },
     "16359276425da8ce46": {
       "type": "slideshow",
       "blocks": {
@@ -1113,60 +1164,10 @@
         "subheading": "<p>Promotions, new products and sales. Directly to your inbox. </p><p>Join our mailing list to get $20 off your first Xbot order.</p>",
         "color_scheme": "1"
       }
-    },
-    "slideshow_tdjCPE": {
-      "type": "slideshow",
-      "blocks": {
-        "image_FLmq79": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/PC-KV2.png",
-            "mobile_image": "shopify://shop_images/M-KV2.png",
-            "slide_link": "",
-            "subheading": "",
-            "title": "",
-            "heading_max_width": 15,
-            "title_size": 84,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "",
-            "enlarge_text": true,
-            "button_label_1": "Shop this",
-            "button_url_1": "",
-            "button_label_2": "",
-            "button_url_2": "",
-            "text_alignment": "center center"
-          }
-        }
-      },
-      "block_order": [
-        "image_FLmq79"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".text-overlay {position: relative; top: 10%; left: 0; font-size: 20px;}",
-        ".btn {background: #d93800; width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px; top: 55%; left: 14%; position: fixed;}",
-        "@media (max-width: 767px) {.text-overlay {position: relative; top: -10%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 130px; text-align: center; font-size: 15px; position: relative; padding-top: 10px; left: 0; }}"
-      ],
-      "settings": {
-        "show_sticky_banner": false,
-        "sticky_text": "",
-        "link_url": "shopify://collections/all",
-        "height": "fixed",
-        "height_desktop": 600,
-        "height_mobile": 460,
-        "full_width": true,
-        "mobile_overlay_under": false,
-        "overlay_style": "shadow",
-        "transition": "fade",
-        "navigation": "arrows",
-        "autoplay": true,
-        "autoplay_speed": 7,
-        "accessibility_info": ""
-      }
     }
   },
   "order": [
+    "slideshow_tdjCPE",
     "16359276425da8ce46",
     "custom_content_Cjmqy6",
     "rich_text_W39bMz",
@@ -1190,7 +1191,6 @@
     "cross-page-promos",
     "image_with_text_E6jeA7",
     "custom_content_6EdQih",
-    "newsletter_CgBFDg",
-    "slideshow_tdjCPE"
+    "newsletter_CgBFDg"
   ]
 }
