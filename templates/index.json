@@ -132,9 +132,10 @@
         "image_EHrpCV"
       ],
       "custom_css": [
-        ".text-overlay {position: relative; top: 10%; left: 10%; font-size: 20px;}",
+        ".text-overlay {position: relative; top: 10%; left: 10%; height: 100%; font-size: 20px;}",
+        ".text-overlay__inner{height:100%;}",
         ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px; top: 70%; position: fixed;}",
-        "@media (max-width: 767px) {.text-overlay {position: relative; top: 35%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 130px; text-align: center; font-size: 15px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; left: 35%; }}"
+        "@media (max-width: 767px) {.text-overlay {position: relative; top: 35%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 130px; text-align: center; font-size: 15px; position: absolute; top: 30%; }}"
       ],
       "settings": {
         "show_sticky_banner": false,
