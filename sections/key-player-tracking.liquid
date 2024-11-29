@@ -153,7 +153,7 @@
           <div class="image-overlay__image height__image">
             <deferred-media>
               {%- if botAutoPlay == false -%}
-                <button type="button" class="js-load-media hidden" aria-hidden="true"></button>
+                <button type="button" class="js-load-media-bot hidden" aria-hidden="true"></button>
               {%- endif -%}
               <template>
                 <video-component
@@ -222,7 +222,7 @@
 
                   handleClick(evt) {
                     const section = evt.target.closest('.grid-mid');
-                    section.querySelector('.js-load-media').click();
+                    section.querySelector('.js-load-media-bot').click();
                     setTimeout(() => section.classList.add('video-section--played'), Shopify.designMode ? 500 : 1500);
                   }
                 }
@@ -294,6 +294,7 @@
   }
   .left-img {
     border-radius: 20px 20px 20px 20px; 
+    height:60%;
   }
   .bot-description {
     display: flex;
