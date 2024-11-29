@@ -49,8 +49,8 @@
             "enlarge_text": true,
             "button_label_1": "",
             "button_url_1": "",
-            "button_label_2": "Shop all",
-            "button_url_2": "",
+            "button_label_2": "Shop Now",
+            "button_url_2": "shopify://products/cell-phone-sports-gimbal-stabilizer",
             "text_alignment": "center center"
           }
         }
