@@ -39,7 +39,7 @@
 <div id="key-player-tracking" class="container">
   <div class="row">
     <div class="col-top">
-      <div class="video-section">
+      <div class="top-video-box">
         <div
           class="height--adapt image-overlay image-overlay--bg-no_background"
           {% if top_placeholder_image %}
@@ -118,9 +118,10 @@
                   }
 
                   onHandleClick(evt) {
-                    const sectionTop = evt.target.closest('.video-section');
-                    sectionTop.querySelector('.js-load-media-top').click();
-                    setTimeout(() => sectionTop.classList.add('video-section--played'), Shopify.designMode ? 500 : 1500);
+                    const section = evt.target.closest('.top-video-box');
+                    console.log(section,"=============")
+                    section.querySelector('.js-load-media-top').click();
+                    setTimeout(() => section.classList.add('video-section--played'), Shopify.designMode ? 500 : 1500);
                   }
                 }
 
