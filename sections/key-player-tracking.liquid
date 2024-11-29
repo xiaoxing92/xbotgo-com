@@ -50,7 +50,7 @@
           <div class="image-overlay__image height__image">
             <deferred-media>
               {%- if autoPlay == false -%}
-                <button type="button" class="js-load-media hidden" aria-hidden="true"></button>
+                <button type="button" class="js-load-media-top hidden" aria-hidden="true"></button>
               {%- endif -%}
               <template>
                 <video-component
@@ -95,7 +95,7 @@
             <div class="text-overlay text-overlay--for-banner text-overlay--v-center text-overlay--h-center image-overlay__over video-played-hidden">
               <div class="text-overlay__inner">
                 <div class="text-overlay__text">
-                  <video-section-play-button
+                  <video-section-play-button-top
                     role="button"
                     tabindex="0"
                     type="button"
@@ -103,7 +103,7 @@
                   >
                     <span class="visually-hidden">{{ 'general.icon_labels.play' | t }}</span>
                     {%- render 'icon-play' -%}
-                  </video-section-play-button>
+                  </video-section-play-button-top>
                 </div>
               </div>
             </div>
@@ -112,19 +112,19 @@
           {%- if autoPlay == false -%}
             <script>
               if (!customElements.get('video-section-play-button')) {
-                class VideoSectionPlayButton extends HTMLElement {
+                class VideoSectionPlayButtonTop extends HTMLElement {
                   connectedCallback() {
                     this.addEventListener('click', this.onHandleClick);
                   }
 
                   onHandleClick(evt) {
                     const section = evt.target.closest('.top-video-box');
-                    section.querySelector('.js-load-media').click();
+                    section.querySelector('.js-load-media-top').click();
                     setTimeout(() => section.classList.add('video-section--played'), Shopify.designMode ? 500 : 1500);
                   }
                 }
 
-                customElements.define('video-section-play-button', VideoSectionPlayButton);
+                customElements.define('video-section-play-button-top', VideoSectionPlayButtonTop);
               }
             </script>
           {%- endif -%}
@@ -424,7 +424,7 @@
     {
       "id": "top_auto_play",
       "type": "checkbox",
-      "label": "TopAutoPlay",
+      "label": "Top AutoPlay",
       "info": "Video will be muted",
       "default": false
     },
