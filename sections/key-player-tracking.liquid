@@ -198,7 +198,7 @@
             <div class="text-overlay text-overlay--for-banner text-overlay--v-center text-overlay--h-center image-overlay__over video-played-hidden">
               <div class="text-overlay__inner">
                 <div class="text-overlay__text">
-                  <video-section-play-button2
+                  <video-section-play-button-bot
                     role="button"
                     tabindex="0"
                     type="button"
@@ -206,7 +206,7 @@
                   >
                     <span class="visually-hidden">{{ 'general.icon_labels.play' | t }}</span>
                     {%- render 'icon-play' -%}
-                  </video-section-play-button2>
+                  </video-section-play-button-bot>
                 </div>
               </div>
             </div>
@@ -214,8 +214,8 @@
 
           {%- if botAutoPlay == false -%}
             <script>
-              if (!customElements.get('video-section-play-button2')) {
-                class VideoSectionPlayButton2 extends HTMLElement {
+              if (!customElements.get('video-section-play-button-bot')) {
+                class VideoSectionPlayButtonBot extends HTMLElement {
                   connectedCallback() {
                     this.addEventListener('click', this.handleClick);
                   }
@@ -227,7 +227,7 @@
                   }
                 }
 
-                customElements.define('video-section-play-button2', VideoSectionPlayButton);
+                customElements.define('video-section-play-button-bot', VideoSectionPlayButtonBot);
               }
             </script>
           {%- endif -%}
