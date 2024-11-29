@@ -33,6 +33,7 @@
   endif
 
   assign autoPlay = section.settings.top_auto_play
+  
   assign botAutoPlay = section.settings.bot_auto_play
 -%}
 
@@ -50,7 +51,7 @@
           <div class="image-overlay__image height__image">
             <deferred-media>
               {%- if autoPlay == false -%}
-                <button type="button" class="js-load-media-top hidden" aria-hidden="true"></button>
+                <button type="button" class="js-load-media hidden" aria-hidden="true"></button>
               {%- endif -%}
               <template>
                 <video-component
@@ -111,7 +112,7 @@
 
           {%- if autoPlay == false -%}
             <script>
-              if (!customElements.get('video-section-play-button')) {
+              if (!customElements.get('video-section-play-button-top')) {
                 class VideoSectionPlayButtonTop extends HTMLElement {
                   connectedCallback() {
                     this.addEventListener('click', this.onHandleClick);
@@ -119,8 +120,8 @@
 
                   onHandleClick(evt) {
                     const section = evt.target.closest('.top-video-box');
-                    console.log(section,"=============")
-                    section.querySelector('.js-load-media-top').click();
+                    console.log(section,"========================")
+                    section.querySelector('.js-load-media').click();
                     setTimeout(() => section.classList.add('video-section--played'), Shopify.designMode ? 500 : 1500);
                   }
                 }
