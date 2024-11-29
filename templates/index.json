@@ -32,12 +32,33 @@
             "button_url_2": "",
             "text_alignment": "center center"
           }
+        },
+        "image_neNB7X": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_KV-PC_7e8dfc2e-64bc-4183-9d06-f8808ccc4fe9.png",
+            "mobile_image": "shopify://shop_images/1_KV-M.png",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "Shop all",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
         }
       },
       "block_order": [
-        "image_FLmq79"
+        "image_FLmq79",
+        "image_neNB7X"
       ],
-      "disabled": true,
       "custom_css": [
         ".text-overlay {position: relative; top: 10%; left: 0; font-size: 20px;}",
         ".btn {background: #d93800; width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px; top: 55%; left: 14%; position: fixed;}",
@@ -47,14 +68,14 @@
         "show_sticky_banner": false,
         "sticky_text": "",
         "link_url": "shopify://collections/all",
-        "height": "fixed",
+        "height": "adapt",
         "height_desktop": 600,
         "height_mobile": 460,
         "full_width": true,
         "mobile_overlay_under": false,
         "overlay_style": "shadow",
         "transition": "fade",
-        "navigation": "arrows",
+        "navigation": "dots",
         "autoplay": true,
         "autoplay_speed": 7,
         "accessibility_info": ""
@@ -63,6 +84,27 @@
     "16359276425da8ce46": {
       "type": "slideshow",
       "blocks": {
+        "image_EHrpCV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_KV-PC.png",
+            "mobile_image": "shopify://shop_images/1_KV-M.png",
+            "slide_link": "shopify://pages/xbotgo-ai-sports-gimbal",
+            "subheading": "",
+            "title": "",
+            "heading_max_width": 15,
+            "title_size": 24,
+            "title_size_mobile": 20,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "BUY NOW",
+            "button_url_1": "https://xbotgo.com/discount/Treat20?redirect=%2Fproducts%2Fcell-phone-sports-gimbal-stabilizer",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "top left"
+          }
+        },
         "image_fz6nVt": {
           "type": "image",
           "settings": {
@@ -103,39 +145,18 @@
             "button_url_2": "",
             "text_alignment": "center center"
           }
-        },
-        "image_EHrpCV": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1_KV-PC.png",
-            "mobile_image": "shopify://shop_images/1_KV-M.png",
-            "slide_link": "shopify://pages/xbotgo-ai-sports-gimbal",
-            "subheading": "",
-            "title": "AI Sports Gimbal",
-            "heading_max_width": 15,
-            "title_size": 24,
-            "title_size_mobile": 20,
-            "use_h1": false,
-            "text": "",
-            "enlarge_text": true,
-            "button_label_1": "BUY NOW",
-            "button_url_1": "https://xbotgo.com/discount/Treat20?redirect=%2Fproducts%2Fcell-phone-sports-gimbal-stabilizer",
-            "button_label_2": "",
-            "button_url_2": "",
-            "text_alignment": "top left"
-          }
         }
       },
       "block_order": [
+        "image_EHrpCV",
         "image_fz6nVt",
-        "image_YhwmWV",
-        "image_EHrpCV"
+        "image_YhwmWV"
       ],
+      "disabled": true,
       "custom_css": [
-        ".text-overlay {position: relative; top: 10%; left: 10%; height: 100%; font-size: 20px;}",
-        ".text-overlay__inner{height:100%;}",
+        ".text-overlay {position: relative; top: 10%; left: 10%; font-size: 20px;}",
         ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px; top: 70%; position: fixed;}",
-        "@media (max-width: 767px) {.text-overlay {position: relative; top: 35%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 130px; text-align: center; font-size: 15px; position: absolute; top: 30%; }}"
+        "@media (max-width: 767px) {.text-overlay {position: relative; top: 35%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 130px; text-align: center; font-size: 15px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; left: 35%; }}"
       ],
       "settings": {
         "show_sticky_banner": false,
@@ -427,6 +448,7 @@
     },
     "key_player_tracking_kg8pG3": {
       "type": "key-player-tracking",
+      "disabled": true,
       "settings": {
         "top_video_shopify": "shopify://files/videos/球衣号码追踪.mov",
         "top_video_external": "",
@@ -521,7 +543,6 @@
         "video_3L9ndm",
         "text_xwrphk"
       ],
-      "disabled": true,
       "custom_css": [
         ".theme-img {border-radius: 25px;}",
         ".block-id-text_Xe6fa4 {background-color: #e8e8e8; border-radius: 25px; margin: 10px; padding: 15px; font-size: 15px;}",

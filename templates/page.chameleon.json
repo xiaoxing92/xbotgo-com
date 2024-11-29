@@ -57,6 +57,7 @@
       "blocks": {
         "image_EFQYci": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/2_KV-PC.png",
             "mobile_image": "shopify://shop_images/2_KV-M.png",
@@ -75,15 +76,37 @@
             "button_url_2": "",
             "text_alignment": "top left"
           }
+        },
+        "image_MqKBe7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PC-KV2.png",
+            "mobile_image": "shopify://shop_images/M-KV2.png",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "Buy Now",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
         }
       },
       "block_order": [
-        "image_EFQYci"
+        "image_EFQYci",
+        "image_MqKBe7"
       ],
       "custom_css": [
-        ".text-overlay {position: relative; top: 20%; left: 8%; font-size: 20px;}",
-        ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 19px; border: 1px solid; border-radius: 20px; top: 50%; position: fixed;}",
-        "@media (max-width: 767px) {.text-overlay {position: relative; top: 33%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 120px; text-align: center; font-size: 13px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; top: 100%; left: 35%; }}"
+        ".text-overlay {position: relative; top: 10%; left: 0; font-size: 20px;}",
+        ".btn {background: #d93800; width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px; top: 55%; left: 14%; position: fixed;}",
+        "@media (max-width: 767px) {.text-overlay {position: relative; top: -8%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 130px; text-align: center; font-size: 15px; position: relative; padding-top: 12px; left: 0; }}"
       ],
       "settings": {
         "show_sticky_banner": true,
@@ -490,7 +513,7 @@
       "custom_css": [
         ".h1 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}",
         ".video-section__play-btn {display: none;}",
-        ".text-overlay__text{top:50%;}",
+        ".text-overlay__text {top: 50%;}",
         "@media (max-width: 767px) {.height--adapt {height: 300px; } .text-overlay {font-size: 11px; }}"
       ],
       "settings": {

@@ -14,6 +14,38 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_UTDUMy": {
+          "type": "announcement",
+          "settings": {
+            "text": "Lowest Price for <a href=\"/products/cell-phone-sports-gimbal-stabilizer\" target=\"_blank\" title=\"XbotGo AI Sports Gimbal\">AI Sports Gimbal</a>",
+            "show_countdown": false,
+            "hide_on_end": false,
+            "end_date": "",
+            "end_time": "",
+            "number_font": "base",
+            "countdown_separator": "box",
+            "use_custom_colors": false,
+            "bg_color": "#4a4a4a",
+            "bg_gradient": "",
+            "text_color": "#ffffff"
+          }
+        },
+        "announcement_XG9fjf": {
+          "type": "announcement",
+          "settings": {
+            "text": "<a href=\"/products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount\" target=\"_blank\" title=\"XbotGo Chameleon Sports Tracking AI Cameraman\">Black Friday Deals</a>",
+            "show_countdown": true,
+            "hide_on_end": true,
+            "end_date": "2024-12-02",
+            "end_time": "23:59",
+            "number_font": "base",
+            "countdown_separator": "dash",
+            "use_custom_colors": false,
+            "bg_color": "#4a4a4a",
+            "bg_gradient": "",
+            "text_color": "#ffffff"
+          }
+        },
         "announcement_gVcaxE": {
           "type": "announcement",
           "settings": {
@@ -32,6 +64,7 @@
         },
         "announcement_FgHzje": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "30-Day Hassle-Free Return",
             "show_countdown": false,
@@ -48,6 +81,8 @@
         }
       },
       "block_order": [
+        "announcement_UTDUMy",
+        "announcement_XG9fjf",
         "announcement_gVcaxE",
         "announcement_FgHzje"
       ],

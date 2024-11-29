@@ -151,6 +151,22 @@
             "show_gift_card_recipient": false
           }
         },
+        "countdown_bFbtw8": {
+          "type": "countdown",
+          "settings": {
+            "heading": "Black Friday Deals End Soon",
+            "end_date": "2024-12-02",
+            "end_time": "23:59",
+            "end_text": "",
+            "hide_on_end": false,
+            "box_color": "#323232",
+            "text_color": "#ffffff",
+            "number_font": "base",
+            "divider_type": "colon",
+            "show_timer_labels": true,
+            "show_in_quickbuy": false
+          }
+        },
         "complementary_xdJKmW": {
           "type": "complementary",
           "settings": {
@@ -175,6 +191,7 @@
         "36b4455f-d340-4f5a-89bc-26827832679f",
         "variant_picker_EaUEeC",
         "buy_buttons_YLhzVe",
+        "countdown_bFbtw8",
         "complementary_xdJKmW"
       ],
       "settings": {
