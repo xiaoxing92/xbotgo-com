@@ -114,10 +114,10 @@
               if (!customElements.get('video-section-play-button')) {
                 class VideoSectionPlayButton extends HTMLElement {
                   connectedCallback() {
-                    this.addEventListener('click', this.handleClick);
+                    this.addEventListener('click', this.onHandleClick);
                   }
 
-                  handleClick(evt) {
+                  onHandleClick(evt) {
                     const section = evt.target.closest('.top-video-box');
                     section.querySelector('.js-load-media').click();
                     setTimeout(() => section.classList.add('video-section--played'), Shopify.designMode ? 500 : 1500);
