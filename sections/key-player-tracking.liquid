@@ -32,8 +32,8 @@
     assign bot_placeholder_image = null
   endif
 
-  assign autoplay = section.settings.top_autoplay
-  assign botAutoplay = section.settings.bot_autoplay
+  assign autoPlay = section.settings.top_auto_play
+  assign botAutoPlay = section.settings.bot_auto_play
 -%}
 
 <div id="key-player-tracking" class="container">
@@ -49,7 +49,7 @@
         >
           <div class="image-overlay__image height__image">
             <deferred-media>
-              {%- if autoplay == false -%}
+              {%- if autoPlay == false -%}
                 <button type="button" class="js-load-media hidden" aria-hidden="true"></button>
               {%- endif -%}
               <template>
@@ -59,7 +59,7 @@
                     data-video-url="{{ section.settings.top_video_external | escape }}"
                   {% endunless %}
                   data-video-id="{{ section.id }}"
-                  data-autoplay="{{ autoplay }}"
+                  data-autoplay="{{ autoPlay }}"
                   data-background="false"
                   data-description="{{ section.settings.top_video_description | escape }}"
                 >
@@ -69,9 +69,9 @@
                       | video_tag:
                         playsinline: true,
                         controls: true,
-                        autoplay: autoplay,
-                        muted: autoplay,
-                        loop: autoplay,
+                        autoplay: autoPlay,
+                        muted: autoPlay,
+                        loop: autoPlay,
                         poster: ''
                       | replace: '<img ', '<img loading="lazy" hidden '
                     }}
@@ -84,14 +84,14 @@
 
             {% if top_placeholder_image %}
               {%- render 'image' with top_placeholder_image, class: 'video-played-hidden' -%}
-            {% elsif autoplay == false %}
+            {% elsif autoPlay == false %}
               <div class="placeholder-image video-played-hidden">
                 {{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}
               </div>
             {% endif %}
           </div>
 
-          {%- if autoplay == false -%}
+          {%- if autoPlay == false -%}
             <div class="text-overlay text-overlay--for-banner text-overlay--v-center text-overlay--h-center image-overlay__over video-played-hidden">
               <div class="text-overlay__inner">
                 <div class="text-overlay__text">
@@ -109,7 +109,7 @@
             </div>
           {%- endif -%}
 
-          {%- if autoplay == false -%}
+          {%- if autoPlay == false -%}
             <script>
               if (!customElements.get('video-section-play-button')) {
                 class VideoSectionPlayButton extends HTMLElement {
@@ -132,7 +132,7 @@
       </div>
 
       <div class="top-content-box">
-        <h3 class="top-content-title">{{ section.settings.top_left_title }}</h3>
+        <h2 class="top-content-title">{{ section.settings.top_left_title }}</h2>
         <p class="word-wrap">{{ section.settings.top_description }}</p>
       </div>
     </div>
@@ -152,7 +152,7 @@
         >
           <div class="image-overlay__image height__image">
             <deferred-media>
-              {%- if botAutoplay == false -%}
+              {%- if botAutoPlay == false -%}
                 <button type="button" class="js-load-media hidden" aria-hidden="true"></button>
               {%- endif -%}
               <template>
@@ -162,7 +162,7 @@
                     data-video-url="{{ section.settings.bot_video_external | escape }}"
                   {% endunless %}
                   data-video-id="{{ section.id }}"
-                  data-autoplay="{{ botAutoplay }}"
+                  data-autoplay="{{ botAutoPlay }}"
                   data-background="false"
                   data-description="{{ section.settings.bot_video_description | escape }}"
                 >
@@ -172,9 +172,9 @@
                       | video_tag:
                         playsinline: true,
                         controls: true,
-                        botAutoplay: botAutoplay,
-                        muted: botAutoplay,
-                        loop: botAutoplay,
+                        botAutoplay: botAutoPlay,
+                        muted: botAutoPlay,
+                        loop: botAutoPlay,
                         poster: ''
                       | replace: '<img ', '<img loading="lazy" hidden '
                     }}
@@ -187,14 +187,14 @@
 
             {% if bot_placeholder_image %}
               {%- render 'image' with bot_placeholder_image, class: 'video-played-hidden' -%}
-            {% elsif botAutoplay == false %}
+            {% elsif botAutoPlay == false %}
               <div class="placeholder-image video-played-hidden">
                 {{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}
               </div>
             {% endif %}
           </div>
 
-          {%- if botAutoplay == false -%}
+          {%- if botAutoPlay == false -%}
             <div class="text-overlay text-overlay--for-banner text-overlay--v-center text-overlay--h-center image-overlay__over video-played-hidden">
               <div class="text-overlay__inner">
                 <div class="text-overlay__text">
@@ -212,7 +212,7 @@
             </div>
           {%- endif -%}
 
-          {%- if botAutoplay == false -%}
+          {%- if botAutoPlay == false -%}
             <script>
               if (!customElements.get('video-section-play-button2')) {
                 class VideoSectionPlayButton2 extends HTMLElement {
@@ -234,7 +234,7 @@
         </div>
       </div>
       <div class="grid-right">
-        <h3 class="top-content-title">{{ section.settings.bot_right_title }}</h3>
+        <h2 class="top-content-title">{{ section.settings.bot_right_title }}</h2>
         <p class="word-wrap">{{ section.settings.bot_right_description }}</p>
       </div>
     </div>
@@ -421,9 +421,9 @@
       "info": "Describe the video for customers using screen readers. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)"
     },
     {
-      "id": "top_autoplay",
+      "id": "top_auto_play",
       "type": "checkbox",
-      "label": "TopAutoplay",
+      "label": "TopAutoPlay",
       "info": "Video will be muted",
       "default": false
     },
@@ -476,9 +476,9 @@
       "info": "Describe the video for customers using screen readers. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)"
     },
     {
-      "id": "bot_autoplay",
+      "id": "bot_auto_play",
       "type": "checkbox",
-      "label": "Bot Autoplay",
+      "label": "Bot AutoPlay",
       "info": "Video will be muted",
       "default": false
     },
