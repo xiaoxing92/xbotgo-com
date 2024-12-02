@@ -51,11 +51,18 @@
     }
   {%- endstyle -%}
 
+
+
   <div class="container fade-in" {%- render 'animation-attrs', attrs: 'data-cc-animate data-cc-animate-delay="0.2s"' -%}>
+    {% if section.settings.title != blank %}
+      <h2 class="hometitle h4 align-center" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+        {{- section.settings.title | escape -}}
+      </h2>
+    {% endif %}
     <div class="testimonial-list testimonial-list--{{ section.settings.layout }} testimonial-list--{% if show_image %}with-images {% else %}without-images{% endif %}" data-testimonial-count="{{ section.blocks.size }}">
-      {%- if section.settings.title != blank -%}
+      {% comment %} {%- if section.settings.title != blank -%}
         <div class="subheading">{{ section.settings.title | escape }}</div>
-      {%- endif -%}
+      {%- endif -%} {% endcomment %}
 
       {%- if use_slideshow -%}
         <slide-show role="region" data-autoplay="{{ section.settings.autoplay }}" data-speed="{{ section.settings.autoplay_speed }}" data-transition="fade" data-transition-out-delay="0" data-pause-autoplay-on-mouseover="true">
@@ -69,15 +76,16 @@
 
         <div class="testimonial testimonial-{{ forloop.index }}{% if show_image == false %} reading-width{% endif %}" {{ block.shopify_attributes }}>
           <div class="testimonial__column testimonial__column--text">
-            {% if section.settings.title != blank and show_image %}
-              <div class="subheading">{{ section.settings.title | escape }}</div>
-            {% endif %}
-
+            {%- if block.settings.author != blank -%}
+              <div class="testimonial__author">
+                 {{ block.settings.author | escape }}
+              </div>
+            {%- endif -%}
             <div class="testimonial__content">
               {%- if block.settings.star_rating > 0 -%}
                 <div class="testimonial__star-rating heading-font">
                   {%- for i in (1..block.settings.star_rating) -%}
-                  <span class="testimonial__star">{% render 'icon-star' %}</span>
+                  <span style="color:#dc6328" class="testimonial__star">{% render 'icon-star' %}</span>
                   {%- endfor -%}
                 </div>
               {%- endif -%}
@@ -88,11 +96,6 @@
                 </div>
               {%- endif -%}
 
-              {%- if block.settings.author != blank -%}
-                <div class="testimonial__author">
-                  &mdash; {{ block.settings.author | escape }}
-                </div>
-              {%- endif -%}
             </div>
           </div>
 
