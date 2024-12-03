@@ -39,8 +39,8 @@
       ],
       "custom_css": [
         ".text-overlay {position: relative; top: 20%; left: 5%; font-size: 20px;}",
-        ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 19px; border: 1px solid; border-radius: 20px; top: 50%; position: fixed;}",
-        "@media (max-width: 767px) {.text-overlay {position: relative; top: 40%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 120px; text-align: center; font-size: 13px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; top: 100%; left: 40%; }}"
+        ".btn {background:#d93800; width: 160px; text-align: center; font-size: 19px; border: 1px solid; border-radius: 20px; top: 50%; position: fixed;}",
+        "@media (max-width: 767px) {.text-overlay {position: relative; top: 32%; left: 30%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 120px; text-align: center; font-size: 13px; position: relative; padding-top: 10px; top: 32%; }}"
       ],
       "settings": {
         "show_sticky_banner": false,
