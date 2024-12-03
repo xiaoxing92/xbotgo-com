@@ -80,8 +80,8 @@
         "image_MqKBe7": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/PC-KV2.png",
-            "mobile_image": "shopify://shop_images/M-KV2.png",
+            "image": "shopify://shop_images/KV2-PC.png",
+            "mobile_image": "shopify://shop_images/KV2-M.png",
             "slide_link": "",
             "subheading": "",
             "title": "",

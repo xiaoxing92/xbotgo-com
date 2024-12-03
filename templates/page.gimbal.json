@@ -15,8 +15,8 @@
         "186890cf-49c3-44d6-b15c-2b34441c430b": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/1_KV-PC.png",
-            "mobile_image": "shopify://shop_images/1_KV-M.png",
+            "image": "shopify://shop_images/KV1-PC.png",
+            "mobile_image": "shopify://shop_images/KV1-M.png",
             "slide_link": "shopify://products/cell-phone-sports-gimbal-stabilizer",
             "subheading": "",
             "title": "",

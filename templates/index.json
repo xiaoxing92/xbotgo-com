@@ -15,8 +15,8 @@
         "image_FLmq79": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/PC-KV2.png",
-            "mobile_image": "shopify://shop_images/M-KV2.png",
+            "image": "shopify://shop_images/KV2-PC.png",
+            "mobile_image": "shopify://shop_images/KV2-M.png",
             "slide_link": "",
             "subheading": "",
             "title": "",
@@ -36,8 +36,8 @@
         "image_neNB7X": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/1_KV-PC_7e8dfc2e-64bc-4183-9d06-f8808ccc4fe9.png",
-            "mobile_image": "shopify://shop_images/1_KV-M.png",
+            "image": "shopify://shop_images/KV1-PC.png",
+            "mobile_image": "shopify://shop_images/KV1-M.png",
             "slide_link": "",
             "subheading": "",
             "title": "",
