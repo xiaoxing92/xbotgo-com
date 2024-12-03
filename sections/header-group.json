@@ -32,6 +32,7 @@
         },
         "announcement_XG9fjf": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "<a href=\"/products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount\" target=\"_blank\" title=\"XbotGo Chameleon Sports Tracking AI Cameraman\">Black Friday Deals</a>",
             "show_countdown": true,
