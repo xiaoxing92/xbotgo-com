@@ -113,9 +113,9 @@
         {% elsif block.type == 'battery-card' %}
           <div class="align-{{ block.settings.text_alignment }}">
             <img class="product-img" src="{{  block.settings.image | img_url: '230x100' }}" />
-            <div>{{ { block.settings.text }}</div>
+            <div>{{ block.settings.name_text }}</div>
           </div>
-          
+
         {% elsif block.type == 'html' %}
           <div class="custom-html">
             {{ block.settings.code }}
@@ -130,7 +130,7 @@
 
 {% schema %}
   {
-    "name": "Custom content",
+    "name": "Custom content row",
     "max_blocks": 5,
     "settings": [
       {
@@ -628,7 +628,7 @@
           },
           {
             "type": "text",
-            "id": "text",
+            "id": "name_text",
             "label": "Name"
           },
           {
