@@ -59,6 +59,7 @@
     border-radius: 16px;
     flex-direction: column;
     gap: 20px;
+    color:#000000
   }
   .child-item-column {
     display: flex;
@@ -70,6 +71,7 @@
     background: #fff;
     border-radius: 16px;
     background-size:100% 100%;
+    color:#000000
   }
   .item-column-img{
     position: absolute;
@@ -122,38 +124,6 @@
       "name": "Custom Image",
       "settings": [
         {
-          "type": "select",
-          "id": "width",
-          "label": "Width",
-          "default": "half",
-          "options": [
-            {
-              "value": "quarter",
-              "label": "25%"
-            },
-            {
-              "value": "third",
-              "label": "33%"
-            },
-            {
-              "value": "half",
-              "label": "50%"
-            },
-            {
-              "value": "two-thirds",
-              "label": "66%"
-            },
-            {
-              "value": "three-quarters",
-              "label": "75%"
-            },
-            {
-              "value": "full",
-              "label": "100%"
-            }
-          ]
-        },
-        {
           "type": "image_picker",
           "id": "image",
           "label": "Image",
@@ -165,49 +135,12 @@
           "label": "Subheading",
           "default": "Subheading"
         },
-        {
-          "type": "url",
-          "id": "image_link",
-          "label": "Image link"
-        }
       ]
     },
     {
       "type": "custom_column_block",
       "name": "Custom Block",
       "settings": [
-        {
-          "type": "select",
-          "id": "width",
-          "label": "Width",
-          "default": "half",
-          "options": [
-            {
-              "value": "quarter",
-              "label": "25%"
-            },
-            {
-              "value": "third",
-              "label": "33%"
-            },
-            {
-              "value": "half",
-              "label": "50%"
-            },
-            {
-              "value": "two-thirds",
-              "label": "66%"
-            },
-            {
-              "value": "three-quarters",
-              "label": "75%"
-            },
-            {
-              "value": "full",
-              "label": "100%"
-            }
-          ]
-        },
         {
           "type": "image_picker",
           "id": "top_image",
@@ -220,11 +153,6 @@
           "default": "Top Subheading"
         },
         {
-          "type": "url",
-          "id": "top_image_link",
-          "label": "Top Image link"
-        },
-        {
           "type": "image_picker",
           "id": "bot_image",
           "label": "Bot BackGround",
@@ -235,49 +163,12 @@
           "label": "Bot Subheading",
           "default": "Bot Subheading"
         },
-        {
-          "type": "url",
-          "id": "bot_image_link",
-          "label": "Bot Image link"
-        },
       ]
     },
     {
       "type": "html",
       "name": "Custom Liquid",
       "settings": [
-        {
-          "type": "select",
-          "id": "width",
-          "label": "Width",
-          "default": "half",
-          "options": [
-            {
-              "value": "quarter",
-              "label": "25%"
-            },
-            {
-              "value": "third",
-              "label": "33%"
-            },
-            {
-              "value": "half",
-              "label": "50%"
-            },
-            {
-              "value": "two-thirds",
-              "label": "66%"
-            },
-            {
-              "value": "three-quarters",
-              "label": "75%"
-            },
-            {
-              "value": "full",
-              "label": "100%"
-            }
-          ]
-        },
         {
           "type": "liquid",
           "id": "code",
