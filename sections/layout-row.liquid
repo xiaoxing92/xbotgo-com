@@ -11,10 +11,11 @@
       {{ section.settings.title | escape }}
     </h2>
   {% endif %}
-  <div class='wrap'>
+  <div id="block-id-{{ block.id }}" class="wrap column column--{{ block.settings.width }} block-id-{{ block.id }}" {{ block.shopify_attributes }} data-cc-animate="cc-fade-in-up" data-cc-animate-delay="{{ forloop.index | times: 0.15 }}s">
     {% for block in section.blocks %}
       {% if block.type == 'custom_row_block' %}
         <div class='item-row'>
+          <img  class="item-row-img" src="{{ section.settings.image | img_url: '600x300'}}"></img>
           {{ block.settings.subheading }}
         </div>
       {% elsif block.type == 'custom_column_block' %}
@@ -36,6 +37,9 @@
     display: flex;
     gap: 20px;
     height: 520px;
+  }
+  .item-row-img{
+    width:100%;
   }
   .item-row {
     display: flex;
@@ -61,6 +65,13 @@
     background: #fff;
     border-radius: 16px;
   }
+  @media (max-width: 768px) {
+    .wrap {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
 </style>
 {% schema %}
 {
