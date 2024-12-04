@@ -15,15 +15,15 @@
     {% for block in section.blocks %}
       {% if block.type == 'custom_row_block' %}
         <div class='item-row'>
-          <img  class="item-row-img" src="{{ section.settings.image | img_url: '600x300'}}"></img>
+          <img  class="item-row-img" src="{{ block.settings.image | img_url: '600x300'}}"></img>
           {{ block.settings.subheading }}
         </div>
       {% elsif block.type == 'custom_column_block' %}
         <div class='item-column'>
-          <div class='child-item-column'>
+          <div class='child-item-column' style="background-url('{{  block.settings.top_image }}');">
             {{ block.settings.top_subheading }}
           </div>
-          <div class='child-item-column'>
+          <div class='child-item-column' style="background-url('{{  block.settings.bot_image }}');">
             {{ block.settings.bot_subheading }}
           </div>
         </div>
@@ -64,6 +64,7 @@
     height: 50%;
     background: #fff;
     border-radius: 16px;
+    background-size:100% 100%;
   }
   @media (max-width: 768px) {
     .wrap {
