@@ -34,7 +34,7 @@
           assign placeholder_image = null
         endif
 
-        assign autoplay = block.settings.autoplay
+        assign autoplay = block.settings.auto_play
       -%}
 
       <div class="card-item">
@@ -346,7 +346,7 @@
           "info": "Describe the video for customers using screen readers. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)"
         },
         {
-          "id": "autoplay",
+          "id": "auto_play",
           "type": "checkbox",
           "label": "Top AutoPlay",
           "info": "Video will be muted",
