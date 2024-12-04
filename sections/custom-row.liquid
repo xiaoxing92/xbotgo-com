@@ -129,10 +129,13 @@
 <style>
   .item-battery-card{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
-    height:311px;
-    background:#F1F1F1;
+    height: 311px;
+    background: #F1F1F1;
+    border-radius: 16px;
+    align-items: center;
+    padding: 10px;
   }
 </style>
 
@@ -517,7 +520,7 @@
             "type": "select",
             "id": "width",
             "label": "Width",
-            "default": "half",
+            "default": "quarter",
             "options": [
               {
                 "value": "quarter",
