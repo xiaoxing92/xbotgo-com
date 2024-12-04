@@ -20,9 +20,11 @@
       {% elsif block.type == 'custom_column_block' %}
         <div class='item-column'>
           <div class='child-item-column'>
-            {{ block.settings.subheading }}
+            {{ block.settings.top_subheading }}
           </div>
-          <div class='child-item-column'>title</div>
+          <div class='child-item-column'>
+            {{ block.settings.bot_subheading }}
+          </div>
         </div>
       {% endif %}
     {% endfor %}
