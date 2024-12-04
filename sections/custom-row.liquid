@@ -110,8 +110,13 @@
             <div class="video-container__video"></div>
           </div>
 
+        {% elsif block.type == 'battery-card' %}
+          <div class="align-{{ block.settings.text_alignment }}">
+            <img class="product-img" src="{{  block.settings.image | img_url: '230x100' }}" />
+            <div>{{ { block.settings.text }}</div>
+          </div>
+          
         {% elsif block.type == 'html' %}
-
           <div class="custom-html">
             {{ block.settings.code }}
           </div>
@@ -577,6 +582,59 @@
                 "label": "100%"
               }
             ]
+          },
+          {
+            "type": "liquid",
+            "id": "code",
+            "label": "Custom Liquid"
+          }
+        ]
+      },
+      {
+        "type": "battery-card",
+        "name": "Battery Card",
+        "settings": [
+          {
+            "type": "select",
+            "id": "width",
+            "label": "Width",
+            "default": "half",
+            "options": [
+              {
+                "value": "quarter",
+                "label": "25%"
+              },
+              {
+                "value": "third",
+                "label": "33%"
+              },
+              {
+                "value": "half",
+                "label": "50%"
+              },
+              {
+                "value": "two-thirds",
+                "label": "66%"
+              },
+              {
+                "value": "three-quarters",
+                "label": "75%"
+              },
+              {
+                "value": "full",
+                "label": "100%"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Name"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
           },
           {
             "type": "liquid",
