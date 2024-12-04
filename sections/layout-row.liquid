@@ -20,10 +20,10 @@
         </div>
       {% elsif block.type == 'custom_column_block' %}
         <div class='item-column'>
-          <div class='child-item-column' style="background-url('{{  block.settings.top_image }}');">
+          <div class='child-item-column' style="background-image:url('{{  block.settings.top_image }}');">
             {{ block.settings.top_subheading }}
           </div>
-          <div class='child-item-column' style="background-url('{{  block.settings.bot_image }}');">
+          <div class='child-item-column' style="background-image:url('{{  block.settings.bot_image }}');">
             {{ block.settings.bot_subheading }}
           </div>
         </div>
@@ -45,6 +45,7 @@
     display: flex;
     justify-content: center;
     align-items: end;
+    flex-direction:column;
     width: 33%;
     border-radius: 16px;
     background: #fff;
