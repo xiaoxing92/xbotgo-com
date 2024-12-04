@@ -1,0 +1,201 @@
+
+<div id="section-id-{{ section.id }}" class="container fully-spaced-row--medium cf section-id-{{ section.id }}" data-section-type="custom-row">
+  {% if section.settings.title != blank %}
+    <h2 class="hometitle h4 align-center" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+      {{- section.settings.title | escape -}}
+    </h2>
+  {% endif %}
+  <div class="flexible-layout flexible-layout--align-center valign-{{ section.settings.alignment }}">
+    {% for block in section.blocks %}
+        
+          <div class="item-row">
+              {{ block.type }}
+          </div>
+          <div class="item-row">
+              1231
+          </div>
+          <div class="item-column">
+              <div class="child-item-column">
+                  title
+              </div>
+              <div class="child-item-column">
+                  title
+              </div>
+          </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Layout Row",
+    "max_blocks": 3,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Layout Row"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text_block",
+        "name": "Custom Image",
+        "settings": [
+          {
+            "type": "select",
+            "id": "width",
+            "label": "Width",
+            "default": "half",
+            "options": [
+              {
+                "value": "quarter",
+                "label": "25%"
+              },
+              {
+                "value": "third",
+                "label": "33%"
+              },
+              {
+                "value": "half",
+                "label": "50%"
+              },
+              {
+                "value": "two-thirds",
+                "label": "66%"
+              },
+              {
+                "value": "three-quarters",
+                "label": "75%"
+              },
+              {
+                "value": "full",
+                "label": "100%"
+              }
+            ]
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image",
+            "info": "2048 x 1024px recommended"
+          },
+          {
+            "type": "text",
+            "id": "subheading",
+            "label": "Subheading",
+            "default": "Subheading"
+          },
+          {
+            "type": "url",
+            "id": "image_link",
+            "label": "Image link"
+          },
+        ]
+      },
+      {
+        "type": "text_block",
+        "name": "Custom Block",
+        "settings": [
+          {
+            "type": "select",
+            "id": "width",
+            "label": "Width",
+            "default": "half",
+            "options": [
+              {
+                "value": "quarter",
+                "label": "25%"
+              },
+              {
+                "value": "third",
+                "label": "33%"
+              },
+              {
+                "value": "half",
+                "label": "50%"
+              },
+              {
+                "value": "two-thirds",
+                "label": "66%"
+              },
+              {
+                "value": "three-quarters",
+                "label": "75%"
+              },
+              {
+                "value": "full",
+                "label": "100%"
+              }
+            ]
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image",
+            "info": "2048 x 1024px recommended"
+          },
+          {
+            "type": "text",
+            "id": "subheading",
+            "label": "Subheading",
+            "default": "Subheading"
+          },
+          {
+            "type": "url",
+            "id": "image_link",
+            "label": "Image link"
+          },
+        ]
+      },
+      {
+        "type": "html",
+        "name": "Custom Liquid",
+        "settings": [
+          {
+            "type": "select",
+            "id": "width",
+            "label": "Width",
+            "default": "half",
+            "options": [
+              {
+                "value": "quarter",
+                "label": "25%"
+              },
+              {
+                "value": "third",
+                "label": "33%"
+              },
+              {
+                "value": "half",
+                "label": "50%"
+              },
+              {
+                "value": "two-thirds",
+                "label": "66%"
+              },
+              {
+                "value": "three-quarters",
+                "label": "75%"
+              },
+              {
+                "value": "full",
+                "label": "100%"
+              }
+            ]
+          },
+          {
+            "type": "liquid",
+            "id": "code",
+            "label": "Custom Liquid"
+          }
+        ]
+      }
+    ],
+    "presets": [
+
+    ]
+  }
+{% endschema %}
