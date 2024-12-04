@@ -20,11 +20,13 @@
         </div>
       {% elsif block.type == 'custom_column_block' %}
         <div class='item-column'>
-          <div class='child-item-column' style="background-image:url('{{  block.settings.top_image }}');">
-            {{ block.settings.top_subheading }}
+          <div class='child-item-column'>
+            <img class="item-column-img" src="{{ block.settings.top_image| img_url: '600x300'}}"></img>
+            <div class="column-subheading"> {{ block.settings.top_subheading }}</div>
           </div>
           <div class='child-item-column' style="background-image:url('{{  block.settings.bot_image }}');">
-            {{ block.settings.bot_subheading }}
+            <img class="item-column-img" src="{{ block.settings.bot_image| img_url: '600x300'}}"></img>
+            <div class="column-subheading"> {{ block.settings.bot_subheading }}</div>
           </div>
         </div>
       {% endif %}
@@ -61,11 +63,22 @@
   .child-item-column {
     display: flex;
     align-items: center;
+    position: relative;
     width: 100%;
     height: 50%;
     background: #fff;
     border-radius: 16px;
     background-size:100% 100%;
+  }
+  .item-column-img{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+  }
+  .column-subheading{
+    font-weight:bold;
   }
   @media (max-width: 768px) {
     .wrap {
