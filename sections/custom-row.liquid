@@ -2,7 +2,6 @@
   <div class="flexible-layout flexible-layout--align-center valign-{{ section.settings.alignment }}">
     {% for block in section.blocks %}
       <div id="block-id-{{ block.id }}" class="column column--{{ block.settings.width }} block-id-{{ block.id }}" {{ block.shopify_attributes }} data-cc-animate="cc-fade-in-up" data-cc-animate-delay="{{ forloop.index | times: 0.15 }}s">
-
         {% if block.type == 'image' %}
           <style>
             {%- if block.settings.height == 'fixed' -%}
@@ -111,7 +110,7 @@
           </div>
 
         {% elsif block.type == 'battery-card' %}
-          <div class="align-{{ block.settings.text_alignment }}">
+          <div class="item-battery-card">
             <img class="product-img" src="{{  block.settings.image | img_url: '230x100' }}" />
             <div>{{ block.settings.name_text }}</div>
           </div>
@@ -127,6 +126,15 @@
   </div>
 </div>
 
+<style>
+  .item-battery-card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height:311px;
+    background:#F1F1F1;
+  }
+</style>
 
 {% schema %}
   {
