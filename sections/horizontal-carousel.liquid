@@ -1,0 +1,146 @@
+<div id="section-id-{{ section.id }}">
+    {% if section.settings.title != blank %}
+        <h2 class="hometitle h4 align-center" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+          {{- section.settings.title | escape -}}
+        </h2>
+    {% endif %}
+    <div class="carousel-wrap">
+        <div class="carousel-item">
+            <div>video</div>
+            <div class="info-block">
+                <div class="author-pic">
+                    <img  />
+                </div>
+                <div class="author-info">
+                    <h3>JMTech</h3>
+                    <p>Capturing smooth and professional-grade videos has never been easier 🎥✨</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div>video</div>
+            <div class="info-block">
+                <div class="author-pic">
+                    <img  />
+                </div>
+                <div class="author-info">
+                    <h3>JMTech</h3>
+                    <p>Capturing smooth and professional-grade videos has never been easier 🎥✨</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div>video</div>
+            <div class="info-block">
+                <div class="author-pic">
+                    <img  />
+                </div>
+                <div class="author-info">
+                    <h3>JMTech</h3>
+                    <p>Capturing smooth and professional-grade videos has never been easier 🎥✨</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .carousel-wrap{
+        width: 100vw;
+        display: flex;
+        overflow-x: scroll;
+    }
+    .carousel-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 386px;
+        height: 371px;
+        background: #F1F1F1;
+        border-radius: 16px;
+        margin-right: 15px;
+    }
+    .info-block{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .author-pic{
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+    }
+    .author-pic img{
+            width: 100%;
+            height: 100%;
+    }
+    @media (max-width: 768px) {
+        .carousel-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-width: 320px;
+            height: 297px;
+            background: #F1F1F1;
+            border-radius: 16px;
+        }
+        .author-pic{
+            width: 60px;
+            height: 60px;
+        }
+    }
+</style>
+
+{% schema %}
+  {
+    "name": "Horizontal Carousel",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Horizontal Carousel"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "blog_card",
+            "name": "Blog Card",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "author_name",
+                    "label": "Author Name",
+                    "default": "AuthorName"
+                },
+                {
+                    "type": "text",
+                    "id": "subheading",
+                    "label": "Subheading",
+                    "default": "Subheading"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "author_image",
+                    "label": "Author Image"
+                },
+                {
+                    "id": "video_shopify",
+                    "type": "video",
+                    "label": "Video upload",
+                    "info": "Hosted by Shopify. Video will autoplay and be muted."
+                },  
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Horizontal Carousel",
+            "blocks": [
+          
+            ]
+          }
+    ]
+  }
+{% endschema %}
