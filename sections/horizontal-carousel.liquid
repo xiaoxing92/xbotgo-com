@@ -153,6 +153,10 @@
     border-radius: 16px;
     margin-right: 15px;
   }
+  .video-section {
+    height:231px;
+    overflow: hidden;
+    }
   .info-block {
     display: flex;
     justify-content: space-between;
@@ -162,13 +166,13 @@
     width: 100px;
     height: 100px;
     margin-right: 10px;
-  }
-  .author-pic {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
     border-radius: 50%;
     overflow: hidden;
+  }
+  .author-pic img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
   @media (max-width: 768px) {
     .carousel-item {
