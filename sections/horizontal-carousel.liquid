@@ -1,4 +1,4 @@
-<div id='section-id-{{ section.id }}' class="container">
+<div id='section-id-{{ section.id }}' class="container fully">
   {% if section.settings.title != blank %}
     <h2 class='hometitle h4 align-center' {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
       {{- section.settings.title | escape -}}
@@ -176,6 +176,14 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
+  }
+  .author-info{
+    flex:1;
+  }
+  .fully{
+    background:#fff;
+    padding-top:var(--container-pad-x: 50px);
+    padding-bottom:var(--container-pad-x: 50px);
   }
   @media (max-width: 768px) {
     .carousel-item {
