@@ -127,7 +127,7 @@
           </div>
           <div class='author-info'>
             <h3>{{ block.settings.author_name }}</h3>
-            <p>{{ block.settings.subheading }}</p>
+            <p class="subheading">{{ block.settings.subheading }}</p>
           </div>
         </div>
       </div>
@@ -184,6 +184,9 @@
     background:#fff;
     padding-top:var(--container-pad-x);
     padding-bottom:var(--container-pad-x);
+  }
+  .subheading{
+    font-size:13px;
   }
   @media (max-width: 768px) {
     .carousel-item {
