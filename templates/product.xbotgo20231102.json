@@ -207,6 +207,56 @@
         "media_grouping_option": "Color,Colour,Couleur,Farbe"
       }
     },
+    "horizontal_carousel_xgJiPW": {
+      "type": "horizontal-carousel",
+      "blocks": {
+        "blog_card_kXGXMk": {
+          "type": "blog_card",
+          "settings": {
+            "author_name": "JMTech",
+            "subheading": "Capturing smooth and professional-grade videos has never been easier 🎥✨",
+            "avatar": "shopify://shop_images/2_9ebe8226-148a-4576-9dc1-3ab986490f63.png",
+            "video_shopify": "shopify://files/videos/球衣号码追踪.mov",
+            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_description": "",
+            "auto_play": false
+          }
+        },
+        "blog_card_MqMqQ7": {
+          "type": "blog_card",
+          "settings": {
+            "author_name": "JMTech",
+            "subheading": "JMTechCapturing smooth and professional-grade videos has never been easier 🎥✨",
+            "avatar": "shopify://shop_images/3_83cd510c-7774-4287-9db2-a7fe68c49cc6.png",
+            "video_shopify": "shopify://files/videos/189_1729557559(Video in Original Quality).mp4",
+            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_description": "",
+            "auto_play": false
+          }
+        },
+        "blog_card_kwX8yN": {
+          "type": "blog_card",
+          "settings": {
+            "author_name": "JMTech",
+            "subheading": "Capturing smooth and professional-grade videos has never been easier 🎥✨",
+            "avatar": "shopify://shop_images/2_64cdd65e-e178-4581-aea6-07359e00b8db.png",
+            "video_shopify": "shopify://files/videos/video.mp4",
+            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_description": "",
+            "auto_play": false
+          }
+        }
+      },
+      "block_order": [
+        "blog_card_kXGXMk",
+        "blog_card_MqMqQ7",
+        "blog_card_kwX8yN"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "What our users say"
+      }
+    },
     "countdown_timer_A7ah7j": {
       "type": "countdown-timer",
       "blocks": {
@@ -1012,45 +1062,11 @@
       "settings": {
         "title": "Let's Answer Your Questions"
       }
-    },
-    "horizontal_carousel_xgJiPW": {
-      "type": "horizontal-carousel",
-      "blocks": {
-        "blog_card_kXGXMk": {
-          "type": "blog_card",
-          "settings": {
-            "author_name": "JMTech",
-            "subheading": "Capturing smooth and professional-grade videos has never been easier 🎥✨",
-            "avatar": "shopify://shop_images/2_9ebe8226-148a-4576-9dc1-3ab986490f63.png",
-            "video_shopify": "shopify://files/videos/球衣号码追踪.mov",
-            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "video_description": "",
-            "auto_play": false
-          }
-        },
-        "blog_card_MqMqQ7": {
-          "type": "blog_card",
-          "settings": {
-            "author_name": "AuthorName",
-            "subheading": "Subheading",
-            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "video_description": "",
-            "auto_play": false
-          }
-        }
-      },
-      "block_order": [
-        "blog_card_kXGXMk",
-        "blog_card_MqMqQ7"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "What our users say"
-      }
     }
   },
   "order": [
     "main",
+    "horizontal_carousel_xgJiPW",
     "countdown_timer_A7ah7j",
     "rich_text_Tmryxf",
     "gallery_3FTNfz",
@@ -1072,7 +1088,6 @@
     "judgeme_section_review_widget_bb26",
     "custom_liquid_h6Ti3G",
     "collapsible_tabs_PjXBqN",
-    "164849540210eed2b4",
-    "horizontal_carousel_xgJiPW"
+    "164849540210eed2b4"
   ]
 }
