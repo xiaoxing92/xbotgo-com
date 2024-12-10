@@ -141,6 +141,7 @@ if (!customElements.get('video-component')) {
       this.player.style.width="100%";
       this.player.style.height="100%";
       this.player.style.position="absolute";
+      this.player.style.background="#000";
       this.player.addEventListener('pause', () => {
         if (this.inViewport) this.pausedByUser = true;
       });
