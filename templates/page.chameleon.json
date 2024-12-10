@@ -254,11 +254,25 @@
         "text_x4mk4U",
         "video_caRieh"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (max-width: 767px) {.height--adapt {height: 300px; } .block-id-text_x4mk4U {font-size: 12px; }}"
       ],
       "settings": {
         "alignment": "bottom"
+      }
+    },
+    "background_video_mhkQpc": {
+      "type": "background-video",
+      "settings": {
+        "video_shopify": "shopify://files/videos/chameleon.mp4",
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_description": "XbotGo Chameleon is a smart phone accessory designed to enhance sports recording. Using its built-in camera and AI, it tracks players, the ball, or key events in real time, keeping the action in focus without manual adjustments. ",
+        "text_alignment": "center center",
+        "height_desktop": 600,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style": "shadow"
       }
     },
     "key_features_AUqM3N": {
@@ -479,7 +493,7 @@
       ],
       "custom_css": [
         ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}",
-        "@media (max-width: 768px) {.scrolling-image-list__image {display: flex; flex-direction: column-reverse; } .video-section{border-radius: 10px; overflow: hidden; }}"
+        "@media (max-width: 768px) {.scrolling-image-list__image {display: flex; flex-direction: column-reverse; } .video-section {border-radius: 10px; overflow: hidden; }}"
       ],
       "settings": {
         "heading": "",
@@ -1148,6 +1162,7 @@
     "countdown_timer_8wR437",
     "custom_content_NLBDX3",
     "custom_content_P8JdED",
+    "background_video_mhkQpc",
     "key_features_AUqM3N",
     "rich_text_3jzhpF",
     "gallery_npYRbQ",
