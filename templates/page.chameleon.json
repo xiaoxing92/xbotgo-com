@@ -479,7 +479,7 @@
       ],
       "custom_css": [
         ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}",
-        "@media (max-width: 768px) {.scrolling-image-list__image {display: flex; flex-direction: column-reverse;}}"
+        "@media (max-width: 768px) {.scrolling-image-list__image {display: flex; flex-direction: column-reverse; } .video-section{border-radius: 10px; overflow: hidden; }}"
       ],
       "settings": {
         "heading": "",
