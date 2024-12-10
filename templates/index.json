@@ -448,7 +448,6 @@
     },
     "key_player_tracking_kg8pG3": {
       "type": "key-player-tracking",
-      "disabled": true,
       "settings": {
         "top_video_shopify": "shopify://files/videos/球衣号码追踪.mov",
         "top_video_external": "",
@@ -543,6 +542,7 @@
         "video_3L9ndm",
         "text_xwrphk"
       ],
+      "disabled": true,
       "custom_css": [
         ".theme-img {border-radius: 25px;}",
         ".block-id-text_Xe6fa4 {background-color: #e8e8e8; border-radius: 25px; margin: 10px; padding: 15px; font-size: 15px;}",
@@ -593,8 +593,8 @@
             "enlarge_media": false,
             "title": "XbotGo Chameleon",
             "subheading": "",
-            "button_label": "Buy Now",
-            "link": ""
+            "a_label": "Buy Now",
+            "link": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount"
           }
         },
         "text_block_fzUPmf": {
@@ -606,8 +606,8 @@
             "enlarge_media": false,
             "title": "Sports Gimbal",
             "subheading": "",
-            "button_label": "Buy Now",
-            "link": ""
+            "a_label": "Buy Now",
+            "link": "shopify://products/cell-phone-sports-gimbal-stabilizer"
           }
         },
         "text_block_Rzyeik": {
@@ -619,7 +619,7 @@
             "enlarge_media": false,
             "title": "Accessories",
             "subheading": "",
-            "button_label": "Buy Now",
+            "a_label": "Buy Now",
             "link": "shopify://collections/accessories"
           }
         }
@@ -629,7 +629,6 @@
         "text_block_fzUPmf",
         "text_block_Rzyeik"
       ],
-      "disabled": true,
       "custom_css": [
         "@media (max-width: 767px) {.text-overlay {position: relative; top: 35%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 130px; text-align: center; font-size: 15px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; left: 35%; }}"
       ],
@@ -682,6 +681,7 @@
         "media_QkMV3t",
         "media_c7QCRa"
       ],
+      "disabled": true,
       "custom_css": [
         ".btn {border-radius: 25px;}",
         ".gallery__item {border-radius: 25px;}",
