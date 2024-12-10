@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "general": {
     "localization": {
@@ -498,6 +507,15 @@
       "signup_form_email_label": "Email",
       "signup_form_success": "We will send you an email right before we open!",
       "password_link": "Enter using password"
+    }
+  },
+  "customer_accounts": {
+    "order_details": {
+      "grouped_view_components": {
+        "expand_line_items": "{{count}}個のアイテムを表示",
+        "collapse_line_items": "{{count}}個のアイテムを非表示",
+        "line_item_summary_list_accessibility_label": "{{productTitle}}バンドル内のアイテム"
+      }
     }
   }
 }
