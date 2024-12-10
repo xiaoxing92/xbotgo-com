@@ -917,6 +917,7 @@
     },
     "custom_liquid_dx6HKw": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "full_width": true,
         "show_space": true,
@@ -953,7 +954,6 @@
         "question_ehTXEm",
         "question_6rCXYg"
       ],
-      "disabled": true,
       "settings": {
         "title": "Support"
       }
