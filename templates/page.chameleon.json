@@ -436,10 +436,11 @@
         "feature_ndn46G"
       ],
       "custom_css": [
-        ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}"
+        ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}",
+        ".block {border-radius: 2px; overflow: hidden;}"
       ],
       "settings": {
-        "heading": "Key features",
+        "heading": "",
         "image_max_width": 700,
         "media_aspect_ratio": "1.5",
         "image_position": "right",
