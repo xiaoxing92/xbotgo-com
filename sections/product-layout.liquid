@@ -18,11 +18,11 @@
     {% if first_block %}
       <div class="product-item">
         <div class="product-introduce">
-          <h2 class="text-overlay__title h4">{{ first_block.settings.title }}</h2>
+          <h2 class="text-overlay__title h4">{{ first_block.settings.title  | t  }}</h2>
           {% if first_block.settings.subheading != blank %}
-            <p>{{ first_block.settings.subheading }}</p>
+            <p>{{ first_block.settings.subheading  | t }}</p>
           {% endif %}
-          <button class="pay-button">{{ first_block.settings.button_label }}</button>
+          <button class="pay-button">{{ first_block.settings.button_label | t }}</button>
         </div>
         <img class="product-img" src="{{ first_block.settings.image | img_url: '230x100' }}" />
       </div>

@@ -16,7 +16,7 @@
       {% if block.type == 'custom_row_block' %}
         <div class='item-row'>
           <img  class="item-row-img" src="{{ block.settings.image | img_url: '600x300'}}"></img>
-          {{ block.settings.subheading }}
+          {{ block.settings.subheading}}
         </div>
       {% elsif block.type == 'custom_column_block' %}
         <div class='item-column'>
