@@ -292,7 +292,7 @@
       "custom_css": [
         ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent; font-size: 30px;}",
         "@media (max-width: 767px) {.height--adapt {height: 300px; } .feature-text-paired {font-size: 12px; }}",
-        "@media (max-width: 767px) {.scrolling-image-list__image {display: flex; flex-direction: column-reverse; } .h2{font-size: 25px; }}"
+        "@media (max-width: 767px) {.scrolling-image-list__image {display: flex; flex-direction: column-reverse; } .h2 {font-size: 25px; } .scrolling-image-list__content {margin-top: 10px; margin-bottom:10px }}"
       ],
       "settings": {
         "heading": "",
