@@ -557,7 +557,8 @@
       "type": "hotspots",
       "custom_css": [
         ".text-overlay-parent--mobile-stack {color: #262629; font-size: 13px;}",
-        "@media (max-width: 767px) {.text-overlay-parent--mobile-stack {font-size: 11px; vertical-align: left; } .h1 {font-size: 16px; }}"
+        "@media (max-width: 767px) {.text-overlay-parent--mobile-stack {font-size: 11px; vertical-align: left; } .h1 {font-size: 16px; }}",
+        "@media (min-width: 1100px) {.text-overlay--for-banner .text-overlay__inner {padding: 70px 0; }}"
       ],
       "settings": {
         "image": "shopify://shop_images/No_Monthly_App_1.25x.png",
@@ -569,7 +570,7 @@
         "text_alignment": "top left",
         "overlay_style": "no_background",
         "subheading": "",
-        "title": "No Monthly Fee",
+        "title": "No Monthly Fees App Feature",
         "use_h1": false,
         "heading_max_width": 11,
         "text": "<p>With the XbotGo App, each user gets 20GB of free storage and a subscription-free experience.Easily upload videos to XbotGo Cloud, powered by AWs, andone click share memories effortlessly.</p>",
