@@ -436,7 +436,7 @@
         "feature_ndn46G"
       ],
       "custom_css": [
-        ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}",
+        ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent; font-size:30px;}",
         ".block {border-radius: 2px; overflow: hidden;}"
       ],
       "settings": {
@@ -515,7 +515,7 @@
       "custom_css": [
         ".video-section__play-btn {display: none;}",
         ".text-overlay__text {top: 50%;}",
-        "@media (max-width: 767px) {.height--adapt {height: 300px; } .text-overlay {font-size: 11px; } .text-overlay--for-banner .text-overlay__inner{padding:0 }}"
+        "@media (max-width: 767px) {.height--adapt {height: 300px; } .text-overlay {font-size: 11px; } .text-overlay--for-banner .text-overlay__inner {padding: 0; }}"
       ],
       "settings": {
         "video_shopify": "shopify://files/videos/版位14直播&amp;云存储功能素材2.mp4",
