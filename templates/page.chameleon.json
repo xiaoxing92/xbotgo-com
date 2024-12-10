@@ -284,17 +284,38 @@
             "show_icon": false,
             "icon": "star"
           }
+        },
+        "feature_hHLwzD": {
+          "type": "feature",
+          "settings": {
+            "bg_color": "#202223",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "Fit",
+            "text": "<p>Describe a key feature in detail.</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
         }
       },
       "block_order": [
-        "feature_FwxLdB"
+        "feature_FwxLdB",
+        "feature_hHLwzD"
       ],
       "custom_css": [
-        ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}",
+        ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent; font-size: 30px;}",
         "@media (max-width: 767px) {.height--adapt {height: 300px; } .feature-text-paired {font-size: 12px; }}"
       ],
       "settings": {
-        "heading": "Key features",
+        "heading": "",
         "image_max_width": 700,
         "media_aspect_ratio": "1.5",
         "image_position": "left",
