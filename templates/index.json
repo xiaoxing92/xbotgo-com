@@ -593,7 +593,7 @@
             "enlarge_media": false,
             "title": "XbotGo Chameleon",
             "subheading": "",
-            "button_label": "Buy Now",
+            "a_label": "Buy Now",
             "link": ""
           }
         },
@@ -606,7 +606,7 @@
             "enlarge_media": false,
             "title": "Sports Gimbal",
             "subheading": "",
-            "button_label": "Buy Now",
+            "a_label": "Buy Now",
             "link": ""
           }
         },
@@ -619,7 +619,7 @@
             "enlarge_media": false,
             "title": "Accessories",
             "subheading": "",
-            "button_label": "Buy Now",
+            "a_label": "Buy Now",
             "link": "shopify://collections/accessories"
           }
         }
@@ -629,7 +629,6 @@
         "text_block_fzUPmf",
         "text_block_Rzyeik"
       ],
-      "disabled": true,
       "custom_css": [
         "@media (max-width: 767px) {.text-overlay {position: relative; top: 35%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 130px; text-align: center; font-size: 15px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; left: 35%; }}"
       ],
@@ -682,6 +681,7 @@
         "media_QkMV3t",
         "media_c7QCRa"
       ],
+      "disabled": true,
       "custom_css": [
         ".btn {border-radius: 25px;}",
         ".gallery__item {border-radius: 25px;}",
