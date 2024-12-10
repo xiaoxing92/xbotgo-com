@@ -22,9 +22,9 @@
           {% if first_block.settings.subheading != blank %}
             <p>{{ first_block.settings.subheading}}</p>
           {% endif %}
-          <button class="pay-button">{{ first_block.settings.button_label }}</button>
+          <a class="pay-a" href="{{ first_block.settings.link }}">{{ first_block.settings.a_label }}</a>
         </div>
-        <img class="product-img" src="{{ first_block.settings.image | image_url: width:330   }}" />
+        <img class="product-img" src="{{ first_block.settings.image | image_url: width:310  }}" />
       </div>
     {% endif %}
 
@@ -36,9 +36,9 @@
           {% if second_block.settings.subheading != blank %}
             <p>{{ second_block.settings.subheading }}</p>
           {% endif %}
-          <button class="pay-button">{{ second_block.settings.button_label }}</button>
+          <a class="pay-a"  href="{{ second_block.settings.link }}">{{ second_block.settings.a_label }}</a>
         </div>
-        <img class="product-img" src="{{ second_block.settings.image | image_url: width:330   }}">
+        <img class="product-img" src="{{ second_block.settings.image | image_url: width:310  }}">
       </div>
     {% endif %}
 
@@ -50,9 +50,9 @@
           {% if third_block.settings.subheading != blank %}
             <p>{{ third_block.settings.subheading }}</p>
           {% endif %}
-          <button class="pay-button">{{ third_block.settings.button_label }}</button>
+          <a class="pay-a" href="{{ third_block.settings.link }}">{{ third_block.settings.a_label }}</a>
         </div>
-        <img class="product-img-cover" src="{{ third_block.settings.image  | image_url: width:330   }}" />
+        <img class="product-img-cover" src="{{ third_block.settings.image  | image_url: width:310  }}" />
       </div>
     {% endif %}
   </div>
@@ -64,14 +64,14 @@
     {% if first_block %}
       <div class="product-item">
         <div class="product-box">
-          <img class="product-img" src="{{ first_block.settings.image | image_url: width:330   }}">
+          <img class="product-img" src="{{ first_block.settings.image | image_url: width:310  }}">
         </div>
         <div class="product-introduce">
           <h2 class="mobile-title h4">{{ first_block.settings.title }}</h2>
           {% if first_block.settings.subheading != blank %}
             <p>{{ first_block.settings.subheading }}</p>
           {% endif %}
-          <button class="pay-button">{{ first_block.settings.button_label }}</button>
+          <a class="pay-a" href="{{ first_block.settings.link }}" >{{ first_block.settings.a_label }}</a>
         </div>
       </div>
     {% endif %}
@@ -80,14 +80,14 @@
     {% if second_block %}
       <div class="top-info product-item">
         <div class="product-box">
-          <img class="product-img" src="{{ second_block.settings.image | image_url: width:330  }}" />
+          <img class="product-img" src="{{ second_block.settings.image | image_url: width:310 }}" />
         </div>
         <div class="product-introduce">
           <h2 class="mobile-title h4">{{ second_block.settings.title }}</h2>
           {% if second_block.settings.subheading != blank %}
             <p>{{ second_block.settings.subheading }}</p>
           {% endif %}
-          <button class="pay-button">{{ second_block.settings.button_label }}</button>
+          <a class="pay-a" href="{{ second_block.settings.link }}">{{ second_block.settings.a_label }}</a>
         </div>
       </div>
     {% endif %}
@@ -96,14 +96,14 @@
     {% if third_block %}
       <div class="single-column">
         <div class="product-box">
-          <img class="product-img" src="{{ third_block.settings.image | image_url: width:330 }}"/>
+          <img class="product-img" src="{{ third_block.settings.image | image_url: width:310}}"/>
         </div>
         <div class="third-product-introduce">
           <h2 class="mobile-title h4">{{ third_block.settings.title }}</h2>
           {% if third_block.settings.subheading != blank %}
             <p>{{ third_block.settings.subheading }}</p>
           {% endif %}
-          <button class="pay-button">{{ third_block.settings.button_label }}</button>
+          <a class="pay-a" href="{{ third_block.settings.link }}">{{ third_block.settings.a_label }}</a>
         </div>
       </div>
     {% endif %}
@@ -140,7 +140,7 @@
     width: 60%;
     padding: 20px 20px 20px 10%;
   }
-  .pay-button {
+  .pay-a {
     padding: 7px 25px;
     background: #000000;
     border-radius: 24px;
@@ -183,7 +183,7 @@
       text-align: center;
       
     }
-    .pay-button {
+    .pay-a {
       background: linear-gradient(to right, #f27b00, #ca251d);
       width: 100px;
       text-align: center;
@@ -276,7 +276,7 @@
         },
         {
           "type": "text",
-          "id": "button_label",
+          "id": "a_label",
           "label": "Button",
           "default": "Buy Now"
         },
