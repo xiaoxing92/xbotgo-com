@@ -24,7 +24,7 @@
           {% endif %}
           <button class="pay-button">{{ first_block.settings.button_label }}</button>
         </div>
-        <img class="product-img" src="{{ first_block.settings.image | image_url: width:300   }}" />
+        <img class="product-img" src="{{ first_block.settings.image | image_url: width:350   }}" />
       </div>
     {% endif %}
 
@@ -38,7 +38,7 @@
           {% endif %}
           <button class="pay-button">{{ second_block.settings.button_label }}</button>
         </div>
-        <img class="product-img" src="{{ second_block.settings.image | image_url: width:300   }}">
+        <img class="product-img" src="{{ second_block.settings.image | image_url: width:350   }}">
       </div>
     {% endif %}
 
@@ -52,7 +52,7 @@
           {% endif %}
           <button class="pay-button">{{ third_block.settings.button_label }}</button>
         </div>
-        <img class="product-img" src="{{ third_block.settings.image  | image_url: width:300   }}" />
+        <img class="product-img-cover" src="{{ third_block.settings.image  | image_url: width:350   }}" />
       </div>
     {% endif %}
   </div>
@@ -64,7 +64,7 @@
     {% if first_block %}
       <div class="product-item">
         <div class="product-box">
-          <img class="product-img" src="{{ first_block.settings.image | image_url: width:300   }}">
+          <img class="product-img" src="{{ first_block.settings.image | image_url: width:350   }}">
         </div>
         <div class="product-introduce">
           <h2 class="text-overlay__title h4">{{ first_block.settings.title }}</h2>
@@ -80,7 +80,7 @@
     {% if second_block %}
       <div class="top-info product-item">
         <div class="product-box">
-          <img class="product-img" src="{{ second_block.settings.image | image_url: width:300  }}" />
+          <img class="product-img" src="{{ second_block.settings.image | image_url: width:350  }}" />
         </div>
         <div class="product-introduce">
           <h2 class="text-overlay__title h4">{{ second_block.settings.title }}</h2>
@@ -96,7 +96,7 @@
     {% if third_block %}
       <div class="single-column">
         <div class="product-box">
-          <img class="product-img" src="{{ third_block.settings.image | image_url: width:300 }}"/>
+          <img class="product-img" src="{{ third_block.settings.image | image_url: width:350 }}"/>
         </div>
         <div class="third-product-introduce">
           <h2 class="text-overlay__title h4">{{ third_block.settings.title }}</h2>
@@ -157,7 +157,7 @@
     overflow: hidden;
   }
   .product-img {
-    height:142px;
+    height:auto;
   }
 
   @media (max-width: 768px) {
