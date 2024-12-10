@@ -589,7 +589,7 @@
           "settings": {
             "custom_div_width": "80",
             "custom_div_height": "400",
-            "image": "shopify://shop_images/product_display.png",
+            "image": "shopify://shop_images/50c499ce9e946faaeedad202e667d328.png",
             "enlarge_media": false,
             "title": "XbotGo Chameleon",
             "subheading": "",
@@ -602,7 +602,7 @@
           "settings": {
             "custom_div_width": "100",
             "custom_div_height": "400",
-            "image": "shopify://shop_images/XbotGo_Gimbal_1.25x.png",
+            "image": "shopify://shop_images/bd75a052c60d56be46e7156b2f4d3f00.png",
             "enlarge_media": false,
             "title": "Sports Gimbal",
             "subheading": "",
@@ -615,12 +615,12 @@
           "settings": {
             "custom_div_width": "",
             "custom_div_height": "",
-            "image": "shopify://shop_images/694_5.png",
+            "image": "shopify://shop_images/9ced3165238aeacd54800da2739069a8.png",
             "enlarge_media": false,
             "title": "Accessories",
             "subheading": "",
             "button_label": "Buy Now",
-            "link": ""
+            "link": "shopify://collections/accessories"
           }
         }
       },
@@ -629,7 +629,6 @@
         "text_block_fzUPmf",
         "text_block_Rzyeik"
       ],
-      "disabled": true,
       "custom_css": [
         "@media (max-width: 767px) {.text-overlay {position: relative; top: 35%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 130px; text-align: center; font-size: 15px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; left: 35%; }}"
       ],
@@ -682,6 +681,7 @@
         "media_QkMV3t",
         "media_c7QCRa"
       ],
+      "disabled": true,
       "custom_css": [
         ".btn {border-radius: 25px;}",
         ".gallery__item {border-radius: 25px;}",
