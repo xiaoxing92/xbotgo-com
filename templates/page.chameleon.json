@@ -436,7 +436,7 @@
         "feature_ndn46G"
       ],
       "custom_css": [
-        ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent; font-size:30px;}",
+        ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent; font-size: 30px;}",
         ".block {border-radius: 2px; overflow: hidden;}"
       ],
       "settings": {
@@ -940,6 +940,9 @@
       },
       "block_order": [
         "heading_TebiVq"
+      ],
+      "custom_css": [
+        ".text-overlay__text {color: #000;}"
       ],
       "settings": {
         "image": "shopify://shop_images/1.5x_e4ef58d5-3beb-4015-99f2-0ddf3707499f.png",
