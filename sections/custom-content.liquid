@@ -208,7 +208,7 @@
             </div>
           </div>
 
-          {%- if autoplay == false -%}
+        {%- if autoplay == false -%}
           <script>
             if (!customElements.get('video-section-play-button')) {
               class VideoSectionPlayButton extends HTMLElement {
@@ -226,7 +226,8 @@
               customElements.define('video-section-play-button', VideoSectionPlayButton);
             }
           </script>
-          {%- endif -%}
+        {%- endif -%}
+        
 
         {% elsif block.type == 'html' %}
 
