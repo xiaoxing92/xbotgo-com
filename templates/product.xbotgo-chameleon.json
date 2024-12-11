@@ -101,7 +101,7 @@
         "richtext_qQCbmg": {
           "type": "richtext",
           "settings": {
-            "richtext": "<p><strong>Please note: The free umbrella will be shipped in a separate package at the beginning of December.</strong></p>",
+            "richtext": "<p><strong>Please note: The free umbrella will be shipped in a separate package at the end of December.</strong></p>",
             "icon": "",
             "icon_size": "small",
             "enable_box": false,
