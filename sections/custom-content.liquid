@@ -228,50 +228,6 @@
           </script>
           {%- endif -%}
 
-
-        {% elsif block.type == 'video_mobile_bj' %}
-
-          {%- unless video_assets_output -%}
-            <link rel="stylesheet" href="{{ 'video.css' | asset_url }}" {%- render 'lazy-stylesheet-attrs' %}>
-            <script src="{{ 'video.js' | asset_url }}" defer></script>
-          {%- endunless -%}
-
-          {%- liquid
-            assign video_assets_output = true
-
-            assign using_video_tag = false
-            if block.settings.video_shopify != blank
-              assign using_video_tag = true
-            endif
-
-            if block.settings.placeholder_image
-              assign placeholder_image = block.settings.placeholder_image
-            elsif block.settings.video_shopify
-              assign placeholder_image = block.settings.video_shopify.preview_image
-            else
-              assign placeholder_image = nil
-            endif
-
-            assign autoplay = block.settings.autoplay
-
-            case block.settings.width
-              when 'quarter'
-                assign size_cols_desktop = 4
-              when 'third'
-                assign size_cols_desktop = 3
-              when 'half'
-                assign size_cols_desktop = 2
-              when 'two-thirds'
-                assign size_cols_desktop = 0.67
-              when 'three-quarters'
-                assign size_cols_desktop = 0.25
-              else
-                assign size_cols_desktop = nil
-            endcase
-          -%}
-
-
-
         {% elsif block.type == 'html' %}
 
           <div class="custom-html">
@@ -631,77 +587,6 @@
         }
       ]
     },
-    {
-      "type": "video_mobile_bj",
-      "name": "Video Mobile Background",
-      "settings": [
-        {
-          "type": "select",
-          "id": "width",
-          "label": "Width",
-          "default": "half",
-          "options": [
-            {
-              "value": "quarter",
-              "label": "25%"
-            },
-            {
-              "value": "third",
-              "label": "33%"
-            },
-            {
-              "value": "half",
-              "label": "50%"
-            },
-            {
-              "value": "two-thirds",
-              "label": "66%"
-            },
-            {
-              "value": "three-quarters",
-              "label": "75%"
-            },
-            {
-              "value": "full",
-              "label": "100%"
-            }
-          ]
-        },
-        {
-          "id": "video_shopify",
-          "type": "video",
-          "label": "Video upload",
-          "info": "Hosted by Shopify. Replaces External video if both are set."
-        },
-        {
-          "id": "video_external",
-          "type": "text",
-          "label": "External video",
-          "info": "Supports YouTube and Vimeo",
-          "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
-        },
-        {
-          "type": "text",
-          "id": "video_description",
-          "label": "Video description",
-          "info": "Describe the video for customers using screen readers. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)"
-        },
-        {
-          "id": "autoplay",
-          "type": "checkbox",
-          "label": "Autoplay",
-          "info": "Video will be muted",
-          "default": false
-        },
-        {
-          "id": "placeholder_image",
-          "type": "image_picker",
-          "label": "Custom placeholder image",
-          "info": "Required for External videos. Choose an image the same shape as your video."
-        }
-      ]
-    }
-    ,
     {
       "type": "video",
       "name": "Video",
