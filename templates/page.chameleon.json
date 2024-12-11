@@ -492,7 +492,7 @@
         "feature_wjNgx6"
       ],
       "custom_css": [
-        ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}",
+        ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent; font-size: 30px;}",
         "@media (max-width: 768px) {.scrolling-image-list__image {display: flex; flex-direction: column-reverse; } .video-section {border-radius: 10px; overflow: hidden; }}"
       ],
       "settings": {
@@ -519,7 +519,7 @@
         "text_iKtkz9": {
           "type": "text",
           "settings": {
-            "text": "<p>Chameleon comes with complimentary cloud storage (20G);</p><p>empowering you to securely store and access</p><p> your precious memories from anywhere, anytime.</p>",
+            "text": "<p>Chameleon comes with complimentary cloud storage (20G),empowering you to securely store and access  your precious memories from anywhere, anytime.</p>",
             "enlarge_text": true
           }
         }
@@ -531,7 +531,8 @@
       "custom_css": [
         ".video-section__play-btn {display: none;}",
         ".text-overlay__text {top: 50%;}",
-        "@media (max-width: 768px) {.h1 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent; } .height--adapt {height: 300px; } .text-overlay {font-size: 11px; } .text-overlay--for-banner .text-overlay__inner {padding: 0; } .image-overlay {overflow: unset; } .container {margin-top: 200px; } .text-overlay {position: absolute; top: -470px; }}"
+        ".text-overlay__rte {width: 450px;}",
+        "@media (max-width: 768px) {.h1 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent; font-size: 30px; } .height--adapt {height: 300px; } .text-overlay {font-size: 11px; } .text-overlay--for-banner .text-overlay__inner {padding: 0; } .text-overlay__rte {width: 100%; } .image-overlay {overflow: unset; } .container {margin-top: 200px; } .text-overlay {position: absolute; top: -470px; }}"
       ],
       "settings": {
         "video_shopify": "shopify://files/videos/版位14直播&amp;云存储功能素材2.mp4",

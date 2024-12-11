@@ -659,7 +659,8 @@
             "video_shopify": "shopify://files/videos/LiveStreaming.mp4",
             "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "video_description": "",
-            "autoplay": false
+            "autoplay": false,
+            "placeholder_image": "shopify://shop_images/xbotgo_for_sports.webp"
           }
         }
       },
