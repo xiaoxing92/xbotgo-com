@@ -81,100 +81,6 @@
         "accessibility_info": ""
       }
     },
-    "16359276425da8ce46": {
-      "type": "slideshow",
-      "blocks": {
-        "image_EHrpCV": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1_KV-PC.png",
-            "mobile_image": "shopify://shop_images/1_KV-M.png",
-            "slide_link": "shopify://pages/xbotgo-ai-sports-gimbal",
-            "subheading": "",
-            "title": "",
-            "heading_max_width": 15,
-            "title_size": 24,
-            "title_size_mobile": 20,
-            "use_h1": false,
-            "text": "",
-            "enlarge_text": true,
-            "button_label_1": "BUY NOW",
-            "button_url_1": "https://xbotgo.com/discount/Treat20?redirect=%2Fproducts%2Fcell-phone-sports-gimbal-stabilizer",
-            "button_label_2": "",
-            "button_url_2": "",
-            "text_alignment": "top left"
-          }
-        },
-        "image_fz6nVt": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/2_KV-PC.png",
-            "mobile_image": "shopify://shop_images/2_KV-M.png",
-            "slide_link": "",
-            "subheading": "",
-            "title": "XbotGo Chameleon",
-            "heading_max_width": 11,
-            "title_size": 24,
-            "title_size_mobile": 20,
-            "use_h1": false,
-            "text": "",
-            "enlarge_text": false,
-            "button_label_1": "BUY NOW",
-            "button_url_1": "https://xbotgo.com/discount/XbotCha?redirect=%2Fproducts%2Fxbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
-            "button_label_2": "",
-            "button_url_2": "",
-            "text_alignment": "top left"
-          }
-        },
-        "image_YhwmWV": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "slide_link": "",
-            "subheading": "Tell your story",
-            "title": "Slide heading",
-            "heading_max_width": 15,
-            "title_size": 84,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "<p>And optional subtext</p>",
-            "enlarge_text": true,
-            "button_label_1": "Shop this",
-            "button_url_1": "",
-            "button_label_2": "Shop all",
-            "button_url_2": "",
-            "text_alignment": "center center"
-          }
-        }
-      },
-      "block_order": [
-        "image_EHrpCV",
-        "image_fz6nVt",
-        "image_YhwmWV"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".text-overlay {position: relative; top: 10%; left: 10%; font-size: 20px;}",
-        ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px; top: 70%; position: fixed;}",
-        "@media (max-width: 767px) {.text-overlay {position: relative; top: 35%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 130px; text-align: center; font-size: 15px; transform: translate(-50%, -70%); position: relative; padding-top: 10px; left: 35%; }}"
-      ],
-      "settings": {
-        "show_sticky_banner": false,
-        "sticky_text": "stickyText",
-        "link_url": "shopify://collections/all",
-        "height": "adapt",
-        "height_desktop": 680,
-        "height_mobile": 520,
-        "full_width": true,
-        "mobile_overlay_under": false,
-        "overlay_style": "full",
-        "transition": "slide-fade",
-        "navigation": "dots",
-        "autoplay": false,
-        "autoplay_speed": 5,
-        "accessibility_info": ""
-      }
-    },
     "custom_content_Cjmqy6": {
       "type": "custom-content",
       "blocks": {
@@ -945,6 +851,7 @@
     },
     "custom_tab_4_GFKfHJ": {
       "type": "custom-tab-4",
+      "disabled": true,
       "custom_css": [
         ".tab-image4 {}"
       ],
@@ -1046,6 +953,55 @@
         "show_excerpts": false,
         "crop_ratio": "1.78",
         "color_scheme": "default"
+      }
+    },
+    "recommend_KadFp7": {
+      "type": "recommend",
+      "blocks": {
+        "text_block_NV6k49": {
+          "type": "text_block",
+          "settings": {
+            "avatar": "shopify://shop_images/TechUtopia_-_YouTube.jpg",
+            "name": "TechUtopia",
+            "star_rating": 5,
+            "video_external": "https://www.youtube.com/watch?v=2YVi7dA16pc",
+            "video_description": "",
+            "auto_play": false,
+            "textarea": "XbotGo Chameleon Ai Sports Cameraman | Made For Sports"
+          }
+        },
+        "text_block_WJdJmt": {
+          "type": "text_block",
+          "settings": {
+            "avatar": "shopify://shop_images/channels4_profile_3c66ba0e-aaa8-4993-b9d8-2522f694f3c9.jpg",
+            "name": "FootballF",
+            "star_rating": 5,
+            "video_external": "https://youtu.be/yg8jfy3q5Xs",
+            "video_description": "",
+            "auto_play": false,
+            "textarea": "Is XbotGo Chameleon REALLY the Best for Football?"
+          }
+        },
+        "text_block_kbjyMq": {
+          "type": "text_block",
+          "settings": {
+            "avatar": "shopify://shop_images/channels4_profile_1_6c4c0d4d-8cbd-4bba-b9e6-35cc2392971a.jpg",
+            "name": "ROAM",
+            "star_rating": 5,
+            "video_external": "https://youtu.be/YWsDBTZFFYQ",
+            "video_description": "",
+            "auto_play": false,
+            "textarea": "AI Sports Tracking Camera System // XbotGo Chameleon"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_NV6k49",
+        "text_block_WJdJmt",
+        "text_block_kbjyMq"
+      ],
+      "settings": {
+        "title": "Recommend"
       }
     },
     "cross-page-promos": {
@@ -1191,7 +1147,6 @@
   },
   "order": [
     "slideshow_tdjCPE",
-    "16359276425da8ce46",
     "custom_content_Cjmqy6",
     "rich_text_W39bMz",
     "gallery_D3MpWT",
@@ -1207,6 +1162,7 @@
     "count_up_section_8fiXYN",
     "164816450788232cf9",
     "image_with_text_overlay_8hKCtm",
+    "recommend_KadFp7",
     "custom_tab_iUNPnC",
     "custom_tab_4_GFKfHJ",
     "testimonials_N6HpgR",
