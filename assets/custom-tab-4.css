@@ -6,8 +6,8 @@
         /* 或者 space-between 如果它们之间有空间 */
         align-items: center;
         /* 其他容器样式，如宽度、背景等 */
-        margin-bottom: 40px;
-        max-width:1200px;
+        /* margin-bottom: 40px;
+        max-width:1200px; */
     }
     
     .tab-title4 {
