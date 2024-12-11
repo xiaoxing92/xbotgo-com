@@ -519,7 +519,7 @@
         "text_iKtkz9": {
           "type": "text",
           "settings": {
-            "text": "<p>Chameleon comes with complimentary cloud storage (20G);</p><p>empowering you to securely store and access</p><p> your precious memories from anywhere, anytime.</p>",
+            "text": "<p>Chameleon comes with complimentary cloud storage (20G),empowering you to securely store and access  your precious memories from anywhere, anytime.</p>",
             "enlarge_text": true
           }
         }
