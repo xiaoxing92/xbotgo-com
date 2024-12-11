@@ -831,6 +831,56 @@
         "overlay_style": "shadow"
       }
     },
+    "recommend_KadFp7": {
+      "type": "recommend",
+      "blocks": {
+        "text_block_NV6k49": {
+          "type": "text_block",
+          "settings": {
+            "avatar": "shopify://shop_images/TechUtopia_-_YouTube.jpg",
+            "name": "TechUtopia",
+            "star_rating": 5,
+            "video_external": "https://www.youtube.com/watch?v=2YVi7dA16pc",
+            "video_description": "",
+            "auto_play": false,
+            "textarea": "XbotGo Chameleon Ai Sports Cameraman | Made For Sports"
+          }
+        },
+        "text_block_WJdJmt": {
+          "type": "text_block",
+          "settings": {
+            "avatar": "shopify://shop_images/channels4_profile_3c66ba0e-aaa8-4993-b9d8-2522f694f3c9.jpg",
+            "name": "FootballF",
+            "star_rating": 5,
+            "video_external": "https://youtu.be/yg8jfy3q5Xs",
+            "video_description": "",
+            "auto_play": false,
+            "textarea": "Is XbotGo Chameleon REALLY the Best for Football?"
+          }
+        },
+        "text_block_kbjyMq": {
+          "type": "text_block",
+          "settings": {
+            "avatar": "shopify://shop_images/channels4_profile_1_6c4c0d4d-8cbd-4bba-b9e6-35cc2392971a.jpg",
+            "name": "ROAM",
+            "star_rating": 5,
+            "video_external": "https://youtu.be/YWsDBTZFFYQ",
+            "video_description": "",
+            "auto_play": false,
+            "textarea": "AI Sports Tracking Camera System // XbotGo Chameleon"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_NV6k49",
+        "text_block_WJdJmt",
+        "text_block_kbjyMq"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Recommend"
+      }
+    },
     "custom_tab_iUNPnC": {
       "type": "custom-tab",
       "settings": {
@@ -851,7 +901,6 @@
     },
     "custom_tab_4_GFKfHJ": {
       "type": "custom-tab-4",
-      "disabled": true,
       "custom_css": [
         ".tab-image4 {}"
       ],
@@ -953,55 +1002,6 @@
         "show_excerpts": false,
         "crop_ratio": "1.78",
         "color_scheme": "default"
-      }
-    },
-    "recommend_KadFp7": {
-      "type": "recommend",
-      "blocks": {
-        "text_block_NV6k49": {
-          "type": "text_block",
-          "settings": {
-            "avatar": "shopify://shop_images/TechUtopia_-_YouTube.jpg",
-            "name": "TechUtopia",
-            "star_rating": 5,
-            "video_external": "https://www.youtube.com/watch?v=2YVi7dA16pc",
-            "video_description": "",
-            "auto_play": false,
-            "textarea": "XbotGo Chameleon Ai Sports Cameraman | Made For Sports"
-          }
-        },
-        "text_block_WJdJmt": {
-          "type": "text_block",
-          "settings": {
-            "avatar": "shopify://shop_images/channels4_profile_3c66ba0e-aaa8-4993-b9d8-2522f694f3c9.jpg",
-            "name": "FootballF",
-            "star_rating": 5,
-            "video_external": "https://youtu.be/yg8jfy3q5Xs",
-            "video_description": "",
-            "auto_play": false,
-            "textarea": "Is XbotGo Chameleon REALLY the Best for Football?"
-          }
-        },
-        "text_block_kbjyMq": {
-          "type": "text_block",
-          "settings": {
-            "avatar": "shopify://shop_images/channels4_profile_1_6c4c0d4d-8cbd-4bba-b9e6-35cc2392971a.jpg",
-            "name": "ROAM",
-            "star_rating": 5,
-            "video_external": "https://youtu.be/YWsDBTZFFYQ",
-            "video_description": "",
-            "auto_play": false,
-            "textarea": "AI Sports Tracking Camera System // XbotGo Chameleon"
-          }
-        }
-      },
-      "block_order": [
-        "text_block_NV6k49",
-        "text_block_WJdJmt",
-        "text_block_kbjyMq"
-      ],
-      "settings": {
-        "title": "Recommend"
       }
     },
     "cross-page-promos": {
