@@ -1,10 +1,9 @@
-<div id="section-id-{{ section.id }}" class="Custom content fully-spaced-row--medium section-id-{{ section.id }}">
+<div id="section-id-{{ section.id }}" class="container Custom content fully-spaced-row--medium section-id-{{ section.id }}">
   <div class="flexible-layout flexible-layout--align-center valign-{{ section.settings.alignment }}">
     {% for block in section.blocks %}
       {%- assign animation_delay = forloop.index | times: 0.15 | append: 's' -%}
       {%- assign animation_attrs = 'data-cc-animate data-cc-animate-delay="' | append: animation_delay | append: '"' -%}
       <div id="block-id-{{ block.id }}" class="column column--{{ block.settings.width }} block-id-{{ block.id }} fade-in-up" {{ block.shopify_attributes }} {%- render 'animation-attrs', attrs: animation_attrs -%}>
- 
         {% if block.type == 'image' %}
           <style>
             {%- if block.settings.height == 'fixed' -%}
@@ -228,13 +227,10 @@
           </script>
         {%- endif -%}
         
-
         {% elsif block.type == 'html' %}
-
           <div class="custom-html">
             {{ block.settings.code }}
           </div>
-
         {% endif %}
       </div>
     {% endfor %}
