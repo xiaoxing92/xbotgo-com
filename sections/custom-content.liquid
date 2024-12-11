@@ -270,70 +270,6 @@
             endcase
           -%}
 
-          <div class="video-section-mobile">
-            <div class="mobile-video height--adapt image-overlay image-overlay--bg-no_background" {% if placeholder_image %}style="--aspect-ratio: {{ placeholder_image.aspect_ratio }}"{% endif %} {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
-              <div class="image-overlay__image height__image">
-                <deferred-media>
-                  {%- if autoplay == false -%}<button type="button" class="js-load-media hidden" aria-hidden="true"></button>{%- endif -%}
-                  <template>
-                    <video-component class="{% if using_video_tag %}has-video{% else %}has-iframe{% endif %}"
-                      {%- unless using_video_tag %} data-video-url="{{ block.settings.video_external | escape }}"{% endunless %}
-                                    data-video-id="{{ block.id }}"
-                                    data-autoplay="{{ autoplay }}"
-                                    data-background="false"
-                                    data-description="{{ block.settings.video_description | escape }}">
-                      {%- if using_video_tag -%}
-                        {{ block.settings.video_shopify | video_tag: playsinline: true, controls: true, autoplay: autoplay, muted: autoplay, loop: autoplay, poster: '' | replace: '<img ', '<img loading="lazy" hidden ' }}
-                      {%- else -%}
-                        <div></div>
-                      {%- endif -%}
-                    </video-component>
-                  </template>
-                </deferred-media>
-
-                {% if placeholder_image %}
-                  {%- render 'image' with placeholder_image, class: 'video-played-hidden', size_cols_desktop: size_cols_desktop -%}
-                {% elsif autoplay == false %}
-                  <div class="placeholder-image video-played-hidden">{{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}</div>
-                {% endif %}
-              </div>
-
-              {%- if autoplay == false -%}
-                <div class="text-overlay text-overlay--for-banner text-overlay--v-center text-overlay--h-center image-overlay__over video-played-hidden">
-                  <div class="text-overlay__inner">
-                    <div class="text-overlay__text">
-                      <video-section-play-button role="button" tabindex="0" type="button" class="button-row__btn video-section__play-btn inline-block">
-                        <span class="visually-hidden">{{ 'general.icon_labels.play' | t }}</span>
-                        {%- render 'icon-play' -%}
-                      </video-section-play-button>
-                    </div>
-                  </div>
-                </div>
-              {%- endif -%}
-            </div>
-          </div>
-
-          {%- if autoplay == false -%}
-          <script>
-            if (!customElements.get('video-section-play-button')) {
-              class VideoSectionPlayButton extends HTMLElement {
-                connectedCallback() {
-                  this.addEventListener('click', this.handleClick);
-                }
-
-                handleClick(evt) {
-                  const section = evt.target.closest('.video-section');
-                  section.querySelector('.js-load-media').click();
-                  setTimeout(() => section.classList.add('video-section--played'), Shopify.designMode ? 500 : 1500);
-                }
-              }
-
-              customElements.define('video-section-play-button', VideoSectionPlayButton);
-            }
-          </script>
-          {%- endif -%}
-
-
 
 
         {% elsif block.type == 'html' %}
@@ -349,7 +285,7 @@
 </div>
 
 <style>
-  .video-section-mobile{
+  {% comment %} .video-section-mobile{
     width: 100%;
     height: 500px;
     background-size: 100% 100%;
@@ -364,7 +300,7 @@
     width: 95%;
     height: 88%;
     border-radius: 55px;
-  }
+  } {% endcomment %}
 </style>
 
 {% schema %}
