@@ -1,3 +1,9 @@
+.video-container4 iframe {
+    border-radius: 10px 0px 0px 10px;
+    width: 600px;
+    height: 360px;
+}
+
 @media (max-width: 5900px) {
     /* 定义容器样式 */
     .main-tab-container {
@@ -57,13 +63,11 @@
 
     .tab-content-container {
         display: none;
-        width: 1400px;
         margin: 0 auto;
     }
 
     .tab-content-container.active {
         display: flex;
-        width: 1400px;
         margin: 0 auto;
     }
 
