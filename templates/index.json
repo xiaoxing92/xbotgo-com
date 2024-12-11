@@ -729,7 +729,7 @@
             "video_shopify": "shopify://files/videos/250ef0f40e755c52fa64ff5050e60f61.mov",
             "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "video_description": "",
-            "autoplay": true,
+            "autoplay": false,
             "placeholder_image": "shopify://shop_images/1114f02ee8d0834e37deaadd704dcab1.png"
           }
         },
