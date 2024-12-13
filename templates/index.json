@@ -360,7 +360,7 @@
         "top_video_description": "",
         "top_auto_play": false,
         "top_left_title": "Jersey Number Recognition",
-        "top_description": "Enhance your sports recordings with automatic jersey number tracking. This feature follows players based on their numbers, allowing athletes and coaches to easily capture individual performances and create personalized highlight reels.",
+        "top_description": "Enhance your sports recordings with selected jersey number tracking. This feature follows players based on their numbers, allowing athletes and coaches to easily capture individual performances and create personalized highlight reels.",
         "bot_left_image": "shopify://shop_images/gesture_1.5x.png",
         "bot_description": "Gesture Control",
         "bot_video_shopify": "shopify://files/videos/keyplayertracking (1).mp4",
@@ -832,6 +832,54 @@
         "overlay_style": "shadow"
       }
     },
+    "custom_tab_iUNPnC": {
+      "type": "custom-tab",
+      "settings": {
+        "tab-title": "Our Advantages",
+        "tab1": "Live Scoreboard",
+        "tab2": "Sports Trends Analysis",
+        "tab3": "Extended Tracking",
+        "tab-txt-title1": "ScoreSync:  Real-Time, Customizable,  Seamless.",
+        "tab-txt-content1": "Elevate your sports experience with our feature that seamlessly integrates live scoreboards into your recordings. Watch your games and events come alive with real-time updates. Plus, when you replay your recorded videos, you'll still see the score change dynamically, keeping you fully engaged.",
+        "tab-txt-title2": "Movement Trends Analysis",
+        "tab-txt-content2": "Our AI patented advanced technology seamlessly captures the game by taking into account the ball's location, as well as the speed, direction, and pose of multiple players.",
+        "tab-txt-title3": "50m Tracking Distance",
+        "tab-txt-content3": "Stunning High-Angle Shots, You can capturing every thrilling moment from a bird's-eye view. With a distance of 50 meters, you can easily capture every corner of the football field, with the ball chasing and running without the ball.",
+        "image1": "shopify://shop_images/LiveScoreBoard.webp",
+        "image2": "shopify://shop_images/movement_trend.png",
+        "image3": "shopify://shop_images/50m_tracking.png"
+      }
+    },
+    "custom_tab_4_GFKfHJ": {
+      "type": "custom-tab-4",
+      "disabled": true,
+      "custom_css": [
+        ".tab-image4 {}"
+      ],
+      "settings": {
+        "tab-title": "Recommended by",
+        "tab1": "FootballF",
+        "tab2": "DaddyBrotherTV",
+        "tab3": "ROAM",
+        "tab4": "Ralph",
+        "image1": "shopify://shop_images/channels4_profile_3c66ba0e-aaa8-4993-b9d8-2522f694f3c9.jpg",
+        "tab-txt-title1": "Is XbotGo Chameleon REALLY the Best for Football?",
+        "tab-txt-content1": "",
+        "image2": "shopify://shop_images/channel2.jpg",
+        "tab-txt-title2": "XbotGo Chameleon Ai Sports Cameraman | Made For Sports",
+        "tab-txt-content2": "",
+        "image3": "shopify://shop_images/channels4_profile_1_6c4c0d4d-8cbd-4bba-b9e6-35cc2392971a.jpg",
+        "tab-txt-title3": "AI Sports Tracking Camera System // XbotGo Chameleon",
+        "tab-txt-content3": "",
+        "image4": "shopify://shop_images/channels4_profile.jpg",
+        "tab-txt-title4": "Revolutionize Video Recording With AI Powered Sports Gimbal",
+        "tab-txt-content4": "",
+        "video_url1": "yg8jfy3q5Xs",
+        "video_url2": "IUEc8wxG3IE",
+        "video_url3": "YWsDBTZFFYQ",
+        "video_url4": "afE6MRB2vdc"
+      }
+    },
     "recommend_KadFp7": {
       "type": "recommend",
       "blocks": {
@@ -872,54 +920,7 @@
         "card_block_PMbH9h"
       ],
       "settings": {
-        "title": "Recommend"
-      }
-    },
-    "custom_tab_iUNPnC": {
-      "type": "custom-tab",
-      "settings": {
-        "tab-title": "Our Advantages",
-        "tab1": "Live Scoreboard",
-        "tab2": "Sports Trends Analysis",
-        "tab3": "Extended Tracking",
-        "tab-txt-title1": "ScoreSync:  Real-Time, Customizable,  Seamless.",
-        "tab-txt-content1": "Elevate your sports experience with our feature that seamlessly integrates live scoreboards into your recordings. Watch your games and events come alive with real-time updates. Plus, when you replay your recorded videos, you'll still see the score change dynamically, keeping you fully engaged.",
-        "tab-txt-title2": "Movement Trends Analysis",
-        "tab-txt-content2": "Our AI patented advanced technology seamlessly captures the game by taking into account the ball's location, as well as the speed, direction, and pose of multiple players.",
-        "tab-txt-title3": "50m Tracking Distance",
-        "tab-txt-content3": "Stunning High-Angle Shots, You can capturing every thrilling moment from a bird's-eye view. With a distance of 50 meters, you can easily capture every corner of the football field, with the ball chasing and running without the ball.",
-        "image1": "shopify://shop_images/LiveScoreBoard.webp",
-        "image2": "shopify://shop_images/movement_trend.png",
-        "image3": "shopify://shop_images/50m_tracking.png"
-      }
-    },
-    "custom_tab_4_GFKfHJ": {
-      "type": "custom-tab-4",
-      "custom_css": [
-        ".tab-image4 {}"
-      ],
-      "settings": {
-        "tab-title": "Recommended by",
-        "tab1": "FootballF",
-        "tab2": "DaddyBrotherTV",
-        "tab3": "ROAM",
-        "tab4": "Ralph",
-        "image1": "shopify://shop_images/channels4_profile_3c66ba0e-aaa8-4993-b9d8-2522f694f3c9.jpg",
-        "tab-txt-title1": "Is XbotGo Chameleon REALLY the Best for Football?",
-        "tab-txt-content1": "",
-        "image2": "shopify://shop_images/channel2.jpg",
-        "tab-txt-title2": "XbotGo Chameleon Ai Sports Cameraman | Made For Sports",
-        "tab-txt-content2": "",
-        "image3": "shopify://shop_images/channels4_profile_1_6c4c0d4d-8cbd-4bba-b9e6-35cc2392971a.jpg",
-        "tab-txt-title3": "AI Sports Tracking Camera System // XbotGo Chameleon",
-        "tab-txt-content3": "",
-        "image4": "shopify://shop_images/channels4_profile.jpg",
-        "tab-txt-title4": "Revolutionize Video Recording With AI Powered Sports Gimbal",
-        "tab-txt-content4": "",
-        "video_url1": "yg8jfy3q5Xs",
-        "video_url2": "IUEc8wxG3IE",
-        "video_url3": "YWsDBTZFFYQ",
-        "video_url4": "afE6MRB2vdc"
+        "title": "Recommend by"
       }
     },
     "testimonials_N6HpgR": {
@@ -1156,9 +1157,9 @@
     "count_up_section_8fiXYN",
     "164816450788232cf9",
     "image_with_text_overlay_8hKCtm",
-    "recommend_KadFp7",
     "custom_tab_iUNPnC",
     "custom_tab_4_GFKfHJ",
+    "recommend_KadFp7",
     "testimonials_N6HpgR",
     "featured_blog_GJEBtP",
     "cross-page-promos",
