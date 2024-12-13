@@ -1,0 +1,158 @@
+
+<div id="section-id-{{ section.id }}" class="container">
+  <div class="card-top">
+    <div class="full-span">For Every Level Play</div>
+    <div class="card">
+      <img src="{{ section.settings.image_1 | img_url: '1024x1024' }}" alt="{{ section.settings.title_1  }}">
+      <div class="overlay">{{  section.settings.title_1   }}</div>
+    </div>
+    <div class="card span-m">
+      <img src="{{ section.settings.image_2 | img_url: '1024x1024' }}" alt="{{ section.settings.title_2 }}">
+      <div class="overlay">{{  section.settings.title_2   }}</div>
+    </div>
+  </div>
+  <div class="card-bot">
+    <div class="card span-l">
+      <img src="{{ section.settings.image_3 | img_url: '1024x1024' }}" alt="{{ section.settings.title_3  }}">
+      <div class="overlay">{{  section.settings.title_3   }}</div>
+    </div>
+
+    <div class="card span-m">
+      <img src="{{ section.settings.image_4 | img_url: '1024x1024' }}" alt="{{ section.settings.title_4 }}">
+      <div class="overlay">{{  section.settings.title_4   }}</div>
+    </div>
+  </div>
+</div>
+
+
+<style>
+  .card-top,
+  .card-bot {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+    padding-bottom: 20px;
+    height: 285px;
+  }
+
+  .card {
+    grid-column: span 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .span-m {
+    grid-column: span 2;
+  }
+
+  .span-l {
+    grid-column: span 4;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .full-span {
+    grid-column: span 3;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "gridImageLayout",
+  "class": "section-image-layout",
+  "disabled_on": {
+    "groups": ["aside"]
+  },
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "rich_text",
+      "label": "Rich Text Content",
+      "default": "You can input rich HTML or text here."
+    },
+    {
+      "type": "text",
+      "id": "title_1",
+      "label": "Title1",
+      "default": "Title1"
+    },
+    {
+      "type":"image_picker",
+      "id": "image_1",
+      "label": "Image 1",
+    },
+    {
+      "type": "text",
+      "id": "title_2",
+      "label": "Title2",
+      "default": "Title2"
+    },
+    {
+      "type":"image_picker",
+      "id": "image_2",
+      "label": "Image 2",
+    },
+    {
+      "type": "text",
+      "id": "title_3",
+      "label": "Title3",
+      "default": "Title3"
+    },
+    {
+      "type":"image_picker",
+      "id": "image_3",
+      "label": "Image 3",
+    },
+    {
+      "type": "text",
+      "id": "title_4",
+      "label": "Title4",
+      "default": "Title4"
+    },
+    {
+      "type":"image_picker",
+      "id": "image_4",
+      "label": "Image 4",
+    },
+    {
+      "type": "text",
+      "id": "title_5",
+      "label": "Title5",
+      "default": "Title5"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Recommend",
+      "settings": {},
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
