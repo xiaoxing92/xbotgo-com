@@ -543,75 +543,6 @@
         "title": ""
       }
     },
-    "gallery_TmfVDa": {
-      "type": "gallery",
-      "blocks": {
-        "media_cdyMbK": {
-          "type": "media",
-          "settings": {
-            "image": "shopify://shop_images/XbotGo_Chameleon_1.25x.png",
-            "enlarge_media": false,
-            "subheading": "",
-            "title": "XbotGo Chameleon",
-            "button_label": "BUY NOW",
-            "link": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
-            "text_alignment": "top center"
-          }
-        },
-        "media_QkMV3t": {
-          "type": "media",
-          "settings": {
-            "image": "shopify://shop_images/XbotGo_Gimbal_1.25x.png",
-            "enlarge_media": false,
-            "subheading": "",
-            "title": "XbotGo Sports Gimbal",
-            "button_label": "BUY NOW",
-            "link": "shopify://products/cell-phone-sports-gimbal-stabilizer",
-            "text_alignment": "top center"
-          }
-        },
-        "media_c7QCRa": {
-          "type": "media",
-          "settings": {
-            "image": "shopify://shop_images/1.25x.png",
-            "enlarge_media": false,
-            "subheading": "",
-            "title": "Accesosories",
-            "button_label": "BUY NOW",
-            "link": "shopify://collections/accessories",
-            "text_alignment": "bottom left"
-          }
-        }
-      },
-      "block_order": [
-        "media_cdyMbK",
-        "media_QkMV3t",
-        "media_c7QCRa"
-      ],
-      "disabled": true,
-      "custom_css": [
-        ".btn {border-radius: 25px;}",
-        ".gallery__item {border-radius: 25px;}",
-        ".text-overlay__title {color: #262629;}",
-        "@media (max-width: 767px) {.text-overlay__title {font-size: 15px; } .gallery__item {height: 100%; object-fit: cover; } .btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 100px; text-align: center; font-size: 9px; transform: translate(-50%, -70%); position: relative; top: 10px; left: 20px; align-items: center; }}"
-      ],
-      "settings": {
-        "grid_desktop": 2,
-        "grid_mobile": "1",
-        "height": "adapt",
-        "desktop_image_height": 280,
-        "mobile_image_height": 190,
-        "title_size": 28,
-        "title_size_mobile": 18,
-        "enable_margin": true,
-        "enable_row_spacing": true,
-        "full_width": false,
-        "color_scheme": "default",
-        "enable_carousel": false,
-        "overlay_style": "full",
-        "button_style": "primary"
-      }
-    },
     "custom_content_d6UV4p": {
       "type": "custom-content",
       "blocks": {
@@ -1151,7 +1082,6 @@
     "custom_content_WweG4m",
     "hotspots_dLUw37",
     "product_layout_ExMLXn",
-    "gallery_TmfVDa",
     "custom_content_d6UV4p",
     "multi_column_VTzqiP",
     "count_up_section_8fiXYN",
