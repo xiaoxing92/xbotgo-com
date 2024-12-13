@@ -839,28 +839,30 @@
           "type": "card_block",
           "settings": {
             "avatar": "shopify://shop_images/TechUtopia_-_YouTube.jpg",
-            "name": "Author Name",
+            "name": "TECHUTOPIA",
             "star_rating": 5,
-            "video_external": "https://www.youtube.com/embed?video_id=IUEc8wxG3IE",
-            "textarea": "Default Content"
+            "video_external": "https://www.youtube.com/embed/2YVi7dA16pc?si=ZTmroBL1sUEYqnR4",
+            "textarea": "Best AI Camera for sports events I XbotGo Chameleon Review"
           }
         },
         "card_block_rEtqCT": {
           "type": "card_block",
           "settings": {
-            "name": "Author Name",
+            "avatar": "shopify://shop_images/channels4_profile_3c66ba0e-aaa8-4993-b9d8-2522f694f3c9.jpg",
+            "name": "FOOTBALL FUNDAMENTAL",
             "star_rating": 5,
-            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "textarea": "Default Content"
+            "video_external": "https://www.youtube.com/embed/yg8jfy3q5Xs?si=TehuULIAvenICdZv",
+            "textarea": "Is XbotGo Chameleon REALLY the Best for Football?"
           }
         },
         "card_block_PMbH9h": {
           "type": "card_block",
           "settings": {
-            "name": "Author Name",
+            "avatar": "shopify://shop_images/channels4_profile_1_6c4c0d4d-8cbd-4bba-b9e6-35cc2392971a.jpg",
+            "name": "ROAM it RALPH",
             "star_rating": 5,
-            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "textarea": "Default Content"
+            "video_external": "https://www.youtube.com/embed/YWsDBTZFFYQ?si=EbSiEakM9nguZVw0",
+            "textarea": "AI Sports Tracking Camera System // XbotGo Chameleon"
           }
         }
       },
