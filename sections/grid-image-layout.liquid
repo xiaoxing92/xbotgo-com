@@ -32,6 +32,11 @@
 
 
 <div id="section-id-{{ section.id }}" class="container mobile">
+  {% if section.settings.title != blank %}
+    <h2 class="hometitle h4 align-center" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+      {{- section.settings.title | escape -}}
+    </h2>
+  {% endif %}
   <div class="card-top">
     <div class="full-span">{{ section.settings.rich_text }}</div>
     <div class="card-m w50">
