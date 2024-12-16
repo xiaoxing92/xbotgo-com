@@ -1,5 +1,11 @@
 
 <div id="section-id-{{ section.id }}" class="container">
+  {% if section.settings.title != blank %}
+    <h2 class="hometitle h4 align-center" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+      {{- section.settings.title | escape -}}
+    </h2>
+  {% endif %}
+
   <div class="card-top">
     <div class="full-span">{{ section.settings.rich_text }}</div>
     <div class="card">
@@ -89,6 +95,12 @@
     "groups": ["aside"]
   },
   "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Grid Image Layout"
+    },
     {
       "type": "textarea",
       "id": "rich_text",
