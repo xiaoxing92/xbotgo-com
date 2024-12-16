@@ -80,22 +80,22 @@
         "image_MqKBe7": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/KV2-PC.png",
-            "mobile_image": "shopify://shop_images/KV2-M.png",
+            "image": "shopify://shop_images/XbotGo_chameleon.png",
+            "mobile_image": "shopify://shop_images/M-_banner.png",
             "slide_link": "",
             "subheading": "",
-            "title": "",
+            "title": "XbotGo Chameleon",
             "heading_max_width": 15,
-            "title_size": 84,
-            "title_size_mobile": 46,
+            "title_size": 50,
+            "title_size_mobile": 22,
             "use_h1": false,
-            "text": "",
+            "text": "<h6>Capture Your Every Play</h6>",
             "enlarge_text": true,
             "button_label_1": "",
             "button_url_1": "",
             "button_label_2": "Buy Now",
             "button_url_2": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
-            "text_alignment": "center center"
+            "text_alignment": "center left"
           }
         }
       },
@@ -106,7 +106,7 @@
       "custom_css": [
         ".text-overlay {position: relative; top: 10%; left: 0; font-size: 20px;}",
         ".btn {background: #d93800; width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px; top: 55%; left: 14%; position: fixed;}",
-        "@media (max-width: 767px) {.text-overlay {position: relative; top: -8%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 130px; text-align: center; font-size: 15px; position: relative; padding-top: 12px; left: 0; }}"
+        "@media (max-width: 767px) {.text-overlay {position: relative; top: -8%; left: 0%; font-size: 15px; } .btn {width: 130px; text-align: center; font-size: 15px; position: relative; padding-top: 12px; left: 0; }}"
       ],
       "settings": {
         "show_sticky_banner": true,
