@@ -225,8 +225,10 @@
         "media_wGVGzg"
       ],
       "custom_css": [
-        ".gallery__item {transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 25px;}",
-        ".text-overlay:hover +.img-fill {transform: scale(1.1);}"
+        ".gallery__item {border-radius: 25px;}",
+        ".gallery__image{transition: transform 0.3s ease, box-shadow 0.3s ease;}",
+        ".text-overlay {pointer-events: none;}",
+        ".img-fill:hover {transform: scale(1.1);}"
       ],
       "settings": {
         "grid_desktop": 4,
