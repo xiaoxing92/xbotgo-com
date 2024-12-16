@@ -15,43 +15,43 @@
         "image_FLmq79": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/KV2-PC.png",
-            "mobile_image": "shopify://shop_images/KV2-M.png",
-            "slide_link": "",
+            "image": "shopify://shop_images/Chameleon-banner.png",
+            "mobile_image": "shopify://shop_images/1.bannerm.png",
+            "slide_link": "shopify://pages/xbotgo-chameleon",
             "subheading": "",
-            "title": "",
+            "title": "AI Sports Cameraman",
             "heading_max_width": 15,
-            "title_size": 84,
-            "title_size_mobile": 46,
+            "title_size": 50,
+            "title_size_mobile": 26,
             "use_h1": false,
-            "text": "",
+            "text": "<p>XbotGo Chameleon</p>",
             "enlarge_text": true,
             "button_label_1": "Buy Now",
             "button_url_1": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
             "button_label_2": "",
             "button_url_2": "",
-            "text_alignment": "center center"
+            "text_alignment": "center left"
           }
         },
         "image_neNB7X": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/KV1-PC.png",
-            "mobile_image": "shopify://shop_images/KV1-M.png",
+            "image": "shopify://shop_images/xbotgo-ble-banner.jpg",
+            "mobile_image": "shopify://shop_images/MB-bg3_776a232c-0d06-4fcd-b046-297238a2f970.jpg",
             "slide_link": "",
             "subheading": "",
-            "title": "",
+            "title": "AI Powered Sports Gimbal",
             "heading_max_width": 15,
-            "title_size": 84,
-            "title_size_mobile": 46,
+            "title_size": 54,
+            "title_size_mobile": 24,
             "use_h1": false,
-            "text": "",
+            "text": "<p>Play Hard Film Smart</p>",
             "enlarge_text": true,
             "button_label_1": "",
             "button_url_1": "",
             "button_label_2": "Shop Now",
             "button_url_2": "shopify://products/cell-phone-sports-gimbal-stabilizer",
-            "text_alignment": "center center"
+            "text_alignment": "center left"
           }
         }
       },
@@ -60,9 +60,9 @@
         "image_neNB7X"
       ],
       "custom_css": [
-        ".text-overlay {position: relative; top: 10%; left: 0; font-size: 20px;}",
-        ".btn {background: #d93800; width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px; top: 55%; left: 14%; position: fixed;}",
-        "@media (max-width: 767px) {.text-overlay {position: relative; top: -12%; left: 0%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 130px; text-align: center; font-size: 15px; position: relative; left: 0; }}"
+        ".text-overlay {position: relative; top: 10%; left: 0; font-size: 23px;}",
+        ".btn {background: #d93800; width: 160px; text-align: center; font-size: 16px; border: 1px solid; border-radius: 20px; top: 65%; left: 10%; position: rerelative;}",
+        "@media (max-width: 767px) {.text-overlay {position: relative; top: -12%; left: 0%; font-size: 15px; } .btn {width: 130px; text-align: center; font-size: 15px; position: relative; left: 0; }}"
       ],
       "settings": {
         "show_sticky_banner": false,
@@ -225,10 +225,8 @@
         "media_wGVGzg"
       ],
       "custom_css": [
-        ".gallery__item {border-radius: 25px;}",
-        ".gallery__image{transition: transform 0.3s ease, box-shadow 0.3s ease;}",
-        ".text-overlay {pointer-events: none;}",
-        ".img-fill:hover {transform: scale(1.1);}"
+        ".gallery__item {transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 25px;}",
+        ".text-overlay:hover ~ .gallery__image {transform: scale(1.1);}"
       ],
       "settings": {
         "grid_desktop": 4,
