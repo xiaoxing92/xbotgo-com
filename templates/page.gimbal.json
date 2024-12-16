@@ -14,6 +14,7 @@
       "blocks": {
         "186890cf-49c3-44d6-b15c-2b34441c430b": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/KV1-PC.png",
             "mobile_image": "shopify://shop_images/KV1-M.png",
@@ -39,7 +40,7 @@
       ],
       "custom_css": [
         ".text-overlay {position: relative; top: 20%; left: 5%; font-size: 20px;}",
-        ".btn {background:#d93800; width: 160px; text-align: center; font-size: 19px; border: 1px solid; border-radius: 20px; top: 50%; position: fixed;}",
+        ".btn {background: #d93800; width: 160px; text-align: center; font-size: 19px; border: 1px solid; border-radius: 20px; top: 50%; position: fixed;}",
         "@media (max-width: 767px) {.text-overlay {position: relative; top: 32%; left: 30%; font-size: 15px; } .text-overlay__title {display: none; } .btn {width: 120px; text-align: center; font-size: 13px; position: relative; padding-top: 10px; top: 32%; }}"
       ],
       "settings": {
@@ -97,7 +98,6 @@
         "heading_xtHVcY",
         "button_yPgBJJ"
       ],
-      "disabled": true,
       "custom_css": [
         ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 180px; text-align: center; font-size: 13px; border-radius: 25px; top: 60%; /* Adjust this value to move the button up or down */ left: 15%; /* Adjust this value to move the button left or right */}"
       ],
@@ -214,7 +214,7 @@
         "video_shopify": "shopify://files/videos/LiveStreaming.mp4",
         "video_external": "",
         "video_description": "",
-        "autoplay": true,
+        "autoplay": false,
         "placeholder_image": "shopify://shop_images/1_26_1.jpg",
         "video_position": "left",
         "text_alignment": "left",
