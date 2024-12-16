@@ -68,7 +68,7 @@
         "show_sticky_banner": false,
         "sticky_text": "",
         "link_url": "shopify://collections/all",
-        "height": "adapt",
+        "height": "full",
         "height_desktop": 600,
         "height_mobile": 460,
         "full_width": true,
