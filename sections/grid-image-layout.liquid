@@ -1,5 +1,5 @@
 
-<div id="section-id-{{ section.id }}" class="container">
+<div id="section-id-{{ section.id }}" class="container pc">
   {% if section.settings.title != blank %}
     <h2 class="hometitle h4 align-center" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
       {{- section.settings.title | escape -}}
@@ -31,14 +31,42 @@
 </div>
 
 
+<div id="section-id-{{ section.id }}" class="container mobile">
+  <div class="card-top">
+    <div class="full-span">{{ section.settings.rich_text }}</div>
+    <div class="card-m w50">
+      <img src="{{ section.settings.image_1 | img_url: '375x375' }}" alt="{{ section.settings.title_1  }}">
+      <div class="overlay">{{  section.settings.title_1   }}</div>
+    </div>
+  </div>
+  <div class="card-bot">
+    <div class="card-m w50">
+      <img src="{{ section.settings.image_2 | img_url: '375x375' }}" alt="{{ section.settings.title_2 }}">
+      <div class="overlay">{{  section.settings.title_2   }}</div>
+    </div>
+    <div class="card-bpt-r">
+      <div class="card-m">
+        <img src="{{ section.settings.image_3 | img_url: '375x375' }}" alt="{{ section.settings.title_3 }}">
+        <div class="overlay">{{  section.settings.title_3   }}</div>
+      </div>
+      <div class="card-m">
+        <img src="{{ section.settings.image_4 | img_url: '375x375' }}" alt="{{ section.settings.title_4 }}">
+        <div class="overlay">{{  section.settings.title_4   }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <style>
+  .mobile{
+    display:none
+  }
   .card-top,
   .card-bot {
     display: flex;
-    /* grid-template-columns: repeat(6, 1fr); */
+
     gap: 10px;
     padding-bottom: 20px;
-    height: 300px;
   }
   .full-span {
     flex:1;
@@ -58,14 +86,17 @@
     border-radius: 12px;
   }
 
-  .w20 {
+  .w325 {
     flex:none;
-    width: 20%
+    width: 325px
   }  
 
-  .w30{
+  .w514{
     flex:none;
-    width: 30%;
+    width: 515px;
+  }
+  .w50{
+    width: 50%;
   }
   .card img {
     width: 100%;
@@ -74,7 +105,7 @@
     display: block;
   }
 
-  .card .overlay-text {
+  .card .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -83,19 +114,50 @@
     color: #fff;
     padding: 10px;
     text-align: center;
-    font-size: 1.2rem;
   }
 
-  .full-span {
-    grid-column: span 3;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(3* var(--font-scale) + var(--base-text-size));
-    background-color: #f0f0f0;
+  .card-m{
+    position: relative;
+    overflow: hidden;
     border-radius: 12px;
   }
+
+  .card-m img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card-m .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .card-bpt-r{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap:10px;
+  }
+  
+   @media (max-width: 768px) {
+    .full-span {
+      width: 50%;
+    }
+    .pc{
+      display:none;
+    }
+    .mobile{
+      display:block
+    }
+  } 
 </style>
 
 {% schema %}
