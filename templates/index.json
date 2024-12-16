@@ -61,8 +61,8 @@
       ],
       "custom_css": [
         ".text-overlay {position: relative; top: 10%; left: 0; font-size: 23px;}",
-        ".btn {background: #ff6c00; width: 160px; text-align: center; font-size: 14px; border: 1px solid; border-radius: 20px; top: 65%; left: 10%; position: rerelative;}",
-        "@media (max-width: 767px) {.text-overlay {position: relative; top: -12%; left: 0%; font-size: 15px; } .btn {width: 130px; text-align: center; font-size: 15px; position: relative; left: 0; } .has-motion {display: flex; flex-direction: column; justify-content: center; align-items: center; }}"
+        ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 14px; border: 1px solid; border-radius: 20px; top: 65%; left: 10%; position: rerelative;}",
+        "@media (max-width: 767px) {.text-overlay {position: relative; top: -12%; left: 0%; font-size: 15px; } .btn {width: 130px; text-align: center; font-size: 14px; position: relative; left: 0; } .has-motion {display: flex; flex-direction: column; justify-content: center; align-items: center; }}"
       ],
       "settings": {
         "show_sticky_banner": false,
