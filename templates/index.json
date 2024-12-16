@@ -226,7 +226,7 @@
       ],
       "custom_css": [
         ".gallery__item {transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 25px;}",
-        " .theme-img:hover {transform: scale(1.1); background-size: auto 100%; cursor: pointer; }"
+        "@media (hover: hover) and (pointer: fine) {.gallery__image:hover {transform: scale(1.1); background-size: auto 100%; cursor: pointer; }}"
       ],
       "settings": {
         "grid_desktop": 4,
