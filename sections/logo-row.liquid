@@ -1,7 +1,7 @@
 <div id='section-id-{{ section.id }}'>
   <div class='container-log-row'>
     <h2
-      class='hometitle h4 align-center spaced-row'
+      class='h4 align-center spaced-row'
       {%- render 'animation-attrs', attrs: 'data-cc-animate data-cc-animate-delay="0.15s"' -%}
     >
       {{ section.settings.title | escape }}
@@ -38,6 +38,14 @@
     margin-top:var(--container-pad-x);
     margin-bottom:var(--container-pad-x);
   }
+  @media (max-width: 767.98px) {
+    .logo-row {
+      max-width: 50px;
+      height: 45px;
+    }
+  }
+
+
 </style>
 {% schema %}
 {
