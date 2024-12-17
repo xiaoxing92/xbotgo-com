@@ -1073,16 +1073,16 @@
       "type": "grid-image-layout",
       "disabled": true,
       "settings": {
-        "title": "Grid Image Layout",
-        "rich_text": "You can input rich HTML or text here.",
+        "title": "",
+        "rich_text": "For Every Level Play",
         "title_1": "Title1",
-        "image_1": "shopify://shop_images/Clubs_sports.webp",
+        "image_1": "shopify://shop_images/Coaches.webp",
         "title_2": "Title2",
         "image_2": "shopify://shop_images/Parents.webp",
         "title_3": "Title3",
-        "image_3": "shopify://shop_images/Coaches.webp",
+        "image_3": "shopify://shop_images/Clubs_sports.webp",
         "title_4": "Title4",
-        "image_4": "shopify://shop_images/b424bb1a-7757-4942-9381-ef252cfc984b.jpg"
+        "image_4": "shopify://shop_images/Sports_Fans.webp"
       }
     }
   },
