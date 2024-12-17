@@ -7,60 +7,31 @@
       {{ section.settings.title | escape }}
     </h2>
 
-    <div class='logo-list-container'>
-      <div class='logo-row'>
-        {%- for block in section.blocks -%}  
-          <div class='logo-list__logo-image'>
-            {%- if block.settings.image != blank -%}
-              {%- liquid
-                render 'image' with block.settings.image, sizes: 100,
-              -%}
-            {%- else -%}
-              <div class='placeholder-image'>
-                {{- 'logo' | placeholder_svg_tag: 'placeholder-svg' -}}
-              </div>
-            {%- endif -%}
+    <div class='logo-container'>
+      {%- for block in section.blocks -%}
+        {%- if block.settings.image != blank -%}
+          <img src='{{ block.settings.image |img_url: '1024x1024' }}' class='logo-row'>
+        {%- else -%}
+          <div class='placeholder-image'>
+            {{- 'logo' | placeholder_svg_tag: 'placeholder-svg' -}}
           </div>
-
-          {%- if block.settings.title != blank -%}
-            <div class='logo-list__logo-title'>
-              {{ block.settings.title | escape }}
-            </div>
-          {%- endif -%}
-
-          {%- unless block.settings.link != blank -%}
-            </div>
-          {%- else -%}
-            </a>
-          {%- endunless -%}
-        {%- endfor -%}
-
-        {% if section.blocks.size == 0 %}
-          {%- for i in (1..4) -%}
-            <div class='logo-list__row'>
-              <div class='logo-list__logo-image'>
-                <div class='placeholder-image'>
-                  {{- 'logo' | placeholder_svg_tag: 'placeholder-svg' -}}
-                </div>
-              </div>
-            </div>
-          {%- endfor -%}
-        {% endif %}
-      </div>
+        {%- endif -%}
+      {%- endfor -%}
     </div>
   </div>
 </div>
 
 <style>
-  .logo-row {
+  .logo-container {
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
   }
-  .logo-list__row {
-    display: flex;
-    flex: 0 0 calc(50% - 107px);
-    flex-direction: column;
-    color: inherit;
+  .logo-row {
+    max-width: 120px;
+    height: auto;
   }
 </style>
 {% schema %}

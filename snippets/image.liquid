@@ -52,9 +52,9 @@
     assign manual_load = true
     assign loading = 'lazy'
   else
-    assign loading = loading | default: nil
+    assign loading = loading | default: null
 
-    if loading == nil
+    if loading == null
       if section.index > 2 or section.location != 'header' or section.location != 'template'
         assign loading = 'lazy'
       endif
@@ -99,11 +99,11 @@
   endif
 
   if fetchpriority == blank
-    assign fetchpriority = nil
+    assign fetchpriority = null
   endif
 
   assign image_src = image | image_url: width: image.width, crop: crop, crop_left: crop_left, crop_top: crop_top, crop_width: crop_width, crop_height: crop_height
-  assign srcset = nil
+  assign srcset = null
   if settings.image_quality != '1'
     assign srcset = ''
     assign split_widths = widths | remove: ' ' | split: ','
@@ -124,7 +124,12 @@
 {%- if as_mobile_source -%}
   {{- image_html | replace: '<img ', '<source media="(max-width: 767.98px)" ' | replace: ' src=', ' og-src=' -}}
 {%- else -%}
-  {%- if custom_aspect_ratio != blank -%}<div class="img-ar img-ar--{% if custom_crop == 'contain' %}contain{% else %}cover{% endif %}" style="--aspect-ratio: {{ custom_aspect_ratio }}">{% endif %}
+  {%- if custom_aspect_ratio != blank -%}
+    <div
+      class='img-ar img-ar--{% if custom_crop == 'contain' %}contain{% else %}cover{% endif %}'
+      style='--aspect-ratio: {{ custom_aspect_ratio }}'
+    >
+  {% endif %}
   {%- if manual_load -%}
     {{- image_html | replace: ' srcset=', ' data-manual-srcset=' | replace: ' src=', ' data-manual-src=' -}}
     <noscript>{{ image_html }}</noscript>
