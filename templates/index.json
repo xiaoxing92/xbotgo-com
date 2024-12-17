@@ -233,7 +233,7 @@
         "grid_mobile": "1",
         "height": "fixed",
         "desktop_image_height": 460,
-        "mobile_image_height": 400,
+        "mobile_image_height": 280,
         "title_size": 30,
         "title_size_mobile": 22,
         "enable_margin": true,
