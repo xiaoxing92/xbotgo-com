@@ -1054,6 +1054,16 @@
         "logo_cEaka3": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/red-dot-design-award-logo1.jpg",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_My6Uk6": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/channels4_profile_1.jpg",
             "image_width": 160,
             "link": "",
             "title": ""
@@ -1062,6 +1072,7 @@
         "logo_hpgFpx": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/TechUtopia_-_YouTube.jpg",
             "image_width": 160,
             "link": "",
             "title": ""
@@ -1070,6 +1081,7 @@
         "logo_nexceW": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/download.jpg",
             "image_width": 160,
             "link": "",
             "title": ""
@@ -1079,6 +1091,7 @@
       "block_order": [
         "logo_yhmHaC",
         "logo_cEaka3",
+        "logo_My6Uk6",
         "logo_hpgFpx",
         "logo_nexceW"
       ],
