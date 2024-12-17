@@ -1038,6 +1038,54 @@
         "subheading": "<p>Promotions, new products and sales. Directly to your inbox. </p><p>Join our mailing list to get $20 off your first Xbot order.</p>",
         "color_scheme": "1"
       }
+    },
+    "logo_row_jzkyN8": {
+      "type": "logo-row",
+      "blocks": {
+        "logo_yhmHaC": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/XBOTGO-CIR.png",
+            "image_width": 40,
+            "link": "shopify://blogs/technology-development",
+            "title": ""
+          }
+        },
+        "logo_cEaka3": {
+          "type": "logo",
+          "settings": {
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_hpgFpx": {
+          "type": "logo",
+          "settings": {
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_nexceW": {
+          "type": "logo",
+          "settings": {
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_yhmHaC",
+        "logo_cEaka3",
+        "logo_hpgFpx",
+        "logo_nexceW"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Logo Row"
+      }
     }
   },
   "order": [
@@ -1063,6 +1111,7 @@
     "cross-page-promos",
     "image_with_text_E6jeA7",
     "custom_content_6EdQih",
-    "newsletter_CgBFDg"
+    "newsletter_CgBFDg",
+    "logo_row_jzkyN8"
   ]
 }
