@@ -747,8 +747,24 @@
         "color_scheme": "default"
       }
     },
+    "grid_image_layout_FjCnQi": {
+      "type": "grid-image-layout",
+      "settings": {
+        "title": "",
+        "rich_text": "For Every Level Play",
+        "title_1": "Coaches",
+        "image_1": "shopify://shop_images/Coaches.webp",
+        "title_2": "Parents",
+        "image_2": "shopify://shop_images/Parents.webp",
+        "title_3": "Sports Clubs",
+        "image_3": "shopify://shop_images/Clubs_sports.webp",
+        "title_4": "Sports Fans",
+        "image_4": "shopify://shop_images/Sports_Fans.webp"
+      }
+    },
     "image_with_text_overlay_8hKCtm": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/WeCom20241114-180431_2x_74b53eb6-0d00-4aed-889b-1f32347fa2b0.png",
         "mobile_image": "shopify://shop_images/M_233653df-f492-415b-b750-a25eb22c9c45.png",
@@ -1068,22 +1084,6 @@
         "subheading": "<p>Promotions, new products and sales. Directly to your inbox. </p><p>Join our mailing list to get $20 off your first Xbot order.</p>",
         "color_scheme": "1"
       }
-    },
-    "grid_image_layout_FjCnQi": {
-      "type": "grid-image-layout",
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "rich_text": "For Every Level Play",
-        "title_1": "Title1",
-        "image_1": "shopify://shop_images/Coaches.webp",
-        "title_2": "Title2",
-        "image_2": "shopify://shop_images/Parents.webp",
-        "title_3": "Title3",
-        "image_3": "shopify://shop_images/Clubs_sports.webp",
-        "title_4": "Title4",
-        "image_4": "shopify://shop_images/Sports_Fans.webp"
-      }
     }
   },
   "order": [
@@ -1101,6 +1101,7 @@
     "multi_column_VTzqiP",
     "count_up_section_8fiXYN",
     "164816450788232cf9",
+    "grid_image_layout_FjCnQi",
     "image_with_text_overlay_8hKCtm",
     "custom_tab_iUNPnC",
     "custom_tab_4_GFKfHJ",
@@ -1110,7 +1111,6 @@
     "cross-page-promos",
     "image_with_text_E6jeA7",
     "custom_content_6EdQih",
-    "newsletter_CgBFDg",
-    "grid_image_layout_FjCnQi"
+    "newsletter_CgBFDg"
   ]
 }
