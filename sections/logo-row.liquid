@@ -8,28 +8,8 @@
     </h2>
 
     <div class='logo-list-container'>
-      <div class='logo-list logo-list--count-{{ section.blocks.size }}'>
-        {%- for block in section.blocks -%}
-          {%- assign animation_delay = forloop.index | times: 0.15 | append: 's' -%}
-          {%- assign animation_attrs = 'data-cc-animate data-cc-animate-delay="'
-            | append: animation_delay
-            | append: '"'
-          -%}
-          {%- if block.settings.link != blank -%}
-            <a
-              class='logo-list__row logo-list__logo-{{ forloop.index }} logo-list__link fade-in-up'
-              href='{{ block.settings.link }}'
-              {{ block.shopify_attributes }}
-              {%- render 'animation-attrs', attrs: animation_attrs -%}
-            >
-          {%- else -%}
-            <div
-              class='logo-list__row logo-list__logo-{{ forloop.index }} fade-in-up'
-              {{ block.shopify_attributes }}
-              {%- render 'animation-attrs', attrs: animation_attrs -%}
-            >
-          {%- endif -%}
-
+      <div class='logo-row'>
+        {%- for block in section.blocks -%}  
           <div class='logo-list__logo-image'>
             {%- if block.settings.image != blank -%}
               {%- liquid
