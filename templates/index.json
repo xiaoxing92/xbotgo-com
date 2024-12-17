@@ -762,22 +762,6 @@
         "image_4": "shopify://shop_images/Sports_Fans.webp"
       }
     },
-    "image_with_text_overlay_8hKCtm": {
-      "type": "image-with-text-overlay",
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/WeCom20241114-180431_2x_74b53eb6-0d00-4aed-889b-1f32347fa2b0.png",
-        "mobile_image": "shopify://shop_images/M_233653df-f492-415b-b750-a25eb22c9c45.png",
-        "height": "adapt",
-        "height_desktop": 600,
-        "height_mobile": 460,
-        "image_link": "",
-        "full_width": false,
-        "text_alignment": "center center",
-        "mobile_overlay_under": false,
-        "overlay_style": "shadow"
-      }
-    },
     "custom_tab_iUNPnC": {
       "type": "custom-tab",
       "settings": {
@@ -794,36 +778,6 @@
         "image1": "shopify://shop_images/LiveScoreBoard.webp",
         "image2": "shopify://shop_images/movement_trend.png",
         "image3": "shopify://shop_images/50m_tracking.png"
-      }
-    },
-    "custom_tab_4_GFKfHJ": {
-      "type": "custom-tab-4",
-      "disabled": true,
-      "custom_css": [
-        ".tab-image4 {}"
-      ],
-      "settings": {
-        "tab-title": "Recommended by",
-        "tab1": "FootballF",
-        "tab2": "DaddyBrotherTV",
-        "tab3": "ROAM",
-        "tab4": "Ralph",
-        "image1": "shopify://shop_images/channels4_profile_3c66ba0e-aaa8-4993-b9d8-2522f694f3c9.jpg",
-        "tab-txt-title1": "Is XbotGo Chameleon REALLY the Best for Football?",
-        "tab-txt-content1": "",
-        "image2": "shopify://shop_images/channel2.jpg",
-        "tab-txt-title2": "XbotGo Chameleon Ai Sports Cameraman | Made For Sports",
-        "tab-txt-content2": "",
-        "image3": "shopify://shop_images/channels4_profile_1_6c4c0d4d-8cbd-4bba-b9e6-35cc2392971a.jpg",
-        "tab-txt-title3": "AI Sports Tracking Camera System // XbotGo Chameleon",
-        "tab-txt-content3": "",
-        "image4": "shopify://shop_images/channels4_profile.jpg",
-        "tab-txt-title4": "Revolutionize Video Recording With AI Powered Sports Gimbal",
-        "tab-txt-content4": "",
-        "video_url1": "yg8jfy3q5Xs",
-        "video_url2": "IUEc8wxG3IE",
-        "video_url3": "YWsDBTZFFYQ",
-        "video_url4": "afE6MRB2vdc"
       }
     },
     "recommend_KadFp7": {
@@ -1102,9 +1056,7 @@
     "count_up_section_8fiXYN",
     "164816450788232cf9",
     "grid_image_layout_FjCnQi",
-    "image_with_text_overlay_8hKCtm",
     "custom_tab_iUNPnC",
-    "custom_tab_4_GFKfHJ",
     "recommend_KadFp7",
     "testimonials_N6HpgR",
     "featured_blog_GJEBtP",
