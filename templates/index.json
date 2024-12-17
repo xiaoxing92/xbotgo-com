@@ -1071,6 +1071,7 @@
     },
     "grid_image_layout_FjCnQi": {
       "type": "grid-image-layout",
+      "disabled": true,
       "settings": {
         "title": "Grid Image Layout",
         "rich_text": "You can input rich HTML or text here.",
