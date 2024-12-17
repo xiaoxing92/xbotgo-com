@@ -13,9 +13,7 @@
           <div class='logo-list__logo-image'>
             {%- if block.settings.image != blank -%}
               {%- liquid
-                assign image_sizes = block.settings.image_width | append: 'px'
-                assign image_widths = block.settings.image_width | times: 2 | prepend: ', ' | prepend: block.settings.image_width
-                render 'image' with block.settings.image, sizes: image_sizes, widths: image_widths
+                render 'image' with block.settings.image, sizes: 100,
               -%}
             {%- else -%}
               <div class='placeholder-image'>
