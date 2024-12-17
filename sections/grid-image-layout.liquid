@@ -41,22 +41,22 @@
     <div class="full-span">{{ section.settings.rich_text }}</div>
     <div class="card-m w50">
       <img src="{{ section.settings.image_1 | img_url: '375x375' }}" alt="{{ section.settings.title_1  }}">
-      <div class="overlay">{{  section.settings.title_1   }}</div>
+      <div class="overlay-text">{{  section.settings.title_1   }}</div>
     </div>
   </div>
   <div class="card-bot">
     <div class="card-m w50">
       <img src="{{ section.settings.image_2 | img_url: '375x375' }}" alt="{{ section.settings.title_2 }}">
-      <div class="overlay">{{  section.settings.title_2   }}</div>
+      <div class="overlay-text">{{  section.settings.title_2   }}</div>
     </div>
     <div class="card-bpt-r">
       <div class="card-m">
         <img src="{{ section.settings.image_3 | img_url: '375x375' }}" alt="{{ section.settings.title_3 }}">
-        <div class="overlay">{{  section.settings.title_3   }}</div>
+        <div class="overlay-text">{{  section.settings.title_3   }}</div>
       </div>
       <div class="card-m">
         <img src="{{ section.settings.image_4 | img_url: '375x375' }}" alt="{{ section.settings.title_4 }}">
-        <div class="overlay">{{  section.settings.title_4   }}</div>
+        <div class="overlay-text">{{  section.settings.title_4   }}</div>
       </div>
     </div>
   </div>
@@ -110,7 +110,7 @@
     display: block;
   }
 
-  .card .overlay {
+  .card .overlay-text {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -134,7 +134,7 @@
     display: block;
   }
 
-  .card-m .overlay {
+  .card-m .overlay-text {
     position: absolute;
     bottom: 0;
     left: 0;
