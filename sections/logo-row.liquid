@@ -1,5 +1,5 @@
 <div id='section-id-{{ section.id }}'>
-  <div class='container'>
+  <div class='container-log-row'>
     <h2
       class='hometitle h4 align-center spaced-row'
       {%- render 'animation-attrs', attrs: 'data-cc-animate data-cc-animate-delay="0.15s"' -%}
@@ -11,10 +11,6 @@
       {%- for block in section.blocks -%}
         {%- if block.settings.image != blank -%}
           <img src='{{ block.settings.image |img_url: '1024x93' }}' class='logo-row'>
-        {%- else -%}
-          <div class='placeholder-image'>
-            {{- 'logo' | placeholder_svg_tag: 'placeholder-svg' -}}
-          </div>
         {%- endif -%}
       {%- endfor -%}
     </div>
@@ -27,11 +23,20 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
   }
   .logo-row {
     max-width: 120px;
     height: auto;
+  }
+  .container-log-row{
+    max-width: var(--page-container-width);
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: var(--container-pad-x);
+    padding-left: var(--container-pad-x);
+    margin-top:var(--container-pad-x);
+    margin-bottom:var(--container-pad-x);
   }
 </style>
 {% schema %}
