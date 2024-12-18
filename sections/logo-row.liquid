@@ -10,7 +10,7 @@
     <div class='logo-container'>
       {%- for block in section.blocks -%}
         {%- if block.settings.image != blank -%}
-          <img src='{{ block.settings.image |img_url: '1024x93' }}' class='logo-row'>
+          <img src='{{ block.settings.image |img_url: '300x93' }}' class='logo-row'>
         {%- endif -%}
       {%- endfor -%}
     </div>
@@ -27,7 +27,7 @@
   }
   .logo-row {
     max-width: 120px;
-    height: auto;
+    height: 50px;
   }
   .container-log-row{
     max-width: var(--page-container-width);
