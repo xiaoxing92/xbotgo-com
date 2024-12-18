@@ -227,7 +227,7 @@
       "custom_css": [
         ".gallery__item {border-radius: 25px;}",
         ".text-overlay {pointer-events: none;}",
-        ".gallery__image{transition: all 0.3s ease;}",
+        ".gallery__image {transition: all 0.3s ease;}",
         ".gallery__image:hover {transform: scale(1.1);}"
       ],
       "settings": {
@@ -1097,7 +1097,6 @@
         "logo_hpgFpx",
         "logo_My6Uk6"
       ],
-      "disabled": true,
       "settings": {
         "title": "Feature In"
       }
@@ -1118,6 +1117,7 @@
     "multi_column_VTzqiP",
     "count_up_section_8fiXYN",
     "164816450788232cf9",
+    "logo_row_jzkyN8",
     "grid_image_layout_FjCnQi",
     "custom_tab_iUNPnC",
     "recommend_KadFp7",
@@ -1126,7 +1126,6 @@
     "cross-page-promos",
     "image_with_text_E6jeA7",
     "custom_content_6EdQih",
-    "newsletter_CgBFDg",
-    "logo_row_jzkyN8"
+    "newsletter_CgBFDg"
   ]
 }
