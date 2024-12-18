@@ -749,6 +749,67 @@
         "color_scheme": "default"
       }
     },
+    "logo_row_jzkyN8": {
+      "type": "logo-row",
+      "blocks": {
+        "logo_yhmHaC": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/ESPN_87359612-3b56-42e7-9701-5b1542076db9.png",
+            "image_width": 40,
+            "link": "shopify://blogs/technology-development",
+            "title": ""
+          }
+        },
+        "logo_nexceW": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/FileTime_Magazine_logo_1_bbc92690-d774-4a1b-a41b-a6f61a4f7359.png",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_cEaka3": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/cr_w-317_h-200_a58c37f1-8d9b-4dec-9a5b-69a056ace13b.png",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_hpgFpx": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/rs_w-200_h-200_cg-true.png",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        },
+        "logo_My6Uk6": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/newswatch-XbotGo_6364d3b8-c95a-4527-90b0-b91f587c7261.png",
+            "image_width": 160,
+            "link": "",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_yhmHaC",
+        "logo_nexceW",
+        "logo_cEaka3",
+        "logo_hpgFpx",
+        "logo_My6Uk6"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Feature In"
+      }
+    },
     "grid_image_layout_FjCnQi": {
       "type": "grid-image-layout",
       "settings": {
@@ -1039,66 +1100,6 @@
         "title": "Subscribe to our newsletter",
         "subheading": "<p>Promotions, new products and sales. Directly to your inbox. </p><p>Join our mailing list to get $20 off your first Xbot order.</p>",
         "color_scheme": "1"
-      }
-    },
-    "logo_row_jzkyN8": {
-      "type": "logo-row",
-      "blocks": {
-        "logo_yhmHaC": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/ESPN_87359612-3b56-42e7-9701-5b1542076db9.png",
-            "image_width": 40,
-            "link": "shopify://blogs/technology-development",
-            "title": ""
-          }
-        },
-        "logo_nexceW": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/FileTime_Magazine_logo_1_bbc92690-d774-4a1b-a41b-a6f61a4f7359.png",
-            "image_width": 160,
-            "link": "",
-            "title": ""
-          }
-        },
-        "logo_cEaka3": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/cr_w-317_h-200_a58c37f1-8d9b-4dec-9a5b-69a056ace13b.png",
-            "image_width": 160,
-            "link": "",
-            "title": ""
-          }
-        },
-        "logo_hpgFpx": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/CES_logo_61b02ac8-6c37-4405-9322-9ffcd67ddcad.png",
-            "image_width": 160,
-            "link": "",
-            "title": ""
-          }
-        },
-        "logo_My6Uk6": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/newswatch-XbotGo_6364d3b8-c95a-4527-90b0-b91f587c7261.png",
-            "image_width": 160,
-            "link": "",
-            "title": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_yhmHaC",
-        "logo_nexceW",
-        "logo_cEaka3",
-        "logo_hpgFpx",
-        "logo_My6Uk6"
-      ],
-      "settings": {
-        "title": "Feature In"
       }
     }
   },
