@@ -227,7 +227,7 @@
       "custom_css": [
         ".gallery__item {transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 25px;}",
         ".text-overlay {pointer-events: none;}",
-        ".text-overlay:hover ~ .gallery__image {transform: scale(1.1);}"
+        ".gallery__image {transform: scale(1.1);}"
       ],
       "settings": {
         "grid_desktop": 4,
