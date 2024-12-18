@@ -306,7 +306,7 @@
       ],
       "custom_css": [
         ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent; font-size: 30px;}",
-        ".scrolling-image-list-dots {display:none;}",
+        ".scrolling-image-list-dots {display: none;}",
         "@media (max-width: 767px) {.height--adapt {height: 300px; } .feature-text-paired {font-size: 12px; }}",
         "@media (max-width: 767px) {.scrolling-image-list__image {display: flex; flex-direction: column-reverse; } .h2 {font-size: 25px; } .scrolling-image-list__content {margin-top: 10px; margin-bottom: 10px; }}"
       ],
@@ -496,6 +496,7 @@
       ],
       "custom_css": [
         ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent; font-size: 30px;}",
+        ".scrolling-image-list-dots {display:none;}",
         "@media (max-width: 768px) {.scrolling-image-list__image {display: flex; flex-direction: column-reverse; } .video-section {border-radius: 10px; overflow: hidden; }}"
       ],
       "settings": {
