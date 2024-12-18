@@ -5242,7 +5242,7 @@ input[type=text].main-search__input {
     grid-auto-columns: calc(50% - var(--gutter) * 2);
   }
   .gallery--mobile-carousel.gallery--with-margins .slider__grid {
-    grid-auto-columns: calc(100% - var(--gutter) * 4);
+    grid-auto-columns: calc(100% - var(--gutter) * 11);
   }
   .gallery--mobile-carousel.gallery--with-margins.gallery--grid-mobile-2 .slider__grid {
     grid-auto-columns: calc(50% - var(--gutter) * 2);
