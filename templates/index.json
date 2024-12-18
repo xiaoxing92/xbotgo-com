@@ -742,6 +742,7 @@
         "9b01c355-8a5b-49eb-937c-e0e68fdbbca5",
         "b023a957-e3b3-4e33-b6ae-7992278ac9e3"
       ],
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "title": "Featured In",
@@ -805,7 +806,6 @@
         "logo_hpgFpx",
         "logo_My6Uk6"
       ],
-      "disabled": true,
       "settings": {
         "title": "Feature In"
       }
