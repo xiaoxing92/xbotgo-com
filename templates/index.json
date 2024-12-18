@@ -225,8 +225,9 @@
         "media_wGVGzg"
       ],
       "custom_css": [
-        ".gallery__item {transition: all 0.3s ease; border-radius: 25px;}",
+        ".gallery__item {border-radius: 25px;}",
         ".text-overlay {pointer-events: none;}",
+        ".gallery__image{transition: all 0.3s ease;}",
         ".gallery__image:hover {transform: scale(1.1);}"
       ],
       "settings": {
