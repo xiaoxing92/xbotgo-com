@@ -453,6 +453,7 @@
       "custom_css": [
         ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent; font-size: 30px;}",
         ".block {border-radius: 2px; overflow: hidden;}",
+        ".scrolling-image-list-dots {display:none;}",
         "@media (max-width: 768px) {.scrolling-image-list__image {display: flex; flex-direction: column-reverse; }}"
       ],
       "settings": {
