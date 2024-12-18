@@ -474,7 +474,8 @@ table {
 @media (max-width: 767.98px) {
   .fully-padded-row--medium {
     padding-top: var(--larger-section-padding-mobile);
-    padding-bottom: var(--larger-section-padding-mobile);
+    padding-bottom: 0;
+    /* var(--larger-section-padding-mobile); */
   }
 }
 
