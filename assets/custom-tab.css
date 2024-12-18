@@ -122,7 +122,7 @@
         display: flex;
         justify-content: center;
         /* 水平居中 */
-        padding: 20px;
+        padding: 20px 0 ;
         flex-wrap: wrap;
         /* 其他容器样式，如宽度、背景等 */
     }

@@ -1,5 +1,5 @@
 
-<div id="section-id-{{ section.id }}" class="recommend-wrap">
+<div id="section-id-{{ section.id }}" class="container recommend-wrap">
   {% if section.settings.title != blank %}
     <h2 class="hometitle h4 align-center" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
       {{- section.settings.title | escape -}}
@@ -83,7 +83,6 @@
         position: relative;
         overflow: hidden;
         width: 100%;
-        max-width: 1200px;
         margin: auto;
         margin-top: 30px;
     }
