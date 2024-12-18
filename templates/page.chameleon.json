@@ -403,8 +403,7 @@
       ],
       "custom_css": [
         ".gallery__item {transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 25px;}",
-        "@media (hover: hover) and (pointer: fine) {.gallery__item:hover {transform: scale(1.1); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); position: relative; background-size: auto 100%; cursor: pointer; }}",
-        "@media (hover: hover) and (pointer: fine) {.gallery__item:hover .text-overlay {opacity: 1; transform: translateY(0); }}"
+        ".text-overlay:hover ~ .gallery__image {transform: scale(1.1);}"
       ],
       "settings": {
         "grid_desktop": 4,
@@ -496,7 +495,7 @@
       ],
       "custom_css": [
         ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent; font-size: 30px;}",
-        ".scrolling-image-list-dots {display:none;}",
+        ".scrolling-image-list-dots {display: none;}",
         "@media (max-width: 768px) {.scrolling-image-list__image {display: flex; flex-direction: column-reverse; } .video-section {border-radius: 10px; overflow: hidden; }}"
       ],
       "settings": {
