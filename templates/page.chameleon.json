@@ -402,9 +402,10 @@
         "media_WUEcn9"
       ],
       "custom_css": [
-        ".gallery__item {transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 25px;}",
-        "@media (hover: hover) and (pointer: fine) {.gallery__item:hover {transform: scale(1.1); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); position: relative; background-size: auto 100%; cursor: pointer; }}",
-        "@media (hover: hover) and (pointer: fine) {.gallery__item:hover .text-overlay {opacity: 1; transform: translateY(0); }}"
+        ".gallery__item {border-radius: 25px;}",
+        ".text-overlay {pointer-events: none;}",
+        ".gallery__image {transition: all 0.3s ease;}",
+        ".gallery__image:hover {transform: scale(1.1);}"
       ],
       "settings": {
         "grid_desktop": 4,
