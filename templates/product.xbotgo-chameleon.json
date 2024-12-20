@@ -818,11 +818,18 @@
             "answer": "<ul><li>Soccer ⚽</li><li>Basketball 🏀</li><li>Power soccer ⚡</li><li>Football 🏈</li><li>Lacrosse 🥍</li><li>Ice hockey 🏒</li><li>FollowMe Single Mode 👐</li><li>Fencing 🤺</li></ul><p>...</p><p>Support auto tracking more than 7 sports, select from a diverse range of sports field sizes and age groups, personalizing your experience to meet your exact needs, and ensuring a perfect fit for every game and player.</p>"
           }
         },
+        "question_wdhHmH": {
+          "type": "question",
+          "settings": {
+            "title": "Turtorial Videos",
+            "answer": "<p>Please check the <a href=\"https://www.youtube.com/watch?v=7ZuuevGKWDs\" target=\"_blank\" title=\"https://www.youtube.com/watch?v=7ZuuevGKWDs\">XbotGo Chameleon Quick Start Guide </a>Here</p>"
+          }
+        },
         "question_6rCXYg": {
           "type": "question",
           "settings": {
             "title": "User Manual",
-            "answer": "<p>Install XbotGo app from <a href=\"https://apps.apple.com/us/app/blink-focos/id1581355712\" title=\"https://apps.apple.com/us/app/blink-focos/id1581355712\">Apple App Store</a> or <a href=\"https://play.google.com/store/apps/details?id=com.blink.blinkfocos\" target=\"_blank\" title=\"https://play.google.com/store/apps/details?id=com.blink.blinkfocos\">Google Play</a><br/>Download XbotGo Chameleon User Manual Here:</p><ul><li><a href=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/0412Xbot_manual_-EN-min.pdf?v=1713706169\" target=\"_blank\" title=\"XbotGo Gimbal User Manual -AI Instrutions\">EN Version</a>\t</li><li><a href=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/0412Xbot_manual_-JP-min.pdf?v=1713706169\" target=\"_blank\" title=\"XbotGoジンバルユーザーマニュアル - AI指示\">JP Version</a>\t</li><li><a href=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/Xbot_manual_-Spanish.pdf?v=1707315555\" title=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/Xbot_manual_-Spanish.pdf?v=1707315555\">ES Version</a>\t</li><li><a href=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/XbotGo_manual-German.pdf?v=1707315557\" title=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/XbotGo_manual-German.pdf?v=1707315557\">DE Version</a></li></ul>"
+            "answer": "<p><a href=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/Chameleon_Manual.pdf?v=1725869756\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/Chameleon_Manual.pdf?v=1725869756\">Install</a> XbotGo app from <a href=\"https://apps.apple.com/us/app/blink-focos/id1581355712\" title=\"https://apps.apple.com/us/app/blink-focos/id1581355712\">Apple App Store</a> or <a href=\"https://play.google.com/store/apps/details?id=com.blink.blinkfocos\" target=\"_blank\" title=\"https://play.google.com/store/apps/details?id=com.blink.blinkfocos\">Google Play</a><br/>Download XbotGo Chameleon User Manual Here:</p><ul><li><a href=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/0412Xbot_manual_-EN-min.pdf?v=1713706169\" target=\"_blank\" title=\"XbotGo Gimbal User Manual -AI Instrutions\">EN Version</a>\t</li><li></li></ul>"
           }
         }
       },
@@ -833,6 +840,7 @@
         "question_96BfXp",
         "question_89dEn6",
         "question_ehTXEm",
+        "question_wdhHmH",
         "question_6rCXYg"
       ],
       "settings": {
