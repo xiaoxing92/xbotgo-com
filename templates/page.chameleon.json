@@ -1071,6 +1071,7 @@
       "type": "stream-layout",
       "disabled": true,
       "settings": {
+        "image_left_top": "shopify://shop_images/VIC1.jpg",
         "text_left_top": "<p><strong>Ultra-wide 120°(FOV)</strong></p><p>Best-in-class sports recorder with 120° ultra-wide FOV . Capture every angle with precision for perfect game coverage.</p>",
         "text_left_bot": "<p>Pair text with an image to tell a story</p>",
         "subheading": "Subheading",
