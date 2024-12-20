@@ -1,11 +1,11 @@
 <div id='section-id-{{ section.id }}' class='container'>
   <div class='stream-container'>
     <div class='stream-left'>
-      <div class='stream-row'>
+      <div class='stream-row  mag50'>
         <div class='image-top'>
           <img class='cover' src="{{ section.settings.image_left_top  | img_url: '500x500' }}">
         </div>
-        <div class='descriptio pad20 mag30'>
+        <div class='descriptio pad20'>
           {{ section.settings.text_left_top }}
         </div>
       </div>
@@ -47,13 +47,12 @@
   }
   .cover {
     width: 100%;
-    background: #fff;
   }
   .pad20{
     padding-left:20px;
   }
-  .mag30{
-    margin-bottom:30px
+  .mag50{
+    margin-bottom:50px
   }
   .sub-title {
     font-size: 30px;
