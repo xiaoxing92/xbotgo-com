@@ -176,6 +176,17 @@
             "enable_carousel": true,
             "max_products": 2
           }
+        },
+        "richtext_Q4zcbr": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Download XbotGo Chameleon User Manual Here</p>",
+            "icon": "",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#e0f4d5",
+            "show_in_quickbuy": false
+          }
         }
       },
       "block_order": [
@@ -194,7 +205,8 @@
         "variant_picker_EaUEeC",
         "buy_buttons_YLhzVe",
         "countdown_bFbtw8",
-        "complementary_xdJKmW"
+        "complementary_xdJKmW",
+        "richtext_Q4zcbr"
       ],
       "settings": {
         "show_breadcrumbs": true,
