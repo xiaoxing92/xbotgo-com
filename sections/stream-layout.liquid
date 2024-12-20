@@ -1,5 +1,5 @@
 <div id='section-id-{{ section.id }}' class='container'>
-  <div class='stream-container'>
+  <div class='stream-container' style="background-image: url('{{ section.settings.background_image | asset_url }}'); >
     <div class='stream-left'>
       <div class='stream-row  mag50'>
         <div class='image-top'>
@@ -38,6 +38,9 @@
   .stream-container {
     display: flex;
     justify-content: space-between;
+    background-size: 100% 100%;
+    background-position-y: bottom;
+    background-position-x: right;
   }
   .stream-left{
     width:48%;
@@ -111,6 +114,11 @@
       "label": "Right Top Text",
       "default": "<p>Pair text with an image to tell a story</p>"
     },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "BackGround Image",
+    }
   ],
   "presets": [
     {
