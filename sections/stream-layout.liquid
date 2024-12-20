@@ -1,0 +1,81 @@
+<div id='section-id-{{ section.id }}' class='container'>
+  <div class='stream-left'>
+    <div class='stream-row'>
+      <div class='image-top'>
+        <img class='cover'>
+      </div>
+      <div class='description'>Best-in-class sports recorder with 120° ultra-wide FOV . Captur</div>
+    </div>
+    <div class='stream-row'>
+      <div class='image-top'>
+        <img class='cover'>
+      </div>
+      <div class='description'>Best-in-class sports recorder with 120° ultra-wide FOV . Captur</div>
+    </div>
+  </div>
+  <div class='stream-right'>
+    <div class='sub-title'>XbotGo Chameleon</div>
+    <div class='stream-row'>
+      <div class='image-top'>
+        <img class='cover'>
+      </div>
+      <div class='description'>Best-in-class sports recorder with 120° ultra-wide FOV . Captur</div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+  .cover {
+    width: 100%;
+    height: 250px;
+    background: #fff;
+  }
+  .sub-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: none;
+    background: linear-gradient(to right, #f27b00, #ca251d);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Stream Layout",
+  "class": "section-stream-layout",
+  "disabled_on": {
+    "groups": ["aside"]
+  },
+  "settings": [
+    {
+      "id": "full_width",
+      "type": "checkbox",
+      "label": "Full page width",
+      "default": true
+    },
+    {
+      "id": "show_space",
+      "type": "checkbox",
+      "label": "Show space above and below section",
+      "default": true
+    },
+    {
+      "type": "liquid",
+      "id": "code",
+      "label": "Liquid code"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Stream Layout",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
