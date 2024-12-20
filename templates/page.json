@@ -221,7 +221,7 @@
             "width": "full",
             "subheading": "",
             "title": "XbotGo Chameleon Turtorial Videos",
-            "text": "<p>Chameleon is a specialized phone accessory that enhances sports recording by using its built-in camera and AI chips to track the action during a game. While you use your phone to record, Chameleon works alongside it to intelligently follow the movement of players, the ball, or key events in real time. The AI system enables dynamic tracking, ensuring that the most important parts of the game are always in focus and optimally framed. Together, the phone and Chameleon create a smart sports recording system that delivers better coverage and insights without needing manual adjustments.</p>",
+            "text": "<p>Chameleon is a specialized phone accessory that enhances sports recording by using its built-in camera and AI chips to track the action during a game. While you use your phone to record, Chameleon works alongside it to intelligently follow the movement of players, the ball, or key events in real time. </p>",
             "button_label": "",
             "button_link": "",
             "button_style": "primary",
@@ -231,25 +231,41 @@
         "video_QdmQXP": {
           "type": "video",
           "settings": {
-            "width": "half",
-            "video_external": "https://youtu.be/7ZuuevGKWDs?si=hIx5wSF-oR2XZt45",
+            "width": "full",
+            "video_external": "https://youtu.be/7ZuuevGKWDs?si=Aq6CzECoDQucCdrC",
             "video_description": "",
-            "autoplay": false
+            "autoplay": false,
+            "placeholder_image": "shopify://shop_images/Chameleon-banner.png"
+          }
+        },
+        "text_6MfmXE": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "",
+            "text": "<h4>Setting Up XbotGo Chameleon for Perfect Sports Filming</h4>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
           }
         },
         "video_XFKQaA": {
           "type": "video",
           "settings": {
             "width": "half",
-            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_external": "https://www.youtube.com/watch?v=yTRtBXDaDos&list=PLwWWvmTsWGVp3oMxITuaL4WBLmYJBbMZt&index=3",
             "video_description": "",
-            "autoplay": false
+            "autoplay": false,
+            "placeholder_image": "shopify://shop_images/DSCF4136-5.jpg"
           }
         }
       },
       "block_order": [
         "text_7b4VMg",
         "video_QdmQXP",
+        "text_6MfmXE",
         "video_XFKQaA"
       ],
       "settings": {
@@ -294,6 +310,7 @@
         "text_Ecq9bA",
         "button_pw4EFr"
       ],
+      "disabled": true,
       "settings": {
         "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "video_description": "",
