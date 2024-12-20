@@ -218,7 +218,7 @@
         "text_7b4VMg": {
           "type": "text",
           "settings": {
-            "width": "full",
+            "width": "three-quarters",
             "subheading": "",
             "title": "XbotGo Chameleon Turtorial Videos",
             "text": "<p>Chameleon is a specialized phone accessory that enhances sports recording by using its built-in camera and AI chips to track the action during a game. While you use your phone to record, Chameleon works alongside it to intelligently follow the movement of players, the ball, or key events in real time. </p>",
@@ -272,8 +272,41 @@
         "alignment": "middle"
       }
     },
+    "video_with_text_Yhkbda": {
+      "type": "video-with-text",
+      "blocks": {
+        "text_EHRfaz": {
+          "type": "text",
+          "settings": {
+            "text": "<h4><strong> Adjusting Resolution, Tracking, and Power Settings for Sports Filming</strong></h4>",
+            "enlarge_text": false
+          }
+        },
+        "heading_PCkEei": {
+          "type": "heading",
+          "settings": {
+            "title": "",
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "text_EHRfaz",
+        "heading_PCkEei"
+      ],
+      "settings": {
+        "video_external": "https://www.youtube.com/watch?v=qfLpTDPfs7Q&list=PLwWWvmTsWGVp3oMxITuaL4WBLmYJBbMZt&index=4",
+        "video_description": "",
+        "autoplay": false,
+        "placeholder_image": "shopify://shop_images/3_83cd510c-7774-4287-9db2-a7fe68c49cc6.png",
+        "video_position": "left",
+        "text_alignment": "center",
+        "color_scheme": "default"
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "show_page_title": true,
         "full_width": false
@@ -320,42 +353,69 @@
         "color_scheme": "default"
       }
     },
-    "product_layout_W3P7Qr": {
-      "type": "product-layout",
+    "custom_tab_4_U7EC49": {
+      "type": "custom-tab-4",
+      "disabled": true,
+      "settings": {
+        "tab-title": "Recommended by",
+        "tab1": "JMTech",
+        "tab2": "Bighenet",
+        "tab3": "JMTech",
+        "tab4": "Bighenet",
+        "image1": "shopify://shop_images/f9125fe25da9fa2b155c3009b55ee438_cffff8e7-eaff-4dc3-b626-60127bc6ae10.png",
+        "tab-txt-title1": "content",
+        "tab-txt-content1": "content",
+        "tab-txt-title2": "content",
+        "tab-txt-content2": "content",
+        "tab-txt-title3": "content",
+        "tab-txt-content3": "content",
+        "tab-txt-title4": "content",
+        "tab-txt-content4": "content",
+        "video_url1": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4",
+        "video_url2": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4",
+        "video_url3": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4",
+        "video_url4": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4"
+      }
+    },
+    "video_with_text_4h4jfH": {
+      "type": "video-with-text",
       "blocks": {
-        "text_block_h3dgAY": {
-          "type": "text_block",
+        "heading_bQYW9F": {
+          "type": "heading",
           "settings": {
-            "custom_div_width": "50",
-            "custom_div_height": "",
-            "image": "shopify://shop_images/chameleon-clean.png",
-            "enlarge_media": false,
-            "title": "Tell your story",
-            "subheading": "Gallery",
-            "a_label": "Buy Now",
-            "link": ""
+            "title": "Video with text",
+            "use_h1": false
           }
         },
-        "text_block_mecUmi": {
-          "type": "text_block",
+        "text_mdAJGV": {
+          "type": "text",
           "settings": {
-            "custom_div_width": "50",
-            "custom_div_height": "",
-            "enlarge_media": false,
-            "title": "Tell your story",
-            "subheading": "Gallery",
-            "a_label": "Buy Now",
-            "link": ""
+            "text": "<p>Pair text with a video to give customers insight into your brand. Tell a story, explain a product detail, or describe a new promotion.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_WkN8Ek": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button text",
+            "button_link": "",
+            "button_style": "primary"
           }
         }
       },
       "block_order": [
-        "text_block_h3dgAY",
-        "text_block_mecUmi"
+        "heading_bQYW9F",
+        "text_mdAJGV",
+        "button_WkN8Ek"
       ],
       "disabled": true,
       "settings": {
-        "title": "Products Manual"
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_description": "",
+        "autoplay": false,
+        "video_position": "left",
+        "text_alignment": "center",
+        "color_scheme": "default"
       }
     },
     "93f97a72-d4c6-4de4-976d-c98954d4d95a": {
@@ -383,6 +443,66 @@
       "settings": {
         "title": "FAQ"
       }
+    },
+    "custom_content_Dpj8Je": {
+      "type": "custom-content",
+      "blocks": {
+        "text_EzpLth": {
+          "type": "text",
+          "settings": {
+            "width": "three-quarters",
+            "subheading": "",
+            "title": "XbotGo Sports Gimbal Turtorial Videos",
+            "text": "<p>The XbotGo AI Sport Gimbal is a versatile tool designed to effortlessly capture and live stream team sports like soccer, basketball, and football. </p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        },
+        "video_eR8jf7": {
+          "type": "video",
+          "settings": {
+            "width": "three-quarters",
+            "video_external": "https://youtu.be/Eiul9-tHQmM?si=ghI-oOP_ASRB_iJr",
+            "video_description": "",
+            "autoplay": false,
+            "placeholder_image": "shopify://shop_images/XbotGo_Father_s_day_pc.webp"
+          }
+        },
+        "text_m363UB": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "",
+            "text": "<h4>Auto Generate Highlights with XbotGo Remote Control</h4>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        },
+        "video_UhTXkC": {
+          "type": "video",
+          "settings": {
+            "width": "half",
+            "video_external": "https://youtu.be/4gNKvcwprXU?si=JHZjrVbNenp67ZE_",
+            "video_description": "",
+            "autoplay": false,
+            "placeholder_image": "shopify://shop_images/XbotGo_Gimbal_and_Remote.webp"
+          }
+        }
+      },
+      "block_order": [
+        "text_EzpLth",
+        "video_eR8jf7",
+        "text_m363UB",
+        "video_UhTXkC"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
     }
   },
   "order": [
@@ -390,9 +510,12 @@
     "gallery_wL4jkE",
     "custom_content_x6grnt",
     "custom_content_a9Da6V",
+    "video_with_text_Yhkbda",
     "main",
     "video_with_text_eiAByc",
-    "product_layout_W3P7Qr",
-    "93f97a72-d4c6-4de4-976d-c98954d4d95a"
+    "custom_tab_4_U7EC49",
+    "video_with_text_4h4jfH",
+    "93f97a72-d4c6-4de4-976d-c98954d4d95a",
+    "custom_content_Dpj8Je"
   ]
 }
