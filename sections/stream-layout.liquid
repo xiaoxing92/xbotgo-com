@@ -3,24 +3,32 @@
     <div class='stream-left'>
       <div class='stream-row'>
         <div class='image-top'>
-          <img class='cover'>
+          <img class='cover' src="{{ section.settings.image_left_top }}">
         </div>
-        <div class='description'>Best-in-class sports recorder with 120° ultra-wide FOV . Captur</div>
+        <div class='description'>
+          {{ section.settings.text_left_top }}
+        </div>
       </div>
       <div class='stream-row'>
         <div class='image-top'>
-          <img class='cover'>
+          <img class='cover' src="{{ section.settings.image_left_bot }}">
         </div>
-        <div class='description'>Best-in-class sports recorder with 120° ultra-wide FOV . Captur</div>
+        <div class='description'>
+          {{ section.settings.text_left_bot }}
+        </div>
       </div>
     </div>
     <div class='stream-right'>
-      <div class='sub-title'>XbotGo Chameleon</div>
+      <div class='sub-title'>
+        {{ section.settings.subheading }}
+      </div>
       <div class='stream-row'>
         <div class='image-top'>
-          <img class='cover'>
+          <img class='cover' src="{{ section.settings.image_right_top }}">
         </div>
-        <div class='description'>Best-in-class sports recorder with 120° ultra-wide FOV . Captur</div>
+        <div class='description'>
+          {{ section.settings.text_right_top }}
+        </div>
       </div>
     </div>
   </div>
@@ -55,22 +63,44 @@
   },
   "settings": [
     {
-      "id": "full_width",
-      "type": "checkbox",
-      "label": "Full page width",
-      "default": true
+      "type": "image_picker",
+      "id": "image_left_top",
+      "label": "Left Top Image",
     },
     {
-      "id": "show_space",
-      "type": "checkbox",
-      "label": "Show space above and below section",
-      "default": true
+      "type": "richtext",
+      "id": "text_left_top",
+      "label": "Left Top Text",
+      "default": "<p>Pair text with an image to tell a story</p>"
     },
     {
-      "type": "liquid",
-      "id": "code",
-      "label": "Liquid code"
-    }
+      "type": "image_picker",
+      "id": "image_left_bot",
+      "label": "Left Bot Image",
+    },
+    {
+      "type": "richtext",
+      "id": "text_left_bot",
+      "label": "Left Bot Text",
+      "default": "<p>Pair text with an image to tell a story</p>"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Subheading"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_right_top",
+      "label": "Right Top Image",
+    },
+    {
+      "type": "richtext",
+      "id": "text_right_top",
+      "label": "Right Top Text",
+      "default": "<p>Pair text with an image to tell a story</p>"
+    },
   ],
   "presets": [
     {
