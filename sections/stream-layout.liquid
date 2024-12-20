@@ -5,7 +5,7 @@
         <div class='image-top'>
           <img class='cover' src="{{ section.settings.image_left_top  | img_url: '500x500' }}">
         </div>
-        <div class='description'>
+        <div class='descriptio pad20 mag30'>
           {{ section.settings.text_left_top }}
         </div>
       </div>
@@ -13,7 +13,7 @@
         <div class='image-top'>
           <img class='cover' src="{{ section.settings.image_left_bot | img_url: '500x500'}}">
         </div>
-        <div class='description'>
+        <div class='description  pad20'>
           {{ section.settings.text_left_bot }}
         </div>
       </div>
@@ -47,8 +47,13 @@
   }
   .cover {
     width: 100%;
-    height: 250px;
     background: #fff;
+  }
+  .pad20{
+    padding-left:20px;
+  }
+  .mag30{
+    margin-bottom:30px
   }
   .sub-title {
     font-size: 30px;
