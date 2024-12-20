@@ -3,7 +3,7 @@
     <div class='stream-left'>
       <div class='stream-row'>
         <div class='image-top'>
-          <img class='cover' src="{{ section.settings.image_left_top }}">
+          <img class='cover' src="{{ section.settings.image_left_top  | img_url: '500x500' }}">
         </div>
         <div class='description'>
           {{ section.settings.text_left_top }}
@@ -11,7 +11,7 @@
       </div>
       <div class='stream-row'>
         <div class='image-top'>
-          <img class='cover' src="{{ section.settings.image_left_bot }}">
+          <img class='cover' src="{{ section.settings.image_left_bot | img_url: '500x500'}}">
         </div>
         <div class='description'>
           {{ section.settings.text_left_bot }}
@@ -24,7 +24,7 @@
       </div>
       <div class='stream-row'>
         <div class='image-top'>
-          <img class='cover' src="{{ section.settings.image_right_top }}">
+          <img class='cover' src="{{ section.settings.image_right_top| img_url: '500x500'}}">
         </div>
         <div class='description'>
           {{ section.settings.text_right_top }}
