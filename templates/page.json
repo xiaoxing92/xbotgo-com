@@ -212,6 +212,50 @@
         "alignment": "middle"
       }
     },
+    "custom_content_a9Da6V": {
+      "type": "custom-content",
+      "blocks": {
+        "text_7b4VMg": {
+          "type": "text",
+          "settings": {
+            "width": "full",
+            "subheading": "",
+            "title": "XbotGo Chameleon Turtorial Videos",
+            "text": "<p>Chameleon is a specialized phone accessory that enhances sports recording by using its built-in camera and AI chips to track the action during a game. While you use your phone to record, Chameleon works alongside it to intelligently follow the movement of players, the ball, or key events in real time. The AI system enables dynamic tracking, ensuring that the most important parts of the game are always in focus and optimally framed. Together, the phone and Chameleon create a smart sports recording system that delivers better coverage and insights without needing manual adjustments.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        },
+        "video_QdmQXP": {
+          "type": "video",
+          "settings": {
+            "width": "half",
+            "video_external": "https://youtu.be/7ZuuevGKWDs?si=hIx5wSF-oR2XZt45",
+            "video_description": "",
+            "autoplay": false
+          }
+        },
+        "video_XFKQaA": {
+          "type": "video",
+          "settings": {
+            "width": "half",
+            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_description": "",
+            "autoplay": false
+          }
+        }
+      },
+      "block_order": [
+        "text_7b4VMg",
+        "video_QdmQXP",
+        "video_XFKQaA"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -250,7 +294,6 @@
         "text_Ecq9bA",
         "button_pw4EFr"
       ],
-      "disabled": true,
       "settings": {
         "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "video_description": "",
@@ -298,51 +341,6 @@
         "title": "Products Manual"
       }
     },
-    "custom_content_a9Da6V": {
-      "type": "custom-content",
-      "blocks": {
-        "image_rnQiqf": {
-          "type": "image",
-          "settings": {
-            "width": "half",
-            "height": "adapt",
-            "height_desktop": 600,
-            "height_mobile": 500,
-            "subheading": "Subheading",
-            "title": "Tell your story",
-            "text": "<p>Pair text with an image to tell a story</p>",
-            "enlarge_text": false,
-            "button_label": "",
-            "button_style": "primary",
-            "image_link": "",
-            "text_alignment": "center center",
-            "mobile_overlay_under": false,
-            "overlay_style": "shadow"
-          }
-        },
-        "text_7b4VMg": {
-          "type": "text",
-          "settings": {
-            "width": "half",
-            "subheading": "",
-            "title": "Welcome",
-            "text": "<p>Use this text to share information about your store with your customers.</p><p>Describe products, share announcements, or welcome customers to your store.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "text_alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "image_rnQiqf",
-        "text_7b4VMg"
-      ],
-      "disabled": true,
-      "settings": {
-        "alignment": "middle"
-      }
-    },
     "93f97a72-d4c6-4de4-976d-c98954d4d95a": {
       "type": "collapsible-tabs",
       "blocks": {
@@ -374,10 +372,10 @@
     "slideshow_EVPEC8",
     "gallery_wL4jkE",
     "custom_content_x6grnt",
+    "custom_content_a9Da6V",
     "main",
     "video_with_text_eiAByc",
     "product_layout_W3P7Qr",
-    "custom_content_a9Da6V",
     "93f97a72-d4c6-4de4-976d-c98954d4d95a"
   ]
 }
