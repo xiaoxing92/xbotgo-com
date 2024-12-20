@@ -250,6 +250,7 @@
         "text_Ecq9bA",
         "button_pw4EFr"
       ],
+      "disabled": true,
       "settings": {
         "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "video_description": "",
@@ -337,6 +338,7 @@
         "image_rnQiqf",
         "text_7b4VMg"
       ],
+      "disabled": true,
       "settings": {
         "alignment": "middle"
       }
