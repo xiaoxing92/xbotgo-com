@@ -1069,6 +1069,7 @@
     },
     "stream_layout_Gbz3Hx": {
       "type": "stream-layout",
+      "disabled": true,
       "settings": {
         "image_left_top": "shopify://shop_images/120.png",
         "text_left_top": "<p><strong>Ultra-wide 120°(FOV)</strong></p><p>Best-in-class sports recorder with 120° ultra-wide FOV . Capture every angle with precision for perfect game coverage.</p>",
