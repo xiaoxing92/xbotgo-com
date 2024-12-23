@@ -1,12 +1,12 @@
 <div id='section-id-{{ section.id }}' class='container'>
   <div class='stream-container'>
-    <div class="stream-bg">
-      <img  scr="{{ section.settings.background_image | img_url: '800x500' }}">
+    <div class='stream-bg'>
+      <img src='{{ section.settings.background_image | img_url: '800x500' }}'>
     </div>
     <div class='stream-left'>
-      <div class='stream-row  mag50'>
+      <div class='stream-row  mag150'>
         <div class='image-top'>
-          <img class='cover' src="{{ section.settings.image_left_top  | img_url: '500x500' }}">
+          <img class='cover' src='{{ section.settings.image_left_top  | img_url: '500x500' }}'>
         </div>
         <div class='descriptio pad20'>
           {{ section.settings.text_left_top }}
@@ -14,7 +14,7 @@
       </div>
       <div class='stream-row'>
         <div class='image-top'>
-          <img class='cover' src="{{ section.settings.image_left_bot | img_url: '500x500'}}">
+          <img class='cover' src='{{ section.settings.image_left_bot | img_url: '500x500'}}'>
         </div>
         <div class='description  pad20'>
           {{ section.settings.text_left_bot }}
@@ -27,7 +27,7 @@
       </div>
       <div class='stream-row'>
         <div class='image-top'>
-          <img class='cover' src="{{ section.settings.image_right_top| img_url: '500x500'}}">
+          <img class='cover' src='{{ section.settings.image_right_top| img_url: '500x500'}}'>
         </div>
         <div class='description'>
           {{ section.settings.text_right_top }}
@@ -41,35 +41,34 @@
   .stream-container {
     display: flex;
     justify-content: space-between;
-    position:relative;
+    position: relative;
   }
-  .stream-bg{
-    width: 100%;
-    height:100%;
-    position:absolute;
-    bottom:0;
-    right:0;
+  .stream-bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index:-1;
   }
 
-  .stream-bg img{
-    width:100%;
-    height:100%;
+  .stream-bg img {
+    width: 100%;
+    height: 100%;
     visibility: visible;
   }
-  .stream-left{
-    width:48%;
+  .stream-left {
+    width: 48%;
   }
-  .stream-right{
-    width:48%;
+  .stream-right {
+    width: 48%;
   }
   .cover {
     width: 100%;
   }
-  .pad20{
-    padding-left:20px;
+  .pad20 {
+    padding-left: 20px;
   }
-  .mag50{
-    margin-bottom:50px
+  .mag150 {
+    margin-bottom: 150px;
   }
   .sub-title {
     font-size: 30px;
@@ -92,7 +91,7 @@
     {
       "type": "image_picker",
       "id": "image_left_top",
-      "label": "Left Top Image",
+      "label": "Left Top Image"
     },
     {
       "type": "richtext",
@@ -103,7 +102,7 @@
     {
       "type": "image_picker",
       "id": "image_left_bot",
-      "label": "Left Bot Image",
+      "label": "Left Bot Image"
     },
     {
       "type": "richtext",
@@ -120,7 +119,7 @@
     {
       "type": "image_picker",
       "id": "image_right_top",
-      "label": "Right Top Image",
+      "label": "Right Top Image"
     },
     {
       "type": "richtext",
@@ -131,7 +130,7 @@
     {
       "type": "image_picker",
       "id": "background_image",
-      "label": "BackGround Image",
+      "label": "BackGround Image"
     }
   ],
   "presets": [
