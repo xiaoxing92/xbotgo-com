@@ -606,6 +606,19 @@
         "color_scheme": "default"
       }
     },
+    "stream_layout_Gbz3Hx": {
+      "type": "stream-layout",
+      "settings": {
+        "image_left_top": "shopify://shop_images/120.png",
+        "text_left_top": "<p><strong>Ultra-wide 120°(FOV)</strong></p><p>Best-in-class sports recorder with 120° ultra-wide FOV . Capture every angle with precision for perfect game coverage.</p>",
+        "image_left_bot": "shopify://shop_images/8h.png",
+        "text_left_bot": "<p><strong>AI Processor and 8 hours Stand by</strong></p><p>The Chameleon’s massive 6000 mAh battery delivers up to 8 hours of recording time—keeping you in the game longer than ever!</p>",
+        "subheading": "XbotGo Chameleon",
+        "image_right_top": "shopify://shop_images/360.png",
+        "text_right_top": "<p><strong>360° Panoramic Tracking</strong></p><p>With its cutting-edge industrial and mechanical design, our latest innovation brings you the remarkable ability to achieve seamless 360° Panoramic Tracking.</p>",
+        "background_image": "shopify://shop_images/118.png"
+      }
+    },
     "custom_content_p3XKqw": {
       "type": "custom-content",
       "blocks": {
@@ -682,6 +695,7 @@
         "text_d3W9cz",
         "image_fF8PYe"
       ],
+      "disabled": true,
       "custom_css": [
         ".hometitle {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}",
         ".theme-img {border-radius: 25px;}",
@@ -776,6 +790,7 @@
         "text_QePCHm",
         "image_WhbTr6"
       ],
+      "disabled": true,
       "custom_css": [
         ".theme-img {border-radius: 25px;}",
         "@media (max-width: 767px) {.block-id-text_JHBdjJ {font-size: 11px; } .block-id-text_QePCHm {font-size: 11px; }}"
@@ -1066,20 +1081,6 @@
         "subheading": "<p>Join our mailing list to get $20 off your first Xbot order.</p>",
         "color_scheme": "default"
       }
-    },
-    "stream_layout_Gbz3Hx": {
-      "type": "stream-layout",
-      "disabled": true,
-      "settings": {
-        "image_left_top": "shopify://shop_images/120.png",
-        "text_left_top": "<p><strong>Ultra-wide 120°(FOV)</strong></p><p>Best-in-class sports recorder with 120° ultra-wide FOV . Capture every angle with precision for perfect game coverage.</p>",
-        "image_left_bot": "shopify://shop_images/8h.png",
-        "text_left_bot": "<p><strong>100% Longer Run Time</strong></p><p>The Chameleon’s massive 6000 mAh battery delivers up to 8 hours</p>",
-        "subheading": "XbotGo Chameleon",
-        "image_right_top": "shopify://shop_images/360.png",
-        "text_right_top": "<p><strong>360° Rotation</strong></p><p>The Chameleon’s massive 6000 mAh battery delivers up to 8 hours</p>",
-        "background_image": "shopify://shop_images/118.png"
-      }
     }
   },
   "order": [
@@ -1096,6 +1097,7 @@
     "key_features_PVRQ73",
     "video_NpBf8W",
     "multi_column_BhjxRk",
+    "stream_layout_Gbz3Hx",
     "custom_content_p3XKqw",
     "custom_liquid_XaQ9PL",
     "custom_content_mNzKhF",
@@ -1106,7 +1108,6 @@
     "custom_liquid_KymN7U",
     "testimonials_N6HpgR",
     "featured_blog_hEUTet",
-    "newsletter_KKbwEG",
-    "stream_layout_Gbz3Hx"
+    "newsletter_KKbwEG"
   ]
 }
