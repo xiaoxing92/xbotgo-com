@@ -377,6 +377,30 @@
         "video_url4": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4"
       }
     },
+    "video_with_text_mNpzyV": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_7c8AAr": {
+          "type": "heading",
+          "settings": {
+            "title": "XbotGo Tutorial：Live Scoreboard Feature",
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_7c8AAr"
+      ],
+      "settings": {
+        "video_external": "https://youtu.be/XEjNkPdtq_o?si=XRmbTN7ElHztigg2",
+        "video_description": "",
+        "autoplay": false,
+        "placeholder_image": "shopify://shop_images/score_1.5x.png",
+        "video_position": "right",
+        "text_alignment": "center",
+        "color_scheme": "default"
+      }
+    },
     "video_with_text_4h4jfH": {
       "type": "video-with-text",
       "blocks": {
@@ -434,11 +458,43 @@
             "title": "How does XbotGo follow and track games?",
             "answer": "<p>We use AI technology to detect the position of the ball and players, analyze the speed, pose and actions of players. Our patented algorithm will decide where the action is based on the information analyzed, and control the gimbal to follow through. In particular, all these are completed on smartphones real time. Even if the phone is not connected to Internet, it is still able to track and record. Please find demo videos at <a href=\"https://www.youtube.com/@XbotGo\">https://www.youtube.com/@XbotGo</a>. All demos are shared by our real users.</p><p><strong> </strong></p>"
           }
+        },
+        "question_hpUjA6": {
+          "type": "question",
+          "settings": {
+            "title": "How to set up XbotGo Chameleon?",
+            "answer": "<p>Please have the following ready before setup or refer to our video tutorial: <a href=\"https://youtu.be/yTRtBXDaDos?si=wH0xIUtm0hDryEcL\" target=\"_blank\" title=\"https://youtu.be/yTRtBXDaDos?si=wH0xIUtm0hDryEcL\">https://youtu.be/yTRtBXDaDos?si=wH0xIUtm0hDryEcL<br/></a><br/>- XbotGo Chameleon<br/>- iPhone XS or newer, or an Android device with a Qualcomm Snapdragon 888 processor or newer<br/>- XbotGo App (downloaded from App Store or Google Play)<br/>- Tripod (sold separately) or any other tripod with 1/4\" screw head<br/><br/>Setup steps:<br/>- Mount the Chameleon on a tripod near the center line of the field.<br/>- Center and balance your phone in the Chameleon's clamp, ensuring its camera aligns with the Chameleon's camera.<br/>- Open the XbotGo App and connect it to the Chameleon.<br/>- After successful connection, start recording.<br/><br/>The XbotGo will automatically track players and capture the game. You can also enable live streaming to share with your audience.</p>"
+          }
+        },
+        "question_Y3TeVX": {
+          "type": "question",
+          "settings": {
+            "title": "How to find my Chameleon firmware version and upgrade",
+            "answer": "<p>Here is the Video Turtorial: <a href=\"https://youtu.be/50wK5SC_nDU?si=eCaPIpZFfIls2f3p\" title=\"https://youtu.be/50wK5SC_nDU?si=eCaPIpZFfIls2f3p\">https://youtu.be/50wK5SC_nDU?si=eCaPIpZFfIls2f3p</a><br/>To check your Chameleon firmware version and upgrade to the latest, follow these steps:<br/><br/>\t1.\tOpen the XbotGo App and log in to your account.<br/>\t2.\tConnect the Chameleon to the app.<br/>\t3.\tFrom the app homepage, go to “My” &gt; “Settings” and select “Firmware Upgrade.”<br/>\t4.\tYour current firmware version will be displayed in the top right corner.<br/>\t5.\tIf an update is available, tap “Firmware Upgrade” and follow the on-screen instructions to complete the process.<br/><br/>Note: If you don’t see the firmware upgrade option, try logging out and logging back in, and reconnect the Chameleon.<br/></p>"
+          }
+        },
+        "question_FwJ8LR": {
+          "type": "question",
+          "settings": {
+            "title": "How to choose the sports mode and set up",
+            "answer": "<p>For capturing sports action on smaller fields, like a basketball court or a 5v5 soccer pitch, our portable XbotGo Gimbal T1 Tripod, standing around 4 feet tall, is a perfect choice. It’s easy to fold and unfold, offering quick setup and convenience.<br/><br/>For larger fields, such as 9v9 or 11v11 soccer games, we recommend our 13-foot T4 tripod. It provides enhanced tracking performance and a wider view, ensuring optimal coverage.<br/><br/>Both tripods deliver a great experience. Alternatively, you can use any third-party tripod with a 1/4” screw mount, as it’s compatible with the XbotGo gimbal.</p>"
+          }
+        },
+        "question_nwRRNt": {
+          "type": "question",
+          "settings": {
+            "title": "What tripod should I use with Chameleon?",
+            "answer": "<p>For capturing sports action on smaller fields, like a basketball court or a 5v5 soccer pitch, our portable XbotGo Gimbal T1 Tripod, standing around 4 feet tall, is a perfect choice. It’s easy to fold and unfold, offering quick setup and convenience.<br/><br/>For larger fields, such as 9v9 or 11v11 soccer games, we recommend our 13-foot tripod. It provides enhanced tracking performance and a wider view, ensuring optimal coverage.<br/><br/>Both tripods deliver a great experience. Alternatively, you can use any third-party tripod with a 1/4” screw mount, as it’s compatible with the XbotGo gimbal.</p>"
+          }
         }
       },
       "block_order": [
         "template--15839855018206__93f97a72-d4c6-4de4-976d-c98954d4d95a-1679925314e4aded86-0",
-        "template--15839855018206__93f97a72-d4c6-4de4-976d-c98954d4d95a-1679925314e4aded86-1"
+        "template--15839855018206__93f97a72-d4c6-4de4-976d-c98954d4d95a-1679925314e4aded86-1",
+        "question_hpUjA6",
+        "question_Y3TeVX",
+        "question_FwJ8LR",
+        "question_nwRRNt"
       ],
       "settings": {
         "title": "FAQ"
@@ -503,6 +559,64 @@
       "settings": {
         "alignment": "middle"
       }
+    },
+    "collapsible_tabs_JEqR6P": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_EWJTFG": {
+          "type": "question",
+          "settings": {
+            "title": "What sports can XbotGo gimbal support?",
+            "answer": "<p>Currently, XbotGo supports 10 sports types:<br/>\t1.\tSoccer<br/>\t2.\tFootball<br/>\t3.\tBasketball<br/>\t4.\tPower Soccer<br/>\t5.\tLacrosse<br/>\t6.\tIce Hockey<br/>\t7.\tTennis<br/>\t8.\tHandball<br/>\t9.\tPickleball<br/>\t10.\tBroomball<br/><br/>It also features a FollowMe Mode for tracking individual movement and activities. More features will be added in future updates.</p>"
+          }
+        },
+        "question_PqBWgD": {
+          "type": "question",
+          "settings": {
+            "title": "How to set up XbotGo gimbal?",
+            "answer": "<p>1. Mount your iPhone or Android device on the XbotGo gimbal.<br/>2. Place the gimbal on a tripod along the sideline of the sports field.<br/>3. Open the XbotGo App and connect it to the gimbal.<br/>4. Press the recording button and let the system do the rest.<br/><br/>The XbotGo system will automatically:<br/>- Track players<br/>- Follow the game action<br/>- Record the game<br/>- Live stream (if enabled)<br/><br/>Note: For optimal tracking performance, we recommend placing the gimbal near the center line of the field.</p>"
+          }
+        },
+        "question_wTbygA": {
+          "type": "question",
+          "settings": {
+            "title": "Can XbotGo gimbal be used as a handheld stabilizer?",
+            "answer": "<p>Yes, the XbotGo gimbal can also function as a regular handheld stabilizer for everyday use.</p>"
+          }
+        },
+        "question_887WrH": {
+          "type": "question",
+          "settings": {
+            "title": "How does cloud storage work?",
+            "answer": "<p>Each user receives 20GB of free cloud storage with no monthly fees.</p>"
+          }
+        },
+        "question_Qg6bWc": {
+          "type": "question",
+          "settings": {
+            "title": "How to choose the sports mode and set up",
+            "answer": "<p>For capturing sports action on smaller fields, like a basketball court or a 5v5 soccer pitch, our portable XbotGo Gimbal T1 Tripod, standing around 4 feet tall, is a perfect choice. It’s easy to fold and unfold, offering quick setup and convenience.<br/><br/>For larger fields, such as 9v9 or 11v11 soccer games, we recommend our 13-foot T4 tripod. It provides enhanced tracking performance and a wider view, ensuring optimal coverage.<br/><br/>Both tripods deliver a great experience. Alternatively, you can use any third-party tripod with a 1/4” screw mount, as it’s compatible with the XbotGo gimbal.</p>"
+          }
+        },
+        "question_3rFGcE": {
+          "type": "question",
+          "settings": {
+            "title": "Does the gimbal support a frame rate of 60fps?",
+            "answer": "<p>Currently, both iOS and Android versions support up to 30fps.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_EWJTFG",
+        "question_PqBWgD",
+        "question_wTbygA",
+        "question_887WrH",
+        "question_Qg6bWc",
+        "question_3rFGcE"
+      ],
+      "settings": {
+        "title": "FAQ"
+      }
     }
   },
   "order": [
@@ -514,8 +628,10 @@
     "main",
     "video_with_text_eiAByc",
     "custom_tab_4_U7EC49",
+    "video_with_text_mNpzyV",
     "video_with_text_4h4jfH",
     "93f97a72-d4c6-4de4-976d-c98954d4d95a",
-    "custom_content_Dpj8Je"
+    "custom_content_Dpj8Je",
+    "collapsible_tabs_JEqR6P"
   ]
 }
