@@ -121,7 +121,7 @@
         "enable_search": true,
         "search_recommendations_title": "",
         "search_recommendations_menu": "",
-        "icon_strategy": "icons_cart_search",
+        "icon_strategy": "icons_only",
         "cart_icon": "basket"
       }
     },
