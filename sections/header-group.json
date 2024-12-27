@@ -171,38 +171,10 @@
         "head_not_mob_url": ""
       }
     },
-    "headers": {
-      "type": "header-new",
-      "custom_css": [],
-      "settings": {
-        "logo": "shopify://shop_images/211LOGO.png",
-        "logo_img_width_int": 165,
-        "mobile_logo_img_width_int": 85,
-        "logo_h1": true,
-        "enable_sticky": false,
-        "enable_transparent": true,
-        "transparent_color": "#ffffff",
-        "menu_linklist": "header-menu-12-06",
-        "menu_layout": "inline-menu-center",
-        "nav_featured_link": "Sale",
-        "menu_linklist_mobile": "",
-        "mobile_expand_with_entire_link": false,
-        "enable_mobile_promo_carousel": true,
-        "enable_nav_mob_products": true,
-        "nav_mob_products_title": "Best Sellers",
-        "nav_mob_products_collection": "chameleon",
-        "enable_search": true,
-        "search_recommendations_title": "",
-        "search_recommendations_menu": "",
-        "icon_strategy": "icons_only",
-        "cart_icon": "basket"
-      }
-    },
   },
   "order": [
     "announcement-bar",
     "header",
     "store-messages",
-    "header-new",
   ]
 }
