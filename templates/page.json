@@ -449,7 +449,7 @@
           "type": "question",
           "settings": {
             "title": "What phones does XbotGo support?",
-            "answer": "<p>XbotGo supports iPhone and Android phones.</p><p>iOS: </p><p>IPhone 11/12/13/14/15 Series, SE 2/3</p><p>Android: </p><p>SAMSUNG: Samsung Galaxy S21/S22/S23 series,Galaxy Z Flip3, Z Flip4, Samsung W22,W23 Flip</p><p>Google: Google Pixel 7/7Pro</p><p>Huawei: Huawei Mate 40/Mate 50 series, Huawei P50/P60 series</p><p>Xiaomi: Xiaomi 11/12/13 series, Xiaomi mix4, Xiaomi MIX FOLD</p><p>OnePlus: OnePlus 9/10/11 series, OnePlus Ace Pro</p><p>SONY: Xperia PRO-l, Xperia 1 ll, Xperia 1 IV, Xperia 5 ll, Xperia 5 IV</p><p>Redmi: Redmi K50/K60 series </p><p>Search Xbot Go on App Store or Google Play.</p>"
+            "answer": "<p>Apple: <br/>iPhone 11 or later models<br/>Android: Search Xbot Go on Google Play.<br/>Samsung:<br/>Samsung Galaxy S21/S22/S23 series, Galaxy Z Flip3, Z Flip4, Samsung W22, W23 Flip<br/>Google:<br/>Google Pixel 7/7Pro, Pixel 8<br/>Huawei:<br/>Huawei Mate 40/Mate 50 series, Huawei P50/P60 series<br/>Honor:<br/>Honor Magic4/Magic5 series<br/>Xiaomi:<br/>Xiaomi 11/12/13/14 series<br/>OnePlus:<br/>OnePlus 9/10/11/12 series, OnePlus Ace Pro<br/>Sony:<br/>Xperia PRO-I, Xperia 1 III, Xperia 1 Ⅳ, Xperia 5 III, Xperia 5 Ⅳ<br/>Redmi:<br/>Redmi K50/K60 series<br/>iQOO: 10/11/12 series<br/>RealMe: GT5<br/>Vivo: X80/X90/X100</p>"
           }
         },
         "template--15839855018206__93f97a72-d4c6-4de4-976d-c98954d4d95a-1679925314e4aded86-1": {
