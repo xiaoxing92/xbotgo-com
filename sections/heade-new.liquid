@@ -1,0 +1,121 @@
+<style>
+  /* 顶部导航 */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #fff;
+}
+
+.main-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main-menu li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+/* 商品列表 */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.product-item {
+  text-align: center;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.product-item h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+</style>
+
+<header class="site-header">
+  <nav>
+    <ul class="main-menu">
+      {% for link in linklists.main-menu.links %}
+        <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
+
+<section class="product-list">
+  <h2>Products</h2>
+  <div class="product-grid">
+    {% for product in collections['your-collection-handle'].products %}
+      <div class="product-item">
+        <a href="{{ product.url }}">
+          <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+          <h3>{{ product.title }}</h3>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+
+<section class="product-groups">
+  <div class="group">
+    <h2>Products</h2>
+    <div class="product-grid">
+      {% for product in collections['products-collection'].products %}
+        <div class="product-item">
+          <a href="{{ product.url }}">
+            <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+            <h3>{{ product.title }}</h3>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  
+  <div class="group">
+    <h2>Accessories</h2>
+    <div class="product-grid">
+      {% for product in collections['accessories-collection'].products %}
+        <div class="product-item">
+          <a href="{{ product.url }}">
+            <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+            <h3>{{ product.title }}</h3>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+
+<script>
+
+  </script>
+
+
+{% render 'structured-data-header' %}
+
+{% schema %}
+{
+  "name": "Header New",
+  "class": "section-header",
+  "settings": [
+
+  ],
+  "blocks": [
+
+  ]
+}
+{% endschema %}
