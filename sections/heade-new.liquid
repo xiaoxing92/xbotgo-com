@@ -73,7 +73,7 @@
   <div class="group">
     <h2>Products</h2>
     <div class="product-grid">
-      {% for product in collections['products-collection'].products %}
+      {% for product in collections[section.settings.collection].products %}
         <div class="product-item">
           <a href="{{ product.url }}">
             <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
@@ -112,7 +112,11 @@
   "name": "Header New",
   "class": "section-header",
   "settings": [
-
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
   ],
   "blocks": [
 
