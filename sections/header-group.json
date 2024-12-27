@@ -171,10 +171,6 @@
         "head_not_mob_url": ""
       }
     },
-    "custom-header": {
-      "type": "custom-header",
-      "name": "Custom Header"
-    },
     "headers": {
       "type": "header-new",
       "custom_css": [],
