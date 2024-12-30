@@ -127,7 +127,7 @@
       <li class="nav-item">
         <a href="#">{{block.settings.nav_title}}</a>
         {% assign collection = collections[block.settings.collection] %}
-          {% if collection.products_count > 0 %}
+          {% if collection.products.size > 0 %}
             <div class="dropdown">
               {% for product in collection.products %}
                 <div class="child-item">
