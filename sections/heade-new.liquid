@@ -144,10 +144,76 @@
   </ul>
 
   <!-- 右侧图标 -->
-  <div class="icons">
-      <img src="search-icon-placeholder.png" alt="Search" />
-      <img src="cart-icon-placeholder.png" alt="Cart" />
-      <img src="user-icon-placeholder.png" alt="User" />
+  <div class="logo-area__right">
+    <div class="logo-area__right__inner">
+      {% if shop.customer_accounts_enabled %}
+        {% if customer %}
+          <a
+            class="header-account-link"
+            href="{{ routes.account_url }}"
+            aria-label="{{ 'sections.header.account' | t | escape }}"
+          >
+            <span class="header-account-link__text {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}">
+              {{- 'sections.header.account' | t -}}
+            </span>
+            <span class="header-account-link__icon{% if section.settings.icon_strategy == 'icons_cart_search' %} mobile-only{% endif %}">
+              {%- render 'icon-user' -%}
+            </span>
+          </a>
+        {% else %}
+          <a
+            class="header-account-link"
+            href="{{ routes.account_login_url }}"
+            aria-label="{{ 'sections.header.account' | t | escape }}"
+          >
+            <span class="header-account-link__text {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}">
+              {{- 'sections.header.account' | t -}}
+            </span>
+            <span class="header-account-link__icon{% if section.settings.icon_strategy == 'icons_cart_search' %} mobile-only{% endif %}">
+              {%- render 'icon-user' -%}
+            </span>
+          </a>
+        {% endif %}
+      {% endif %}
+      {% if section.settings.enable_search %}
+        <a class="show-search-link" href="{{ routes.search_url }}">
+          <span class="show-search-link__text {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}">
+            {{- 'sections.header.search' | t -}}
+          </span>
+          <span class="show-search-link__icon">
+            {%- render 'icon-search' -%}
+          </span>
+        </a>
+      {% endif %}
+      {%- liquid
+        assign cart_hash = ''
+        for item in cart.items
+          assign cart_hash = cart_hash | append: ',' | append: item.key | append: '|' | append: item.quantity
+        endfor
+        assign cart_hash = cart_hash | remove_first: ',' | sha256
+      -%}
+      <a href="{{ routes.cart_url }}" class="cart-link" data-hash="{{ cart_hash }}">
+        <span class="cart-link__label {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}">
+          {{- 'sections.header.cart' | t | escape -}}
+        </span>
+        <span class="cart-link__icon">
+          {%- liquid
+            if section.settings.cart_icon == 'basket'
+              render 'icon-basket'
+            elsif section.settings.cart_icon == 'bag'
+              render 'icon-bag'
+            else
+              render 'icon-cart'
+            endif
+          -%}
+          <span class="cart-link__count">
+            {%- if cart.item_count > 0 -%}
+              {{- cart.item_count -}}
+            {%- endif -%}
+          </span>
+        </span>
+      </a>
+    </div>
   </div>
 </div>
 
@@ -159,6 +225,73 @@
   "name": "Header New",
   "class": "section-header",
   "settings": [
+    {
+      "type": "header",
+      "content": "Search"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_search",
+      "label": "Enable search",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "search_recommendations_title",
+      "label": "Recommendations title",
+      "info": "Recommendations show when the search is opened."
+    },
+    {
+      "type": "link_list",
+      "id": "search_recommendations_menu",
+      "label": "Recommendations menu",
+      "info": "Dropdown menus will show as separate rows. Links to collections and products will show images."
+    },
+    {
+      "type": "header",
+      "content": "Icons"
+    },
+    {
+      "type": "select",
+      "id": "icon_strategy",
+      "label": "Show icons",
+      "info": "Only icons show on mobile",
+      "options": [
+        {
+          "value": "icons_cart_search",
+          "label": "On cart and search"
+        },
+        {
+          "value": "icons_all",
+          "label": "On all links"
+        },
+        {
+          "value": "icons_only",
+          "label": "Only icons, no text"
+        }
+      ],
+      "default": "icons_cart_search"
+    },
+    {
+      "type": "select",
+      "id": "cart_icon",
+      "label": "Cart icon",
+      "options": [
+        {
+          "value": "bag",
+          "label": "Bag"
+        },
+        {
+          "value": "basket",
+          "label": "Basket"
+        },
+        {
+          "value": "cart",
+          "label": "Cart"
+        }
+      ],
+      "default": "basket"
+    }
   ],
   "blocks": [
     {
