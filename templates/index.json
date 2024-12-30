@@ -1090,6 +1090,14 @@
     "heade_new_ygqafn": {
       "type": "heade-new",
       "blocks": {
+        "nav_block_NTnbgq": {
+          "type": "nav_block",
+          "settings": {
+            "nav_title": "Products",
+            "link_url": "",
+            "collection": ""
+          }
+        },
         "nav_block_G8TFXP": {
           "type": "nav_block",
           "settings": {
@@ -1098,21 +1106,35 @@
             "collection": "accessories"
           }
         },
-        "nav_block_NTnbgq": {
+        "nav_block_37jgEU": {
           "type": "nav_block",
           "settings": {
-            "nav_title": "NavTitle",
+            "nav_title": "Xplore",
+            "link_url": "",
+            "collection": ""
+          }
+        },
+        "nav_block_6HwDig": {
+          "type": "nav_block",
+          "settings": {
+            "nav_title": "Support",
             "link_url": "",
             "collection": ""
           }
         }
       },
       "block_order": [
+        "nav_block_NTnbgq",
         "nav_block_G8TFXP",
-        "nav_block_NTnbgq"
+        "nav_block_37jgEU",
+        "nav_block_6HwDig"
       ],
       "disabled": true,
       "settings": {
+        "logo": "shopify://shop_images/XbotGo_Logo_1200.png",
+        "logo_img_width_int": 120,
+        "mobile_logo_img_width_int": 60,
+        "logo_h1": true,
         "enable_search": true,
         "search_recommendations_title": "",
         "search_recommendations_menu": "",
