@@ -1093,7 +1093,7 @@
         "nav_block_G8TFXP": {
           "type": "nav_block",
           "settings": {
-            "nav_title": "NavTitle",
+            "nav_title": "Accessories",
             "link_url": "shopify://collections/accessories",
             "collection": "accessories"
           }
@@ -1112,7 +1112,13 @@
         "nav_block_NTnbgq"
       ],
       "disabled": true,
-      "settings": {}
+      "settings": {
+        "enable_search": true,
+        "search_recommendations_title": "",
+        "search_recommendations_menu": "",
+        "icon_strategy": "icons_only",
+        "cart_icon": "basket"
+      }
     }
   },
   "order": [
