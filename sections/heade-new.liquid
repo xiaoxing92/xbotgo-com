@@ -72,7 +72,6 @@
         left: 0;
         background: white;
         border: 1px solid #eaeaea;
-        border-radius: 4px;
         transition: opacity 175ms ease-in, visibility 175ms;
         opacity: 0;
         z-index: 10;
@@ -131,27 +130,24 @@
 
   <!-- 中间导航菜单 -->
   <ul class="nav-menu">
+    {%- for block in section.blocks -%}
       <li class="nav-item">
-          <a href="#">Products</a>
-          <div class="dropdown">
-              <div class="child-item">
+        <a href="#">{{block.settings.nav_title}}</a>
+        {% assign collection = collections[block.settings.collection] %}
+          {% if collection.products_count > 0 %}
+            <div class="dropdown">
+              {% for product in collection.products %}
+                <div class="child-item">
                   <img src="" alt="图片"/>
-                  <p>12312</p>
-              </div>
-              <div class="child-item">
-                  <img src="" alt="图片"/>
-                  <p>12312</p>
-              </div>
-          </div>
-      </li>
-      <li class="nav-item">
-          <a href="#">Accessories</a>
-          <div class="dropdown">
-          
-          </div>
-      </li>
-      <li class="nav-item"><a href="#">Xplore</a></li>
-      <li class="nav-item"><a href="#">Support</a></li>
+                  <p>{{ product.title }}</p>
+                </div>
+              {% endfor %}
+            </div>
+          {% else %}
+            <div></div>
+          {% endif %}
+    </li>
+    {%- endfor -%}
   </ul>
 
   <!-- 右侧图标 -->
@@ -161,6 +157,7 @@
       <img src="user-icon-placeholder.png" alt="User" />
   </div>
 </nav>
+
 
 
 
@@ -184,6 +181,28 @@
       "settings": {
       },
       "blocks": [
+        {
+          "type": "nav",
+          "name": "Nav Item",
+          "settings": [
+            {
+              "type": "text",
+              "id": "nav_title",
+              "label": "NavTitle",
+              "default": "NavTitle"
+            },
+            {
+              "type": "url",
+              "id": "link_url",
+              "label": "Link URL"
+            },
+            {
+              "type": "collection",
+              "id": "collection",
+              "label": "Collection"
+            }
+          ]
+        }
       ]
     }
   ]
