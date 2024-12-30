@@ -117,9 +117,26 @@
 
 <div class="header-nav">
   <!-- 左侧 Logo -->
-  <div class="logo">
-      <img src="logo-placeholder.png" alt="Logo" />
+  <div id="shoplogo">
+    <meta itemprop="url" content="{{ shop.url }}">
+    <meta itemprop="name" content="{{ shop.name }}">
+    {%- if section.settings.logo != blank -%}
+      <h1 class="logo" itemscope itemtype="http://schema.org/Organization">
+        {%- assign logo_width_x2 = section.settings.logo_img_width_int | times: 2 -%}
+        <img
+          src="{{ section.settings.logo | image_url: width: logo_width_x2 }}"
+          alt="{{ section.settings.logo.alt | escape }}"
+          itemprop="logo"
+          width="{{ section.settings.logo.width }}"
+          height="{{ section.settings.logo.height }}"
+          loading="eager"
+        >
+      </h1>
+    {%- else -%}
+      <h1 class="logotext">{{ shop.name }}</h1>
+    {%- endif -%}
   </div>
+
 
   <!-- 中间导航菜单 -->
   <ul class="nav-menu">
@@ -420,6 +437,39 @@
   "name": "Header New",
   "class": "section-header",
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo",
+      "info": "520 x 200px (recommended)"
+    },
+    {
+      "type": "range",
+      "id": "logo_img_width_int",
+      "min": 30,
+      "max": 500,
+      "step": 5,
+      "unit": "px",
+      "label": "Logo width",
+      "default": 180
+    },
+    {
+      "type": "range",
+      "id": "mobile_logo_img_width_int",
+      "min": 30,
+      "max": 300,
+      "step": 5,
+      "unit": "px",
+      "label": "Mobile logo width",
+      "default": 100
+    },
+    {
+      "type": "checkbox",
+      "id": "logo_h1",
+      "label": "Enable logo <h1> on home page",
+      "info": "For SEO. Deselect only if another section on the home page contains a primary page heading. [Learn more](https://cleancanvas.co.uk/support/symmetry/section-h1-setting)",
+      "default": true
+    },
     {
       "type": "header",
       "content": "Search"
