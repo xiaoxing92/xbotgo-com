@@ -1095,7 +1095,8 @@
           "settings": {
             "nav_title": "Products",
             "link_url": "",
-            "collection": ""
+            "collection": "",
+            "code": "<div>\n123\n</div>\n<div>\n21312\n</div>"
           }
         },
         "nav_block_G8TFXP": {
@@ -1103,7 +1104,8 @@
           "settings": {
             "nav_title": "Accessories",
             "link_url": "shopify://collections/accessories",
-            "collection": "accessories"
+            "collection": "accessories",
+            "code": ""
           }
         },
         "nav_block_37jgEU": {
@@ -1111,7 +1113,8 @@
           "settings": {
             "nav_title": "Xplore",
             "link_url": "",
-            "collection": ""
+            "collection": "",
+            "code": ""
           }
         },
         "nav_block_6HwDig": {
@@ -1119,7 +1122,8 @@
           "settings": {
             "nav_title": "Support",
             "link_url": "",
-            "collection": ""
+            "collection": "",
+            "code": ""
           }
         }
       },
