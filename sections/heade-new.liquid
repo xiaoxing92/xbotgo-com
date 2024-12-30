@@ -1,4 +1,10 @@
-<style>
+{% style %} 
+    .logo img {
+      width: {{ section.settings.logo_img_width_int }}px;
+    }
+    .logo-area__middle--logo-image {
+      max-width: {{ section.settings.logo_img_width_int }}px;
+    }
     .header-nav {
         display: flex;
         justify-content: space-between;
@@ -112,8 +118,8 @@
         margin: 0 10px;
         cursor: pointer;
     }
-    
-</style>
+
+{% endstyle %}
 
 <div class="header-nav">
   <!-- 左侧 Logo -->
@@ -194,7 +200,7 @@
           </a>
         {% endif %}
       {% endif %}
-     
+      {% if section.settings.enable_search %}
         <a class="show-search-link" href="{{ routes.search_url }}">
           <span class="show-search-link__text {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}">
             {{- 'sections.header.search' | t -}}
@@ -203,7 +209,7 @@
             {%- render 'icon-search' -%}
           </span>
         </a>
-
+      {% endif %}
       {%- liquid
         assign cart_hash = ''
         for item in cart.items
@@ -426,9 +432,14 @@
         {% endif %}
       </div>
     </main-search>
+    <script>
+      theme.inlineNavigationCheck();
+      setTimeout(theme.setInitialHeaderHeightProperty, 0);
+    </script>
   {%- endif -%}
 </div>
 
+{% render 'structured-data-header' %}
 
 {% schema %}
 {
