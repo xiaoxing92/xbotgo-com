@@ -154,9 +154,11 @@
               {% endfor %}
             </div>
           {% else %}
-            <div></div>
+            <div class="custom-html">
+              {{ section.settings.code }}
+            </div>
           {% endif %}
-    </li>
+       </li>
     {%- endfor -%}
   </ul>
 
@@ -425,11 +427,7 @@
       </div>
     </main-search>
   {%- endif -%}
-
-
 </div>
-
-
 
 
 {% schema %}
@@ -558,6 +556,11 @@
           "type": "collection",
           "id": "collection",
           "label": "Collection"
+        },
+        {
+          "type": "liquid",
+          "id": "code",
+          "label": "Liquid code"
         }
       ]
     }
