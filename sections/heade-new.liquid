@@ -1,111 +1,168 @@
 <style>
-  /* 顶部导航 */
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background: #fff;
-}
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
 
-.main-menu {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        padding: 0 20px;
+        background-color: white;
+        border-bottom: 1px solid #eaeaea;
+    }
 
-.main-menu li a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-}
+    .logo {
+        display: flex;
+        align-items: center;
+    }
 
-/* 商品列表 */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
+    .logo img {
+        height: 40px;
+    }
 
-.product-item {
-  text-align: center;
-}
+    .nav-menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
 
-.product-item img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto 10px;
-}
+    .nav-menu li {
+        margin: 0 15px;
+    }
 
-.product-item h3 {
-  font-size: 1.2rem;
-  color: #333;
-}
+    .nav-menu a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding: 5px;
+        height: 100%;
+        position: relative
+    }
+ 
+    .nav-menu a::before{
+        content: '';
+        width:0%;
+        height: 2px;
+        background: linear-gradient(to right, #f27b00, #ca251d);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        transition: width 0.3s ease, left 0.3s ease;
+    }
+    .nav-menu a:hover::before {
+        width: 100%;
+        left: 0;
+    }
+    .dropdown {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        visibility: hidden;
+        top: 50px;
+        left: 0;
+        background: white;
+        border: 1px solid #eaeaea;
+        border-radius: 4px;
+        transition: opacity 175ms ease-in, visibility 175ms;
+        opacity: 0;
+        z-index: 10;
+        padding-top:20px;
+        padding-bottom: 20px;
+        padding-left: 27%;
+    }
+
+    .dropdown a {
+        display: block;
+        padding: 10px 15px;
+        white-space: nowrap;
+        color: #000;
+    }
+
+    .dropdown a:hover {
+        background-color: #f9f9f9;
+    }
+
+
+    .nav-item:hover .dropdown {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .child-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 120px;
+        background-color: #eee;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+    .icons {
+        display: flex;
+        align-items: center;
+    }
+
+    .icons img {
+        width: 20px;
+        height: 20px;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    
 </style>
 
-<header class="site-header">
-  <nav>
-    <ul class="main-menu">
-      {% for link in linklists.main-menu.links %}
-        <li><a href="{{ link.url }}">{{ link.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </nav>
-</header>
-
-<section class="product-list">
-  <h2>Product</h2>
-  <div class="product-grid">
-    {% for product in collections['your-collection-handle'].products %}
-      <div class="product-item">
-        <a href="{{ product.url }}">
-          <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
-          <h3>{{ product.title }}</h3>
-        </a>
-      </div>
-    {% endfor %}
+<nav>
+  <!-- 左侧 Logo -->
+  <div class="logo">
+      <img src="logo-placeholder.png" alt="Logo" />
   </div>
-</section>
 
+  <!-- 中间导航菜单 -->
+  <ul class="nav-menu">
+      <li class="nav-item">
+          <a href="#">Products</a>
+          <div class="dropdown">
+              <div class="child-item">
+                  <img src="" alt="图片"/>
+                  <p>12312</p>
+              </div>
+              <div class="child-item">
+                  <img src="" alt="图片"/>
+                  <p>12312</p>
+              </div>
+          </div>
+      </li>
+      <li class="nav-item">
+          <a href="#">Accessories</a>
+          <div class="dropdown">
+          
+          </div>
+      </li>
+      <li class="nav-item"><a href="#">Xplore</a></li>
+      <li class="nav-item"><a href="#">Support</a></li>
+  </ul>
 
-<section class="product-groups">
-  <div class="group">
-    <h2>Products</h2>
-    <div class="product-grid">
-      {% for product in collections[section.settings.collection].products %}
-        <div class="product-item">
-          <a href="{{ product.url }}">
-            <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
-            <h3>{{ product.title }}</h3>
-          </a>
-        </div>
-      {% endfor %}
-    </div>
+  <!-- 右侧图标 -->
+  <div class="icons">
+      <img src="search-icon-placeholder.png" alt="Search" />
+      <img src="cart-icon-placeholder.png" alt="Cart" />
+      <img src="user-icon-placeholder.png" alt="User" />
   </div>
-  
-  <div class="group">
-    <h2>Accessories</h2>
-    <div class="product-grid">
-      {% for product in collections['accessories-collection'].products %}
-        <div class="product-item">
-          <a href="{{ product.url }}">
-            <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
-            <h3>{{ product.title }}</h3>
-          </a>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
+</nav>
 
 
-<script>
-
-  </script>
-
-
-{% render 'structured-data-header' %}
 
 {% schema %}
 {
