@@ -203,7 +203,7 @@
 
   .content {
     flex-grow: 1;
-    padding: 20px;
+    padding: 10px;
   }
 
   .tab-content {
@@ -676,6 +676,7 @@
     menuItems[1].classList.add('active')
     menuContent[1].classList.add('active')
     menuLayout.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
   }
   
   document.addEventListener('DOMContentLoaded', () => {
