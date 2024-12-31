@@ -154,7 +154,7 @@
 
 {% endstyle %}
 
-<new-header id="pageheader" class="header-nav pageheader pageheader--layout-{{ section.settings.menu_layout }}{% if section.settings.enable_transparent and template.name == 'index' %} pageheader--transparent-permitted pageheader--transparent{% endif %}{% if section.settings.enable_sticky %} pageheader--sticky{% endif %}" >
+<page-header id="pageheader" class="header-nav pageheader pageheader--layout-{{ section.settings.menu_layout }}{% if section.settings.enable_transparent and template.name == 'index' %} pageheader--transparent-permitted pageheader--transparent{% endif %}{% if section.settings.enable_sticky %} pageheader--sticky{% endif %}" >
   <!-- 左侧 Logo -->
   <div id="shoplogo">
     <meta itemprop="url" content="{{ shop.url }}">
@@ -472,7 +472,7 @@
       setTimeout(theme.setInitialHeaderHeightProperty, 0);
     </script>
   {%- endif -%}
-</new-header>
+</page-header>
 
 {% render 'structured-data-header' %}
 
