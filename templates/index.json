@@ -1114,7 +1114,7 @@
             "nav_title": "Xplore",
             "link_url": "",
             "collection": "",
-            "code": "<div class=\"child-item\">\n<span>12323</span>\n</div>\n<div class=\"child-item\">\n\n</div>"
+            "code": "<div class=\"child-item\">\n<span>Blog</span>\n</div>\n<div class=\"child-item\">\n<span>Community</span>\n</div>\n<div class=\"child-item\">\n<span>Affliate Program</span>\n</div>"
           }
         },
         "nav_block_6HwDig": {
@@ -1123,7 +1123,7 @@
             "nav_title": "Support",
             "link_url": "",
             "collection": "",
-            "code": ""
+            "code": "<div class=\"child-item\">\n<span>About Us</span>\n</div>\n<div class=\"child-item\">\n<span>User Guide</span>\n</div>\n<div class=\"child-item\">\n<span>Customer Serivce</span>\n</div>"
           }
         }
       },
@@ -1133,6 +1133,7 @@
         "nav_block_37jgEU",
         "nav_block_6HwDig"
       ],
+      "disabled": true,
       "settings": {
         "logo": "shopify://shop_images/XbotGo_Logo_1200.png",
         "logo_img_width_int": 100,
