@@ -1114,7 +1114,7 @@
             "nav_title": "Xplore",
             "link_url": "",
             "collection": "",
-            "code": "<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/1_e2d3b6c4-1fb2-40e4-950e-3aabb9694b03.png?v=1735611911\"/ >\n<p class=\"title\">Blog</p>\n</div>\n<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/2_ab76c6bb-b3b9-4da1-84b7-c2db5519d41d.png?v=1735611911\"/ >\n<p class=\"title\">Community</p>\n</div>\n<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/3_175946d0-c478-4587-8ef0-ae664a9de07d.png?v=1735611911\"/ >\n<p class=\"title\">Affliate Program</p>\n</div>"
+            "code": "<style>\n.title-black{\nz-index:10;\ncolor:#fff\n}\n</style>\n<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/1_e2d3b6c4-1fb2-40e4-950e-3aabb9694b03.png?v=1735611911\"/ >\n<p class=\"title-black\">Blog</p>\n</div>\n<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/2_ab76c6bb-b3b9-4da1-84b7-c2db5519d41d.png?v=1735611911\"/ >\n<p class=\"title-black\">Community</p>\n</div>\n<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/3_175946d0-c478-4587-8ef0-ae664a9de07d.png?v=1735611911\"/ >\n<p class=\"title-black\">Affliate Program</p>\n</div>"
           }
         },
         "nav_block_6HwDig": {
