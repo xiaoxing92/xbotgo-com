@@ -121,7 +121,7 @@
 
 {% endstyle %}
 
-<div class="header-nav">
+<div  id="pageheader" class="header-nav pageheader pageheader--layout-{{ section.settings.menu_layout }}{% if section.settings.enable_transparent and template.name == 'index' %} pageheader--transparent-permitted pageheader--transparent{% endif %}{% if section.settings.enable_sticky %} pageheader--sticky{% endif %}" >
   <!-- 左侧 Logo -->
   <div id="shoplogo">
     <meta itemprop="url" content="{{ shop.url }}">
@@ -169,7 +169,7 @@
   </ul>
 
   <!-- 右侧图标 -->
-  <div  id="pageheader" class="logo-area__right">
+  <div class="logo-area__right">
     <div class="logo-area__right__inner">
       {% if shop.customer_accounts_enabled %}
         {% if customer %}
