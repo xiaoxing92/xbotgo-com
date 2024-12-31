@@ -5,6 +5,18 @@
     .logo-area__middle--logo-image {
       max-width: {{ section.settings.logo_img_width_int }}px;
     }
+
+    @media (max-width: 767.98px) {
+      .logo img {
+        width: {{ section.settings.mobile_logo_img_width_int }}px;
+      }
+    }
+    {%- if section.settings.enable_sticky -%}
+      .section-header {
+        position: -webkit-sticky;
+        position: sticky;
+      }
+    {%- endif -%}s
     .header-nav {
         display: flex;
         justify-content: space-between;
@@ -142,7 +154,7 @@
 
 {% endstyle %}
 
-<div  id="pageheader" class="header-nav pageheader pageheader--layout-{{ section.settings.menu_layout }}{% if section.settings.enable_transparent and template.name == 'index' %} pageheader--transparent-permitted pageheader--transparent{% endif %}{% if section.settings.enable_sticky %} pageheader--sticky{% endif %}" >
+<page-header id="pageheader" class="header-nav pageheader pageheader--layout-{{ section.settings.menu_layout }}{% if section.settings.enable_transparent and template.name == 'index' %} pageheader--transparent-permitted pageheader--transparent{% endif %}{% if section.settings.enable_sticky %} pageheader--sticky{% endif %}" >
   <!-- 左侧 Logo -->
   <div id="shoplogo">
     <meta itemprop="url" content="{{ shop.url }}">
@@ -460,7 +472,7 @@
       setTimeout(theme.setInitialHeaderHeightProperty, 0);
     </script>
   {%- endif -%}
-</div>
+</page-header>
 
 {% render 'structured-data-header' %}
 
