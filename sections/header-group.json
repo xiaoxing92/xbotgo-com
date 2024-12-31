@@ -111,7 +111,7 @@
         "transparent_color": "#ffffff",
         "menu_linklist": "header-menu-12-06",
         "menu_layout": "inline-menu-center",
-        "nav_featured_link": "Sale",
+        "nav_featured_link": "",
         "menu_linklist_mobile": "",
         "mobile_expand_with_entire_link": false,
         "enable_mobile_promo_carousel": true,
@@ -120,7 +120,7 @@
         "nav_mob_products_collection": "chameleon",
         "enable_search": true,
         "search_recommendations_title": "",
-        "search_recommendations_menu": "",
+        "search_recommendations_menu": "about-xbotgo",
         "icon_strategy": "icons_only",
         "cart_icon": "basket"
       }
@@ -170,11 +170,11 @@
         "head_not_mob_text": "",
         "head_not_mob_url": ""
       }
-    },
+    }
   },
   "order": [
     "announcement-bar",
     "header",
-    "store-messages",
+    "store-messages"
   ]
 }
