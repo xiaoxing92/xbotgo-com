@@ -121,7 +121,7 @@
 
 {% endstyle %}
 
-<div id="pageheader" class="header-nav">
+<div class="header-nav">
   <!-- 左侧 Logo -->
   <div id="shoplogo">
     <meta itemprop="url" content="{{ shop.url }}">
@@ -169,7 +169,7 @@
   </ul>
 
   <!-- 右侧图标 -->
-  <div class="logo-area__right">
+  <div  id="pageheader" class="logo-area__right">
     <div class="logo-area__right__inner">
       {% if shop.customer_accounts_enabled %}
         {% if customer %}
