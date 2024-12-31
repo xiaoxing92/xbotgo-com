@@ -1114,7 +1114,7 @@
             "nav_title": "Xplore",
             "link_url": "",
             "collection": "",
-            "code": ""
+            "code": "<div class=\"child-item\">\n<span>Blog</span>\n</div>\n<div class=\"child-item\">\n<span>Community</span>\n</div>\n<div class=\"child-item\">\n<span>Affliate Program</span>\n</div>"
           }
         },
         "nav_block_6HwDig": {
@@ -1123,7 +1123,7 @@
             "nav_title": "Support",
             "link_url": "",
             "collection": "",
-            "code": ""
+            "code": "<div class=\"child-item\">\n<span>About Us</span>\n</div>\n<div class=\"child-item\">\n<span>User Guide</span>\n</div>\n<div class=\"child-item\">\n<span>Customer Serivce</span>\n</div>"
           }
         }
       },
@@ -1142,6 +1142,7 @@
         "enable_search": true,
         "search_recommendations_title": "12321",
         "search_recommendations_menu": "about-xbotgo",
+        "menu_layout": "inline-menu-center",
         "icon_strategy": "icons_only",
         "cart_icon": "basket"
       }
