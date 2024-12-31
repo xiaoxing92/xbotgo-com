@@ -679,8 +679,10 @@
     menuContent[1].classList.add('active')
     if(bold){
       menuLayout.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
     }else{
       menuLayout.style.display = 'none';
+      document.body.style.overflow = '';
     }
    
   }
