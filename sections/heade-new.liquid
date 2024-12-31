@@ -103,12 +103,21 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: relative;
         width: 200px;
         height: 200px;
         background: #F8F8F8;
         border-radius: 2px 2px 2px 2px;
         background-color: #F8F8F8;
         margin-right: 10px;
+    }
+
+    .child-item img{
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
     }
     .icons {
         display: flex;
@@ -157,7 +166,7 @@
             <div class="dropdown">
               {% for product in collection.products %}
                 <div class="child-item">
-                  <img src="{{ product.featured_image | img_url: 'large' }}" alt="{{ product.title }}">
+                  <img  src="{{ product.featured_image | img_url: 'large' }}" alt="{{ product.title }}">
                   <p>{{ product.title }}</p>
                 </div>
               {% endfor %}
