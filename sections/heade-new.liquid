@@ -669,14 +669,20 @@
 {% render 'structured-data-header' %}
 
 <script>
+  var bold = false
   function handleClick() {
+    bold  = !bold
     const menuLayout = document.getElementById('menu-layout');
     const menuItems = document.querySelectorAll('.menu-item')
     const menuContent = document.querySelectorAll('.tab-content')
     menuItems[1].classList.add('active')
     menuContent[1].classList.add('active')
-    menuLayout.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
+    if(bold){
+      menuLayout.style.display = 'flex';
+    }else{
+      menuLayout.style.display = 'none';
+    }
+   
   }
   
   document.addEventListener('DOMContentLoaded', () => {
