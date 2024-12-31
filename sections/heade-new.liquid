@@ -103,10 +103,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 130px;
-        height: 130px;
+        width: 200px;
+        height: 200px;
+        background: #F8F8F8;
+        border-radius: 2px 2px 2px 2px;
         background-color: #F8F8F8;
-        border-radius: 10px;
         margin-right: 10px;
     }
     .icons {
@@ -156,7 +157,7 @@
             <div class="dropdown">
               {% for product in collection.products %}
                 <div class="child-item">
-                  <img src="" alt="图片"/>
+                  <img src="{{ product.featured_image | img_url: 'large' }}" alt="{{ product.title }}">
                   <p>{{ product.title }}</p>
                 </div>
               {% endfor %}
