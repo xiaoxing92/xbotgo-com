@@ -1133,15 +1133,14 @@
         "nav_block_37jgEU",
         "nav_block_6HwDig"
       ],
-      "disabled": true,
       "settings": {
         "logo": "shopify://shop_images/XbotGo_Logo_1200.png",
         "logo_img_width_int": 100,
         "mobile_logo_img_width_int": 60,
         "logo_h1": true,
         "enable_search": true,
-        "search_recommendations_title": "12321",
-        "search_recommendations_menu": "about-xbotgo",
+        "search_recommendations_title": "",
+        "search_recommendations_menu": "",
         "menu_layout": "inline-menu-center",
         "icon_strategy": "icons_only",
         "cart_icon": "basket"
