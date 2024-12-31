@@ -55,7 +55,6 @@
         "nav_block_37jgEU",
         "nav_block_6HwDig"
       ],
-      "disabled": true,
       "settings": {
         "logo": "shopify://shop_images/XbotGo_Logo_1200.png",
         "logo_img_width_int": 100,
@@ -1149,7 +1148,6 @@
     }
   },
   "order": [
-    "heade_new_ygqafn",
     "slideshow_tdjCPE",
     "custom_content_Cjmqy6",
     "rich_text_W39bMz",
@@ -1173,6 +1171,7 @@
     "cross-page-promos",
     "image_with_text_E6jeA7",
     "custom_content_6EdQih",
-    "newsletter_CgBFDg"
+    "newsletter_CgBFDg",
+    "heade_new_ygqafn"
   ]
 }
