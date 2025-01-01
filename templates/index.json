@@ -15,6 +15,27 @@
         "image_FLmq79": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/happy_new_year.jpg",
+            "mobile_image": "shopify://shop_images/happy_new_year_1503000f-96a8-45b5-b05c-11edabfc300f.jpg",
+            "slide_link": "shopify://pages/xbotgo-chameleon",
+            "subheading": "",
+            "title": "2025",
+            "heading_max_width": 14,
+            "title_size": 64,
+            "title_size_mobile": 50,
+            "use_h1": false,
+            "text": "<h5>HAPPY NEW YEAR</h5>",
+            "enlarge_text": true,
+            "button_label_1": "Shop Now",
+            "button_url_1": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center left"
+          }
+        },
+        "image_Hrfmfc": {
+          "type": "image",
+          "settings": {
             "image": "shopify://shop_images/Chameleon-banner.png",
             "mobile_image": "shopify://shop_images/1.bannerm.png",
             "slide_link": "shopify://pages/xbotgo-chameleon",
@@ -57,6 +78,7 @@
       },
       "block_order": [
         "image_FLmq79",
+        "image_Hrfmfc",
         "image_neNB7X"
       ],
       "custom_css": [
