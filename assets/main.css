@@ -4205,6 +4205,7 @@ shopify-payment-terms {
   align-items: center;
   flex-wrap: wrap;
   gap:5px;
+  margin-top:10px;
   text-align: end;
 }
 
@@ -4315,6 +4316,7 @@ shopify-payment-terms {
   .cart-form .cart-item {
     padding-top: 40px;
     padding-bottom: 40px;
+
     border-top: 1px solid rgb(var(--text-color)/var(--divider-opacity));
   }
   .cart-form .cart-item-list-heading--price,
