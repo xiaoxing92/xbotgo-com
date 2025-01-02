@@ -87,7 +87,7 @@
                 {{- line_item_discounts -}}
               {%- endunless -%}
             </div>
-            
+
           </div>
 
           {% liquid
@@ -166,14 +166,6 @@
         {%- endif -%}
       </div>
     </div>
-
-
-    {% comment %} {% if cart.discount_code %}
-      <p>已使用优惠券代码: {{ cart.discount_code.code }}</p>
-      <p>优惠金额: {{ cart.discount_code.amount | money }}</p>
-    {% else %}
-      <p>未使用优惠券代码。</p>
-    {% endif %} {% endcomment %}
     
 
     {%- unless drawer -%}
