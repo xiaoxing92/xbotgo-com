@@ -1108,66 +1108,6 @@
         "subheading": "<p>Promotions, new products and sales. Directly to your inbox. </p><p>Join our mailing list to get $20 off your first Xbot order.</p>",
         "color_scheme": "1"
       }
-    },
-    "heade_new_ygqafn": {
-      "type": "heade-new",
-      "blocks": {
-        "nav_block_NTnbgq": {
-          "type": "nav_block",
-          "settings": {
-            "nav_title": "Products",
-            "link_url": "",
-            "collection": "",
-            "code": "<div>\n123\n</div>\n<div>\n21312\n</div>"
-          }
-        },
-        "nav_block_G8TFXP": {
-          "type": "nav_block",
-          "settings": {
-            "nav_title": "Accessories",
-            "link_url": "shopify://collections/accessories",
-            "collection": "accessories",
-            "code": ""
-          }
-        },
-        "nav_block_37jgEU": {
-          "type": "nav_block",
-          "settings": {
-            "nav_title": "Xplore",
-            "link_url": "",
-            "collection": "",
-            "code": "<style>\n.title-black{\nz-index:10;\ncolor:#fff\n}\n</style>\n<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/1_e2d3b6c4-1fb2-40e4-950e-3aabb9694b03.png?v=1735611911\"/ >\n<p class=\"title-black\">Blog</p>\n</div>\n<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/2_ab76c6bb-b3b9-4da1-84b7-c2db5519d41d.png?v=1735611911\"/ >\n<p class=\"title-black\">Community</p>\n</div>\n<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/3_175946d0-c478-4587-8ef0-ae664a9de07d.png?v=1735611911\"/ >\n<p class=\"title-black\">Affliate Program</p>\n</div>"
-          }
-        },
-        "nav_block_6HwDig": {
-          "type": "nav_block",
-          "settings": {
-            "nav_title": "Support",
-            "link_url": "",
-            "collection": "",
-            "code": "</style>\n<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/4-1.png?v=1735615743\"/ >\n<p class=\"title\">About Us</p>\n</div>\n<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/4-2.png?v=1735615743\"/ >\n<p class=\"title\">User Guide </p>\n</div>\n<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/4-3.png?v=1735615743\"/ >\n<p class=\"title\">Customer Service</p>\n</div>"
-          }
-        }
-      },
-      "block_order": [
-        "nav_block_NTnbgq",
-        "nav_block_G8TFXP",
-        "nav_block_37jgEU",
-        "nav_block_6HwDig"
-      ],
-      "disabled": true,
-      "settings": {
-        "logo": "shopify://shop_images/XbotGo_Logo_1200.png",
-        "logo_img_width_int": 100,
-        "mobile_logo_img_width_int": 60,
-        "logo_h1": true,
-        "enable_search": true,
-        "search_recommendations_title": "",
-        "search_recommendations_menu": "",
-        "menu_layout": "inline-menu-center",
-        "icon_strategy": "icons_only",
-        "cart_icon": "basket"
-      }
     }
   },
   "order": [
@@ -1194,7 +1134,6 @@
     "cross-page-promos",
     "image_with_text_E6jeA7",
     "custom_content_6EdQih",
-    "newsletter_CgBFDg",
-    "heade_new_ygqafn"
+    "newsletter_CgBFDg"
   ]
 }

@@ -170,11 +170,72 @@
         "head_not_mob_text": "",
         "head_not_mob_url": ""
       }
+    },
+    "heade_new_VTd79q": {
+      "type": "heade-new",
+      "blocks": {
+        "nav_block_dPK94j": {
+          "type": "nav_block",
+          "settings": {
+            "nav_title": "Products",
+            "link_url": "",
+            "collection": "",
+            "code": "<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/4-2.png?v=1735615743\"/ >\n<p class=\"title\">Chameleon </p>\n</div>\n<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/4-3.png?v=1735615743\"/ >\n<p class=\"title\">Sports Gimbal</p>\n</div>"
+          }
+        },
+        "nav_block_xTnAzM": {
+          "type": "nav_block",
+          "settings": {
+            "nav_title": "Accessories",
+            "link_url": "",
+            "collection": "",
+            "code": ""
+          }
+        },
+        "nav_block_YLYNDH": {
+          "type": "nav_block",
+          "settings": {
+            "nav_title": "Xplore",
+            "link_url": "",
+            "collection": "",
+            "code": "<style>\n.title-black{\nz-index:10;\ncolor:#fff\n}\n</style>\n<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/1_e2d3b6c4-1fb2-40e4-950e-3aabb9694b03.png?v=1735611911\"/ >\n<p class=\"title-black\">Blog</p>\n</div>\n<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/2_ab76c6bb-b3b9-4da1-84b7-c2db5519d41d.png?v=1735611911\"/ >\n<p class=\"title-black\">Community</p>\n</div>\n<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/3_175946d0-c478-4587-8ef0-ae664a9de07d.png?v=1735611911\"/ >\n<p class=\"title-black\">Affliate Program</p>\n</div>"
+          }
+        },
+        "nav_block_KXhjTA": {
+          "type": "nav_block",
+          "settings": {
+            "nav_title": "Support",
+            "link_url": "",
+            "collection": "",
+            "code": "</style>\n<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/4-1.png?v=1735615743\"/ >\n<p class=\"title\">About Us</p>\n</div>\n<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/4-2.png?v=1735615743\"/ >\n<p class=\"title\">User Guide </p>\n</div>\n<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/4-3.png?v=1735615743\"/ >\n<p class=\"title\">Customer Service</p>\n</div>"
+          }
+        }
+      },
+      "block_order": [
+        "nav_block_dPK94j",
+        "nav_block_xTnAzM",
+        "nav_block_YLYNDH",
+        "nav_block_KXhjTA"
+      ],
+      "disabled": true,
+      "settings": {
+        "logo": "shopify://shop_images/logo130.png",
+        "logo_img_width_int": 180,
+        "mobile_logo_img_width_int": 100,
+        "logo_h1": true,
+        "enable_search": true,
+        "search_recommendations_title": "",
+        "search_recommendations_menu": "",
+        "menu_layout": "underneath",
+        "icon_strategy": "icons_only",
+        "cart_icon": "basket"
+      }
     }
   },
   "order": [
     "announcement-bar",
     "header",
-    "store-messages"
+    "store-messages",
+    "heade_new_VTd79q"
   ]
 }
