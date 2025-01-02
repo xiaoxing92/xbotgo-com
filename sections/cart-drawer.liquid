@@ -176,6 +176,19 @@
         <div class="cart-info-block cart-info-block--smb">{{- announcement -}}</div>
       {%- endif -%}
 
+
+
+      {% assign total_discount = 0 %}
+
+      {% for item in cart.items %}
+        {% for allocation in item.line_level_discount_allocations %}
+          {% assign total_discount = total_discount | plus: allocation.amount %}
+        {% endfor %}
+      {% endfor %}
+
+      <p>购物车总折扣金额：{{ total_discount | money }}</p>
+
+
       <div data-merge="footer">
         {% if cart.items != empty %}
           {%- if cart.cart_level_discount_applications != blank -%}
