@@ -4160,7 +4160,7 @@ shopify-payment-terms {
 }
 .cart-item-list-heading,
 .cart-item__column {
-  /* flex-shrink: 0; */
+  flex-shrink: 0;
 }
 
 .cart-item-list-heading {
