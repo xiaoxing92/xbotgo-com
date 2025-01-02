@@ -4242,7 +4242,6 @@ shopify-payment-terms {
 }
 .cart-item__item-discounts .cart-discount {
   display: flex;
-  justify-content: space-between;
   font-size: var(--smaller-text-size-1);
   height: 30px;
   align-items: center;
