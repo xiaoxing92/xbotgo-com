@@ -4244,9 +4244,15 @@ shopify-payment-terms {
   display: flex;
   justify-content: space-between;
   font-size: var(--smaller-text-size-1);
+  height: 30px;
+  align-items: center;
+  background: linear-gradient(to right, #f27b00, #ca251d);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .cart-item__item-discounts .cart-discount-list {
   margin-bottom: 0;
+  background: #F6EBE4;
 }
 
 .buttoned-input {

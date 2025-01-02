@@ -127,7 +127,7 @@
                             <span class="cart-discount__icon">{% render 'icon-label' %}</span>
                             <span class="cart-discount__title">{{ discount_application.title | escape_once }}</span>
                         </span>
-                        <span class="cart-discount__amount theme-money">{{ discount_application.total_allocated_amount | money }}</span>
+                        （<span class="cart-discount__amount theme-money">{{ discount_application.total_allocated_amount | money }}</span>）
                       </li>
                     {%- endfor -%}
                   </ul>
