@@ -4239,6 +4239,7 @@ shopify-payment-terms {
 .cart-item__item-discounts {
   width: 100%;
   text-align: end;
+  background: #EE6D3B;
 }
 .cart-item__item-discounts .cart-discount {
   display: flex;

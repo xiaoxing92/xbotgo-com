@@ -68,10 +68,9 @@
               <div class="price-label price-label--preorder">{{ 'products.product.preorder' | t }}</div>
             {% endif %}
 
-
+            {% assign discount_per_item = item.variant.compare_at_price | minus: item.variant.price %}
             <div class="cart-item__column cart-item__price">
               <span class="theme-money cart-item__selling-price">{{ item.final_price | money }}</span>
-              {% assign discount_per_item = item.variant.compare_at_price | minus: item.variant.price %}
               {% if item.variant.compare_at_price > item.variant.price %}
                 <span class="struck-out-price small-text"><span class="theme-money">{{ item.variant.compare_at_price | money }}</span></span>
               {% elsif item.original_line_price > item.final_line_price %}
@@ -79,15 +78,12 @@
               {% endif %}
               {% if discount_per_item > 0 %}
                 <span class="small-text save-price">Save: <span class="theme-money">{{ discount_per_item | money }}</span></span>
-         
               {% endif %}
               {% render 'unit-price', variant: item %}
-        
               {%- unless drawer -%}
                 {{- line_item_discounts -}}
               {%- endunless -%}
             </div>
-
           </div>
 
           {% liquid
@@ -96,7 +92,6 @@
             else
               assign quantity = item.quantity | at_least: 1
             endif
-      
             if item.variant.inventory_management != blank and item.variant.inventory_policy == 'deny' and item.variant.inventory_quantity <= quantity
               assign can_increase = false
             else
@@ -128,8 +123,6 @@
               {{- 'cart.items.remove' | t -}}
             </a>
           </div>
-
-          
         </div>
 
         {%- if item.variant.inventory_management != blank and item.variant.inventory_quantity > 0 and section.settings.show_inventory_notice != 'never' -%}
