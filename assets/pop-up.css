@@ -68,7 +68,10 @@
 }
 
 .popup-left{
-    width:20%;
+  swidth:45%;
+}
+.popup-right{
+  width:65%
 }
 .popup-left-img{
   width:100%;
