@@ -53,13 +53,6 @@
     "pop-up": {
       "type": "pop-up",
       "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Sign up and save",
-            "heading_size": "h4"
-          }
-        },
         "text": {
           "type": "text",
           "settings": {
@@ -75,7 +68,6 @@
         }
       },
       "block_order": [
-        "heading",
         "text",
         "newsletter-signup"
       ],
@@ -84,11 +76,13 @@
         ".btn {background: linear-gradient(to right, #ca251d, #f27b00); border: none; border-radius: 20px;}"
       ],
       "settings": {
+        "show_logo": true,
         "trigger": "delay",
         "delay": 5,
         "show_to_guests_only": true,
         "show_on_mobile": true,
         "dismiss_days": 30,
+        "left_bg_image": "shopify://shop_images/happy_new_year_1503000f-96a8-45b5-b05c-11edabfc300f.jpg",
         "position": "justify-center items-center",
         "text_align": "text-center",
         "heading_color": "#070707",
