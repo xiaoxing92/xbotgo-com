@@ -2,6 +2,7 @@
 .popup-section .modal__window {
   width: 480px;
   max-width: calc(100vw - var(--gutter) * 2);
+  height:300px;
   overflow-y: auto;
 }
 .popup-section .modal__window--no-image-block {
