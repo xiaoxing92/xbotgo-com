@@ -1,1 +1,103 @@
-{"type":"aside","name":"Overlay Group","sections":{"cart-drawer":{"type":"cart-drawer","settings":{"show_order_note":true,"show_tax_and_shipping":false,"enable_direct_cart":true,"cart_terms_page":"","show_backorder_text":false,"show_inventory_notice":"low","show_inventory_count":"low","inventory_threshold":10,"show_announcement":true,"announcement_position":"above-items","announcement_text":"Cart announcement text","announcement_icon":"box","announcement_icon_size":"small","announcement_enable_box":true,"announcement_box_color":"#e0f4d5","empty_icon":"basket","empty_heading":"Your cart is empty","empty_text":"","empty_button_text":"Start shopping","empty_button_link":"shopify:\/\/collections\/all","empty_button_style":"secondary","empty_enable_custom_colors":true,"empty_color_background":"","empty_color_background_gradient":"","empty_color_text":"#dc6318","enable_cross_sells":false,"cross_sell_title":"You may like","cross_sell_products":["xbotgo-weather-guard-umbrella","xbotgo-t4-tripod-set-aluminum-alloy-13ft"],"enable_automatic_cross_sells":false,"croll_sell_color_scheme":"1"}},"pop-up":{"type":"pop-up","blocks":{"heading":{"type":"heading","settings":{"heading":"Sign up and save","heading_size":"h4"}},"text":{"type":"text","settings":{"text":"<p>Entice customers to sign up for your mailing list with discounts or exclusive offers.<\/p>","text_size":""}},"newsletter-signup":{"type":"newsletter-signup","settings":{"button_style":"primary"}}},"block_order":["heading","text","newsletter-signup"],"disabled":true,"settings":{"trigger":"delay","delay":5,"show_to_guests_only":true,"show_on_mobile":true,"dismiss_days":30,"position":"justify-center items-center","text_align":"text-center","heading_color":"#070707","text_color":"#070707","bg_color":"#ffffff","bg_grad":"","tint_opacity":0}}},"order":["cart-drawer","pop-up"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "aside",
+  "name": "Overlay Group",
+  "sections": {
+    "cart-drawer": {
+      "type": "cart-drawer",
+      "settings": {
+        "show_order_note": true,
+        "show_tax_and_shipping": false,
+        "enable_direct_cart": true,
+        "cart_terms_page": "",
+        "show_backorder_text": false,
+        "show_inventory_notice": "low",
+        "show_inventory_count": "low",
+        "inventory_threshold": 10,
+        "show_announcement": true,
+        "announcement_position": "above-items",
+        "announcement_text": "Cart announcement text",
+        "announcement_icon": "box",
+        "announcement_icon_size": "small",
+        "announcement_enable_box": true,
+        "announcement_box_color": "#e0f4d5",
+        "empty_icon": "basket",
+        "empty_heading": "Your cart is empty",
+        "empty_text": "",
+        "empty_button_text": "Start shopping",
+        "empty_button_link": "shopify://collections/all",
+        "empty_button_style": "secondary",
+        "empty_enable_custom_colors": true,
+        "empty_color_background": "",
+        "empty_color_background_gradient": "",
+        "empty_color_text": "#dc6318",
+        "enable_cross_sells": false,
+        "cross_sell_title": "You may like",
+        "cross_sell_products": [
+          "xbotgo-weather-guard-umbrella",
+          "xbotgo-t4-tripod-set-aluminum-alloy-13ft"
+        ],
+        "enable_automatic_cross_sells": false,
+        "croll_sell_color_scheme": "1",
+        "code": "<style>\n    .cart-wrap{\n        display: flex;\n        flex-direction: column;\npadding:0 20px;\n    }\n    .cart-sidebar-view{\n        display: flex;\n        gap:10px;\n        justify-content: center;\n    }\n    .view-item{\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        font-size: 11px;\n    }\n    .view-item span{\n        text-align: center;\n        margin-top: 10px;\n    }\n    .pay-your-way{\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        margin: 20px 0;\n        font-size: 11px;\n    }\n.pay-your-way img{\nwidth:100%;\nmargin-top:10px\n}\n</style>\n<div class=\"cart-wrap\">\n    <div class=\"cart-sidebar-view\">\n        <div class=\"view-item\">\n            <img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/2b524494e20dcb27c79138352f255e47.png?v=1735871474\"/>\n            <span>30 - Day Hassle Free Return</span>\n        </div>\n        <div class=\"view-item\">\n            <img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/ed0b50f042c215ea17013ba5f03dfcc7.png?v=1735871474\"/>\n            <span>Global Customer Support </span>\n        </div>\n        <div class=\"view-item\">\n            <img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/25f7c811e1a238f7a9d4ef81a863fca9.png?v=1735871474\"/>\n            <span>Secure Payments</span>\n        </div>\n    </div>\n    <div class=\"pay-your-way\">\n        <span>Pay your way</span>\n        <img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/836538ecf9f038e94b8484131181e0ad.png?v=1735872917\"/>\n    </div>\n</div>"
+      }
+    },
+    "pop-up": {
+      "type": "pop-up",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sign up and save",
+            "heading_size": "h4"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers.</p>",
+            "text_size": ""
+          }
+        },
+        "newsletter-signup": {
+          "type": "newsletter-signup",
+          "settings": {
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "newsletter-signup"
+      ],
+      "disabled": true,
+      "settings": {
+        "trigger": "delay",
+        "delay": 5,
+        "show_to_guests_only": true,
+        "show_on_mobile": true,
+        "dismiss_days": 30,
+        "position": "justify-center items-center",
+        "text_align": "text-center",
+        "heading_color": "#070707",
+        "text_color": "#070707",
+        "bg_color": "#ffffff",
+        "bg_grad": "",
+        "tint_opacity": 0
+      }
+    }
+  },
+  "order": [
+    "cart-drawer",
+    "pop-up"
+  ]
+}
