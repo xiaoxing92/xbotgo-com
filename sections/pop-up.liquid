@@ -85,7 +85,10 @@
             data-mode="{{ section.settings.mode }}"
             data-show-on-mobile="{{ section.settings.show_on_mobile }}">
       <div class="modal__window{% if popup_image == false %} modal__window--no-image-block{% endif %} flex relative text-start has-motion{% if image_block != blank %} flex flex-col{% if popup_image_position == 'left' %} md:flex-row modal__window--side-image{% endif %}{% if popup_image_position == 'right' %} md:flex-row-reverse modal__window--side-image{% endif %}{% endif %}" role="dialog" aria-labelledby="{{ section.id }}-heading" aria-modal="true" tabindex="-1">
- 
+        <button type="button" class="modal__close-btn absolute js-close-modal">
+          {% render 'icon-close' %}
+          <span class="visually-hidden">{{ 'accessibility.close' | t }}</span>
+        </button>
         {%- if image_block != blank -%}
           <div class="modal__image img-fill {{ popup_image_position }} {% if popup_image_mobile == 'hidden' %}desktop-only{% endif %}">
             {%- if popup_image != false -%}
