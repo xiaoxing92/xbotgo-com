@@ -171,6 +171,8 @@
       </div>
     </div>
 
+
+    
     <div class="cart-drawer__footer{% if cart.items == empty %} cart-drawer__footer--hidden{% endif %}" data-merge-attributes="footer-container">
       {%- if section.settings.announcement_position == 'above-subtotal' -%}
         <div class="cart-info-block cart-info-block--smb">{{- announcement -}}</div>
@@ -746,6 +748,11 @@
           "label": "2"
         }
       ]
+    },
+    {
+      "type": "liquid",
+      "id": "code",
+      "label": "Liquid code"
     }
   ]
 }
