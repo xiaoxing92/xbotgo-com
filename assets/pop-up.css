@@ -83,6 +83,9 @@
   right:10px;
   color:#B2B2B2;
 }
+.popup-logo{
+  margin: 10px 10px 10px 0;
+}
 @media (min-width: 768px) {
   .popup-section .modal__window {
     width: 640px;
