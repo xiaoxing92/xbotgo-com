@@ -8646,13 +8646,17 @@ carousel-slider[inactive] .slider-nav__btn {
 }
 .email-box{
   position: relative;
+  margin-bottom:10px;
 }
 .email-icon{
-  wdith:100px;
-  height:100px;
+  width:100px;
+  height:100%;
   background:#000;
   position: absolute;
   left:0;
+}
+.custom-email-input{
+  text-align: center;
 }
 @media (max-width: 767.98px) {
   .signup-form__inline-container {
