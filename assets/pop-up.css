@@ -71,7 +71,8 @@
   width:45%;
 }
 .popup-right{
-  width:55%
+  width:55%;
+  padding: 20px 30px;
 }
 .popup-left-img{
   width:100%;
