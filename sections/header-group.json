@@ -180,7 +180,7 @@
             "nav_title": "Products",
             "link_url": "",
             "collection": "",
-            "code": "<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/50c499ce9e946faaeedad202e667d328_7b7b8471-1296-40f4-9986-4a7a7c0c77a1.png?v=1735784598\"/>\n<span class=\"title\">Chameleon</span>\n</div>\n<div class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/bd75a052c60d56be46e7156b2f4d3f00_11b71c86-cd4e-433d-a56b-62da012dc5a3.png?v=1735784604\"/>\n<span class=\"title\">Sports Gimbal</span>\n</div>"
+            "code": "<a class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/50c499ce9e946faaeedad202e667d328_7b7b8471-1296-40f4-9986-4a7a7c0c77a1.png?v=1735784598\"/>\n<span class=\"title\">Chameleon</span>\n</a>\n<a class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/bd75a052c60d56be46e7156b2f4d3f00_11b71c86-cd4e-433d-a56b-62da012dc5a3.png?v=1735784604\"/>\n<span class=\"title\">Sports Gimbal</span>\n</a>"
           }
         },
         "nav_block_TgCera": {
