@@ -104,7 +104,9 @@
             {%- endif -%}
           </div>
         {%- endif -%}
-        <div class="left-img">123123</div>
+        <div class="left-img">
+          <img class="popup-left-img" src="{{ section.settings.left_bg_image |img_url: '1024x1024'  }}" />
+        </div>
         <div class="flex-auto relative {{ section.settings.text_align }}">
           {%- if section.settings.bg_image != blank -%}
             <div class="popup-section__background-image img-fill absolute top-0 left-0 h-full w-full">
@@ -281,6 +283,11 @@
     {
       "type": "header",
       "content": "Layout"
+    },
+    {
+      "type": "image_picker",
+      "id": "left_bg_image",
+      "label": "Left Image",
     },
     {
       "type": "select",
