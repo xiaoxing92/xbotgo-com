@@ -63,7 +63,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers.</p>",
+            "text": "<p><strong>Get Exclusive Updates and Special Offers on XbotGo</strong></p>",
             "text_size": ""
           }
         },
@@ -80,6 +80,9 @@
         "newsletter-signup"
       ],
       "disabled": true,
+      "custom_css": [
+        ".btn {background: linear-gradient(to right, #ca251d, #f27b00); border: none; border-radius: 20px;}"
+      ],
       "settings": {
         "trigger": "delay",
         "delay": 5,
