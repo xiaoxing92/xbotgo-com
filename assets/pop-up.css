@@ -35,7 +35,7 @@
   max-width: none;
 }
 .popup-section .signup-form {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 .popup-section .modal__content:not(:last-child) .signup-form {
   margin-bottom: 25px;
@@ -71,6 +71,9 @@
   width:45%;
 }
 .popup-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width:55%;
   padding: 20px 30px;
 }
