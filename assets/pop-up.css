@@ -80,7 +80,7 @@
 }
 .close-btn{
   top:0;
-  left:0;
+  right:0;
   color:#B2B2B2;
 }
 @media (min-width: 768px) {
