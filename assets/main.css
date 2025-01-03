@@ -8649,7 +8649,9 @@ carousel-slider[inactive] .slider-nav__btn {
   margin-bottom:10px;
 }
 .email-icon{
-  width:100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height:100%;
   background:#000;
   position: absolute;
