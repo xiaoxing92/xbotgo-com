@@ -108,7 +108,7 @@
         <div class="popup-left">
           <img class="popup-left-img" src="{{ section.settings.left_bg_image |img_url: '1024x1024'  }}" />
         </div>
-        <div class="flex-auto relative {{ section.settings.text_align }}">
+        <div class="popup-right flex-auto relative {{ section.settings.text_align }}">
           {%- if section.settings.bg_image != blank -%}
             <div class="popup-section__background-image img-fill absolute top-0 left-0 h-full w-full">
               {% render 'image',
