@@ -8637,12 +8637,20 @@ carousel-slider[inactive] .slider-nav__btn {
 
 .signup-form__inline-container {
   display: inline-flex;
+  position: relative;
 }
 .signup-form__inline-container input {
   width: 300px;
 }
 .signup-form__inline-container button {
   margin-inline-start: 10px;
+}
+.email-icon{
+  wdith:100px;
+  height:100px;
+  background:#000;
+  position: absolute;
+  left:0;
 }
 @media (max-width: 767.98px) {
   .signup-form__inline-container {
