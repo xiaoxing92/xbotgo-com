@@ -8637,13 +8637,15 @@ carousel-slider[inactive] .slider-nav__btn {
 
 .signup-form__inline-container {
   display: inline-flex;
-  position: relative;
 }
 .signup-form__inline-container input {
   width: 300px;
 }
 .signup-form__inline-container button {
   margin-inline-start: 10px;
+}
+.email-box{
+  position: relative;
 }
 .email-icon{
   wdith:100px;

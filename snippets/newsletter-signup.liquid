@@ -8,7 +8,10 @@
       {%- assign form_errors_id = section.id | append: '-error' -%}
       {%- render 'form-errors', form: form, id: form_errors_id -%}
       <input type="hidden" name="contact[tags]" value="prospect,newsletter"/>
-      <p>
+      <div class="email-box">
+        <div class="email-icon">
+          email
+        </div>
         <input type="email"
           placeholder="{{ 'newsletter.placeholder' | t }}"
           class="signup-form__email"
@@ -21,7 +24,7 @@
             aria-describedby="{{ form_errors_id }}"
           {%- endif %}
           required />
-      </p>
+        </div>
       <button class="btn btn--{{ block.settings.button_style }} signup-form__button" type="submit">
         {{- 'newsletter.button_label' | t -}}
       </button>
