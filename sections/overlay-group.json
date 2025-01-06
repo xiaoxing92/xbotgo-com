@@ -13,6 +13,9 @@
   "sections": {
     "cart-drawer": {
       "type": "cart-drawer",
+      "custom_css": [
+        ".light-text{background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent;}"
+      ],
       "settings": {
         "show_order_note": true,
         "show_tax_and_shipping": false,

@@ -2058,8 +2058,6 @@ cart-drawer {
 }
 .light-text{
   background: linear-gradient(to right, #f27b00, #ca251d);
-  -webkit-background-clip: text;
-  color: transparent;
 }
 .cart-drawer__empty-content .drawer__close-btn {
   position: absolute;
