@@ -10093,7 +10093,7 @@ ul.inline li {
   display: flex;
   align-items: center;
   margin-inline-end: 1em;
-  padding-left:2em;
+  padding-left:1em;
 }
 
 /** Forms **/
