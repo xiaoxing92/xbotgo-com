@@ -207,7 +207,7 @@
             "nav_title": "Support",
             "link_url": "",
             "collection": "",
-            "code": "<a href=\"https://xbotgo.com/pages/about-us\" class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/4-1.png?v=1735615743\"/>\n<span class=\"title\">About Us</span>\n</a>\n<a href=\"\" class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/4-2.png?v=1735615743\"/>\n<span class=\"title\">User Guide</span>\n</a>\n<a href=\"\" class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/4-3.png?v=1735615743\"/>\n<span class=\"title\">Customer Service</span>\n</a>"
+            "code": "<a href=\"https://xbotgo.com/pages/about-us\" class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/4-1.png?v=1735615743\"/>\n<span class=\"title\">About Us</span>\n</a>\n<a href=\"https://xbotgo.com/pages/how-to-use\" class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/4-2.png?v=1735615743\"/>\n<span class=\"title\">User Guide</span>\n</a>\n<a href=\"https://xbotgosupport.zendesk.com/hc/en-us\" class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/4-3.png?v=1735615743\"/>\n<span class=\"title\">Customer Service</span>\n</a>"
           }
         }
       },
