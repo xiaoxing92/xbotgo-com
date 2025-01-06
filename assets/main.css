@@ -2389,11 +2389,6 @@ main-navigation {
   .pageheader--layout-inline-permitted .logo-area__left__inner .show-search-link {
     display: none;
   }
-  .logo-area__right .show-search-link {
-    display: none;
-    margin-inline-end: 20px;
-  }
-  
   .pageheader--layout-inline-permitted .logo-area__right .show-search-link {
     display: flex;
     align-items: center;
@@ -3383,10 +3378,10 @@ body:not(.reveal-mobile-nav) .mobile-navigation-drawer .mobile-navigation-drawer
   flex: 0 0 auto;
   white-space: nowrap;
 }
-/* .logo-area__right .show-search-link {
+.logo-area__right .show-search-link {
   display: none;
   margin-inline-end: 20px;
-} */
+}
 
 .show-search-link__icon {
   margin: 0 0 2px;
