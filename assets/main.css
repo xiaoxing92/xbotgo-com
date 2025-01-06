@@ -10090,6 +10090,8 @@ ul.inline li {
 }
 
 .cart-discount--inline .cart-discount__label {
+  display: flex;
+  align-items: center;
   margin-inline-end: 1em;
   padding-left:2em;
 }
