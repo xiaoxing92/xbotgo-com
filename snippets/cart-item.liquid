@@ -181,7 +181,7 @@
                  <img class="label-icon" src="https://cdn.shopify.com/s/files/1/0637/2740/3230/files/d5e3d65c279ecfec5b550b1eb82ba462.png?v=1736159041"/>
                 <span class="cart-discount__title">{{ discount_allocation.discount_application.title | escape_once }}</span>
             </span>
-            <span class="cart-discount__amount theme-money">{{ discount_allocation.amount | money }}</span>
+            <span class="cart-discount__amount theme-money">（{{ discount_allocation.amount | money }}）</span>
           </li>
         {% endfor %}
         </ul>
