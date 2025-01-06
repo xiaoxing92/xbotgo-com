@@ -180,11 +180,15 @@
         <div class="discount-info">
           <div class="discount-info-item">
            <span>Have a Discount Code?</span>
-           <span class="light-text">Apply Code</span>
+           <h6 class="light-text">Apply Code
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#D28B76">
+              <path d="M12 16L6 10h12l-6 6z"></path>
+            </svg>
+           </h6>
           </div>
           <div class="discount-info-item">
             <span>Discount Applied:</span>
-            <span class="light-text">{{ cart.total_discount| money  }}</span>
+            <h6 class="light-text">{{ cart.total_discount| money  }}</h6>
           </div>
         </div>
       {%- endif -%}
