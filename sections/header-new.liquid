@@ -342,14 +342,9 @@
         {% endif %}
 
         {% if section.settings.enable_search %}
-          <a class='show-search-link' href='{{ routes.search_url }}'>
-            <span class='show-search-link__text {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}'>
-              {{- 'sections.header.search' | t -}}
-            </span>
-            <span class='show-search-link__icon'>
-              {%- render 'icon-search' -%}
-            </span>
-          </a>
+          <span class='show-search-link__icon'>
+            {%- render 'icon-search' -%}
+          </span>
         {% endif %}
 
         {%- liquid
