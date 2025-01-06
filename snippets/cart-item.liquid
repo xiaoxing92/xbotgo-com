@@ -178,8 +178,7 @@
         {% for discount_allocation in item.line_level_discount_allocations %}
           <li class="cart-discount cart-discount--inline">
             <span class="cart-discount__label">
-               
-                 <img src="https://cdn.shopify.com/s/files/1/0637/2740/3230/files/d5e3d65c279ecfec5b550b1eb82ba462.png?v=1736159041"/>
+                 <img class="label-icon" src="https://cdn.shopify.com/s/files/1/0637/2740/3230/files/d5e3d65c279ecfec5b550b1eb82ba462.png?v=1736159041"/>
                 <span class="cart-discount__title">{{ discount_allocation.discount_application.title | escape_once }}</span>
             </span>
             <span class="cart-discount__amount theme-money">{{ discount_allocation.amount | money }}</span>
@@ -188,6 +187,12 @@
         </ul>
       </div>
     {% endif %}
-
   </div>
 </div>
+<style>
+  .label-icon{
+    width: 11px;
+    height: 12px;
+    margin-right:10px;
+  }
+</style>

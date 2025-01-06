@@ -10091,6 +10091,7 @@ ul.inline li {
 
 .cart-discount--inline .cart-discount__label {
   margin-inline-end: 1em;
+  padding-left:2em;
 }
 
 /** Forms **/
