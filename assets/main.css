@@ -2038,6 +2038,11 @@ cart-drawer {
   margin-bottom: 2px;
 }
 
+.discount-info-item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
 .cart-drawer__empty-content {
   display: flex;
   position: absolute;
@@ -2050,6 +2055,9 @@ cart-drawer {
   justify-content: center;
   height: 100%;
   transition: opacity 0.5s;
+}
+.light-text{
+  background: linear-gradient(to right, #f27b00, #ca251d);
 }
 .cart-drawer__empty-content .drawer__close-btn {
   position: absolute;

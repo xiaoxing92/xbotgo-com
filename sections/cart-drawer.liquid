@@ -176,7 +176,19 @@
         <div class="cart-info-block cart-info-block--smb">{{- announcement -}}</div>
       {%- endif -%}
       <div data-merge="footer">
-        <p>总折扣金额：{{ cart.total_discount | money }}</p>
+        {%- if  cart.total_discount >0  -%}
+        <div class="discount-info">
+          <div class="discount-info-item">
+           <span>Have a Discount Code?</span>
+           <span class="light-text">Apply Code</span>
+          </div>
+          <div class="discount-info-item">
+            <span>Discount Applied:</span>
+            <span class="light-text">{{ cart.total_discount| money  }}</span>
+          </div>
+        </div>
+      {%- endif -%}
+        
         {% if cart.items != empty %}
           {%- if cart.cart_level_discount_applications != blank -%}
             <ul class="cart-discount-list">
