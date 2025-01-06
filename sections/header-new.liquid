@@ -175,14 +175,17 @@
     .title{
       font-size:12px;
     }
-  #menu-layout {
-      width: 100%;
-      height: 100%;
-      position: fixed;
-      top: 100px;
-      left: 0;
-      background: #fff;
-  }
+    .pageheader--layout-inline-permitted .logo-area__right .show-search-link{
+      display:flex;
+    }
+    #menu-layout {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 100px;
+        left: 0;
+        background: #fff;
+    }
 
     .sidebar {
       width: 105px;
@@ -342,9 +345,14 @@
         {% endif %}
 
         {% if section.settings.enable_search %}
-          <span class='show-search-link__icon'>
-            {%- render 'icon-search' -%}
-          </span>
+          <a class='show-search-link' href='{{ routes.search_url }}'>
+            <span class='show-search-link__text {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}'>
+              {{- 'sections.header.search' | t -}}
+            </span>
+            <span class='show-search-link__icon'>
+              {%- render 'icon-search' -%}
+            </span>
+          </a>
         {% endif %}
 
         {%- liquid
