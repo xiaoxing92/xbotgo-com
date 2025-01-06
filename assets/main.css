@@ -4256,6 +4256,7 @@ shopify-payment-terms {
   background: linear-gradient(to right, #f27b00, #ca251d);
   -webkit-background-clip: text;
   color: transparent;
+  font-weight: bold;
 }
 .cart-item__item-discounts .cart-discount-list {
   margin-bottom: 0;
