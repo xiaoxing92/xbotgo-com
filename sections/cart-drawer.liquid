@@ -176,7 +176,7 @@
         <div class="cart-info-block cart-info-block--smb">{{- announcement -}}</div>
       {%- endif -%}
       <div data-merge="footer">
-        <p>总折扣金额：{{ cart.total_discount | money }}</p>
+
         {% if cart.items != empty %}
           {%- if cart.cart_level_discount_applications != blank -%}
             <ul class="cart-discount-list">
