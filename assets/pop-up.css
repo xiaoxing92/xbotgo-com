@@ -108,4 +108,15 @@
   .popup-section .modal__window.flex-col .media__placeholder {
     position: relative;
   }
+  .popup-left{
+    width:100%;
+    height:300px;
+  }
+  .popup-right{
+    width:100%;
+  }
+  .modal__window{
+    display: flex;
+    flex-direction: column;
+  }
 }
