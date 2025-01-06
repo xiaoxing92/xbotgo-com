@@ -226,7 +226,7 @@
         "enable_search": true,
         "search_recommendations_title": "",
         "search_recommendations_menu": "",
-        "menu_layout": "underneath",
+        "menu_layout": "inline-menu-center",
         "icon_strategy": "icons_only",
         "cart_icon": "basket"
       }
