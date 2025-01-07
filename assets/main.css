@@ -5518,7 +5518,8 @@ input[type=text].main-search__input {
   font-size: 11px;
 }
 .pay-your-way--hidden{
-  display:none;
+  visibility: hidden;
+  opacity: 0;
 }
 .pay-your-title{
   margin-bottom:10px;
