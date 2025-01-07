@@ -49,7 +49,6 @@ if (!customElements.get('pop-up')) {
           document.addEventListener('shopify:section:deselect', this.close.bind(this));
         } else if (!getCookie(this.cookie) && (this.dataset.showOnMobile === 'true'
           || theme.mediaMatches.md)) {
-            console.log(document.URL , this.dataset.url,"@@@@@@@@@@@@@")
           if (this.dataset.url) {
             if (document.URL === this.dataset.url) {
               if (this.querySelector('.alert')) {
