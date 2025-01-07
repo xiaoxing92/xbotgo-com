@@ -80,7 +80,7 @@
       "settings": {
         "show_logo": false,
         "trigger": "delay",
-        "delay": 0,
+        "delay": 3,
         "show_to_guests_only": true,
         "show_on_mobile": true,
         "dismiss_days": 30,
