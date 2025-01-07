@@ -50,7 +50,8 @@ if (!customElements.get('pop-up')) {
         } else if (!getCookie(this.cookie) && (this.dataset.showOnMobile === 'true'
           || theme.mediaMatches.md)) {
           if (this.dataset.URL) {
-            if (document.URL === 'this.dataset.URL') {
+            console.log((document.URL , this.dataset.URL,"@@@@@@@@@@@@@")
+            if (document.URL === this.dataset.URL) {
               if (this.querySelector('.alert')) {
                 this.open();
               } else if (this.dataset.trigger === 'delay') {
