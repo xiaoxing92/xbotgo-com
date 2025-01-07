@@ -49,13 +49,26 @@ if (!customElements.get('pop-up')) {
           document.addEventListener('shopify:section:deselect', this.close.bind(this));
         } else if (!getCookie(this.cookie) && (this.dataset.showOnMobile === 'true'
           || theme.mediaMatches.md)) {
-          if (this.querySelector('.alert')) {
-            this.open();
-          } else if (this.dataset.trigger === 'delay') {
-            setTimeout(() => this.open(), Number(this.dataset.delay) * 1000);
-          } else if (this.dataset.trigger === 'exit' && theme.mediaMatches.md) {
-            this.mouseLeaveHandler = this.mouseLeaveHandler || this.handleMouseLeave.bind(this);
-            document.body.addEventListener('mouseleave', this.mouseLeaveHandler);
+          if (this.dataset.URL) {
+            if (document.URL === 'this.dataset.URL') {
+              if (this.querySelector('.alert')) {
+                this.open();
+              } else if (this.dataset.trigger === 'delay') {
+                setTimeout(() => this.open(), Number(this.dataset.delay) * 1000);
+              } else if (this.dataset.trigger === 'exit' && theme.mediaMatches.md) {
+                this.mouseLeaveHandler = this.mouseLeaveHandler || this.handleMouseLeave.bind(this);
+                document.body.addEventListener('mouseleave', this.mouseLeaveHandler);
+              }
+            }
+          } else {
+            if (this.querySelector('.alert')) {
+              this.open();
+            } else if (this.dataset.trigger === 'delay') {
+              setTimeout(() => this.open(), Number(this.dataset.delay) * 1000);
+            } else if (this.dataset.trigger === 'exit' && theme.mediaMatches.md) {
+              this.mouseLeaveHandler = this.mouseLeaveHandler || this.handleMouseLeave.bind(this);
+              document.body.addEventListener('mouseleave', this.mouseLeaveHandler);
+            }
           }
         }
       }
