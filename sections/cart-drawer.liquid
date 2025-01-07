@@ -71,11 +71,11 @@
           </div>
         {%- endif -%}
 
-        {%- if section.settings.announcement_position == 'above-items' -%}
+        {% comment %} {%- if section.settings.announcement_position == 'above-items' -%}
           <div class="cart-drawer__content-item">
             <div class="cart-info-block cart-info-block--lmtb">{{- announcement -}}</div>
           </div>
-        {%- endif -%}
+        {%- endif -%} {% endcomment %}
 
         <div class="cart-item-list cart-drawer__content-item">
           <div class="cart-item-list__body" data-merge-list="cart-items">
@@ -91,11 +91,11 @@
           </div>
         </div>
 
-        {%- if section.settings.announcement_position == 'below-items' -%}
+        {% comment %} {%- if section.settings.announcement_position == 'below-items' -%}
           <div class="cart-drawer__content-item">
             <div class="cart-info-block cart-info-block--lmtb">{{- announcement -}}</div>
           </div>
-        {%- endif -%}
+        {%- endif -%} {% endcomment %}
       </div>
 
       <div data-merge="cross-sells" data-merge-cache="{% if cart.items == blank %}blank{% else %}{{ cart.items.first.product.id }}{% endif %}">
@@ -171,20 +171,25 @@
       </div>
     </div>
     <div class="cart-sidebar-view">{{ section.settings.code }}</div>
-    {% comment %} {% for type in shop.enabled_payment_types %}
-      {{ type | payment_type_svg_tag: class: 'section-footer__payment-icon' }}
-    {% endfor %} {% endcomment %}
+    <div class="pay-your-way">
+      <span class="pay-your-title">Pay your way</span>
+    <div class="pay-icon-wrap">
+      {% for type in shop.enabled_payment_types %}
+        {{ type | payment_type_svg_tag: class: 'section-footer__payment-icon' }}
+      {% endfor %}
+    </div>
+  </div>
     <div class="cart-drawer__footer{% if cart.items == empty %} cart-drawer__footer--hidden{% endif %}" data-merge-attributes="footer-container">
-      {%- if section.settings.announcement_position == 'above-subtotal' -%}
+      {% comment %} {%- if section.settings.announcement_position == 'above-subtotal' -%}
         <div class="cart-info-block cart-info-block--smb">{{- announcement -}}</div>
-      {%- endif -%}
+      {%- endif -%} {% endcomment %}
       <div data-merge="footer">
         {%- if  cart.total_discount > 0 -%}
         <div class="discount-info">
-          <div class="discount-info-item">
+          {% comment %} <div class="discount-info-item">
            <span>Have a Discount Code?</span>
            <span class="light-text">Apply Code</span>
-          </div>
+          </div> {% endcomment %}
           <div class="discount-info-item">
             <span>Discount Applied:</span>
             <span class="light-text">-{{ cart.total_discount| money  }}</span>
@@ -259,9 +264,9 @@
         {% endif %}
       </div>
 
-      {%- if section.settings.announcement_position == 'below-checkout' -%}
+      {% comment %} {%- if section.settings.announcement_position == 'below-checkout' -%}
         <div class="cart-info-block cart-info-block--smt">{{- announcement -}}</div>
-      {%- endif -%}
+      {%- endif -%} {% endcomment %}
     </div>
 
     <div

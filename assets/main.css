@@ -5510,6 +5510,20 @@ input[type=text].main-search__input {
   font-size: var(--smaller-text-size-1);
   line-height: 1.4em;
 }
+.pay-your-way{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 11px;
+}
+.pay-your-title{
+  margin-bottom:10px;
+}
+.pay-icon-wrap{
+  display: flex;
+  gap:5px;
+}
 @media (min-width: 768px) {
   .section-footer__row-lower {
     flex-wrap: nowrap;
