@@ -1,0 +1,123 @@
+{% schema %}
+{
+  "name": "Dynamic Tabs",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        {
+          "id": "tab_title",
+          "type": "text",
+          "label": "Tab Title"
+        },
+        {
+          "id": "tab_content",
+          "type": "textarea",
+          "label": "Tab Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Dynamic Tabs"
+    }
+  ]
+}
+{% endschema %}
+
+<section id='section-id-{{ section.id }}' class='gimbal-section'>
+  <ul class='tab-links'>
+    {% for block in section.blocks %}
+      <li
+        class='tab-button {% if forloop.first %}active{% endif %}'
+        data-tab='tab{{ block.id }}'
+      >
+        {{ block.settings.tab_title }}
+      </li>
+    {% endfor %}
+  </ul>
+  <div class='tab-content'>
+    {% for block in section.blocks %}
+      <div
+        id='tab{{ block.id }}'
+        class='tab {% if forloop.first %}active{% endif %}'
+      >
+        {{ block.settings.tab_content }}
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll('.tab-links li')
+    const contents = document.querySelectorAll('.tab')
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', function () {
+        const target = this.getAttribute('data-tab')
+
+        // 切换选项卡激活状态
+        tabs.forEach((t) => t.classList.remove('active'))
+        this.classList.add('active')
+
+        // 切换内容区域激活状态
+        contents.forEach((content) => {
+          if (content.id === target) {
+            content.classList.add('active')
+          } else {
+            content.classList.remove('active')
+          }
+        })
+      })
+    })
+  })
+</script>
+
+<style>
+  .tabs {
+    display: inline-block;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .tab-button {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+
+  .tab-button.active {
+    color: #fff;
+    background-color: #000;
+    border-radius: 20px;
+  }
+
+  .tab-content {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .tab {
+    position: absolute;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    width: 100%;
+  }
+
+  .tab.active {
+    opacity: 1;
+    transform: translateX(0);
+    position: relative;
+  }
+</style>
