@@ -271,24 +271,51 @@
     </div>
 
     <!-- 左侧 Logo -->
-    <div id='shoplogo'>
-      <meta itemprop='url' content='{{ shop.url }}'>
-      <meta itemprop='name' content='{{ shop.name }}'>
-      {%- if section.settings.logo != blank -%}
-        <h1 class='logo' itemscope itemtype='http://schema.org/Organization'>
-          {%- assign logo_width_x2 = section.settings.logo_img_width_int | times: 2 -%}
-          <img
-            src='{{ section.settings.logo | image_url: width: logo_width_x2 }}'
-            alt='{{ section.settings.logo.alt | escape }}'
-            itemprop='logo'
-            width='{{ section.settings.logo.width }}'
-            height='{{ section.settings.logo.height }}'
-            loading='eager'
-          >
-        </h1>
-      {%- else -%}
-        <h1 class='logotext'>{{ shop.name }}</h1>
-      {%- endif -%}
+    <div class="logo-area__middle logo-area__middle--logo-{% if section.settings.logo != blank %}image{% else %}text{% endif %}">
+      <div class="logo-area__middle__inner">
+        <div class="logo">
+          {%- if request.page_type == 'index' and section.settings.logo_h1 -%}
+            <h1 class="logo__h1">
+          {%- endif -%}
+
+          <a class="logo__link" href="{{ routes.root_url }}" title="{{ shop.name }}">
+            {%- if section.settings.logo != blank -%}
+              {%- assign logo_width_x2 = section.settings.logo_img_width_int | times: 2 -%}
+              <img
+                class="logo__image"
+                src="{{ section.settings.logo | image_url: width: logo_width_x2 }}"
+                alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+                itemprop="logo"
+                width="{{ section.settings.logo.width }}"
+                height="{{ section.settings.logo.height }}"
+                loading="eager"
+              >
+
+              {%- if section.settings.enable_transparent
+                and template.name == 'index'
+                and section.settings.transparent_logo != blank
+              -%}
+                <img
+                  class="logo__image-transparent"
+                  src="{{ section.settings.transparent_logo | image_url: width: logo_width_x2 }}"
+                  alt="{{ section.settings.transparent_logo.alt | escape }}"
+                  width="{{ section.settings.transparent_logo.width }}"
+                  height="{{ section.settings.transparent_logo.height }}"
+                  aria-hidden="true"
+                  loading="eager"
+                >
+              {%- endif -%}
+
+            {%- else -%}
+              <span class="logotext">{{ shop.name }}</span>
+            {%- endif -%}
+          </a>
+
+          {%- if request.page_type == 'index' and section.settings.logo_h1 -%}
+            </h1>
+          {%- endif -%}
+        </div>
+      </div>
     </div>
 
     <!-- 中间导航菜单 -->
