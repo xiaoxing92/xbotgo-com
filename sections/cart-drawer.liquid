@@ -184,20 +184,19 @@
         <div class="cart-info-block cart-info-block--smb">{{- announcement -}}</div>
       {%- endif -%} {% endcomment %}
       <div data-merge="footer">
-        {%- if  cart.total_discount > 0 -%}
-        <div class="discount-info">
-          {% comment %} <div class="discount-info-item">
-           <span>Have a Discount Code?</span>
-           <span class="light-text">Apply Code</span>
-          </div> {% endcomment %}
-          <div class="discount-info-item">
-            <span>Discount Applied:</span>
-            <span class="light-text">-{{ cart.total_discount| money  }}</span>
-          </div>
-        </div>
-      {%- endif -%}
-        
         {% if cart.items != empty %}
+          {%- if  cart.total_discount > 0 -%}
+            <div class="discount-info">
+              {% comment %} <div class="discount-info-item">
+               <span>Have a Discount Code?</span>
+               <span class="light-text">Apply Code</span>
+              </div> {% endcomment %}
+              <div class="discount-info-item">
+                <span>Discount Applied:</span>
+                <span class="light-text">-{{ cart.total_discount| money  }}</span>
+              </div>
+            </div>
+          {%- endif -%}
           {%- if cart.cart_level_discount_applications != blank -%}
             <ul class="cart-discount-list">
               {%- for discount_application in cart.cart_level_discount_applications -%}
