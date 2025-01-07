@@ -186,7 +186,7 @@
         "nav_block_TgCera": {
           "type": "nav_block",
           "settings": {
-            "nav_title": "Accessiories",
+            "nav_title": "Accessories",
             "link_url": "shopify://collections/accessories",
             "collection": "",
             "code": "<a href=\"https://xbotgo.com/collections/accessories/products/xbotgo-gimbal-t1-tripod-45inch\" class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/t1.png?v=1735784722\"/>\n<span class=\"title\">T1 Tripods</span>\n</a>\n<a href=\"https://xbotgo.com/products/xbotgo-t4-tripod-set-aluminum-alloy-13ft\"  class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/t4.png?v=1735784722\"/>\n<span class=\"title\">T4 Tripods</span>\n</a>\n<a href=\"https://xbotgo.com/products/xbotgo-weather-guard-umbrella\"  class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/b7c4e8972e4d203a0c8ef630e67930fd.png?v=1735784721\"/>\n<span class=\"title\">Umbrella</span>\n</a>"
@@ -195,7 +195,7 @@
         "nav_block_MGgEBK": {
           "type": "nav_block",
           "settings": {
-            "nav_title": "Xplore",
+            "nav_title": "Explore",
             "link_url": "",
             "collection": "",
             "code": "<style>\n.white-title{\ncolor:#fff;\nz-index:10;\npadding-bottom:10px\n}\n</style>\n<a  href=\"https://xbotgo.com/blogs/technology-development\" class=\"child-item\">\n<img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/1_e2d3b6c4-1fb2-40e4-950e-3aabb9694b03.png?v=1735611911\"/>\n<span class=\"white-title\">Blog</span>\n</a>"
