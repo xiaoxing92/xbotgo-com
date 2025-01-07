@@ -171,7 +171,13 @@
       </div>
     </div>
 
-    <div class="{% if cart.items == empty %} cart-drawer__footer--hidden{% endif %}">
+
+
+    <div class="cart-drawer__footer{% if cart.items == empty %} cart-drawer__footer--hidden{% endif %}" data-merge-attributes="footer-container">
+      {% comment %} {%- if section.settings.announcement_position == 'above-subtotal' -%}
+        <div class="cart-info-block cart-info-block--smb">{{- announcement -}}</div>
+      {%- endif -%} {% endcomment %}
+      <div class="cart-trust-level">
         <div class="cart-sidebar-view">{{ section.settings.code }}</div>
         <div class="pay-your-way">
           <span class="pay-your-title">Pay your way</span>
@@ -181,92 +187,88 @@
             {% endfor %}
           </div>
         </div>
-    </div>
-
-    <div class="cart-drawer__footer{% if cart.items == empty %} cart-drawer__footer--hidden{% endif %}" data-merge-attributes="footer-container">
-      {% comment %} {%- if section.settings.announcement_position == 'above-subtotal' -%}
-        <div class="cart-info-block cart-info-block--smb">{{- announcement -}}</div>
-      {%- endif -%} {% endcomment %}
-      <div data-merge="footer">
-        {% if cart.items != empty %}
-          {%- if  cart.total_discount > 0 -%}
-            <div class="discount-info">
-              {% comment %} <div class="discount-info-item">
-               <span>Have a Discount Code?</span>
-               <span class="light-text">Apply Code</span>
-              </div> {% endcomment %}
-              <div class="discount-info-item">
-                <span>Discount Applied:</span>
-                <span class="light-text">-{{ cart.total_discount| money  }}</span>
-              </div>
-            </div>
-          {%- endif -%}
-          {%- if cart.cart_level_discount_applications != blank -%}
-            <ul class="cart-discount-list">
-              {%- for discount_application in cart.cart_level_discount_applications -%}
-                <li class="cart-discount cart-discount--inline">
-                  <span class="cart-discount__label">
-                      <span class="cart-discount__icon">{% render 'icon-label' %}</span>
-                      <span class="cart-discount__title">{{ discount_application.title }}</span>
-                  </span>
-                  <span class="cart-discount__amount theme-money">{{ discount_application.total_allocated_amount | money }}</span>
-                </li>
-              {%- endfor -%}
-            </ul>
-          {%- endif -%}
-          <div class="subtotal h4 heading-font opposing-items">
-            {{ 'cart.summary.subtotal' | t }}:
-            <span class="theme-money">
-              {%- if settings.cart_currency_code_enabled -%}
-                {{- cart.total_price | money_with_currency -}}
-              {%- else -%}
-                {{- cart.total_price | money -}}
+      </div>
+      <div class="cart-footer">
+          <div data-merge="footer">
+            {% if cart.items != empty %}
+              {%- if  cart.total_discount > 0 -%}
+                <div class="discount-info">
+                  {% comment %} <div class="discount-info-item">
+                  <span>Have a Discount Code?</span>
+                  <span class="light-text">Apply Code</span>
+                  </div> {% endcomment %}
+                  <div class="discount-info-item">
+                    <span>Discount Applied:</span>
+                    <span class="light-text">-{{ cart.total_discount| money  }}</span>
+                  </div>
+                </div>
               {%- endif -%}
-            </span>
-          </div>
-
-          <div class="lightly-spaced-row">
-            {%- if section.settings.show_tax_and_shipping -%}
-              <div class="cart-policies rte">
-                {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
-                  {{- 'cart.general.taxes_included_shipping_at_checkout_html' | t: link: shop.shipping_policy.url -}}
-                {%- elsif cart.taxes_included -%}
-                  {{- 'cart.general.taxes_included_shipping_at_checkout' | t -}}
-                {%- elsif shop.shipping_policy.body != blank -%}
-                  {{- 'cart.general.taxes_and_shipping_at_checkout_html' | t: link: shop.shipping_policy.url -}}
-                {%- else -%}
-                  {{- 'cart.general.taxes_and_shipping_at_checkout' | t -}}
-                {%- endif -%}
+              {%- if cart.cart_level_discount_applications != blank -%}
+                <ul class="cart-discount-list">
+                  {%- for discount_application in cart.cart_level_discount_applications -%}
+                    <li class="cart-discount cart-discount--inline">
+                      <span class="cart-discount__label">
+                          <span class="cart-discount__icon">{% render 'icon-label' %}</span>
+                          <span class="cart-discount__title">{{ discount_application.title }}</span>
+                      </span>
+                      <span class="cart-discount__amount theme-money">{{ discount_application.total_allocated_amount | money }}</span>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+              <div class="subtotal h4 heading-font opposing-items">
+                {{ 'cart.summary.subtotal' | t }}:
+                <span class="theme-money">
+                  {%- if settings.cart_currency_code_enabled -%}
+                    {{- cart.total_price | money_with_currency -}}
+                  {%- else -%}
+                    {{- cart.total_price | money -}}
+                  {%- endif -%}
+                </span>
               </div>
-            {%- endif -%}
 
-            {% if section.settings.show_order_note %}
-              <toggle-target id="CartDrawerNoteToggle" role="button" tabindex="0" class="toggle-target-toggler--is-hidden link underline" data-toggle-target=".cart-drawer__note">{{ 'cart.note.label' | t }}</toggle-target>
-              <div class="cart-drawer__note toggle-target toggle-target--hidden">
-                <cart-note class="block toggle-target-container">
-                  <textarea name="note" aria-labelledby="CartDrawerNoteToggle">{{ cart.note }}</textarea>
-                </cart-note>
+              <div class="lightly-spaced-row">
+                {%- if section.settings.show_tax_and_shipping -%}
+                  <div class="cart-policies rte">
+                    {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
+                      {{- 'cart.general.taxes_included_shipping_at_checkout_html' | t: link: shop.shipping_policy.url -}}
+                    {%- elsif cart.taxes_included -%}
+                      {{- 'cart.general.taxes_included_shipping_at_checkout' | t -}}
+                    {%- elsif shop.shipping_policy.body != blank -%}
+                      {{- 'cart.general.taxes_and_shipping_at_checkout_html' | t: link: shop.shipping_policy.url -}}
+                    {%- else -%}
+                      {{- 'cart.general.taxes_and_shipping_at_checkout' | t -}}
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+
+                {% if section.settings.show_order_note %}
+                  <toggle-target id="CartDrawerNoteToggle" role="button" tabindex="0" class="toggle-target-toggler--is-hidden link underline" data-toggle-target=".cart-drawer__note">{{ 'cart.note.label' | t }}</toggle-target>
+                  <div class="cart-drawer__note toggle-target toggle-target--hidden">
+                    <cart-note class="block toggle-target-container">
+                      <textarea name="note" aria-labelledby="CartDrawerNoteToggle">{{ cart.note }}</textarea>
+                    </cart-note>
+                  </div>
+                {% endif %}
               </div>
             {% endif %}
           </div>
-        {% endif %}
-      </div>
 
-      {% if section.settings.cart_terms_page != blank %}
-        <terms-agreement class="terms-agreement rte">
-          <input type="checkbox" id="terms" />
-          <label for="terms">{{ 'cart.terms.agreement_html' | t: terms_url: section.settings.cart_terms_page }}</label>
-        </terms-agreement>
-      {% endif %}
+          {% if section.settings.cart_terms_page != blank %}
+            <terms-agreement class="terms-agreement rte">
+              <input type="checkbox" id="terms" />
+              <label for="terms">{{ 'cart.terms.agreement_html' | t: terms_url: section.settings.cart_terms_page }}</label>
+            </terms-agreement>
+          {% endif %}
 
-      <div class="checkout-buttons{% if cart.items == empty %} hidden{% endif %}" data-merge-attributes="checkout-buttons">
-        {% if section.settings.enable_direct_cart %}
-          <a href="{{ routes.root_url | append: '/checkout' | replace: '//', '/' }}" class="btn btn--large btn--wide">{{ 'cart.summary.checkout' | t }}</a>
-        {% else %}
-          <a href="{{ routes.cart_url }}" class="btn btn--large btn--wide">{{ 'cart.summary.checkout' | t }}</a>
-        {% endif %}
-      </div>
-
+          <div class="checkout-buttons{% if cart.items == empty %} hidden{% endif %}" data-merge-attributes="checkout-buttons">
+            {% if section.settings.enable_direct_cart %}
+              <a href="{{ routes.root_url | append: '/checkout' | replace: '//', '/' }}" class="btn btn--large btn--wide">{{ 'cart.summary.checkout' | t }}</a>
+            {% else %}
+              <a href="{{ routes.cart_url }}" class="btn btn--large btn--wide">{{ 'cart.summary.checkout' | t }}</a>
+            {% endif %}
+          </div>
+    </div>
       {% comment %} {%- if section.settings.announcement_position == 'below-checkout' -%}
         <div class="cart-info-block cart-info-block--smt">{{- announcement -}}</div>
       {%- endif -%} {% endcomment %}

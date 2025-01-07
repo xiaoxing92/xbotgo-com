@@ -185,6 +185,7 @@ theme.mergeNodes = (newContent, targetContainer) => {
       for (let i = 0; i < newElAttributeNames.length; i += 1) {
         const attributeName = newElAttributeNames[i];
         targetEl.setAttribute(attributeName, newEl.getAttribute(attributeName));
+        console.log(targetEl,"======")
       }
     });
     // merge: insert/remove/replace in list
