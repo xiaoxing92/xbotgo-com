@@ -170,7 +170,7 @@
         {%- endif -%}
       </div>
     </div>
-    {% if cart.items != empty %}
+
       <div class="{% if cart.items == empty %} pay-your-way--hidden{% endif %}">
       <div class="cart-sidebar-view">{{ section.settings.code }}</div>
       <div class="pay-your-way">
@@ -182,7 +182,7 @@
         </div>
       </div>
     </div>
-    {%- endif -%}
+    
     <div class="cart-drawer__footer{% if cart.items == empty %} cart-drawer__footer--hidden{% endif %}" data-merge-attributes="footer-container">
       {% comment %} {%- if section.settings.announcement_position == 'above-subtotal' -%}
         <div class="cart-info-block cart-info-block--smb">{{- announcement -}}</div>
