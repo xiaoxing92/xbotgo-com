@@ -2449,9 +2449,9 @@ main-navigation {
 }
 @media (max-width: 767.98px) {
   .page-shade,
-.header-shade {
-    z-index: 7000;
-  }
+  .header-shade {
+      z-index: 7000;
+    }
 }
 
 .header-shade {
@@ -5518,6 +5518,7 @@ input[type=text].main-search__input {
   margin: 20px 0;
   font-size: 11px;
 }
+
 .pay-your-way--hidden{
   visibility: hidden;
   opacity: 0;
@@ -5528,6 +5529,11 @@ input[type=text].main-search__input {
 .pay-icon-wrap{
   display: flex;
   gap:5px;
+}
+@media (max-width: 767.98px) {
+  .pay-icon-wrap{
+    width:90%;
+  }
 }
 @media (min-width: 768px) {
   .section-footer__row-lower {
