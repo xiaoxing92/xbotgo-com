@@ -172,7 +172,7 @@
     </div>
     {% if cart.items != empty %}
       <div class="cart-sidebar-view">{{ section.settings.code }}</div>
-      <div class="pay-your-way">
+      <div class="pay-your-way{% if cart.items == empty %} pay-your-way--hidden{% endif %}">
         <span class="pay-your-title">Pay your way</span>
         <div class="pay-icon-wrap">
           {% for type in shop.enabled_payment_types %}

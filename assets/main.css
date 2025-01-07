@@ -5517,6 +5517,9 @@ input[type=text].main-search__input {
   margin: 20px 0;
   font-size: 11px;
 }
+.pay-your-way--hidden{
+  display:none;
+}
 .pay-your-title{
   margin-bottom:10px;
 }
