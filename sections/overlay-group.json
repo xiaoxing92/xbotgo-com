@@ -74,14 +74,13 @@
         "text",
         "newsletter-signup"
       ],
-      "disabled": true,
       "custom_css": [
         ".btn {background: linear-gradient(to right, #ca251d, #f27b00); border: none; border-radius: 20px;}"
       ],
       "settings": {
         "show_logo": true,
         "trigger": "delay",
-        "delay": 5,
+        "delay": 3,
         "show_to_guests_only": true,
         "show_on_mobile": true,
         "dismiss_days": 30,
