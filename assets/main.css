@@ -2031,7 +2031,8 @@ cart-drawer {
 
 .cart-drawer__footer {
   flex: 0 0 auto;
-  padding: 0 var(--gutter-content) calc(var(--gutter-content) + env(safe-area-inset-bottom, 0px) * 1.5);
+  padding: var(--gutter-content) var(--gutter-content) calc(var(--gutter-content) + env(safe-area-inset-bottom, 0px) * 1.5);
+  border-top: 1px solid rgb(var(--text-color)/var(--divider-opacity));
 }
 .cart-drawer__footer .cart-policies {
   margin-bottom: 2px;
@@ -5516,9 +5517,9 @@ input[type=text].main-search__input {
   margin: 20px 0;
   font-size: 11px;
 }
-.cart-trust-level{
-  border-bottom: 1px solid rgb(var(--text-color)/var(--divider-opacity));
-  padding-bottom: var(--gutter-content);
+.pay-your-way--hidden{
+  visibility: hidden;
+  opacity: 0;
 }
 .pay-your-title{
   margin-bottom:10px;

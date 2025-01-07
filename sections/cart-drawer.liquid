@@ -171,11 +171,7 @@
       </div>
     </div>
 
-    <div class="cart-drawer__footer{% if cart.items == empty %} cart-drawer__footer--hidden{% endif %}" data-merge-attributes="footer-container">
-      {% comment %} {%- if section.settings.announcement_position == 'above-subtotal' -%}
-        <div class="cart-info-block cart-info-block--smb">{{- announcement -}}</div>
-      {%- endif -%} {% endcomment %}
-      <div class="cart-trust-level">
+    <div class="{% if cart.items == empty %} cart-drawer__footer--hidden{% endif %}" data-merge-attributes="footer-container">
         <div class="cart-sidebar-view">{{ section.settings.code }}</div>
         <div class="pay-your-way">
           <span class="pay-your-title">Pay your way</span>
@@ -186,6 +182,11 @@
           </div>
         </div>
     </div>
+
+    <div class="cart-drawer__footer{% if cart.items == empty %} cart-drawer__footer--hidden{% endif %}" data-merge-attributes="footer-container">
+      {% comment %} {%- if section.settings.announcement_position == 'above-subtotal' -%}
+        <div class="cart-info-block cart-info-block--smb">{{- announcement -}}</div>
+      {%- endif -%} {% endcomment %}
       <div data-merge="footer">
         {% if cart.items != empty %}
           {%- if  cart.total_discount > 0 -%}
