@@ -28,7 +28,7 @@
 }
 {% endschema %}
 
-<section id='section-id-{{ section.id }}' class='gimbal-section'>
+<section id='section-id-{{ section.id }}' class='dynamic-tabs'>
   <ul class='tab-links'>
     {% for block in section.blocks %}
       <li
@@ -78,12 +78,19 @@
 </script>
 
 <style>
+  .dynamic-tabs{
+    display: flex;
+    justify-content: center;
+  }
   .tabs {
     display: inline-block;
     justify-content: center;
     border: 1px solid #000;
     border-radius: 20px;
     overflow: hidden;
+  }
+  .tab-links {
+    display: flex;
   }
   .tab-button {
     background: none;
