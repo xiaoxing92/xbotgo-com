@@ -171,6 +171,9 @@
       </div>
     </div>
     <div class="cart-sidebar-view">{{ section.settings.code }}</div>
+    {% for type in shop.enabled_payment_types %}
+      {{ type | payment_type_svg_tag: class: 'section-footer__payment-icon' }}
+    {% endfor %}
     <div class="cart-drawer__footer{% if cart.items == empty %} cart-drawer__footer--hidden{% endif %}" data-merge-attributes="footer-container">
       {%- if section.settings.announcement_position == 'above-subtotal' -%}
         <div class="cart-info-block cart-info-block--smb">{{- announcement -}}</div>
