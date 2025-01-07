@@ -175,15 +175,17 @@
       {% comment %} {%- if section.settings.announcement_position == 'above-subtotal' -%}
         <div class="cart-info-block cart-info-block--smb">{{- announcement -}}</div>
       {%- endif -%} {% endcomment %}
-      <div class="cart-sidebar-view">{{ section.settings.code }}</div>
-      <div class="pay-your-way">
-        <span class="pay-your-title">Pay your way</span>
-        <div class="pay-icon-wrap">
-          {% for type in shop.enabled_payment_types %}
-            {{ type | payment_type_svg_tag: class: 'section-footer__payment-icon' }}
-          {% endfor %}
+      <div class="cart-trust-level">
+        <div class="cart-sidebar-view">{{ section.settings.code }}</div>
+        <div class="pay-your-way">
+          <span class="pay-your-title">Pay your way</span>
+          <div class="pay-icon-wrap">
+            {% for type in shop.enabled_payment_types %}
+              {{ type | payment_type_svg_tag: class: 'section-footer__payment-icon' }}
+            {% endfor %}
+          </div>
         </div>
-      </div>
+    </div>
       <div data-merge="footer">
         {% if cart.items != empty %}
           {%- if  cart.total_discount > 0 -%}
