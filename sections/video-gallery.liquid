@@ -4,8 +4,7 @@
       <h2 class='hometitle h4 align-center' {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
         {{- section.settings.title | escape -}}
       </h2>
-    {% endif %}
-
+    {% endif %}  
     <div class='grid-container'>
       {% for block in section.blocks %}
         {%- unless video_assets_output -%}
@@ -173,6 +172,9 @@
 {% endschema %}
 
 <style>
+    .video-gallery{
+        margin: 30px 0px;
+    }
     .grid-container {
         display: flex;
         gap: 16px;
