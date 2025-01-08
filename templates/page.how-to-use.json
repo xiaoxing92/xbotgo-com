@@ -618,6 +618,52 @@
         "title": "FAQ"
       }
     },
+    "slideshow_EJXkkz": {
+      "type": "slideshow",
+      "blocks": {
+        "image_KpMicU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/7-PCbanner.png",
+            "mobile_image": "shopify://shop_images/7-M-banner.png",
+            "slide_link": "",
+            "subheading": "",
+            "title": "User Guide",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_KpMicU"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_sticky_banner": false,
+        "sticky_text": "Sticky Banner Text",
+        "link_url": "shopify://collections/all",
+        "height": "fixed",
+        "height_desktop": 500,
+        "height_mobile": 360,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "transition": "fade",
+        "navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "accessibility_info": ""
+      }
+    },
     "tabs_liuqid_KAAb3J": {
       "type": "tabs-liuqid",
       "blocks": {
@@ -680,7 +726,6 @@
         "video_block_mMUefF",
         "video_block_arnPAa"
       ],
-      "disabled": true,
       "settings": {
         "title": "How To Use"
       }
@@ -700,6 +745,7 @@
     "93f97a72-d4c6-4de4-976d-c98954d4d95a",
     "custom_content_Dpj8Je",
     "collapsible_tabs_JEqR6P",
+    "slideshow_EJXkkz",
     "tabs_liuqid_KAAb3J",
     "video_gallery_3NEJWE"
   ]
