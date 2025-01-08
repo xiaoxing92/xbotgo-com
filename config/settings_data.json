@@ -654,11 +654,6 @@
         "disabled": false,
         "settings": {}
       },
-      "15796953133730294439": {
-        "type": "shopify://apps/growave-loyalty-wishlist/blocks/block.embed.socialshopwave-helper/b3d2efbe-110a-4e27-84a8-1f2ed63996a4",
-        "disabled": true,
-        "settings": {}
-      },
       "judgeme_core_b92ba43a": {
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
@@ -666,6 +661,11 @@
       },
       "2426541135621300853": {
         "type": "shopify://apps/avada-seo-suite/blocks/avada-seo/15507c6e-1aa3-45d3-b698-7e175e033440",
+        "disabled": false,
+        "settings": {}
+      },
+      "15796953133730294439": {
+        "type": "shopify://apps/growave-loyalty-wishlist/blocks/block.embed.socialshopwave-helper/b3d2efbe-110a-4e27-84a8-1f2ed63996a4",
         "disabled": false,
         "settings": {}
       }
