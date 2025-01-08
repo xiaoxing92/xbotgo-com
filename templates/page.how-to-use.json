@@ -649,7 +649,7 @@
         "video_block_3VRLTT": {
           "type": "video_block",
           "settings": {
-            "video_shopify": "shopify://files/videos/250ef0f40e755c52fa64ff5050e60f61.mov",
+            "video_shopify": "shopify://files/videos/189_1729557559(Video in Original Quality).mp4",
             "video_external": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4",
             "video_description": "",
             "autoplay": false,
@@ -680,7 +680,6 @@
         "video_block_mMUefF",
         "video_block_arnPAa"
       ],
-      "disabled": true,
       "settings": {
         "title": "Recommend"
       }
