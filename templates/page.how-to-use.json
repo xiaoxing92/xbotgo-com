@@ -625,7 +625,7 @@
           "type": "tab",
           "settings": {
             "tab_title": "12312",
-            "tab_content": ""
+            "tab_content": "<div>12312</div>"
           }
         },
         "tab_8H3WEe": {
@@ -640,7 +640,6 @@
         "tab_ktkFVf",
         "tab_8H3WEe"
       ],
-      "disabled": true,
       "settings": {}
     }
   },
