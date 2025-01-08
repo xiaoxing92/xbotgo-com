@@ -118,35 +118,25 @@
       "name": "VideoGaller",
       "settings": [
         {
-          "id": "video_shopify",
-          "type": "video",
-          "label": "Video upload",
-          "info": ".."
+            "id": "video_shopify",
+            "type": "video",
+            "label": "Video upload",
+            "info": ".."
+        },     
+        {
+          "type": "range",
+          "id": "star_rating",
+          "min": 0,
+          "max": 5,
+          "step": 1,
+          "label": "Star rating",
+          "default": 5
         },
         {
           "id": "video_external",
           "type": "text",
           "label": "External video",
           "default": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4"
-        },
-        {
-          "id": "video_description",
-          "type": "text",
-          "label": "Video description",
-          "info": "Describe the video for customers using screen readers. [Learn more](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)"
-        },
-        {
-          "id": "autoplay",
-          "type": "checkbox",
-          "label": "TopAutoplay",
-          "info": "Video will be muted",
-          "default": false
-        },
-        {
-          "id": "placeholder_image",
-          "type": "image_picker",
-          "label": "Custom placeholder image",
-          "info": "Required for External videos. Choose an image the same shape as your video."
         },
         {
           "id": "textarea",
