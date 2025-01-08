@@ -1,9 +1,10 @@
-{%- unless video_assets_output -%}
-  <link rel='stylesheet' href='{{ 'video.css' | asset_url }}' {%- render 'lazy-stylesheet-attrs' %}>
-  <script src='{{ 'video.js' | asset_url }}' defer></script>
-{%- endunless -%}
-
 <section id='section-id-{{ section.id }}' class='video-gallery'>
+    {% if section.settings.title != blank %}
+        <h2 class="hometitle h4 align-center" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+            {{- section.settings.title | escape -}}
+        </h2>
+    {% endif %}
+
   <div class='grid-container'>
     {% for block in section.blocks %}
       {%- unless video_assets_output -%}
@@ -27,7 +28,7 @@
         assign autoplay = block.settings.autoplay
       -%}
 
-      <div class='item-video'>
+      <div class="video-section">
         <div
           class='height--adapt image-overlay image-overlay--bg-no_background'
           {% if placeholder_image %}
@@ -109,7 +110,7 @@
       "type": "text",
       "id": "title",
       "label": "Heading",
-      "default": "Recommend"
+      "default": "VideoGallery"
     }
   ],
   "blocks": [
