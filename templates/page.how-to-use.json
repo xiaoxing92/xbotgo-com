@@ -680,6 +680,7 @@
         "video_block_mMUefF",
         "video_block_arnPAa"
       ],
+      "disabled": true,
       "settings": {
         "title": "Recommend"
       }
