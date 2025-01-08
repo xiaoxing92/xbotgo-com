@@ -624,8 +624,8 @@
         "tab_ktkFVf": {
           "type": "tab",
           "settings": {
-            "tab_title": "12312",
-            "tab_content": "<div>12312</div>"
+            "tab_title": "Chameleon",
+            "tab_content": "<style>\n    .tabs-item{\n        display: flex;\n        justify-content: space-between;\n    }\n    .tabs-item-right{\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        padding-left: 20px;\n    }\n    .tabs-img{\n        width:50%;\n       border-radius: 20px;\n    }\n    .head-title{\n        font-size: 30px;\n        font-weight: bold;\n        color:#000;\n    }\n    .learn-more{\n        background: linear-gradient(to right, #f27b00, #ca251d);\n        width: 180px;\n        height: 30px;\n        text-align: center;\n        font-size: 13px;\n        border-radius: 25px;\n        color:#fff\n    }\n</style>\n\n\n    <div class=\"tabs-item\">\n        <img class=\"tabs-img\" src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/7-PC.png?v=1736320345\">\n        <div class=\"tabs-item-right\">\n            <div class=\"head-title\">AI Sports Gimbal User Manual</div>\n            <button class=\"learn-more\">Learn more</button>\n        </div>\n    </div>"
           }
         },
         "tab_8H3WEe": {
@@ -649,29 +649,29 @@
         "video_block_3VRLTT": {
           "type": "video_block",
           "settings": {
+            "title": "Default Content",
             "video_shopify": "shopify://files/videos/189_1729557559(Video in Original Quality).mp4",
             "video_external": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4",
             "video_description": "",
-            "autoplay": false,
-            "textarea": "Default Content"
+            "autoplay": false
           }
         },
         "video_block_mMUefF": {
           "type": "video_block",
           "settings": {
+            "title": "Default Content",
             "video_external": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4",
             "video_description": "",
-            "autoplay": false,
-            "textarea": "Default Content"
+            "autoplay": false
           }
         },
         "video_block_arnPAa": {
           "type": "video_block",
           "settings": {
+            "title": "Default Content",
             "video_external": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4",
             "video_description": "",
-            "autoplay": false,
-            "textarea": "Default Content"
+            "autoplay": false
           }
         }
       },
@@ -682,7 +682,7 @@
       ],
       "disabled": true,
       "settings": {
-        "title": "Recommend"
+        "title": "How To Use"
       }
     }
   },
