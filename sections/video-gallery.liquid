@@ -45,16 +45,16 @@
                 <video-component
                   class='{% if using_video_tag %}has-video{% else %}has-iframe{% endif %}'
                   {%- unless using_video_tag %}
-                    data-video-url='{{ section.settings.video_external | escape }}'
+                    data-video-url='{{ block.settings.video_external | escape }}'
                   {% endunless %}
                   data-video-id='{{ section.id }}'
                   data-autoplay='{{ autoplay }}'
                   data-background='false'
-                  data-description='{{ section.settings.video_description | escape }}'
+                  data-description='{{ block.settings.video_description | escape }}'
                 >
                   {%- if using_video_tag -%}
                     {{
-                      section.settings.video_shopify
+                        block.settings.video_shopify
                       | video_tag:
                         playsinline: true,
                         controls: true,
