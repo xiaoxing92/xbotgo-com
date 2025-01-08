@@ -28,75 +28,78 @@
           endif
           assign autoplay = block.settings.autoplay
         -%}
-
-        <div class='video-section'>
-          <div
-            class='height--adapt image-overlay image-overlay--bg-no_background'
-            {% if placeholder_image %}
-              style='--aspect-ratio: {{ placeholder_image.aspect_ratio }}'
-            {% endif %}
-            {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}
+        <div class='grid-container'>
           >
-            <div class='image-overlay__image height__image'>
-              <deferred-media>
-                {%- if autoplay == false -%}
-                  <button type='button' class='js-load-media hidden' aria-hidden='true'></button>
-                {%- endif -%}
-                <template>
-                  <video-component
-                    class='{% if using_video_tag %}has-video{% else %}has-iframe{% endif %}'
-                    {%- unless using_video_tag %}
-                      data-video-url='{{ block.settings.video_external | escape }}'
-                    {% endunless %}
-                    data-video-id='{{ section.id }}'
-                    data-autoplay='{{ autoplay }}'
-                    data-background='false'
-                    data-description='{{ block.settings.video_description | escape }}'
-                  >
-                    {%- if using_video_tag -%}
-                      {{
-                        block.settings.video_shopify
-                        | video_tag:
-                          playsinline: true,
-                          controls: true,
-                          autoplay: autoplay,
-                          muted: autoplay,
-                          loop: autoplay,
-                          poster: ''
-                        | replace: '<img ', '<img loading="lazy" hidden '
-                      }}
-                    {%- else -%}
-                      <div></div>
-                    {%- endif -%}
-                  </video-component>
-                </template>
-              </deferred-media>
+          <div class='video-section'>
+            <div
+              class='height--adapt image-overlay image-overlay--bg-no_background'
               {% if placeholder_image %}
-                {%- render 'image' with placeholder_image, class: 'video-played-hidden' -%}
-              {% elsif autoplay == false %}
-                <div class='placeholder-image video-played-hidden'>
-                  {{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}
-                </div>
+                style='--aspect-ratio: {{ placeholder_image.aspect_ratio }}'
               {% endif %}
-            </div>
-            {%- if autoplay == false -%}
-              <div class='text-overlay text-overlay--for-banner text-overlay--v-center text-overlay--h-center image-overlay__over video-played-hidden'>
-                <div class='text-overlay__inner'>
-                  <div class='text-overlay__text'>
-                    <video-section-play-button
-                      role='button'
-                      tabindex='0'
-                      type='button'
-                      class='button-row__btn video-section__play-btn inline-block'
+              {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}
+            >
+              <div class='image-overlay__image height__image'>
+                <deferred-media>
+                  {%- if autoplay == false -%}
+                    <button type='button' class='js-load-media hidden' aria-hidden='true'></button>
+                  {%- endif -%}
+                  <template>
+                    <video-component
+                      class='{% if using_video_tag %}has-video{% else %}has-iframe{% endif %}'
+                      {%- unless using_video_tag %}
+                        data-video-url='{{ block.settings.video_external | escape }}'
+                      {% endunless %}
+                      data-video-id='{{ section.id }}'
+                      data-autoplay='{{ autoplay }}'
+                      data-background='false'
+                      data-description='{{ block.settings.video_description | escape }}'
                     >
-                      <span class='visually-hidden'>{{ 'general.icon_labels.play' | t }}</span>
-                      {%- render 'icon-play' -%}
-                    </video-section-play-button>
+                      {%- if using_video_tag -%}
+                        {{
+                          block.settings.video_shopify
+                          | video_tag:
+                            playsinline: true,
+                            controls: true,
+                            autoplay: autoplay,
+                            muted: autoplay,
+                            loop: autoplay,
+                            poster: ''
+                          | replace: '<img ', '<img loading="lazy" hidden '
+                        }}
+                      {%- else -%}
+                        <div></div>
+                      {%- endif -%}
+                    </video-component>
+                  </template>
+                </deferred-media>
+                {% if placeholder_image %}
+                  {%- render 'image' with placeholder_image, class: 'video-played-hidden' -%}
+                {% elsif autoplay == false %}
+                  <div class='placeholder-image video-played-hidden'>
+                    {{- 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' -}}
+                  </div>
+                {% endif %}
+              </div>
+              {%- if autoplay == false -%}
+                <div class='text-overlay text-overlay--for-banner text-overlay--v-center text-overlay--h-center image-overlay__over video-played-hidden'>
+                  <div class='text-overlay__inner'>
+                    <div class='text-overlay__text'>
+                      <video-section-play-button
+                        role='button'
+                        tabindex='0'
+                        type='button'
+                        class='button-row__btn video-section__play-btn inline-block'
+                      >
+                        <span class='visually-hidden'>{{ 'general.icon_labels.play' | t }}</span>
+                        {%- render 'icon-play' -%}
+                      </video-section-play-button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            {%- endif -%}
+              {%- endif -%}
+            </div>
           </div>
+          <div class='video-title'>{{ block.settings.title }}</div>
         </div>
       {% endfor %}
     </div>
@@ -120,6 +123,12 @@
       "type": "video_block",
       "name": "Video Galler",
       "settings": [
+        {
+          "id": "title",
+          "type": "text",
+          "label": "Title",
+          "default": "Default Content"
+        },
         {
           "id": "video_shopify",
           "type": "video",
@@ -150,12 +159,6 @@
           "type": "image_picker",
           "label": "Custom placeholder image",
           "info": "Required for External videos. Choose an image the same shape as your video."
-        },
-        {
-          "id": "textarea",
-          "type": "textarea",
-          "label": "Textarea",
-          "default": "Default Content"
         }
       ]
     }
@@ -171,36 +174,17 @@
 {% endschema %}
 
 <style>
-  .video-gallery .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-  .video-gallery .video-card {
-    position: relative;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  .video-gallery .video-thumbnail {
-    position: relative;
-  }
-  .video-gallery .video-thumbnail img {
-    width: 100%;
-    height: auto;
-  }
-  .video-gallery .video-thumbnail .play-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    padding: 10px;
-  }
-  .video-gallery .video-title {
-    padding: 8px;
-    font-size: 14px;
-    text-align: center;
-  }
+    .grid-container {
+        display: flex;
+        gap: 16px;
+        position: relative;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+    .video-title{
+        position: absolute;
+        bottom:0;
+        height:30px;
+        background:#000;
+    }
 </style>
