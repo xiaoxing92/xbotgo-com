@@ -162,6 +162,34 @@
         "title": "Photo Wall"
       }
     },
+    "carousel_card_LPA3jw": {
+      "type": "carousel-card",
+      "blocks": {
+        "card_block_rEnc84": {
+          "type": "card_block",
+          "settings": {
+            "cover": "shopify://shop_images/6_5c054573-a5ed-48e5-80f9-4a7ebf03e819.png",
+            "title": "title",
+            "subtitle": "Subtitle"
+          }
+        },
+        "card_block_nYWq8y": {
+          "type": "card_block",
+          "settings": {
+            "title": "title",
+            "subtitle": "Subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "card_block_rEnc84",
+        "card_block_nYWq8y"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Carousel Card"
+      }
+    },
     "gallery_wL4jkE": {
       "type": "gallery",
       "blocks": {
@@ -736,35 +764,6 @@
         "show_space": true,
         "code": "<div class=\"xbotgo-section\">\n    <div class=\"image-container\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/5_d27b99d0-73c2-4341-83ab-8d0416a2b778.png?v=1736405779\" alt=\"Group of kids with XbotGo\" />\n    </div>\n    <div class=\"content-container\">\n      <h2>Why XbotGo is different</h2>\n      <p>\n        XbotGo transforms any smartphone into an expert sports cameraman, autonomously tracking players, the ball, and every field movement. \n        Using advanced computer vision, it intelligently zooms and pans, delivering professional-quality sports footage for parents, coaches, \n        and athletes—effortlessly capturing every highlight.\n      </p>\n    </div>\n  </div>\n  \n<style>\n.xbotgo-section {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: #f9f9f9;\n  border-radius: 10px;\n  margin: 20px;\n\n}\n\n.image-container {\n  flex: 1;\n  max-width: 50%;\n}\n\n.image-container img {\n  width: 100%;\n  height: auto;\n  border-radius: 10px;\n}\n\n.content-container {\n  flex: 1;\n  max-width: 50%;\n  padding: 20px;\n}\n\n.content-container h2 {\n  font-size: 24px;\n  color: #333;\n  margin-bottom: 15px;\n}\n\n.content-container p {\n  font-size: 16px;\n  color: #666;\n}\n@media (max-width: 768px) {\n  .xbotgo-section {\n    flex-direction: column;\n  }\n\n  .image-container, .content-container {\n    max-width: 100%;\n  }\n}\n</style>"
       }
-    },
-    "carousel_card_LPA3jw": {
-      "type": "carousel-card",
-      "blocks": {
-        "card_block_rEnc84": {
-          "type": "card_block",
-          "settings": {
-            "title": "title",
-            "img": "shopify://shop_images/6_5c054573-a5ed-48e5-80f9-4a7ebf03e819.png",
-            "subtitle": "Subtitle"
-          }
-        },
-        "card_block_nYWq8y": {
-          "type": "card_block",
-          "settings": {
-            "title": "title",
-            "img": "shopify://shop_images/7_673dbda5-a95d-456c-90b3-1010a01bce9b.png",
-            "subtitle": "Subtitle"
-          }
-        }
-      },
-      "block_order": [
-        "card_block_rEnc84",
-        "card_block_nYWq8y"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Carousel Card"
-      }
     }
   },
   "order": [
@@ -772,6 +771,7 @@
     "rich_text_zAMW7P",
     "rich_text_ByJxzn",
     "photo_wall_BK4ceW",
+    "carousel_card_LPA3jw",
     "gallery_wL4jkE",
     "custom_content_x6grnt",
     "custom_content_a9Da6V",
@@ -784,7 +784,6 @@
     "93f97a72-d4c6-4de4-976d-c98954d4d95a",
     "custom_content_Dpj8Je",
     "collapsible_tabs_JEqR6P",
-    "custom_liquid_xQXdPe",
-    "carousel_card_LPA3jw"
+    "custom_liquid_xQXdPe"
   ]
 }
