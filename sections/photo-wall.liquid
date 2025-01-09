@@ -7,7 +7,7 @@
   <div class="photo-wall">
   {% for block in section.blocks %}
     <a href="{{ block.settings.url }}" class="photo-item">
-        <img src="{{ block.settings.img | img_url: '600x300'}}"/>
+        <img src="{{ block.settings.img | img_url: '500x250'}}"/>
     </a>
   {% endfor %}
   </div>
@@ -20,6 +20,7 @@
   }
   .photo-item{
       border-radius: 20px;
+      overflow: hidden;
   }
   @media (max-width: 768px) {
 
