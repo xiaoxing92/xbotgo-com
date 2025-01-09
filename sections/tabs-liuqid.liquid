@@ -52,7 +52,8 @@
 </section>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
+
+  const observer = new MutationObserver(() => {
     const tabs = document.querySelectorAll('.tab-links li')
     const contents = document.querySelectorAll('.tab')
 
@@ -75,6 +76,10 @@
       })
     })
   })
+
+  observer.observe(document.body, { childList: true, subtree: true })
+
+
 </script>
 
 <style>

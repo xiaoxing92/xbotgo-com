@@ -3,9 +3,9 @@
     <div class='carousel'>
       <div class='carousel-track'>
         {% for block in section.blocks %}
-          <a href='{{ block.settings.url }}'>
+       
             <img src='{{ block.settings.img | img_url: '340x428'}}'>
-          </a>
+    
         {% endfor %}
       </div>
     </div>
