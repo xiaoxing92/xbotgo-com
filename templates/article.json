@@ -21,8 +21,8 @@
         "show_pinterest": true,
         "show_featured_image": true,
         "full_width_image": true,
-        "featured_image_height": "natural",
-        "enable_title_overlay": true,
+        "featured_image_height": "huge",
+        "enable_title_overlay": false,
         "overlay_style": "shadow"
       }
     }
