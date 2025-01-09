@@ -1,30 +1,132 @@
-<div id='section-id-{{ section.id }}' class="container">
-  {% if section.settings.title != blank %}
-    <h2 class='hometitle h4 align-center' {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
-      {{- section.settings.title | escape -}}
-    </h2>
-  {% endif %}
-  <div class="photo-wall">
-  {% for block in section.blocks %}
-    <a href="{{ block.settings.url }}" class="photo-item">
-        <img src="{{ block.settings.img | img_url: '340x428'}}"/>
-    </a>
-  {% endfor %}
-  </div>
+<div id='section-id-{{ section.id }}' class='container carousel-container'>
+    <button class='carousel-btn left-btn'>◀</button>
+    <div class='carousel'>
+      <div class='carousel-track'>
+        {% for block in section.blocks %}
+          <a href='{{ block.settings.url }}'>
+            <img src='{{ block.settings.img | img_url: '340x428'}}'>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+    <button class='carousel-btn right-btn'>▶</button>
 </div>
 
+
+<script>
+  const observer = new MutationObserver(() => {
+    const track = document.querySelector('.carousel-track')
+    const leftBtn = document.querySelector('.left-btn')
+    const rightBtn = document.querySelector('.right-btn')
+    const images = document.querySelectorAll('.carousel-track img')
+
+    let currentIndex = 0
+
+    function updateCarousel() {
+      const imageWidth = images[0].clientWidth
+      track.style.transform = `translateX(-${currentIndex * imageWidth}px)`
+    }
+
+    leftBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--
+        updateCarousel()
+      }
+    })
+
+    rightBtn.addEventListener('click', () => {
+      if (currentIndex < images.length - 2) {
+        // 显示两个图片
+        currentIndex++
+        updateCarousel()
+      }
+    })
+
+    // 初始化设置，仅在移动端执行滚动逻辑
+    if (window.innerWidth <= 768) {
+      updateCarousel()
+    }
+  })
+
+  observer.observe(document.body, { childList: true, subtree: true })
+</script>
+
 <style>
-  .photo-wall{
+  .carousel-container {
     display: flex;
+    align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+  }
+
+  .carousel {
+    overflow: hidden;
+    flex: 1;
+  }
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
     gap:10px;
   }
-  .photo-item{
+
+  .carousel-track img {
+    flex-shrink: 0;
     border-radius: 15px;
     overflow: hidden;
   }
-  @media (max-width: 768px) {
 
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  /* 左右按钮 */
+  .left-btn {
+    left: 0;
+  }
+
+  .right-btn {
+    right: 0;
+  }
+
+  /* 移动端样式 */
+  @media (max-width: 768px) {
+    .carousel-track img {
+      width: 50%;
+      /* 移动端显示两张图片 */
+    }
+  }
+
+  /* PC端样式 */
+  @media (min-width: 769px) {
+    .carousel {
+      overflow: visible;
+    }
+
+    .carousel-track {
+      transform: none;
+      /* PC端不需要滚动 */
+    }
+
+    .carousel-track img {
+      width: auto;
+    }
+
+    .carousel-btn {
+      display: none;
+      /* 隐藏左右按钮 */
+    }
   }
 </style>
 
@@ -53,7 +155,7 @@
           "type": "image_picker",
           "id": "img",
           "label": "Image"
-        },
+        }
       ]
     }
   ],
