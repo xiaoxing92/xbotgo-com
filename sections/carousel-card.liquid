@@ -1,4 +1,3 @@
-
 {% schema %}
 {
   "name": "Carousel Card",
@@ -18,15 +17,15 @@
       "name": "Card",
       "settings": [
         {
-            "type": "image_picker",
-            "id": "cover",
-            "label": "Image"
+          "type": "image_picker",
+          "id": "cover",
+          "label": "Image"
         },
         {
-            "id": "title",
-            "type": "textarea",
-            "label": "title",
-            "default": "title"
+          "id": "title",
+          "type": "textarea",
+          "label": "title",
+          "default": "title"
         },
         {
           "id": "subtitle",
@@ -41,33 +40,30 @@
     {
       "name": "Carousel Card",
       "settings": {},
-      "blocks": [
-        { "type": "card_block"},
-        { "type": "card_block"},
-        { "type": "card_block"}
-      ]
+      "blocks": [{ "type": "card_block" }, { "type": "card_block" }, { "type": "card_block" }]
     }
   ]
 }
 {% endschema %}
 
 <div id='section-id-{{ section.id }}' class='container'>
-    {% if section.settings.title != blank %}
-        <h2 class="hometitle h4 align-center" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
-          {{- section.settings.title | escape -}}
-        </h2>
-      {% endif %}
+  {% if section.settings.title != blank %}
+    <h2 class='hometitle h4 align-center' {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+      {{- section.settings.title | escape -}}
+    </h2>
+  {% endif %}
   <div class='carousel'>
     <button class='arrow left' id='prevBtn'>&lt;</button>
     <div class='carousel-card-track'>
-        {% for block in section.blocks %}
-            <div class='carousel-item'>
-                <img src="{{ block.settings.cover | img_url: 'x428' }}" />
-                <h3>{{ block.settings.title }}</h3>
-                <p>{{block.settings.subtitle}}</p>
-              </div>
-        {% endfor %}
-
+      {% for block in section.blocks %}
+        <div class='carousel-item'>
+          <img src='{{ block.settings.cover | img_url: 'x428' }}'>
+          <div class="carousel-bot">
+            <h3>{{ block.settings.title }}</h3>
+            <p>{{ block.settings.subtitle }}</p>
+          </div>
+        </div>
+      {% endfor %}
     </div>
     <button class='arrow right' id='nextBtn'>&gt;</button>
   </div>
@@ -121,12 +117,16 @@
   .carousel-item {
     min-width: 100%;
     text-align: center;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
+    background: #f8f8fa;
+    border: 1px solid #f3f3f4;
     border-radius: 10px;
     overflow: hidden;
   }
-
+  .carousel-bot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
   .carousel-item img {
     max-width: 100%;
   }
