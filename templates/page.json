@@ -91,6 +91,7 @@
     },
     "count_up_section_ETRWHY": {
       "type": "count-up-section",
+      "disabled": true,
       "settings": {
         "country_text": "Countries Reached",
         "member_text": "Preferred Choice of Enthusiastic Members",
@@ -174,6 +175,7 @@
     },
     "custom_liquid_xQXdPe": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "full_width": false,
         "show_space": true,
