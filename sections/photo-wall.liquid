@@ -3,9 +3,7 @@
     <div class='carousel'>
       <div class='carousel-track'>
         {% for block in section.blocks %}
-       
             <img src='{{ block.settings.img | img_url: '340x428'}}'>
-    
         {% endfor %}
       </div>
     </div>
@@ -59,7 +57,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    margin: auto;
+    margin: 20px 0;
   }
 
   .carousel {
@@ -70,7 +68,6 @@
   .carousel-track {
     display: flex;
     transition: transform 0.3s ease-in-out;
-    gap:10px;
   }
 
   .carousel-track img {
@@ -103,8 +100,7 @@
   /* 移动端样式 */
   @media (max-width: 768px) {
     .carousel-track img {
-      width: 50%;
-      /* 移动端显示两张图片 */
+      width: 45%;
     }
   }
 
@@ -116,16 +112,14 @@
 
     .carousel-track {
       transform: none;
-      /* PC端不需要滚动 */
     }
 
     .carousel-track img {
-      width: auto;
+      width:240px;
     }
 
     .carousel-btn {
       display: none;
-      /* 隐藏左右按钮 */
     }
   }
 </style>
