@@ -7,7 +7,7 @@
   <div class="photo-wall">
   {% for block in section.blocks %}
     <div class="photo-item">
-          <img src="{{ block.settings.img | img_url: '600x300'}}"/>
+        <img src="{{ block.settings.img | img_url: '600x300'}}"/>
     </div>
   {% endfor %}
   </div>
@@ -33,7 +33,7 @@
   ],
   "blocks": [
     {
-      "type": "Photo Card",
+      "type": "photo_card",
       "name": "Photo Card",
       "settings": [
         {
