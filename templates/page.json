@@ -89,6 +89,36 @@
         "color_scheme": "default"
       }
     },
+    "rich_text_ByJxzn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7bTgVr": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Values",
+            "use_h1": false
+          }
+        },
+        "text_7xd4y7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>XbotGo is an AI-powered sports cameraman that turns your smartphone into a professional-grade camera. It automatically tracks the action, smoothly zooms, and pans, all while using advanced computer vision to follow the ball and players. This game-changing technology makes high-quality sports recording accessible to parents, youth leagues, coaches, and amateur enthusiasts—eliminating the need for expensive equipment or skilled operators and offering a simple, affordable solution for capturing every moment of the game.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_7bTgVr",
+        "text_7xd4y7"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
     "photo_wall_BK4ceW": {
       "type": "photo-wall",
       "blocks": {
@@ -702,6 +732,7 @@
   "order": [
     "slideshow_EVPEC8",
     "rich_text_zAMW7P",
+    "rich_text_ByJxzn",
     "photo_wall_BK4ceW",
     "gallery_wL4jkE",
     "custom_content_x6grnt",
