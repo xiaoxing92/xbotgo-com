@@ -18,15 +18,15 @@
       "name": "Card",
       "settings": [
         {
+            "type": "image_picker",
+            "id": "cover",
+            "label": "Image"
+        },
+        {
             "id": "title",
             "type": "textarea",
             "label": "title",
             "default": "title"
-        },
-        {
-            "type": "image_picker",
-            "id": "img",
-            "label": "Image"
         },
         {
           "id": "subtitle",
@@ -62,7 +62,7 @@
     <div class='carousel-track'>
         {% for block in section.blocks %}
             <div class='carousel-item'>
-                <img src="{{ block.settings.img }}" alt='Award Image'>
+                <img src="{{ block.settings.cover | img_url: '340x428' }}" />
                 <h3>{{ block.settings.title }}</h3>
                 <p>{{block.settings.subtitle}}</p>
               </div>
