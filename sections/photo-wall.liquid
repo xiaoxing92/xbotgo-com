@@ -1,0 +1,59 @@
+<div id='section-id-{{ section.id }}' class="container fully">
+  {% if section.settings.title != blank %}
+    <h2 class='hometitle h4 align-center' {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+      {{- section.settings.title | escape -}}
+    </h2>
+  {% endif %}
+  <div class="photo-wall">
+  {% for block in section.blocks %}
+    <div class="photo-item">
+          <img src="{{ block.settings.img | img_url: '600x300'}}"/>
+    </div>
+  {% endfor %}
+  </div>
+</div>
+
+<style>
+
+  @media (max-width: 768px) {
+
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Photo Wall",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Photo Wall"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "Photo Card",
+      "name": "Photo Card",
+      "settings": [
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Url"
+        },
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Image"
+        },
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Photo Wall",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
