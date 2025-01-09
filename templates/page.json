@@ -624,6 +624,49 @@
       "settings": {
         "title": "FAQ"
       }
+    },
+    "photo_wall_BK4ceW": {
+      "type": "photo-wall",
+      "blocks": {
+        "photo_card_XFdqF6": {
+          "type": "photo_card",
+          "settings": {
+            "url": "",
+            "img": "shopify://shop_images/1_576cdc99-7d22-4d8a-b421-fcdccfb3a823.png"
+          }
+        },
+        "photo_card_D4MgPe": {
+          "type": "photo_card",
+          "settings": {
+            "url": "",
+            "img": "shopify://shop_images/2_b330ba1a-7532-4e61-b5bc-96d15fe515be.png"
+          }
+        },
+        "photo_card_byhV8z": {
+          "type": "photo_card",
+          "settings": {
+            "url": "",
+            "img": "shopify://shop_images/3_4a7c0244-301a-4e5c-8a22-b19a32e00b8b.png"
+          }
+        },
+        "photo_card_h44qTJ": {
+          "type": "photo_card",
+          "settings": {
+            "url": "",
+            "img": "shopify://shop_images/4_4da5e2d6-e765-420c-ae52-dfad75d88a46.png"
+          }
+        }
+      },
+      "block_order": [
+        "photo_card_XFdqF6",
+        "photo_card_D4MgPe",
+        "photo_card_byhV8z",
+        "photo_card_h44qTJ"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Photo Wall"
+      }
     }
   },
   "order": [
@@ -639,6 +682,7 @@
     "video_with_text_4h4jfH",
     "93f97a72-d4c6-4de4-976d-c98954d4d95a",
     "custom_content_Dpj8Je",
-    "collapsible_tabs_JEqR6P"
+    "collapsible_tabs_JEqR6P",
+    "photo_wall_BK4ceW"
   ]
 }
