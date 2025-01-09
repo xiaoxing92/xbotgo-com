@@ -89,6 +89,16 @@
         "color_scheme": "default"
       }
     },
+    "count_up_section_ETRWHY": {
+      "type": "count-up-section",
+      "settings": {
+        "country_text": "Countries Reached",
+        "member_text": "Preferred Choice of Enthusiastic Members",
+        "game_text": "Over 1,000,000 Minutes Sports Game Recording",
+        "desktop_background": "shopify://shop_images/numberic_1.5x.png",
+        "count_item_background": "rgba(0,0,0,0)"
+      }
+    },
     "rich_text_ByJxzn": {
       "type": "rich-text",
       "blocks": {
@@ -162,6 +172,14 @@
         "title": "Photo Wall"
       }
     },
+    "custom_liquid_xQXdPe": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": false,
+        "show_space": true,
+        "code": "<div class=\"xbotgo-section\">\n    <div class=\"image-container\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/5_d27b99d0-73c2-4341-83ab-8d0416a2b778.png?v=1736405779\" alt=\"Group of kids with XbotGo\" />\n    </div>\n    <div class=\"content-container\">\n      <h2>Why XbotGo is different</h2>\n      <p>\n        XbotGo transforms any smartphone into an expert sports cameraman, autonomously tracking players, the ball, and every field movement. \n        Using advanced computer vision, it intelligently zooms and pans, delivering professional-quality sports footage for parents, coaches, \n        and athletes—effortlessly capturing every highlight.\n      </p>\n    </div>\n  </div>\n  \n<style>\n.xbotgo-section {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: #f9f9f9;\n  border-radius: 10px;\n}\n\n.image-container {\n  flex: 1;\n  max-width: 50%;\n}\n\n.image-container img {\n  width: 100%;\n  height: auto;\n  border-radius: 10px;\n}\n\n.content-container {\n  flex: 1;\n  max-width: 50%;\n  padding: 20px;\n}\n\n.content-container h2 {\n  font-size: 24px;\n  color: #333;\n  margin-bottom: 15px;\n}\n\n.content-container p {\n  font-size: 16px;\n  color: #666;\n}\n@media (max-width: 768px) {\n  .xbotgo-section {\n    flex-direction: column;\n  }\n\n  .image-container, .content-container {\n    max-width: 100%;\n  }\n}\n</style>"
+      }
+    },
     "carousel_card_LPA3jw": {
       "type": "carousel-card",
       "blocks": {
@@ -169,15 +187,16 @@
           "type": "card_block",
           "settings": {
             "cover": "shopify://shop_images/6_5c054573-a5ed-48e5-80f9-4a7ebf03e819.png",
-            "title": "title",
-            "subtitle": "Subtitle"
+            "title": "olympic-Level skateboarding Training with xbotGo",
+            "subtitle": "August 12, 2024- Blink support"
           }
         },
         "card_block_nYWq8y": {
           "type": "card_block",
           "settings": {
-            "title": "title",
-            "subtitle": "Subtitle"
+            "cover": "shopify://shop_images/7_c17851b4-cbc3-4d72-8290-b570b6d84249.png",
+            "title": "Olympic-Level skateboarding Training with xbotgo",
+            "subtitle": "August 12, 2024- Blink support"
           }
         }
       },
@@ -187,7 +206,16 @@
       ],
       "disabled": true,
       "settings": {
-        "title": "Carousel Card"
+        "title": "Awards & Reviews"
+      }
+    },
+    "custom_liquid_RCNFwk": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "show_space": true,
+        "code": "<style>\n    .products-overview {\n        display: flex;\n        flex-wrap: wrap;\n        justify-content: space-between;\n        gap: 16px;\n        padding: 16px;\n        box-sizing: border-box;\n    }\n\n    .product-item {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        flex: 1 1 calc(20% - 16px);\n        text-align: center;\n        padding: 16px;\n        height: 220px;\n        background: #f9f9f9;\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        box-sizing: border-box;\n        position: relative;\n    }\n\n    .product-img {\n        position: absolute;\n        top: 0;\n        width: 100%;\n        height: 100%;\n    }\n\n    .product-name {\n        display: block;\n        height: 35px;\n        position: absolute;\n        bottom: 5px;\n    }\n\n    @media (max-width: 768px) {\n        .products-overview {\n            flex-wrap: wrap;\n            justify-content: center;\n        }\n\n        .product-item {\n            flex: 1 1 calc(33.33% - 16px);\n            height: 170px;\n        }\n\n        .product-name {\n            font-size: 13px;\n        }\n    }\n</style>\n\n\n<div class=\"products-overview\">\n    <div class=\"product-item\">\n        <img class=\"product-img\"\n            src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/50c499ce9e946faaeedad202e667d328_7b7b8471-1296-40f4-9986-4a7a7c0c77a1.png?v=1735784598\" />\n        <span class=\"product-name\"> XbotGo Chameleon</span>\n    </div>\n    <div class=\"product-item\">\n        <img class=\"product-img\"\n            src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/bd75a052c60d56be46e7156b2f4d3f00_11b71c86-cd4e-433d-a56b-62da012dc5a3.png?v=1735784604\" />\n        <span class=\"product-name\">XbotGo Sports Gimba</span>\n    </div>\n    <div class=\"product-item\">\n        <img class=\"product-img\" src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/t1.png?v=1735784722\" />\n        <span class=\"product-name\">T1 Tripods</span>\n    </div>\n    <div class=\"product-item\">\n        <img class=\"product-img\" src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/t4.png?v=1735784722\" />\n        <span class=\"product-name\">T4 Tripods</span>\n    </div>\n    <div class=\"product-item\">\n        <img class=\"product-img\"\n            src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/b7c4e8972e4d203a0c8ef630e67930fd.png?v=1735784721\" />\n        <span class=\"product-name\">Umbrella</span>\n    </div>\n</div>"
       }
     },
     "gallery_wL4jkE": {
@@ -755,23 +783,17 @@
       "settings": {
         "title": "FAQ"
       }
-    },
-    "custom_liquid_xQXdPe": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "show_space": true,
-        "code": "<div class=\"xbotgo-section\">\n    <div class=\"image-container\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/5_d27b99d0-73c2-4341-83ab-8d0416a2b778.png?v=1736405779\" alt=\"Group of kids with XbotGo\" />\n    </div>\n    <div class=\"content-container\">\n      <h2>Why XbotGo is different</h2>\n      <p>\n        XbotGo transforms any smartphone into an expert sports cameraman, autonomously tracking players, the ball, and every field movement. \n        Using advanced computer vision, it intelligently zooms and pans, delivering professional-quality sports footage for parents, coaches, \n        and athletes—effortlessly capturing every highlight.\n      </p>\n    </div>\n  </div>\n  \n<style>\n.xbotgo-section {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: #f9f9f9;\n  border-radius: 10px;\n  margin: 20px;\n\n}\n\n.image-container {\n  flex: 1;\n  max-width: 50%;\n}\n\n.image-container img {\n  width: 100%;\n  height: auto;\n  border-radius: 10px;\n}\n\n.content-container {\n  flex: 1;\n  max-width: 50%;\n  padding: 20px;\n}\n\n.content-container h2 {\n  font-size: 24px;\n  color: #333;\n  margin-bottom: 15px;\n}\n\n.content-container p {\n  font-size: 16px;\n  color: #666;\n}\n@media (max-width: 768px) {\n  .xbotgo-section {\n    flex-direction: column;\n  }\n\n  .image-container, .content-container {\n    max-width: 100%;\n  }\n}\n</style>"
-      }
     }
   },
   "order": [
     "slideshow_EVPEC8",
     "rich_text_zAMW7P",
+    "count_up_section_ETRWHY",
     "rich_text_ByJxzn",
     "photo_wall_BK4ceW",
+    "custom_liquid_xQXdPe",
     "carousel_card_LPA3jw",
+    "custom_liquid_RCNFwk",
     "gallery_wL4jkE",
     "custom_content_x6grnt",
     "custom_content_a9Da6V",
@@ -783,7 +805,6 @@
     "video_with_text_4h4jfH",
     "93f97a72-d4c6-4de4-976d-c98954d4d95a",
     "custom_content_Dpj8Je",
-    "collapsible_tabs_JEqR6P",
-    "custom_liquid_xQXdPe"
+    "collapsible_tabs_JEqR6P"
   ]
 }
