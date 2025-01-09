@@ -180,11 +180,11 @@
         "richtext_Q4zcbr": {
           "type": "richtext",
           "settings": {
-            "richtext": "<p>Download XbotGo Chameleon User Manual Here</p>",
+            "richtext": "<p>Download XbotGo Chameleon User Manua <a href=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/Chameleon_Manual.pdf?v=1725869756\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/Chameleon_Manual.pdf?v=1725869756\">Here</a></p>",
             "icon": "",
             "icon_size": "small",
             "enable_box": false,
-            "box_color": "#e0f4d5",
+            "box_color": "#dc6318",
             "show_in_quickbuy": false
           }
         }
