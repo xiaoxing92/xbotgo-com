@@ -483,7 +483,7 @@
     "social_youtube_url": "https://www.youtube.com/channel/UCK7BuiIpPdEPpsotSAAfGPw",
     "coll_grid_image_shape": "portrait-45",
     "favicon": "shopify://shop_images/favicon.png",
-    "animations_enabled_desktop": false,
+    "animations_enabled_desktop": true,
     "animations_disabled_first_section": false,
     "cart_type": "drawer",
     "after_add_to_cart": "drawer",
