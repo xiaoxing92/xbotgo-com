@@ -1,0 +1,176 @@
+
+{% schema %}
+{
+  "name": "Carousel Card",
+  "class": "section-carousel-card",
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Carousel Card"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card_block",
+      "name": "Card",
+      "settings": [
+        {
+            "id": "title",
+            "type": "textarea",
+            "label": "title",
+            "default": "title"
+        },
+        {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Image"
+        },
+        {
+          "id": "subtitle",
+          "type": "text",
+          "label": "Subtitle",
+          "default": "Subtitle"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Carousel Card",
+      "settings": {},
+      "blocks": [
+        { "type": "card_block"},
+        { "type": "card_block"},
+        { "type": "card_block"}
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<div id='section-id-{{ section.id }}' class='container'>
+    {% if section.settings.title != blank %}
+        <h2 class="hometitle h4 align-center" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+          {{- section.settings.title | escape -}}
+        </h2>
+      {% endif %}
+  <div class='carousel'>
+    <button class='arrow left' id='prevBtn'>&lt;</button>
+    <div class='carousel-track'>
+        {% for block in section.blocks %}
+            <div class='carousel-item'>
+                <img src="{{ block.settings.img }}" alt='Award Image'>
+                <h3>{{ block.settings.title }}</h3>
+                <p>{{block.settings.subtitle}}</p>
+              </div>
+        {% endfor %}
+
+    </div>
+    <button class='arrow right' id='nextBtn'>&gt;</button>
+  </div>
+</div>
+
+<script>
+  const observer = new MutationObserver(() => {
+    const track = document.querySelector('.carousel-track')
+    const items = Array.from(track.children)
+    const prevBtn = document.getElementById('prevBtn')
+    const nextBtn = document.getElementById('nextBtn')
+
+    let currentIndex = 0
+
+    function updateCarousel() {
+      const width = items[0].getBoundingClientRect().width
+      track.style.transform = `translateX(-${currentIndex * width}px)`
+    }
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = Math.max(0, currentIndex - 1)
+      updateCarousel()
+    })
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = Math.min(items.length - 1, currentIndex + 1)
+      updateCarousel()
+    })
+
+    window.addEventListener('resize', updateCarousel)
+
+    updateCarousel()
+  })
+
+  observer.observe(document.body, { childList: true, subtree: true })
+</script>
+
+<style>
+  .carousel {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .carousel-track {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.3s ease-in-out;
+    will-change: transform;
+  }
+
+  .carousel-item {
+    min-width: 100%;
+    text-align: center;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .carousel-item img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 1001;
+  }
+
+  .arrow.left {
+    left: 10px;
+  }
+
+  .arrow.right {
+    right: 10px;
+  }
+
+  .arrow:focus {
+    outline: none;
+  }
+
+  @media (min-width: 768px) {
+    .carousel-track {
+      flex-wrap: nowrap;
+    }
+
+    .carousel-item {
+      min-width: calc(50% - 10px);
+      flex-grow: 1;
+    }
+
+    .arrow {
+      display: none;
+    }
+  }
+</style>
