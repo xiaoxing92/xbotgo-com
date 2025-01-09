@@ -1046,6 +1046,7 @@
         "testimonial_Acqf8c",
         "testimonial_K4xmJa"
       ],
+      "disabled": true,
       "settings": {
         "title": "Customer reviews",
         "layout": "image-right",
