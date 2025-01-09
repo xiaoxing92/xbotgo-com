@@ -1,5 +1,5 @@
 <div id='section-id-{{ section.id }}' class='container carousel-container'>
-    <button class='carousel-btn left-btn'>◀</button>
+    <button class='carousel-btn left-btn'>&lt;</button>
     <div class='carousel'>
       <div class='carousel-track'>
         {% for block in section.blocks %}
@@ -7,7 +7,7 @@
         {% endfor %}
       </div>
     </div>
-    <button class='carousel-btn right-btn'>▶</button>
+    <button class='carousel-btn right-btn'>&gt;</button>
 </div>
 
 
@@ -79,14 +79,16 @@
 
   .carousel-btn {
     position: absolute;
-    top: 50%;
+    top: 55%;
     transform: translateY(-50%);
-    z-index: 10;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: rgba(0, 0, 0, 0.5);
     border: none;
-    padding: 10px;
     cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 1001;
   }
 
   /* 左右按钮 */
