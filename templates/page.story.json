@@ -95,8 +95,8 @@
         "button_UmReiD"
       ],
       "custom_css": [
-        ".h1 {width: 962px; height: 107px; font-family: Poppins, Poppins; font-weight: bold; font-size: 35px; color: #aed30e; text-align: left; font-style: normal; text-transform: none;}",
-        "@media (max-width: 767px) {.h1 {width: 200px; height: 80px; font-size: 22px; margin: 0 0 1.25rem; } .large-text{font-size: 15px;} }"
+        ".h1 {width: 962px; height: 107px; font-family: Poppins, Poppins; font-weight: bold; font-size: 35px; color: #aed30e; text-align: left; font-style: normal; text-transform: none; margin: 0 0 1.25rem;}",
+        "@media (max-width: 767px) {.h1 {width: 200px; height: 80px; font-size: 22px; } .large-text {font-size: 15px; }}"
       ],
       "settings": {
         "height": "medium",
