@@ -48,7 +48,7 @@
         "height": "adapt",
         "height_desktop": 720,
         "height_mobile": 400,
-        "image_link": "",
+        "image_link": "https://www.surveymonkey.com/r/XbotgoClub",
         "full_width": true,
         "text_alignment": "center center",
         "mobile_overlay_under": false,
@@ -181,8 +181,8 @@
           "type": "button",
           "settings": {
             "button_label": "Click here to Participate",
-            "button_link": "",
-            "button_style": "primary"
+            "button_link": "https://www.surveymonkey.com/r/XbotgoClub",
+            "button_style": "secondary"
           }
         },
         "heading_GjmjUB": {
@@ -209,9 +209,9 @@
         "text_kx4PQz"
       ],
       "custom_css": [
-        ".h1 {font-family: Poppins, Poppins; font-weight: bold; font-size: 45px; color: #aed30e; text-align: left; font-style: normal; text-transform: none; margin: 0 0 1.25rem;}",
-        ".btn {background: #A9DC15; width: 250px; text-align: center; font-size: 14px; border: 1px solid; border-radius: 20px; top: 65%; left: 10%; position: rerelative;}",
-        "@media (max-width: 767px) {.h1 {font-size: 21px; } .large-text {font-size: 13px; }}"
+        ".h1 {font-family: Poppins, Poppins; font-weight: bold; font-size: 35px; color: #aed30e; text-align: left; font-style: normal; text-transform: none; margin: 0 0 1.25rem;}",
+        ".btn {background: #a9dc15; width: 250px; text-align: center; font-size: 16px; border-radius: 25px; color: #000; cursor: pointer;}",
+        "@media (max-width: 767px) {.h1 {font-size: 18px; } .btn {} .large-text {font-size: 13px; }}"
       ],
       "settings": {
         "height": "medium",
