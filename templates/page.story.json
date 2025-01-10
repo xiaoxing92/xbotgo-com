@@ -107,6 +107,7 @@
         "media_8xPnqd": {
           "type": "media",
           "settings": {
+            "image": "shopify://shop_images/1_bffc9463-c321-4b6c-b4a6-219d37f17dbe.png",
             "enlarge_media": true,
             "subheading": "Gallery",
             "title": "Tell your story",
@@ -118,7 +119,8 @@
         "media_q6cMHe": {
           "type": "media",
           "settings": {
-            "enlarge_media": false,
+            "image": "shopify://shop_images/2_337322cb-fc4b-4059-92dd-a5e11f5c96e2.png",
+            "enlarge_media": true,
             "subheading": "Gallery",
             "title": "Tell your story",
             "button_label": "",
@@ -160,7 +162,7 @@
       "settings": {
         "grid_desktop": 2,
         "grid_mobile": "1",
-        "height": "fixed",
+        "height": "adapt",
         "desktop_image_height": 460,
         "mobile_image_height": 400,
         "title_size": 30,
@@ -278,7 +280,8 @@
         "template--15213462618185__e349fe82-4ed8-48b7-b15a-84eb3a247d25-button-1"
       ],
       "settings": {
-        "image_width": 700,
+        "image": "shopify://shop_images/4_cac8fc6f-d0ef-4691-bc7e-80dac721a5de.png",
+        "image_width": 370,
         "image_link": "",
         "image_position": "right",
         "text_alignment": "left",
@@ -310,7 +313,7 @@
       "settings": {
         "height": "medium",
         "text_alignment": "left",
-        "full_width": false,
+        "full_width": true,
         "color_scheme": "default"
       }
     },
