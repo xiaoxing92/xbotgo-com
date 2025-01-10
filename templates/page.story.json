@@ -109,8 +109,8 @@
           "settings": {
             "image": "shopify://shop_images/1_bffc9463-c321-4b6c-b4a6-219d37f17dbe.png",
             "enlarge_media": true,
-            "subheading": "Gallery",
-            "title": "Tell your story",
+            "subheading": "",
+            "title": "",
             "button_label": "",
             "link": "",
             "text_alignment": "bottom left"
@@ -121,32 +121,8 @@
           "settings": {
             "image": "shopify://shop_images/2_337322cb-fc4b-4059-92dd-a5e11f5c96e2.png",
             "enlarge_media": true,
-            "subheading": "Gallery",
-            "title": "Tell your story",
-            "button_label": "",
-            "link": "",
-            "text_alignment": "bottom left"
-          }
-        },
-        "media_FJRrpt": {
-          "type": "media",
-          "disabled": true,
-          "settings": {
-            "enlarge_media": false,
-            "subheading": "Gallery",
-            "title": "Tell your story",
-            "button_label": "",
-            "link": "",
-            "text_alignment": "bottom left"
-          }
-        },
-        "media_Rp8dyT": {
-          "type": "media",
-          "disabled": true,
-          "settings": {
-            "enlarge_media": true,
-            "subheading": "Gallery",
-            "title": "Tell your story",
+            "subheading": "",
+            "title": "",
             "button_label": "",
             "link": "",
             "text_alignment": "bottom left"
@@ -155,24 +131,22 @@
       },
       "block_order": [
         "media_8xPnqd",
-        "media_q6cMHe",
-        "media_FJRrpt",
-        "media_Rp8dyT"
+        "media_q6cMHe"
       ],
       "settings": {
         "grid_desktop": 2,
         "grid_mobile": "1",
-        "height": "adapt",
+        "height": "fixed",
         "desktop_image_height": 460,
-        "mobile_image_height": 400,
+        "mobile_image_height": 210,
         "title_size": 30,
-        "title_size_mobile": 22,
+        "title_size_mobile": 42,
         "enable_margin": true,
         "enable_row_spacing": true,
         "full_width": false,
         "color_scheme": "default",
-        "enable_carousel": true,
-        "overlay_style": "full",
+        "enable_carousel": false,
+        "overlay_style": "no_background",
         "button_style": "primary"
       }
     },
