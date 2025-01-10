@@ -80,6 +80,7 @@
         },
         "button_UmReiD": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "Click here to Participate",
             "button_link": "",
@@ -93,7 +94,11 @@
         "template--15213462618185__ffca7f3f-a70e-4737-9485-80d1f269e72b-text-1",
         "button_UmReiD"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".h1 {width: 962px; height: 107px; font-family: Poppins, Poppins; font-weight: bold; font-size: 35px; color: #aed30e; text-align: left; font-style: normal; text-transform: none;}",
+        ".container {font-size: 15px;}",
+        "@media (max-width: 767px) {.h1 {width: 200px; height: 80px; font-size: 22px; } .in-content {font-size: 15px; }}"
+      ],
       "settings": {
         "height": "medium",
         "text_alignment": "left",
