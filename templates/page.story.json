@@ -305,6 +305,7 @@
       "blocks": {
         "template--15390039113801__78308a9b-5ca9-4a24-9b25-c0be067d9345-hotspot-1": {
           "type": "hotspot",
+          "disabled": true,
           "settings": {
             "hotspot_x": 28,
             "hotspot_y": 24,
@@ -316,8 +317,23 @@
             "icon_width": 32
           }
         },
+        "hotspot_qVcrKk": {
+          "type": "hotspot",
+          "disabled": true,
+          "settings": {
+            "hotspot_x": 50,
+            "hotspot_y": 50,
+            "hotspot_x_mobile": 50,
+            "hotspot_y_mobile": 50,
+            "heading": "Feature name",
+            "text": "<p>Share useful information about your product features.</p>",
+            "icon": "",
+            "icon_width": 32
+          }
+        },
         "template--15390039113801__78308a9b-5ca9-4a24-9b25-c0be067d9345-hotspot-3": {
           "type": "hotspot",
+          "disabled": true,
           "settings": {
             "hotspot_x": 64,
             "hotspot_y": 32,
@@ -331,6 +347,7 @@
         },
         "b11c8c3d-e3f0-4ad2-895c-b53a2332f35f": {
           "type": "hotspot",
+          "disabled": true,
           "settings": {
             "hotspot_x": 56,
             "hotspot_y": 64,
@@ -345,6 +362,7 @@
       },
       "block_order": [
         "template--15390039113801__78308a9b-5ca9-4a24-9b25-c0be067d9345-hotspot-1",
+        "hotspot_qVcrKk",
         "template--15390039113801__78308a9b-5ca9-4a24-9b25-c0be067d9345-hotspot-3",
         "b11c8c3d-e3f0-4ad2-895c-b53a2332f35f"
       ],
