@@ -366,6 +366,7 @@
         "b11c8c3d-e3f0-4ad2-895c-b53a2332f35f"
       ],
       "settings": {
+        "image": "shopify://shop_images/2_188f2a5f-6539-44d6-b126-85d89eaa8b8c.jpg",
         "hotspot_color": "#070707",
         "button_content": "plus",
         "outer_circle": "pulse",
@@ -403,6 +404,7 @@
       "block_order": [
         "template--15213462618185__d3729242-1117-4e20-b13f-db8d6a88222d-text-1"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "color_scheme": "default",
@@ -483,6 +485,7 @@
         "template--15390039113801__542425f1-3c2e-4078-a725-9f39b35ee00b-feature-2",
         "template--15390039113801__542425f1-3c2e-4078-a725-9f39b35ee00b-feature-3"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Key features",
         "image_max_width": 560,
@@ -495,13 +498,13 @@
       "type": "featured-blog",
       "settings": {
         "title": "Blog posts",
-        "blog": "",
+        "blog": "technology-development",
         "post_limit": 3,
         "show_author": true,
         "show_date": true,
         "show_excerpts": true,
         "crop_ratio": "1.78",
-        "color_scheme": "1"
+        "color_scheme": "default"
       }
     }
   },
