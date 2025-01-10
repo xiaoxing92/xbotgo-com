@@ -52,7 +52,7 @@
         "full_width": true,
         "text_alignment": "center center",
         "mobile_overlay_under": false,
-        "overlay_style": "full image-overlay--bg-shadow"
+        "overlay_style": "no_background"
       }
     },
     "ffca7f3f-a70e-4737-9485-80d1f269e72b": {
@@ -497,10 +497,10 @@
     "789f0e57-893a-46b3-a1d6-bcabe394135b": {
       "type": "featured-blog",
       "settings": {
-        "title": "Blog posts",
-        "blog": "technology-development",
+        "title": "Club Sharing",
+        "blog": "club-sharing",
         "post_limit": 3,
-        "show_author": true,
+        "show_author": false,
         "show_date": true,
         "show_excerpts": true,
         "crop_ratio": "1.78",
