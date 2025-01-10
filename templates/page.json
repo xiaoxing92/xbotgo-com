@@ -92,6 +92,9 @@
     "count_up_section_ETRWHY": {
       "type": "count-up-section",
       "disabled": true,
+      "custom_css": [
+        ".count-number {color: #000; -webkit-text-fill-color: #000;}"
+      ],
       "settings": {
         "country_text": "Countries Reached",
         "member_text": "Preferred Choice of Enthusiastic Members",
