@@ -12,6 +12,27 @@
     "slideshow_tdjCPE": {
       "type": "slideshow",
       "blocks": {
+        "image_PGytQd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/banner_1a9df2e3-be0e-4ddd-aed1-8e59dfea5b51.jpg",
+            "mobile_image": "shopify://shop_images/M_1.jpg",
+            "slide_link": "https://xbotgo.com/pages/xbotgo-club-grassroots-initiative",
+            "subheading": "",
+            "title": "",
+            "heading_max_width": 15,
+            "title_size": 54,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        },
         "image_FLmq79": {
           "type": "image",
           "disabled": true,
@@ -78,22 +99,23 @@
         }
       },
       "block_order": [
+        "image_PGytQd",
         "image_FLmq79",
         "image_Hrfmfc",
         "image_neNB7X"
       ],
       "custom_css": [
-        ".text-overlay {position: relative; top: 10%; left: 0; font-size: 23px;}",
+        ".text-overlay {position: relative; top: 5%; left: 5%; font-size: 23px;}",
         ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 14px; border: 1px solid; border-radius: 20px; top: 65%; left: 10%; position: rerelative;}",
-        "@media (max-width: 767px) {.text-overlay {position: relative; top: -27%; left: 0%; font-size: 15px; } .btn {width: 130px; text-align: center; font-size: 14px; position: relative; left: 0; } .text-overlay__text {display: flex; flex-direction: column; align-items: center; }}"
+        "@media (max-width: 767px) {.text-overlay {top: -27%; left: 0%; font-size: 15px; align-items: center; } .btn {width: 130px; text-align: center; font-size: 14px; position: relative; left: 0; } .text-overlay__text {display: flex; flex-direction: column; align-items: center; }}"
       ],
       "settings": {
         "show_sticky_banner": false,
         "sticky_text": "",
         "link_url": "shopify://collections/all",
-        "height": "full",
-        "height_desktop": 600,
-        "height_mobile": 460,
+        "height": "fixed",
+        "height_desktop": 800,
+        "height_mobile": 540,
         "full_width": true,
         "mobile_overlay_under": false,
         "overlay_style": "shadow",
