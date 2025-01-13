@@ -74,7 +74,7 @@
         "template--15213462618185__ffca7f3f-a70e-4737-9485-80d1f269e72b-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>In order to allow more children and clubs to enjoy the convenience and experiences brought by advanced technology, while enhancing XbotGo's brand influence among overseas clubs, we will launch a giveaway event called the \"grassroots Initiative on January 13th.</p>",
+            "text": "<p>In order to allow more children and clubs to enjoy the convenience and experiences brought by advanced technology, while enhancing XbotGo's brand influence among overseas clubs, we will launch a giveaway event called the \"<strong>grassroots Initiative</strong>“ on January 13th.</p>",
             "enlarge_text": true
           }
         },
