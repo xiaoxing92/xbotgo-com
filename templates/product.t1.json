@@ -123,6 +123,100 @@
         "media_grouping_option": "Color,Colour,Couleur,Farbe"
       }
     },
+    "image_with_text_overlay_b4Nm89": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/1_4a776d64-95eb-46c8-b2de-7331800b4778.png",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "image_with_text_overlay_UEqWUa": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/2_bb250877-38a7-40d7-98b0-37e6e3013c81.png",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "image_with_text_overlay_HWRLBm": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/3_8577e2b6-9784-41e6-8226-628029f69f90.png",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "1648166196c57e88b5": {
+      "type": "multi-column",
+      "blocks": {
+        "1648166196543ad423-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/hands-free-01_e41a54a1-50c0-4c54-abbd-954d41b2c8e2.png",
+            "title": "HANDS-FREE",
+            "text": "<p>Set up from field-side and you're good to go. Enjoy the game while recording on its own.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "1648166196543ad423-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/img_329343.png",
+            "title": "EASY CLOUD STORAGE",
+            "text": "<p>Save on phone storage by automatically sending recorded footage to the cloud.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "1648166196543ad423-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/2747988-200.png",
+            "title": "SHARE EXCITING MOMENTS",
+            "text": "<p>Easily share your live streams or recordings in HD online or with friends.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1648166196543ad423-0",
+        "1648166196543ad423-1",
+        "1648166196543ad423-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "media_aspect_ratio": "1",
+        "media_width": 60,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    },
     "image_with_text_hQhikw": {
       "type": "image-with-text",
       "blocks": {
@@ -169,73 +263,6 @@
         "title": "You may also like",
         "show_vendor": false,
         "grid": 4
-      }
-    },
-    "judgeme_section_review_widget_bb26": {
-      "type": "apps",
-      "blocks": {
-        "judgeme_review_widget_2d4d6566": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "judgeme_review_widget_2d4d6566"
-      ],
-      "settings": {
-        "full_width": false,
-        "show_space": true
-      }
-    },
-    "1648166196c57e88b5": {
-      "type": "multi-column",
-      "blocks": {
-        "1648166196543ad423-0": {
-          "type": "text_block",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/hands-free-01_e41a54a1-50c0-4c54-abbd-954d41b2c8e2.png",
-            "title": "HANDS-FREE",
-            "text": "<p>Set up from field-side and you're good to go. Enjoy the game while recording on its own.</p>",
-            "button_label": "",
-            "link": ""
-          }
-        },
-        "1648166196543ad423-1": {
-          "type": "text_block",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/img_329343.png",
-            "title": "EASY CLOUD STORAGE",
-            "text": "<p>Save on phone storage by automatically sending recorded footage to the cloud.</p>",
-            "button_label": "",
-            "link": ""
-          }
-        },
-        "1648166196543ad423-2": {
-          "type": "text_block",
-          "settings": {
-            "enable_media": true,
-            "image": "shopify://shop_images/2747988-200.png",
-            "title": "SHARE EXCITING MOMENTS",
-            "text": "<p>Easily share your live streams or recordings in HD online or with friends.</p>",
-            "button_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1648166196543ad423-0",
-        "1648166196543ad423-1",
-        "1648166196543ad423-2"
-      ],
-      "settings": {
-        "title": "",
-        "media_aspect_ratio": "1",
-        "media_width": 60,
-        "text_alignment": "center",
-        "button_style": "primary",
-        "color_scheme": "default"
       }
     },
     "16481664217d623657": {
@@ -323,6 +350,23 @@
         "text_alignment": "left",
         "button_style": "primary",
         "color_scheme": "default"
+      }
+    },
+    "judgeme_section_review_widget_bb26": {
+      "type": "apps",
+      "blocks": {
+        "judgeme_review_widget_2d4d6566": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judgeme_review_widget_2d4d6566"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": true
       }
     },
     "164849540210eed2b4": {
@@ -450,10 +494,13 @@
   },
   "order": [
     "main",
-    "16481664217d623657",
+    "image_with_text_overlay_b4Nm89",
+    "image_with_text_overlay_UEqWUa",
+    "image_with_text_overlay_HWRLBm",
     "1648166196c57e88b5",
     "image_with_text_hQhikw",
     "related-products",
+    "16481664217d623657",
     "judgeme_section_review_widget_bb26",
     "164849540210eed2b4"
   ]
