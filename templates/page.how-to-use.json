@@ -696,7 +696,7 @@
           "type": "video_block",
           "settings": {
             "title": "XbotGo Chameleon",
-            "video_shopify": "shopify://files/videos/XbotGo Chameleon Tutorial.mp4",
+            "video_shopify": "shopify://files/videos/189_1729557559(Video in Original Quality).mp4",
             "video_external": "https://youtu.be/7ZuuevGKWDs?si=7VGfW53-kjLHFAyx",
             "video_description": "",
             "autoplay": false
@@ -740,59 +740,6 @@
       "settings": {
         "title": "How To Use"
       }
-    },
-    "video_gallery_AyUdLW": {
-      "type": "video-gallery",
-      "blocks": {
-        "video_block_Jh9bMP": {
-          "type": "video_block",
-          "settings": {
-            "title": "Chameleon Firmware Upgrade",
-            "video_external": "https://youtu.be/50wK5SC_nDU?si=XnSM2UxO4EoNUef4",
-            "video_description": "",
-            "autoplay": false
-          }
-        },
-        "video_block_za7WRX": {
-          "type": "video_block",
-          "settings": {
-            "title": "XbotGo Chameleon Settings",
-            "video_shopify": "shopify://files/videos/ChameleonFirmwareUpgrade.mp4",
-            "video_external": "https://youtu.be/qfLpTDPfs7Q?si=41AKV_rNubVDAPPz",
-            "video_description": "",
-            "autoplay": false
-          }
-        },
-        "video_block_PtBrGn": {
-          "type": "video_block",
-          "settings": {
-            "title": "Default Content",
-            "video_shopify": "shopify://files/videos/250ef0f40e755c52fa64ff5050e60f61.mov",
-            "video_external": "",
-            "video_description": "",
-            "autoplay": false
-          }
-        },
-        "video_block_TtijMw": {
-          "type": "video_block",
-          "settings": {
-            "title": "Default Content",
-            "video_external": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4",
-            "video_description": "",
-            "autoplay": false
-          }
-        }
-      },
-      "block_order": [
-        "video_block_Jh9bMP",
-        "video_block_za7WRX",
-        "video_block_PtBrGn",
-        "video_block_TtijMw"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "Video Collection"
-      }
     }
   },
   "order": [
@@ -811,7 +758,6 @@
     "collapsible_tabs_JEqR6P",
     "slideshow_EJXkkz",
     "tabs_liuqid_KAAb3J",
-    "video_gallery_3NEJWE",
-    "video_gallery_AyUdLW"
+    "video_gallery_3NEJWE"
   ]
 }
