@@ -407,6 +407,19 @@
         "button_style": "primary"
       }
     },
+    "featured_blog_XJ8MXX": {
+      "type": "featured-blog",
+      "settings": {
+        "title": "Blog posts",
+        "blog": "technology-development",
+        "post_limit": 3,
+        "show_author": false,
+        "show_date": true,
+        "show_excerpts": true,
+        "crop_ratio": "1.78",
+        "color_scheme": "default"
+      }
+    },
     "logo_list_KfgaGA": {
       "type": "logo-list",
       "disabled": true,
@@ -556,6 +569,7 @@
     "video_KiWPna",
     "judgeme_section_review_widget_bb26",
     "gallery_34iDqA",
+    "featured_blog_XJ8MXX",
     "logo_list_KfgaGA",
     "164849540210eed2b4"
   ]
