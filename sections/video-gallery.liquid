@@ -178,19 +178,44 @@
     .grid-container {
         display: flex;
         gap: 16px;
-        height:240px;
         position: relative;
         border-radius: 20px;
         overflow: hidden;
         flex-wrap: wrap;
     }
-    .video-section{
-        width:370px;
-    }
+
+
+/* 小屏幕（手机，≤480px） */
+@media (max-width: 480px) {
+  .video-section{
+    width:370px;
+  }
+}
+
+/* 中屏幕（平板，481px - 768px） */
+@media (min-width: 481px) and (max-width: 768px) {
+  .video-section{
+    width:477px;
+  }
+}
+
+/* 大屏幕（笔记本，769px - 1024px） */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .video-section{
+    width:490px;
+  }
+}
+
+/* 超大屏幕（桌面，≥1025px） */
+@media (min-width: 1025px) {
+  .video-section{
+    width:490px;
+  }
+}
     .video-title{
         position: absolute;
         bottom: 0;
-        height: 45px;
+        height: 50px;
         background: #000;
         width: 100%;
         color: #fff;
