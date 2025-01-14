@@ -14,6 +14,7 @@
       "blocks": {
         "image_nphU7G": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PC-banner.png",
             "mobile_image": "shopify://shop_images/m-banner.png",
@@ -80,6 +81,7 @@
         "heading_kBFx8e",
         "text_VCRMHN"
       ],
+      "disabled": true,
       "settings": {
         "height": "medium",
         "text_alignment": "center",
@@ -89,6 +91,7 @@
     },
     "count_up_section_ETRWHY": {
       "type": "count-up-section",
+      "disabled": true,
       "custom_css": [
         ".count-number {color: #000; -webkit-text-fill-color: #000;}"
       ],
@@ -122,6 +125,7 @@
         "heading_7bTgVr",
         "text_7xd4y7"
       ],
+      "disabled": true,
       "settings": {
         "height": "medium",
         "text_alignment": "center",
@@ -167,12 +171,14 @@
         "photo_card_byhV8z",
         "photo_card_h44qTJ"
       ],
+      "disabled": true,
       "settings": {
         "title": "Photo Wall"
       }
     },
     "custom_liquid_xQXdPe": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "full_width": false,
         "show_space": true,
@@ -203,12 +209,14 @@
         "card_block_rEnc84",
         "card_block_nYWq8y"
       ],
+      "disabled": true,
       "settings": {
         "title": "Awards & Reviews"
       }
     },
     "custom_liquid_RCNFwk": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "full_width": false,
         "show_space": true,
