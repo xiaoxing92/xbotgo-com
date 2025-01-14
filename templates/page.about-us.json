@@ -14,6 +14,7 @@
       "blocks": {
         "image_nphU7G": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PC-banner.png",
             "mobile_image": "shopify://shop_images/m-banner.png",
@@ -215,6 +216,7 @@
     },
     "custom_liquid_RCNFwk": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "full_width": false,
         "show_space": true,
@@ -244,31 +246,12 @@
             "button_url_2": "",
             "text_alignment": "center center"
           }
-        },
-        "image_wDnUiQ": {
-          "type": "image",
-          "settings": {
-            "slide_link": "",
-            "subheading": "Tell your story",
-            "title": "Slide heading",
-            "heading_max_width": 15,
-            "title_size": 84,
-            "title_size_mobile": 46,
-            "use_h1": false,
-            "text": "<p>And optional subtext</p>",
-            "enlarge_text": true,
-            "button_label_1": "Shop this",
-            "button_url_1": "",
-            "button_label_2": "Shop all",
-            "button_url_2": "",
-            "text_alignment": "center center"
-          }
         }
       },
       "block_order": [
-        "image_hKkKGd",
-        "image_wDnUiQ"
+        "image_hKkKGd"
       ],
+      "disabled": true,
       "custom_css": [
         ".btn--secondary {border-radius: 30px;}"
       ],
