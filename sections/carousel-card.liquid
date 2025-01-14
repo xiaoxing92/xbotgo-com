@@ -117,7 +117,7 @@
   .carousel-item {
     display: flex;
     flex-direction: column;
-    min-width: 100%;
+    min-width: calc(50% - 10px);
     text-align: center;
     background:#F5F5F7;
     border: 1px solid #f3f3f4;
@@ -172,17 +172,16 @@
     outline: none;
   }
 
-  .carousel-item {
-    min-width: calc(50% - 10px);
-    flex-grow: 1;
-    height: 450px;
-  }
-  
   @media (min-width: 481px) and (max-width: 768px) {  
     .carousel-card-track {
       flex-wrap: nowrap;
     }
 
+    .carousel-item {
+      min-width: 100%;
+      flex-grow: 1;
+      height: 450px;
+    }
     .title{
       font-size:20px;
       margin-bottom: 25px;
