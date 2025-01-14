@@ -57,6 +57,31 @@
         "accessibility_info": ""
       }
     },
+    "tabs_liuqid_KAAb3J": {
+      "type": "tabs-liuqid",
+      "blocks": {
+        "tab_ktkFVf": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Chameleon",
+            "tab_content": "<style>\n    .tabs-item{\n        display: flex;\n        justify-content: space-between;\n    }\n    .tabs-item-right{\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        padding-left: 20px;\n    }\n    .tabs-img{\n        width:50%;\n        border-radius: 20px;\n    }\n    .head-title{\n        font-size: 30px;\n        font-weight: bold;\n        color:#000;\n    }\n    .learn-more{\n        background: linear-gradient(to right, #f27b00, #ca251d);\n        width: 180px;\n        height: 30px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n        text-align: center;\n        font-size: 13px;\n        border-radius: 25px;\n        color:#fff\n    }\n    @media (max-width: 767.98px) {\n        .tabs-item{\n            flex-direction: column;\n            background-color: #F5F5F7;\n        }\n        .tabs-img{\n            width:100%;\n        }\n        .head-title{\n            font-size: 16px;\n            text-align: center;\n            margin-bottom: 20px;\n        }\n        .tabs-item-right{\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            padding: 20px;\n        }\n    }\n</style>\n\n    <div class=\"tabs-item\">\n        <img class=\"tabs-img\" src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/7-PC_7464a8d0-884d-4a26-a1ac-18e51b38aa95.png?v=1736321280\">\n        <div class=\"tabs-item-right\">\n            <div class=\"head-title\">XbotGo Chameleon User Manual</div>\n            <a href=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/Chameleon_Manual.pdf?v=1725869756\" class=\"learn-more\">Learn more</a>\n        </div>\n    </div>"
+          }
+        },
+        "tab_8H3WEe": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Gimbal",
+            "tab_content": "<style>\n    .tabs-item{\n        display: flex;\n        justify-content: space-between;\n    }\n    .tabs-item-right{\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        padding-left: 20px;\n    }\n    .tabs-img{\n        width:50%;\n        border-radius: 20px;\n    }\n    .head-title{\n        font-size: 30px;\n        font-weight: bold;\n        color:#000;\n    }\n    .learn-more{\n        background: linear-gradient(to right, #f27b00, #ca251d);\n        width: 180px;\n        height: 30px;\n        text-align: center;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n        font-size: 13px;\n        border-radius: 25px;\n        color:#fff\n    }\n    @media (max-width: 767.98px) {\n        .tabs-item{\n            flex-direction: column;\n            background-color: #F5F5F7;\n        }\n        .tabs-img{\n            width:100%;\n        }\n        .head-title{\n            font-size: 16px;\n            text-align: center;\n            margin-bottom: 20px;\n        }\n        .tabs-item-right{\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            padding: 20px;\n        }\n    }\n</style>\n    <div class=\"tabs-item\">\n        <img class=\"tabs-img\" src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/7-PC.png?v=1736320345\">\n        <div class=\"tabs-item-right\">\n            <div class=\"head-title\">AI Sports Gimbal User Manual</div>\n            <a href=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/Xbot_manual_-EN.pdf?v=1700217692\" class=\"learn-more\">Learn more</a>\n        </div>\n    </div>"
+          }
+        }
+      },
+      "block_order": [
+        "tab_ktkFVf",
+        "tab_8H3WEe"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
     "gallery_wL4jkE": {
       "type": "gallery",
       "blocks": {
@@ -664,31 +689,6 @@
         "accessibility_info": ""
       }
     },
-    "tabs_liuqid_KAAb3J": {
-      "type": "tabs-liuqid",
-      "blocks": {
-        "tab_ktkFVf": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Chameleon",
-            "tab_content": "<style>\n    .tabs-item{\n        display: flex;\n        justify-content: space-between;\n    }\n    .tabs-item-right{\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        padding-left: 20px;\n    }\n    .tabs-img{\n        width:50%;\n        border-radius: 20px;\n    }\n    .head-title{\n        font-size: 30px;\n        font-weight: bold;\n        color:#000;\n    }\n    .learn-more{\n        background: linear-gradient(to right, #f27b00, #ca251d);\n        width: 180px;\n        height: 30px;\n        text-align: center;\n        font-size: 13px;\n        border-radius: 25px;\n        color:#fff\n    }\n    @media (max-width: 767.98px) {\n        .tabs-item{\n            flex-direction: column;\n            background-color: #F5F5F7;\n        }\n        .tabs-img{\n            width:100%;\n        }\n        .head-title{\n            font-size: 16px;\n            text-align: center;\n            margin-bottom: 20px;\n        }\n        .tabs-item-right{\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            padding: 20px;\n        }\n    }\n</style>\n\n    <div class=\"tabs-item\">\n        <img class=\"tabs-img\" src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/7-PC_7464a8d0-884d-4a26-a1ac-18e51b38aa95.png?v=1736321280\">\n        <div class=\"tabs-item-right\">\n            <div class=\"head-title\">XbotGo Chameleon User Manual</div>\n            <button class=\"learn-more\">Learn more</button>\n        </div>\n    </div>"
-          }
-        },
-        "tab_8H3WEe": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Gimbal",
-            "tab_content": "<style>\n    .tabs-item{\n        display: flex;\n        justify-content: space-between;\n    }\n    .tabs-item-right{\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        padding-left: 20px;\n    }\n    .tabs-img{\n        width:50%;\n        border-radius: 20px;\n    }\n    .head-title{\n        font-size: 30px;\n        font-weight: bold;\n        color:#000;\n    }\n    .learn-more{\n        background: linear-gradient(to right, #f27b00, #ca251d);\n        width: 180px;\n        height: 30px;\n        text-align: center;\n        font-size: 13px;\n        border-radius: 25px;\n        color:#fff\n    }\n    @media (max-width: 767.98px) {\n        .tabs-item{\n            flex-direction: column;\n            background-color: #F5F5F7;\n        }\n        .tabs-img{\n            width:100%;\n        }\n        .head-title{\n            font-size: 16px;\n            text-align: center;\n            margin-bottom: 20px;\n        }\n        .tabs-item-right{\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            padding: 20px;\n        }\n    }\n</style>\n    <div class=\"tabs-item\">\n        <img class=\"tabs-img\" src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/7-PC.png?v=1736320345\">\n        <div class=\"tabs-item-right\">\n            <div class=\"head-title\">AI Sports Gimbal User Manual</div>\n            <button class=\"learn-more\">Learn more</button>\n        </div>\n    </div>"
-          }
-        }
-      },
-      "block_order": [
-        "tab_ktkFVf",
-        "tab_8H3WEe"
-      ],
-      "disabled": true,
-      "settings": {}
-    },
     "video_gallery_3NEJWE": {
       "type": "video-gallery",
       "blocks": {
@@ -744,6 +744,7 @@
   },
   "order": [
     "slideshow_EVPEC8",
+    "tabs_liuqid_KAAb3J",
     "gallery_wL4jkE",
     "custom_content_x6grnt",
     "custom_content_a9Da6V",
@@ -757,7 +758,6 @@
     "custom_content_Dpj8Je",
     "collapsible_tabs_JEqR6P",
     "slideshow_EJXkkz",
-    "tabs_liuqid_KAAb3J",
     "video_gallery_3NEJWE"
   ]
 }
