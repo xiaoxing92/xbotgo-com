@@ -59,8 +59,8 @@
         <div class='carousel-item'>
           <img src='{{ block.settings.cover | img_url: 'x428' }}'>
           <div class="carousel-bot">
-            <h3>{{ block.settings.title }}</h3>
-            <p>{{ block.settings.subtitle }}</p>
+            <h3 class="title">{{ block.settings.title }}</h3>
+            <p class="subtitle">{{ block.settings.subtitle }}</p>
           </div>
         </div>
       {% endfor %}
@@ -119,7 +119,7 @@
     flex-direction: column;
     min-width: 100%;
     text-align: center;
-    background: #f8f8fa;
+    background:#F5F5F7;
     border: 1px solid #f3f3f4;
     border-radius: 10px;
     overflow: hidden;
@@ -127,12 +127,20 @@
   .carousel-bot{
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     flex: 1;
+    padding: 10px;
   }
   .carousel-item img {
     max-width: 100%;
+  }
+  .title{
+    font-size:12px;
+    text-align: left;
+  }
+  .subtitle{
+    text-align: left;
+    color:#000000;
   }
 
   .arrow {
@@ -169,7 +177,7 @@
     .carousel-item {
       min-width: calc(50% - 10px);
       flex-grow: 1;
-      height: 470px;
+      height: 450px;
     }
 
     .arrow {
