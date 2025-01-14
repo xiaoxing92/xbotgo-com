@@ -646,7 +646,6 @@
       "block_order": [
         "image_KpMicU"
       ],
-      "disabled": true,
       "settings": {
         "show_sticky_banner": false,
         "sticky_text": "Sticky Banner Text",
@@ -686,7 +685,6 @@
         "tab_ktkFVf",
         "tab_8H3WEe"
       ],
-      "disabled": true,
       "settings": {}
     },
     "video_gallery_3NEJWE": {
@@ -736,7 +734,6 @@
         "video_block_A9NVdt",
         "video_block_arnPAa"
       ],
-      "disabled": true,
       "settings": {
         "title": "How To Use"
       }
@@ -789,7 +786,6 @@
         "video_block_PtBrGn",
         "video_block_TtijMw"
       ],
-      "disabled": true,
       "settings": {
         "title": "Video Collection"
       }
