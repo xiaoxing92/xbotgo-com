@@ -117,7 +117,7 @@
   .carousel-item {
     display: flex;
     flex-direction: column;
-    min-width: calc(50% - 10px);
+    min-width: 100%;
     text-align: center;
     background:#F5F5F7;
     border: 1px solid #f3f3f4;
@@ -148,7 +148,7 @@
 
   .arrow {
     position: absolute;
-    top: 35%;
+    top: %;
     transform: translateY(-50%);
     color: rgba(0, 0, 0, 0.5);
     border: none;
@@ -172,20 +172,22 @@
     outline: none;
   }
 
-  @media (min-width: 481px) and (max-width: 768px) {  
+  @media (min-width: 768px) {
     .carousel-card-track {
       flex-wrap: nowrap;
     }
 
     .carousel-item {
-      min-width: 100%;
+      min-width: calc(50% - 10px);
       flex-grow: 1;
       height: 450px;
     }
+
     .title{
       font-size:20px;
       margin-bottom: 25px;
     }
+
     .subtitle{ 
       font-size:15px;
     }
