@@ -28,7 +28,7 @@
           assign autoplay = block.settings.autoplay
         -%}
         <div class='grid-container'>
-          <div class='video-section'>
+          {% comment %} <div class='video-section'>
             <div
               class='height--adapt image-overlay image-overlay--bg-no_background'
               {% if placeholder_image %}
@@ -96,6 +96,9 @@
                 </div>
               {%- endif -%}
             </div>
+          </div> {% endcomment %}
+          <div class="video-section-iframe">
+            <iframe class="iframe-style" src="{{ block.settings.video_external }}" frameborder="0" allowfullscreen></iframe>
           </div>
           <div class='video-title'>{{ block.settings.title }}</div>
         </div>

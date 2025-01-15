@@ -7,7 +7,6 @@
   {% endif %}
 
   <div class="recommend-container">
-    
     {% for block in section.blocks %}
       <div class="card-item">
         <div class="item-head">
@@ -26,7 +25,7 @@
           </div>
         </div>
         <div class="video-section-iframe">
-          <iframe  class="iframe-style" src="{{ block.settings.video_external }}" frameborder="0" allowfullscreen></iframe>
+          <iframe class="iframe-style" src="{{ block.settings.video_external }}" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="item-text">
           {{ block.settings.textarea }}
@@ -42,7 +41,6 @@
 
 
 <script defer="defer">
-
   const observer = new MutationObserver(() => {
     const container = document.querySelector(".recommend-container");
     const items = document.querySelectorAll('.card-item');
