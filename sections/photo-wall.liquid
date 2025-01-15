@@ -1,16 +1,14 @@
 <div id='section-id-{{ section.id }}' class='container carousel-container'>
-    <button class='carousel-btn left-btn'>&lt;</button>
-    <div class='carousel'>
-      {% for block in section.blocks %}
+  <button class='carousel-btn left-btn'>&lt;</button>
+  <div class='carousel'>
+    {% for block in section.blocks %}
       <div class='carousel-track'>
-  
-            <img src='{{ block.settings.img | img_url: '340x428'}}'>
+        <img src='{{ block.settings.img | img_url: '340x428'}}'>
       </div>
     {% endfor %}
-    </div>
-    <button class='carousel-btn right-btn'>&gt;</button>
+  </div>
+  <button class='carousel-btn right-btn'>&gt;</button>
 </div>
-
 
 <script>
   const observer = new MutationObserver(() => {
@@ -64,11 +62,12 @@
   .carousel {
     overflow: hidden;
     flex: 1;
+    display: flex;
+    gap: 10px;
   }
 
   .carousel-track {
     display: flex;
-    transition: transform 0.3s ease-in-out;
     gap: 10px;
     border-radius: 15px;
     overflow: hidden;
@@ -76,10 +75,13 @@
 
   .carousel-track img {
     flex-shrink: 0;
+    transition: transform 0.3s ease;
   }
 
-  .carousel-track img:hover{
-    transform: scale(1.1);
+  .carousel-track:hover {
+    .carousel-track img {
+      transform: scale(1.1);
+    }
   }
 
   .carousel-btn {
@@ -119,7 +121,7 @@
     }
 
     .carousel-track img {
-      width:230px;
+      width: 230px;
     }
 
     .carousel-btn {
