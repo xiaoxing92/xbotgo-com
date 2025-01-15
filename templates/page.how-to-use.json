@@ -37,7 +37,7 @@
         "image_nphU7G"
       ],
       "custom_css": [
-        ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 12px; border: 1px solid; border-radius: 20px;}",
+        ".btn {background: linear-gradient(to right, #df7b30 0%, #bf412a 100%); width: 160px; text-align: center; font-size: 12px; border: 1px solid; border-radius: 20px;}",
         "@media (max-width: 767px) {.btn {width: 130px; text-align: center; font-size: 14px; position: relative; left: 0; }}"
       ],
       "settings": {
@@ -62,6 +62,7 @@
       "blocks": {
         "image_KpMicU": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/7-PCbanner.png",
             "mobile_image": "shopify://shop_images/7-M-banner.png",
@@ -125,7 +126,6 @@
         "tab_ktkFVf",
         "tab_8H3WEe"
       ],
-      "disabled": true,
       "settings": {}
     },
     "video_gallery_3NEJWE": {
@@ -174,7 +174,6 @@
         "video_block_VTkwdE",
         "video_block_DFgRQD"
       ],
-      "disabled": true,
       "settings": {
         "title": "How To Use"
       }
@@ -225,7 +224,6 @@
         "video_block_FLnLHe",
         "video_block_LUHAVd"
       ],
-      "disabled": true,
       "settings": {
         "title": "Video Collection"
       }
@@ -375,6 +373,7 @@
         "image_kkGCXK",
         "video_ijnan4"
       ],
+      "disabled": true,
       "custom_css": [
         ".btn {border-radius: 25px;}",
         ".gallery__item {border-radius: 25px;}",
@@ -441,6 +440,7 @@
         "text_6MfmXE",
         "video_XFKQaA"
       ],
+      "disabled": true,
       "settings": {
         "alignment": "middle"
       }
@@ -467,6 +467,7 @@
         "text_EHRfaz",
         "heading_PCkEei"
       ],
+      "disabled": true,
       "settings": {
         "video_external": "https://www.youtube.com/watch?v=qfLpTDPfs7Q&list=PLwWWvmTsWGVp3oMxITuaL4WBLmYJBbMZt&index=4",
         "video_description": "",
@@ -564,6 +565,7 @@
       "block_order": [
         "heading_7c8AAr"
       ],
+      "disabled": true,
       "settings": {
         "video_external": "https://youtu.be/XEjNkPdtq_o?si=XRmbTN7ElHztigg2",
         "video_description": "",
@@ -659,6 +661,13 @@
             "title": "What tripod should I use with Chameleon?",
             "answer": "<p>For capturing sports action on smaller fields, like a basketball court or a 5v5 soccer pitch, our portable XbotGo Gimbal T1 Tripod, standing around 4 feet tall, is a perfect choice. It’s easy to fold and unfold, offering quick setup and convenience.<br/><br/>For larger fields, such as 9v9 or 11v11 soccer games, we recommend our 13-foot tripod. It provides enhanced tracking performance and a wider view, ensuring optimal coverage.<br/><br/>Both tripods deliver a great experience. Alternatively, you can use any third-party tripod with a 1/4” screw mount, as it’s compatible with the XbotGo gimbal.</p>"
           }
+        },
+        "question_ejjWtQ": {
+          "type": "question",
+          "settings": {
+            "title": "How does cloud storage work?",
+            "answer": "<p>Each user receives 20GB of free cloud storage with no monthly fees.</p>"
+          }
         }
       },
       "block_order": [
@@ -667,7 +676,8 @@
         "question_hpUjA6",
         "question_Y3TeVX",
         "question_FwJ8LR",
-        "question_nwRRNt"
+        "question_nwRRNt",
+        "question_ejjWtQ"
       ],
       "settings": {
         "title": "FAQ"
@@ -729,6 +739,7 @@
         "text_m363UB",
         "video_UhTXkC"
       ],
+      "disabled": true,
       "settings": {
         "alignment": "middle"
       }
@@ -787,6 +798,7 @@
         "question_Qg6bWc",
         "question_3rFGcE"
       ],
+      "disabled": true,
       "settings": {
         "title": "FAQ"
       }
