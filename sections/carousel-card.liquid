@@ -95,7 +95,11 @@
 
     window.addEventListener('resize', updateCarousel)
 
-    updateCarousel()
+    // 初始化设置，仅在移动端执行滚动逻辑
+    if (window.innerWidth <= 768) {
+      updateCarousel()
+    }
+
   })
 
   observer.observe(document.body, { childList: true, subtree: true })
