@@ -3,7 +3,7 @@
   <div class='carousel'>
     {% for block in section.blocks %}
       <div class='carousel-track'>
-        <img src='{{ block.settings.img | img_url: '340x428'}}'>
+        <img class="carousel-img" src='{{ block.settings.img | img_url: '340x428'}}'>
       </div>
     {% endfor %}
   </div>
@@ -79,7 +79,7 @@
   }
 
   .carousel-track:hover {
-    .carousel-track img {
+    .carousel-img {
       transform: scale(1.1);
     }
   }
