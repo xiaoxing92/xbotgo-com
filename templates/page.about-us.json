@@ -37,7 +37,6 @@
       "block_order": [
         "image_nphU7G"
       ],
-      "disabled": true,
       "custom_css": [
         ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 12px; border: 1px solid; border-radius: 20px;}",
         "@media (max-width: 767px) {.btn {width: 130px; text-align: center; font-size: 14px; position: relative; left: 0; }}"
@@ -81,7 +80,6 @@
         "heading_kBFx8e",
         "text_VCRMHN"
       ],
-      "disabled": true,
       "custom_css": [
         "@media (max-width: 767.98px) {h1, .h1 {text-align: left; } .lightly-spaced-row {text-align: left; }}"
       ],
@@ -94,7 +92,6 @@
     },
     "count_plus_section_zqTQC6": {
       "type": "count-plus-section",
-      "disabled": true,
       "custom_css": [
         ".count-number {color: #000; -webkit-text-fill-color: #000;}"
       ],
@@ -131,7 +128,6 @@
         "heading_7bTgVr",
         "text_7xd4y7"
       ],
-      "disabled": true,
       "custom_css": [
         "@media (max-width: 767.98px) {h1, .h1 {text-align: left; } .lightly-spaced-row {text-align: left; }}"
       ],
@@ -180,14 +176,12 @@
         "photo_card_byhV8z",
         "photo_card_h44qTJ"
       ],
-      "disabled": true,
       "settings": {
         "title": "Photo Wall"
       }
     },
     "custom_liquid_xQXdPe": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
         "full_width": false,
         "show_space": true,
@@ -218,14 +212,12 @@
         "card_block_rEnc84",
         "card_block_nYWq8y"
       ],
-      "disabled": true,
       "settings": {
         "title": "Awards & Reviews"
       }
     },
     "custom_liquid_RCNFwk": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
         "full_width": false,
         "show_space": true,
@@ -533,6 +525,7 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "show_page_title": true,
         "full_width": false
@@ -843,6 +836,7 @@
         "question_Qg6bWc",
         "question_3rFGcE"
       ],
+      "disabled": true,
       "settings": {
         "title": "FAQ"
       }

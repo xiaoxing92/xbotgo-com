@@ -18,7 +18,7 @@
             "image": "shopify://shop_images/xbotgo_for_sports.webp",
             "slide_link": "",
             "subheading": "XbotGo",
-            "title": "HOW TO USE",
+            "title": "User Guide",
             "heading_max_width": 10,
             "title_size": 42,
             "title_size_mobile": 32,
@@ -38,7 +38,7 @@
       ],
       "custom_css": [
         ".btn {background: linear-gradient(to right, #df7b30 0%, #bf412a 100%); width: 160px; text-align: center; font-size: 12px; border: 1px solid; border-radius: 20px;}",
-        "@media (max-width: 767px) {.btn {width: 130px; text-align: center; font-size: 14px; position: relative; left: 0; }}"
+        "@media (max-width: 767px) {.btn {width: 150px; text-align: center; font-size: 14px; position: relative; left: 0; }}"
       ],
       "settings": {
         "show_sticky_banner": false,
@@ -62,7 +62,6 @@
       "blocks": {
         "image_KpMicU": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/7-PCbanner.png",
             "mobile_image": "shopify://shop_images/7-M-banner.png",
