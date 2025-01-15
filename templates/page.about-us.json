@@ -92,16 +92,19 @@
         "color_scheme": "default"
       }
     },
-    "count_up_section_ETRWHY": {
-      "type": "count-up-section",
+    "count_plus_section_zqTQC6": {
+      "type": "count-plus-section",
       "disabled": true,
       "custom_css": [
         ".count-number {color: #000; -webkit-text-fill-color: #000;}"
       ],
       "settings": {
         "country_text": "Countries Reached",
+        "country_text_number": "100",
         "member_text": "Preferred Choice of Enthusiastic Members",
+        "member_text_number": "100,000",
         "game_text": "Over 1,000,000 Minutes Sports Game Recording",
+        "game_text_number": "100,000,000",
         "desktop_background": "shopify://shop_images/numberic_1.5x.png",
         "count_item_background": "rgba(0,0,0,0)"
       }
@@ -848,7 +851,7 @@
   "order": [
     "slideshow_EVPEC8",
     "rich_text_zAMW7P",
-    "count_up_section_ETRWHY",
+    "count_plus_section_zqTQC6",
     "rich_text_ByJxzn",
     "photo_wall_BK4ceW",
     "custom_liquid_xQXdPe",
