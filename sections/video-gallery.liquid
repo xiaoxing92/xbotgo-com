@@ -189,7 +189,7 @@
     .video-section-iframe {
       position: relative;
       width: 49%;
-      height:430px;
+      height:290px;
       border-radius: 20px;
       overflow: hidden;
     }
@@ -200,7 +200,7 @@
     .video-title {
       position: absolute;
       bottom: 0;
-      height: 50px;
+      height:55px;
       background: #000;
       width: 100%;
       color: #fff;
@@ -208,5 +208,10 @@
       justify-content: center;
       align-items: center;
       font-weight: bold;
+    }
+    @media (max-width: 768px) {
+      .video-section-iframe {
+        width:100%;
+      }
     }
 </style>
