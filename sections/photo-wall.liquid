@@ -69,12 +69,12 @@
     display: flex;
     transition: transform 0.3s ease-in-out;
     gap: 10px;
+    border-radius: 15px;
+    overflow: hidden;
   }
 
   .carousel-track img {
     flex-shrink: 0;
-    border-radius: 15px;
-    overflow: hidden;
   }
 
   .carousel-track img:hover{
@@ -115,10 +115,6 @@
   @media (min-width: 769px) {
     .carousel {
       overflow: visible;
-    }
-
-    .carousel-track {
-      transform: none;
     }
 
     .carousel-track img {
