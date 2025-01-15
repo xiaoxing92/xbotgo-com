@@ -82,6 +82,9 @@
         "text_VCRMHN"
       ],
       "disabled": true,
+      "custom_css": [
+        "@media (max-width: 767.98px) {h1, .h1 {text-align: left; } .lightly-spaced-row {text-align: left; }}"
+      ],
       "settings": {
         "height": "medium",
         "text_alignment": "center",
@@ -126,6 +129,9 @@
         "text_7xd4y7"
       ],
       "disabled": true,
+      "custom_css": [
+        "@media (max-width: 767.98px) {h1, .h1 {text-align: left; } .lightly-spaced-row {text-align: left; }}"
+      ],
       "settings": {
         "height": "medium",
         "text_alignment": "center",
