@@ -62,7 +62,6 @@
       "blocks": {
         "image_KpMicU": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/7-PCbanner.png",
             "mobile_image": "shopify://shop_images/7-M-banner.png",
@@ -125,36 +124,16 @@
         "tab_ktkFVf",
         "tab_8H3WEe"
       ],
-      "disabled": true,
       "settings": {}
     },
     "video_gallery_3NEJWE": {
       "type": "video-gallery",
       "blocks": {
-        "video_block_3VRLTT": {
-          "type": "video_block",
-          "settings": {
-            "title": "XbotGo Chameleon",
-            "video_shopify": "shopify://files/videos/189_1729557559(Video in Original Quality).mp4",
-            "video_external": "https://youtu.be/7ZuuevGKWDs?si=7VGfW53-kjLHFAyx",
-            "video_description": "",
-            "autoplay": false
-          }
-        },
-        "video_block_mMUefF": {
-          "type": "video_block",
-          "settings": {
-            "title": "XbotGo Gimbal",
-            "video_external": "https://youtu.be/Eiul9-tHQmM?si=kvDbE-npYzh1Qfm8",
-            "video_description": "",
-            "autoplay": false
-          }
-        },
         "video_block_A9NVdt": {
           "type": "video_block",
           "settings": {
-            "title": "Default Content",
-            "video_external": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4",
+            "title": "XbotGo Chameleon",
+            "video_external": "https://www.youtube.com/embed/7ZuuevGKWDs?si=8No8rFLSqET_LheE",
             "video_description": "",
             "autoplay": false
           }
@@ -162,20 +141,37 @@
         "video_block_arnPAa": {
           "type": "video_block",
           "settings": {
-            "title": "Default Content",
-            "video_external": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4",
+            "title": "XbotGo GImbal",
+            "video_external": "https://www.youtube.com/embed/Eiul9-tHQmM?si=Gd44JQTkglFzLjgj",
+            "video_description": "",
+            "autoplay": false
+          }
+        },
+        "video_block_VTkwdE": {
+          "type": "video_block",
+          "settings": {
+            "title": "Firmware Update",
+            "video_external": "https://www.youtube.com/embed/50wK5SC_nDU?si=DGtnqnt1_1JBpQp9\"",
+            "video_description": "",
+            "autoplay": false
+          }
+        },
+        "video_block_DFgRQD": {
+          "type": "video_block",
+          "settings": {
+            "title": "Remote Control",
+            "video_external": "https://www.youtube.com/embed/4gNKvcwprXU?si=kRtXFCW9rQ9XSPei",
             "video_description": "",
             "autoplay": false
           }
         }
       },
       "block_order": [
-        "video_block_3VRLTT",
-        "video_block_mMUefF",
         "video_block_A9NVdt",
-        "video_block_arnPAa"
+        "video_block_arnPAa",
+        "video_block_VTkwdE",
+        "video_block_DFgRQD"
       ],
-      "disabled": true,
       "settings": {
         "title": "How To Use"
       }
@@ -183,11 +179,20 @@
     "video_gallery_NyPbMG": {
       "type": "video-gallery",
       "blocks": {
+        "video_block_gQVy4E": {
+          "type": "video_block",
+          "settings": {
+            "title": "Scoreboard Feature",
+            "video_external": "https://www.youtube.com/embed/XEjNkPdtq_o?si=yFqUMVVCyy9_SoPZ",
+            "video_description": "",
+            "autoplay": false
+          }
+        },
         "video_block_gqeMUK": {
           "type": "video_block",
           "settings": {
-            "title": "Default Content",
-            "video_external": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4",
+            "title": "Live Streaming Feature",
+            "video_external": "https://www.youtube.com/embed/gycwMHboopc?si=hGlexmhyuTWeP2wL",
             "video_description": "",
             "autoplay": false
           }
@@ -195,8 +200,8 @@
         "video_block_FLnLHe": {
           "type": "video_block",
           "settings": {
-            "title": "Default Content",
-            "video_external": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4",
+            "title": "Highlight Edit",
+            "video_external": "https://www.youtube.com/embed/u13TO1IK3u0?si=xaS-p5SiVNF8bQtd",
             "video_description": "",
             "autoplay": false
           }
@@ -204,19 +209,19 @@
         "video_block_LUHAVd": {
           "type": "video_block",
           "settings": {
-            "title": "Default Content",
-            "video_external": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4",
+            "title": "Apple Watch Guide",
+            "video_external": "https://www.youtube.com/embed/D2cN41fz-uY?si=WGbH3qfpZFRl5h9T",
             "video_description": "",
             "autoplay": false
           }
         }
       },
       "block_order": [
+        "video_block_gQVy4E",
         "video_block_gqeMUK",
         "video_block_FLnLHe",
         "video_block_LUHAVd"
       ],
-      "disabled": true,
       "settings": {
         "title": "Video Collection"
       }
