@@ -97,7 +97,7 @@
 <div id="section-id-{{ section.id }}" class="container">
 <div class="count-up-section" style="{% if section.settings.desktop_background %}background-image: url('{{ section.settings.desktop_background | img_url: 'master' }}');{% endif %}">
   <div class="count-item">
-    <span class="count-number" data-count="{{ {{ section.settings.country_text_number }} }}">{{ section.settings.country_text_number }}</span>
+    <span class="count-number" data-count="{{ section.settings.country_text_number }}">{{ section.settings.country_text_number }}</span>
     <p>{{ section.settings.country_text }}</p>
   </div>
 
@@ -107,7 +107,7 @@
   </div>
 
   <div class="count-item">
-    <span class="count-number" data-count="{{ {{section.settings.member_text_number}} }}">{{section.settings.member_text_number}}</span>
+    <span class="count-number" data-count="{{section.settings.member_text_number}}">{{section.settings.member_text_number}}</span>
     <p>{{ section.settings.game_text }}</p>
   </div>
 </div>
