@@ -4,7 +4,7 @@
       <h2 class='hometitle h4 align-center' {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
         {{- section.settings.title | escape -}}
       </h2>
-    {% endif %}
+    {% endif %}  
     <div class='grid-container'>
       {% for block in section.blocks %}
         {%- unless video_assets_output -%}
@@ -27,9 +27,8 @@
           endif
           assign autoplay = block.settings.autoplay
         -%}
-
-        {% comment %}
-          <div class='video-section'>
+        
+          {% comment %} <div class='video-section'>
             <div
               class='height--adapt image-overlay image-overlay--bg-no_background'
               {% if placeholder_image %}
@@ -97,17 +96,12 @@
                 </div>
               {%- endif -%}
             </div>
+          </div> {% endcomment %}
+          <div class="video-section-iframe">
+            <iframe class="iframe-style" src="{{ block.settings.video_external }}" frameborder="0" allowfullscreen></iframe>
+            <div class='video-title'>{{ block.settings.title }}</div>
           </div>
-        {% endcomment %}
-        <div class='video-section-iframe'>
-          <iframe
-            class='iframe-style'
-            src='{{ block.settings.video_external }}'
-            frameborder='0'
-            allowfullscreen
-          ></iframe>
-          <div class='video-title'>{{ block.settings.title }}</div>
-        </div>
+
       {% endfor %}
     </div>
   </div>
@@ -181,31 +175,38 @@
 {% endschema %}
 
 <style>
-  .video-gallery {
-    margin: 30px 0px;
-  }
-  .grid-container {
-    display: flex;
-    gap: 16px;
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    flex-wrap: wrap;
-  }
-  .video-section-iframe {
-    position: relative;
-    width: 49%;
-  }
-  .video-title {
-    position: absolute;
-    bottom: 0;
-    height: 50px;
-    background: #000;
-    width: 100%;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-  }
+    .video-gallery{
+        margin: 30px 0px;
+    }
+    .grid-container {
+        display: flex;
+        gap: 16px;
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+    .video-section-iframe {
+      position: relative;
+      width: 49%;
+      height:430px;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .iframe-style{
+      width:100%;
+      height:100%;
+    }
+    .video-title {
+      position: absolute;
+      bottom: 0;
+      height: 50px;
+      background: #000;
+      width: 100%;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
 </style>
