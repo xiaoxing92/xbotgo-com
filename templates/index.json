@@ -1131,6 +1131,21 @@
         "subheading": "<p>Promotions, new products and sales. Directly to your inbox. </p><p>Join our mailing list to get $20 off your first Xbot order.</p>",
         "color_scheme": "1"
       }
+    },
+    "header_new_bGDmHN": {
+      "type": "header-new",
+      "disabled": true,
+      "settings": {
+        "logo_img_width_int": 180,
+        "mobile_logo_img_width_int": 100,
+        "logo_h1": true,
+        "enable_search": true,
+        "search_recommendations_title": "",
+        "search_recommendations_menu": "",
+        "menu_layout": "underneath",
+        "icon_strategy": "icons_cart_search",
+        "cart_icon": "basket"
+      }
     }
   },
   "order": [
@@ -1157,6 +1172,7 @@
     "cross-page-promos",
     "image_with_text_E6jeA7",
     "custom_content_6EdQih",
-    "newsletter_CgBFDg"
+    "newsletter_CgBFDg",
+    "header_new_bGDmHN"
   ]
 }
