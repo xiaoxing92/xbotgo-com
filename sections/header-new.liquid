@@ -657,7 +657,7 @@
 
   function handleClick() {
     bold  = !bold
-    const menuLayout = document.querySelectorAll('mobile-menu');
+    const menuLayout = document.querySelectorAll('mobile-menu')[0];
     const menuItems = document.querySelectorAll('.menu-item')
     const menuContent = document.querySelectorAll('.tab-content')
     menuItems[1].classList.add('active')
