@@ -183,6 +183,7 @@
       width:auto!important;
     }
     .mobile-menu {
+        display:block;
         position: fixed;
         top: -100%;
         left: 50%;
@@ -661,8 +662,8 @@
     const menuLayout = document.getElementById('mobile-menu');
     const menuItems = document.querySelectorAll('.menu-item')
     const menuContent = document.querySelectorAll('.tab-content')
-    {% comment %} menuItems[1].classList.add('active')
-    menuContent[1].classList.add('active') {% endcomment %}
+    menuItems[1].classList.add('active')
+    menuContent[1].classList.add('active')
     if(bold){
       menuLayout.classList.add("active");
       document.body.style.overflow = 'hidden';
