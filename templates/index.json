@@ -711,6 +711,7 @@
     },
     "count_up_section_8fiXYN": {
       "type": "count-up-section",
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "country_text": "Countries Reached",
@@ -718,6 +719,19 @@
         "game_text": "Hours Sports Game Recording",
         "desktop_background": "shopify://shop_images/numberic_1.5x.png",
         "count_item_background": "rgba(0,0,0,0)"
+      }
+    },
+    "count_plus_section_GkWTNb": {
+      "type": "count-plus-section",
+      "settings": {
+        "country_text": "Countries Reached",
+        "country_text_number": "100",
+        "member_text": "Preferred Choice of Enthusiastic Members",
+        "member_text_number": "113",
+        "game_text": "Hours Sports Game Recording",
+        "game_text_number": "22260000",
+        "desktop_background": "shopify://shop_images/numberic_1.5x.png",
+        "count_item_background": "#ffffff"
       }
     },
     "164816450788232cf9": {
@@ -1147,6 +1161,7 @@
     "custom_content_d6UV4p",
     "multi_column_VTzqiP",
     "count_up_section_8fiXYN",
+    "count_plus_section_GkWTNb",
     "164816450788232cf9",
     "logo_row_jzkyN8",
     "grid_image_layout_FjCnQi",
