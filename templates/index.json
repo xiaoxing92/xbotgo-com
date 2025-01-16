@@ -1134,7 +1134,6 @@
     },
     "header_new_bGDmHN": {
       "type": "header-new",
-      "disabled": true,
       "settings": {
         "logo_img_width_int": 180,
         "mobile_logo_img_width_int": 100,
