@@ -100,7 +100,6 @@
     },
     "header": {
       "type": "header",
-      "disabled": true,
       "custom_css": [],
       "settings": {
         "logo": "shopify://shop_images/211LOGO.png",
@@ -218,6 +217,7 @@
         "nav_block_MGgEBK",
         "nav_block_iWmDy7"
       ],
+      "disabled": true,
       "settings": {
         "logo": "shopify://shop_images/XbotGo_Logo_1200.png",
         "logo_img_width_int": 180,
