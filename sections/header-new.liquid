@@ -148,7 +148,7 @@
       margin: 0 10px;
       cursor: pointer;
   }
-  #mobile-menu {
+  .mobile-menu {
     display:none;
   }
   .logo-area__left{
@@ -182,7 +182,7 @@
     .show-search-link__icon{
       width:auto!important;
     }
-    #mobile-menu {
+    .mobile-menu {
         position: fixed;
         top: 100px;
         left: 50%;
@@ -191,7 +191,7 @@
         transition: left 0.5s ease; 
         background: #fff;
     }
-    #mobile-menu.active {
+    .mobile-menu.active {
         left: 0; 
     }
     .sidebar {
@@ -618,7 +618,7 @@
       </script>
     {%- endif -%}
 
-    <div id='mobile-menu'>
+    <div class='mobile-menu'>
       <aside class='sidebar'>
         <ul class='menu'>
           {%- for block in section.blocks -%}
@@ -657,7 +657,7 @@
 
   function handleClick() {
     bold  = !bold
-    const menuLayout = document.getElementById('mobile-menu');
+    const menuLayout = document.querySelectorAll('mobile-menu');
     const menuItems = document.querySelectorAll('.menu-item')
     const menuContent = document.querySelectorAll('.tab-content')
     menuItems[1].classList.add('active')
@@ -669,6 +669,7 @@
       menuLayout.classList.remove("active");
       document.body.style.overflow = '';
     }
+ 
   }
   
   document.addEventListener('DOMContentLoaded', () => {
