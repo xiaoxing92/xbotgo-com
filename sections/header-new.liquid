@@ -657,11 +657,12 @@
 
   function handleClick() {
     bold  = !bold
-    const menuLayout = document.querySelectorAll('mobile-menu')[0];
+    const menuLayout = document.querySelectorAll('mobile-menu');
     const menuItems = document.querySelectorAll('.menu-item')
     const menuContent = document.querySelectorAll('.tab-content')
-    menuItems[1].classList.add('active')
-    menuContent[1].classList.add('active')
+    console.log(menuLayout,"=======")
+    {% comment %} menuItems[1].classList.add('active')
+    menuContent[1].classList.add('active') {% endcomment %}
     if(bold){
       menuLayout.classList.add("active");
       document.body.style.overflow = 'hidden';
