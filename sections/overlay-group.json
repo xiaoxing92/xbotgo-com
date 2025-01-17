@@ -66,7 +66,7 @@
         "text_i9kwHT": {
           "type": "text",
           "settings": {
-            "text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers.</p>",
+            "text": "<p>Save $20 on Your First Chameleon Order!</p>",
             "text_size": ""
           }
         },
@@ -86,11 +86,12 @@
       "settings": {
         "show_logo": true,
         "trigger": "delay",
-        "delay": 5,
-        "URL": "",
+        "delay": 15,
+        "URL": "https://xbotgo.com/pages/xbotgo-chameleon",
         "show_to_guests_only": true,
         "show_on_mobile": true,
         "dismiss_days": 30,
+        "left_bg_image": "shopify://shop_images/3131737079408_.pic.jpg",
         "position": "justify-center items-center",
         "text_align": "text-center",
         "heading_color": "#070707",
@@ -113,7 +114,7 @@
         "text_QtECPG": {
           "type": "text",
           "settings": {
-            "text": "<p>Entice customers to sign up for your mailing list with discounts or exclusive offers.</p>",
+            "text": "<p>Get the AI Sports Gimbal now at its lowest price!</p>",
             "text_size": ""
           }
         },
@@ -133,11 +134,12 @@
       "settings": {
         "show_logo": true,
         "trigger": "delay",
-        "delay": 5,
-        "URL": "",
+        "delay": 15,
+        "URL": "https://xbotgo.com/pages/xbotgo-ai-sports-gimbal",
         "show_to_guests_only": true,
         "show_on_mobile": true,
         "dismiss_days": 30,
+        "left_bg_image": "shopify://shop_images/Gimbal_3ff25e2a-39c1-4962-9a92-bf1bc99a280d.png",
         "position": "justify-center items-center",
         "text_align": "text-center",
         "heading_color": "#070707",
@@ -175,12 +177,12 @@
       "settings": {
         "show_logo": false,
         "trigger": "delay",
-        "delay": 3,
-        "URL": "https://xbotgo.com/pages/xbotgo-chameleon",
+        "delay": 15,
+        "URL": "https://xbotgo.com",
         "show_to_guests_only": true,
         "show_on_mobile": true,
         "dismiss_days": 30,
-        "left_bg_image": "shopify://shop_images/happy_new_year_1503000f-96a8-45b5-b05c-11edabfc300f.jpg",
+        "left_bg_image": "shopify://shop_images/6_5c054573-a5ed-48e5-80f9-4a7ebf03e819.png",
         "position": "justify-center items-center",
         "text_align": "text-center",
         "heading_color": "#070707",
