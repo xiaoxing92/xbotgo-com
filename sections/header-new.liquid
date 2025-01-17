@@ -245,8 +245,7 @@
 {% endstyle %}
 
 
-{%- if template == 'gift_card' -%}
-  {% comment %} Gift card template logo {% endcomment %}
+
   <div id="shoplogo">
     <meta itemprop="url" content="{{ shop.url }}">
     <meta itemprop="name" content="{{ shop.name }}">
@@ -267,9 +266,9 @@
     {%- endif -%}
   </div>
 
-{%- else -%}
 
-  
+
+
 <page-header data-section-id='{{ section.id }}' {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
   <div
     id='pageheader'
