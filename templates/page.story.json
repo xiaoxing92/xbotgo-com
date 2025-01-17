@@ -195,7 +195,7 @@
         "text_kx4PQz": {
           "type": "text",
           "settings": {
-            "text": "<p>Overseas Clubs</p><p>Clubs, coaches, or individuals who meet the tollowina criteria are eliaible to register: clubs, coaches, managers, players, players' family members. and club staff who wish to experience XbotGo products.</p>",
+            "text": "<p>Overseas Clubs</p><p>Clubs, coaches, or individuals who meet the following criteria are eliaible to register: clubs, coaches, managers, players, players' family members. and club staff who wish to experience XbotGo products.</p>",
             "enlarge_text": true
           }
         }
@@ -292,7 +292,6 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/copy.png",
             "image_width": 690,
             "url": ""
           }
@@ -378,7 +377,6 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/copy.png",
         "hotspot_color": "#070707",
         "button_content": "plus",
         "outer_circle": "pulse",
