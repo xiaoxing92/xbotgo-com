@@ -16,6 +16,7 @@
       "blocks": {
         "announcement_UTDUMy": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Lowest Price for <a href=\"/products/cell-phone-sports-gimbal-stabilizer\" target=\"_blank\" title=\"XbotGo AI Sports Gimbal\">AI Sports Gimbal</a>",
             "show_countdown": false,
@@ -65,7 +66,6 @@
         },
         "announcement_FgHzje": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "30-Day Hassle-Free Return",
             "show_countdown": false,
@@ -100,6 +100,7 @@
     },
     "header": {
       "type": "header",
+      "disabled": true,
       "custom_css": [],
       "settings": {
         "logo": "shopify://shop_images/211LOGO.png",
@@ -217,7 +218,6 @@
         "nav_block_MGgEBK",
         "nav_block_iWmDy7"
       ],
-      "disabled": true,
       "settings": {
         "logo": "shopify://shop_images/XbotGo_Logo_1200.png",
         "logo_img_width_int": 180,
