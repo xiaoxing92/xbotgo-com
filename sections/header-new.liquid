@@ -92,7 +92,7 @@
         padding-bottom:20px;
         padding-left: 20%;
     }
-    
+
     .nav-item:hover .dropdown {
         visibility: visible;
         opacity: 1;
@@ -244,6 +244,32 @@
     }
 {% endstyle %}
 
+
+{%- if template == 'gift_card' -%}
+  {% comment %} Gift card template logo {% endcomment %}
+  <div id="shoplogo">
+    <meta itemprop="url" content="{{ shop.url }}">
+    <meta itemprop="name" content="{{ shop.name }}">
+    {%- if section.settings.logo != blank -%}
+      <h1 class="logo" itemscope itemtype="http://schema.org/Organization">
+        {%- assign logo_width_x2 = section.settings.logo_img_width_int | times: 2 -%}
+        <img
+          src="{{ section.settings.logo | image_url: width: logo_width_x2 }}"
+          alt="{{ section.settings.logo.alt | escape }}"
+          itemprop="logo"
+          width="{{ section.settings.logo.width }}"
+          height="{{ section.settings.logo.height }}"
+          loading="eager"
+        >
+      </h1>
+    {%- else -%}
+      <h1 class="logotext">{{ shop.name }}</h1>
+    {%- endif -%}
+  </div>
+
+{%- else -%}
+
+  
 <page-header data-section-id='{{ section.id }}' {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
   <div
     id='pageheader'
