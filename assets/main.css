@@ -3388,7 +3388,7 @@ body:not(.reveal-mobile-nav) .mobile-navigation-drawer .mobile-navigation-drawer
   white-space: nowrap;
 }
 .logo-area__right .show-search-link {
-  display: none;
+  /* display: none; */
   margin-inline-end: 20px;
 }
 
