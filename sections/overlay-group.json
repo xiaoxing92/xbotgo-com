@@ -82,12 +82,11 @@
         "text_i9kwHT",
         "newsletter_signup_rhday9"
       ],
-      "disabled": true,
       "custom_css": [
         ".btn {background: linear-gradient(to right, #ca251d, #f27b00); border: none; border-radius: 50px;}"
       ],
       "settings": {
-        "show_logo": true,
+        "show_logo": false,
         "trigger": "delay",
         "delay": 15,
         "URL": "https://xbotgo.com/pages/xbotgo-chameleon",
@@ -137,7 +136,7 @@
         ".btn {background: linear-gradient(to right, #ca251d, #f27b00); border: none; border-radius: 50px;}"
       ],
       "settings": {
-        "show_logo": true,
+        "show_logo": false,
         "trigger": "delay",
         "delay": 15,
         "URL": "https://xbotgo.com/pages/xbotgo-ai-sports-gimbal",
