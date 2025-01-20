@@ -8683,6 +8683,7 @@ carousel-slider[inactive] .slider-nav__btn {
   margin-bottom:10px;
   border-radius: 10px;
   width:250px;
+  padding-left: 40px;
 }
 .email-icon{
   display: flex;
