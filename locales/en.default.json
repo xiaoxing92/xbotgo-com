@@ -231,7 +231,7 @@
   },
   "newsletter": {
     "label": "Email",
-    "placeholder": "Your email",
+    "placeholder": "Enter your email",
     "button_label": "Subscribe",
     "success": "Thank you for subscribing."
   },

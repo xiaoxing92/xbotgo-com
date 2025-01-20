@@ -8681,6 +8681,8 @@ carousel-slider[inactive] .slider-nav__btn {
 .email-box{
   position: relative;
   margin-bottom:10px;
+  border-radius: 10px;
+  width:250px;
 }
 .email-icon{
   display: flex;
