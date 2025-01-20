@@ -133,7 +133,6 @@
         "text_QtECPG",
         "newsletter_signup_AkFGXr"
       ],
-      "disabled": true,
       "custom_css": [
         ".btn {background: linear-gradient(to right, #ca251d, #f27b00); border: none; border-radius: 50px;}"
       ],
