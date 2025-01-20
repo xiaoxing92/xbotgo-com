@@ -182,7 +182,7 @@
       "settings": {
         "show_logo": false,
         "trigger": "delay",
-        "delay": 15,
+        "delay": 9,
         "URL": "https://xbotgo.com",
         "show_to_guests_only": true,
         "show_on_mobile": true,
