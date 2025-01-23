@@ -14,6 +14,7 @@
       "blocks": {
         "image_PGytQd": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/banner_1a9df2e3-be0e-4ddd-aed1-8e59dfea5b51.jpg",
             "mobile_image": "shopify://shop_images/M_1.jpg",
