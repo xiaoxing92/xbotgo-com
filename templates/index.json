@@ -418,6 +418,86 @@
         "bot_right_description": "Stay in focus with precision tracking that adapts to direction changes and obstacles for seamless recording. Our technology keeps your chosen subject centered and clear, even in dynamic situations, with long-range, zoom, and quick re-tracking for sharp videos in any activity."
       }
     },
+    "custom_content_bmwfxz": {
+      "type": "custom-content",
+      "blocks": {
+        "text_VrY87F": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "Rich text",
+            "text": "<p>Use this text to share information about your store with your customers.</p><p>Describe products, share announcements, or welcome customers to your store.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        },
+        "image_QHTEMw": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify://shop_images/icon_5ecb15d5-e64a-401f-b431-89295baa93dc.png",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "Subheading",
+            "title": "Tell your story",
+            "text": "<p>Pair text with an image to tell a story</p>",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "image_mVJFjQ": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "Subheading",
+            "title": "Tell your story",
+            "text": "<p>Pair text with an image to tell a story</p>",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "text_rfCHCh": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "Welcome",
+            "text": "<p>Use this text to share information about your store with your customers.</p><p>Describe products, share announcements, or welcome customers to your store.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "text_VrY87F",
+        "image_QHTEMw",
+        "image_mVJFjQ",
+        "text_rfCHCh"
+      ],
+      "disabled": true,
+      "settings": {
+        "alignment": "middle"
+      }
+    },
     "hotspots_dLUw37": {
       "type": "hotspots",
       "custom_css": [
@@ -426,7 +506,7 @@
         "@media (min-width: 1100px) {.text-overlay--for-banner .text-overlay__inner {padding: 70px 0; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/No_Monthly_App_1.25x.png",
+        "image": "shopify://shop_images/Untitled_1805_x_758_px.png",
         "mobile_image": "shopify://shop_images/4-_M.png",
         "hotspot_color": "#63a560",
         "button_content": "number",
@@ -1068,6 +1148,7 @@
     "countdown_timer_hJGpFK",
     "rich_text_DXcmQF",
     "key_player_tracking_kg8pG3",
+    "custom_content_bmwfxz",
     "hotspots_dLUw37",
     "product_layout_ExMLXn",
     "custom_content_d6UV4p",
