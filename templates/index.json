@@ -12,6 +12,27 @@
     "slideshow_tdjCPE": {
       "type": "slideshow",
       "blocks": {
+        "image_EephAP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PC-KV-1.png",
+            "mobile_image": "shopify://shop_images/M-KV_fe833ab2-1200-45c7-ab34-5cbd8720a6de.png",
+            "slide_link": "https://xbotgo.com/pages/xbotgo-chameleon",
+            "subheading": "",
+            "title": "",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        },
         "image_PGytQd": {
           "type": "image",
           "disabled": true,
@@ -100,6 +121,7 @@
         }
       },
       "block_order": [
+        "image_EephAP",
         "image_PGytQd",
         "image_FLmq79",
         "image_Hrfmfc",
