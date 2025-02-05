@@ -79,6 +79,7 @@
         },
         "image_Hrfmfc": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Chameleon-banner.png",
             "mobile_image": "shopify://shop_images/1.bannerm.png",
