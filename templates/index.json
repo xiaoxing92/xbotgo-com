@@ -17,7 +17,7 @@
           "settings": {
             "image": "shopify://shop_images/PC-KV-1.png",
             "mobile_image": "shopify://shop_images/M-KV_fe833ab2-1200-45c7-ab34-5cbd8720a6de.png",
-            "slide_link": "https://xbotgo.com/pages/xbotgo-chameleon",
+            "slide_link": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
             "subheading": "",
             "title": "",
             "heading_max_width": 15,
