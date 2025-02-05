@@ -926,6 +926,17 @@
     "testimonials_N6HpgR": {
       "type": "testimonials",
       "blocks": {
+        "testimonial_bDnYzp": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "testimonial": "I live-streamed my soccer game. It was easy to operate and the video quality was clear. Interacting with netizens while soccer was an amazing experience!@",
+            "author": "Mason B",
+            "image": "shopify://shop_images/O1CN012aNJEt1bmG0R53bYC__0-rate_jpg_960x960_jpg.jpg",
+            "image_caption": "",
+            "link": ""
+          }
+        },
         "testimonial_3xjmWj": {
           "type": "testimonial",
           "settings": {
@@ -961,6 +972,7 @@
         }
       },
       "block_order": [
+        "testimonial_bDnYzp",
         "testimonial_3xjmWj",
         "testimonial_Acqf8c",
         "testimonial_K4xmJa"
