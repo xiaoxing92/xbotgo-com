@@ -535,7 +535,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Compare-MB.png",
-            "image_width": 500,
+            "image_width": 700,
             "url": ""
           }
         },
@@ -543,7 +543,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/07d788ca876542e7833d7edc491256cb.png",
-            "image_width": 500,
+            "image_width": 700,
             "url": ""
           }
         }
