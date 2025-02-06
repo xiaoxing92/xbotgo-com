@@ -20,7 +20,7 @@
         "show_facebook": true,
         "show_pinterest": true,
         "show_featured_image": true,
-        "full_width_image": true,
+        "full_width_image": false,
         "featured_image_height": "huge",
         "enable_title_overlay": false,
         "overlay_style": "shadow"
