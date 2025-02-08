@@ -516,6 +516,27 @@
         "collapse_line_items": "{{count}}個のアイテムを非表示",
         "line_item_summary_list_accessibility_label": "{{productTitle}}バンドル内のアイテム"
       }
+    },
+    "payment_methods": {
+      "google_pay": {
+        "iframe_title_accessibility_label": "Google Pay の支払い方法を追加する",
+        "loading_accessibility_message": "Google Payを読み込んでいます"
+      },
+      "pay_pal": {
+        "iframe_title_accessibility_label": "PayPal支払い方法の追加",
+        "loading_accessibility_message": "PayPalを読み込んでいます"
+      }
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "general": {
+        "errors": {
+          "payment": {
+            "shop_cash_not_found": "ショップキャッシュが見つかりませんでした。"
+          }
+        }
+      }
     }
   }
 }
