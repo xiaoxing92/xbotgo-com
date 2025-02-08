@@ -1,249 +1,251 @@
 {% style %}
-    {%- if section.settings.enable_sticky -%}
-      .section-header {
-        position: -webkit-sticky;
-        position: sticky;
-      }
-    {%- endif -%}
+  {%- if section.settings.enable_sticky -%}
+    .section-header {
+      position: -webkit-sticky;
+      position: sticky;
+    }
+  {%- endif -%}
 
-    .logo img {
-      width: {{ section.settings.logo_img_width_int }}px;
-    }
+  .logo img {
+    width: {{ section.settings.logo_img_width_int }}px;
+  }
 
-    .logo-area__middle--logo-image {
-      max-width: {{ section.settings.logo_img_width_int }}px;
-    }
+  .logo-area__middle--logo-image {
+    max-width: {{ section.settings.logo_img_width_int }}px;
+  }
 
-    .header-nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 70px;
-        padding: 0 10px;
-        background-color: white;
-        border-bottom: 1px solid #eaeaea;
-    }
+  .header-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 70px;
+      padding: 0 10px;
+      background-color: white;
+      border-bottom: 1px solid #eaeaea;
+  }
 
-    .logo {
-        display: flex;
-        align-items: center;
-        margin-bottom:0;
-    }
+  .logo {
+      display: flex;
+      align-items: center;
+      margin-bottom:0;
+  }
 
-    .logo img {
-        height: 40px;
-    }
+  .logo img {
+      height: 40px;
+  }
 
-    .nav-menu {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height:100%;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    .nav-menu li {
-        margin: 0 15px;
-        height:100%;
-    }
-
-    .nav-title {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        padding: 5px;
-        height: 100%;
-        position: relative
-    }
-
-    .nav-title::before{
-        content: '';
-        width:0%;
-        height: 2px;
-        background: linear-gradient(to right, #f27b00, #ca251d);
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        display: block;
-        transition: width 0.3s ease, left 0.3s ease;
-    }
-    .nav-title:hover::before {
-        width: 100%;
-        left: 0;
-    }
-    .dropdown {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        position: absolute;
-        visibility: hidden;
-        left: 0;
-        background: white;
-        transition: opacity 175ms ease-in, visibility 175ms;
-        opacity: 0;
-        z-index: 10;
-        gap:10px;
-        padding-top:20px;
-        padding-bottom:20px;
-        padding-left: 20%;
-    }
-
-    .nav-item:hover .dropdown {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .child-item{
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: center;
-        position: relative;
-        width: 200px;
-        height: 200px;
-        background: #F8F8F8;
-        border-radius: 2px 2px 2px 2px;
-        background-color: #F8F8F8;
-        gap:10px;
-    }
-
-    .child-item img{
-      position: absolute;
-      top:0;
-      left:0;
-      width:100%;
+  .nav-menu {
+      display: flex;
+      justify-content: center;
+      width: 100%;
       height:100%;
-    }
-    .title{
-      z-index:10;
-      text-align: center;
-      color:#000;
-    }
-    .icons {
-        display: flex;
-        align-items: center;
-    }
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
 
-    .icons img {
-        width: 20px;
-        height: 20px;
-        margin: 0 10px;
-        cursor: pointer;
+  .nav-menu li {
+      margin: 0 15px;
+      height:100%;
+  }
+
+  .nav-title {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      padding: 5px;
+      height: 100%;
+      position: relative
+  }
+
+  .nav-title::before{
+      content: '';
+      width:0%;
+      height: 2px;
+      background: linear-gradient(to right, #f27b00, #ca251d);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+      transition: width 0.3s ease, left 0.3s ease;
+  }
+  .nav-title:hover::before {
+      width: 100%;
+      left: 0;
+  }
+  .dropdown {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      position: absolute;
+      visibility: hidden;
+      left: 0;
+      background: white;
+      transition: opacity 175ms ease-in, visibility 175ms;
+      opacity: 0;
+      z-index: 10;
+      gap:10px;
+      padding-top:20px;
+      padding-bottom:20px;
+      padding-left: 20%;
+  }
+
+  .nav-item:hover .dropdown {
+      visibility: visible;
+      opacity: 1;
+  }
+
+  .child-item{
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background: #F8F8F8;
+      border-radius: 2px 2px 2px 2px;
+      background-color: #F8F8F8;
+      gap:10px;
+  }
+
+  .child-item img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+  .title{
+    z-index:10;
+    text-align: center;
+    color:#000;
+  }
+  .icons {
+      display: flex;
+      align-items: center;
+  }
+
+  .icons img {
+      width: 20px;
+      height: 20px;
+      margin: 0 10px;
+      cursor: pointer;
+  }
+  .logo-area__left{
+    display:none
+  }
+  .mobile-menu {
+    display:none;
+  }
+  .nav-right{
+    padding-right:38px;
+  }
+  @media (max-width: 767.98px) {
+    .logo img {
+      width: {{ section.settings.mobile_logo_img_width_int }}px;
     }
-    .logo-area__left{
-      display:none
-    }
-    .mobile-menu {
+    .nav-menu{
       display:none;
     }
-    @media (max-width: 767.98px) {
-      .logo img {
-        width: {{ section.settings.mobile_logo_img_width_int }}px;
-      }
-      .nav-menu{
-        display:none;
-      }
-      .logo-area__left{
-        display:flex;
-      }
-      .header-nav{
-        color:#000;
-        height:60px;
-      }
-      .child-item{
-        width:120px;
-        height:120px;
-      }
-      .title{
-        font-size:12px;
-      }
-      .show-search-link{
-        display:flex !important;
-        margin-inline-end:0!important;
-      }
-      .show-search-link__icon{
-        width:auto!important;
-      }
-      .mobile-menu {
-          display:flex;
-          position: fixed;
-          top: 100px;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          transition: left 0.5s ease;
-          background: #fff;
-      }
-      .mobile-menu.active {
-          left: 0;
-      }
-      .sidebar {
-        width: 105px;
-      }
-      .menu {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      .menu-item {
-        padding: 10px;
-        cursor: pointer;
-        color: #333;
-        border-left: 4px solid transparent;
-      }
-
-      .menu-item.active {
-        font-weight: bold;
-        border-left-color: #ff6600;
-        color: #000;
-      }
-      .content {
-        flex-grow: 1;
-        padding: 10px;
-      }
-      .tab-content {
-        display: none;
-      }
-
-      .tab-content.active {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      }
-
-      .card {
-        position: relative;
-        overflow: hidden;
-        text-align: center;
-      }
-
-      .card img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-
-      .card p {
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        color: white;
-        font-size: 1rem;
-        background: rgba(0, 0, 0, 0.5);
-        padding: 5px 10px;
-        border-radius: 5px;
-      }
-
+    .logo-area__left{
+      display:flex;
     }
-{% endstyle %}
+    .header-nav{
+      color:#000;
+      height:60px;
+    }
+    .child-item{
+      width:120px;
+      height:120px;
+    }
+    .title{
+      font-size:12px;
+    }
+    .show-search-link{
+      display:flex !important;
+      margin-inline-end:0!important;
+    }
+    .show-search-link__icon{
+      width:auto!important;
+    }
+    .mobile-menu {
+        display:flex;
+        position: fixed;
+        top: 100px;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        transition: left 0.5s ease;
+        background: #fff;
+    }
+    .mobile-menu.active {
+        left: 0;
+    }
+    .sidebar {
+      width: 105px;
+    }
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .menu-item {
+      padding: 10px;
+      cursor: pointer;
+      color: #333;
+      border-left: 4px solid transparent;
+    }
 
+    .menu-item.active {
+      font-weight: bold;
+      border-left-color: #ff6600;
+      color: #000;
+    }
+    .content {
+      flex-grow: 1;
+      padding: 10px;
+    }
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card p {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 1rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+  }
+{% endstyle %}
 
 <page-header data-section-id='{{ section.id }}' {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
   <div
@@ -336,77 +338,79 @@
     </ul>
 
     <!-- 右侧图标 -->
-    <div class='logo-area__right'>
-      <div class='logo-area__right__inner'>
-        {% if shop.customer_accounts_enabled %}
-          {% if customer %}
-            <a
-              class='header-account-link'
-              href='{{ routes.account_url }}'
-              aria-label='{{ 'sections.header.account' | t | escape }}'
-            >
-              <span class='header-account-link__text {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}'>
-                {{- 'sections.header.account' | t -}}
+    <div class='nav-right'>
+      <div class='logo-area__right'>
+        <div class='logo-area__right__inner'>
+          {% if shop.customer_accounts_enabled %}
+            {% if customer %}
+              <a
+                class='header-account-link'
+                href='{{ routes.account_url }}'
+                aria-label='{{ 'sections.header.account' | t | escape }}'
+              >
+                <span class='header-account-link__text {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}'>
+                  {{- 'sections.header.account' | t -}}
+                </span>
+                <span class='header-account-link__icon{% if section.settings.icon_strategy == 'icons_cart_search' %} mobile-only{% endif %}'>
+                  {%- render 'icon-user' -%}
+                </span>
+              </a>
+            {% else %}
+              <a
+                class='header-account-link'
+                href='{{ routes.account_login_url }}'
+                aria-label='{{ 'sections.header.account' | t | escape }}'
+              >
+                <span class='header-account-link__text {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}'>
+                  {{- 'sections.header.account' | t -}}
+                </span>
+                <span class='header-account-link__icon{% if section.settings.icon_strategy == 'icons_cart_search' %} mobile-only{% endif %}'>
+                  {%- render 'icon-user' -%}
+                </span>
+              </a>
+            {% endif %}
+          {% endif %}
+
+          {% if section.settings.enable_search %}
+            <a class='show-search-link' href='{{ routes.search_url }}'>
+              <span class='show-search-link__text {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}'>
+                {{- 'sections.header.search' | t -}}
               </span>
-              <span class='header-account-link__icon{% if section.settings.icon_strategy == 'icons_cart_search' %} mobile-only{% endif %}'>
-                {%- render 'icon-user' -%}
-              </span>
-            </a>
-          {% else %}
-            <a
-              class='header-account-link'
-              href='{{ routes.account_login_url }}'
-              aria-label='{{ 'sections.header.account' | t | escape }}'
-            >
-              <span class='header-account-link__text {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}'>
-                {{- 'sections.header.account' | t -}}
-              </span>
-              <span class='header-account-link__icon{% if section.settings.icon_strategy == 'icons_cart_search' %} mobile-only{% endif %}'>
-                {%- render 'icon-user' -%}
+              <span class='show-search-link__icon'>
+                {%- render 'icon-search' -%}
               </span>
             </a>
           {% endif %}
-        {% endif %}
 
-        {% if section.settings.enable_search %}
-          <a class='show-search-link' href='{{ routes.search_url }}'>
-            <span class='show-search-link__text {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}'>
-              {{- 'sections.header.search' | t -}}
+          {%- liquid
+            assign cart_hash = ''
+            for item in cart.items
+              assign cart_hash = cart_hash | append: ',' | append: item.key | append: '|' | append: item.quantity
+            endfor
+            assign cart_hash = cart_hash | remove_first: ',' | sha256
+          -%}
+          <a href='{{ routes.cart_url }}' class='cart-link' data-hash='{{ cart_hash }}'>
+            <span class='cart-link__label {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}'>
+              {{- 'sections.header.cart' | t | escape -}}
             </span>
-            <span class='show-search-link__icon'>
-              {%- render 'icon-search' -%}
+            <span class='cart-link__icon'>
+              {%- liquid
+                if section.settings.cart_icon == 'basket'
+                  render 'icon-basket'
+                elsif section.settings.cart_icon == 'bag'
+                  render 'icon-bag'
+                else
+                  render 'icon-cart'
+                endif
+              -%}
+              <span class='cart-link__count'>
+                {%- if cart.item_count > 0 -%}
+                  {{- cart.item_count -}}
+                {%- endif -%}
+              </span>
             </span>
           </a>
-        {% endif %}
-
-        {%- liquid
-          assign cart_hash = ''
-          for item in cart.items
-            assign cart_hash = cart_hash | append: ',' | append: item.key | append: '|' | append: item.quantity
-          endfor
-          assign cart_hash = cart_hash | remove_first: ',' | sha256
-        -%}
-        <a href='{{ routes.cart_url }}' class='cart-link' data-hash='{{ cart_hash }}'>
-          <span class='cart-link__label {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}'>
-            {{- 'sections.header.cart' | t | escape -}}
-          </span>
-          <span class='cart-link__icon'>
-            {%- liquid
-              if section.settings.cart_icon == 'basket'
-                render 'icon-basket'
-              elsif section.settings.cart_icon == 'bag'
-                render 'icon-bag'
-              else
-                render 'icon-cart'
-              endif
-            -%}
-            <span class='cart-link__count'>
-              {%- if cart.item_count > 0 -%}
-                {{- cart.item_count -}}
-              {%- endif -%}
-            </span>
-          </span>
-        </a>
+        </div>
       </div>
     </div>
     <!-- 搜索 -->
