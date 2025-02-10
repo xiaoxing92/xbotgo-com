@@ -3354,7 +3354,7 @@ body:not(.reveal-mobile-nav) .mobile-navigation-drawer .mobile-navigation-drawer
 
 .logo-area__right {
   display: flex;
-  flex: 2 0 0;
+  /* flex: 2 0 0; */
   align-items: center;
   justify-content: flex-end;
 }
