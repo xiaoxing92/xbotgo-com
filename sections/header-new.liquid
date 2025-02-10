@@ -20,7 +20,8 @@
       align-items: center;
       width: 100%;
       height: 70px;
-      padding: 0 10px;
+      padding-right: var(--container-pad-x);
+      padding-left: var(--container-pad-x);
       background-color: white;
       border-bottom: 1px solid #eaeaea;
   }
@@ -140,9 +141,6 @@
   }
   .mobile-menu {
     display:none;
-  }
-  .nav-right{
-    padding-right:38px;
   }
   @media (max-width: 767.98px) {
     .logo img {
@@ -338,81 +336,80 @@
     </ul>
 
     <!-- 右侧图标 -->
-    <div class='nav-right'>
-      <div class='logo-area__right'>
-        <div class='logo-area__right__inner'>
-          {% if shop.customer_accounts_enabled %}
-            {% if customer %}
-              <a
-                class='header-account-link'
-                href='{{ routes.account_url }}'
-                aria-label='{{ 'sections.header.account' | t | escape }}'
-              >
-                <span class='header-account-link__text {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}'>
-                  {{- 'sections.header.account' | t -}}
-                </span>
-                <span class='header-account-link__icon{% if section.settings.icon_strategy == 'icons_cart_search' %} mobile-only{% endif %}'>
-                  {%- render 'icon-user' -%}
-                </span>
-              </a>
-            {% else %}
-              <a
-                class='header-account-link'
-                href='{{ routes.account_login_url }}'
-                aria-label='{{ 'sections.header.account' | t | escape }}'
-              >
-                <span class='header-account-link__text {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}'>
-                  {{- 'sections.header.account' | t -}}
-                </span>
-                <span class='header-account-link__icon{% if section.settings.icon_strategy == 'icons_cart_search' %} mobile-only{% endif %}'>
-                  {%- render 'icon-user' -%}
-                </span>
-              </a>
-            {% endif %}
-          {% endif %}
-
-          {% if section.settings.enable_search %}
-            <a class='show-search-link' href='{{ routes.search_url }}'>
-              <span class='show-search-link__text {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}'>
-                {{- 'sections.header.search' | t -}}
+    <div class='logo-area__right'>
+      <div class='logo-area__right__inner'>
+        {% if shop.customer_accounts_enabled %}
+          {% if customer %}
+            <a
+              class='header-account-link'
+              href='{{ routes.account_url }}'
+              aria-label='{{ 'sections.header.account' | t | escape }}'
+            >
+              <span class='header-account-link__text {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}'>
+                {{- 'sections.header.account' | t -}}
               </span>
-              <span class='show-search-link__icon'>
-                {%- render 'icon-search' -%}
+              <span class='header-account-link__icon{% if section.settings.icon_strategy == 'icons_cart_search' %} mobile-only{% endif %}'>
+                {%- render 'icon-user' -%}
+              </span>
+            </a>
+          {% else %}
+            <a
+              class='header-account-link'
+              href='{{ routes.account_login_url }}'
+              aria-label='{{ 'sections.header.account' | t | escape }}'
+            >
+              <span class='header-account-link__text {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}'>
+                {{- 'sections.header.account' | t -}}
+              </span>
+              <span class='header-account-link__icon{% if section.settings.icon_strategy == 'icons_cart_search' %} mobile-only{% endif %}'>
+                {%- render 'icon-user' -%}
               </span>
             </a>
           {% endif %}
+        {% endif %}
 
-          {%- liquid
-            assign cart_hash = ''
-            for item in cart.items
-              assign cart_hash = cart_hash | append: ',' | append: item.key | append: '|' | append: item.quantity
-            endfor
-            assign cart_hash = cart_hash | remove_first: ',' | sha256
-          -%}
-          <a href='{{ routes.cart_url }}' class='cart-link' data-hash='{{ cart_hash }}'>
-            <span class='cart-link__label {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}'>
-              {{- 'sections.header.cart' | t | escape -}}
+        {% if section.settings.enable_search %}
+          <a class='show-search-link' href='{{ routes.search_url }}'>
+            <span class='show-search-link__text {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}'>
+              {{- 'sections.header.search' | t -}}
             </span>
-            <span class='cart-link__icon'>
-              {%- liquid
-                if section.settings.cart_icon == 'basket'
-                  render 'icon-basket'
-                elsif section.settings.cart_icon == 'bag'
-                  render 'icon-bag'
-                else
-                  render 'icon-cart'
-                endif
-              -%}
-              <span class='cart-link__count'>
-                {%- if cart.item_count > 0 -%}
-                  {{- cart.item_count -}}
-                {%- endif -%}
-              </span>
+            <span class='show-search-link__icon'>
+              {%- render 'icon-search' -%}
             </span>
           </a>
-        </div>
+        {% endif %}
+
+        {%- liquid
+          assign cart_hash = ''
+          for item in cart.items
+            assign cart_hash = cart_hash | append: ',' | append: item.key | append: '|' | append: item.quantity
+          endfor
+          assign cart_hash = cart_hash | remove_first: ',' | sha256
+        -%}
+        <a href='{{ routes.cart_url }}' class='cart-link' data-hash='{{ cart_hash }}'>
+          <span class='cart-link__label {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}'>
+            {{- 'sections.header.cart' | t | escape -}}
+          </span>
+          <span class='cart-link__icon'>
+            {%- liquid
+              if section.settings.cart_icon == 'basket'
+                render 'icon-basket'
+              elsif section.settings.cart_icon == 'bag'
+                render 'icon-bag'
+              else
+                render 'icon-cart'
+              endif
+            -%}
+            <span class='cart-link__count'>
+              {%- if cart.item_count > 0 -%}
+                {{- cart.item_count -}}
+              {%- endif -%}
+            </span>
+          </span>
+        </a>
       </div>
     </div>
+
     <!-- 搜索 -->
     {%- if section.settings.enable_search -%}
       {%- liquid
