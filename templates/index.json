@@ -1024,6 +1024,7 @@
         "testimonial_Acqf8c",
         "testimonial_K4xmJa"
       ],
+      "disabled": true,
       "custom_css": [
         ".theme-img {border-radius: 25px;}",
         "@media (max-width: 767px) {.testimonial__blockquote {font-size: 11px; vertical-align: left; }}"
