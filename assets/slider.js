@@ -20,7 +20,6 @@ class CarouselSlider extends HTMLElement {
       this.setCarouselState(false);
       return;
     }
-
     window.initLazyScript(this, this.init.bind(this));
   }
 

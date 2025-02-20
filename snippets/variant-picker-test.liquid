@@ -120,110 +120,7 @@
             %}
           </div>
         {%- else -%}
-
-
           <fieldset class="option-selector" data-selector-type="listed" data-option="{{ option.name | escape }}">
-            {% if show_size_chart %}
-              <div class="flex justify-between">
-                <legend class="label">{{ option.name }}</legend>
-                {{ size_chart_link }}
-              </div>
-            {% else %}
-              <legend class="label">
-                {{ option.name }}
-                {% if is_color_selector %}
-                  : <span class="option-selector__label-value js-color-text">
-                    {% if section.settings.select_first_variant or product.variants.size == 1 or product.selected_variant %}
-                      {{ option.selected_value }}
-                    {% endif %}
-                  </span>
-                {% endif %}
-              </legend>
-            {% endif %}
-          
-            <div class="option-selector__btns flex flex-wrap">
-              {% for value in option.values %}
-                {% assign value_index0 = forloop.index0 %}
-          
-     
-                {% assign option_index = 0 %}
-                {% for opt in product.options %}
-                  {% if opt == option.name %}
-                    {% break %}
-                  {% else %}
-                    {% assign option_index = option_index | plus: 1 %}
-                  {% endif %}
-                {% endfor %}
-     
-                {% assign option_position = option_index | plus: 1 %}
-                {% assign option_key = "option" | append: option_position %}
-          
-     
-                {% assign variant_details = product.variants | where: option_key, value %}
-          
-                {% if option.name == "Bundle" %}
-                  <!-- Bundle 保持原有图片按钮样式 -->
-                  <input type="radio" class="opt-btn visually-hidden focus-label js-option"
-                         name="{{ option_id }}-option" id="{{ option_id }}-opt-{{ value_index0 }}" 
-                         value="{{ value | escape }}" required
-                         {% if section.settings.select_first_variant or product.variants.size == 1 or product.selected_variant %}
-                           {% if option.selected_value == value %} checked{% endif %}
-                         {% endif %}>
-                  {% for variant in variant_details %}
-                    <label class="opt-label opt-label--image" for="{{ option_id }}-opt-{{ value_index0 }}">
-                      <div class="opt-label__media media">
-                        {% render 'image',
-                          image: variant.featured_media,
-                          sizes: img_sizes,
-                          widths: img_widths,
-                          custom_crop: img_crop_align %}
-                      </div>
-                      <div class="opt-label__left">
-                        <div class="opt-label__text">{{ value }}</div>
-                        {% if variant.metafields.custom.variant_info %}
-                          <div class="opt-label__bundle-info">({{ variant.metafields.custom.variant_info }})</div>
-                        {% endif %}
-                      </div>
-                      <div class="opt-label__prices">
-                        <div class="price-now">{{ variant.price | money }}</div>
-                        {% if variant.compare_at_price > variant.price %}
-                          <div class="price-was">{{ variant.compare_at_price | money }}</div>
-                        {% endif %}
-                      </div>
-                    </label>
-                    {% break %}
-                  {% endfor %}
-          
-                {% elsif option.name == "Color" %}
-                  <!-- Color 选项：仅显示一张图片 -->
-                  <input type="radio" class="opt-btn visually-hidden focus-label js-option"
-                         name="{{ option_id }}-option" id="{{ option_id }}-opt-{{ value_index0 }}" 
-                         value="{{ value | escape }}" required
-                         {% if section.settings.select_first_variant or product.variants.size == 1 or product.selected_variant %}
-                           {% if option.selected_value == value %} checked{% endif %}
-                         {% endif %}>
-                  <label class="opt-label opt-label--color" for="{{ option_id }}-opt-{{ value_index0 }}">
-                    {% assign color_variant = variant_details.first %}
-                    {% if color_variant %}
-                      <div class="color-image">
-                        {% render 'image',
-                          image: color_variant.featured_media,
-                          sizes: img_sizes,
-                          widths: img_widths,
-                          custom_crop: img_crop_align %}
-                      </div>
-                    {% endif %}
-                  </label>
-                {% endif %}
-              {% endfor %}
-            </div>
-          </fieldset>
-                  
-    
-
-
-          
-        {% comment %} <fieldset class="option-selector" data-selector-type="listed" data-option="{{ option.name | escape }}">
             {%- if show_size_chart -%}
               <div class="flex justify-between">
                 <legend class="label">{{- option.name -}}</legend>
@@ -232,7 +129,6 @@
             {%- else -%}
               <legend class="label">{{- option.name -}}{% if is_color_selector %}: <span class="option-selector__label-value js-color-text">{% if section.settings.select_first_variant or product.variants.size == 1 or product.selected_variant %}{{ option.selected_value }}{% endif %}</span>{% endif %}</legend>
             {%- endif -%}
-            
             <div class="option-selector__btns flex flex-wrap">
               {%- for value in option.values -%}
                 {%- assign value_index0 = forloop.index0 -%}
@@ -257,7 +153,7 @@
                         {%- assign variant = variant_details.first -%}
                         {% assign bundle_info = variant.metafields.custom.variant_info %}
                         {% if bundle_info %}
-                          <div class="opt-label__bundle-info">({{ bundle_info }})</div>
+                          <div class="opt-label__bundle-info">{{ bundle_info }}</div>
                         {% endif %}
                       {%- endif -%}
                     </div>
@@ -287,7 +183,7 @@
                 {%- endif -%}
               {%- endfor -%}
             </div>
-          </fieldset>  {% endcomment %}
+          </fieldset>
         {%- endif -%}
       {%- endfor -%}
 
@@ -348,7 +244,6 @@
       }
       .opt-btn:checked + .opt-label {
         border-color: {{ font_col_base }};
-        border: 2px solid #EBBB9A;
         cursor: default;
       }
       .opt-btn.is-unavailable + .opt-label {
@@ -370,7 +265,7 @@
         min-height: 40px; /* Reduced min-height for compact look */
         margin: 5px 5px 0 0; /* Reduced margin for compact look */
         padding: 8px 10px; /* Reduced padding for compact look */
-        border: 2px solid #F1F1F1;
+        border: 1px solid {{ font_col_base | color_mix: bg_col, 25 }}; /* Reduced border thickness */
         border-radius: {{ button_border_radius }}px;
         background-color: {{ bg_col }};
         color: {{ font_col_base }};
@@ -425,7 +320,6 @@
         .opt-label:active {
           color: {{ font_col_base }};
           border-color: {{ font_col_base | color_mix: bg_col, 55 }};
-          border-radius: {{ button_border_radius }}px;
           cursor: pointer;
         }
       }
@@ -433,8 +327,6 @@
         .opt-label:hover {
           color: {{ font_col_base }};
           border-color: {{ font_col_base | color_mix: bg_col, 55 }};
-          border: 2px solid #EBBB9A;
-          border-radius: 8px;
           cursor: pointer;
         }
       }

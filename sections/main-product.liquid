@@ -63,7 +63,7 @@
             endif
           endfor
         -%}
-
+        {% comment %} 大图轮播 {% endcomment %}
         <carousel-slider class="{% if section.settings.gallery_layout contains 'collage' or section.settings.gallery_layout contains 'columns' %}mobile-only{% endif %}" role="region" aria-roledescription="{{ 'sections.slideshow.carousel' | t }}" aria-label="{{ section.settings.accessibility_info | escape }}" data-dynamic-height="true" data-dispatch-events="true" data-lazy="false">
           <div class="slider slider--no-scrollbar" id="slider-{{ section.id }}" aria-live="polite" aria-atomic="true">
             <div class="slider__grid">
@@ -112,6 +112,7 @@
             </div>
           {%- endif -%}
         </carousel-slider>
+        {% comment %} 大图轮播 --- end {% endcomment %}
 
         {%- if section.settings.gallery_layout contains 'collage' or section.settings.gallery_layout contains 'columns' -%}
           <div class="product-media-collage desktop-only">
@@ -126,8 +127,7 @@
                   else
                     assign loading = 'lazy'
                   endif
-
-                  render 'media', media: media, product: product, min_aspect_ratio: min_aspect_ratio, loading: loading, in_collage: true
+                    render 'media', media: media, product: product, min_aspect_ratio: min_aspect_ratio, loading: loading, in_collage: true
                 -%}
                 {%- if media.media_type == 'image' and section.settings.enable_zoom -%}
                   </a>
@@ -160,7 +160,7 @@
 
         {% render 'product-label-detail', product: product, current_variant: current_variant %}
       </div>
-
+      {% comment %} 轮播底下图 {% endcomment %}
       {% if product.media.size > 1 %}
         <carousel-slider class="carousel block thumbnails{% unless section.settings.gallery_layout contains 'carousel' %} mobile-only{% endunless %}">
           <div class="slider slider--no-scrollbar">
@@ -189,6 +189,7 @@
             </ul>
           </div>
         </carousel-slider>
+        {% comment %} 轮播底下图 ---end {% endcomment %}
       {% endif %}
     </div>
 
@@ -244,6 +245,7 @@
     {%- endif -%}
   </media-gallery>
 
+  {% comment %} 商品右侧详情 {% endcomment %}
   <div class="detail product-column-right" {%- render 'animation-attrs', attrs: 'data-cc-animate data-cc-animate-delay="0.2s"' -%}>
     <div class="product-form{% if section.settings.enable_sticky_columns %} sticky-content-container{% endif %}" data-ajax-add-to-cart="true" data-product-id="{{ product.id }}">
       {%- if section.settings.enable_sticky_atc -%}
@@ -262,6 +264,19 @@
             </div>
 
           {% when 'price' %}
+
+            {%- if block.settings.enable_product_reviews_by_price and product.metafields.reviews.rating_count != blank -%}
+              {%- assign rating_count = product.metafields.reviews.rating_count | plus: 0 -%}
+              {%- if rating_count > 0 -%}
+                <div class="theme-product-reviews">
+                  {% render 'rating', rating_value: product.metafields.reviews.rating.value %}
+                  <span class="cc-rating-custom-caption">
+                    {{- 'products.product.reviews_count' | t: count: rating_count -}}
+                  </span>
+                </div>
+              {%- endif -%}
+            {%- endif -%}
+
             <div class="price-container" {{ block.shopify_attributes }}>
               <div class="product-info__price product-price product-price--large">
                 {% render 'price', product: product, show_currency_code: settings.product_currency_code_enabled, for_variant_picker: true, current_variant: current_variant %}
@@ -310,18 +325,6 @@
                   </variant-content>
                 {% endif %}
               </div>
-
-              {%- if block.settings.enable_product_reviews_by_price and product.metafields.reviews.rating_count != blank -%}
-                {%- assign rating_count = product.metafields.reviews.rating_count | plus: 0 -%}
-                {%- if rating_count > 0 -%}
-                  <div class="theme-product-reviews">
-                    {% render 'rating', rating_value: product.metafields.reviews.rating.value %}
-                    <span class="cc-rating-custom-caption">
-                      {{- 'products.product.reviews_count' | t: count: rating_count -}}
-                    </span>
-                  </div>
-                {%- endif -%}
-              {%- endif -%}
             </div>
 
           {% when 'description' %}
