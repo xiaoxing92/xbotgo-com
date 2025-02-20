@@ -16,8 +16,6 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/PC-KV.png",
-            "mobile_image": "shopify://shop_images/M-KV_90f25af6-94c6-4f7a-a688-a374fae48c06.png",
             "slide_link": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
             "subheading": "",
             "title": "Limited Time Deal",
@@ -81,8 +79,8 @@
         "image_Hrfmfc": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/PC-KV.png",
-            "mobile_image": "shopify://shop_images/M-KV_90f25af6-94c6-4f7a-a688-a374fae48c06.png",
+            "image": "shopify://shop_images/American_football_live.png",
+            "mobile_image": "shopify://shop_images/American_football_record.png",
             "slide_link": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
             "subheading": "XbotGo Chameleon",
             "title": "Auto Track & Record Sports",
@@ -194,7 +192,7 @@
           "type": "image",
           "settings": {
             "width": "half",
-            "image": "shopify://shop_images/icon.png",
+            "image": "shopify://shop_images/basketball_modes.png",
             "height": "adapt",
             "height_desktop": 600,
             "height_mobile": 500,
@@ -485,7 +483,6 @@
           "type": "image",
           "settings": {
             "width": "half",
-            "image": "shopify://shop_images/icon_5ecb15d5-e64a-401f-b431-89295baa93dc.png",
             "height": "adapt",
             "height_desktop": 600,
             "height_mobile": 500,
@@ -979,7 +976,6 @@
             "star_rating": 5,
             "testimonial": "I live-streamed my soccer game. It was easy to operate and the video quality was clear. Interacting with netizens while soccer was an amazing experience!@",
             "author": "Mason B",
-            "image": "shopify://shop_images/O1CN012aNJEt1bmG0R53bYC__0-rate_jpg_960x960_jpg.jpg",
             "image_caption": "",
             "link": ""
           }
@@ -990,7 +986,6 @@
             "star_rating": 5,
             "testimonial": "\"Chameleon's features are really powerful. They meet all my sports recording needs. With it, my sports life is more exciting! Excellent job.\"",
             "author": "Henry L.",
-            "image": "shopify://shop_images/WeCom20250114-220111_2x_32cd5c94-f58b-4527-b2c5-79be5cb1a9ef.png",
             "image_caption": "",
             "link": ""
           }
