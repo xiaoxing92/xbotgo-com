@@ -81,8 +81,6 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/PC-KV-1.png",
-            "mobile_image": "shopify://shop_images/M-KV_fe833ab2-1200-45c7-ab34-5cbd8720a6de.png",
             "slide_link": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
             "subheading": "",
             "title": "",
@@ -102,8 +100,8 @@
         "image_MqKBe7": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/PC-KV.png",
-            "mobile_image": "shopify://shop_images/M-KV_90f25af6-94c6-4f7a-a688-a374fae48c06.png",
+            "image": "shopify://shop_images/American_football_live.png",
+            "mobile_image": "shopify://shop_images/American_football_record.png",
             "slide_link": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
             "subheading": "",
             "title": "Auto Track & Record Sports",
