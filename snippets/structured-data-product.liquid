@@ -38,6 +38,13 @@
       "@type": "Brand",
       "name": {{ product.vendor | json }}
     },
+    {% if product.metafields.reviews.rating_count %}
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "{{ product.metafields.reviews.rating.value }}",
+        "ratingCount": "{{ product.metafields.reviews.rating_count.value }}"
+    },
+    {% endif %}
     "offers": [
       {%- for variant in product.variants -%}
         {
