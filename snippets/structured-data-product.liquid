@@ -25,9 +25,6 @@
     "name": {{ product.title | json }},
     "url": {{ request.origin | append: product.url | json }},
     {%- assign now = 'now' | date: '%Y-%m-%d' | split: '-' -%}
-    {% capture year_from_now %}{{ now[0] | plus: 1 }}-{{ now[1] }}-{{ now[2] | at_most: 28 }}{% endcapture %}
-    
-    "priceValidUntil": {{ year_from_now | json }},
     {%- if media -%}
       "image": [
         {{ media | image_url: width: media.width | prepend: "https:" | json }}
@@ -59,6 +56,8 @@
           {%- endif -%}
           "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
           "price" : {{ variant.price | divided_by: 100.00 | json }},
+          {% capture year_from_now %}{{ now[0] | plus: 1 }}-{{ now[1] }}-{{ now[2] | at_most: 28 }}{% endcapture %}
+          "priceValidUntil": {{ year_from_now | json }},
           "priceCurrency" : {{ cart.currency.iso_code | json }},
           "url" : {{ request.origin | append: variant.url | json }},
           "seller": {
