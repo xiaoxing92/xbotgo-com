@@ -25,6 +25,18 @@
     assign nav_font_600 = nav_font | font_modify: 'weight', '600'
   -%}
 
+
+  {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+  {%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |
+  replace:'/','/' |
+  replace:'%20',' ' |
+  replace:'\u0026','&'
+  -%}
+  
+  {% if pageUrl contains 'vendors?' or pageUrl contains '?pr_prod_strat=' or pageUrl contains '?_pos' or pageUrl contains '?constraint' or pageUrl contains '?ref' %}
+  <meta name="robots" content="noindex, nofollow">
+  {% endif %}
+  
   <style>
     {{- base_font | font_face: font_display: 'fallback' -}}
     {{- base_font_bold | font_face: font_display: 'fallback' -}}
