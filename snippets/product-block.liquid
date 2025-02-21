@@ -18,9 +18,9 @@ Parameters:
 {%- endcomment -%}
 {%- liquid
   if collection and settings.prod_thumb_url_within_coll and product.collections contains collection
-    assign product_url = product.url 
+    assign product_url = product.url | split: '?' | first
   else
-    assign product_url = product.url
+    assign product_url = product.url | split: '?' | first
   endif
 
   assign product_images = product.media | where: 'media_type', 'image'
