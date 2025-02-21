@@ -162,7 +162,11 @@
     {{ 'animate-on-scroll.css' | asset_url | stylesheet_tag: preload: true }}
   {% endif %}
 
-  {{ content_for_header }}
+  {% comment %}{{ content_for_header }}{% endcomment %}
+
+  {% capture atom_tag_url %}<link rel="alternate" type="application/atom+xml" title="Feed" href="{{ request.path }}.atom" />{% endcapture %}
+  {{ content_for_header | remove: atom_tag_url }}
+  
 
   {%- if settings.custom_html_head -%}
     <!-- CC Custom Head Start -->
@@ -187,7 +191,6 @@
 </script>
 
   
-  {{ content_for_header }}
 
 
 </head>
