@@ -18,7 +18,7 @@ Parameters:
 {%- endcomment -%}
 {%- liquid
   if collection and settings.prod_thumb_url_within_coll and product.collections contains collection
-    assign product_url = product.url | within: collection
+    assign product_url = product.url 
   else
     assign product_url = product.url
   endif
