@@ -24,6 +24,10 @@
     "@type": "Product",
     "name": {{ product.title | json }},
     "url": {{ request.origin | append: product.url | json }},
+    {%- assign now = 'now' | date: '%Y-%m-%d' | split: '-' -%}
+    {% capture year_from_now %}{{ now[0] | plus: 1 }}-{{ now[1] }}-{{ now[2] | at_most: 28 }}{% endcapture %}
+    
+    "priceValidUntil": {{ year_from_now | json }},
     {%- if media -%}
       "image": [
         {{ media | image_url: width: media.width | prepend: "https:" | json }}
