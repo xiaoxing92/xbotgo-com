@@ -9,6 +9,8 @@
     {{- rule -}}
   {% endfor %}
 
+{{ "Disallow: */login_with_shop/*" }}
+
   {%- if group.sitemap != blank -%}
     {{ group.sitemap }}
   {%- endif -%}
