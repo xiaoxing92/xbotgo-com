@@ -8,7 +8,9 @@
   {% for rule in group.rules %}
     {{- rule -}}
   {% endfor %}
-{{ "Disallow: */login_with_shop/*" }}
+{{ "Disallow: */login_with_shop/*
+Disallow: */discount/*
+Disallow: */account/*" }}
 
   {%- if group.sitemap != blank -%}
     {{ group.sitemap }}
