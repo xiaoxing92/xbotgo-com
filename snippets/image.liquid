@@ -39,7 +39,7 @@
   assign sizes = sizes | default: '100vw'
 
   if widths == blank
-    assign widths = '1000, ' | append: image.width
+    assign widths = '1000px, ' | append: image.width
   endif
 
   if class == blank
