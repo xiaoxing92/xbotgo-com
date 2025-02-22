@@ -11,7 +11,8 @@
 {{ "Disallow: */login_with_shop/*
 Disallow: */discount/*
 Disallow: */account/*
-Disallow: */search/* " }}
+Disallow: */search/*
+  Disallow: */search?q=*" }}
 
   {%- if group.sitemap != blank -%}
     {{ group.sitemap }}
