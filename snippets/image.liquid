@@ -102,7 +102,7 @@
     assign fetchpriority = null
   endif
 
-  assign image_src = image | image_url: width: 200, crop: crop, crop_left: crop_left, crop_top: crop_top, crop_width: crop_width, crop_height: crop_height
+  assign image_src = image | image_url: width: image.width, crop: crop, crop_left: crop_left, crop_top: crop_top, crop_width: crop_width, crop_height: crop_height
   assign srcset = null
   if settings.image_quality != '1'
     assign srcset = ''
