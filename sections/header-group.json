@@ -107,7 +107,7 @@
         "logo_img_width_int": 165,
         "mobile_logo_img_width_int": 85,
         "logo_h1": true,
-        "enable_sticky": true,
+        "enable_sticky": false,
         "enable_transparent": true,
         "transparent_color": "#ffffff",
         "menu_linklist": "header-menu-12-06",

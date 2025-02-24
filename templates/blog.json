@@ -23,39 +23,9 @@
         "show_twitter": true,
         "show_facebook": true
       }
-    },
-    "rich_text_Qjid8D": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_rEcUCC": {
-          "type": "heading",
-          "settings": {
-            "title": "Rich text",
-            "use_h1": false
-          }
-        },
-        "text_pwHQNx": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.</p>",
-            "enlarge_text": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_rEcUCC",
-        "text_pwHQNx"
-      ],
-      "settings": {
-        "height": "medium",
-        "text_alignment": "center",
-        "full_width": false,
-        "color_scheme": "default"
-      }
     }
   },
   "order": [
-    "main",
-    "rich_text_Qjid8D"
+    "main"
   ]
 }
