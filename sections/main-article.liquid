@@ -22,7 +22,7 @@
       <div class="page-header page-header--with-background img-fill {% if section.settings.enable_title_overlay %}image-overlay image-overlay--bg-{{ section.settings.overlay_style }}{% endif %} page-header--padded-{{ section.settings.featured_image_height }}">
         {% if section.settings.enable_title_overlay %}
           <div class="image-overlay__image">
-            {%- render 'image' with article.image, loading: 'eager' -%}
+            {%- render 'image' with article.image, width: 1000, loading: 'eager' -%}
           </div>
           <div class="text-overlay text-overlay--inline text-overlay--v-center text-overlay--h-center image-overlay__over" {%- render 'animation-attrs', attrs: 'data-cc-animate data-cc-animate-delay="0.2s"' -%}>
             <div class="text-overlay__inner">
