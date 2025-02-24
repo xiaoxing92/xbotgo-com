@@ -115,7 +115,7 @@ Parameters:
                     <div class="product-block__image product-block__image--secondary {{ image_state_class }}"
                         data-media-id="{{ media.id }}"
                         data-image-index="{{ forloop.index }}">
-                      {%- render 'image' with media.preview_image, loading: hover_loading, size_cols_mobile: 2, size_cols_desktop: size_cols_desktop, custom_aspect_ratio: custom_aspect_ratio, custom_crop: custom_crop -%}
+                      {%- render 'image' with media.preview_image, widths: "400" ,loading: hover_loading, size_cols_mobile: 2, size_cols_desktop: size_cols_desktop, custom_aspect_ratio: custom_aspect_ratio, custom_crop: custom_crop -%}
                     </div>
                   {%- endfor -%}
                 {%- else -%}
