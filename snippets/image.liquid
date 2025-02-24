@@ -22,6 +22,12 @@
   %}
 {%- endcomment -%}
 
+{% liquid
+  if width == blank 
+    assign width = image.width
+  endif
+%}
+
 {%- liquid
   if size_cols_desktop != blank
     assign page_max_width = settings.max_page_width
