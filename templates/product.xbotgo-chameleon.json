@@ -480,7 +480,7 @@
         "image_erc6gX": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2-pc_1.5x.png",
+            "image": "shopify://shop_images/2-pc_1.5x.webp",
             "mobile_image": "shopify://shop_images/2-_-_1m.png",
             "slide_link": "",
             "subheading": "",
