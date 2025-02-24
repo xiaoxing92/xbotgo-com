@@ -272,6 +272,17 @@
             "text_alignment": "bottom left"
           }
         },
+        "media_ddpNYm": {
+          "type": "media",
+          "settings": {
+            "enlarge_media": false,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
         "media_EAyPyy": {
           "type": "media",
           "settings": {
@@ -311,6 +322,7 @@
       },
       "block_order": [
         "media_DJnbfB",
+        "media_ddpNYm",
         "media_EAyPyy",
         "media_bzfGPb",
         "media_wGVGzg"
@@ -650,7 +662,7 @@
             "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "video_description": "",
             "autoplay": false,
-            "placeholder_image": "shopify://shop_images/1114f02ee8d0834e37deaadd704dcab1.png"
+            "placeholder_image": "shopify://shop_images/1114f02ee8d0834e37deaadd704dcab1_3b99ccaa-7118-473e-9968-07203e9ea36b.webp"
           }
         },
         "text_KUtt6y": {
