@@ -21,3 +21,10 @@
     {% endif %}
   </div>
 {% endif %}
+
+{% if paginate.previous %}
+  <link rel="prev" href="{%- if paginate.previous.url contains 'page=1' -%}{{ paginate.previous.url | replace: '?page=1', '' | replace: '&page=1', '' }}{%- else -%}{{ paginate.previous.url }}{%- endif -%}">
+{% endif %}
+{% if paginate.next %}
+  <link rel="next" href="{%- if paginate.next.url contains 'page=1' -%}{{ paginate.next.url | replace: '?page=1', '' | replace: '&page=1', '' }}{%- else -%}{{ paginate.next.url }}{%- endif -%}">
+{% endif %}
