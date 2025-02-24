@@ -239,7 +239,7 @@
           "type": "image",
           "settings": {
             "width": "full",
-            "image": "shopify://shop_images/2_ecf53250-fd2a-431a-98dd-1a24f9c44f5b.png",
+            "image": "shopify://shop_images/2_ecf53250-fd2a-431a-98dd-1a24f9c44f5b.webp",
             "mobile_image": "shopify://shop_images/2-_-_1.png",
             "height": "adapt",
             "height_desktop": 600,
