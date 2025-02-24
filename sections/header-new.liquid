@@ -324,7 +324,7 @@
             <div class='dropdown'>
               {% for product in collection.products %}
                 <div class='child-item'>
-                  <img src='{{ product.featured_image | img_url: 'large' }}' alt='{{ collection.title}}'>
+                  <img src='{{ product.featured_image | img_url: 'large' }}' alt='{{ product.title }}'>
                   <p class='title'>{{ product.title }}</p>
                 </div>
               {% endfor %}
