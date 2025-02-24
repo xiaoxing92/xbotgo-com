@@ -324,9 +324,9 @@
             <div class='dropdown'>
               {% for product in collection.products %}
                 <div class='child-item'>
-  <img src='{{ product.featured_image | img_url: 'large' }}' alt='{% if product.featured_image.alt != blank %}{{ product.featured_image.alt }}{% else %}{{ product.title | escape }}{% endif %}'>
-  <p class='title'>{{ product.title }}</p>
-</div>
+                  <img alt="Xbot Go Products" src='{{ product.featured_image | img_url: 'large' }}' >
+                  <p class='title'>{{ product.title }}</p>
+                </div>
               {% endfor %}
             </div>
           {% else %}
