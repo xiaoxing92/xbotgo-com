@@ -15,7 +15,7 @@
         "image_nphU7G": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/PC-banner.png",
+            "image": "shopify://shop_images/PC-banner.webp",
             "mobile_image": "shopify://shop_images/m-banner.png",
             "slide_link": "",
             "subheading": "",
@@ -202,7 +202,6 @@
         "card_block_nYWq8y": {
           "type": "card_block",
           "settings": {
-            "cover": "shopify://shop_images/gimbal1.png",
             "title": "XbotGo Gimbal -- AI Camera System for sports video",
             "subtitle": "CES2025"
           }
