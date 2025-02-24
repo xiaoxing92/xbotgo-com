@@ -94,7 +94,9 @@ Parameters:
             <div class="image-label-wrap">
               <div>
                 {%- if show_hover_image -%}
-                 
+                  <div class="product-block__image product-block__image--primary{% if product.featured_media.id == product.media.first.id %}{% assign active_media_found = true %} product-block__image--active{% endif %}{% if product_images.last.id == product.featured_media.id %} product-block__image--show-on-hover{% endif %}" data-media-id="{{ product.media.first.id }}">
+                    {%- render 'image' with product.media.first.preview_image, widths: "400", loading: loading, size_cols_mobile: 2, size_cols_desktop: size_cols_desktop, custom_aspect_ratio: custom_aspect_ratio -%}
+                  </div>
                   {%- for media in product_images offset: 1 -%}
                     {%- liquid
                       assign image_state_class = ''
