@@ -324,7 +324,7 @@
             <div class='dropdown'>
               {% for product in collection.products %}
                 <div class='child-item'>
-                  <img alt="Xbot Go Products" src='{{ product.featured_image | img_url: 'large' }}' >
+                  <img src='{{ product.featured_image | img_url: 'large' }}' alt='{{ collections.title}}>
                   <p class='title'>{{ product.title }}</p>
                 </div>
               {% endfor %}
