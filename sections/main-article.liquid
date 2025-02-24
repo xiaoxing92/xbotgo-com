@@ -32,7 +32,7 @@
             </div>
           </div>
         {% else %}
-          {%- render 'image' with article.image, loading: 'eager' -%}
+          {%- render 'image' with article.image, width: 1000, loading: 'eager' -%}
           <div class="text-overlay text-overlay--inline">{% comment %}For padding{% endcomment %}</div>
         {% endif %}
       </div>
