@@ -311,6 +311,7 @@
         <a class="sticky-atc-anchor" id="product-info" rel="nofollow"></a>
       {%- endif -%}
       {% for block in section.blocks %}
+        <span>{{ block.type }}</span>
         {% case block.type %}
           {% when '@app' %}
             <div class='{% unless settings.qb_show_app_blocks %}not-in-quickbuy{% endunless %}'>
