@@ -9,7 +9,8 @@
     assign rating_ceiling = rating | ceil
   -%}
   <div class="cc-rating" role="img" data-rating-decimal="{{ rating_decimal }}" aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: rating_value, rating_max: rating_value.scale_max }}">
-    <span aria-hidden="true" class="cc-rating-stars">
+    <span>{{rating }}</span>
+   <span aria-hidden="true" class="cc-rating-stars">
       <span class="cc-rating-stars--inactive">
         {%- liquid
           for i in (1..5)

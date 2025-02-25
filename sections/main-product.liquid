@@ -321,8 +321,30 @@
             <div class="title-row" {{ block.shopify_attributes }}>
               <h1 class="product-title">{{ product.title | escape }}</h1>
             </div>
+          
+          {% when 'rating' %}
+            <span>{{ block.settings.star_rating }}</span>
+            <div class="theme-product-reviews">
+              {% render 'rating', rating_value:block.settings.star_rating %}
+              <span class="cc-rating-custom-caption">
+                {{- 'products.product.reviews_count' | t: count: block.settings.count_id -}}
+              </span>
+            </div>
+
 
           {% when 'price' %}
+            {% comment %} {%- if block.settings.enable_product_reviews_by_price and product.metafields.reviews.rating_count != blank -%}
+              {%- assign rating_count = product.metafields.reviews.rating_count | plus: 0 -%}
+              {%- if rating_count > 0 -%}
+                <div class="theme-product-reviews">
+                  {% render 'rating', rating_value: product.metafields.reviews.rating.value %}
+                  <span class="cc-rating-custom-caption">
+                    {{- 'products.product.reviews_count' | t: count: rating_count -}}
+                  </span>
+                </div>
+              {%- endif -%}
+            {%- endif -%}  {% endcomment %}
+
             <div class="price-container" {{ block.shopify_attributes }}>
               <div class="product-info__price product-price product-price--large">
                 {% render 'price', product: product, show_currency_code: settings.product_currency_code_enabled, for_variant_picker: true, current_variant: current_variant %}
@@ -371,18 +393,6 @@
                   </variant-content>
                 {% endif %}
               </div>
-
-              {%- if block.settings.enable_product_reviews_by_price and product.metafields.reviews.rating_count != blank -%}
-                {%- assign rating_count = product.metafields.reviews.rating_count | plus: 0 -%}
-                {%- if rating_count > 0 -%}
-                  <div class="theme-product-reviews">
-                    {% render 'rating', rating_value: product.metafields.reviews.rating.value %}
-                    <span class="cc-rating-custom-caption">
-                      {{- 'products.product.reviews_count' | t: count: rating_count -}}
-                    </span>
-                  </div>
-                {%- endif -%}
-              {%- endif -%}
             </div>
 
           {% when 'description' %}
@@ -1563,13 +1573,7 @@
           "label": "Show tax status and shipping policy link",
           "default": false
         },
-        {
-          "type": "checkbox",
-          "label": "Show product rating",
-          "id": "enable_product_reviews_by_price",
-          "info": "Add reviews by installing [an app](https://apps.shopify.com/search?q=reviews). App must support Shopify's standard rating metafield.",
-          "default": true
-        }
+
       ]
     },
     {
@@ -3007,6 +3011,27 @@
           "id": "show_in_quickbuy",
           "label": "Show in quick buy",
           "default": false
+        }
+      ]
+    },
+    {
+      "type": "rating",
+      "name": "Rating",
+      "settings": [
+        {
+          "type": "range",
+          "id": "star_rating",
+          "min": 0,
+          "max": 5,
+          "step": 1,
+          "label": "Rating",
+          "default": 5
+        },
+        {
+          "type": "text",
+          "id": "count_id",
+          "label": "Count",
+          "default": "110"
         }
       ]
     }
