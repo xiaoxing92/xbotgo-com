@@ -16,12 +16,18 @@
           "type": "title",
           "settings": {}
         },
+        "rating_kAtwmK": {
+          "type": "rating",
+          "settings": {
+            "star_rating": 5,
+            "count_id": "110"
+          }
+        },
         "price": {
           "type": "price",
           "repeater": "{{ product.metafields.shopify[\"color-pattern\"].value }}",
           "settings": {
-            "show_tax_and_shipping": false,
-            "enable_product_reviews_by_price": true
+            "show_tax_and_shipping": false
           }
         },
         "divider": {
@@ -192,6 +198,7 @@
       },
       "block_order": [
         "title",
+        "rating_kAtwmK",
         "price",
         "divider",
         "richtext_EVjC88",
