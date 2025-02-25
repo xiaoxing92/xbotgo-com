@@ -185,7 +185,7 @@ theme.mergeNodes = (newContent, targetContainer) => {
       for (let i = 0; i < newElAttributeNames.length; i += 1) {
         const attributeName = newElAttributeNames[i];
         targetEl.setAttribute(attributeName, newEl.getAttribute(attributeName));
-        console.log(targetEl,"======")
+        console.log(targetEl, "======")
       }
     });
     // merge: insert/remove/replace in list
@@ -1016,7 +1016,7 @@ const CartForm = class extends HTMLElement {
     } else if (change.decrease) {
       newQuantity -= quantityInput.step || 1;
       quantityInput.value = newQuantity;
-    } else if (change.currentValue) ;
+    } else if (change.currentValue);
 
     if (quantityInput.max && parseInt(quantityInput.value, 10) > parseInt(quantityInput.max, 10)) {
       newQuantity = quantityInput.max;
@@ -1295,8 +1295,8 @@ const FilterContainer = class extends HTMLElement {
   checkStickyScroll() {
     const utilityBarOffsetY = theme.getOffsetTopFromDoc(this.section.querySelector('.utility-bar'));
     if (window.innerWidth < 768
-        && this.previousScrollTop > window.scrollY
-        && window.scrollY > utilityBarOffsetY) {
+      && this.previousScrollTop > window.scrollY
+      && window.scrollY > utilityBarOffsetY) {
       document.body.classList.add('utility-bar-sticky-mobile-copy-reveal');
     } else {
       document.body.classList.remove('utility-bar-sticky-mobile-copy-reveal');
@@ -2132,7 +2132,7 @@ const MainNavigation = class extends HTMLElement {
       } else if (evt.type === 'click') {
         // if touch open was triggered very recently, prevent click event
         if (link.dataset.touchOpenTriggeredAt
-            && evt.timeStamp - parseInt(link.dataset.touchOpenTriggeredAt, 10) < 1000) {
+          && evt.timeStamp - parseInt(link.dataset.touchOpenTriggeredAt, 10) < 1000) {
           evt.preventDefault();
           evt.stopPropagation();
         }
@@ -2340,6 +2340,9 @@ const MediaGallery = class extends HTMLElement {
       this.querySelectorAll('.main-image .slider__item'),
       this.querySelectorAll('.product-media-collage__item'),
       this.querySelectorAll('.thumbnails .slider__item')
+    ];
+    this.lineLists = [
+      ...this.querySelectorAll('.slider-line-box .slider-line')
     ];
 
     if (this.variantPicker) {
@@ -2614,6 +2617,14 @@ const MediaGallery = class extends HTMLElement {
           mediaItem.classList.remove('is-active');
         }
       });
+    });
+
+    this.lineLists.forEach((listItem) => {
+      if (listItem.dataset.mediaId === strMediaId) {
+        listItem.classList.add('is-active');
+      } else {
+        listItem.classList.remove('is-active');
+      }
     });
 
     // play media
@@ -3258,7 +3269,6 @@ class CarouselSlider extends HTMLElement {
       this.setCarouselState(false);
       return;
     }
-
     window.initLazyScript(this, this.init.bind(this));
   }
 
@@ -3495,16 +3505,16 @@ class CarouselSlider extends HTMLElement {
    * @param {boolean} active - Set carousel as active.
    */
   setCarouselState(active) {
-    if (active) {
-      this.removeAttribute('inactive');
+    // if (active) {
+    //   this.removeAttribute('inactive');
 
-      // If slider width changed when activated, reinitialise it.
-      if (this.gridWidth !== this.grid.clientWidth) {
-        this.handleBreakpointChange();
-      }
-    } else {
-      this.setAttribute('inactive', '');
-    }
+    //   // If slider width changed when activated, reinitialise it.
+    //   if (this.gridWidth !== this.grid.clientWidth) {
+    //     this.handleBreakpointChange();
+    //   }
+    // } else {
+    //   this.setAttribute('inactive', '');
+    // }
   }
 
   /**

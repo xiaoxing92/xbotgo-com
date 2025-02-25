@@ -53,6 +53,7 @@ if (!customElements.get('variant-picker')) {
       this.dispatchEvent(new CustomEvent('on:variant:change', {
         bubbles: true,
         detail: {
+          index:evt.target.getAttribute('index'),
           form: this.productForm,
           variant: this.variant,
           allVariants: this.data.variants,
@@ -215,11 +216,10 @@ if (!customElements.get('variant-picker')) {
     static updateLabelText(evt) {
       const selector = evt.target.closest('.option-selector');
       if (selector.dataset.selectorType === 'dropdown') return;
-
       const colorText = selector.querySelector('.js-color-text');
       if (!colorText) return;
-
-      colorText.textContent = evt.target.nextElementSibling.querySelector('.js-value').textContent;
+      colorText.textContent = evt.target.defaultValue
+      // evt.target.nextElementSibling.querySelector('.js-value')?.textContent;
     }
 
     /**
@@ -349,7 +349,6 @@ if (!customElements.get('variant-picker')) {
      */
     getSelectedOptions() {
       const selectedOptions = [];
-
       this.optionSelectors.forEach((selector) => {
         if (selector.dataset.selectorType === 'dropdown') {
           const selected = selector.querySelector('.custom-select__option[aria-selected="true"]');
@@ -378,7 +377,6 @@ if (!customElements.get('variant-picker')) {
      */
     applySearchParams() {
       const searchParams = new URLSearchParams(window.location.search);
-
       Array.from(searchParams.keys()).forEach((key) => {
         const value = searchParams.get(key);
         const optionSelectors = Array.from(this.optionSelectors);

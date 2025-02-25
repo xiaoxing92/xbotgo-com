@@ -28,22 +28,36 @@ if (!customElements.get('sticky-atc')) {
     class StickyAtc extends customElements.get('product-form') {
       constructor() {
         super();
-
         this.section = this.closest('.section-main-product');
         this.mainProductForm = this.section.querySelector('.js-product');
         this.buyButtons = this.section.querySelector('buy-buttons');
+        this.priceRef = document.querySelector('.price__default');
         this.imageContainer = this.querySelector('.sticky-atc__image');
         this.variantContainer = this.querySelector('.sticky-atc__details__variant');
         this.variantTitle = this.querySelector('.sticky-atc__details__variant__title');
+        this.variantInfo = this.querySelector('.sticky-atc__details__variant__info');
         this.variantTitle?.toggleAttribute('hidden', !this.section.querySelector('variant-picker'));
-
+        this.currentPrice = document.querySelector(".current-price")
+        this.originalPrice = document.querySelector(".original-price")
         this.throttledOnScroll = throttle(StickyAtc.handleScroll.bind(this));
-        window.addEventListener('scroll', this.throttledOnScroll);
-
+        this.observer = new IntersectionObserver(this.handleIntersection.bind(this), {
+          threshold: 0,
+        });
+        this.observer.observe(this.priceRef);
         this.section.addEventListener('on:variant:change', this.onVariantChange.bind(this));
-        this.section.addEventListener('on:media-gallery:change', this.updateImage.bind(this));
+        //window.addEventListener('scroll', this.throttledOnScroll);
+        // this.section.addEventListener('on:media-gallery:change', this.updateImage.bind(this));
+        // this.updateImage();
+      }
 
-        this.updateImage();
+      handleIntersection(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            this.classList.add('sticky-atc--out')
+          } else {
+            this.classList.remove('sticky-atc--out')
+          }
+        });
       }
 
       disconnectedCallback() {
@@ -114,15 +128,32 @@ if (!customElements.get('sticky-atc')) {
         );
       }
 
+      formatCurrency(value){
+        const newValue = (value / 100).toFixed(2);
+        return newValue
+      }
       /**
        * Handle a change in variant on the page.
        * @param {Event} evt - Variant change event dispatched by variant-picker.
        */
       onVariantChange(evt) {
         const idInput = this.form?.querySelector('[name="id"]');
+        const parentElement = document.getElementById("variant-selector"); // 通过 ID 获取父元素
+        const allChildren = parentElement.querySelectorAll(".opt-label__left"); // 
+        const nodeIndex = Number(evt.detail.index)-1
+        const bundleChildren = allChildren[nodeIndex]?.getElementsByClassName('opt-label__bundle-info')
+        const Symbol = this.currentPrice.textContent.trim().charAt(0);
+        this.originalPrice.innerHTML = `${Symbol}${this.formatCurrency(evt.detail.variant.compare_at_price)}`
+        this.currentPrice.innerHTML = `${Symbol}${this.formatCurrency(evt.detail.variant.price)}`
+        if(bundleChildren?.length>0){
+          const bundleText = bundleChildren[0].innerHTML;
+          this.variantInfo.innerHTML = bundleText;
+        }else{
+          this.variantInfo.innerHTML = ''
+        }
 
         if (evt.detail.variant) {
-          this.variantTitle.textContent = evt.detail.variant.title;
+          this.variantTitle.textContent = evt.detail.variant.option1;
           this.variantContainer.hidden = false;
           if (idInput) idInput.value = evt.detail.variant.id;
         } else {
@@ -131,7 +162,7 @@ if (!customElements.get('sticky-atc')) {
           if (idInput) idInput.value = '';
         }
 
-        this.updateImage();
+        // this.updateImage();
         this.updateAddToCartButton(evt.detail.variant);
         this.setErrorMsgState();
       }

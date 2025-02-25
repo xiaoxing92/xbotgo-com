@@ -28,7 +28,6 @@ class CarouselSlider extends HTMLElement {
     this.grid = this.querySelector('.slider__grid');
     this.nav = this.querySelector('.slider-nav');
     this.rtl = document.dir === 'rtl';
-
     if (this.nav) {
       this.prevBtn = this.querySelector('button[name="prev"]');
       this.nextBtn = this.querySelector('button[name="next"]');
@@ -159,6 +158,7 @@ class CarouselSlider extends HTMLElement {
    * @param {object} evt - Event object.
    */
   handleMousedown(evt) {
+
     this.mousedown = true;
     this.startX = evt.pageX - this.sliderStart;
     this.scrollPos = this.slider.scrollLeft;
