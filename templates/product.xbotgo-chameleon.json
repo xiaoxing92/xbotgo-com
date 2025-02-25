@@ -149,6 +149,13 @@
             "size_chart_page": ""
           }
         },
+        "custom_liquid_RYWDaN": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "<div>\n12312\n</div>",
+            "show_in_quickbuy": false
+          }
+        },
         "buy_buttons_YLhzVe": {
           "type": "buy-buttons",
           "settings": {
@@ -157,42 +164,6 @@
             "show_backorder_text": false,
             "show_pickup_availability": true,
             "show_gift_card_recipient": false
-          }
-        },
-        "countdown_bFbtw8": {
-          "type": "countdown",
-          "disabled": true,
-          "settings": {
-            "heading": "Black Friday Deals End Soon",
-            "end_date": "2024-12-02",
-            "end_time": "23:59",
-            "end_text": "",
-            "hide_on_end": false,
-            "box_color": "#323232",
-            "text_color": "#ffffff",
-            "number_font": "base",
-            "divider_type": "colon",
-            "show_timer_labels": true,
-            "show_in_quickbuy": false
-          }
-        },
-        "complementary_xdJKmW": {
-          "type": "complementary",
-          "settings": {
-            "heading": "Pairs well with",
-            "enable_carousel": true,
-            "max_products": 2
-          }
-        },
-        "richtext_Q4zcbr": {
-          "type": "richtext",
-          "settings": {
-            "richtext": "<p>Download XbotGo Chameleon User Manua <a href=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/Chameleon_Manual.pdf?v=1725869756\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/Chameleon_Manual.pdf?v=1725869756\">Here</a></p>",
-            "icon": "",
-            "icon_size": "small",
-            "enable_box": false,
-            "box_color": "#dc6318",
-            "show_in_quickbuy": false
           }
         }
       },
@@ -211,10 +182,8 @@
         "text_HeHqLn",
         "36b4455f-d340-4f5a-89bc-26827832679f",
         "variant_picker_EaUEeC",
-        "buy_buttons_YLhzVe",
-        "countdown_bFbtw8",
-        "complementary_xdJKmW",
-        "richtext_Q4zcbr"
+        "custom_liquid_RYWDaN",
+        "buy_buttons_YLhzVe"
       ],
       "settings": {
         "show_breadcrumbs": false,
