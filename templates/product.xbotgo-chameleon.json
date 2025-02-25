@@ -210,7 +210,7 @@
         "richtext_Q4zcbr"
       ],
       "settings": {
-        "show_breadcrumbs": true,
+        "show_breadcrumbs": false,
         "select_first_variant": true,
         "show_location_underneath": true,
         "inventory_transfers_enable": false,
