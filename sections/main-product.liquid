@@ -311,7 +311,6 @@
         <a class="sticky-atc-anchor" id="product-info" rel="nofollow"></a>
       {%- endif -%}
       {% for block in section.blocks %}
-        <span>{{ block.type }}</span>
         {% case block.type %}
           {% when '@app' %}
             <div class='{% unless settings.qb_show_app_blocks %}not-in-quickbuy{% endunless %}'>
@@ -324,14 +323,18 @@
             </div>
           
           {% when 'rating' %}
-            <span>{{ block.settings.star_rating }}</span>
             <div class="theme-product-reviews">
-              {% render 'rating', rating_value:block.settings.star_rating %}
+              {%- if block.settings.star_rating > 0 -%}
+                <div class="testimonial__star-rating heading-font" style="display:flex"> 
+                  {%- for i in (1..block.settings.star_rating) -%}
+                  <span style="color:#FFCC00" class="testimonial__star">{% render 'icon-star' %}</span>
+                  {%- endfor -%}
+                </div>
+              {%- endif -%}
               <span class="cc-rating-custom-caption">
                 {{- 'products.product.reviews_count' | t: count: block.settings.count_id -}}
               </span>
             </div>
-
 
           {% when 'price' %}
             {% comment %} {%- if block.settings.enable_product_reviews_by_price and product.metafields.reviews.rating_count != blank -%}
