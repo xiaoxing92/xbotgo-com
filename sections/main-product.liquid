@@ -324,7 +324,24 @@
           
           {% when 'rating' %}
             <div class="theme-product-reviews">
-              {% render 'rating', rating_value:block.settings.star_rating %}
+              <div class="cc-rating" role="img">
+                 <span aria-hidden="true" class="cc-rating-stars">
+                   <span class="cc-rating-stars--inactive">
+                     {%- liquid
+                       for i in (1..5)
+                         render 'rating-star-icon'
+                       endfor
+                     -%}
+                   </span>
+                   <span class="cc-rating-stars--active">
+                     {%- liquid
+                       for i in (1..block.settings.star_rating)
+                         render 'rating-star-icon'
+                       endfor
+                     -%}
+                   </span>
+                 </span>
+               </div>
               <span class="cc-rating-custom-caption">
                 {{- 'products.product.reviews_count' | t: count: block.settings.count_id -}}
               </span>
