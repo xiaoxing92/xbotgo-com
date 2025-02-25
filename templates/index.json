@@ -272,17 +272,6 @@
             "text_alignment": "bottom left"
           }
         },
-        "media_ddpNYm": {
-          "type": "media",
-          "settings": {
-            "enlarge_media": false,
-            "subheading": "Gallery",
-            "title": "Tell your story",
-            "button_label": "",
-            "link": "",
-            "text_alignment": "bottom left"
-          }
-        },
         "media_EAyPyy": {
           "type": "media",
           "settings": {
@@ -322,7 +311,6 @@
       },
       "block_order": [
         "media_DJnbfB",
-        "media_ddpNYm",
         "media_EAyPyy",
         "media_bzfGPb",
         "media_wGVGzg"
