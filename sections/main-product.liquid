@@ -305,17 +305,10 @@
   </media-gallery>
 
   {% comment %} 商品右侧详情 {% endcomment %}
-  <div
-    class='detail product-column-right'
-    {%- render 'animation-attrs', attrs: 'data-cc-animate data-cc-animate-delay="0.2s"' -%}
-  >
-    <div
-      class='product-form{% if section.settings.enable_sticky_columns %} sticky-content-container{% endif %}'
-      data-ajax-add-to-cart='true'
-      data-product-id='{{ product.id }}'
-    >
+  <div class="detail product-column-right" {%- render 'animation-attrs', attrs: 'data-cc-animate data-cc-animate-delay="0.2s"' -%}>
+    <div class="product-form{% if section.settings.enable_sticky_columns %} sticky-content-container{% endif %}" data-ajax-add-to-cart="true" data-product-id="{{ product.id }}">
       {%- if section.settings.enable_sticky_atc -%}
-        <a class='sticky-atc-anchor' id='product-info' rel='nofollow'></a>
+        <a class="sticky-atc-anchor" id="product-info" rel="nofollow"></a>
       {%- endif -%}
       {% for block in section.blocks %}
         {% case block.type %}
@@ -325,44 +318,25 @@
             </div>
 
           {% when 'title' %}
-            <div class='title-row' {{ block.shopify_attributes }}>
-              <h1 class='product-title'>{{ product.title | escape }}</h1>
+            <div class="title-row" {{ block.shopify_attributes }}>
+              <h1 class="product-title">{{ product.title | escape }}</h1>
             </div>
 
           {% when 'price' %}
-            {%- if block.settings.enable_product_reviews_by_price
-              and product.metafields.reviews.rating_count != blank
-            -%}
-              {%- assign rating_count = product.metafields.reviews.rating_count | plus: 0 -%}
-              {%- if rating_count > 0 -%}
-                <div class='theme-product-reviews'>
-                  {% render 'rating', rating_value: product.metafields.reviews.rating.value %}
-                  <span class='cc-rating-custom-caption'>
-                    {{- 'products.product.reviews_count' | t: count: rating_count -}}
-                  </span>
-                </div>
-              {%- endif -%}
-            {%- endif -%}
-
-            <div class='price-container' {{ block.shopify_attributes }}>
-              <div class='product-info__price product-price product-price--large'>
-                {% render 'price',
-                  product: product,
-                  show_currency_code: settings.product_currency_code_enabled,
-                  for_variant_picker: true,
-                  current_variant: current_variant
-                %}
+            <div class="price-container" {{ block.shopify_attributes }}>
+              <div class="product-info__price product-price product-price--large">
+                {% render 'price', product: product, show_currency_code: settings.product_currency_code_enabled, for_variant_picker: true, current_variant: current_variant %}
               </div>
 
-              <div class='price-descriptors'>
+              <div class="price-descriptors">
                 {%- form 'product', product, class: 'js-instalments-form' -%}
-                  <input type='hidden' name='id' value='{% if current_variant %}{{ current_variant.id }}{% endif %}'>
+                  <input type="hidden" name="id" value="{% if current_variant %}{{ current_variant.id }}{% endif %}">
                   {{ form | payment_terms }}
                 {%- endform -%}
 
                 {%- if block.settings.show_tax_and_shipping -%}
                   {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
-                    <div class='product-policies'>
+                    <div class="product-policies">
                       {%- if cart.taxes_included -%}
                         {{ 'products.product.include_taxes' | t }}
                       {%- endif -%}
@@ -374,7 +348,7 @@
                 {%- endif -%}
 
                 {% if section.settings.inventory_transfers_enable %}
-                  <variant-content class='product-inventory-transfer'>
+                  <variant-content class="product-inventory-transfer">
                     {%- for variant in product.variants -%}
                       {%- if variant.incoming -%}
                         {%- liquid
@@ -389,13 +363,7 @@
                             assign incoming_html = 'products.transfers.waiting_for_stock' | t
                           endif
                         -%}
-                        <script type='text/template' data-variant='{{ variant.id }}'>
-                          {
-                            {
-                              incoming_html
-                            }
-                          }
-                        </script>
+                        <script type="text/template" data-variant="{{ variant.id }}">{{ incoming_html }}</script>
 
                         {%- if current_variant and variant.id == current_variant.id -%}{{ incoming_html }}{%- endif -%}
                       {%- endif -%}
@@ -403,6 +371,18 @@
                   </variant-content>
                 {% endif %}
               </div>
+
+              {%- if block.settings.enable_product_reviews_by_price and product.metafields.reviews.rating_count != blank -%}
+                {%- assign rating_count = product.metafields.reviews.rating_count | plus: 0 -%}
+                {%- if rating_count > 0 -%}
+                  <div class="theme-product-reviews">
+                    {% render 'rating', rating_value: product.metafields.reviews.rating.value %}
+                    <span class="cc-rating-custom-caption">
+                      {{- 'products.product.reviews_count' | t: count: rating_count -}}
+                    </span>
+                  </div>
+                {%- endif -%}
+              {%- endif -%}
             </div>
 
           {% when 'description' %}
@@ -509,14 +489,9 @@
             </div>
 
           {% when 'buy-buttons' %}
-            <buy-buttons class='buy-buttons-row block' {{ block.shopify_attributes }}>
-              {% form 'product',
-                product,
-                id: product_form_id,
-                class: 'form js-product-form',
-                data-product-id: product.id
-              %}
-                <input type='hidden' name='id' value='{{ current_variant.id }}' disabled>
+            <buy-buttons class="buy-buttons-row block" {{ block.shopify_attributes }}>
+              {% form 'product', product, id: product_form_id, class: 'form js-product-form', data-product-id: product.id %}
+                <input type="hidden" name="id" value="{{ current_variant.id }}" disabled>
 
                 {% if product.available %}
                   {%- liquid
@@ -585,11 +560,7 @@
                     </div>
                     {% if enable_dynamic_payment_button %}
                       <script class='dynamic-payment-button-template' type='text/template'>
-                        {
-                          {
-                            form | payment_button
-                          }
-                        }
+                        {{ form | payment_button }}
                       </script>
                     {% endif %}
 
@@ -3062,4 +3033,5 @@
       right: 10px;
     }
   }
+  
 </style>
