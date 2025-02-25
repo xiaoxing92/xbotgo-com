@@ -101,7 +101,7 @@
         "custom_liquid_YwxGWQ": {
           "type": "custom-liquid",
           "settings": {
-            "custom_liquid": "<div Class= \"Gimbal-Feature\">\n<h4>Key-Features：</h4>\n\n    🤖 Your Evolving Al Cameraman\n<br>\n\n    📡 Automatically Capture Over 20 Sports Scenes<br>\n    🏃‍♂️ 120° Ultra-Wide-Angle & 4K Recording<br>\n    📱 Free XbotGo App & No Monthly Fees\n<br>\n    ✨ Effortless Live Streaming & AI-Powered Highlight Editing\n  </p>\n</div>\n<style>\n.Gimbal-Feature{\n    margin-bottom: 0;\n    box-shadow: inset 0 0 0 1px #e2e2e2;\n    background: #F1F1F1;\n    box-sizing: border-box;\n    border-radius: 15px;\n    padding: 5px 5px 5px 20px;\n}\n</style>",
+            "custom_liquid": "<style>\n.tips-box{\nbackground: #F2F2F2;\nborder-radius: 1px 1px 1px 1px;\n}\n</style>\n<div class=\"\">\n<li>Auto Track & Record 20+Sports.</li>\n<li>Revolutionary 4k Video Quality</li>\n<li>Al-powered Editing & Streaming</li>\n<li>Portable & Easy to Set Up·Extended 8H Battery Life\n</li>\n</div>",
             "show_in_quickbuy": false
           }
         },
