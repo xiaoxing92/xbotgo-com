@@ -7326,6 +7326,7 @@ hotspots-image .image-overlay {
 }
 
 .theme-product-reviews {
+  display: flex;
   margin-top: 0.2em;
 }
 
