@@ -229,7 +229,7 @@
                   >
                     {%- liquid
                       assign custom_aspect_ratio = media.preview_image.aspect_ratio | at_least: min_aspect_ratio
-                      render 'image' with media.preview_image, sizes: '65px', widths: '65px, 130px', custom_aspect_ratio: custom_aspect_ratio, custom_crop: 'contain'
+                      render 'image' with media.preview_image, width: 200, sizes: '65px', widths: '65px, 130px', custom_aspect_ratio: custom_aspect_ratio, custom_crop: 'contain'
                     -%}
 
                     {%- if media.media_type == 'video' or media.media_type == 'external_video' -%}

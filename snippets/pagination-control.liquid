@@ -1,14 +1,14 @@
 {% if paginate.pages > 1 %}
   <div class="pagination">
     {% if paginate.previous %}
-      <a class="pagination__prev pagination__link text-current underline underline--on-hover" href="{{ paginate.previous.url }}">&laquo; {{ 'general.pagination.previous' | t }}</a>
+      <a class="pagination__prev pagination__link text-current underline underline--on-hover" href="{%- if paginate.previous.url contains 'page=1' -%}{{ paginate.previous.url | replace: '?page=1', '' | replace: '&page=1', '' }}{%- else -%}{{ paginate.previous.url }}{%- endif -%}">&laquo; {{ 'general.pagination.previous' | t }}</a>
       <span class="pagination__sep">&middot;</span>
     {% endif %}
 
     {% for part in paginate.parts %}
       <span class="pagination__number{% if paginate.current_page == part.title %} underline underline--not-link{% endif %}">
         {%- if part.is_link -%}
-          <a class="pagination__link text-current underline underline--on-hover" href="{{ part.url }}">{{ part.title }}</a>
+          <a class="pagination__link text-current underline underline--on-hover" href="{%- if part.url contains 'page=1' -%}{{ part.url | replace: '?page=1', '' | replace: '&page=1', '' }}{%- else -%}{{ part.url }}{%- endif -%}">{{ part.title }}</a>
         {%- else -%}
           {{- part.title -}}
         {%- endif -%}
@@ -17,7 +17,14 @@
 
     {% if paginate.next %}
       <span class="pagination__sep">&middot;</span>
-      <a class="pagination__next pagination__link text-current underline underline--on-hover" href="{{ paginate.next.url }}">{{ 'general.pagination.next' | t }} &raquo;</a>
+      <a class="pagination__next pagination__link text-current underline underline--on-hover" href="{%- if paginate.next.url contains 'page=1' -%}{{ paginate.next.url | replace: '?page=1', '' | replace: '&page=1', '' }}{%- else -%}{{ paginate.next.url }}{%- endif -%}">{{ 'general.pagination.next' | t }} &raquo;</a>
     {% endif %}
   </div>
+{% endif %}
+
+{% if paginate.previous %}
+  <link rel="prev" href="{%- if paginate.previous.url contains 'page=1' -%}{{ paginate.previous.url | replace: '?page=1', '' | replace: '&page=1', '' }}{%- else -%}{{ paginate.previous.url }}{%- endif -%}">
+{% endif %}
+{% if paginate.next %}
+  <link rel="next" href="{%- if paginate.next.url contains 'page=1' -%}{{ paginate.next.url | replace: '?page=1', '' | replace: '&page=1', '' }}{%- else -%}{{ paginate.next.url }}{%- endif -%}">
 {% endif %}

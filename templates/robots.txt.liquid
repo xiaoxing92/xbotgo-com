@@ -1,0 +1,26 @@
+# we use Shopify as our ecommerce platform
+{%- comment -%}
+# Caution! Please read https://help.shopify.com/en/manual/promoting-marketing/seo/editing-robots-txt before proceeding to make changes to this file.
+{% endcomment %}
+{% for group in robots.default_groups %}
+  {{- group.user_agent -}}
+
+  {% for rule in group.rules %}
+    {{- rule -}}
+  {% endfor %}
+{{ "Disallow: */login_with_shop/*
+Disallow: */discount/*
+Disallow: */account/*
+Disallow: */checkout*
+Disallow: */search/*
+Disallow: *search*
+Disallow: *?constraint=*
+Disallow: *?locale=*
+Disallow: */cart*
+Disallow: *?_ga=*
+Disallow: */search?q=*" }}
+
+  {%- if group.sitemap != blank -%}
+    {{ group.sitemap }}
+  {%- endif -%}
+{% endfor %}

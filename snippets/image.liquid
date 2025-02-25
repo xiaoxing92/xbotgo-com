@@ -11,6 +11,7 @@
   - custom_aspect_ratio {Number} - aspect ratio to force on image (optional)
   - custom_crop {String} - top/bottom/left/right/contain (optional, default is cover with focal point).
   - as_mobile_source {Boolean} - Will output <source> instead of <img> for use in <picture> (optional, default is false)
+  - width {Number} - Maximum width for the image (optional, default is blank).
 
   Usage:
   {% render 'image',
@@ -20,6 +21,12 @@
     class: 'img-fit'
   %}
 {%- endcomment -%}
+
+{% liquid
+  if width == blank 
+    assign width = image.width
+  endif
+%}
 
 {%- liquid
   if size_cols_desktop != blank
@@ -39,7 +46,7 @@
   assign sizes = sizes | default: '100vw'
 
   if widths == blank
-    assign widths = '340, 480, 740, 980, 1200, 1400, 1600, 1920, 2560, 3200, 4000, ' | append: image.width
+    assign widths = '340, 480, 740, 980, 1000, '
   endif
 
   if class == blank
@@ -102,7 +109,7 @@
     assign fetchpriority = null
   endif
 
-  assign image_src = image | image_url: width: image.width, crop: crop, crop_left: crop_left, crop_top: crop_top, crop_width: crop_width, crop_height: crop_height
+  assign image_src = image | image_url: width: width, crop: crop, crop_left: crop_left, crop_top: crop_top, crop_width: crop_width, crop_height: crop_height
   assign srcset = null
   if settings.image_quality != '1'
     assign srcset = ''
@@ -111,7 +118,7 @@
       assign w_num = w | times: 1
       if w_num <= image.width
         assign w_scaled_num = w_num | times: settings.image_quality
-        assign img_url = image | image_url: width: w_scaled_num, crop: crop, crop_left: crop_left, crop_top: crop_top, crop_width: crop_width, crop_height: crop_height
+        assign img_url = image | image_url: width: width, crop: crop, crop_left: crop_left, crop_top: crop_top, crop_width: crop_width, crop_height: crop_height
         assign srcset = srcset | append: img_url | append: ' ' | append: w_num | append: 'w, '
       endif
     endfor

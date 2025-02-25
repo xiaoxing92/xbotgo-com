@@ -18,6 +18,7 @@
         },
         "price": {
           "type": "price",
+          "repeater": "{{ product.metafields.shopify[\"color-pattern\"].value }}",
           "settings": {
             "show_tax_and_shipping": false,
             "enable_product_reviews_by_price": true
@@ -209,7 +210,7 @@
         "richtext_Q4zcbr"
       ],
       "settings": {
-        "show_breadcrumbs": true,
+        "show_breadcrumbs": false,
         "select_first_variant": true,
         "show_location_underneath": true,
         "inventory_transfers_enable": false,
@@ -479,7 +480,7 @@
         "image_erc6gX": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2-pc_1.5x.png",
+            "image": "shopify://shop_images/2-pc_1.5x_a44c1042-c435-46ae-97fa-bc49774ce57c.webp",
             "mobile_image": "shopify://shop_images/2-_-_1m.png",
             "slide_link": "",
             "subheading": "",
@@ -752,6 +753,7 @@
         },
         "growave_loyalty_wishlist_block_product_review_widget_9an7YA": {
           "type": "shopify://apps/growave-loyalty-wishlist/blocks/block.product.reviewWidget/b3d2efbe-110a-4e27-84a8-1f2ed63996a4",
+          "disabled": true,
           "settings": {}
         }
       },

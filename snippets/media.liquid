@@ -12,7 +12,7 @@
             assign custom_aspect_ratio = false
           endif
 
-          render 'image' with media.preview_image, size_cols_desktop: 2, custom_aspect_ratio: custom_aspect_ratio, custom_crop: 'contain', loading: loading
+          render 'image' with media.preview_image, width: 600, size_cols_desktop: 2, custom_aspect_ratio: custom_aspect_ratio, custom_crop: 'contain', loading: loading
         -%}
         {%- if section.settings.show_alt_text and media.alt != blank and media.alt != product.title and media.alt != 'all-groups' -%}
           <span class="product-media__label">

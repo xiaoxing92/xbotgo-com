@@ -81,12 +81,12 @@
                 if forloop.index < 4
                   assign loading = 'eager'
                 endif
-                render 'image' with article.image, sizes: '(min-width: 1024px) 440px, (min-width: 768px) 50vw, 100vw', custom_aspect_ratio: section.settings.crop_ratio, loading: loading
+                render 'image' with article.image,width: 400, sizes: '(min-width: 1024px) 440px, (min-width: 768px) 50vw, 100vw', custom_aspect_ratio: section.settings.crop_ratio, loading: loading
               else
                 if forloop.first
                   assign loading = 'eager'
                 endif
-                render 'image' with article.image, sizes: '(min-width: 768px) 740px, 100vw', custom_aspect_ratio: section.settings.crop_ratio, loading: loading
+                render 'image' with article.image, width: 400, sizes: '(min-width: 768px) 740px, 100vw', custom_aspect_ratio: section.settings.crop_ratio, loading: loading
               endif
             -%}
           </a>

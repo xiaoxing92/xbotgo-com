@@ -16,8 +16,6 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/PC-KV.png",
-            "mobile_image": "shopify://shop_images/M-KV_90f25af6-94c6-4f7a-a688-a374fae48c06.png",
             "slide_link": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
             "subheading": "",
             "title": "Limited Time Deal",
@@ -81,16 +79,16 @@
         "image_Hrfmfc": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/PC-KV.png",
-            "mobile_image": "shopify://shop_images/M-KV_90f25af6-94c6-4f7a-a688-a374fae48c06.png",
+            "image": "shopify://shop_images/American_football_live.png",
+            "mobile_image": "shopify://shop_images/American_football_record.png",
             "slide_link": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
-            "subheading": "Feb 5-11",
-            "title": "Limited Time Deal",
+            "subheading": "XbotGo Chameleon",
+            "title": "Auto Track & Record Sports",
             "heading_max_width": 15,
-            "title_size": 50,
-            "title_size_mobile": 22,
+            "title_size": 46,
+            "title_size_mobile": 20,
             "use_h1": false,
-            "text": "<p>Extra $20 Off for XbotGo Chameleon</p>",
+            "text": "<p>Your Best AI Cameraman</p>",
             "enlarge_text": true,
             "button_label_1": "Buy Now",
             "button_url_1": "shopify://products/xbotgo-chameleon-ai-powered-4k-sports-camera-system-phone-mount",
@@ -123,6 +121,7 @@
         },
         "image_neNB7X": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/xbotgo-ble-banner.jpg",
             "mobile_image": "shopify://shop_images/MB-bg3_776a232c-0d06-4fcd-b046-297238a2f970.jpg",
@@ -154,7 +153,7 @@
       "custom_css": [
         ".text-overlay {position: relative; top: 5%; left: 5%; font-size: 23px;}",
         ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 14px; border: 1px solid; border-radius: 20px; top: 65%; left: 10%; position: rerelative;}",
-        "@media (max-width: 767px) {.text-overlay {top: -30%; left: 0; font-size: 15px; align-items: center; position: fixed; } .btn {width: 130px; text-align: center; font-size: 14px; position: relative; left: 0; } .text-overlay__text {display: flex; flex-direction: column; align-items: center; }}"
+        "@media (max-width: 767px) {.text-overlay {top: -30%; left: 0; font-size: 13px; align-items: center; position: fixed; } .btn {width: 130px; text-align: center; font-size: 14px; position: relative; left: 0; } .text-overlay__text {display: flex; flex-direction: column; align-items: center; }}"
       ],
       "settings": {
         "show_sticky_banner": false,
@@ -193,7 +192,7 @@
           "type": "image",
           "settings": {
             "width": "half",
-            "image": "shopify://shop_images/icon.png",
+            "image": "shopify://shop_images/basketball_modes.png",
             "height": "adapt",
             "height_desktop": 600,
             "height_mobile": 500,
@@ -484,7 +483,6 @@
           "type": "image",
           "settings": {
             "width": "half",
-            "image": "shopify://shop_images/icon_5ecb15d5-e64a-401f-b431-89295baa93dc.png",
             "height": "adapt",
             "height_desktop": 600,
             "height_mobile": 500,
@@ -564,7 +562,7 @@
         "title": "No Monthly Fees App Feature",
         "use_h1": false,
         "heading_max_width": 17,
-        "text": "<p>With the XbotGo App, each user gets 20GB of free storage and a subscription-free experience.Easily upload videos to XbotGo Cloud, powered by AWs, andone click share memories effortlessly.</p>",
+        "text": "<p>With the XbotGo App, each user gets 20GB of free storage and a subscription-free experience.Easily upload videos to XbotGo Cloud, powered by AWS, andone click share memories effortlessly.</p>",
         "button_1_label": "",
         "button_1_link": "",
         "button_1_style": "secondary",
@@ -652,7 +650,7 @@
             "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "video_description": "",
             "autoplay": false,
-            "placeholder_image": "shopify://shop_images/1114f02ee8d0834e37deaadd704dcab1.png"
+            "placeholder_image": "shopify://shop_images/1114f02ee8d0834e37deaadd704dcab1_3b99ccaa-7118-473e-9968-07203e9ea36b.webp"
           }
         },
         "text_KUtt6y": {
@@ -978,7 +976,6 @@
             "star_rating": 5,
             "testimonial": "I live-streamed my soccer game. It was easy to operate and the video quality was clear. Interacting with netizens while soccer was an amazing experience!@",
             "author": "Mason B",
-            "image": "shopify://shop_images/O1CN012aNJEt1bmG0R53bYC__0-rate_jpg_960x960_jpg.jpg",
             "image_caption": "",
             "link": ""
           }
@@ -989,7 +986,6 @@
             "star_rating": 5,
             "testimonial": "\"Chameleon's features are really powerful. They meet all my sports recording needs. With it, my sports life is more exciting! Excellent job.\"",
             "author": "Henry L.",
-            "image": "shopify://shop_images/WeCom20250114-220111_2x_32cd5c94-f58b-4527-b2c5-79be5cb1a9ef.png",
             "image_caption": "",
             "link": ""
           }
@@ -1023,6 +1019,7 @@
         "testimonial_Acqf8c",
         "testimonial_K4xmJa"
       ],
+      "disabled": true,
       "custom_css": [
         ".theme-img {border-radius: 25px;}",
         "@media (max-width: 767px) {.testimonial__blockquote {font-size: 11px; vertical-align: left; }}"
