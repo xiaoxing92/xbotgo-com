@@ -11058,3 +11058,15 @@ textarea {
     flex-direction: row-reverse;
   }
 }
+
+shopify-accelerated-checkout {
+  --shopify-accelerated-checkout-button-block-size: 44px;
+  --shopify-accelerated-checkout-button-block-background-color: #dedede;
+  --shopify-accelerated-checkout-button-border-radius: 32px;
+  --shopify-accelerated-checkout-button-box-shadow: none;
+  --shopify-accelerated-checkout-skeleton-background-color: #dedede;
+  --shopify-accelerated-checkout-skeleton-animation-opacity-start: 1;
+  --shopify-accelerated-checkout-skeleton-animation-opacity-end: 0.5;
+  --shopify-accelerated-checkout-skeleton-animation-duration: 4s;
+  --shopify-accelerated-checkout-skeleton-animation-timing-function: ease;
+}
