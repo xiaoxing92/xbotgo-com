@@ -387,8 +387,20 @@
         }
         .opt-btn:checked + .opt-label {
           border-color: {{ font_col_base }};
-          border: 2px solid #EBBB9A;
           cursor: default;
+          position: relative;
+        }
+
+        .opt-btn:checked + .opt-label::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          padding: 2px; 
+          border-radius: inherit; 
+          background:linear-gradient(to right, #BE3F2A, #E07D30);
+          -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+          -webkit-mask-composite: destination-out;
+          mask-composite: exclude;
         }
 
         .opt-btn.is-unavailable + .opt-label {
@@ -493,8 +505,8 @@
         @media (hover: hover) {
           .opt-label:hover {
             color: {{ font_col_base }};
-            border-color: {{ font_col_base | color_mix: bg_col, 55 }};
-            border: 2px solid #EBBB9A;
+            {% comment %} border-color: {{ font_col_base | color_mix: bg_col, 55 }};
+            border: 2px solid #EBBB9A; {% endcomment %}
             border-radius: 8px;
             cursor: pointer;
           }

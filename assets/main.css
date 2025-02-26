@@ -6983,7 +6983,6 @@ hotspots-image .image-overlay {
 .opt-btn:checked + .opt-label {
   border-color: {{ font_col_base }};
   cursor: default;
-  border: 2px solid #EBBB9A;
   border-radius: 8px;
   transform: scale(1);
   transition: opacity .2s ease,transform .2s ease;
@@ -7033,8 +7032,8 @@ hotspots-image .image-overlay {
 }
 @media (hover: hover) {
   .opt-label:hover {
-    border: 1px var(--input-border-color-hover) solid;
-    background-color: var(--input-background-color);
+    /* border: 1px var(--input-border-color-hover) solid;
+    background-color: var(--input-background-color); */
     color: rgb(var(--input-text-color));
     cursor: pointer;
   }
