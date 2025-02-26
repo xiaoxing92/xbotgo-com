@@ -7024,7 +7024,7 @@ hotspots-image .image-overlay {
 }
 @media (hover: none) {
   .opt-label:active {
-    border: 1px var(--input-border-color-hover) solid;
+    /* border: 1px var(--input-border-color-hover) solid; */
     background-color: var(--input-background-color);
     color: rgb(var(--input-text-color));
     cursor: pointer;

@@ -497,7 +497,7 @@
         @media (hover: none) {
           .opt-label:active {
             color: {{ font_col_base }};
-            border-color: {{ font_col_base | color_mix: bg_col, 55 }};
+            {% comment %} border-color: {{ font_col_base | color_mix: bg_col, 55 }}; {% endcomment %}
             border-radius: {{ button_border_radius }}px;
             cursor: pointer;
           }
