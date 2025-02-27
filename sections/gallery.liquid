@@ -40,6 +40,7 @@
     @media (min-width: 1100px) {
       #section-id-{{ section.id }} .text-overlay__title {
         font-size: {{ section.settings.title_size }}px;
+        text-align: center;
         {%- if section.settings.title_size >= 90 -%}
         line-height: 1em;
         {%- endif %}
