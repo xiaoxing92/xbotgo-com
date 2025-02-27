@@ -126,7 +126,7 @@
     "image_with_text_overlay_b4Nm89": {
       "type": "image-with-text-overlay",
       "settings": {
-        "image": "shopify://shop_images/1_4a776d64-95eb-46c8-b2de-7331800b4778.png",
+        "image": "shopify://shop_images/T1_tripod.png",
         "height": "adapt",
         "height_desktop": 600,
         "height_mobile": 460,
@@ -140,7 +140,8 @@
     "image_with_text_overlay_UEqWUa": {
       "type": "image-with-text-overlay",
       "settings": {
-        "image": "shopify://shop_images/2_bb250877-38a7-40d7-98b0-37e6e3013c81.png",
+        "image": "shopify://shop_images/lightweight_tripod.png",
+        "mobile_image": "shopify://shop_images/lightweight_tripod.png",
         "height": "adapt",
         "height_desktop": 600,
         "height_mobile": 460,
@@ -154,7 +155,7 @@
     "image_with_text_overlay_HWRLBm": {
       "type": "image-with-text-overlay",
       "settings": {
-        "image": "shopify://shop_images/3_8577e2b6-9784-41e6-8226-628029f69f90.png",
+        "image": "shopify://shop_images/Indoor_sports_recording.png",
         "height": "adapt",
         "height_desktop": 600,
         "height_mobile": 460,
@@ -494,8 +495,8 @@
   },
   "order": [
     "main",
-    "image_with_text_overlay_b4Nm89",
     "image_with_text_overlay_UEqWUa",
+    "image_with_text_overlay_b4Nm89",
     "image_with_text_overlay_HWRLBm",
     "1648166196c57e88b5",
     "image_with_text_hQhikw",
