@@ -550,7 +550,7 @@
         "@media (min-width: 1100px) {.text-overlay--for-banner .text-overlay__inner {padding: 70px 0; }}"
       ],
       "settings": {
-        "image": "shopify://shop_images/App_free.png",
+        "image": "shopify://shop_images/922-387.png",
         "mobile_image": "shopify://shop_images/4-_M.png",
         "hotspot_color": "#63a560",
         "button_content": "number",
