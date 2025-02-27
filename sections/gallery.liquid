@@ -31,19 +31,19 @@
       #section-id-{{ section.id }} .text-overlay__title {
         {%- assign title_size_medium = section.settings.title_size | times: 0.7 | at_least: section.settings.title_size_mobile -%}
         font-size: {{ title_size_medium }}px;
+        text-align: center;
         {%- if title_size_medium >= 90 -%}
         line-height: 1em;
         {%- endif %}
-        text-align: center;
       }
     }
     @media (min-width: 1100px) {
       #section-id-{{ section.id }} .text-overlay__title {
         font-size: {{ section.settings.title_size }}px;
+        text-align: center;
         {%- if section.settings.title_size >= 90 -%}
         line-height: 1em;
         {%- endif %}
-        text-align: center;
       }
     }
   {% endstyle %}
@@ -249,8 +249,8 @@
     {
       "type": "range",
       "id": "title_size",
-      "min": 17,
-      "max": 150,
+      "min": 10,
+      "max": 100,
       "step": 1,
       "unit": "px",
       "label": "Desktop heading text size",
@@ -259,8 +259,8 @@
     {
       "type": "range",
       "id": "title_size_mobile",
-      "min": 17,
-      "max": 150,
+      "min": 10,
+      "max": 100,
       "step": 2,
       "unit": "px",
       "label": "Mobile heading text size",
