@@ -1,5 +1,5 @@
-<div class="{% if section.settings.color_scheme != 'default' %}use-color-scheme use-color-scheme--{{ section.settings.color_scheme }} fully-padded-row--{{ section.settings.height }}{% else %}fully-spaced-row--{{ section.settings.height }}{% endif %}" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
-  <div class="container{% unless section.settings.full_width %} container--reading-width{% endunless %}">
+<div class="container {% if section.settings.color_scheme != 'default' %}use-color-scheme use-color-scheme--{{ section.settings.color_scheme }} fully-padded-row--{{ section.settings.height }}{% else %}fully-spaced-row--{{ section.settings.height }}{% endif %}" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+  <div class="{% unless section.settings.full_width %} container--reading-width{% endunless %}">
     <div class="align-ltr-{{ section.settings.text_alignment }} spaced-column">
       {% assign skip_block_count = 0 %}
       {% for block in section.blocks %}

@@ -415,13 +415,13 @@ table {
 .strongly-spaced-row,
 .fully-spaced-row--medium {
   margin-top: var(--larger-section-padding);
-  margin-bottom: var(--larger-section-padding);
+  /* margin-bottom: var(--larger-section-padding); */
 }
 @media (max-width: 767.98px) {
   .strongly-spaced-row,
 .fully-spaced-row--medium {
     margin-top: var(--larger-section-padding-mobile);
-    margin-bottom: var(--larger-section-padding-mobile);
+    /* margin-bottom: var(--larger-section-padding-mobile); */
   }
 }
 
@@ -1627,7 +1627,7 @@ h6,
   font-weight: 500;
   letter-spacing: 0.1em;
   line-height: 1.3em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .subheading--over {
