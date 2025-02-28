@@ -1,12 +1,13 @@
 <div id='section-id-{{ section.id }}'>
   <div class='container-log-row'>
-    <h2
-      class='h4 align-center'
-      {%- render 'animation-attrs', attrs: 'data-cc-animate data-cc-animate-delay="0.15s"' -%}
-    >
-      {{ section.settings.title | escape }}
-    </h2>
-
+    <div class='align-ltr-center spaced-column'>
+      <h1
+        class='h1 in-content'
+        {%- render 'animation-attrs', attrs: 'data-cc-animate data-cc-animate-delay="0.15s"' -%}
+      >
+        {{ section.settings.title | escape }}
+      </h1>
+    </div>
     <div class='logo-container'>
       {%- for block in section.blocks -%}
         {%- if block.settings.image != blank -%}
@@ -29,25 +30,23 @@
   .logo-row {
     max-width: 80px;
   }
-  .container-log-row{
+  .container-log-row {
     max-width: var(--page-container-width);
     margin-right: auto;
     margin-left: auto;
     padding-right: var(--container-pad-x);
     padding-left: var(--container-pad-x);
-    margin-top:var(--container-pad-x);
-    margin-bottom:var(--container-pad-x);
+    margin-top: var(--container-pad-x);
+    margin-bottom: var(--container-pad-x);
   }
   @media (max-width: 767.98px) {
     .logo-row {
       max-width: 50px;
     }
-    .align-center{
+    .align-center {
       text-align: left;
     }
   }
-
-
 </style>
 {% schema %}
 {
@@ -73,7 +72,7 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
-        },
+        }
       ]
     }
   ],

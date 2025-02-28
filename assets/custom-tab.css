@@ -1,18 +1,16 @@
 
-@media (max-width: 5900px) {
+
     /* 定义容器样式 */
     .main-tab-container {
         display: block;
-        justify-content: space-between;
-        /* 或者 space-between 如果它们之间有空间 */
+        justify-content: space-between;    
         align-items: center;
-        /* 其他容器样式，如宽度、背景等 */
     }
     
     .tab-title {
         text-align: center;
         color: #202223;
-        font-size: 28px;
+        font-size: 38px;
         width: 100%;
         font-weight: bold;
         margin-top: 40px;
@@ -22,48 +20,53 @@
     .tab-container {
         display: flex;
         justify-content: center;
-        /* 水平居中 */
-        padding: 40px;
+        padding: 25px 0;
         flex-wrap: wrap;
-        /* 其他容器样式，如宽度、背景等 */
+
     }
     
     .tab {
-        display: inline-block;
-        /* 内边距可以根据需要调整 */
-        padding: 10px 60px;
+        display:flex;
+        align-items: center;
+        padding: 0 35px;
+        height:36px;
         /* 圆角 */
-        border-radius: 30px;
+        border-radius: 18px;
         /* 背景颜色 */
         background-color: #f2f2f2;
         /* 文字颜色 */
         color: #333;
         /* 字体大小 */
-        font-size: 14px;
+        font-size: 17px;
         /* 右侧外边距 */
-        margin-right: 10px;
+        margin-right: 8px;
         /* 文字居中对齐 */
         text-align: center;
-        /* 其他样式，如字体、边框等 */
-        margin: 0 10px 10px 0;
         cursor: pointer;
     }
 
     .tab.active {
-        background-color: #17202A;
+        background-color: #010101;
         color: white;
         width: auto;
         padding: auto;
+        font-weight: 600;
     }
 
     .tab-content-container {
         display: none;
         margin: 0 auto;
+        height:344px;
+        background: #F5F5F7;
+        border-radius: 15px;
+        overflow: hidden;
     }
 
     .tab-content-container.active {
         display: flex;
-        margin: 0 auto;
+        max-width: var(--page-container-width);
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .image-container {
@@ -85,6 +88,7 @@
 
     .text-c {
         padding: 80px;
+        color: #010101;
     }
 
     .text-c span {
@@ -95,27 +99,25 @@
     .text-c p {
         font-size: 14px;
     }
-}
+
 
 @media (max-width: 768px) {
     /* 定义容器样式 */
     .main-tab-container {
         display: block;
         justify-content: space-between;
-        /* 或者 space-between 如果它们之间有空间 */
         align-items: center;
         width: 100%;
-        /* 其他容器样式，如宽度、背景等 */
     }
     
-    .tab-title {
+    /* .tab-title {
         text-align: center;
         color: #202223;
         font-size: 20px;
         width: 100%;
         font-weight: bold;
         margin-top: 20px;
-    }
+    } */
 
     /* 定义容器样式 */
     .tab-container {
