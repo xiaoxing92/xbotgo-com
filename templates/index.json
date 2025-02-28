@@ -1061,6 +1061,7 @@
           "type": "icon",
           "settings": {
             "icon": "box",
+            "image": "shopify://shop_images/2x_7742ec7d-9fde-42fe-8004-3f95cd765273.png",
             "text": "30-Day Hassle-Free Return",
             "link_url": ""
           }
@@ -1069,6 +1070,7 @@
           "type": "icon",
           "settings": {
             "icon": "chat_bubble",
+            "image": "shopify://shop_images/2x_76d79a62-4c80-44ca-b58b-428c5d57bada.png",
             "text": "Global Customer Support",
             "link_url": ""
           }
@@ -1077,6 +1079,7 @@
           "type": "icon",
           "settings": {
             "icon": "credit_card",
+            "image": "shopify://shop_images/2x.png",
             "text": "Secure Payments",
             "link_url": ""
           }
