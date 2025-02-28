@@ -1,0 +1,865 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_EVPEC8": {
+      "type": "slideshow",
+      "blocks": {
+        "image_nphU7G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PC-banner.png",
+            "mobile_image": "shopify://shop_images/m-banner.png",
+            "slide_link": "",
+            "subheading": "",
+            "title": "About Us",
+            "heading_max_width": 10,
+            "title_size": 42,
+            "title_size_mobile": 32,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "https://apps.apple.com/us/app/blink-focos/id1581355712",
+            "button_label_2": "",
+            "button_url_2": "https://play.google.com/store/apps/details?id=com.blink.blinkfocos",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_nphU7G"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 12px; border: 1px solid; border-radius: 20px;}",
+        "@media (max-width: 767px) {.btn {width: 130px; text-align: center; font-size: 14px; position: relative; left: 0; }}"
+      ],
+      "settings": {
+        "show_sticky_banner": false,
+        "sticky_text": "Sticky Banner Text",
+        "link_url": "shopify://collections/all",
+        "height": "fixed",
+        "height_desktop": 500,
+        "height_mobile": 360,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "transition": "fade",
+        "navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "accessibility_info": ""
+      }
+    },
+    "rich_text_zAMW7P": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kBFx8e": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Mission",
+            "use_h1": false
+          }
+        },
+        "text_VCRMHN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Founded by Dr. David Tan, a dedicated father and a visionary with deep expertise in computer vision and smart gadgets, Blink Tech is dedicated to enhancing sports experiences for everyone from professional coaches, sports enthusiasts, to parents，empowering every game with advanced AI and capturing the passion of sports for all.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_kBFx8e",
+        "text_VCRMHN"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "count_up_section_ETRWHY": {
+      "type": "count-up-section",
+      "disabled": true,
+      "custom_css": [
+        ".count-number {color: #000; -webkit-text-fill-color: #000;}"
+      ],
+      "settings": {
+        "country_text": "Countries Reached",
+        "member_text": "Preferred Choice of Enthusiastic Members",
+        "game_text": "Over 1,000,000 Minutes Sports Game Recording",
+        "desktop_background": "shopify://shop_images/numberic_1.5x.png",
+        "count_item_background": "rgba(0,0,0,0)"
+      }
+    },
+    "rich_text_ByJxzn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7bTgVr": {
+          "type": "heading",
+          "settings": {
+            "title": "Our Values",
+            "use_h1": false
+          }
+        },
+        "text_7xd4y7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>XbotGo is an AI-powered sports cameraman that turns your smartphone into a professional-grade camera. It automatically tracks the action, smoothly zooms, and pans, all while using advanced computer vision to follow the ball and players. This game-changing technology makes high-quality sports recording accessible to parents, youth leagues, coaches, and amateur enthusiasts—eliminating the need for expensive equipment or skilled operators and offering a simple, affordable solution for capturing every moment of the game.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_7bTgVr",
+        "text_7xd4y7"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "photo_wall_BK4ceW": {
+      "type": "photo-wall",
+      "blocks": {
+        "photo_card_XFdqF6": {
+          "type": "photo_card",
+          "settings": {
+            "url": "",
+            "img": "shopify://shop_images/1_576cdc99-7d22-4d8a-b421-fcdccfb3a823.png"
+          }
+        },
+        "photo_card_D4MgPe": {
+          "type": "photo_card",
+          "settings": {
+            "url": "",
+            "img": "shopify://shop_images/2_b330ba1a-7532-4e61-b5bc-96d15fe515be.png"
+          }
+        },
+        "photo_card_byhV8z": {
+          "type": "photo_card",
+          "settings": {
+            "url": "",
+            "img": "shopify://shop_images/3_4a7c0244-301a-4e5c-8a22-b19a32e00b8b.png"
+          }
+        },
+        "photo_card_h44qTJ": {
+          "type": "photo_card",
+          "settings": {
+            "url": "",
+            "img": "shopify://shop_images/4_4da5e2d6-e765-420c-ae52-dfad75d88a46.png"
+          }
+        }
+      },
+      "block_order": [
+        "photo_card_XFdqF6",
+        "photo_card_D4MgPe",
+        "photo_card_byhV8z",
+        "photo_card_h44qTJ"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Photo Wall"
+      }
+    },
+    "custom_liquid_xQXdPe": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "show_space": true,
+        "code": "<div class=\"xbotgo-section\">\n    <div class=\"image-container\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/5_d27b99d0-73c2-4341-83ab-8d0416a2b778.png?v=1736405779\" alt=\"Group of kids with XbotGo\" />\n    </div>\n    <div class=\"content-container\">\n      <h2>Why XbotGo is different</h2>\n      <p>\n        XbotGo transforms any smartphone into an expert sports cameraman, autonomously tracking players, the ball, and every field movement. \n        Using advanced computer vision, it intelligently zooms and pans, delivering professional-quality sports footage for parents, coaches, \n        and athletes—effortlessly capturing every highlight.\n      </p>\n    </div>\n  </div>\n  \n<style>\n.xbotgo-section {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  background-color: #f9f9f9;\n  border-radius: 10px;\n}\n\n.image-container {\n  flex: 1;\n  max-width: 50%;\n}\n\n.image-container img {\n  width: 100%;\n  height: auto;\n  border-radius: 10px;\n}\n\n.content-container {\n  flex: 1;\n  max-width: 50%;\n  padding: 20px;\n}\n\n.content-container h2 {\n  font-size: 24px;\n  color: #333;\n  margin-bottom: 15px;\n}\n\n.content-container p {\n  font-size: 16px;\n  color: #666;\n}\n@media (max-width: 768px) {\n  .xbotgo-section {\n    flex-direction: column;\n  }\n\n  .image-container, .content-container {\n    max-width: 100%;\n  }\n}\n</style>"
+      }
+    },
+    "carousel_card_LPA3jw": {
+      "type": "carousel-card",
+      "blocks": {
+        "card_block_rEnc84": {
+          "type": "card_block",
+          "settings": {
+            "cover": "shopify://shop_images/6_5c054573-a5ed-48e5-80f9-4a7ebf03e819.png",
+            "title": "olympic-Level skateboarding Training with xbotGo",
+            "subtitle": "August 12, 2024- Blink support"
+          }
+        },
+        "card_block_nYWq8y": {
+          "type": "card_block",
+          "settings": {
+            "cover": "shopify://shop_images/7_c17851b4-cbc3-4d72-8290-b570b6d84249.png",
+            "title": "Olympic-Level skateboarding Training with xbotgo",
+            "subtitle": "August 12, 2024- Blink support"
+          }
+        }
+      },
+      "block_order": [
+        "card_block_rEnc84",
+        "card_block_nYWq8y"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Awards & Reviews"
+      }
+    },
+    "custom_liquid_RCNFwk": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "show_space": true,
+        "code": "<style>\n.headline{\npadding-left:20px;\ntext-align: center;\n}\n    .products-overview {\n        display: flex;\n        flex-wrap: wrap;\n        justify-content: space-between;\n        gap: 16px;\n        padding: 16px;\n        box-sizing: border-box;\n    }\n\n    .product-item {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        flex: 1 1 calc(20% - 16px);\n        text-align: center;\n        padding: 16px;\n        height: 220px;\n        background: #F5F5F5;\n        border-radius: 8px;\n        box-sizing: border-box;\n        position: relative;\n    }\n\n    .product-img {\n        position: absolute;\n        top: 0;\n        width: 100%;\n        height: 100%;\n    }\n\n    .product-name {\n        display: block;\n        height: 35px;\n        position: absolute;\n        bottom: 5px;\nfont-weight: bold;\ncolor:#000;\n    }\n\n    @media (max-width: 768px) {\n        .products-overview {\n            flex-wrap: wrap;\n            justify-content: center;\n        }\n.products-overview div:first-child {\n            flex: 1 1 calc(50% - 16px);\n}\n.products-overview div:nth-child(2)  {\n            flex: 1 1 calc(50% - 16px);\n}\n        .product-item {\n            flex: 1 1 calc(33.33% - 16px);\n            height: 170px;\n        }\n\n        .product-name {\n            font-size: 13px;\n        }\n.headline{\ntext-align: left;\n}\n    }\n</style>\n\n<div class=\"headline\">\n<h1>\nProducts overview\n</h1>\n</div>\n<div class=\"products-overview\">\n    <div class=\"product-item\">\n        <img class=\"product-img\"\n            src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/50c499ce9e946faaeedad202e667d328_7b7b8471-1296-40f4-9986-4a7a7c0c77a1.png?v=1735784598\" />\n        <span class=\"product-name\"> XbotGo Chameleon</span>\n    </div>\n    <div class=\"product-item\">\n        <img class=\"product-img\"\n            src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/bd75a052c60d56be46e7156b2f4d3f00_11b71c86-cd4e-433d-a56b-62da012dc5a3.png?v=1735784604\" />\n        <span class=\"product-name\">XbotGo Sports Gimba</span>\n    </div>\n    <div class=\"product-item\">\n        <img class=\"product-img\" src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/t1.png?v=1735784722\" />\n        <span class=\"product-name\">T1 Tripods</span>\n    </div>\n    <div class=\"product-item\">\n        <img class=\"product-img\" src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/t4.png?v=1735784722\" />\n        <span class=\"product-name\">T4 Tripods</span>\n    </div>\n    <div class=\"product-item\">\n        <img class=\"product-img\"\n            src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/b7c4e8972e4d203a0c8ef630e67930fd.png?v=1735784721\" />\n        <span class=\"product-name\">Umbrella</span>\n    </div>\n</div>"
+      }
+    },
+    "slideshow_UhCQn6": {
+      "type": "slideshow",
+      "blocks": {
+        "image_hKkKGd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/8-1.png",
+            "mobile_image": "shopify://shop_images/8_a62925e0-2e43-4036-9be3-75d76ed34ea0.png",
+            "slide_link": "",
+            "subheading": "",
+            "title": "Join Us",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "Hot job vacancies",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_hKkKGd"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".btn--secondary {border-radius: 30px;}"
+      ],
+      "settings": {
+        "show_sticky_banner": false,
+        "sticky_text": "",
+        "link_url": "shopify://collections/all",
+        "height": "fixed",
+        "height_desktop": 300,
+        "height_mobile": 260,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "transition": "fade",
+        "navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "accessibility_info": ""
+      }
+    },
+    "gallery_wL4jkE": {
+      "type": "gallery",
+      "blocks": {
+        "media_Xn3F8H": {
+          "type": "media",
+          "settings": {
+            "enlarge_media": true,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_E6R8dF": {
+          "type": "media",
+          "settings": {
+            "enlarge_media": false,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_TjyqXk": {
+          "type": "media",
+          "settings": {
+            "enlarge_media": false,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_WrzDmD": {
+          "type": "media",
+          "settings": {
+            "enlarge_media": true,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "media_Xn3F8H",
+        "media_E6R8dF",
+        "media_TjyqXk",
+        "media_WrzDmD"
+      ],
+      "disabled": true,
+      "settings": {
+        "grid_desktop": 2,
+        "grid_mobile": "1",
+        "height": "fixed",
+        "desktop_image_height": 460,
+        "mobile_image_height": 400,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": true,
+        "full_width": false,
+        "color_scheme": "default",
+        "enable_carousel": true,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "custom_content_x6grnt": {
+      "type": "custom-content",
+      "blocks": {
+        "text_EPkq9r": {
+          "type": "text",
+          "settings": {
+            "width": "full",
+            "subheading": "",
+            "title": "XbotGo Products User Guide",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        },
+        "image_djjPWA": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify://shop_images/chameleon-clean.png",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "Chameleon User Manual",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "Download",
+            "button_style": "primary",
+            "image_link": "https://cdn.shopify.com/s/files/1/0637/2740/3230/files/Chameleon_Manual.pdf?v=1725869756",
+            "text_alignment": "top center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "image_kkGCXK": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify://shop_images/gimbal-clean.png",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "Sports Gimbal User Manual",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "Download",
+            "button_style": "primary",
+            "image_link": "https://cdn.shopify.com/s/files/1/0637/2740/3230/files/0412Xbot_manual_-EN-min.pdf?v=1713706169",
+            "text_alignment": "top center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "video_ijnan4": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "width": "half",
+            "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "video_description": "",
+            "autoplay": false
+          }
+        }
+      },
+      "block_order": [
+        "text_EPkq9r",
+        "image_djjPWA",
+        "image_kkGCXK",
+        "video_ijnan4"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".btn {border-radius: 25px;}",
+        ".gallery__item {border-radius: 25px;}",
+        ".text-overlay__title {color: #262629;}",
+        "@media (max-width: 767px) {.text-overlay__title {font-size: 15px; } .gallery__item {height: 100%; object-fit: cover; } .btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 100px; text-align: center; font-size: 9px; transform: translate(-50%, -70%); position: relative; top: 10px; left: 20px; align-items: center; }}"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "custom_content_a9Da6V": {
+      "type": "custom-content",
+      "blocks": {
+        "text_7b4VMg": {
+          "type": "text",
+          "settings": {
+            "width": "three-quarters",
+            "subheading": "",
+            "title": "XbotGo Chameleon Turtorial Videos",
+            "text": "<p>Chameleon is a specialized phone accessory that enhances sports recording by using its built-in camera and AI chips to track the action during a game. While you use your phone to record, Chameleon works alongside it to intelligently follow the movement of players, the ball, or key events in real time. </p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        },
+        "video_QdmQXP": {
+          "type": "video",
+          "settings": {
+            "width": "full",
+            "video_external": "https://youtu.be/7ZuuevGKWDs?si=Aq6CzECoDQucCdrC",
+            "video_description": "",
+            "autoplay": false,
+            "placeholder_image": "shopify://shop_images/Chameleon-banner.png"
+          }
+        },
+        "text_6MfmXE": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "",
+            "text": "<h4>Setting Up XbotGo Chameleon for Perfect Sports Filming</h4>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        },
+        "video_XFKQaA": {
+          "type": "video",
+          "settings": {
+            "width": "half",
+            "video_external": "https://www.youtube.com/watch?v=yTRtBXDaDos&list=PLwWWvmTsWGVp3oMxITuaL4WBLmYJBbMZt&index=3",
+            "video_description": "",
+            "autoplay": false,
+            "placeholder_image": "shopify://shop_images/DSCF4136-5.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "text_7b4VMg",
+        "video_QdmQXP",
+        "text_6MfmXE",
+        "video_XFKQaA"
+      ],
+      "disabled": true,
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "video_with_text_Yhkbda": {
+      "type": "video-with-text",
+      "blocks": {
+        "text_EHRfaz": {
+          "type": "text",
+          "settings": {
+            "text": "<h4><strong> Adjusting Resolution, Tracking, and Power Settings for Sports Filming</strong></h4>",
+            "enlarge_text": false
+          }
+        },
+        "heading_PCkEei": {
+          "type": "heading",
+          "settings": {
+            "title": "",
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "text_EHRfaz",
+        "heading_PCkEei"
+      ],
+      "disabled": true,
+      "settings": {
+        "video_external": "https://www.youtube.com/watch?v=qfLpTDPfs7Q&list=PLwWWvmTsWGVp3oMxITuaL4WBLmYJBbMZt&index=4",
+        "video_description": "",
+        "autoplay": false,
+        "placeholder_image": "shopify://shop_images/3_83cd510c-7774-4287-9db2-a7fe68c49cc6.png",
+        "video_position": "left",
+        "text_alignment": "center",
+        "color_scheme": "default"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_page_title": true,
+        "full_width": false
+      }
+    },
+    "video_with_text_eiAByc": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_PLfpLk": {
+          "type": "heading",
+          "settings": {
+            "title": "Video with text",
+            "use_h1": false
+          }
+        },
+        "text_Ecq9bA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with a video to give customers insight into your brand. Tell a story, explain a product detail, or describe a new promotion.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_pw4EFr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button text",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PLfpLk",
+        "text_Ecq9bA",
+        "button_pw4EFr"
+      ],
+      "disabled": true,
+      "settings": {
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_description": "",
+        "autoplay": false,
+        "video_position": "left",
+        "text_alignment": "center",
+        "color_scheme": "default"
+      }
+    },
+    "custom_tab_4_U7EC49": {
+      "type": "custom-tab-4",
+      "disabled": true,
+      "settings": {
+        "tab-title": "Recommended by",
+        "tab1": "JMTech",
+        "tab2": "Bighenet",
+        "tab3": "JMTech",
+        "tab4": "Bighenet",
+        "image1": "shopify://shop_images/f9125fe25da9fa2b155c3009b55ee438_cffff8e7-eaff-4dc3-b626-60127bc6ae10.png",
+        "tab-txt-title1": "content",
+        "tab-txt-content1": "content",
+        "tab-txt-title2": "content",
+        "tab-txt-content2": "content",
+        "tab-txt-title3": "content",
+        "tab-txt-content3": "content",
+        "tab-txt-title4": "content",
+        "tab-txt-content4": "content",
+        "video_url1": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4",
+        "video_url2": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4",
+        "video_url3": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4",
+        "video_url4": "https://www.youtube.com/embed?video_id=fuX6zbSr2w4"
+      }
+    },
+    "video_with_text_mNpzyV": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_7c8AAr": {
+          "type": "heading",
+          "settings": {
+            "title": "XbotGo Tutorial：Live Scoreboard Feature",
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_7c8AAr"
+      ],
+      "disabled": true,
+      "settings": {
+        "video_external": "https://youtu.be/XEjNkPdtq_o?si=XRmbTN7ElHztigg2",
+        "video_description": "",
+        "autoplay": false,
+        "placeholder_image": "shopify://shop_images/score_1.5x.png",
+        "video_position": "right",
+        "text_alignment": "center",
+        "color_scheme": "default"
+      }
+    },
+    "video_with_text_4h4jfH": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_bQYW9F": {
+          "type": "heading",
+          "settings": {
+            "title": "Video with text",
+            "use_h1": false
+          }
+        },
+        "text_mdAJGV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with a video to give customers insight into your brand. Tell a story, explain a product detail, or describe a new promotion.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_WkN8Ek": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button text",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bQYW9F",
+        "text_mdAJGV",
+        "button_WkN8Ek"
+      ],
+      "disabled": true,
+      "settings": {
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_description": "",
+        "autoplay": false,
+        "video_position": "left",
+        "text_alignment": "center",
+        "color_scheme": "default"
+      }
+    },
+    "93f97a72-d4c6-4de4-976d-c98954d4d95a": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "template--15839855018206__93f97a72-d4c6-4de4-976d-c98954d4d95a-1679925314e4aded86-0": {
+          "type": "question",
+          "settings": {
+            "title": "What phones does XbotGo support?",
+            "answer": "<p>Apple: <br/>iPhone 11 or later models<br/><br/>Android: Compatible with devices using Snapdragon 888 or newer processors.<br/><br/>Samsung:<br/>Samsung Galaxy S21/S22/S23 series, Galaxy Z Flip3, Z Flip4, Samsung W22, W23 Flip<br/>Google:<br/>Google Pixel 7/7Pro, Pixel 8<br/>Huawei:<br/>Huawei Mate 40/Mate 50 series, Huawei P50/P60 series<br/>Honor:<br/>Honor Magic4/Magic5 series<br/>Xiaomi:<br/>Xiaomi 11/12/13/14 series<br/>OnePlus:<br/>OnePlus 9/10/11/12 series, OnePlus Ace Pro<br/>Sony:<br/>Xperia PRO-I, Xperia 1 III, Xperia 1 Ⅳ, Xperia 5 III, Xperia 5 Ⅳ<br/>Redmi:<br/>Redmi K50/K60 series<br/>iQOO: 10/11/12 series<br/>RealMe: GT5<br/>Vivo: X80/X90/X100</p>"
+          }
+        },
+        "template--15839855018206__93f97a72-d4c6-4de4-976d-c98954d4d95a-1679925314e4aded86-1": {
+          "type": "question",
+          "settings": {
+            "title": "How does XbotGo follow and track games?",
+            "answer": "<p>We use AI technology to detect the position of the ball and players, analyze the speed, pose and actions of players. Our patented algorithm will decide where the action is based on the information analyzed, and control the gimbal to follow through. In particular, all these are completed on smartphones real time. Even if the phone is not connected to Internet, it is still able to track and record. Please find demo videos at <a href=\"https://www.youtube.com/@XbotGo\">https://www.youtube.com/@XbotGo</a>. All demos are shared by our real users.</p><p><strong> </strong></p>"
+          }
+        },
+        "question_hpUjA6": {
+          "type": "question",
+          "settings": {
+            "title": "How to set up XbotGo Chameleon?",
+            "answer": "<p>Please have the following ready before setup or refer to our video tutorial: <a href=\"https://youtu.be/yTRtBXDaDos?si=wH0xIUtm0hDryEcL\" target=\"_blank\" title=\"https://youtu.be/yTRtBXDaDos?si=wH0xIUtm0hDryEcL\">https://youtu.be/yTRtBXDaDos?si=wH0xIUtm0hDryEcL<br/></a><br/>- XbotGo Chameleon<br/>- iPhone XS or newer, or an Android device with a Qualcomm Snapdragon 888 processor or newer<br/>- XbotGo App (downloaded from App Store or Google Play)<br/>- Tripod (sold separately) or any other tripod with 1/4\" screw head<br/><br/>Setup steps:<br/>- Mount the Chameleon on a tripod near the center line of the field.<br/>- Center and balance your phone in the Chameleon's clamp, ensuring its camera aligns with the Chameleon's camera.<br/>- Open the XbotGo App and connect it to the Chameleon.<br/>- After successful connection, start recording.<br/><br/>The XbotGo will automatically track players and capture the game. You can also enable live streaming to share with your audience.</p>"
+          }
+        },
+        "question_Y3TeVX": {
+          "type": "question",
+          "settings": {
+            "title": "How to find my Chameleon firmware version and upgrade",
+            "answer": "<p>Here is the Video Turtorial: <a href=\"https://youtu.be/50wK5SC_nDU?si=eCaPIpZFfIls2f3p\" title=\"https://youtu.be/50wK5SC_nDU?si=eCaPIpZFfIls2f3p\">https://youtu.be/50wK5SC_nDU?si=eCaPIpZFfIls2f3p</a><br/>To check your Chameleon firmware version and upgrade to the latest, follow these steps:<br/><br/>\t1.\tOpen the XbotGo App and log in to your account.<br/>\t2.\tConnect the Chameleon to the app.<br/>\t3.\tFrom the app homepage, go to “My” &gt; “Settings” and select “Firmware Upgrade.”<br/>\t4.\tYour current firmware version will be displayed in the top right corner.<br/>\t5.\tIf an update is available, tap “Firmware Upgrade” and follow the on-screen instructions to complete the process.<br/><br/>Note: If you don’t see the firmware upgrade option, try logging out and logging back in, and reconnect the Chameleon.<br/></p>"
+          }
+        },
+        "question_FwJ8LR": {
+          "type": "question",
+          "settings": {
+            "title": "How to choose the sports mode and set up",
+            "answer": "<p>For capturing sports action on smaller fields, like a basketball court or a 5v5 soccer pitch, our portable XbotGo Gimbal T1 Tripod, standing around 4 feet tall, is a perfect choice. It’s easy to fold and unfold, offering quick setup and convenience.<br/><br/>For larger fields, such as 9v9 or 11v11 soccer games, we recommend our 13-foot T4 tripod. It provides enhanced tracking performance and a wider view, ensuring optimal coverage.<br/><br/>Both tripods deliver a great experience. Alternatively, you can use any third-party tripod with a 1/4” screw mount, as it’s compatible with the XbotGo gimbal.</p>"
+          }
+        },
+        "question_nwRRNt": {
+          "type": "question",
+          "settings": {
+            "title": "What tripod should I use with Chameleon?",
+            "answer": "<p>For capturing sports action on smaller fields, like a basketball court or a 5v5 soccer pitch, our portable XbotGo Gimbal T1 Tripod, standing around 4 feet tall, is a perfect choice. It’s easy to fold and unfold, offering quick setup and convenience.<br/><br/>For larger fields, such as 9v9 or 11v11 soccer games, we recommend our 13-foot tripod. It provides enhanced tracking performance and a wider view, ensuring optimal coverage.<br/><br/>Both tripods deliver a great experience. Alternatively, you can use any third-party tripod with a 1/4” screw mount, as it’s compatible with the XbotGo gimbal.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15839855018206__93f97a72-d4c6-4de4-976d-c98954d4d95a-1679925314e4aded86-0",
+        "template--15839855018206__93f97a72-d4c6-4de4-976d-c98954d4d95a-1679925314e4aded86-1",
+        "question_hpUjA6",
+        "question_Y3TeVX",
+        "question_FwJ8LR",
+        "question_nwRRNt"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "FAQ"
+      }
+    },
+    "custom_content_Dpj8Je": {
+      "type": "custom-content",
+      "blocks": {
+        "text_EzpLth": {
+          "type": "text",
+          "settings": {
+            "width": "three-quarters",
+            "subheading": "",
+            "title": "XbotGo Sports Gimbal Turtorial Videos",
+            "text": "<p>The XbotGo AI Sport Gimbal is a versatile tool designed to effortlessly capture and live stream team sports like soccer, basketball, and football. </p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        },
+        "video_eR8jf7": {
+          "type": "video",
+          "settings": {
+            "width": "three-quarters",
+            "video_external": "https://youtu.be/Eiul9-tHQmM?si=ghI-oOP_ASRB_iJr",
+            "video_description": "",
+            "autoplay": false,
+            "placeholder_image": "shopify://shop_images/XbotGo_Father_s_day_pc.webp"
+          }
+        },
+        "text_m363UB": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "",
+            "text": "<h4>Auto Generate Highlights with XbotGo Remote Control</h4>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        },
+        "video_UhTXkC": {
+          "type": "video",
+          "settings": {
+            "width": "half",
+            "video_external": "https://youtu.be/4gNKvcwprXU?si=JHZjrVbNenp67ZE_",
+            "video_description": "",
+            "autoplay": false,
+            "placeholder_image": "shopify://shop_images/XbotGo_Gimbal_and_Remote.webp"
+          }
+        }
+      },
+      "block_order": [
+        "text_EzpLth",
+        "video_eR8jf7",
+        "text_m363UB",
+        "video_UhTXkC"
+      ],
+      "disabled": true,
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "collapsible_tabs_JEqR6P": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_EWJTFG": {
+          "type": "question",
+          "settings": {
+            "title": "What sports can XbotGo gimbal support?",
+            "answer": "<p>Currently, XbotGo supports 10 sports types:<br/>\t1.\tSoccer<br/>\t2.\tFootball<br/>\t3.\tBasketball<br/>\t4.\tPower Soccer<br/>\t5.\tLacrosse<br/>\t6.\tIce Hockey<br/>\t7.\tTennis<br/>\t8.\tHandball<br/>\t9.\tPickleball<br/>\t10.\tBroomball<br/><br/>It also features a FollowMe Mode for tracking individual movement and activities. More features will be added in future updates.</p>"
+          }
+        },
+        "question_PqBWgD": {
+          "type": "question",
+          "settings": {
+            "title": "How to set up XbotGo gimbal?",
+            "answer": "<p>1. Mount your iPhone or Android device on the XbotGo gimbal.<br/>2. Place the gimbal on a tripod along the sideline of the sports field.<br/>3. Open the XbotGo App and connect it to the gimbal.<br/>4. Press the recording button and let the system do the rest.<br/><br/>The XbotGo system will automatically:<br/>- Track players<br/>- Follow the game action<br/>- Record the game<br/>- Live stream (if enabled)<br/><br/>Note: For optimal tracking performance, we recommend placing the gimbal near the center line of the field.</p>"
+          }
+        },
+        "question_wTbygA": {
+          "type": "question",
+          "settings": {
+            "title": "Can XbotGo gimbal be used as a handheld stabilizer?",
+            "answer": "<p>Yes, the XbotGo gimbal can also function as a regular handheld stabilizer for everyday use.</p>"
+          }
+        },
+        "question_887WrH": {
+          "type": "question",
+          "settings": {
+            "title": "How does cloud storage work?",
+            "answer": "<p>Each user receives 20GB of free cloud storage with no monthly fees.</p>"
+          }
+        },
+        "question_Qg6bWc": {
+          "type": "question",
+          "settings": {
+            "title": "How to choose the sports mode and set up",
+            "answer": "<p>For capturing sports action on smaller fields, like a basketball court or a 5v5 soccer pitch, our portable XbotGo Gimbal T1 Tripod, standing around 4 feet tall, is a perfect choice. It’s easy to fold and unfold, offering quick setup and convenience.<br/><br/>For larger fields, such as 9v9 or 11v11 soccer games, we recommend our 13-foot T4 tripod. It provides enhanced tracking performance and a wider view, ensuring optimal coverage.<br/><br/>Both tripods deliver a great experience. Alternatively, you can use any third-party tripod with a 1/4” screw mount, as it’s compatible with the XbotGo gimbal.</p>"
+          }
+        },
+        "question_3rFGcE": {
+          "type": "question",
+          "settings": {
+            "title": "Does the gimbal support a frame rate of 60fps?",
+            "answer": "<p>Currently, both iOS and Android versions support up to 30fps.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_EWJTFG",
+        "question_PqBWgD",
+        "question_wTbygA",
+        "question_887WrH",
+        "question_Qg6bWc",
+        "question_3rFGcE"
+      ],
+      "settings": {
+        "title": "FAQ"
+      }
+    }
+  },
+  "order": [
+    "slideshow_EVPEC8",
+    "rich_text_zAMW7P",
+    "count_up_section_ETRWHY",
+    "rich_text_ByJxzn",
+    "photo_wall_BK4ceW",
+    "custom_liquid_xQXdPe",
+    "carousel_card_LPA3jw",
+    "custom_liquid_RCNFwk",
+    "slideshow_UhCQn6",
+    "gallery_wL4jkE",
+    "custom_content_x6grnt",
+    "custom_content_a9Da6V",
+    "video_with_text_Yhkbda",
+    "main",
+    "video_with_text_eiAByc",
+    "custom_tab_4_U7EC49",
+    "video_with_text_mNpzyV",
+    "video_with_text_4h4jfH",
+    "93f97a72-d4c6-4de4-976d-c98954d4d95a",
+    "custom_content_Dpj8Je",
+    "collapsible_tabs_JEqR6P"
+  ]
+}
