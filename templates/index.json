@@ -319,7 +319,8 @@
         ".gallery__item {border-radius: 25px;}",
         ".text-overlay {pointer-events: none;}",
         ".gallery__image {transition: all 0.3s ease;}",
-        ".gallery__image:hover {transform: scale(1.1);}"
+        ".gallery__image:hover {transform: scale(1.1);}",
+        "@media (max-width: 768px) {.align-ltr-center {text-align:left; }}"
       ],
       "settings": {
         "grid_desktop": 4,
