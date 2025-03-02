@@ -1130,6 +1130,7 @@
       ],
       "custom_css": [
         ".theme-img {border-radius: 25px;}",
+        ".button-row__btn {border-radius: 20px;}",
         "@media (max-width: 767px) {.feature-text-paired {font-size: 11px; vertical-align: left; } .btn {font-size: 11px; vertical-align: left; border-radius: 25px; } .h1 {font-size: 16px; }}"
       ],
       "settings": {
@@ -1183,7 +1184,8 @@
         "text_p8m4AK"
       ],
       "custom_css": [
-        "@media (max-width: 767px) {.block-id-text_p8m4AK {font-size: 11px; vertical-align: left; } .h1 {font-size: 16px; }}"
+        "@media (max-width: 767px) {.block-id-text_p8m4AK {font-size: 11px; vertical-align: left; } .h1 {font-size: 16px; }}",
+        ".align-ltr-center {text-align: left;}"
       ],
       "settings": {
         "alignment": "middle"
