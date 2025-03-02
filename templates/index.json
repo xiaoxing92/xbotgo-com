@@ -185,7 +185,7 @@
             "button_label": "",
             "button_link": "",
             "button_style": "primary",
-            "text_alignment": "left"
+            "text_alignment": "center"
           }
         },
         "image_jCEkac": {
@@ -227,7 +227,7 @@
       "custom_css": [
         ".theme-img {border-radius: 25px; overflow: hidden; display: inline-block;}",
         ".video-section {width: 100%; display: block;}",
-        "@media (max-width: 767px) {.block-id-text_ahpymj {font-size: 10px; vertical-align: left; text-align: left; } .h1 {font-size: 16px; }}"
+        "@media (max-width: 767px) {.block-id-text_ahpymj {font-size: 10px; vertical-align: left; text-align: left; } .h1 {font-size: 16px; } .align-ltr-center {text-align: left; }}"
       ],
       "settings": {
         "alignment": "top"
