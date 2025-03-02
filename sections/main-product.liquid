@@ -541,7 +541,7 @@
 
                   <div class='quantity-submit-row input-row {% if enable_dynamic_payment_button %}has-spb{% endif %}'>
                     {% if block.settings.show_quantity_selector %}
-                      <label class='label' for='quantity'>{{ 'products.product.quantity' | t }}</label>
+                      <label class='label' for='quantity'>{{ 'products.product.quantity' | t }}:</label>
                       <quantity-wrapper class='quantity-wrapper'>
                         <a href='#' data-quantity='down' aria-label='{{ 'cart.items.decrease_quantity' | t }}'>
                           {%- render 'icon-minus' -%}
@@ -3084,6 +3084,15 @@
     .slider-nav--floating .slider-nav__btn[name='next'] {
       right: 10px;
     }
+    .product-form .quantity-submit-row .quantity-submit-row__submit {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      display: none;
+    }
+    .shopify-payment-button{
+      margin-top: 30px;
+    }
+    
   }
   
 </style>

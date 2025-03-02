@@ -37,8 +37,13 @@ if (!customElements.get('sticky-atc')) {
         this.variantTitle = this.querySelector('.sticky-atc__details__variant__title');
         this.variantInfo = this.querySelector('.sticky-atc__details__variant__info');
         this.variantTitle?.toggleAttribute('hidden', !this.section.querySelector('variant-picker'));
-        this.currentPrice = document.querySelector(".current-price")
-        this.originalPrice = document.querySelector(".original-price")
+        // this.currentPrice = document.querySelector(".current-price")
+        // this.originalPrice = document.querySelector(".original-price")
+
+        this.currentPrice = document.querySelectorAll(".current-price"); 
+        this.originalPrice = document.querySelectorAll(".original-price") 
+
+
         this.throttledOnScroll = throttle(StickyAtc.handleScroll.bind(this));
         this.observer = new IntersectionObserver(this.handleIntersection.bind(this), {
           threshold: 0,
@@ -141,14 +146,24 @@ if (!customElements.get('sticky-atc')) {
         const parentElement = document.getElementById("variant-selector"); // 通过 ID 获取父元素
         const allChildren = parentElement.querySelectorAll(".opt-label__left"); // 
         const nodeIndex = Number(evt.detail.index)-1
+        const isColor = evt.detail.index !== null
         const bundleChildren = allChildren[nodeIndex]?.getElementsByClassName('opt-label__bundle-info')
-        const Symbol = this.currentPrice.textContent.trim().charAt(0);
-        this.originalPrice.innerHTML = `${Symbol}${this.formatCurrency(evt.detail.variant.compare_at_price)}`
-        this.currentPrice.innerHTML = `${Symbol}${this.formatCurrency(evt.detail.variant.price)}`
+        const Symbol = this.currentPrice[0].textContent.trim().charAt(0);
+        // this.originalPrice.textContent = `${Symbol}${this.formatCurrency(evt.detail.variant.compare_at_price)}`
+        // this.currentPrice.textContent = `${Symbol}${this.formatCurrency(evt.detail.variant.price)}`
+        for (const el of this.originalPrice) {
+          el.textContent = `${Symbol}${this.formatCurrency(evt.detail.variant.compare_at_price)}`
+        }
+        for (const el of this.currentPrice) {
+          el.textContent = `${Symbol}${this.formatCurrency(evt.detail.variant.price)}`
+      }
+
+
+
         if(bundleChildren?.length>0){
           const bundleText = bundleChildren[0].innerHTML;
           this.variantInfo.innerHTML = bundleText;
-        }else{
+        }else if(isColor){
           this.variantInfo.innerHTML = ''
         }
 

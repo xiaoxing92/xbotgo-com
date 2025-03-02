@@ -720,9 +720,9 @@ button svg {
 }
 @media (hover: hover) {
   .btn:hover {
-    border-color: rgb(var(--btn-border-hover-color));
+    /* border-color: rgb(var(--btn-border-hover-color));
     background: rgb(var(--btn-bg-hover-color));
-    color: rgb(var(--btn-text-hover-color));
+    color: rgb(var(--btn-text-hover-color)); */
   }
 }
 .btn[disabled] {
@@ -885,6 +885,8 @@ svg.feather {
 .icon {
   width: var(--icon-size);
   height: var(--icon-size);
+  /* width:13px;
+  height: 13px; */
 }
 
 .icon--extra-small {
@@ -3268,7 +3270,7 @@ body:not(.reveal-mobile-nav) .mobile-navigation-drawer .mobile-navigation-drawer
     line-height: 1em;
   }
   .section-header {
-    z-index: 8000;
+    z-index: 99;
   }
   .enable-mobile-nav-transition .mobile-navigation-drawer {
     visibility: visible;
@@ -3732,8 +3734,8 @@ shopify-payment-terms {
   margin-bottom: 0;
 }
 .product-form .quantity-submit-row .quantity-submit-row__submit {
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: 32px;
+  margin-bottom: 25px;
 }
 .product-form .quantity-submit-row .quantity-submit-row__submit button[type=submit] {
   linear-gradient( to right, #b11e23, #ea9e1f );
@@ -5778,6 +5780,8 @@ hotspots-image .image-overlay {
   display: inline-block;
 }
 .header-localization .localization__selector {
+  display: flex;
+  align-items: center;
   margin: 0 0 0 10px;
   white-space: normal;
 }
@@ -9534,8 +9538,9 @@ carousel-slider[inactive] .slider-nav__btn {
 .quantity-wrapper {
   display: flex;
   text-align: center;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 0px 20px;
   position: relative;
   width: 156px;
   height: 59px;

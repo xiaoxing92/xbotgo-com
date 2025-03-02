@@ -145,7 +145,23 @@
   .mobile-menu {
     display:none;
   }
+  .search-link-mobile{
+    display:none;
+  }
   @media (max-width: 767.98px) {
+    .show-search-link{
+      display:flex;
+      margin-inline-end:0!important;
+    }
+    .show-search-link__icon{
+      width:auto!important;
+    }
+    .search-link-pc{
+      display:none;
+    }
+    .search-link-mobile{
+      display:flex;
+    }
     .logo img {
       width: {{ section.settings.mobile_logo_img_width_int }}px;
     }
@@ -165,13 +181,6 @@
     }
     .title{
       font-size:12px;
-    }
-    .show-search-link{
-      display:flex !important;
-      margin-inline-end:0!important;
-    }
-    .show-search-link__icon{
-      width:auto!important;
     }
     .mobile-menu {
         display:flex;
@@ -263,6 +272,18 @@
         >
           {%- render 'icon-menu' -%}
         </button>
+
+        {% if section.settings.enable_search %}
+          <a class='show-search-link search-link-mobile' href='{{ routes.search_url }}'>
+            <span class='show-search-link__text {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}'>
+              {{- 'sections.header.search' | t -}}
+            </span>
+            <span class='show-search-link__icon'>
+              {%- render 'icon-search' -%}
+            </span>
+          </a>
+        {% endif %}
+
       </div>
     </div>
 
@@ -372,7 +393,7 @@
         {% endif %}
 
         {% if section.settings.enable_search %}
-          <a class='show-search-link' href='{{ routes.search_url }}'>
+          <a class='show-search-link search-link-pc' href='{{ routes.search_url }}'>
             <span class='show-search-link__text {% if section.settings.icon_strategy == 'icons_only' %}visually-hidden{% else %}visually-hidden-mobile{% endif %}'>
               {{- 'sections.header.search' | t -}}
             </span>
