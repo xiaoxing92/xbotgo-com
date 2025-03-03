@@ -227,7 +227,7 @@
       "custom_css": [
         ".theme-img {border-radius: 25px; overflow: hidden; display: inline-block;}",
         ".video-section {width: 100%; display: block;}",
-        "@media (max-width: 767px) {.block-id-text_ahpymj {font-size: 10px; vertical-align: left; text-align: left; } .h1 {font-size: 24px; } .p{font-size: 13px; } .align-ltr-center {text-align: left; }}"
+        "@media (max-width: 767px) {.block-id-text_ahpymj {font-size: 10px; vertical-align: left; text-align: left; } .h1 {font-size: 24px; } .p {font-size: 13px; } .align-ltr-center {text-align: left; }}"
       ],
       "settings": {
         "alignment": "top"
@@ -248,7 +248,7 @@
         "heading_XxeXz8"
       ],
       "custom_css": [
-        "@media (max-width: 767px) {.h1 {font-size: 16px; }}"
+        "@media (max-width: 767px) {.h1 {font-weight: 500; font-size: 17px; color: #000000; line-height: 28px; text-align: left; }}"
       ],
       "settings": {
         "height": "small",
@@ -436,7 +436,7 @@
         "heading_m9j3kL"
       ],
       "custom_css": [
-        "@media (max-width: 767px) {.h1 {font-size: 16px; }}"
+        "@media (max-width: 767px) {.h1 {font-weight: bold; font-size: 24px; color: #000000; text-align: left; }}"
       ],
       "settings": {
         "height": "medium",
