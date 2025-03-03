@@ -1,7 +1,7 @@
 <section id='section-id-{{ section.id }}' class='video-gallery'>
   <div class='container'>
     {% if section.settings.title != blank %}
-      <h2 class='hometitle h4 align-center' {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+      <h2 class='hometitle h1 align-center' {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
         {{- section.settings.title | escape -}}
       </h2>
     {% endif %}  

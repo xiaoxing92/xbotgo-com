@@ -48,9 +48,9 @@
 
 <div id='section-id-{{ section.id }}' class='container'>
   {% if section.settings.title != blank %}
-    <h2 class='hometitle h4 align-center' {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+    <h1 class='hometitle h1 align-center' {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
       {{- section.settings.title | escape -}}
-    </h2>
+    </h1>
   {% endif %}
   <div class='carousel'>
     <button class='arrow left' id='prevBtn'>&lt;</button>
@@ -125,7 +125,7 @@
     min-height: 440px;
     text-align: center;
     background: #f5f5f7;
-    border: 1px solid #f3f3f4;
+    border: 1px solid #E7E7E7;
     border-radius: 10px;
     overflow: hidden;
   }
@@ -145,9 +145,9 @@
     width: 100%;
   }
   .title {
-    font-size: 12px;
+    font-size: 16px;
     text-align: left;
-    margin-bottom: 0;
+    margin-bottom: 28px;
   }
   .subtitle {
     font-size: 12px;
@@ -184,7 +184,7 @@
     outline: none;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     .carousel-card-track {
       flex-wrap: nowrap;
     }
@@ -197,12 +197,12 @@
     }
 
     .title {
-      font-size: 20px;
-      margin-bottom: 25px;
+      font-size: 17px;
+      margin-bottom: 10px;
     }
 
     .subtitle {
-      font-size: 15px;
+      font-size: 12px;
       margin-top: 0;
     }
     .arrow {
