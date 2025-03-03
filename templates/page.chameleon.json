@@ -1026,8 +1026,8 @@
         ".text-overlay__text {color: #000;}"
       ],
       "settings": {
-        "image": "shopify://shop_images/1.5x_e4ef58d5-3beb-4015-99f2-0ddf3707499f.png",
-        "mobile_image": "shopify://shop_images/11_71852123-86f7-401a-a4be-aaa7792418bc.png",
+        "image": "shopify://shop_images/pc_498766be-7593-4a9b-b42e-ba92b4e0f6d5.png",
+        "mobile_image": "shopify://shop_images/app.png",
         "height": "adapt",
         "height_desktop": 600,
         "height_mobile": 260,
