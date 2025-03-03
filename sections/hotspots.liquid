@@ -42,7 +42,7 @@
 
 
 <div class="section-id-{{ section.id }}">
-  {%- unless section.settings.full_width -%}<div class="container container--not-mobile fully-spaced-row--medium fully-spaced-row--not-mobile">{%- endunless -%}
+  {%- unless section.settings.full_width -%}<div class="container  fully-spaced-row--medium fully-spaced-row--not-mobile">{%- endunless -%}
 
   <hotspots-image class="block relative">
     <div class="height--adapt image-overlay image-overlay--bg-{{ section.settings.overlay_style }} text-overlay-parent--mobile-stack" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
