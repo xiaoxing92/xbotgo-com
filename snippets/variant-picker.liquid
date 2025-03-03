@@ -208,7 +208,8 @@
                     </label>
                     {% break %}
                   {% endfor %}
-
+                  {% assign color_images = product.metafields.custom.colors.value %}
+                  <div>{{ color_images |Json}}</div>
                 {% elsif option.name == 'Color' %}
                   <!-- Color 选项：仅显示一张图片 -->
                   <input

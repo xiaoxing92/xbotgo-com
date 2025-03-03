@@ -58,7 +58,9 @@
           {% endunless %}
         >
           <span class='sticky-atc__details__variant__title'>{{ current_variant.title }}</span>
+
           <span class='sticky-atc__details__variant__info'>{{ current_variant.metafields.custom.variant_info }}</span>
+
         </div>
         <div class='price-info'>
           <div class='current-price'>{{ current_variant.price | money }}</div>

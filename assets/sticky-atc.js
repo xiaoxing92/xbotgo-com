@@ -142,8 +142,6 @@ if (!customElements.get('sticky-atc')) {
        * @param {Event} evt - Variant change event dispatched by variant-picker.
        */
       onVariantChange(evt) {
-
-        console.log(evt,"======")
         const idInput = this.form?.querySelector('[name="id"]');
         const parentElement = document.getElementById("variant-selector"); // 通过 ID 获取父元素
         const allChildren = parentElement.querySelectorAll(".opt-label__left"); // 
@@ -165,8 +163,9 @@ if (!customElements.get('sticky-atc')) {
         if(bundleChildren?.length>0){
           const bundleText = bundleChildren[0].innerHTML;
           this.variantInfo.innerHTML = bundleText;
+          this.variantInfo.style.display='block';
         }else if(isColor){
-          this.variantInfo.innerHTML = ''
+          this.variantInfo.style.display='none';
         }
 
         if (evt.detail.variant) {
