@@ -17,17 +17,17 @@
   assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: product.id | append: '-sticky'
 -%}
 
-<link rel='stylesheet' href='{{ 'sticky-atc.css' | asset_url }}' media='print' onload="this.media='all'">
-<script src='{{ 'sticky-atc.js' | asset_url }}' defer='defer'></script>
+<link rel="stylesheet" href="{{ 'sticky-atc.css' | asset_url }}" media="print" onload="this.media='all'">
+<script src="{{ 'sticky-atc.js' | asset_url }}" defer="defer"></script>
 
 {% comment %} sticky-atc--{{ section.settings.sticky_atc_position }} {% endcomment %}
 <sticky-atc
-  class='sticky-atc sticky-atc--out {% if section.settings.sticky_atc_mobile == false %} sticky-atc--hide-on-mobile{% endif %} invisible'
-  data-current-variant='{{ current_variant.id }}'
+  class="sticky-atc sticky-atc--out {% if section.settings.sticky_atc_mobile == false %} sticky-atc--hide-on-mobile{% endif %} invisible"
+  data-current-variant="{{ current_variant.id }}"
 >
-  <div class='sticky-container'>
+  <div class="sticky-container">
     {% comment %} <div class="sticky-atc__image img-ar img-ar--contain"></div> {% endcomment %}
-    <div class='sticky-atc__details'>
+    <div class="sticky-atc__details">
       {% comment %}
         <div class="sticky-atc__details__title">
           {{- product.title | escape -}}
@@ -50,62 +50,60 @@
         {%- endunless -%}
       {% endcomment %}
 
-      <div class='sticky-atc-pc'>
+      <div class="sticky-atc-pc">
         <div
-          class='sticky-atc__details__variant small-text'
+          class="sticky-atc__details__variant small-text"
           {% unless current_variant %}
             hidden
           {% endunless %}
         >
-          <span class='sticky-atc__details__variant__title'>{{ current_variant.title }}</span>
+          <span class="sticky-atc__details__variant__title">{{ current_variant.title | split: ' / ' | first }}</span>
 
-          <span class='sticky-atc__details__variant__info'>{{ current_variant.metafields.custom.variant_info }}</span>
-
+          <span class="sticky-atc__details__variant__info">{{ current_variant.metafields.custom.variant_info }}</span>
         </div>
-        <div class='price-info'>
-          <div class='current-price'>{{ current_variant.price | money }}</div>
-          <div class='original-price'>{{ current_variant.compare_at_price | money }}</div>
+        <div class="price-info">
+          <div class="current-price">{{ current_variant.price | money }}</div>
+          <div class="original-price">{{ current_variant.compare_at_price | money }}</div>
         </div>
       </div>
 
-      <div class='sticky-atc-mobile'>
-        <div class='price-info'>
-          <div class='current-price'>{{ current_variant.price | money }}</div>
-          <div class='original-price'>{{ current_variant.compare_at_price | money }}</div>
+      <div class="sticky-atc-mobile">
+        <div class="price-info">
+          <div class="current-price">{{ current_variant.price | money }}</div>
+          <div class="original-price">{{ current_variant.compare_at_price | money }}</div>
         </div>
         <div
-          class='sticky-atc__details__variant small-text'
+          class="sticky-atc__details__variant small-text"
           {% unless current_variant %}
             hidden
           {% endunless %}
         >
-          <span class='sticky-atc__details__variant__title'>{{ current_variant.title }}</span>
+          <span class="sticky-atc__details__variant__title">{{ current_variant.title }}</span>
         </div>
       </div>
-
     </div>
 
-    <div class='sticky-atc__buttons'>
+    <div class="sticky-atc__buttons">
       {%- if section.settings.sticky_atc_behavior == 'add_to_cart' -%}
         {% form 'product', product, id: product_form_id, class: 'form js-product-form', data-product-id: product.id %}
-          <input type='hidden' name='id' value='{{ current_variant.id }}'>
+          <input type="hidden" name="id" value="{{ current_variant.id }}">
           <button
-            class='btn btn--{{ section.settings.sticky_atc_button_style }} btn--compact add-to-cart add-cart-button'
-            type='submit'
-            name='add'
-            data-unavailable-text='{{ 'products.product.view_details' | t }}'
-            data-add-to-cart-text='{{ add_to_cart_text | escape }}'
+            class="btn btn--{{ section.settings.sticky_atc_button_style }} btn--compact add-to-cart add-cart-button"
+            type="submit"
+            name="add"
+            data-unavailable-text="{{ 'products.product.view_details' | t }}"
+            data-add-to-cart-text="{{ add_to_cart_text | escape }}"
           >
             {{- button_text -}}
           </button>
         {% endform %}
       {%- else -%}
-        <a class='btn btn--{{ section.settings.sticky_atc_button_style }} btn--compact add-to-cart' href='{{ anchor }}'>
+        <a class="btn btn--{{ section.settings.sticky_atc_button_style }} btn--compact add-to-cart" href="{{ anchor }}">
           {{- button_text -}}
         </a>
       {%- endif -%}
     </div>
-    <div class='sticky-atc__error js-form-error' role='alert' hidden></div>
+    <div class="sticky-atc__error js-form-error" role="alert" hidden></div>
   </div>
 </sticky-atc>
 
@@ -122,6 +120,5 @@
       transform: translateY(0%);
       opacity: 1;
     }
-    
   }
 </style>

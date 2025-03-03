@@ -208,7 +208,6 @@
                     </label>
                     {% break %}
                   {% endfor %}
-                  {% assign color_images = product.metafields.custom.colors.value %}
                 {% elsif option.name == 'Color' %}
                   <!-- Color 选项：仅显示一张图片 -->
                   <input
@@ -225,19 +224,17 @@
                       {% if option.selected_value == value %} checked{% endif %}
                     {% endif %}
                   >
-
+                  {% assign color_images = product.metafields.custom.color_images.value %}
                   <label class="opt-label opt-labels opt-label--color" for="{{ option_id }}-opt-{{ value_index0 }}">
                     {% assign color_variant = variant_details.first %}
-
-                    {% if color_variant %}
+                    {% assign color_name = value | downcase %}
+                    {% assign color_image = color_images[color_name] %}
+                    {% if color_image %}
                       <div class="color-image">
-                        {% render 'image',
-                          image: color_variant.featured_media,
-                          sizes: img_sizes,
-                          widths: img_widths,
-                          custom_crop: img_crop_align
-                        %}
+                        <img src="{{ color_image }}" alt="{{ value }}" width="50">
                       </div>
+                    {% else %}
+                      <span class="default-color" style="background-color: {{ value | handle }};"></span>
                     {% endif %}
                   </label>
                 {% endif %}
@@ -373,6 +370,11 @@
   {%- endif -%}
 {%- endunless -%}
 <style>
+  .color-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
         /* Compact Variant Picker Styles */
         .option-selector__btns {
           display: flex;
