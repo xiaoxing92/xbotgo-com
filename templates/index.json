@@ -227,7 +227,7 @@
       "custom_css": [
         ".theme-img {border-radius: 25px; overflow: hidden; display: inline-block;}",
         ".video-section {width: 100%; display: block;}",
-        "@media (max-width: 767px) {.block-id-text_ahpymj {font-size: 10px; vertical-align: left; text-align: left; } .h1 {font-size: 16px; } .align-ltr-center {text-align: left; }}"
+        "@media (max-width: 767px) {.block-id-text_ahpymj {font-size: 10px; vertical-align: left; text-align: left; } .h1 {font-size: 24px; } .p{font-size: 13px; } .align-ltr-center {text-align: left; }}"
       ],
       "settings": {
         "alignment": "top"
@@ -320,7 +320,7 @@
         ".text-overlay {pointer-events: none;}",
         ".gallery__image {transition: all 0.3s ease;}",
         ".gallery__image:hover {transform: scale(1.1);}",
-        "@media (max-width: 768px) {.align-ltr-center {text-align:left; }}"
+        "@media (max-width: 768px) {.align-ltr-center {text-align: left; }}"
       ],
       "settings": {
         "grid_desktop": 4,
