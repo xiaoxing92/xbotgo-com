@@ -15,18 +15,18 @@
 
 {%- unless product.has_only_default_variant -%}
   {%- if product.variants.size > 1 or block.settings.show_single -%}
-    <script src='{{ 'variant-picker.js' | asset_url }}' defer></script>
-    
+    <script src="{{ 'variant-picker.js' | asset_url }}" defer></script>
+
     {%- if block.settings.selector_style == 'dropdown' -%}
-      <script src='{{ 'custom-select.js' | asset_url }}' defer></script>
+      <script src="{{ 'custom-select.js' | asset_url }}" defer></script>
     {%- endif -%}
 
     <variant-picker
-      class='no-js-hidden'
-      data-url='{{ product.url }}'
-      data-update-url='{{ update_url | default: false }}'
-      data-show-availability='{{ block.settings.enable_dynamic_availability }}'
-      data-availability-mode='{{ dynamic_availability_mode | default: 'selection' }}'
+      class="no-js-hidden"
+      data-url="{{ product.url }}"
+      data-update-url="{{ update_url | default: false }}"
+      data-show-availability="{{ block.settings.enable_dynamic_availability }}"
+      data-availability-mode="{{ dynamic_availability_mode | default: 'selection' }}"
     >
       {%- for option in product.options_with_values -%}
         {%- capture option_id %}{{ product_form_id }}-{{ option.name | handle }}{% endcapture -%}
@@ -98,9 +98,9 @@
           {%- capture selector_label -%}
             <label class="label" id="{{ option_id }}-label">{{- option.name -}}</label>
           {%- endcapture -%}
-          <div class='option-selector' data-selector-type='dropdown' data-option='{{ option.name | escape }}'>
+          <div class="option-selector" data-selector-type="dropdown" data-option="{{ option.name | escape }}">
             {%- if show_size_chart -%}
-              <div class='flex justify-between'>
+              <div class="flex justify-between">
                 {{ selector_label }}
                 {{ size_chart_link }}
               </div>
@@ -126,18 +126,18 @@
             %}
           </div>
         {%- else -%}
-          <fieldset class='option-selector' data-selector-type='listed' data-option='{{ option.name | escape }}'>
+          <fieldset class="option-selector" data-selector-type="listed" data-option="{{ option.name | escape }}">
             {% if show_size_chart %}
-              <div class='flex justify-between'>
-                <legend class='label'>{{ option.name }}</legend>
+              <div class="flex justify-between">
+                <legend class="label">{{ option.name }}</legend>
                 {{ size_chart_link }}
               </div>
             {% else %}
-              <legend class='label'>
+              <legend class="label">
                 {{ option.name }}
                 {% if is_color_selector %}
                   :
-                  <span class='option-selector__label-value js-color-text'>
+                  <span class="option-selector__label-value js-color-text">
                     {% if section.settings.select_first_variant
                       or product.variants.size == 1
                       or product.selected_variant
@@ -149,7 +149,7 @@
               </legend>
             {% endif %}
 
-            <div  id="variant-selector" class='option-selector__btns flex flex-wrap'>
+            <div id="variant-selector" class="option-selector__btns flex flex-wrap">
               {% for value in option.values %}
                 {% assign value_index0 = forloop.index0 %}
 
@@ -169,12 +169,12 @@
                 {% if option.name == 'Bundle' %}
                   <!-- Bundle 保持原有图片按钮样式 -->
                   <input
-                    type='radio'
-                    class='opt-btn visually-hidden focus-label js-option'
-                    name='{{ option_id }}-option'
-                    id='{{ option_id }}-opt-{{ value_index0 }}'
-                    value='{{ value | escape }}'
-                    index='{{forloop.index }}'
+                    type="radio"
+                    class="opt-btn visually-hidden focus-label js-option"
+                    name="{{ option_id }}-option"
+                    id="{{ option_id }}-opt-{{ value_index0 }}"
+                    value="{{ value | escape }}"
+                    index="{{forloop.index }}"
                     required
                     {% if section.settings.select_first_variant
                       or product.variants.size == 1
@@ -184,8 +184,8 @@
                     {% endif %}
                   >
                   {% for variant in variant_details %}
-                    <label class='opt-label opt-label--image' for='{{ option_id }}-opt-{{ value_index0 }}'>
-                      <div class='opt-label__media media'>
+                    <label class="opt-label opt-label--image" for="{{ option_id }}-opt-{{ value_index0 }}">
+                      <div class="opt-label__media media">
                         {% render 'image',
                           image: variant.featured_media,
                           sizes: img_sizes,
@@ -193,31 +193,30 @@
                           custom_crop: img_crop_align
                         %}
                       </div>
-                      <div class='opt-label__left'>
-                        <div class='opt-label__text'>{{ value }}</div>
+                      <div class="opt-label__left">
+                        <div class="opt-label__text">{{ value }}</div>
                         {% if variant.metafields.custom.variant_info %}
-                          <div class='opt-label__bundle-info'>({{ variant.metafields.custom.variant_info }})</div>
+                          <div class="opt-label__bundle-info">({{ variant.metafields.custom.variant_info }})</div>
                         {% endif %}
                       </div>
-                      <div class='opt-label__prices'>
-                        <div class='price-now'>{{ variant.price | money }}</div>
+                      <div class="opt-label__prices">
+                        <div class="price-now">{{ variant.price | money }}</div>
                         {% if variant.compare_at_price > variant.price %}
-                          <div class='price-was'>{{ variant.compare_at_price | money }}</div>
+                          <div class="price-was">{{ variant.compare_at_price | money }}</div>
                         {% endif %}
                       </div>
                     </label>
                     {% break %}
                   {% endfor %}
                   {% assign color_images = product.metafields.custom.colors.value %}
-                  <div>{{ color_images |Json}}</div>
                 {% elsif option.name == 'Color' %}
                   <!-- Color 选项：仅显示一张图片 -->
                   <input
-                    type='radio'
-                    class='opt-btn visually-hidden focus-label js-option'
-                    name='{{ option_id }}-option'
-                    id='{{ option_id }}-opt-{{ value_index0 }}'
-                    value='{{ value | escape }}'
+                    type="radio"
+                    class="opt-btn visually-hidden focus-label js-option"
+                    name="{{ option_id }}-option"
+                    id="{{ option_id }}-opt-{{ value_index0 }}"
+                    value="{{ value | escape }}"
                     required
                     {% if section.settings.select_first_variant
                       or product.variants.size == 1
@@ -226,12 +225,12 @@
                       {% if option.selected_value == value %} checked{% endif %}
                     {% endif %}
                   >
-                    
-                  <label class='opt-label opt-labels opt-label--color' for='{{ option_id }}-opt-{{ value_index0 }}'>
+
+                  <label class="opt-label opt-labels opt-label--color" for="{{ option_id }}-opt-{{ value_index0 }}">
                     {% assign color_variant = variant_details.first %}
-      
+
                     {% if color_variant %}
-                      <div class='color-image'>
+                      <div class="color-image">
                         {% render 'image',
                           image: color_variant.featured_media,
                           sizes: img_sizes,
@@ -316,7 +315,7 @@
         {%- endif -%}
       {%- endfor -%}
 
-      <script type='application/json'>
+      <script type="application/json">
         {"variants": {{- product.variants | json -}},"formatted": {
           {%- for variant in product.variants -%}
             "{{ variant.id }}":{"price":{% if settings.product_currency_code_enabled %}{{ variant.price | money_with_currency | json }}{% else %}{{ variant.price | money | json }}{% endif %}
@@ -337,24 +336,24 @@
 
     <noscript>
       <div
-        class='product-info__select'
+        class="product-info__select"
         {% if product.has_only_default_variant %}
           hidden
         {% endif %}
       >
-        <label class='label' for='variants-{{ product.id }}-{{ section.id }}'>
+        <label class="label" for="variants-{{ product.id }}-{{ section.id }}">
           {{- 'products.product.product_variants' | t -}}
         </label>
-        <div class='select relative'>
+        <div class="select relative">
           <select
-            class='select w-full'
-            id='variants-{{ product.id }}-{{ section.id }}'
-            name='id'
-            form='{{ product_form_id }}'
+            class="select w-full"
+            id="variants-{{ product.id }}-{{ section.id }}"
+            name="id"
+            form="{{ product_form_id }}"
           >
             {%- for variant in product.variants -%}
               <option
-                value='{{ variant.id }}'
+                value="{{ variant.id }}"
                 {% if variant == current_variant %}
                   selected
                 {% endif %}
@@ -397,8 +396,8 @@
           content: "";
           position: absolute;
           inset: 0;
-          padding: 2px; 
-          border-radius: inherit; 
+          padding: 2px;
+          border-radius: inherit;
           background:linear-gradient(to right, #BE3F2A, #E07D30);
           -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
           -webkit-mask-composite: destination-out;
@@ -448,7 +447,7 @@
           color: {{ font_col_base }};
           border-radius: 50% !important;
         }
-        
+
         .opt-label__left {
           display: flex;
           align-items: center;

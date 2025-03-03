@@ -3743,21 +3743,9 @@ shopify-payment-terms {
 .product-form .quantity-submit-row .quantity-submit-row__submit button[type=submit] {
   linear-gradient( to right, #b11e23, #ea9e1f );
   box-sizing: border-box;
-  width:48%;
+  width: 100%;
 }
 
-.checkout-btn{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background:#000000;
-  box-sizing: border-box;
-  width:48%;
-  border-radius: 32px;
-  font-weight: 400;
-  font-size: 16px;
-  color: #FFFFFF;
-}
 
 .product-form .quantity-submit-row.has-spb .btn {
   --btn-text-color: var(--btn-alt-text-color);

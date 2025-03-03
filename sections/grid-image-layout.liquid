@@ -1,4 +1,3 @@
-
 <div id="section-id-{{ section.id }}" class="container pc">
   {% if section.settings.title != blank %}
     <h2 class="hometitle h4 align-center" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
@@ -10,26 +9,25 @@
     <div class="full-span">{{ section.settings.rich_text }}</div>
     <div class="card w22">
       <img src="{{ section.settings.image_1 | img_url: '600x464' }}" alt="{{ section.settings.title_1  }}">
-      <div class="overlay-text">{{  section.settings.title_1   }}</div>
+      <div class="overlay-text">{{ section.settings.title_1 }}</div>
     </div>
     <div class="card w30">
       <img src="{{ section.settings.image_2 | img_url: '600x464' }}" alt="{{ section.settings.title_2 }}">
-      <div class="overlay-text">{{  section.settings.title_2   }}</div>
+      <div class="overlay-text">{{ section.settings.title_2 }}</div>
     </div>
   </div>
   <div class="card-bot">
     <div class="card">
       <img src="{{ section.settings.image_3 | img_url: '1200x650' }}" alt="{{ section.settings.title_3  }}">
-      <div class="overlay-text">{{  section.settings.title_3   }}</div>
+      <div class="overlay-text">{{ section.settings.title_3 }}</div>
     </div>
 
     <div class="card w30">
       <img src="{{ section.settings.image_4 | img_url: '614x362' }}" alt="{{ section.settings.title_4 }}">
-      <div class="overlay-text">{{  section.settings.title_4   }}</div>
+      <div class="overlay-text">{{ section.settings.title_4 }}</div>
     </div>
   </div>
 </div>
-
 
 <div id="section-id-{{ section.id }}" class="container mobile">
   {% if section.settings.title != blank %}
@@ -41,37 +39,37 @@
     <div class="full-span">{{ section.settings.rich_text }}</div>
     <div class="card-m w50">
       <img src="{{ section.settings.image_1 | img_url: '380x257' }}" alt="{{ section.settings.title_1  }}">
-      <div class="overlay-text">{{  section.settings.title_1   }}</div>
+      <div class="overlay-text">{{ section.settings.title_1 }}</div>
     </div>
   </div>
   <div class="card-bot">
     <div class="card-m w50">
       <img src="{{ section.settings.image_3 | img_url: '375x375' }}" alt="{{ section.settings.title_3 }}">
-      <div class="overlay-text">{{  section.settings.title_3   }}</div>
+      <div class="overlay-text">{{ section.settings.title_3 }}</div>
     </div>
     <div class="card-bpt-r">
       <div class="card-m">
         <img src="{{ section.settings.image_2 | img_url: '375x500' }}" alt="{{ section.settings.title_2 }}">
-        <div class="overlay-text">{{  section.settings.title_2   }}</div>
+        <div class="overlay-text">{{ section.settings.title_2 }}</div>
       </div>
       <div class="card-m">
         <img src="{{ section.settings.image_4 | img_url: '375x375' }}" alt="{{ section.settings.title_4 }}">
-        <div class="overlay-text">{{  section.settings.title_4   }}</div>
+        <div class="overlay-text">{{ section.settings.title_4 }}</div>
       </div>
     </div>
   </div>
 </div>
 
 <style>
-  .mobile{
-    display:none
+  .mobile {
+    display: none;
   }
   .card-top,
   .card-bot {
     display: flex;
     gap: 10px;
     padding-bottom: 10px;
-    height:280px
+    height: 280px;
   }
   .full-span {
     text-align: center;
@@ -80,9 +78,10 @@
     justify-content: center;
     font-size: 38px;
     font-weight: bold;
-    color:#333333;
+    color: #333333;
     background-color: #f0f0f0;
     border-radius: 12px;
+    flex: 1;
   }
 
   .card {
@@ -93,15 +92,15 @@
   }
 
   .w22 {
-    flex:none;
+    flex: none;
     width: 22%;
-  }  
+  }
 
-  .w30{
-    flex:none;
+  .w30 {
+    flex: none;
     width: 30%;
   }
-  .w50{
+  .w50 {
     width: 50%;
   }
   .card img {
@@ -122,7 +121,7 @@
     text-align: center;
   }
 
-  .card-m{
+  .card-m {
     position: relative;
     overflow: hidden;
     border-radius: 12px;
@@ -146,31 +145,32 @@
     text-align: center;
   }
 
-  .card-bpt-r{
+  .card-bpt-r {
     display: flex;
     flex-direction: column;
     width: 50%;
-    gap:10px;
+    gap: 10px;
   }
-  
-   @media (max-width: 768px) {
+
+  @media (max-width: 768px) {
     .full-span {
       width: 50%;
-      font-size:30px;
+      font-size: 30px;
+      flex: auto;
     }
-    .pc{
-      display:none;
+    .pc {
+      display: none;
     }
-    .mobile{
-      display:block
+    .mobile {
+      display: block;
     }
-    .card-top{
-      height:130px
+    .card-top {
+      height: 130px;
     }
     .card-bot {
-      height:230px
+      height: 230px;
     }
-  } 
+  }
 </style>
 
 {% schema %}
@@ -200,9 +200,9 @@
       "default": "Title1"
     },
     {
-      "type":"image_picker",
+      "type": "image_picker",
       "id": "image_1",
-      "label": "Image 1",
+      "label": "Image 1"
     },
     {
       "type": "text",
@@ -211,9 +211,9 @@
       "default": "Title2"
     },
     {
-      "type":"image_picker",
+      "type": "image_picker",
       "id": "image_2",
-      "label": "Image 2",
+      "label": "Image 2"
     },
     {
       "type": "text",
@@ -222,9 +222,9 @@
       "default": "Title3"
     },
     {
-      "type":"image_picker",
+      "type": "image_picker",
       "id": "image_3",
-      "label": "Image 3",
+      "label": "Image 3"
     },
     {
       "type": "text",
@@ -233,9 +233,9 @@
       "default": "Title4"
     },
     {
-      "type":"image_picker",
+      "type": "image_picker",
       "id": "image_4",
-      "label": "Image 4",
+      "label": "Image 4"
     }
   ],
   "presets": [
