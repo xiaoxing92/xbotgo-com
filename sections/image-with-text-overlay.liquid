@@ -1,5 +1,6 @@
 <image-with-text-overlay id="section-id-{{ section.id }}">
   {% style %} 
+  
     {%- if section.settings.height == 'fixed' %}
       #section-id-{{ section.id }} .height--fixed {
         --image-height: {{ section.settings.height_mobile }}px;
@@ -57,6 +58,19 @@
         }
       {% endif %}
     {%- endfor -%}
+
+    @media (max-width: 768px) {
+      .text-overlay__inner{
+        display: flex;
+        justify-content: center;
+      }
+      /* .text-overlay .text-overlay__title{
+        width:55%;
+      }
+      .text-overlay__title{
+        margin-right: unset !important;
+      } */
+    }
   {% endstyle %}
 
   {%- unless section.settings.full_width -%}<div class="container container--not-mobile fully-spaced-row--medium fully-spaced-row--not-mobile">{%- endunless -%}

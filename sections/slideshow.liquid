@@ -74,6 +74,13 @@
       }
       {%- endfor -%}
     }
+
+    @media (max-width: 768px) {
+      .mb-text {
+        font-size: 21px;
+      }
+    }
+
   {% endstyle %}
 
   {%- unless section.settings.full_width -%}
@@ -186,7 +193,7 @@
                   {%- endif -%}
                   {%- if block.settings.text != blank -%}
                     <div class="text-overlay__reveal">
-                      <div class="text-overlay__rte rte {% if block.settings.enlarge_text %}large-text{% endif %} has-motion">
+                      <div class="mb-text text-overlay__rte rte {% if block.settings.enlarge_text %}large-text{% endif %} has-motion">
                         {{ block.settings.text }}
                       </div>
                     </div>
