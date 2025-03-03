@@ -1023,7 +1023,8 @@
         "heading_TebiVq"
       ],
       "custom_css": [
-        ".text-overlay__text {color: #000;}"
+        ".text-overlay__text {color: #000;}",
+        "@media (max-width: 768px) {.text-overlay__text{display: flex; justify-content: center; }}"
       ],
       "settings": {
         "image": "shopify://shop_images/pc_498766be-7593-4a9b-b42e-ba92b4e0f6d5.png",
