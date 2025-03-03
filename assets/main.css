@@ -641,10 +641,10 @@ input[type=button] {
 .js body:not(.tab-used) *:focus {
   outline: none;
 }
-
+/* 
 [hidden] {
   display: none !important;
-}
+} */
 
 @media (prefers-reduced-motion) {
   .has-motion {
@@ -3663,6 +3663,7 @@ shopify-payment-terms {
 
 .product-form .input-row,
 .buy-buttons-row {
+
   margin: 25px 0;
   clear: both;
 }
@@ -3734,13 +3735,28 @@ shopify-payment-terms {
   margin-bottom: 0;
 }
 .product-form .quantity-submit-row .quantity-submit-row__submit {
+  display: flex;
   margin-top: 32px;
   margin-bottom: 25px;
+  justify-content: space-between;
 }
 .product-form .quantity-submit-row .quantity-submit-row__submit button[type=submit] {
   linear-gradient( to right, #b11e23, #ea9e1f );
   box-sizing: border-box;
-  width: 100%;
+  width:48%;
+}
+
+.checkout-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#000000;
+  box-sizing: border-box;
+  width:48%;
+  border-radius: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
 }
 
 .product-form .quantity-submit-row.has-spb .btn {
@@ -9950,12 +9966,25 @@ html:not(.js) .js-only {
   align-content: center;
   height: 215px;
 }
+
 .cross-page-promos a {
   display: block;
 }
 .cross-page-promos .heading-font {
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .cross-page-promos {
+    height:auto;
+    background:transparent;
+  }
+  .cross-page-promos .heading-font{
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
 
 .selectors-form__item {
   display: inline-block;

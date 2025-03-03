@@ -34,9 +34,9 @@ if (!customElements.get('sticky-atc')) {
         this.priceRef = document.querySelector('.price__default');
         this.imageContainer = this.querySelector('.sticky-atc__image');
         this.variantContainer = this.querySelector('.sticky-atc__details__variant');
-        this.variantTitle = this.querySelector('.sticky-atc__details__variant__title');
+        this.variantTitle = this.querySelectorAll('.sticky-atc__details__variant__title');
         this.variantInfo = this.querySelector('.sticky-atc__details__variant__info');
-        this.variantTitle?.toggleAttribute('hidden', !this.section.querySelector('variant-picker'));
+        //this.variantTitle?.toggleAttribute('hidden', !this.section.querySelector('variant-picker'));
         // this.currentPrice = document.querySelector(".current-price")
         // this.originalPrice = document.querySelector(".original-price")
 
@@ -142,6 +142,8 @@ if (!customElements.get('sticky-atc')) {
        * @param {Event} evt - Variant change event dispatched by variant-picker.
        */
       onVariantChange(evt) {
+
+        console.log(evt,"======")
         const idInput = this.form?.querySelector('[name="id"]');
         const parentElement = document.getElementById("variant-selector"); // 通过 ID 获取父元素
         const allChildren = parentElement.querySelectorAll(".opt-label__left"); // 
@@ -156,7 +158,7 @@ if (!customElements.get('sticky-atc')) {
         }
         for (const el of this.currentPrice) {
           el.textContent = `${Symbol}${this.formatCurrency(evt.detail.variant.price)}`
-      }
+        }
 
 
 
@@ -168,12 +170,16 @@ if (!customElements.get('sticky-atc')) {
         }
 
         if (evt.detail.variant) {
-          this.variantTitle.textContent = evt.detail.variant.option1;
+          for (const el of this.variantTitle) {
+            el.textContent = evt.detail.variant.option1;
+          }
           this.variantContainer.hidden = false;
           if (idInput) idInput.value = evt.detail.variant.id;
         } else {
           this.variantContainer.hidden = true;
-          this.variantTitle.textContent = '';
+          for (const el of this.variantTitle) {
+            el.textContent = ''
+          }
           if (idInput) idInput.value = '';
         }
 

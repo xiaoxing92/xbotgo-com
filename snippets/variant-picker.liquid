@@ -16,7 +16,7 @@
 {%- unless product.has_only_default_variant -%}
   {%- if product.variants.size > 1 or block.settings.show_single -%}
     <script src='{{ 'variant-picker.js' | asset_url }}' defer></script>
-
+    
     {%- if block.settings.selector_style == 'dropdown' -%}
       <script src='{{ 'custom-select.js' | asset_url }}' defer></script>
     {%- endif -%}
@@ -166,7 +166,6 @@
                 {% assign option_key = 'option' | append: option_position %}
 
                 {% assign variant_details = product.variants | where: option_key, value %}
-
                 {% if option.name == 'Bundle' %}
                   <!-- Bundle 保持原有图片按钮样式 -->
                   <input
@@ -226,8 +225,10 @@
                       {% if option.selected_value == value %} checked{% endif %}
                     {% endif %}
                   >
+                    
                   <label class='opt-label opt-labels opt-label--color' for='{{ option_id }}-opt-{{ value_index0 }}'>
                     {% assign color_variant = variant_details.first %}
+      
                     {% if color_variant %}
                       <div class='color-image'>
                         {% render 'image',

@@ -584,13 +584,18 @@
                           {{- 'products.variant.no_stock' | t -}}
                         {%- endif -%}
                       </button>
+
+                      <a class="checkout-btn" href="/checkout">Buy now</a>
                     </div>
+
+
+
                     {% if enable_dynamic_payment_button %}
                       <script class='dynamic-payment-button-template' type='text/template'>
                         {{ form | payment_button }}
                       </script>
                     {% endif %}
-
+              
                     {% if block.settings.show_backorder_text %}
                       {% render 'backorder', product: product, variant: current_variant %}
                     {% endif %}
