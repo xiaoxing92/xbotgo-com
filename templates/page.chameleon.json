@@ -376,7 +376,7 @@
         "heading_NdJBFg"
       ],
       "custom_css": [
-        ".h1 {background: linear-gradient(to right, #facc22, #F83600); -webkit-background-clip: text; color: transparent; font-size: 50px;}",
+        ".h1 {background: linear-gradient(to right, #facc22, #f83600); -webkit-background-clip: text; color: transparent; font-size: 50px;}",
         "@media (max-width: 767px) {.h1 {align-content: left; font-size: 20px; } .fully-spaced-row--medium {margin-top: 10px; margin-bottom: 10px; } .h1 {font-size: 30px; }}"
       ],
       "settings": {
@@ -1013,7 +1013,7 @@
           "settings": {
             "title": "Apple Watch & Remote Control",
             "heading_max_width": 18,
-            "title_size": 40,
+            "title_size": 38,
             "title_size_mobile": 20,
             "use_h1": false
           }
