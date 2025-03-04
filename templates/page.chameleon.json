@@ -1024,6 +1024,7 @@
       ],
       "custom_css": [
         ".text-overlay__text {color: #000;}",
+        ".text-overlay--for-banner .text-overlay__inner{padding:30px;}",
         "@media (max-width: 768px) {.text-overlay__text {display: flex; justify-content: center; } .text-overlay .text-overlay__title {width: 55%; margin-right: unset; }}"
       ],
       "settings": {
