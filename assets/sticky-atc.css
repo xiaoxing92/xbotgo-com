@@ -28,6 +28,8 @@
   margin-left: auto;
   padding-right: var(--container-pad-x);
   padding-left: var(--container-pad-x);
+  /* padding-right: 60px;
+  padding-left:  60px; */
 }
 .price-info{
   display:flex;
@@ -122,6 +124,9 @@
 .sticky-atc-pc{
   display: flex;
   justify-content: space-between;
+  min-height: 50px;
+  overflow: hidden;
+  align-items: center;
 }
 
 .sticky-atc-mobile{
@@ -132,6 +137,7 @@
 .sticky-atc__buttons{
   display: flex;
   align-items: center;
+  padding-right: 10px;
 }
 /* Pc 样式*/
 @media (min-width: 768px) {
@@ -168,6 +174,9 @@
 
 /* Mobile 样式*/
 @media (max-width: 767.98px) {
+  .sticky-atc__buttons{
+    padding-right:0;
+  }
   .sticky-atc-pc{
     display:none;
   }

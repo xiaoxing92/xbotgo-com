@@ -530,8 +530,8 @@ table {
     flex: 0 1 var(--reading-container-width);
   }
   .feature-text-paired {
-    margin-right: 15%;
-    margin-left: 15%;
+    margin-right: 20px;
+    margin-left: 30px;
   }
   .feature-text-paired-wide {
     margin: 30px auto;
@@ -3663,8 +3663,7 @@ shopify-payment-terms {
 
 .product-form .input-row,
 .buy-buttons-row {
-
-  margin: 25px 0;
+  margin: 20px 0;
   clear: both;
 }
 
@@ -3737,7 +3736,7 @@ shopify-payment-terms {
 .product-form .quantity-submit-row .quantity-submit-row__submit {
   display: flex;
   margin-top: 32px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   justify-content: space-between;
 }
 .product-form .quantity-submit-row .quantity-submit-row__submit button[type=submit] {
@@ -10670,7 +10669,7 @@ model-viewer .container {
 }
 .flexible-layout.valign-middle > .column,
 .fixed-layout.valign-middle > .column {
-  align-self: center;
+  /* align-self: center; */
 }
 .flexible-layout.valign-bottom > .column,
 .fixed-layout.valign-bottom > .column {

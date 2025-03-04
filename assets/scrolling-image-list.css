@@ -78,6 +78,12 @@
   transition: all 250ms ease;
 }
 
+.scrolling-image-list__content-area{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
 @media (max-width: 767.98px) {
   .scrolling-image-list {
     --larger-section-padding-mobile: 20px;
