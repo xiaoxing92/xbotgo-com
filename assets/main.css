@@ -10764,7 +10764,7 @@ model-viewer .container {
 }
 @media (max-width: 767.98px) {
   .flexible-layout {
-    flex-direction: column;
+    /* flex-direction: column; */
     margin-bottom: 0;
     margin-left: auto;
   }
