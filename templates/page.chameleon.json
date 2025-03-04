@@ -107,7 +107,7 @@
             "title": "Auto Track & Record Sports",
             "heading_max_width": 15,
             "title_size": 46,
-            "title_size_mobile": 42,
+            "title_size_mobile": 20,
             "use_h1": false,
             "text": "<p>Capture Your Every Play</p>",
             "enlarge_text": true,
@@ -150,7 +150,7 @@
       "custom_css": [
         ".text-overlay {position: relative; top: 5%; left: 5%; font-size: 23px;}",
         ".btn {background: linear-gradient(to right, #f27b00, #ca251d); width: 160px; text-align: center; font-size: 14px; border: 1px solid; border-radius: 20px; top: 65%; left: 10%; position: rerelative;}",
-        "@media (max-width: 767px) {.text-overlay {top: -30%; left: 0; font-size: 13px; align-items: center; position: fixed; } .btn {display: flex; align-items: center; justify-content: center; width: 113px; height: 30px; text-align: center; font-size: 13px; position: relative; left: 0; }}"
+        "@media (max-width: 767px) {.text-overlay {top: -30%; left: 0; font-size: 13px; align-items: center; position: fixed; } .btn {width: 130px; text-align: center; font-size: 14px; position: relative; left: 0; } .text-overlay__text {display: flex; flex-direction: column; align-items: center; }}"
       ],
       "settings": {
         "show_sticky_banner": true,
