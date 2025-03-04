@@ -652,7 +652,7 @@
     "stream_layout_Gbz3Hx": {
       "type": "stream-layout",
       "custom_css": [
-        "@media (max-width: 767.98px) {.pad20{font-size:11px }}"
+        "@media (max-width: 767.98px) {.description {font-size: 11px; }}"
       ],
       "settings": {
         "image_left_top": "shopify://shop_images/120.png",
