@@ -3755,7 +3755,7 @@ shopify-payment-terms {
   --btn-border-hover-color: var(--btn-alt-border-hover-color);
   box-sizing: border-box;
   width: 100%;
-  min-height: 48px;
+  min-height: 44px;
 }
 .customize-btn{
   background:linear-gradient(to right, #BE3F2A, #E07D30);
