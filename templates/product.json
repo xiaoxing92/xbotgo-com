@@ -222,7 +222,20 @@
     },
     "image_with_text_r4tdT7": {
       "type": "image-with-text",
+      "blocks": {
+        "text_cRFWFV": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Protect Your Investment with XbotGo’s One-Year Warranty</strong></p><p>Our One-Year Warranty offers comprehensive coverage for your XbotGo Sports Gimbal Stabilizer or XbotGo Chameleon.</p><p><br/></p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "text_cRFWFV"
+      ],
       "settings": {
+        "image": "shopify://shop_images/Team_tracking_1.webp",
         "image_2": "shopify://shop_images/xbotgo_homepage_record_1.jpg",
         "image_width": 700,
         "image_link": "",
