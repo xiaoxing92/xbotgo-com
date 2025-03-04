@@ -614,11 +614,7 @@
 
                     {% if enable_dynamic_payment_button %}
                       <script class="dynamic-payment-button-template" type="text/template">
-                        {
-                          {
-                            form | payment_button;
-                          }
-                        }
+                        {{  form | payment_button }}
                       </script>
                     {% endif %}
 
