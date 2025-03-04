@@ -589,7 +589,7 @@
         "video_description": "",
         "placeholder_image": "shopify://shop_images/f9125fe25da9fa2b155c3009b55ee438.png",
         "text_alignment": "center left",
-        "full_width": true,
+        "full_width": false,
         "overlay_style": "shadow"
       }
     },
