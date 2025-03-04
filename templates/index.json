@@ -1091,7 +1091,10 @@
         "1478526647261",
         "1478526645605"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".container {display: flex; align-items: center; height: 215px;}",
+        "@media (max-width: 768px) {.container {background: transparent; align-items: unset; height: auto; } .heading-font {font-size: 13px; text-align: center; }}"
+      ],
       "settings": {
         "cross_page_promo_bg": "#f1f1f1",
         "cross_page_promo_color": "#202223",
