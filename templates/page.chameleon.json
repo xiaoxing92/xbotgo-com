@@ -500,7 +500,7 @@
         ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent; font-size: 30px;}",
         ".block {border-radius: 2px; overflow: hidden;}",
         ".scrolling-image-list-dots {display: none;}",
-        "@media (max-width: 768px) {.scrolling-image-list__image {display: flex; flex-direction: column-reverse; } .video-section {border-radius: 10px; overflow: hidden; }}"
+        "@media (max-width: 768px) {.h2 {font-size: 25px; } .scrolling-image-list__image {display: flex; flex-direction: column-reverse; } .video-section {border-radius: 10px; overflow: hidden; }}"
       ],
       "settings": {
         "heading": "",
@@ -542,7 +542,7 @@
       "custom_css": [
         ".h2 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent; font-size: 30px;}",
         ".scrolling-image-list-dots {display: none;}",
-        "@media (max-width: 768px) {.scrolling-image-list__image {display: flex; flex-direction: column-reverse; } .video-section {border-radius: 10px; overflow: hidden; }}"
+        "@media (max-width: 768px) {.h2 {font-size: 25px; } .scrolling-image-list__image {display: flex; flex-direction: column-reverse; } .video-section {border-radius: 10px; overflow: hidden; }}"
       ],
       "settings": {
         "heading": "",
@@ -561,7 +561,7 @@
             "title": "Capture, Edit, Share",
             "heading_max_width": 15,
             "title_size": 40,
-            "title_size_mobile": 24,
+            "title_size_mobile": 26,
             "use_h1": false
           }
         },
@@ -638,7 +638,7 @@
       "custom_css": [
         ".hometitle {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent; font-size: 50px;}",
         ".theme-img {border-radius: 25px;}",
-        "@media (max-width: 767px) {.text-column {font-size: 11px; } .hometitle {font-size: 24px; text-align: left; }}"
+        "@media (max-width: 767px) {.text-column {font-size: 11px; } .hometitle {font-size: 25px; text-align: left; }}"
       ],
       "settings": {
         "title": "Our Advantages",
