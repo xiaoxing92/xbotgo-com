@@ -188,6 +188,7 @@
     display:flex;
   }
   .price-info{
+    height:auto;
     flex-direction: unset;
   }
   .sticky-atc__details {
