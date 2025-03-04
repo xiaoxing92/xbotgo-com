@@ -178,7 +178,6 @@
         },
         "complementary_xdJKmW": {
           "type": "complementary",
-          "disabled": true,
           "settings": {
             "heading": "Pairs well with",
             "enable_carousel": true,
@@ -195,7 +194,7 @@
         "richtext_Q4zcbr": {
           "type": "richtext",
           "settings": {
-            "richtext": "<p>Download XbotGo Chameleon User Manua <a href=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/Chameleon_Manual.pdf?v=1725869756\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/Chameleon_Manual.pdf?v=1725869756\">Here</a></p>",
+            "richtext": "<p>Download XbotGo Chameleon User Manual <a href=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/Chameleon_Manual.pdf?v=1725869756\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/Chameleon_Manual.pdf?v=1725869756\">Here</a></p>",
             "icon": "",
             "icon_size": "small",
             "enable_box": false,
