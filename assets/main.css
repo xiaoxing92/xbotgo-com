@@ -3404,7 +3404,7 @@ body:not(.reveal-mobile-nav) .mobile-navigation-drawer .mobile-navigation-drawer
     justify-content: flex-start;
     width: 44px;
     height: 44px;
-    margin: 0;
+    margin-left: 10px;
   }
 }
 
