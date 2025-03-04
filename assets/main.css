@@ -10046,8 +10046,8 @@ ul.inline li {
 }
 
 .article-list .article:first-child {
-  padding-top: 20px;
-  border-top: none;
+  /* padding-top: 20px;
+  border-top: none; */
 }
 
 @media (min-width: 768px) {
