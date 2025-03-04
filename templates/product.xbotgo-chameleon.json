@@ -101,7 +101,7 @@
         "custom_liquid_YwxGWQ": {
           "type": "custom-liquid",
           "settings": {
-            "custom_liquid": "<style>\n.tips-box{\npadding:18px 8px;\nbackground: #F2F2F2;\nborder-radius: 1px 1px 1px 1px;\n}\n</style>\n<div class=\"tips-box\">\n<li>Auto Track & Record 20+Sports.</li>\n<li>Revolutionary 4k Video Quality</li>\n<li>Al-powered Editing & Streaming</li>\n<li>Portable & Easy to Set Up</li>\n<li>Extended 8H Battery Life</li>\n</div>",
+            "custom_liquid": "<style>\n.tips-box{\npadding:18px 8px;\nbackground: #F2F2F2;\nborder-radius: 1px 1px 1px 1px;\n}\n</style>\n<div class=\"tips-box\">\n<li>Auto Track & Record 20+Sports</li>\n<li>Revolutionary 4k Video Quality</li>\n<li>Al-powered Editing & Streaming</li>\n<li>Portable & Easy to Set Up</li>\n<li>Extended 8-Hour Battery Life</li>\n</div>",
             "show_in_quickbuy": false
           }
         },
