@@ -202,6 +202,7 @@
         "card_block_nYWq8y": {
           "type": "card_block",
           "settings": {
+            "cover": "shopify://shop_images/gimbal_tracking.png",
             "title": "XbotGo Gimbal -- AI Camera System for sports video",
             "subtitle": "CES2025"
           }
