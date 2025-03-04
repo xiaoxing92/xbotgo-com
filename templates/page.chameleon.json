@@ -581,7 +581,7 @@
         ".video-section__play-btn {display: none;}",
         ".text-overlay__text {top: 50%;}",
         ".text-overlay__rte {width: 450px; font-size: 15px;}",
-        "@media (max-width: 768px) {.h1 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent; font-size: 30px; } .height--adapt {height: 300px; } .text-overlay {font-size: 11px; position:absolute; top: -470px; } .text-overlay--for-banner .text-overlay__inner {padding: 0; } .text-overlay__rte {width: 100%; } .image-overlay {overflow: unset; } .container {margin-top: 200px; }}"
+        "@media (max-width: 768px) {.h1 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent; font-size: 30px; } .height--adapt {height: 300px; } .text-overlay {font-size: 11px; position: absolute; top: -470px; } .text-overlay--for-banner .text-overlay__inner {padding: 0; } .text-overlay__rte {width: 100%; } .image-overlay {overflow: unset; } .container {margin-top: 200px; }}"
       ],
       "settings": {
         "video_shopify": "shopify://files/videos/版位14直播&amp;云存储功能素材2.mp4",
@@ -651,12 +651,15 @@
     },
     "stream_layout_Gbz3Hx": {
       "type": "stream-layout",
+      "custom_css": [
+        "@media (max-width: 767.98px) {.pad20{font-size:11px }}"
+      ],
       "settings": {
         "image_left_top": "shopify://shop_images/120.png",
         "text_left_top": "<p><strong>Ultra-wide 120°(FOV)</strong></p><p>Best-in-class sports recorder with 120° ultra-wide FOV . Capture every angle with precision for perfect game coverage.</p>",
         "image_left_bot": "shopify://shop_images/8h.png",
         "text_left_bot": "<p><strong>AI Processor and 8 hours Stand by</strong></p><p>The Chameleon’s massive 6000 mAh battery delivers up to 8 hours of recording time—keeping you in the game longer than ever!</p>",
-        "subheading": "XbotGo <br>Chameleon",
+        "subheading": "XbotGo Chameleon",
         "image_right_top": "shopify://shop_images/360.png",
         "text_right_top": "<p><strong>360° Panoramic Tracking</strong></p><p>With its cutting-edge industrial and mechanical design, our latest innovation brings you the remarkable ability to achieve seamless 360° Panoramic Tracking.</p>",
         "background_image": "shopify://shop_images/118.png"
