@@ -37,7 +37,7 @@
         "image_nphU7G"
       ],
       "custom_css": [
-        ".btn {background: linear-gradient(to right, #df7b30 0%, #bf412a 100%); width: 160px; text-align: center; font-size: 12px; border: 1px solid; border-radius: 20px;}",
+        ".btn {background: linear-gradient(to right, #df7b30 0%, #bf412a 100%); width: 160px; text-align: center; font-size: 12px; border: 1px solid; border-radius: 20px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}",
         "@media (max-width: 767px) {.btn {width: 150px; text-align: center; font-size: 14px; position: relative; left: 0; }}"
       ],
       "settings": {
