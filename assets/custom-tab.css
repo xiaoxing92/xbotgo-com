@@ -109,6 +109,10 @@
         align-items: center;
         width: 100%;
     }
+
+    .tab-content-container {
+        height: auto;
+    }
     
     /* .tab-title {
         text-align: center;
