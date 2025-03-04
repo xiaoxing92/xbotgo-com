@@ -8,6 +8,7 @@
   z-index: 10;
   visibility: visible;
   width: 100%;
+  height:65px;
   display: flex;
   align-items: center;
   /* padding: var(--gutter-content) var(--container-pad-x) calc(var(--gutter-content) + env(safe-area-inset-bottom, 0px) * 1.5); */

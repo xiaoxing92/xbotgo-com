@@ -78,7 +78,7 @@
             hidden
           {% endunless %}
         >
-          <span class="sticky-atc__details__variant__title">{{ current_variant.title }}</span>
+          <span class="sticky-atc__details__variant__title">{{ current_variant.title  | split: ' / ' | first }}</span>
         </div>
       </div>
     </div>
