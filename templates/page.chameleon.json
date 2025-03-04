@@ -580,7 +580,8 @@
       "custom_css": [
         ".video-section__play-btn {display: none;}",
         ".text-overlay__text {top: 50%;}",
-        ".text-overlay__rte {width: 450px; font-size:15px;}",
+        ".text-overlay__rte {width: 450px; font-size: 15px;}",
+        ".image-overlay {overflow:unset;}",
         "@media (max-width: 768px) {.h1 {background: linear-gradient(to right, #f27b00, #ca251d); -webkit-background-clip: text; color: transparent; font-size: 30px; } .height--adapt {height: 300px; } .text-overlay {font-size: 11px; } .text-overlay--for-banner .text-overlay__inner {padding: 0; } .text-overlay__rte {width: 100%; } .image-overlay {overflow: unset; } .container {margin-top: 200px; }}"
       ],
       "settings": {
