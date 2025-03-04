@@ -93,7 +93,6 @@
   font-size: 16px;
   color: #696969;
   margin-top:10px;
-  display:none;
 }
 
 .sticky-atc__details__variant__sep {
@@ -190,6 +189,7 @@
   }
   .original-price{
     font-size:11px;
+    margin-left: 10px;
   }
   
 }

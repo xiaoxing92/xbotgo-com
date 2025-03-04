@@ -9546,10 +9546,14 @@ carousel-slider[inactive] .slider-nav__btn {
   align-items: center;
   padding: 0px 20px;
   position: relative;
-  width: 156px;
-  height: 59px;
+  width: 140px;
+  height: 45px;
   border-radius: 29px;
   border: 1px solid #DDDEDF;
+}
+.icon-minus,.icon-plus {
+  width:13px;
+  height:13px;
 }
 .quantity-wrapper a {
   /* box-sizing: border-box;
@@ -9578,7 +9582,7 @@ carousel-slider[inactive] .slider-nav__btn {
 }
 .quantity-wrapper input[name=quantity] {
   width: 48px;
-  height: 48px;
+  height: 100%;
   padding: 0;
   text-align: center;
 }
