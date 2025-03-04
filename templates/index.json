@@ -1096,7 +1096,7 @@
       ],
       "custom_css": [
         ".container {display: flex; align-items: center; justify-content: center; height: 215px;}",
-        "@media (max-width: 768px) {.container {background: transparent; align-items: unset; height: auto; } .heading-font {font-size: 13px; text-align: center; }}"
+        "@media (max-width: 768px) {.container {background: transparent; align-items: unset; height: auto; } .heading-font {font-size: 13px; text-align: center; } .flexible-layout {margin-left: unset; }}"
       ],
       "settings": {
         "cross_page_promo_bg": "#f1f1f1",
