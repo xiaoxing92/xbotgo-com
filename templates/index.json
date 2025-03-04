@@ -1092,7 +1092,7 @@
         "1478526645605"
       ],
       "custom_css": [
-        ".container {display: flex; align-items: center; height: 215px;}",
+        ".container {display: flex; align-items: center; justify-content: center; height: 215px;}",
         "@media (max-width: 768px) {.container {background: transparent; align-items: unset; height: auto; } .heading-font {font-size: 13px; text-align: center; }}"
       ],
       "settings": {
