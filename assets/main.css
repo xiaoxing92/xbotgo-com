@@ -10669,7 +10669,7 @@ model-viewer .container {
 }
 .flexible-layout.valign-middle > .column,
 .fixed-layout.valign-middle > .column {
-  /* align-self: center; */
+  align-self: center;
 }
 .flexible-layout.valign-bottom > .column,
 .fixed-layout.valign-bottom > .column {
@@ -10943,9 +10943,9 @@ model-viewer .container {
 }
 /* Phone sizes typically start here */
 @media only screen and (max-width: 767.98px) {
-  /* .desktop-only {
+  .desktop-only {
     display: none !important;
-  } */
+  }
   /* iOS zoom workaround */
   input,
 select,
