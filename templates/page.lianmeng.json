@@ -115,6 +115,14 @@
         "code": "<style>\n    .wrapper {\n      display: flex;\n      justify-content: space-between;\n      padding: 40px 20px;\n    }\n    .card {\n      width: 30%;\n      text-align: center;\n      border-radius: 10px;\n    }\n    .card img {\n      width: 50px;\n      height: 50px;\n    }\n    .card .headline {\n        font-family: Poppins, Poppins;\n        font-weight: bold;\n        font-size: 30px;\n        color: #000000;\n        line-height: 38px;\n    }\n    .card .sub-text {\n        font-family: Poppins, Poppins;\n        font-weight: 400;\n        font-size: 15px;\n        color: #000000;\n    }\n  </style>\n<div class=\"wrapper\">\n  <div class=\"card\">\n    <img src=\"https://via.placeholder.com/50\" alt=\"Join for Free\">\n    <div class=\"headline\">Join for Free & Start Earning</div>\n    <p class=\"sub-text\">Signing up is quick, easy, and completely free. Simply register to get your exclusive referral link and coupon.</p>\n  </div>\n  <div class=\"card\">\n    <img src=\"https://via.placeholder.com/50\" alt=\"10% Commission\">\n    <div class=\"headline\">10% Average Commission</div>\n    <p class=\"sub-text\">Signing up is quick, easy, and completely free. Simply register to get your exclusive referral link and coupon.</p>\n  </div>\n  <div class=\"card\">\n    <img src=\"https://via.placeholder.com/50\" alt=\"Promote XbotGo\">\n    <div class=\"headline\">Promote XbotGo</div>\n    <p class=\"sub-text\">Signing up is quick, easy, and completely free. Simply register to get your exclusive referral link and coupon.</p>\n  </div>\n</div>"
       }
     },
+    "custom_liquid_4mEUJe": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "show_space": true,
+        "code": "<style>\n         .mid-banner {\n            width: 1050px;\n            height: 170px;\n            background: #F6F6F3;\n            border-radius: 85px 85px 85px 85px;\n        }\n\n        .r-button {\n            width: 171px;\n            height: 47px;\n            background: linear-gradient(to right, #f27b00, #ca251d);\n            border-radius: 23px 23px 23px 23px;            \n        }\n        .mid-title{\n            font-weight: bold;\n            font-size: 15px;\n            color: #030301;\n            line-height: 19px;\n        }\n        .sub-title{\n            font-weight: 400;\n            font-size: 10px;\n            color: #030301;\n            line-height: 19px;\n        }\n</style>\n    <div class=\"mid-banner\">\n        <div class=\"mid-left\">\n            <div></div>\n            <div class=\"mid-text\">\n                <p class=\"mid-title\">It's free and easy to join XbotGo.</p>\n                <p class=\"sub-title\">Simply register and get your exclusive referral link and coupon</p>\n            </div>\n        </div>\n        <button class=\"r-button\">\n            Register now\n        </button>\n\n    </div>"
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -128,6 +136,7 @@
     "slideshow_EVPEC8",
     "slideshow_UhCQn6",
     "custom_liquid_RCNFwk",
+    "custom_liquid_4mEUJe",
     "main"
   ]
 }
