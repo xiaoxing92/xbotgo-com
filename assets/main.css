@@ -9950,12 +9950,12 @@ html:not(.js) .js-only {
 .cross-page-promos {
   --heading-color: var(--text-color);
   --link-color: var(--text-color);
-  /* padding-top: 20px; */
-  /* padding-bottom: 20px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
   background: var(--bg-color);
   color: var(--text-color);
   align-content: center;
-  height: 215px;
+  /* height: 215px; */
 }
 
 .cross-page-promos a {
@@ -9964,7 +9964,7 @@ html:not(.js) .js-only {
 .cross-page-promos .heading-font {
   margin: 0;
 }
-
+/* 
 @media (max-width: 768px) {
   .cross-page-promos {
     height:auto;
@@ -9974,7 +9974,7 @@ html:not(.js) .js-only {
     font-size: 13px;
     text-align: center;
   }
-}
+} */
 
 
 .selectors-form__item {
