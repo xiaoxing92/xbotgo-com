@@ -377,7 +377,7 @@
       ],
       "custom_css": [
         ".h1 {background: linear-gradient(to right, #facc22, #f83600); -webkit-background-clip: text; color: transparent; font-size: 50px;}",
-        "@media (max-width: 767px) {.h1 {align-content: left; font-size: 20px; } .fully-spaced-row--medium {margin-top: 10px; margin-bottom: 10px; } .h1 {font-size: 30px; }}"
+        "@media (max-width: 767px) {.h1 {align-content: left; font-size: 25px; } .fully-spaced-row--medium {margin-top: 10px; margin-bottom: 10px; }}"
       ],
       "settings": {
         "height": "medium",
