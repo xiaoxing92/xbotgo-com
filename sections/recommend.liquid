@@ -6,7 +6,7 @@
     </h2>
   {% endif %}
 
-  <div class="container recommend-container">
+  <div class="recommend-container">
     {% for block in section.blocks %}
       <div class="card-item">
         <div class="item-head">
@@ -97,7 +97,7 @@
     box-sizing: border-box;
     text-align: center;
     min-width: 0;
-    height:488px;
+    {% comment %} height:488px; {% endcomment %}
     background:#F5F5F7;
     border-radius: 15px;
   }
