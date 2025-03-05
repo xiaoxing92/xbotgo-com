@@ -309,6 +309,9 @@
     class="detail product-column-right"
     {%- render 'animation-attrs', attrs: 'data-cc-animate data-cc-animate-delay="0.2s"' -%}
   >
+  
+    {% assign my_variable =   block.settings.star_rating %}
+  {% assign my_number =   my_variable| plus: 0 %}
     <div
       class="product-form{% if section.settings.enable_sticky_columns %} sticky-content-container{% endif %}"
       data-ajax-add-to-cart="true"
@@ -342,7 +345,7 @@
                   </span>
                   <span class="cc-rating-stars--active">
                     {%- liquid
-                      for i in (1..block.settings.star_rating)
+                      for i in (1..my_number)
                         render 'rating-star-icon'
                       endfor
                     -%}
