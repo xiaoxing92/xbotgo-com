@@ -309,9 +309,6 @@
     class="detail product-column-right"
     {%- render 'animation-attrs', attrs: 'data-cc-animate data-cc-animate-delay="0.2s"' -%}
   >
-  
-    {% assign my_variable =   block.settings.star_rating %}
-  {% assign my_number =   my_variable| plus: 0 %}
     <div
       class="product-form{% if section.settings.enable_sticky_columns %} sticky-content-container{% endif %}"
       data-ajax-add-to-cart="true"
@@ -345,7 +342,7 @@
                   </span>
                   <span class="cc-rating-stars--active">
                     {%- liquid
-                      for i in (1..my_number)
+                      for i in (1..block.settings.star_rating)
                         render 'rating-star-icon'
                       endfor
                     -%}
@@ -3077,10 +3074,13 @@
       "name": "Rating",
       "settings": [
         {
-          "type": "text",
+          "type": "range",
           "id": "star_rating",
+          "min": 0,
+          "max": 5,
+          "step": 1,
           "label": "Rating",
-          "default": "5"
+          "default": 5
         },
         {
           "type": "text",
