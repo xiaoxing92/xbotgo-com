@@ -1029,24 +1029,6 @@
               </div>
             {% endif %}
 
-          {% when 'custom-liquid' %}
-            {% if block.settings.custom_liquid != blank %}
-              <div
-                class="lightly-spaced-row{% unless block.settings.show_in_quickbuy %} not-in-quickbuy{% endunless %}"
-                {{ block.shopify_attributes }}
-              >
-                {{ block.settings.custom_liquid }}
-              </div>
-            {% endif %}
-
-          <div class="pay-your-block">
-            <span class="pay-your-title">Pay your way</span>
-            <div class="pay-icon-block">
-              {% for type in shop.enabled_payment_types %}
-                {{ type | payment_type_svg_tag: class: 'section-footer__payment-icon' }}
-              {% endfor %}
-            </div>
-          </div>
 
           {% when 'complementary' %}
             <cc-fetched-content
@@ -1199,8 +1181,27 @@
                 label_right: block.settings.label_right
               %}
             </div>
+          {% when 'custom-liquid' %}
+            {% if block.settings.custom_liquid != blank %}
+              <div
+                class="lightly-spaced-row{% unless block.settings.show_in_quickbuy %} not-in-quickbuy{% endunless %}"
+                {{ block.shopify_attributes }}
+              >
+                {{ block.settings.custom_liquid }}
+              </div>
+            {% endif %}
         {% endcase %}
       {% endfor %}
+
+
+      <div class="pay-your-block">
+        <span class="pay-your-title">Pay your way</span>
+        <div class="pay-icon-block">
+          {% for type in shop.enabled_payment_types %}
+            {{ type | payment_type_svg_tag: class: 'section-footer__payment-icon' }}
+          {% endfor %}
+        </div>
+      </div>
 
       <div class="lightish-spaced-row-above only-in-quickbuy">
         <a class="more" href="{{ product.url }}">
