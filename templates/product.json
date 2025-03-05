@@ -19,14 +19,20 @@
         "price": {
           "type": "price",
           "settings": {
-            "show_tax_and_shipping": true,
-            "enable_product_reviews_by_price": true
+            "show_tax_and_shipping": true
           }
         },
         "divider": {
           "type": "divider",
           "disabled": true,
           "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "custom_liquid_4wnGt8": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "<style>\n.tips-box{\npadding:18px 8px;\nbackground: #F2F2F2;\nborder-radius: 1px 1px 1px 1px;\n}\n</style>\n<div class=\"tips-box\">\n<li>Auto Track & Record 20+Sports</li>\n<li>Revolutionary 4k Video Quality</li>\n<li>Al-powered Editing & Streaming</li>\n<li>Portable & Easy to Set Up</li>\n<li>Extended 8-Hour Battery Life</li>\n</div>",
             "show_in_quickbuy": false
           }
         },
@@ -112,6 +118,7 @@
         "title",
         "price",
         "divider",
+        "custom_liquid_4wnGt8",
         "variant_picker_AapW9m",
         "bd48926f-a490-4678-ae48-a8ad6210018b",
         "accordion_GggAcn",
