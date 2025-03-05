@@ -176,19 +176,19 @@
             "show_in_quickbuy": false
           }
         },
+        "custom_liquid_pqmHNR": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "<style>\n.detail-wrap {\n        display: flex;\n        flex-direction: column;\n        font-size: 11px;\n}\n.detail-text{\n  margin-left:10px;\n}\n.detail-cart-sidebar-view {\n    flex-direction: column;\n    display: flex;\n    justify-content: center;\n    line-height:40px\n}\n.detail-view-item {\n        display: flex;\n        align-items: center;\n        font-size: 11px;\n}\n\n    .detail-view-item img {\n        width: 30px;\n        height: 30px\n    }\n\n    .detail-view-item span {\n        text-align: center;\n    }\n\n@media (max-width: 767.98px) {\n .detail-wrap {\n   align-items: center;\n   font-size: 12px;\n }\n}\n</style>\n\n<div class=\"detail-wrap\">\n        <div class=\"detail-cart-sidebar-view\">\n            <div class=\"detail-view-item\">\n                <img alt=\"30 - Day Hassle Free Return\"\n                    src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/25f7c811e1a238f7a9d4ef81a863fca9_3271a5fc-85d7-4625-aacf-c5bfc70ff986.png?v=1736477549\" />\n                <span class=\"detail-text\">30 - Day Hassle Free Return</span>\n            </div>\n            <div class=\"detail-view-item\">\n                <img alt=\"Global Customer Support\"\n                    src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/ed0b50f042c215ea17013ba5f03dfcc7_8535b248-1045-40db-b869-39e510ce0b5c.png?v=1736477550\" />\n                <span class=\"detail-text\">Global Customer Support </span>\n            </div>\n            <div class=\"detail-view-item\">\n                <img alt=\"Secure Payments\"\n                    src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/2b524494e20dcb27c79138352f255e47_297446f8-3d82-42ef-97c9-ab85cad85765.png?v=1736477550\" />\n                <span class=\"detail-text\">Secure Payments</span>\n            </div>\n        </div>\n    </div>",
+            "show_in_quickbuy": false
+          }
+        },
         "complementary_xdJKmW": {
           "type": "complementary",
           "settings": {
             "heading": "Pairs well with",
             "enable_carousel": true,
             "max_products": 2
-          }
-        },
-        "custom_liquid_pqmHNR": {
-          "type": "custom-liquid",
-          "settings": {
-            "custom_liquid": "<style>\n.detail-wrap {\n        display: flex;\n        flex-direction: column;\n        font-size: 11px;\n}\n.detail-text{\n  margin-left:10px;\n}\n.detail-cart-sidebar-view {\n    flex-direction: column;\n    display: flex;\n    justify-content: center;\n    line-height:40px\n}\n.detail-view-item {\n        display: flex;\n        align-items: center;\n        font-size: 11px;\n}\n\n    .detail-view-item img {\n        width: 30px;\n        height: 30px\n    }\n\n    .detail-view-item span {\n        text-align: center;\n    }\n\n@media (max-width: 767.98px) {\n .detail-wrap {\n   align-items: center;\n   font-size: 12px;\n }\n}\n</style>\n\n<div class=\"detail-wrap\">\n        <div class=\"detail-cart-sidebar-view\">\n            <div class=\"detail-view-item\">\n                <img alt=\"30 - Day Hassle Free Return\"\n                    src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/25f7c811e1a238f7a9d4ef81a863fca9_3271a5fc-85d7-4625-aacf-c5bfc70ff986.png?v=1736477549\" />\n                <span class=\"detail-text\">30 - Day Hassle Free Return</span>\n            </div>\n            <div class=\"detail-view-item\">\n                <img alt=\"Global Customer Support\"\n                    src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/ed0b50f042c215ea17013ba5f03dfcc7_8535b248-1045-40db-b869-39e510ce0b5c.png?v=1736477550\" />\n                <span class=\"detail-text\">Global Customer Support </span>\n            </div>\n            <div class=\"detail-view-item\">\n                <img alt=\"Secure Payments\"\n                    src=\"https://cdn.shopify.com/s/files/1/0637/2740/3230/files/2b524494e20dcb27c79138352f255e47_297446f8-3d82-42ef-97c9-ab85cad85765.png?v=1736477550\" />\n                <span class=\"detail-text\">Secure Payments</span>\n            </div>\n        </div>\n    </div>",
-            "show_in_quickbuy": false
           }
         },
         "richtext_Q4zcbr": {
@@ -220,8 +220,8 @@
         "variant_picker_EaUEeC",
         "buy_buttons_YLhzVe",
         "countdown_bFbtw8",
-        "complementary_xdJKmW",
         "custom_liquid_pqmHNR",
+        "complementary_xdJKmW",
         "richtext_Q4zcbr"
       ],
       "settings": {
