@@ -330,8 +330,6 @@
             </div>
 
           {% when 'rating' %}
-            {% assign variable = block.settings.star_rating %}
-              {% assign number = variable | plus: 0 %}
             <div class="theme-product-reviews">
               <div class="cc-rating" role="img">
                 <span aria-hidden="true" class="cc-rating-stars">
@@ -344,7 +342,7 @@
                   </span>
                   <span class="cc-rating-stars--active">
                     {%- liquid
-                      for i in (1..number)
+                      for i in (1..block.settings.star_rating)
                         render 'rating-star-icon'
                       endfor
                     -%}
@@ -858,6 +856,16 @@
               </div>
             {% endif %}
 
+          {% when 'custom-liquid' %}
+            {% if block.settings.custom_liquid != blank %}
+              <div
+                class="lightly-spaced-row{% unless block.settings.show_in_quickbuy %} not-in-quickbuy{% endunless %}"
+                {{ block.shopify_attributes }}
+              >
+                {{ block.settings.custom_liquid }}
+              </div>
+            {% endif %}
+
           {% when 'sharing' %}
             <div class="input-row not-in-quickbuy" {{ block.shopify_attributes }}>
               <div class="social-share flex items-center">
@@ -1029,26 +1037,6 @@
               </div>
             {% endif %}
 
-        {% when 'custom-liquid' %}
-          {% if block.settings.custom_liquid != blank %}
-            <div
-              class="lightly-spaced-row{% unless block.settings.show_in_quickbuy %} not-in-quickbuy{% endunless %}"
-              {{ block.shopify_attributes }}
-            >
-              {{ block.settings.custom_liquid }}
-            </div>
-          {% endif %}
-
-          {% when 'pay-way' %}
-            <div class="pay-your-block">
-              <span class="pay-your-title">Pay your way</span>
-              <div class="pay-icon-block">
-                {% for type in shop.enabled_payment_types %}
-                  {{ type | payment_type_svg_tag: class: 'section-footer__payment-icon' }}
-                {% endfor %}
-              </div>
-            </div>
-
           {% when 'complementary' %}
             <cc-fetched-content
               class="not-in-quickbuy"
@@ -1203,6 +1191,14 @@
         {% endcase %}
       {% endfor %}
 
+      <div class="pay-your-block">
+        <span class="pay-your-title">Pay your way</span>
+        <div class="pay-icon-block">
+          {% for type in shop.enabled_payment_types %}
+            {{ type | payment_type_svg_tag: class: 'section-footer__payment-icon' }}
+          {% endfor %}
+        </div>
+      </div>
 
       <div class="lightish-spaced-row-above only-in-quickbuy">
         <a class="more" href="{{ product.url }}">
@@ -3078,11 +3074,13 @@
       "name": "Rating",
       "settings": [
         {
-
-          "type": "text",
+          "type": "range",
           "id": "star_rating",
+          "min": 0,
+          "max": 5,
+          "step": 1,
           "label": "Rating",
-          "default": "5"
+          "default": 5
         },
         {
           "type": "text",
