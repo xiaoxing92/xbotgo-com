@@ -1037,6 +1037,16 @@
               </div>
             {% endif %}
 
+          {% when 'pay-way' %}
+            <div class="pay-your-block">
+              <span class="pay-your-title">Pay your way</span>
+              <div class="pay-icon-block">
+                {% for type in shop.enabled_payment_types %}
+                  {{ type | payment_type_svg_tag: class: 'section-footer__payment-icon' }}
+                {% endfor %}
+              </div>
+            </div>
+
           {% when 'complementary' %}
             <cc-fetched-content
               class="not-in-quickbuy"
@@ -1191,14 +1201,6 @@
         {% endcase %}
       {% endfor %}
 
-      <div class="pay-your-block">
-        <span class="pay-your-title">Pay your way</span>
-        <div class="pay-icon-block">
-          {% for type in shop.enabled_payment_types %}
-            {{ type | payment_type_svg_tag: class: 'section-footer__payment-icon' }}
-          {% endfor %}
-        </div>
-      </div>
 
       <div class="lightish-spaced-row-above only-in-quickbuy">
         <a class="more" href="{{ product.url }}">
