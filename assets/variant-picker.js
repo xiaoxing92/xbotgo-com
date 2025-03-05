@@ -253,9 +253,10 @@ if (!customElements.get('variant-picker')) {
       }
 
       if (variant) {
-        const priceCurrentEl = this.price.querySelector('.price__current');
+        const priceCurrentEl = this.price.querySelector('.price__current-new');
         const priceWasEl = this.price.querySelector('.price__was');
         const unitPriceEl = this.price.querySelector('.unit-price');
+        
 
         // Update current price and original price if on sale.
         priceCurrentEl.innerHTML = this.data.formatted[variant.id].price;
