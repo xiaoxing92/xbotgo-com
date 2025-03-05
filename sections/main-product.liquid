@@ -1039,14 +1039,14 @@
               </div>
             {% endif %}
 
-          {% comment %} <div class="pay-your-block">
+          <div class="pay-your-block">
             <span class="pay-your-title">Pay your way</span>
             <div class="pay-icon-block">
               {% for type in shop.enabled_payment_types %}
                 {{ type | payment_type_svg_tag: class: 'section-footer__payment-icon' }}
               {% endfor %}
             </div>
-          </div> {% endcomment %}
+          </div>
 
           {% when 'complementary' %}
             <cc-fetched-content
