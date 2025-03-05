@@ -183,6 +183,12 @@
             "show_in_quickbuy": false
           }
         },
+        "pay_way_yEwACy": {
+          "type": "pay-way",
+          "settings": {
+            "show_pay": true
+          }
+        },
         "complementary_xdJKmW": {
           "type": "complementary",
           "settings": {
@@ -221,6 +227,7 @@
         "buy_buttons_YLhzVe",
         "countdown_bFbtw8",
         "custom_liquid_pqmHNR",
+        "pay_way_yEwACy",
         "complementary_xdJKmW",
         "richtext_Q4zcbr"
       ],
